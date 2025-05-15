@@ -38,14 +38,7 @@ const Footer = () => {
                 </ul>
             </div>
 
-            <div className='footer-right'>
-                <img src="https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/footer/mga1.png" alt="" />
-                <img src="https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/footer/i_tech_labs1.png" alt="" />
-                <img src="https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/footer/gaming_labs1.png" alt="" />
-                <img src="https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/footer/quinel1.png" alt="" />
-                <img src="https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/footer/18-1.png" alt="" />
-                <img src="https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/footer/be_gamble1.png" alt="" />
-            </div>
+            
         </div>
     </div>
   )

@@ -80,11 +80,6 @@
     color: #FFD700;
 }
 
-.footer-right {
-    display: flex;
-    gap: 2px;
-    align-items: center;
-}
 
 @media (max-width: 991px) {
     .footer-container {
@@ -105,10 +100,4 @@
         gap: 30px;
     }
 
-    .footer-right {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
 }

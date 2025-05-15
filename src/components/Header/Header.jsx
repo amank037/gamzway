@@ -32,13 +32,10 @@ const Header = () => {
             <img src={logo} alt="" />
             <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
                 <ul>
-                    <li>Products</li>
-                    <li>About</li>
-                    <li>Screenshots</li>
-                    <li>Buy</li>
-                    <li>Customers</li>
-                    <li>Partnership</li>
-                    <li>FAQ</li>
+                    <li>Skill Games</li>
+                    <li>Casino Games</li>
+                    <li>Game APIs</li>
+                    <li>White Label Platform</li>
                     <li>Contacts</li>
                 </ul>
                 <a href="">Submit a request</a>

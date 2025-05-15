@@ -34,7 +34,7 @@
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: 7.25rem;
+    gap: 6rem;
 }
 
 .nav-menu ul {
@@ -42,7 +42,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .nav-menu li {
