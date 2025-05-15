@@ -123,7 +123,7 @@
 .hero-video-div img {
     position: absolute;
     top: -40px;
-    right: -40px;
+    right: 0;
     width: 180px;
     height: auto;
 }
@@ -135,6 +135,14 @@
     line-height: 1.6;
     max-width: 840px; 
     margin: 100px auto 80px 0;
+}
+
+@media (max-width: 1200px) {
+    .hero-video-div img {
+        width: 100px;
+        top: -20px;
+        right: 0;
+    }
 }
 
 @media (max-width: 991px) {
@@ -153,6 +161,8 @@
 
     .hero-video-div img {
         width: 100px;
+        top: -20px;
+        right: 0;
     }
 }
 
@@ -174,7 +184,7 @@
     }
 
     .hero-video-div img {
-        width: 80px;
+        display: none;
     }
 
     .hero-div::after {
@@ -244,8 +254,9 @@
     flex-direction: column;
     align-items: center;
     justify-content:space-between;
-    height: 384px;
-    width: 363px;
+    min-height: 384px;
+    /* max-width: 363px;
+    width:100%; */
 }
 
 .demo-card p {
@@ -415,6 +426,13 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+@media (max-width: 1200px) {
+    .supports-div::before,
+    .supports-div::after{
+        display: none;
+    }
+}
+
 @media (max-width: 991px) {
     .supports-div {
         padding: 60px 20px;
@@ -452,8 +470,7 @@
 
     .supports-div::before,
     .supports-div::after {
-        width: 100px;
-        height: 100px;
+        display: none;
     }
 }
 
@@ -626,7 +643,7 @@
 .utps-block:last-child {
     height: 320px;
     border-radius: 40px;
-    background: rgba(1, 171, 255, .1);
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='320' width='702' viewBox='0 0 702 179' fill='none'%3E%3Cg filter='url(%23filter0_f_1361_881)'%3E%3Cellipse cx='302.5' cy='248.5' rx='239.5' ry='140' fill='%23FFD700'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_1361_881' x='-97' y='0' width='799' height='497' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='80' result='effect1_foregroundBlur_1361_881'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E") no-repeat;
     position: relative;
 }
 
