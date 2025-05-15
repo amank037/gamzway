@@ -98,7 +98,7 @@
         position: fixed;
         top: 0;
         right: -100%;
-        background: #031C55;
+        background: #2e2e2e;
         flex-direction: column;
         padding: 80px 0 0 0;
         transition: right 0.3s ease;
