@@ -1,0 +1,1081 @@
+.home-div {
+    width: 100%;
+}
+
+.hero-div {
+    width: 100%;
+    position: relative;
+    padding: 60px 0;
+}
+
+.hero-div::after {
+    content: '';
+    position: absolute;
+    top: -125px;
+    left: 0;
+    width: 100%;
+    height: 971px;
+    background-image: url('https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/header/header-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 0 140px 140px;
+    z-index: 0;
+}
+
+.hero-nested-div {
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 64px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.hero-title-dec {
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 20px;
+    margin: 40px 0 80px 0;
+}
+
+.hero-btns a {
+    color: white;
+    padding: 20px 30px;
+    border-radius: 2rem;
+    text-decoration: none;
+    width: 220px;
+    text-align: center;
+}
+
+.hero-btn-red {
+    background: #ee3f59;
+    transition: background 0.3s ease;
+}
+
+.hero-btn-red:hover {
+    background: #d62d46;
+}
+
+.hero-btns a:last-child {
+    background: transparent;
+    border-radius: 2rem;
+    text-decoration: none;
+    border: 1px solid white;
+    transition: all 0.3s ease;
+}
+
+.hero-btns a:last-child:hover {
+    background: white;
+    color: #031C55;
+}
+
+.hero-video-div {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    height: auto;
+    aspect-ratio: 16/9;
+    margin: -2px;
+    border-radius: 30px;
+    box-shadow: 0 114px 69px -78px;
+}
+
+.hero-video-div:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background: linear-gradient(to bottom, rgba(150, 162, 219, 0) 0%, #96A2DB 100%);
+}
+
+.hero-video-div video {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+.hero-video-div img {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 180px;
+    height: auto;
+}
+
+.hero-desc {
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 840px; 
+    margin: 100px auto 80px 0;
+}
+
+@media (max-width: 991px) {
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-title-dec {
+        font-size: 20px;
+    }
+
+    .hero-video-div {
+        margin: 0;
+        border-radius: 20px;
+    }
+
+    .hero-video-div img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-title-dec {
+        font-size: 18px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+    }
+
+    .hero-video-div {
+        border-radius: 15px;
+    }
+
+    .hero-video-div img {
+        width: 80px;
+    }
+
+    .hero-div::after {
+        border-radius: 0 0 100px 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-title {
+        font-size: 24px;
+    }
+
+    .hero-title-dec {
+        font-size: 16px;
+    }
+
+    .hero-video-div {
+        border-radius: 10px;
+    }
+
+    .hero-video-div video {
+        height: 100%;
+    }
+
+    .hero-video-div img {
+        width: 60px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .hero-div::after {
+        border-radius: 0 0 60px 60px;
+    }
+}
+
+.demo-div {
+    width: 100%;
+    padding: 100px 0;
+    background-color: white;
+}
+
+.demo-nested-div {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.demo-title {
+    color: #031C55;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 64px;
+}
+
+.demo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.demo-card {
+    background: linear-gradient(180deg, #031C55 0%, #3e7afc 100%);
+    border-radius: 20px;
+    padding: 30px 30px 0 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    height: 384px;
+    width: 363px;
+}
+
+.demo-card p {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo-card-btns {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.demo-card-btns a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 2rem;
+    border: 1px solid #FF526C;
+    text-decoration: none;
+    color: #FF526C;
+    transition: background 0.3s ease;
+}
+
+.demo-card-btns a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.demo-card-btns img {
+    width: 20px;
+    height: 20px;
+}
+
+.demo-card-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+@media (max-width: 991px) {
+    .demo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .demo-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .demo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .demo-title {
+        font-size: 28px;
+    }
+
+    .demo-card {
+        padding: 20px;
+    }
+
+    .demo-card p {
+        font-size: 20px;
+    }
+}
+
+.supports-div {
+    position: relative;
+    padding: 160px 0 100px 0;
+    background: radial-gradient(277px 328px at 30% 394px, #102a76 0%, rgba(16, 42, 118, 0) 100%) no-repeat;
+    max-width: 1140px;
+    margin: 0 auto;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.supports-div::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 60px 40px 0 rgba(0, 0, 0, .25);
+    top: 120px;
+    right: -250px;
+    width: 200px;
+    height: 200px;
+    background: url('https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/chip1.png') no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.supports-div::after {
+    content: '';
+    position: absolute;
+    box-shadow: 0 60px 40px 0 rgba(0, 0, 0, .25);
+    border-radius: 50%;
+    scale: 1.5;
+    filter:blur(4px);   
+    bottom: 70px;
+    left: -350px;
+    width: 200px;
+    height: 200px;
+    background: url('https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/chip2.png') no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.supports-div > * {
+    position: relative;
+    z-index: 1;
+}
+
+.supports-div .supports-text {
+    /* flex: 0 0 300px; */
+    max-width: 432px;
+}
+
+.supports-div h2 {
+    font-size: 60px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.supports-div h1 {
+    font-size: 131px;
+    font-weight: 700;
+    margin: 20px 0;
+    line-height: 1;
+}
+
+.supports-div p {
+
+    font-size: 28px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.supports-div p span {
+    color: #FF214F;
+}
+
+.supports-div ul {
+    /* flex: 0 0 calc(25% - 20px); */
+    width: 310px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.supports-div ul li {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 3.5;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 991px) {
+    .supports-div {
+        padding: 60px 20px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .supports-div .supports-text {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .supports-div ul {
+        flex: 0 0 100%;
+        margin-top: 30px;
+    }
+
+    .supports-div h1 {
+        font-size: 72px;
+    }
+
+    .supports-div::before,
+    .supports-div::after {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .supports-div h1 {
+        font-size: 56px;
+    }
+
+    .supports-div::before,
+    .supports-div::after {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.packed-div {
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+
+.packed-nested-div {
+    background: url('https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/home/packed-bg.svg') no-repeat;
+    background-size: cover;
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 78px 80px 85px;
+    border-radius: 50px;
+}
+
+.packed-nested-div::after {
+    content: "";
+    display: block;
+    width: 773px;
+    height: 362px;
+    background: url('https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/home/feat-&-tools.png') no-repeat;
+    position: absolute;
+    bottom: 80px;
+    right: -59px;
+    z-index:0;
+}
+
+.packed-nested-div h2 {
+    font-size: 40px;
+    font-weight: 500;   
+    margin-bottom: 40px;
+    max-width: 700px;
+}
+
+.packed-nested-div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
+    max-width: 600px;
+}
+
+.packed-nested-div ul li {
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 24px;
+    position: relative;
+    z-index:1;
+}
+
+.packed-nested-div ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+}
+
+@media (max-width: 991px) {
+    .packed-div {
+        padding: 80px 0;
+    }
+
+    .packed-nested-div h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .packed-nested-div ul {
+
+    }
+
+    .packed-nested-div ul li {
+        font-size: 18px;
+    }
+
+    .packed-nested-div::after {
+        width: 600px;
+        height: 280px;
+        background-size: contain;
+        right: -100px;
+        bottom: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .packed-div {
+        padding: 60px 0;
+    }
+
+    .packed-nested-div h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .packed-nested-div ul {
+        max-width: 100%;
+    }
+
+    .packed-nested-div ul li {
+        font-size: 16px;
+    }
+
+    .packed-nested-div::after {
+        width: 400px;
+        height: 187px;
+        right: -50px;
+        bottom: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .packed-div {
+        padding: 40px 0;
+    }
+
+    .packed-nested-div {
+        padding: 120px 20px 40px 20px;
+        border-radius: 0;
+    }
+
+    .packed-nested-div h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .packed-nested-div ul li {
+        font-size: 15px;
+    }
+
+    .packed-nested-div::after {
+        width: 300px;
+        height: 140px;
+        right: 50px;
+        top: -40px;
+        bottom: auto;
+    }
+}
+
+.utps-div {
+    padding: 100px 0;
+}
+
+.utps-nested-div {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 140px;
+    row-gap: 110px;
+    justify-content: center;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.utps-block {
+    max-width: 500px;
+    width: 100%;
+    font-family: "PT-Root-UI", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.utps-block:first-child,
+.utps-block:last-child {
+    height: 320px;
+    border-radius: 40px;
+    background: rgba(1, 171, 255, .1);
+    position: relative;
+}
+
+.utps-block:first-child img {
+    width: 558px;
+    height: 400px;
+    display: block;
+    border-radius: 0 0 0 40px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.utps-block:last-child img {
+    width: inherit;
+    height: auto;
+    display: block;
+    border-radius: 0 0 40px 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.utps-block h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.utps-block p {
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.utps-block p span {
+    color: #FF526C;
+}
+
+@media (max-width: 991px) {
+    .utps-nested-div {
+        column-gap: 80px;
+        row-gap: 80px;
+        padding: 0 20px;
+    }
+
+    .utps-block:first-child img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .utps-nested-div {
+        column-gap: 60px;
+        row-gap: 60px;
+    }
+
+    .utps-block h3 {
+        font-size: 32px;
+    }
+
+    .utps-block p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .utps-div {
+        padding: 60px 0;
+    }
+
+    .utps-nested-div {
+        column-gap: 40px;
+        row-gap: 40px;
+        padding: 0 15px;
+    }
+
+    .utps-block h3 {
+        font-size: 28px;
+    }
+
+    .utps-block p {
+        font-size: 16px;
+    }
+
+    .utps-block:first-child,
+    .utps-block:last-child {
+        height: 240px;
+        border-radius: 20px;
+    }
+
+    .utps-block:last-child{
+        margin-top: 100px;
+    }
+
+    .utps-block:first-child img {
+        border-radius: 0 0 0 20px;
+    }
+
+    .utps-block:last-child img {
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+.news-div {
+    background-color: white;
+    padding: 100px 0;
+}
+
+.news-nested-div {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.news-nested-div h2 {
+    text-align: left;
+    font-size: 40px;
+    color: #031C55;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.news-cards-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 40px;
+    column-gap: 20px;
+    row-gap: 25px;
+}
+
+.news-card {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 364px;
+    width: 100%;
+    padding: 40px 30px 40px 32px;
+    border-radius: 40px;
+    background: #163988;
+}
+
+.news-card h5 {
+    font-size: 12px;
+    color: white;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+.news-card h4 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 16px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.news-card p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.news-card a {
+    color: #FF526C;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.news-btn {
+    display: inline-block;
+    width:100%;
+    text-align: center;
+    padding: 20px 40px;
+    border: 1px solid #FF526C;
+    color: #FF526C;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 40px;
+    font-size: 16px;
+    transition: background 0.5s ease;
+}
+
+.news-btn:hover {
+    background: #FF526C;
+    color: white;
+}
+
+@media (max-width: 991px) {
+    .news-cards-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .news-card {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .news-div {
+        padding: 60px 0;
+    }
+
+    .news-nested-div h2 {
+        font-size: 32px;
+    }
+
+    .news-card {
+        max-width: 100%;
+    }
+
+    .news-card h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .news-div {
+        padding: 40px 0;
+    }
+
+    .news-nested-div h2 {
+        font-size: 28px;
+    }
+
+    .news-card {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .news-btn {
+        width: 100%;
+        text-align: center;
+        padding: 15px 20px;
+    }
+}
+
+
+.contact-div {
+    padding: 100px 0;
+}
+
+.contact-nested-div {
+    border-radius: 40px;
+    padding: 40px 32px;
+    background: url('https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/contactus-bg-rg.svg') no-repeat, #092972;
+    background-position: bottom left;
+    width: 100%;
+    display: flex;
+    column-gap: 80px;
+    row-gap: 60px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.contact-text {
+    max-width: 472px;
+    color: #fff;
+}
+
+.contact-text h3 {
+    font-size: 40px;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.contact-text h4 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.contact-text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.contact-text span {
+    color: #FF526C;
+}
+
+.contact-form {
+    max-width: 486px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 24px;
+    row-gap: 24px;
+    flex-wrap: wrap;
+    color:#ffffff;
+}
+
+.contact-form-name,
+.contact-form-mail {
+    width: calc(50% - 12px);
+}
+
+.contact-form-message,
+.contact-form-agree,
+.contact-form-submit {
+    width: 100%;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact-form input[type="text"]::placeholder,
+.contact-form input[type="email"]::placeholder,
+.contact-form textarea::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form-agree {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.contact-form-agree input[type="checkbox"] {
+    margin-top: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+.contact-form-agree input[type="checkbox"]:checked {
+    background: #FF526C;
+    border-color: #FF526C;
+}
+
+.contact-form-agree input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.contact-form-agree input[type="checkbox"]:hover {
+    border-color: #FF526C;
+}
+
+.contact-form-agree a {
+    color: #FF526C;
+    text-decoration: none;
+}
+
+.contact-form-submit {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form-submit input[type="submit"] {
+    padding: 20px 40px;
+    background: #FF526C;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    max-width: 220px;
+}
+
+.contact-form-submit input[type="submit"]:hover {
+    background: #d62d46;
+}
+
+.contact-form-submit p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+
+@media (max-width: 991px) {
+    .contact-nested-div {
+        padding: 32px 24px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-text {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-div {
+        padding: 60px 0;
+    }
+
+    .contact-text h3 {
+        font-size: 32px;
+    }
+
+    .contact-form-name,
+    .contact-form-mail {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-div {
+        padding: 40px 0;
+    }
+
+    .contact-nested-div {
+        padding: 24px 16px;
+        border-radius: 20px;
+    }
+
+    .contact-text h3 {
+        font-size: 28px;
+    }
+
+    .contact-form-submit input[type="submit"] {
+        width: 100%;
+        padding: 16px;
+    }
+}
