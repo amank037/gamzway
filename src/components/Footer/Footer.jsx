@@ -156,32 +156,32 @@ const Footer = () => {
                 <ul>
                     <li>
                         <a href="https://www.linkedin.com/company/mobzway-technologies-llp" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
+                            <i className="fab fa-linkedin-in"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.facebook.com/mobzwaygamedevelopment/" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
+                            <i className="fab fa-facebook-f"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://twitter.com/mobzway" target="_blank">
-                            <i class="fab fa-twitter"></i>
+                            <i className="fab fa-twitter"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.pinterest.com/Mobzwaytech/" target="_blank">
-                            <i class="fab fa-pinterest-p"></i>
+                            <i className="fab fa-pinterest-p"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.youtube.com/channel/UCatvs_nBmQfnCWYQM-4ZZ1A" target="_blank">
-                            <i class="fab fa-youtube"></i>
+                            <i className="fab fa-youtube"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://vk.com/mobzway" target="_blank">
-                            <i class="fab fa-vk"></i>
+                            <i className="fab fa-vk"></i>
                         </a>
                     </li>
                 </ul>
