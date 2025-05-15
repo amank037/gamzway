@@ -34,25 +34,29 @@
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: 6rem;
+    gap: 1.5rem;
 }
 
-.nav-menu ul {
+.nav-menu .nav-menu-ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
-.nav-menu li {
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 19px;
+.nav-menu .nav-menu-ul .dropdown {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
-.nav-menu li:hover{
+.header-contacts{
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu .nav-menu-ul .dropdown:hover{
     color: #FFD700;
     transition: all 0.25s ease-in-out;
 }
@@ -89,6 +93,49 @@
     transition: all 0.3s ease;
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown > span {
+    cursor: pointer;
+    padding: 8px 16px;
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    transform: none;
+    background: rgba(0, 0, 0, 0.9);
+    min-width: 200px;
+    padding: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    flex-direction: column;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    color: white;
+}
+
+.dropdown-menu li {
+    padding: 8px 16px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    list-style-type: none;
+}
+
+.dropdown-menu li:hover {
+    background: rgba(255, 215, 0, 0.1);
+    color: #FFD700;
+}
+
 @media (max-width: 991px) {
     .hamburger {
         display: flex;
@@ -111,7 +158,7 @@
         right: 0;
     }
 
-    .nav-menu ul {
+    .nav-menu .nav-menu-ul {
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
@@ -120,12 +167,16 @@
         margin-bottom: 20px;
     }
 
-    .nav-menu ul li {
+    .nav-menu .nav-menu-ul .dropdown {
         width: 100%;
         text-align: center;
     }
 
-    .nav-menu ul li:last-child {
+    .nav-menu .nav-menu-ul .header-contacts{
+        padding: 8px 16px;
+    }
+
+    .nav-menu .nav-menu-ul .dropdown:last-child {
         border-bottom: none;
     }
 
@@ -138,5 +189,29 @@
         border-radius: 0;
         padding: 15px 0;
         box-sizing: border-box;
+    }
+
+    .dropdown-menu {
+        position: static;
+        background: transparent;
+        display: none;
+        min-width: auto;
+        padding: 0;
+        box-shadow: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        list-style: disc;
+        padding-left: 1.2rem;
+    }
+
+    .dropdown.active .dropdown-menu {
+        display: block; /* Ensure it opens below the span */
+        width: 100%; /* Ensure full width */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .dropdown-menu li {
+        padding: 8px 0;
+        text-align: left; /* Align text to left */
     }
 }
