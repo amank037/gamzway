@@ -15,7 +15,7 @@
     left: 0;
     width: 100%;
     height: 971px;
-    background-image: url('https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/header/header-bg.svg');
+    background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0.8));
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 0 0 140px 140px;
@@ -55,7 +55,7 @@
 }
 
 .hero-btns a {
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 20px 30px;
     border-radius: 2rem;
     text-decoration: none;
@@ -64,15 +64,19 @@
 }
 
 .hero-btn-red {
-    background: #ee3f59;
+    background: #FFD700;
+    color: #ffffff;
     transition: background 0.3s ease;
 }
 
+
+
 .hero-btn-red:hover {
-    background: #d62d46;
+    background: #FFC000;
 }
 
 .hero-btns a:last-child {
+    color:#ffffff;
     background: transparent;
     border-radius: 2rem;
     text-decoration: none;
@@ -232,7 +236,7 @@
 }
 
 .demo-card {
-    background: linear-gradient(180deg, #031C55 0%, #3e7afc 100%);
+    background: linear-gradient(180deg, #000000 0%, #333333 100%);
     border-radius: 20px;
     padding: 30px 30px 0 30px;
     color: white;
@@ -267,9 +271,9 @@
     gap: 8px;
     padding: 8px 16px;
     border-radius: 2rem;
-    border: 1px solid #FF526C;
+    border: 1px solid #FFD700;
     text-decoration: none;
-    color: #FF526C;
+    color: #FFD700;
     transition: background 0.3s ease;
 }
 
@@ -319,7 +323,7 @@
 .supports-div {
     position: relative;
     padding: 160px 0 100px 0;
-    background: radial-gradient(277px 328px at 30% 394px, #102a76 0%, rgba(16, 42, 118, 0) 100%) no-repeat;
+    background: radial-gradient(277px 328px at 30% 394px, #333333 0%, rgba(0, 0, 0, 0) 100%) no-repeat;
     max-width: 1140px;
     margin: 0 auto;
     color: #fff;
@@ -391,7 +395,7 @@
 }
 
 .supports-div p span {
-    color: #FF214F;
+    color: #FFD700;
 }
 
 .supports-div ul {
@@ -459,7 +463,7 @@
 }
 
 .packed-nested-div {
-    background: url('https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/home/packed-bg.svg') no-repeat;
+    background: #000000;
     background-size: cover;
     position: relative;
     max-width: 1140px;
@@ -656,7 +660,7 @@
 }
 
 .utps-block p span {
-    color: #FF526C;
+    color: #FFD700;
 }
 
 @media (max-width: 991px) {
@@ -762,7 +766,7 @@
     width: 100%;
     padding: 40px 30px 40px 32px;
     border-radius: 40px;
-    background: #163988;
+    background: #000000;
 }
 
 .news-card h5 {
@@ -788,7 +792,7 @@
 }
 
 .news-card a {
-    color: #FF526C;
+    color: #FFD700;
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -799,8 +803,8 @@
     width:100%;
     text-align: center;
     padding: 20px 40px;
-    border: 1px solid #FF526C;
-    color: #FF526C;
+    border: 1px solid #000000;
+    color: #000000;
     text-decoration: none;
     font-weight: 500;
     border-radius: 40px;
@@ -809,8 +813,8 @@
 }
 
 .news-btn:hover {
-    background: #FF526C;
-    color: white;
+    background: #FFD700;
+    color: rgb(0, 0, 0);
 }
 
 @media (max-width: 991px) {
@@ -869,9 +873,11 @@
 }
 
 .contact-nested-div {
+    border: 1px solid #ffffff;
     border-radius: 40px;
     padding: 40px 32px;
-    background: url('https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/contactus-bg-rg.svg') no-repeat, #092972;
+    /* background: url('https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/contactus-bg-rg.svg') no-repeat, #000000; */
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='702' height='179' viewBox='0 0 702 179' fill='none'%3E%3Cg filter='url(%23filter0_f_1361_881)'%3E%3Cellipse cx='302.5' cy='248.5' rx='239.5' ry='88.5' fill='%23FFD700'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_1361_881' x='-97' y='0' width='799' height='497' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='80' result='effect1_foregroundBlur_1361_881'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E") no-repeat;
     background-position: bottom left;
     width: 100%;
     display: flex;
@@ -907,7 +913,7 @@
 }
 
 .contact-text span {
-    color: #FF526C;
+    color: #FFD700;
 }
 
 .contact-form {
@@ -978,8 +984,8 @@
 }
 
 .contact-form-agree input[type="checkbox"]:checked {
-    background: #FF526C;
-    border-color: #FF526C;
+    background: #FFD700;
+    border-color: #FFD700;
 }
 
 .contact-form-agree input[type="checkbox"]:checked::after {
@@ -995,11 +1001,11 @@
 }
 
 .contact-form-agree input[type="checkbox"]:hover {
-    border-color: #FF526C;
+    border-color: #FFD700;
 }
 
 .contact-form-agree a {
-    color: #FF526C;
+    color: #FFD700;
     text-decoration: none;
 }
 
@@ -1011,8 +1017,8 @@
 
 .contact-form-submit input[type="submit"] {
     padding: 20px 40px;
-    background: #FF526C;
-    color: #fff;
+    background: #FFD700;
+    color: #000000;
     border: none;
     border-radius: 40px;
     cursor: pointer;
@@ -1022,7 +1028,7 @@
 }
 
 .contact-form-submit input[type="submit"]:hover {
-    background: #d62d46;
+    background: #FFC000;
 }
 
 .contact-form-submit p {

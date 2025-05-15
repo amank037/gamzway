@@ -2,7 +2,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #031C55;
+    background-color: #000000;
 }
 
 .App {
@@ -17,7 +17,7 @@
     right: 40px;
     width: 60px;
     height: 60px;
-    background: #3F8BCD;
+    background: #FFD700;
     color: white;
     text-decoration: none;
     border-radius: 50%;
@@ -26,13 +26,13 @@
     align-items: center;
     justify-content: center;
     transition: background 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 12px rgba(63, 139, 205, 0.3);
+    box-shadow: 0 4px 12px #ffd90075;
     animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(63, 139, 205, 0.7);
+        box-shadow: 0 0 0 0 rgba(205, 198, 63, 0.7);
     }
     70% {
         box-shadow: 0 0 0 15px rgba(63, 139, 205, 0);
@@ -43,7 +43,7 @@
 }
 
 .floating-contact-btn:hover {
-    background: #3578b3;
+    background: #FFD700;
     transform: scale(1.05);
     animation: none;
 }

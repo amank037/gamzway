@@ -1,12 +1,13 @@
 import React from 'react'
 import './Footer.css'
+import logo from '../../assets/1-03.png'
 
 const Footer = () => {
   return (
     <div className='footer-div'>
         <div className='footer-container'>
             <div className='footer-left'>
-                <img className='footer-left-logo' src="https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/Enterra-Poker-logo.svg" alt="" />
+                <img className='footer-left-logo' src={logo} alt="" />
                 
                 <div className='footer-left-copyright'>
                     <p>© 2001-2025 <span>Evenbet Gaming Limited</span></p>

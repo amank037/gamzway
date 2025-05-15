@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Header.css'
+import logo from '../../assets/1-03.png'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -28,7 +29,7 @@ const Header = () => {
   return (
     <div className={`header-div ${isSticky ? 'sticky' : ''}`}>
         <div className='header-container'>
-            <img src="https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/Enterra-Poker-logo.svg" alt="" />
+            <img src={logo} alt="" />
             <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
                 <ul>
                     <li>Products</li>
