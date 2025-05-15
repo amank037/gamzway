@@ -463,7 +463,8 @@
 }
 
 .packed-nested-div {
-    background: #000000;
+    background:url('../../assets/packedBg.svg');
+    overflow:visible;
     background-size: cover;
     position: relative;
     max-width: 1140px;
