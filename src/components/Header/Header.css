@@ -13,7 +13,7 @@
 }
 
 .header-container {
-    max-width: 1140px;
+    max-width: 1240px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -64,8 +64,8 @@
 .nav-menu a {
     text-decoration: none;
     padding: 11px 20px;
-    background: rgba(255, 255, 255, .1);
-    color: white;
+    background: #FFD700;
+    color: rgb(0, 0, 0);
     border-radius: 0.8rem;
     transition: all 0.3s ease;
     white-space: nowrap;
@@ -73,7 +73,7 @@
 }
 
 .nav-menu a:hover {
-    background: rgba(255, 255, 255, .3);
+    background: #ffe550;
 }
 
 .hamburger {
@@ -101,6 +101,20 @@
     cursor: pointer;
     padding: 8px 16px;
     display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.header-contacts {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+.header-contacts:hover {
+    color: #FFD700;
+    transition: all 0.25s ease-in-out;
 }
 
 .dropdown-menu {
@@ -116,6 +130,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     flex-direction: column;
+    transition: all 0.3s ease;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -129,6 +144,10 @@
     cursor: pointer;
     transition: all 0.3s ease;
     list-style-type: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .dropdown-menu li:hover {
