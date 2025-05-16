@@ -27,14 +27,14 @@ const Footer = () => {
                     <li><a href="https://www.mobzway.com/portfolio/">Products</a></li>
                     <li><a href="https://www.mobzway.com/company-brochure/">Buy</a></li>
                     <li><a href="https://www.mobzway.com/company-brochure/">Screenshots</a></li>
-                    <li><a href="">Customers</a></li>
+                    <li><a href="https://www.mobzway.com/">Customers</a></li>
                     <li><a href="https://www.mobzway.com/blog/">News</a></li>
                 </ul>
 
                 <ul className='footer-middle-right'>
                     <li><a href="https://www.mobzway.com/our-specialization/">Our Specialization</a></li>
                     <li><a href="https://www.mobzway.com/awards-and-recognition/">Awards & Recognition</a></li>
-                    <li><a href="">Partnership</a></li>
+                    <li><a href="https://www.mobzway.com/">Partnership</a></li>
                     <li><a href="https://www.mobzway.com/about-us/">FAQ</a></li>
                     <li><a href="https://www.mobzway.com/contact-us/">Contacts</a></li>
                     <li><a href="https://www.mobzway.com/about-us/">About Us</a></li>
