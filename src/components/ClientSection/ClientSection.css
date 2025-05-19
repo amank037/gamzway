@@ -1,0 +1,157 @@
+.client-section {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    margin: 40px 0;
+}
+
+.swiper-container {
+    padding: 20px 0;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.carousel-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 20px;
+    width: 80%;
+    text-align: center;
+}
+
+.carousel-item h2 {
+    color: #FFD700;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.carousel-item h3 {
+    color: #fff;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #FFD700;
+    background: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 20px;
+}
+
+.stars-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.stars-row img {
+    max-width: 180px;
+    height: auto;
+}
+
+
+.badges-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.badges-grid img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.badges-grid img:hover {
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 992px) {
+    .client-section {
+        padding: 40px 20px;
+    }
+
+    .stars-row {
+        gap: 20px;
+    }
+
+    .stars-row img {
+        max-width: 120px;
+    }
+
+    .badges-grid {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-item {
+        padding: 20px;
+    }
+
+    .carousel-item p {
+        font-size: 14px;
+    }
+
+    .carousel-item h2 {
+        font-size: 20px;
+    }
+
+    .carousel-item h3 {
+        font-size: 16px;
+    }
+
+    .stars-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stars-row img {
+        max-width: 100px;
+    }
+
+    .badges-grid img {
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .badges-grid {
+        grid-template-columns: 1fr;
+    }
+}

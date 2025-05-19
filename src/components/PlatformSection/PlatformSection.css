@@ -1,0 +1,81 @@
+.platform-section{
+    width: 100%;
+}
+
+.platform-container{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto; 
+}
+.platform-container .platform-header{
+    text-align: center;
+    padding: 30px 0;
+    font-size: 30px;
+}
+.platform-container .platform-desc{
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 16px;
+}
+
+.platform-container .platform-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.platform-container .platform-grid .platform-grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+    border-radius: 0;
+    position: relative;
+    background: transparent;
+}
+
+.platform-container .platform-grid .platform-grid-item:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(0deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 215, 0, 0) 100%);
+    border-color: #FFD700;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+}
+
+.platform-container .platform-grid .platform-grid-item img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.platform-container .platform-grid .platform-grid-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.platform-container .platform-grid .platform-grid-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 992px) {
+    .platform-container .platform-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .platform-container .platform-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .platform-container .platform-grid .platform-grid-item {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,49 @@
+.ach-banner{
+    width: 100%;
+    background-color: #F8F9FA;
+}
+
+.ach-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.ach-card{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.ach-card .ach-text{
+    text-align: center;
+    padding: 0 10px;
+}
+
+.ach-card .ach-text h1{
+    color: #f8ce0a;
+    font-size: 26px !important;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.ach-card .ach-text h3{
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px)  {
+    .ach-container{
+        flex-direction: column;
+    }
+
+    .ach-card{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
