@@ -99,9 +99,9 @@ function Header() {
                 <Link to="/" onClick={closeMenu}><img src={logo} alt="" /></Link>
                 <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
                     <ul className='nav-menu-ul'>
-                        <li className={`header-contacts nav-item ${isActive('/') ? 'active' : ''}`}>
+                        {/* <li className={`header-contacts nav-item ${isActive('/') ? 'active' : ''}`}>
                             <Link to="/" onClick={closeMenu}>Home</Link>
-                        </li>
+                        </li> */}
                         {dropdownData.map((dropdown, index) => (
                             <li 
                                 className={`dropdown ${activeDropdown === index ? 'active' : ''} ${isActive(dropdown.path) ? 'current' : ''}`}
