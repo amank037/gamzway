@@ -1,0 +1,24 @@
+.landing-rng-section {
+    position: relative;
+    background-image: url(https://beta.mobzway.com/assets/images/provider-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 100vh !important;
+    margin-top: -134px;
+}
+
+.landing-rng-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    pointer-events: none;
+}
+
+.landing-rng-section {
+    background-blend-mode: overlay;
+}

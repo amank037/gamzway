@@ -15,7 +15,7 @@ const pokercarouselData = [
     title: "Hire #1 Poker Game Developers",
     description: "With the trust of over 300+ clients worldwide. We offer a choice for gaming businesses to hire #1 Poker Game Developers in industry, and help them to build an engaging game from scratch or upgrade their existing games.",
     image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp",
-    isMaintitle: true,
+    isMainTitle: true,
   },
   {
     title: "Poker game development Company",
@@ -324,52 +324,7 @@ const PokerGame = () => {
         </div>
       </div>
 
-      {/* <div className='design-develop'>
-        <div className='design-develop-container'>
-          <div className='design-develop-text'>
-            <FeaturesHeader featuresText={designTitle}/>
-            
-            <div className='design-develop-text-container'>
-              <div className='design-develop-text-container-top'>
-                <div className='design-text-box'>
-                  <h3>1. Pre-Production</h3>
-                  <ul>
-                    <li>Concept Document</li>
-                    <li>Game Design Document</li>
-                    <li>Project Plane</li>
-                    <li>Prototype</li>
-                  </ul>
-                </div>
-
-                <div className='design-text-box'>
-                  <h3>2. Production</h3>
-                  <ul>
-                    <li>Art Production</li>
-                    <li>Programming</li>
-                    <li>Audio Production</li>
-                    <li>Quality Control</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className='design-develop-text-container-bottom'>
-                <div className='design-text-box'>
-                  <h3>3. Post-Production</h3>
-                  <ul>
-                    <li>Patches & Updates</li>
-                    <li>Maintenance</li>
-                    <li>Customer Service</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className='design-develop-img'>
-            <img src="https://beta.mobzway.com/assets/images/poker-game-development/poker-game-software.webp" alt="" />
-          </div>
-        </div>
-      </div> */}
+      
 
       <ClientSection />
 

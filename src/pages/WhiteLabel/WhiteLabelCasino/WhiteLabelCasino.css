@@ -1,0 +1,24 @@
+.landing-white-label-casino-section {
+    position: relative;
+    background-image: url(https://www.mobzway.com/assets/images/whitecasino_banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 100vh !important;
+    margin-top: -134px;
+}
+
+.landing-white-label-casino-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none;
+}
+
+.landing-white-label-casino-section {
+    background-blend-mode: overlay;
+}

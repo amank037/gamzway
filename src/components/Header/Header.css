@@ -177,7 +177,7 @@
 
 .dropdown-menu li.active a {
     color: #FFD700 !important;
-    background: rgba(255, 215, 0, 0.1);
+    background: rgba(255, 215, 0, 0.3);
 }
 
 .header-contacts.active a {

@@ -51,8 +51,8 @@ function Header() {
             path: "/casino-games",
             items: [
                 { name: "Live Casino", path: "/casino-games/live-casino" },
-                { name: "RNG Games", path: "/casino-games/rng-games" },
                 { name: "Slots", path: "/casino-games/slots" },
+                { name: "RNG Games", path: "/casino-games/rng-games" }, 
                 { name: "Crash Games", path: "/casino-games/crash-games" },
                 { name: "Table Games", path: "/casino-games/table-games" },
                 { name: "Fishing Games", path: "/casino-games/fishing-games" }
