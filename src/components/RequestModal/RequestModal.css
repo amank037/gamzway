@@ -1,0 +1,258 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.modal-header h2 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.modal-header h2 span {
+    color: #FFD700;
+}
+
+.modal-header p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name-row {
+    display: flex;
+    gap: 20px;
+}
+
+.name-row input {
+    flex: 1;
+}
+
+.modal-form input,
+.modal-form select {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.modal-form input::placeholder,
+.modal-form select::placeholder {
+    color: rgba(255, 255, 255);
+}
+
+.modal-form input:focus,
+.modal-form select:focus {
+    outline: none;
+    border-color: #FFD700;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    padding-right: 40px;
+}
+
+.modal-form select option {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 10px;
+}
+
+.contact-methods {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.contact-methods button {
+    flex: 1;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.contact-methods button i {
+    font-size: 20px;
+}
+
+.contact-methods button.active {
+    background: #FFD700;
+    color: #000;
+    border-color: #FFD700;
+}
+
+.phone-input-container {
+    width: 100% !important;
+}
+
+.phone-input {
+    width: 100% !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+    padding: 12px 15px 12px 50px !important;
+    border-radius: 8px !important;
+}
+
+.react-tel-input .selected-flag {
+    background: rgba(0, 0, 0, 0.3) !important;
+    border-radius: 8px 0 0 8px !important;
+}
+
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag.open {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.react-tel-input .country-list {
+    background: #1a1a1a !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 8px !important;
+    margin-top: 8px !important;
+}
+
+.react-tel-input .country-list .country {
+    background: transparent !important;
+    color: #fff !important;
+}
+
+.react-tel-input .country-list .country:hover,
+.react-tel-input .country-list .country.highlight {
+    background: rgba(255, 215, 0, 0.1) !important;
+}
+
+.react-tel-input .country-list .country-name {
+    color: #fff !important;
+}
+
+.react-tel-input .country-list .dial-code {
+    color: #FFD700 !important;
+}
+
+.react-tel-input .flag-dropdown.open {
+    background: rgba(0, 0, 0, 0.3) !important;
+    border-radius: 8px 0 0 0 !important;
+}
+
+.react-tel-input .flag-dropdown {
+    background: transparent !important;
+    border: 1px solid #FFD700;
+}
+
+.react-tel-input .selected-flag {
+    background: rgba(0, 0, 0, 0.3) !important;
+    border-radius: 8px 0 0 8px !important;
+}
+
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag.open {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.phone-input:focus {
+    outline: none !important;
+    border-color: #FFD700 !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.submit-button {
+    background: #FFD700;
+    color: #000;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #ffd900;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 576px) {
+    .modal-content {
+        padding: 20px;
+    }
+
+    .name-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-methods {
+        flex-wrap: wrap;
+    }
+
+    .contact-methods button {
+        flex: 1 1 40%;
+    }
+}

@@ -2,12 +2,14 @@ import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './Header.css'
 import logo from '../../assets/1-03.png'
+import RequestModal from '../RequestModal/RequestModal';
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isSticky, setIsSticky] = useState(false)
     const [activeDropdown, setActiveDropdown] = useState(null)
     const location = useLocation()
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -99,9 +101,6 @@ function Header() {
                 <Link to="/" onClick={closeMenu}><img src={logo} alt="" /></Link>
                 <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
                     <ul className='nav-menu-ul'>
-                        {/* <li className={`header-contacts nav-item ${isActive('/') ? 'active' : ''}`}>
-                            <Link to="/" onClick={closeMenu}>Home</Link>
-                        </li> */}
                         {dropdownData.map((dropdown, index) => (
                             <li 
                                 className={`dropdown ${activeDropdown === index ? 'active' : ''} ${isActive(dropdown.path) ? 'current' : ''}`}
@@ -126,9 +125,13 @@ function Header() {
                         </li>
                     </ul>
                     <Link 
-                        to="/request" 
+                        to="#" 
                         className={isActive('/request') ? 'active' : ''}
-                        onClick={closeMenu}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            setIsModalOpen(true);
+                            closeMenu();
+                        }}
                     >
                         Submit a request
                     </Link>
@@ -139,6 +142,7 @@ function Header() {
                     <span></span>
                 </div>
             </div>
+            <RequestModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </div>
     )
 }
