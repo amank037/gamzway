@@ -74,6 +74,11 @@
     z-index: 1;
     transition: transform 0.3s ease;
 }
+.platform-item-content:hover{
+    border: 1px solid var(--primary-yellow);
+    box-shadow: 0 0 10px var(--primary-yellow);
+    transform: scale(1.05);
+}
 
 .image-container {
     position: relative;
