@@ -178,7 +178,7 @@ const featuresItems = [
 
 const hireTitle = [
   {
-    title: "WHY HAVE YOUR RUMMY GAME FROM MOBZWAY?"
+    title: "WHY HAVE YOUR RUMMY GAME FROM GAMZWAY?"
   }
 ]
 
