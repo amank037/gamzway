@@ -32,31 +32,38 @@ const testimonials = [
 function ClientSection() {
     return (
         <div className="client-section">
-            <FeaturesHeader featuresText={clientTitle}/>
-            
-            <div className="carousel-container">
-                <Swiper
-                    modules={[Navigation, Autoplay]}
-                    spaceBetween={30}
-                    slidesPerView={1}
-                    navigation
-                    autoplay={{
-                        delay: 3000,
-                        disableOnInteraction: false,
-                    }}
-                    loop={true}
-                >
-                    {testimonials.map((testimonial, index) => (
-                        <SwiperSlide key={index}>
-                            <div className="carousel-item">
-                                <p>{testimonial.text}</p>
-                                <h2>{testimonial.name}</h2>
-                                <h3>{testimonial.country}</h3>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
+            <div className="client-background"></div>
+            <div className="client-content">
+                <FeaturesHeader featuresText={clientTitle}/>
+                
+                <div className="carousel-container">
+                    <Swiper
+                        modules={[Navigation, Autoplay]}
+                        spaceBetween={30}
+                        slidesPerView={1}
+                        navigation
+                        autoplay={{
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        }}
+                        loop={true}
+                    >
+                        {testimonials.map((testimonial, index) => (
+                            <SwiperSlide key={index}>
+                                <div className="carousel-item">
+                                    <div className="quote-icon">
+                                        <i className="fas fa-quote-right"></i>
+                                    </div>
+                                    <p>{testimonial.text}</p>
+                                    <div className="testimonial-author">
+                                        <h2>{testimonial.name}</h2>
+                                        <h3>{testimonial.country}</h3>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
 
             <div className="stars-row">
                 <img src="https://i.ibb.co/Zzg4JDXz/01a-01.png" alt="Rating Star" />
@@ -65,10 +72,17 @@ function ClientSection() {
                 <img src="https://i.ibb.co/5xxxCQhD/01a-01-3.png" alt="Rating Star" />
             </div>
 
-            <div className="badges-grid">
-                <img src="https://beta.mobzway.com/assets/images/rummy-game-development/softwaresuggest.webp" alt="Software Suggest Badge" />
-                <img src="https://beta.mobzway.com/assets/images/rummy-game-development/topmobileappdevelopers.webp" alt="Top Mobile App Developers Badge" />
-                <img src="https://beta.mobzway.com/assets/images/rummy-game-development/capterra.webp" alt="Capterra Badge" />
+                <div className="badges-grid">
+                    <div className="badge-wrapper">
+                        <img src="https://beta.mobzway.com/assets/images/rummy-game-development/softwaresuggest.webp" alt="Software Suggest Badge" />
+                    </div>
+                    <div className="badge-wrapper">
+                        <img src="https://beta.mobzway.com/assets/images/rummy-game-development/topmobileappdevelopers.webp" alt="Top Mobile App Developers Badge" />
+                    </div>
+                    <div className="badge-wrapper">
+                        <img src="https://beta.mobzway.com/assets/images/rummy-game-development/capterra.webp" alt="Capterra Badge" />
+                    </div>
+                </div>
             </div>
         </div>
     )

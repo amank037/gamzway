@@ -39,7 +39,7 @@
 }
 
 .product-grid-item h3 {
-    color: #FFD700;
+    color: var(--primary-yellow);
     font-size: 16px;
     margin: 20px 0;
     font-weight: 600;

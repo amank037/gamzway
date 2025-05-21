@@ -1,49 +1,119 @@
-.ach-banner{
+.ach-banner {
     width: 100%;
-    background-color: #F8F9FA;
+    background: linear-gradient(135deg, #111111 0%, #1a1a1a 100%);
+    padding: 40px 0;  /* Reduced from 80px */
+    position: relative;
+    overflow: hidden;
 }
 
-.ach-container{
+.ach-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(var(--primary-yellow), 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.ach-container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 20px;
 }
 
-.ach-card{
-    width: 25%;
+.ach-card {
+    flex: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 25px 20px;  /* Reduced from 40px */
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
 }
 
-.ach-card .ach-text{
+.ach-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--primary-yellow);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.ach-icon {
+    width: 60px;  /* Reduced from 80px */
+    height: 60px;  /* Reduced from 80px */
+    margin-bottom: 15px;  /* Reduced from 20px */
+    position: relative;
+}
+
+.ach-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 5px 10px rgba(248, 206, 10, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.ach-card:hover .ach-img {
+    transform: scale(1.1);
+}
+
+.ach-text {
     text-align: center;
-    padding: 0 10px;
 }
 
-.ach-card .ach-text h1{
-    color: #f8ce0a;
-    font-size: 26px !important;
-    text-shadow: 1px 1px 1px #000;
+.ach-text h1 {
+    font-size: 2.8rem !important;  /* Reduced from 3.5rem */
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary-yellow) 0%, #FFA500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;  /* Reduced from 10px */
+    line-height: 1;
 }
 
-.ach-card .ach-text h3{
-    color: black;
-    font-size: 1rem;
+.ach-text h3 {
+    color: #ffffff;
+    font-size: 0.9rem;  /* Reduced from 1rem */
     font-weight: 600;
+    letter-spacing: 2px;
+    opacity: 0.9;
 }
 
-@media screen and (max-width: 768px)  {
-    .ach-container{
+@media screen and (max-width: 1024px) {
+    .ach-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .ach-card {
+        flex: 0 0 calc(50% - 10px);
+        padding: 30px 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ach-banner {
+        padding: 30px 0;  /* Reduced from 60px */
+    }
+
+    .ach-container {
         flex-direction: column;
     }
 
-    .ach-card{
+    .ach-card {
         width: 100%;
-        justify-content: center;
-        flex-direction: column;
+    }
+
+    .ach-text h1 {
+        font-size: 2.4rem !important;  /* Reduced from 2.8rem */
     }
 }

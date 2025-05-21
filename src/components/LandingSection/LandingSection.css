@@ -18,7 +18,7 @@
 }
 .landing-text h1{
     font-size: 56px;
-    color: #fcd10a;
+    color: var(--secondary-yellow);
     text-transform: uppercase;
     font-weight: 1200;
     margin-top: 45px;
@@ -34,7 +34,7 @@
     width: 80%;
 }
 .landing-btn{
-    background-color: #FFD700;
+    background-color: var(--primary-yellow);
     border: none;
     padding: 10px 25px;
     border-radius: 2rem;

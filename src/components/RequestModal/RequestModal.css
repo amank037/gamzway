@@ -55,7 +55,7 @@
 }
 
 .modal-header h2 span {
-    color: #FFD700;
+    color: var(--primary-yellow);
 }
 
 .modal-header p {
@@ -98,7 +98,7 @@
 .modal-form input:focus,
 .modal-form select:focus {
     outline: none;
-    border-color: #FFD700;
+    border-color: var(--primary-yellow);
     background: rgba(0, 0, 0, 0.5);
 }
 
@@ -142,9 +142,9 @@
 }
 
 .contact-methods button.active {
-    background: #FFD700;
+    background: var(--primary-yellow);
     color: #000;
-    border-color: #FFD700;
+    border-color: var(--primary-yellow);
 }
 
 .phone-input-container {
@@ -192,7 +192,7 @@
 }
 
 .react-tel-input .country-list .dial-code {
-    color: #FFD700 !important;
+    color: var(--primary-yellow) !important;
 }
 
 .react-tel-input .flag-dropdown.open {
@@ -202,7 +202,7 @@
 
 .react-tel-input .flag-dropdown {
     background: transparent !important;
-    border: 1px solid #FFD700;
+    border: 1px solid var(--primary-yellow);
 }
 
 .react-tel-input .selected-flag {
@@ -217,12 +217,12 @@
 
 .phone-input:focus {
     outline: none !important;
-    border-color: #FFD700 !important;
+    border-color: var(--primary-yellow) !important;
     background: rgba(0, 0, 0, 0.5) !important;
 }
 
 .submit-button {
-    background: #FFD700;
+    background: var(--primary-yellow);
     color: #000;
     border: none;
     padding: 15px;

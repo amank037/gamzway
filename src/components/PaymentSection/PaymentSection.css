@@ -9,6 +9,16 @@
     padding: 50px 0;
 }
 
+.payments-title{
+    font-family: 'Lokanova-Std', 'Arial', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
 .payments-icons-1,
 .payments-icons-2 {
     display: grid;

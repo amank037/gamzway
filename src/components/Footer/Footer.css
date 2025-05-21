@@ -1,9 +1,9 @@
 .footer-div {
     width: 100%;
     margin-top: auto;
-    background: #000000;
     padding: 60px 0;
     color: white;
+    background: linear-gradient(225deg, rgba(24, 24, 24, 0.9) 0%, rgba(19, 19, 19, 0.95) 100%);
 }
 
 .footer-container {
@@ -38,7 +38,7 @@
 }
 
 .footer-left-copyright span {
-    color: #FFD700;
+    color: var(--primary-yellow);
 }
 
 .footer-left-privacy {
@@ -89,7 +89,7 @@
 }
 
 .footer-middle ul li a:hover {
-    color: #FFD700;
+    color: var(--primary-yellow);
 }
 
 
@@ -132,13 +132,13 @@
 }
 
 .footer-top-div h4 {
-    color: #FFD700;
+    color: var(--primary-yellow);
     font-size: 20px;
     margin-bottom: 20px;
     padding-bottom: 10px;
     font-weight: 600;
     text-transform: uppercase;
-    border-bottom: #FFD700 1px solid;
+    border-bottom: var(--primary-yellow) 1px solid;
 }
 
 .footer-top-div ul {
@@ -159,7 +159,7 @@
 }
 
 .footer-top-div ul li a:hover {
-    color: #FFD700;
+    color: var(--primary-yellow);
 }
 
 .dmca-img{
@@ -171,7 +171,7 @@
     max-width: 1140px;
     margin: 0 auto;
     padding: 20px 15px;
-    border-top: 1px solid #FFD700;
+    border-top: 1px solid var(--primary-yellow);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -184,7 +184,7 @@
 }
 
 .footer-copyright a {
-    color: #FFD700;
+    color: var(--primary-yellow);
     text-decoration: none;
     margin: 0 5px;
 }
@@ -212,7 +212,7 @@
 }
 
 .footer-socials ul li a:hover {
-    color: #FFD700;
+    color: var(--primary-yellow);
 }
 
 

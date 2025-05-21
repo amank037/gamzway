@@ -5,14 +5,17 @@
 }
 
 .features-title {
-    font-size: 35px;
+    font-size: 48px;
     text-transform: uppercase;
-    font-weight: 900;
+    font-family: 'Lokanova-Std', 'Arial', sans-serif;
     padding: 20px 0;
 }
 
 .features-title span {
     animation: colorFade 10s infinite;
+    font-size: inherit;
+    font-family: 'Lokanova-Std', 'Arial', sans-serif;
+    font-weight: 400;
 }
 
 .features-title span:first-child {
@@ -32,13 +35,13 @@
 
 @keyframes colorFade {
     0% {
-        color: #FFD700;
+        color: var(--primary-yellow);
     }
     50% {
         color: #ffffff;
     }
     100% {
-        color: #FFD700;
+        color: var(--primary-yellow);
     }
 }
 
@@ -47,7 +50,7 @@
         color: #ffffff;
     }
     50% {
-        color: #FFD700;
+        color: var(--primary-yellow);
     }
     100% {
         color: #ffffff;

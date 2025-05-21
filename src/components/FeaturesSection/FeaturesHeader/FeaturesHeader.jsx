@@ -7,13 +7,11 @@ function FeaturesHeader({featuresText, titleStyle}) {
     ))
   }
 
-  const disableAnimation = titleStyle && titleStyle.color;
-
   return (
     <div className="features-text">
         {featuresText.map((item, index) => (
           <div key={index} className="features-text-container">
-              <h2 className='features-title' style={titleStyle}>{wrapWordsInSpans(item.title, disableAnimation)}</h2>
+              <h2 className='features-title' style={titleStyle}>{wrapWordsInSpans(item.title, false) }</h2>
               <p className='features-desc'>{item.description}</p>
           </div>
         ))}

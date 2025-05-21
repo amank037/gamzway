@@ -7,7 +7,11 @@
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0 auto;
+    background-position: center;
+    margin: -135px auto 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
 }
 
 .features-section {
@@ -59,7 +63,7 @@
 .features-grid .features-grid-item:hover {
     transform: translateY(-3px);
     background: linear-gradient(0deg, rgba(255, 215, 0, 0.5) 0%, rgba(255, 215, 0, 0) 100%);
-    border-color: #FFD700;
+    border-color: var(--primary-yellow);
     box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
 }
 
@@ -73,13 +77,13 @@
 }
 
 .features-grid .features-grid-item img {
-    background: #fcd10a;
+    background: var(--secondary-yellow);
     border-radius: 50%;
     padding: 5px;
     width: 75px;
     overflow: visible;
     border: 2px solid #514200;
-    box-shadow: 0px 0px 10px 1px #fcd10a;
+    box-shadow: 0px 0px 10px 1px var(--secondary-yellow);
 }
 
 .features-grid .features-grid-item h3 {
@@ -133,7 +137,7 @@
 }
 
 .solutions-poker-section .solutions-poker-bottom .solutions-desc-container button {
-    background-color: #FFD700;
+    background-color: var(--primary-yellow);
     border: none;
     padding: 10px 20px;
     border-radius: 2rem;

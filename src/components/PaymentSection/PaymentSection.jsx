@@ -1,17 +1,11 @@
-import FeaturesHeader from "../FeaturesSection/FeaturesHeader/FeaturesHeader"
 import './PaymentSection.css'
 
-const paymentsTitle = [
-    {
-        title: "Our Payment gateway integration"
-    }
-]
 
 function PaymentSection() {
   return (
     <div className="payments-section">
         <div className="payments-container">
-            <FeaturesHeader featuresText={paymentsTitle} titleStyle={{color:"#000000",  fontSize: '48px', fontWeight: '400'}}/>
+            <h1 className="payments-title">Our Payment gateway integration</h1>
             <div className="payments-icons-1">
                 <img src="https://beta.mobzway.com/assets/images/rummy-game-development/CashfreePayments.webp" alt="" />
                 <img src="https://beta.mobzway.com/assets/images/rummy-game-development/Razorpay.webp" alt="" />

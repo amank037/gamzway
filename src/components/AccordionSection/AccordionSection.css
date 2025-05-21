@@ -1,65 +1,160 @@
 .accordion {
     flex: 1;
+    position: relative;
 }
 
-.accordion .accordion-item {
-    margin-bottom: 15px;
-    border: 1px solid rgba(255, 215, 0, 0.3);
-    background: rgba(0, 0, 0, 0.3);
+.accordion::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: -1;
 }
 
-.accordion .accordion-header {
+.accordion-item {
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 215, 0, 0.1);
+    border-radius: 15px;
+    background: rgba(17, 17, 17, 0.5);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-item:hover {
+    border-color: var(--primary-yellow);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.accordion-item.active {
+    border-color: var(--primary-yellow);
+    box-shadow: 0 15px 40px rgba(255, 215, 0, 0.15);
+}
+
+.accordion-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 25px 30px;
     cursor: pointer;
-    background: rgba(255, 215, 0, 0.1);
-    transition: all 0.5s ease;
+    background: rgba(255, 215, 0, 0.05);
+    transition: all 0.3s ease;
 }
 
-.accordion .accordion-header:hover {
-    background: rgba(255, 215, 0, 0.2);
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.accordion .accordion-header h2 {
-    margin: 0;
-    font-size: 20px;
-    color: #FFD700;
-    font-weight: 500;
-}
-
-.accordion .accordion-header i {
-    color: #FFD700;
+.icon-wrapper {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--secondary-yellow) 100%); */
+    border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
-.accordion .accordion-header i.active {
+.accordion-item:hover .icon-wrapper {
     transform: rotate(45deg);
 }
 
-.accordion .accordion-content {
-    max-height: 0;
-    opacity: 0;
+.icon-wrapper i {
+    color: var(--primary-yellow);
+    font-size: 18px;
+}
+
+.accordion-header h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.accordion-item:hover .accordion-header h2 {
+    color: var(--primary-yellow);
+}
+
+.toggle-icon i {
+    color: var(--primary-yellow);
+    font-size: 20px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.toggle-icon i.active {
+    transform: rotate(45deg);
+}
+
+.accordion-content {
     overflow: hidden;
-    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     background: rgba(0, 0, 0, 0.3);
 }
 
-.accordion .accordion-content.active {
-    max-height: 500px;
-    opacity: 1;
+.content-wrapper {
+    padding: 0 30px;
 }
 
-.accordion .accordion-content p {
-    margin: 0;
-    padding: 20px;
-    line-height: 1.6;
-    color: #fff;
+.accordion-content p {
+    margin: 25px 0;
+    line-height: 1.8;
+    color: #d9d9d9;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 768px) {
-    .accordion .accordion-header h2 {
+    .accordion-header {
+        padding: 20px;
+    }
+
+    .header-content {
+        gap: 15px;
+    }
+
+    .icon-wrapper {
+        width: 35px;
+        height: 35px;
+    }
+
+    .accordion-header h2 {
         font-size: 18px;
+    }
+
+    .content-wrapper {
+        padding: 0 20px;
+    }
+
+    .accordion-content p {
+        font-size: 15px;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .icon-wrapper {
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon-wrapper i {
+        font-size: 14px;
+    }
+
+    .accordion-header h2 {
+        font-size: 16px;
+    }
+
+    .accordion-content p {
+        font-size: 14px;
     }
 }

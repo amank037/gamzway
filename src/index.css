@@ -5,13 +5,27 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Lokanova-Std';
+    src: url('/fonts/Lokanova-Std.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+:root {
+    --primary-yellow: #FFD700;
+    --secondary-yellow: #fcd10a;
+    --text-color: #FFFFFF;
+    --background-black: #111111;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'PT Root UI', sans-serif;
     /* overflow-x: hidden; */
-    
 }
 
 body {

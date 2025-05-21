@@ -1,4 +1,4 @@
-import {useState} from 'react'
+
 import './RummyGame.css'
 import CarouselSection from '../../../components/CarouselSection/CarouselSection'
 import AchievementsBanner from '../../../components/AchievementsBanner/AchievementsBanner'
@@ -8,6 +8,7 @@ import PlatformSection from '../../../components/PlatformSection/PlatformSection
 import ClientSection from '../../../components/ClientSection/ClientSection'
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
+import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 
 const rummyCarouselData = [
   {
@@ -51,15 +52,15 @@ const rummyCarouselData = [
 
 const aboutText = [
   {
-    title: "About Rummy Game Development Company",
-    description: "Mobzway is a popular Rummy Game Development Company in India. It is the right place to find the best rummy game. We have proven experienced rummy game developers at providing rich appearance and advanced features for rummy. We strive to take your online rummy game business to the next level. Mobzway has come across with ready-to-use rummy game app for iOS, Android, and other platforms. With 5+ years of quality perception and teamwork experience, we have developed great customized and smart UI interfaces for a rummy game application. We hold a dominant place in the online game development industry. Our skilled unit will assist you throughout the rummy app development journey."
+    title: "RUMMY - A MULTIPLAYER GAME",
+    description: "Rummy  known for its strategic gaming, intense competition, and real-money possibilities, rummy is among the most often played card games in India and worldwide.  Played by millions, rummy has successfully migrated to the digital realm via sophisticated smartphones and online apps. At Mobzway, we assist gaming companies in creating strong, safe, aesthetically pleasing rummy game apps catered to both casual and competitive players.  Our rummy game creation services are built to grow with your ambition, whether your project is starting a business or broadening your gaming portfolio."
   }
 ]
 
 const variationsText = [
   {
     title: "Variations of Rummy Mobile Game",
-    description: "Dive into the world of online rummy with various game variations available on our platform. Whether it's Point Rummy, Pool Rummy, or Deal Rummy, we offer the flexibility to customize your rummy game app or website according to your preferences."
+    description: " We create all main forms of rummy games to guarantee that one platform will let your users enjoy a range of experiences:"
   }
 ]
 
@@ -73,10 +74,10 @@ const contactData = [
   {
     featuresText: [
       {
-        title: "Looking For The Best Rummy Game Application For Your Business"
+        title: " Looking for the ideal rummy game application for your company?"
       }
     ],
-    description: "Need expert advice on online rummy game development business? Get in touch with us now and let our dedicated rummy game experts answer all your questions.",
+    description: "You found the correct location. Using simple design, seamless gameplay, and loyalty-building elements, Mobzway creates rummy game apps that not only draw players but also keep them involved.\n\nOur solutions fit your monetising plan, whether your goals are adverts, real-money games, or in-app purchases.",
     href: "",
     hrefText: "Contact Us"
   }
@@ -86,10 +87,10 @@ const requestItems = [
   {
     featuresText: [
       {
-        title: "Ready To Get Started?"
+        title: "Ready to get going?"
       }
     ],
-    description: "Experience the #1 Rummy Platform for you business to know how best we are at what we do?",
+    description: " It gives us great pleasure to realise your rummy game concept.  Let us go over your project and get you a customised demo.",
     href: "",
     hrefText: "Request Demo"
   }
@@ -102,7 +103,7 @@ const platformItems = [
         title: "HOW MANY PLATFORMS DOES OUR RUMMY GAME SUPPORT?"
       }
     ],
-    description: "Our Online Rummy Game is compatible with all android, web, desktop, mobile, iOS platforms. We provide rummy games suitable for both Android and iOS operating systems. You can play without any hassle on any platform.",
+    description: "Mobzway program for rummy games supports all top platforms, so allowing maximum reach and user involvement.",
     platformGrid: [
       {
         image: "https://beta.mobzway.com/assets/images/rummy-game-development/1-01.webp",
@@ -124,29 +125,67 @@ const platformItems = [
 ]
 
 const featuresItems = [
-    {
-      title: "What features of rummy game app are developed by us?",
-      description: "We provide all types of features of Rummy Game. The features developed by us are rewards, tournaments, a loyalty program, and an easy money withdrawal process. Besides the attractive interface, attractive design, 24hours back office support, certified games, anti-fraud system, multilingual, these are also provided by us."
-    }
-]
-
-const chooseTitle = [
   {
-    title: "Why Choose Mobzway As Your Rummy Game Development Company",
-    description: "Clients choose Mobzway for Rummy Game Development for several reasons, primarily due to our exceptional software offerings. Our unique software stands out due to its robust architecture, heightened security measures, compatibility across various platforms, and cutting-edge technology. Mobzway Technologies has emerged as a trailblazer in rummy game development, surpassing standard game products by providing advanced rummy development solutions. We prioritize delivering top-notch services to meet our clients' strategic goals and service plans. Our gaming products feature top-tier attributes and functionality, offering users a lifelike experience. With a substantial base of satisfied clients who consistently praise our applications for their outstanding quality and seamless performance, Mobzway has established itself as a prominent player in the game development industry. Our team includes a pool of gaming experts and specialists, including software developers, graphic designers, animators, and quality analysts. Thanks to their expertise, we deliver flawless rummy mobile applications and development services, complemented by post-development technical support."
+    title: "What features define our Rummy Game App?",
+    description: "We provide a comprehensive gaming experience with features focused on gameplay, user engagement, administration, and security:",
+    sections: [
+      {
+        title: "Fundamental Gameplay",
+        points: [
+          "Seamless drag-and-drop controls",
+          "AI-based auto-play when a disconnection occurs",
+          "Playable tables in real time",
+          "Chat and emojis inside the game"
+        ]
+      },
+      {
+        title: "User Engagement Features",
+        points: [
+          "Daily login prizes",
+          "Leader boards and success stories",
+          "Contests and competitions",
+          "Refer and earn schemes"
+        ]
+      },
+      {
+        title: "Admin Panel Features",
+        points: [
+          "User and game table handling",
+          "Dashboard for revenue and analytics",
+          "Anti-cheat systems and fraud detection",
+          "Control for push notifications"
+        ]
+      },
+      {
+        title: "Technical & Security",
+        points: [
+          "RNG-certified gaming",
+          "Complete encryption from end to end",
+          "KYC and age confirming",
+          "Support for several languages and currencies"
+        ]
+      }
+    ]
   }
 ]
 
+// const chooseTitle = [
+//   {
+//     title: "Why Choose Mobzway As Your Rummy Game Development Company",
+//     description: "Clients choose Mobzway for Rummy Game Development for several reasons, primarily due to our exceptional software offerings. Our unique software stands out due to its robust architecture, heightened security measures, compatibility across various platforms, and cutting-edge technology. Mobzway Technologies has emerged as a trailblazer in rummy game development, surpassing standard game products by providing advanced rummy development solutions. We prioritize delivering top-notch services to meet our clients' strategic goals and service plans. Our gaming products feature top-tier attributes and functionality, offering users a lifelike experience. With a substantial base of satisfied clients who consistently praise our applications for their outstanding quality and seamless performance, Mobzway has established itself as a prominent player in the game development industry. Our team includes a pool of gaming experts and specialists, including software developers, graphic designers, animators, and quality analysts. Thanks to their expertise, we deliver flawless rummy mobile applications and development services, complemented by post-development technical support."
+//   }
+// ]
+
 const hireTitle = [
   {
-    title: "How to Hire Rummy Game App Developers?"
+    title: "WHY HAVE YOUR RUMMY GAME FROM MOBZWAY?"
   }
 ]
 
 const standoutTitle = [
   {
     title: "What Makes Us Stand-out?",
-    description: "If you are looking for the best rummy game developers, Mobzway’s developers make your iGaming products completely different from others. You look out which technical aspects make your gaming solutions unique."
+    description: "Our business-centric approach lets us match game elements to your monetising objectives. Get your game app ready in weeks, not months to accelerate time-to- market."
   }
 ]
 
@@ -222,142 +261,148 @@ const demoItems = [
   }
 ]
 
+const faqAccordionData = [
+  {
+    title: "Is Rummy an Indian Game?",
+    description: "Yes, it is an Indian game. It has been played for many decades now and it is also known as 'Paplu' in India."
+  },
+  {
+    title: "How many users can your rummy game accommodate?",
+    description: "There is no limitation in the number of users as it is a cloud-based auto-scalable solution. As per our tested data, it can accommodate 1 lakh or more concurrent players"
+  },
+  {
+    title: "Is Rummy Legal in India?",
+    description: "Yes, rummy is legal in India, and the Supreme Court of India declared that it is a game of skill."
+  },
+  {
+    title: "Do you provide a Rummy website as well as a rummy app?",
+    description: "Yes, we provide a rummy website also. We offer cross-browser and cross-platform supportable games for the web and application."
+  },
+  {
+    title: "Is your rummy game app accessible on all mobile devices?",
+    description: "Our rummy game app is accessible on all mobile devices like iOS, Android."
+  },
+  {
+    title: "What is the estimated time to develop a rummy game app & website?",
+    description: "Mobzway's Rummy game development experts take approximately six months to 1 year to develop a rummy game app and website."
+  }
+]
+
+const technicalAccordionData = [
+  {
+    title: "How many rummy game variations are provided by Mobzway?",
+    description: "We are offering Point Rummy, 101 and 201 Pool Rummy, Deals Rummy with 2 and 6 players table along with different kinds of tournaments."
+  },
+  {
+    title: "What are the requirements to get started on a rummy website?",
+    description: "As Rummy is a Game of Skill, there is no need for any license or legal approval or any other Govt approval. You can just set up your business and start running the game."
+  },
+  {
+    title: "Which Country has the most Rummy Game Players?",
+    description: "When it comes to rummy games, India serves around 76% of its total traffic and every 4 out of 10 card game players prefer playing this game of cards."
+  },
+  {
+    title: "How Many Jokers are there in Rummy?",
+    description: "There are 5 Joker cards in the game, with players being able to use four of them. One Joker is turned up crosswise under the closed deck, visible to all players. In the following way, this card determines an additional set of jokers for that hand: Regardless of color, the rank is the same."
+  },
+  {
+    title: "Which Technology is Best for Rummy Game Development?",
+    description: "It depends on the usability. For the browser-based game, HTML5 is best. For Mobile apps, Unity is the best. The best options will be a fast & secure game engine and back-office Java, PHP, Nodejs, and NoSQL."
+  },
+  {
+    title: "How can you help me with Rummy website Development?",
+    description: "You just have to contact us and tell us your requirements and features you want and leave rest on us. Our customized dedicated team will contact you and therefore will work on the requirements."
+  },
+  {
+    title: "Will you manage payment gateway integration, or do I have to take care of it?",
+    description: "We will take care of the payment gateway integration, which includes instant deposit & withdrawal through UPI, Paytm, Other Wallets, Debit Card, Credit card, Net banking, etc."
+  }
+]
+
 
 const RummyGame = () => {
-  const [showMore, setShowMore] = useState(false)
-  const [activeAccordion, setActiveAccordion] = useState(null)
+  // const [showMore, setShowMore] = useState(false)
 
-  const toggleReadMore = () => {
-    setShowMore(!showMore);
-  }
+  // const toggleReadMore = () => {
+  //   setShowMore(!showMore);
+  // }
 
-  const toggleAccordion = (index) => {
-    setActiveAccordion(activeAccordion === index ? null : index);
-  }
 
   const aboutGrid = [
     {
       image: "https://beta.mobzway.com/assets/images/rummy-game-development/point-rummy.webp",
-      title: "Point Rummy",
-      description: "13 cards point rummy played between 2-6 players with single or double deck."
+      title: "Rummy Points",
+      description: " a variation fast-paced in which every point has a predefined value.  The first declaring player gains by using appropriate sets and sequences."
     },
     {
       image: "https://beta.mobzway.com/assets/images/rummy-game-development/pool-rummy.webp",
-      title: "Pool Rummy",
-      description: "For the lovers of pool rummy, our game software offers 101 & 201 pool games."
+      title: " Rummy in Pools",
+      description: " Individuals add chips to a pool.  Being the last person standing after removing others depending on points is the aim."
     },
     {
       image: "https://beta.mobzway.com/assets/images/rummy-game-development/deal-rummy.webp",
-      title: "Deal Rummy",
-      description: "The deal rummy game offered by us, can be configured for multiple deals with different entry fees."
-    }
+      title: "Rummy Dealings",
+      description: " Players battle throughout a set deal count.  The one with the most chips in the end takes home.  "
+    },
+    {
+      image: "https://ahoygamesdotcom.b-cdn.net/wp-content/uploads/2022/05/Icon_GinRummy_1024_rounded.png",
+      title: "Rummy of Gin",
+      description: " Popular in Western markets, Gin Rummy concentrates on creating melds and a low deadwood point count."
+    },
+    {
+      image: "https://play-lh.googleusercontent.com/YuPVFdbx2oc0dz0m8tEHWT1aPqkccJ4qZHIu4iH5fVsXnKbUJ-DyuUA1flhAuhI5TA",
+      title: "Indian Rummy (13-Card Game)",
+      description: "Often favoured in the Indian gaming scene, the traditional form of rummy was with 13 cards."
+    },
   ]
 
-  const featuresGrid = [
-    {
-      image: "https://beta.mobzway.com/assets/images/rummy-game-development/r04.webp",
-      title: "Tournaments",
-      description: "Game tournaments offer better competitiveness among players which helps to get & retain players."
-    },
-    {
-      image: "https://beta.mobzway.com/assets/images/rummy-game-development/r05.webp",
-      title: "Private Table",
-      description: "To let your players enjoy their favorite rummy game with friends or family, we offer private tables."
-    },
-    {
-      image: "https://beta.mobzway.com/assets/images/rummy-game-development/r06.webp",
-      title: "Multi-Language",
-      description: "We also develop an online rummy website and app that support multiple regional languages for offering a better game playing experience."
-    },
-    {
-      image: "https://beta.mobzway.com/assets/images/rummy-game-development/r07.webp",
-      title: "Rewards & Loyalty",
-      description: "Rummy games that we develop come with rewards & loyalty features so that you have an option to incentivize the players and increase engagement."
-    },
-    {
-      image: "https://beta.mobzway.com/assets/images/rummy-game-development/r08.webp",
-      title: "Back Office & CRM",
-      description: "For easy business management, we provide a feature-rich back office along with CRM."
-    },
-    {
-      image: "https://beta.mobzway.com/assets/images/rummy-game-development/r09.webp",
-      title: "RNG Certified Games",
-      description: "To offer a fair gaming experience to the player, our developed rummy game uses the best RNG algorithm which can be certified."
-    },
-    {
-      image: "https://beta.mobzway.com/assets/images/rummy-game-development/r10.webp",
-      title: "Anti Fraud System",
-      description: "Our rummy game app and website feature robust security systems to keep gaming and business activities free from fraud."
-    },
-    {
-      image: "https://beta.mobzway.com/assets/images/rummy-game-development/r11.webp",
-      title: "Responsible Gaming",
-      description: "We at Mobzway promote responsible gaming by implementing different checkpoints on player's daily deposit & spending."
-    },
-    {
-      image: "https://beta.mobzway.com/assets/images/rummy-game-development/r12.webp",
-      title: "Payment Security",
-      description: "Our rummy software supports most of the payment gateways, which can facilitate deposit & withdraw through different wallets & cards."
-    }
-  ]
-
-  const faqAccordionData = [
-    {
-      title: "Is Rummy an Indian Game?",
-      description: "Yes, it is an Indian game. It has been played for many decades now and it is also known as 'Paplu' in India."
-    },
-    {
-      title: "How many users can your rummy game accommodate?",
-      description: "There is no limitation in the number of users as it is a cloud-based auto-scalable solution. As per our tested data, it can accommodate 1 lakh or more concurrent players"
-    },
-    {
-      title: "Is Rummy Legal in India?",
-      description: "Yes, rummy is legal in India, and the Supreme Court of India declared that it is a game of skill."
-    },
-    {
-      title: "Do you provide a Rummy website as well as a rummy app?",
-      description: "Yes, we provide a rummy website also. We offer cross-browser and cross-platform supportable games for the web and application."
-    },
-    {
-      title: "Is your rummy game app accessible on all mobile devices?",
-      description: "Our rummy game app is accessible on all mobile devices like iOS, Android."
-    },
-    {
-      title: "What is the estimated time to develop a rummy game app & website?",
-      description: "Mobzway's Rummy game development experts take approximately six months to 1 year to develop a rummy game app and website."
-    }
-  ]
-  
-  const technicalAccordionData = [
-    {
-      title: "How many rummy game variations are provided by Mobzway?",
-      description: "We are offering Point Rummy, 101 and 201 Pool Rummy, Deals Rummy with 2 and 6 players table along with different kinds of tournaments."
-    },
-    {
-      title: "What are the requirements to get started on a rummy website?",
-      description: "As Rummy is a Game of Skill, there is no need for any license or legal approval or any other Govt approval. You can just set up your business and start running the game."
-    },
-    {
-      title: "Which Country has the most Rummy Game Players?",
-      description: "When it comes to rummy games, India serves around 76% of its total traffic and every 4 out of 10 card game players prefer playing this game of cards."
-    },
-    {
-      title: "How Many Jokers are there in Rummy?",
-      description: "There are 5 Joker cards in the game, with players being able to use four of them. One Joker is turned up crosswise under the closed deck, visible to all players. In the following way, this card determines an additional set of jokers for that hand: Regardless of color, the rank is the same."
-    },
-    {
-      title: "Which Technology is Best for Rummy Game Development?",
-      description: "It depends on the usability. For the browser-based game, HTML5 is best. For Mobile apps, Unity is the best. The best options will be a fast & secure game engine and back-office Java, PHP, Nodejs, and NoSQL."
-    },
-    {
-      title: "How can you help me with Rummy website Development?",
-      description: "You just have to contact us and tell us your requirements and features you want and leave rest on us. Our customized dedicated team will contact you and therefore will work on the requirements."
-    },
-    {
-      title: "Will you manage payment gateway integration, or do I have to take care of it?",
-      description: "We will take care of the payment gateway integration, which includes instant deposit & withdrawal through UPI, Paytm, Other Wallets, Debit Card, Credit card, Net banking, etc."
-    }
-  ]
+  // const featuresGrid = [
+  //   {
+  //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r04.webp",
+  //     title: "Tournaments",
+  //     description: "Game tournaments offer better competitiveness among players which helps to get & retain players."
+  //   },
+  //   {
+  //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r05.webp",
+  //     title: "Private Table",
+  //     description: "To let your players enjoy their favorite rummy game with friends or family, we offer private tables."
+  //   },
+  //   {
+  //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r06.webp",
+  //     title: "Multi-Language",
+  //     description: "We also develop an online rummy website and app that support multiple regional languages for offering a better game playing experience."
+  //   },
+  //   {
+  //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r07.webp",
+  //     title: "Rewards & Loyalty",
+  //     description: "Rummy games that we develop come with rewards & loyalty features so that you have an option to incentivize the players and increase engagement."
+  //   },
+  //   {
+  //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r08.webp",
+  //     title: "Back Office & CRM",
+  //     description: "For easy business management, we provide a feature-rich back office along with CRM."
+  //   },
+  //   {
+  //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r09.webp",
+  //     title: "RNG Certified Games",
+  //     description: "To offer a fair gaming experience to the player, our developed rummy game uses the best RNG algorithm which can be certified."
+  //   },
+  //   {
+  //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r10.webp",
+  //     title: "Anti Fraud System",
+  //     description: "Our rummy game app and website feature robust security systems to keep gaming and business activities free from fraud."
+  //   },
+  //   {
+  //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r11.webp",
+  //     title: "Responsible Gaming",
+  //     description: "We at Mobzway promote responsible gaming by implementing different checkpoints on player's daily deposit & spending."
+  //   },
+  //   {
+  //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r12.webp",
+  //     title: "Payment Security",
+  //     description: "Our rummy software supports most of the payment gateways, which can facilitate deposit & withdraw through different wallets & cards."
+  //   }
+  // ]
 
   return (
     <div className='rummy-game'>
@@ -387,6 +432,8 @@ const RummyGame = () => {
           </div>
           ))}
         </div>
+
+        <p className='about-rummy-desc'>Designed with user experience, fairness, and engagement in mind, every version fits mobile and web platforms.</p>
       </div>
 
       <div className='solutions-rummy-section'>
@@ -399,24 +446,24 @@ const RummyGame = () => {
             <img src="https://beta.mobzway.com/assets/images/rummy-game-development/rummy-game-development-solutions%201.webp" alt="" />
           </div>
           <div className='solutions-desc-container'>
-            <p className='solutions-desc'>
-                  Mobzway stands as a leading Rummy Game Development Company in India, known for delivering
-                  exceptional rummy game solutions. Our experienced rummy game developers excel at creating visually
-                  stunning and feature-rich rummy games. We're dedicated to propelling your online rummy game business
-                  to new heights. With ready-to-use rummy game apps for iOS, Android, and more, we bring over 5 years
-                  of expertise and collaborative experience to the table. Mobzway holds a prominent position in the
-                  online game development industry, and our adept team is with you every step of the way in your rummy
-                  app development journey.
+            <div className='solutions-desc'>
+                  <span>We provide complete online rummy game solutions covering:</span>
                   <br/><br/>
-                  Mobzway, a prominent Rummy Game Development Company in India, caters to both web and mobile
-                  platforms. We blend user experience principles with user-centered design, seamlessly integrating
-                  strategy, design, and development. With a strong focus on quality and collaboration, we've built a
-                  vast base of satisfied clients worldwide. Our primary aim is to provide all the essential modules
-                  required to run the game efficiently and securely for a large player base. We ensure your gaming
-                  platform stands out in a competitive landscape. As our customer, you receive nothing short of the
-                  best rummy game application and website.
+                  <ul>
+                    <li>Custom game development based on your company's specifications for UI/UX, game mechanics, and branding.</li>
+                    <br/>
+                    <li>White Label Solutions: Rapid go-to-market, capable, ready-to-launch rummy platforms.</li>
+                    <br/>
+                    <li>KYC modules, wallets, and safe payment gates all integrate real money.</li>
+                    <br/>
+                    <li>Android, iOS, and web single code bases are compatible across platforms.</li>
+                    <br/>
+                    <li>Compliance with international guidelines for random number generation and game fairness guarantees RNG Certification & Fair Play.</li>
+                    <br/>
+                    <li> Strong backend for user management, game tracking, income, and security tracking in Admin & Analytics Panel.</li>
+                  </ul>
                   <br/><br/>
-                  <span className={`solutions-desc-more ${showMore ? 'show' : ''}`}>
+                  {/* <span className={`solutions-desc-more ${showMore ? 'show' : ''}`}>
                       Our skilled rummy game developers specialize in creating intuitive UI for
                       multiplayer rummy game apps and websites. They design game engines to facilitate UI development
                       and actively craft protocols for games. We deliver web and mobile games with enticing features
@@ -431,11 +478,11 @@ const RummyGame = () => {
                       the rummy game application and its users.<br/><br/>
                       Should you encounter any hiccups or need assistance with understanding the game or any
                       back-office features, the Mobzway team is just one click away. We're here to help!
-                  </span>
-            </p>
-            <button onClick={toggleReadMore}>
+                  </span> */}
+            </div>
+            {/* <button onClick={toggleReadMore}>
               {showMore ? 'Read Less' : 'Read More'}
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
@@ -443,21 +490,35 @@ const RummyGame = () => {
       <ContactBanner contactItems={contactData} />
 
       <PlatformSection platformItems={platformItems}/>
-      
-      <div className='features-section'>
-        <FeaturesHeader featuresText={featuresItems} />
-        <div className='features-grid'>
-        {featuresGrid.map((item, index) => (
-          <div className='features-grid-item' key={index}>
-            <div className='features-grid-image-title-wrap'>
-              <img src={item.image} alt="" />
-              <h3>{item.title}</h3>
-            </div>
-            <p>{item.description}</p>
+
+      <div className="features-section">
+        <div className="features-container">
+          <div className="features-header">
+            <FeaturesHeader featuresText={[{ title: featuresItems[0].title }]} />
+            <p className="features-description">{featuresItems[0].description}</p>
           </div>
-          ))}
+          
+          <div className="features-grid">
+            {featuresItems[0].sections.map((section, index) => (
+              <div key={index} className="feature-category">
+                <div className="feature-category-header">
+                  <h3>{section.title}</h3>
+                  <div className="category-line"></div>
+                </div>
+                <div className="feature-points">
+                  {section.points.map((point, pointIndex) => (
+                    <div key={pointIndex} className="feature-point">
+                      <span className="point-bullet"></span>
+                      <p>{point}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
+
 
       <div className='solutions-rummy-section'>
         <div className='solutions-rummy-top'>
@@ -466,13 +527,26 @@ const RummyGame = () => {
 
         <div className='solutions-rummy-bottom'>
           <div className='solutions-desc-container'>
-            <p className='solutions-desc'>
+            <div className='solutions-desc'>
             <br/><br/>
-            Your quest for top-tier rummy game development ends here! Hire a skilled rummy game developer who will oversee end-to-end rummy game app development, propelling your online game business forward. Our highly qualified and dedicated rummy card game app developers work in tandem with designers, artists, programmers, and other teammates to create a highly engaging rummy game application or website, incorporating state-of-the-art gaming technology. 
-            <br/> <br/> With extensive experience in developing online rummy games, our gaming veterans deliver innovative and visually appealing games that provide sheer joy and entertainment to players, bridging the gap between virtual and real gameplay. Our dedicated rummy game developers create games that entice online players to wager more, resulting in higher investment returns. 
-            <br/> <br/> As a proven leader in the rummy game development industry in India, USA, and UK, our game developers have successfully served clients, aiding in the expansion of their online game business. Our talented mobile game developers specialize in crafting native mobile app solutions for platforms like Android and iOS. Additionally, they can develop easily downloadable game software for Windows and Mac desktop devices. For those aiming to launch their rummy game website, our developers create HTML5-based websites, ensuring responsiveness across multiple devices and seamless operation on all major browsers.  
-            <br/> <br/>Don't hesitate. Connect with us now to hire the best rummy game developer!
-            </p>
+            <span>Focussing on real-money and casual card games, Mobzway is among the top game developers in India.  This is the reason our customers chose us: </span>
+            <br/><br/>
+            <ul>
+              <li>More than one hundred successful game introductions</li>
+              <br/>
+              <li>Specialized team of game designers, developers, and QA professionals</li>
+              <br/>
+              <li>Integration of wallets and safe payments</li>
+              <br/>
+              <li>Customized participation strategies</li>
+              <br/>
+              <li>Reasonably priced, scalable remedies</li>
+              <br/>
+              <li>24/7 technical maintenance and support</li>
+              <br/>
+              <li> We work with you to ensure that your game is successful, transcending mere coding.</li>
+            </ul>
+            </div>
             <button>
               REQUEST A QUOTE
             </button>
@@ -483,7 +557,7 @@ const RummyGame = () => {
         </div>
       </div>
         
-      <div className='solutions-rummy-section bg-1'>
+      {/* <div className='solutions-rummy-section bg-1'>
         <div className='solutions-rummy-top'>
           <FeaturesHeader featuresText={chooseTitle}/>
         </div>
@@ -512,55 +586,49 @@ const RummyGame = () => {
             <img src="https://beta.mobzway.com/assets/images/rummy-game-development/why_choose_us_rummy.webp" alt="" style={{ width: '500px', paddingTop: '30px'}}/>
           </div>
         </div>
-      </div>
+      </div> */}
       
-      <div className='standout-section'>
-          <FeaturesHeader featuresText={standoutTitle} />
-          
-          <div className='standout-bottom'>
-              <div className='standout-accordion'>
-                  <div className='accordion-item'>
-                      <div className='accordion-header' onClick={() => toggleAccordion(0)}>
-                          <h2>Architecture</h2>
-                          <i className={`fas fa-plus ${activeAccordion === 0 ? 'active' : ''}`}></i>
-                      </div>
-                      <div className={`accordion-content ${activeAccordion === 0 ? 'active' : ''}`}>
-                          <p>Our game designers work for hours to give a perfect look to the rummy game. So we provide you with high-quality architecture which hypnotizes you at first glance.</p>
-                      </div>
-                  </div>
-          
-                  <div className='accordion-item'>
-                      <div className='accordion-header' onClick={() => toggleAccordion(1)}>
-                          <h2>Security</h2>
-                          <i className={`fas fa-plus ${activeAccordion === 1 ? 'active' : ''}`}></i>
-                      </div>
-                      <div className={`accordion-content ${activeAccordion === 1 ? 'active' : ''}`}>
-                          <p>If you are thinking of it, is it safe to invest in the rummy game? Don't worry! We provide you with the ultimate security and loyalty program. We have an anti-fraud system, so nothing can be harmful if you play in our rummy game software.</p>
-                      </div>
-                  </div>
-          
-                  <div className='accordion-item'>
-                      <div className='accordion-header' onClick={() => toggleAccordion(2)}>
-                          <h2>Platforms</h2>
-                          <i className={`fas fa-plus ${activeAccordion === 2 ? 'active' : ''}`}></i>
-                      </div>
-                      <div className={`accordion-content ${activeAccordion === 2 ? 'active' : ''}`}>
-                          <p>You can play rummy on any device through our rummy game software. This is one of the key points to choose us. Our rummy game is suitable for cross-browser and cross-platform. You can customize your rummy game according to the platform.</p>
-                      </div>
-                  </div>
-          
-                  <div className='accordion-item'>
-                      <div className='accordion-header' onClick={() => toggleAccordion(3)}>
-                          <h2>Technology</h2>
-                          <i className={`fas fa-plus ${activeAccordion === 3 ? 'active' : ''}`}></i>
-                      </div>
-                      <div className={`accordion-content ${activeAccordion === 3 ? 'active' : ''}`}>
-                          <p>We use advanced and cutting-edge technology to develop the rummy game software. We add UI technology to allow playing multiplayer games. We develop a protocol as well for rummy games.</p>
-                      </div>
-                  </div>
-              </div>
-              <img src="https://beta.mobzway.com/assets/images/rummy-game-development/Architecture.webp" alt="" />
+      <div className="standout-section">
+        <div className="standout-container">
+          <div className="standout-header">
+            <FeaturesHeader featuresText={[{ title: standoutTitle[0].title }]} />
+            <p className="standout-description">{standoutTitle[0].description}</p>
           </div>
+          
+          <div className="standout-grid">
+            <div className="standout-card">
+              <div className="card-icon">
+                <i className="fas fa-rocket"></i>
+              </div>
+              <h3>Fast Development</h3>
+              <p>Get your game to market quickly with our rapid development process</p>
+            </div>
+            
+            <div className="standout-card">
+              <div className="card-icon">
+                <i className="fas fa-shield-alt"></i>
+              </div>
+              <h3>Secure Platform</h3>
+              <p>Built with advanced security measures and fraud prevention systems</p>
+            </div>
+            
+            <div className="standout-card">
+              <div className="card-icon">
+                <i className="fas fa-users"></i>
+              </div>
+              <h3>User-Centric</h3>
+              <p>Designed with player experience and engagement in mind</p>
+            </div>
+            
+            <div className="standout-card">
+              <div className="card-icon">
+                <i className="fas fa-cogs"></i>
+              </div>
+              <h3>Customizable</h3>
+              <p>Flexible solutions that adapt to your business needs</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <ContactBanner contactItems={requestItems} />
@@ -570,7 +638,7 @@ const RummyGame = () => {
           <div key={index} className='question-container'>
             <FeaturesHeader 
               featuresText={[question]} 
-              titleStyle={{ fontSize: '20px' }}
+              titleStyle={{ fontSize: '32px'}}
             />
           </div>
         ))}
@@ -580,35 +648,13 @@ const RummyGame = () => {
         <FeaturesHeader featuresText={faqTitle} />
 
         <div className='faq-accordion-container'>
-          <div className='standout-accordion'>
-          {faqAccordionData.map((item, index) => (
-            <div className='accordion-item' key={index}>
-              <div className='accordion-header' onClick={() => toggleAccordion(index + 10)}>
-                <h2 className='faq-accordion-title'>{item.title}</h2>
-                <i className={`fas fa-plus ${activeAccordion === index + 10 ? 'active' : ''}`}></i>
-              </div>
-              <div className={`accordion-content ${activeAccordion === index + 10 ? 'active' : ''}`}>
-                <p>{item.description}</p>
-              </div>
-            </div>
-          ))}
-          </div>
+          
+          <AccordionSection data={faqAccordionData} />
 
-          <div className='standout-accordion'>
-          {technicalAccordionData.map((item, index) => (
-            <div className='accordion-item' key={index}>
-              <div className='accordion-header' onClick={() => toggleAccordion(index + 20)}>
-                <h2 className='faq-accordion-title'>{item.title}</h2>
-                <i className={`fas fa-plus ${activeAccordion === index + 20 ? 'active' : ''}`}></i>
-              </div>
-              <div className={`accordion-content ${activeAccordion === index + 20 ? 'active' : ''}`}>
-                <p>{item.description}</p>
-              </div>
-            </div>
-          ))}
-          </div>
+          <AccordionSection data={technicalAccordionData} />
+
+          
         </div>
-        <button className='faq-btn'><span>ASK A QUESTION</span></button>
       </div>
 
       <ClientSection />
