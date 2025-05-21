@@ -44,13 +44,11 @@
     height: auto;
     margin: 0 auto;
     transition: transform 0.5s ease;
-    filter: grayscale(100%);
 }
 
 .payments-icons-1 img:hover,
 .payments-icons-2 img:hover {
     transform: translateY(-5px);
-    filter: grayscale(0%);
 }
 
 @media screen and (max-width: 1200px) {
