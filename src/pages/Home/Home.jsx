@@ -23,7 +23,7 @@ const Home = () => {
                     <img src="https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/EGR-enterra.png" alt="" />
                 </div>
 
-                <p className='hero-desc'> Mobzway offers its innovative and world-class version of an extremely popular casino card game played throughout the world — Internet Poker. Poker is one of the most intellectual games among skill-based games. Mobzway Poker is a platform for launching your branded online poker room.      </p>
+                <p className='hero-desc'> Gamzway offers its innovative and world-class version of an extremely popular casino card game played throughout the world — Internet Poker. Poker is one of the most intellectual games among skill-based games. Gamzway Poker is a platform for launching your branded online poker room.      </p>
             </div>
         </div>
 
@@ -148,12 +148,12 @@ const Home = () => {
 
                 <div className='utps-block'>
                     <h3>CUSTOMIZATION</h3>
-                    <p>As a poker development company, we can <span>customize</span> your online poker room the way you desire. You can get an incredible player’s avatar, skin or any other desired feature. With us, you can also get a unique website for your Internet Poker. We have almost 20 years of experience in poker software development. Our internet poker software meets the demands of each Customer. At Mobzway Poker, you can play for real or <span>play money</span>. Challenge yourself! Now with Mobzway Poker software, it becomes much easier to run your own Poker Business and to create your own Poker Imperia — the one you have always dreamt about!</p>
+                    <p>As a poker development company, we can <span>customize</span> your online poker room the way you desire. You can get an incredible player’s avatar, skin or any other desired feature. With us, you can also get a unique website for your Internet Poker. We have almost 20 years of experience in poker software development. Our internet poker software meets the demands of each Customer. At Gamzway Poker, you can play for real or <span>play money</span>. Challenge yourself! Now with Gamzway Poker software, it becomes much easier to run your own Poker Business and to create your own Poker Imperia — the one you have always dreamt about!</p>
                 </div>
 
                 <div className='utps-block'>
                     <h3>PRICE</h3>
-                    <p>You purchase Mobzway Poker software without any royalties or post-sale fees. As game producers, we are open to discussing different <span>purchase schemes</span> with you. Once you buy a licence for one server installation, you will be able to independently run the software on your own server.</p>
+                    <p>You purchase Gamzway Poker software without any royalties or post-sale fees. As game producers, we are open to discussing different <span>purchase schemes</span> with you. Once you buy a licence for one server installation, you will be able to independently run the software on your own server.</p>
                 </div>
 
                 <div className='utps-block'>

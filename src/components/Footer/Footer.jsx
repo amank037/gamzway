@@ -10,7 +10,7 @@ const Footer = () => {
                 <img className='footer-left-logo' src={logo} alt="" />
                 
                 <div className='footer-left-copyright'>
-                    <p>© 2015-2021 <span>Mobzway Technologies.</span></p>
+                    <p>© 2015-2021 <span>Gamzway Technologies.</span></p>
                     <p>All rights reserved</p>
                 </div>
 
@@ -147,7 +147,7 @@ const Footer = () => {
     //         <div className='footer-copyright'>
     //             <div>
     //                 <p>© 2015 - 2021 By 
-    //                 <a href="https://www.mobzway.com/">Mobzway Technologies</a>. 
+    //                 <a href="https://www.mobzway.com/">Gamzway Technologies</a>. 
     //                 All Rights Reserved. | 
     //                 <a href="https://www.mobzway.com/quality-policy/">Privacy Policy</a> | 
     //                 <a href="https://www.mobzway.com/terms-conditions/">Terms & Conditions</a>

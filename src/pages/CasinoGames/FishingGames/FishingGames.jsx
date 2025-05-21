@@ -5,7 +5,7 @@ import AchievementsBanner from "../../../components/AchievementsBanner/Achieveme
 const landingItems = [
   {
     title: "FISHING GAMES DEVELOPMENT COMPANY",
-    description: "Mobzway brings the excitement of arcade-style casino fishing games to life with stunning visuals and smooth gameplay. Our fishing games combine skill and luck, offering players immersive experiences and rewarding payouts. Designed for engagement and monetization, they add a fun, action-packed dimension to any online gaming platform.",
+    description: "Gamzway brings the excitement of arcade-style casino fishing games to life with stunning visuals and smooth gameplay. Our fishing games combine skill and luck, offering players immersive experiences and rewarding payouts. Designed for engagement and monetization, they add a fun, action-packed dimension to any online gaming platform.",
     button: "REQUEST A QUOTE",
   }
 ]

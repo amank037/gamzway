@@ -14,14 +14,14 @@ const rummyCarouselData = [
   {
     title: "Rummy Game Development Company",
     description:
-      "Are you in search of the top rummy game development company? Mobzway specializes in rummy game development, offering comprehensive solutions for creating the best online rummy game app and website.",
+      "Are you in search of the top rummy game development company? Gamzway specializes in rummy game development, offering comprehensive solutions for creating the best online rummy game app and website.",
     image: "https://beta.mobzway.com/assets/images/rummy-software/Rummy-07.webp",
     isMainTitle: true,
   },
   {
     title: "A23 Rummy",
     description:
-      "Want to build app like A23 Rummy game? Mobzway specializes in rummy game development, offering a comprehensive range of solutions for creating the best online rummy game app and website.",
+      "Want to build app like A23 Rummy game? Gamzway specializes in rummy game development, offering a comprehensive range of solutions for creating the best online rummy game app and website.",
     image: "https://beta.mobzway.com/assets/images/rummy-software/Rummy-03.webp",
   },
   {
@@ -53,7 +53,7 @@ const rummyCarouselData = [
 const aboutText = [
   {
     title: "RUMMY - A MULTIPLAYER GAME",
-    description: "Rummy  known for its strategic gaming, intense competition, and real-money possibilities, rummy is among the most often played card games in India and worldwide.  Played by millions, rummy has successfully migrated to the digital realm via sophisticated smartphones and online apps. At Mobzway, we assist gaming companies in creating strong, safe, aesthetically pleasing rummy game apps catered to both casual and competitive players.  Our rummy game creation services are built to grow with your ambition, whether your project is starting a business or broadening your gaming portfolio."
+    description: "Rummy  known for its strategic gaming, intense competition, and real-money possibilities, rummy is among the most often played card games in India and worldwide.  Played by millions, rummy has successfully migrated to the digital realm via sophisticated smartphones and online apps. At Gamzway, we assist gaming companies in creating strong, safe, aesthetically pleasing rummy game apps catered to both casual and competitive players.  Our rummy game creation services are built to grow with your ambition, whether your project is starting a business or broadening your gaming portfolio."
   }
 ]
 
@@ -77,7 +77,7 @@ const contactData = [
         title: " Looking for the ideal rummy game application for your company?"
       }
     ],
-    description: "You found the correct location. Using simple design, seamless gameplay, and loyalty-building elements, Mobzway creates rummy game apps that not only draw players but also keep them involved.\n\nOur solutions fit your monetising plan, whether your goals are adverts, real-money games, or in-app purchases.",
+    description: "You found the correct location. Using simple design, seamless gameplay, and loyalty-building elements, Gamzway creates rummy game apps that not only draw players but also keep them involved.\n\nOur solutions fit your monetising plan, whether your goals are adverts, real-money games, or in-app purchases.",
     href: "",
     hrefText: "Contact Us"
   }
@@ -103,7 +103,7 @@ const platformItems = [
         title: "HOW MANY PLATFORMS DOES OUR RUMMY GAME SUPPORT?"
       }
     ],
-    description: "Mobzway program for rummy games supports all top platforms, so allowing maximum reach and user involvement.",
+    description: "Gamzway program for rummy games supports all top platforms, so allowing maximum reach and user involvement.",
     platformGrid: [
       {
         image: "https://beta.mobzway.com/assets/images/rummy-game-development/1-01.webp",
@@ -171,8 +171,8 @@ const featuresItems = [
 
 // const chooseTitle = [
 //   {
-//     title: "Why Choose Mobzway As Your Rummy Game Development Company",
-//     description: "Clients choose Mobzway for Rummy Game Development for several reasons, primarily due to our exceptional software offerings. Our unique software stands out due to its robust architecture, heightened security measures, compatibility across various platforms, and cutting-edge technology. Mobzway Technologies has emerged as a trailblazer in rummy game development, surpassing standard game products by providing advanced rummy development solutions. We prioritize delivering top-notch services to meet our clients' strategic goals and service plans. Our gaming products feature top-tier attributes and functionality, offering users a lifelike experience. With a substantial base of satisfied clients who consistently praise our applications for their outstanding quality and seamless performance, Mobzway has established itself as a prominent player in the game development industry. Our team includes a pool of gaming experts and specialists, including software developers, graphic designers, animators, and quality analysts. Thanks to their expertise, we deliver flawless rummy mobile applications and development services, complemented by post-development technical support."
+//     title: "Why Choose Gamzway As Your Rummy Game Development Company",
+//     description: "Clients choose Gamzway for Rummy Game Development for several reasons, primarily due to our exceptional software offerings. Our unique software stands out due to its robust architecture, heightened security measures, compatibility across various platforms, and cutting-edge technology. Gamzway Technologies has emerged as a trailblazer in rummy game development, surpassing standard game products by providing advanced rummy development solutions. We prioritize delivering top-notch services to meet our clients' strategic goals and service plans. Our gaming products feature top-tier attributes and functionality, offering users a lifelike experience. With a substantial base of satisfied clients who consistently praise our applications for their outstanding quality and seamless performance, Gamzway has established itself as a prominent player in the game development industry. Our team includes a pool of gaming experts and specialists, including software developers, graphic designers, animators, and quality analysts. Thanks to their expertise, we deliver flawless rummy mobile applications and development services, complemented by post-development technical support."
 //   }
 // ]
 
@@ -211,7 +211,7 @@ const questionsData = [
     description: "Here are some points:\nPre-Production: Business Requirement ⇢ Branding Details ⇢ Payment gateway ⇢ Target Audience\n\nProduction: Art Production ⇢ Graphics Integration ⇢ Website & Payment gateway ⇢ Quality Control\n\nPost-Production: Patches & Updates ⇢ Server Maintenance ⇢ Technical Support"
   },
   {
-    title: "How many online rummy game development solutions are provided by Mobzway?",
+    title: "How many online rummy game development solutions are provided by Gamzway?",
     description: "Being the most reputable online rummy game development company, we have provided the solutions at our best. We offer both web and mobile rummy games, payment gateway integration, a user-friendly back end so that the admin can manage the rummy business efficiently, and many more."
   }
 ]
@@ -226,25 +226,25 @@ const productItems = [
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Poker.webp",
     title: "Poker Game Development",
-    description: "Mobzway provides poker game development for all the popular poker games like Texas Hold’em, Omaha, Seven Stud, OFC Poker, and more. Our seasoned game developers utilize cutting-edge gaming technology to offer the player's best poker gaming experience.",
+    description: "Gamzway provides poker game development for all the popular poker games like Texas Hold’em, Omaha, Seven Stud, OFC Poker, and more. Our seasoned game developers utilize cutting-edge gaming technology to offer the player's best poker gaming experience.",
     href: "/skill-games/poker"
   },
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Casino.webp",
     title: "Casino Software",
-    description: "For the online casino game entrepreneurs and businesses, Mobzway offers customized casino game solutions. All the popular casino games like Roulette, Blackjack, Slot, Baccarat, etc. are designed and developed at our gaming studio as per your business needs.",
+    description: "For the online casino game entrepreneurs and businesses, Gamzway offers customized casino game solutions. All the popular casino games like Roulette, Blackjack, Slot, Baccarat, etc. are designed and developed at our gaming studio as per your business needs.",
     href: "/casino-games"
   },
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Teenpatti.webp",
     title: "Teen Patti Game Development",
-    description: "Mobzway offers ready-to-use Teen Patti solutions for business ventures. We build customized solutions for all the variants like Fox,Vintage, and Teen Patti Plus. We provide solutions for all desktop & mobile devices, and web browsers at the best prices.",
+    description: "Gamzway offers ready-to-use Teen Patti solutions for business ventures. We build customized solutions for all the variants like Fox,Vintage, and Teen Patti Plus. We provide solutions for all desktop & mobile devices, and web browsers at the best prices.",
     href: "/game-apis/teen-patti"
   },
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/product_ludo.webp",
     title: "LUDO Game Development",
-    description: "If you are looking forward to acquiring online ludo game solutions, Mobzway Technologies is among the most famous ludo app development companies. We offer both ready-to-live and customized gaming solutions for Android, iOS, Web, and Desktop using HTML 5.",
+    description: "If you are looking forward to acquiring online ludo game solutions, Gamzway Technologies is among the most famous ludo app development companies. We offer both ready-to-live and customized gaming solutions for Android, iOS, Web, and Desktop using HTML 5.",
     href: "/skill-games/ludo"
   },
 ]
@@ -253,7 +253,7 @@ const demoItems = [
   {
     featuresText: [
       {
-        title: "Start your business journey with Mobzway"
+        title: "Start your business journey with Gamzway"
       }
     ],
     description: "Try Our Games, and explore all the features and solutions you need to start, run, and grow your business.",
@@ -286,7 +286,7 @@ const faqAccordionData = [
 
 // const technicalAccordionData = [
 //   {
-//     title: "How many rummy game variations are provided by Mobzway?",
+//     title: "How many rummy game variations are provided by Gamzway?",
 //     description: "We are offering Point Rummy, 101 and 201 Pool Rummy, Deals Rummy with 2 and 6 players table along with different kinds of tournaments."
 //   },
 //   {
@@ -391,7 +391,7 @@ const RummyGame = () => {
   //   {
   //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r11.webp",
   //     title: "Responsible Gaming",
-  //     description: "We at Mobzway promote responsible gaming by implementing different checkpoints on player's daily deposit & spending."
+  //     description: "We at Gamzway promote responsible gaming by implementing different checkpoints on player's daily deposit & spending."
   //   },
   //   {
   //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r12.webp",
@@ -465,15 +465,15 @@ const RummyGame = () => {
                       and actively craft protocols for games. We deliver web and mobile games with enticing features
                       like a highly rewarding loyalty program, daily free tournaments with points, seamless
                       withdrawals, and much more.<br/><br/>
-                      Mobzway's Rummy Game Development team prioritizes user experience, offering a range of features
+                      Gamzway's Rummy Game Development team prioritizes user experience, offering a range of features
                       such as player and game management, virtual money practice for less-experienced players, and the
                       thrill of real-money play for seasoned gamers. In-app deposits provide support for players
                       seeking to boost their levels of experience. We also ensure player confidentiality through the
                       option of private tables. Our games are accessible via mobile applications, websites, and
-                      desktop software. Security is a paramount concern at Mobzway, and we prioritize the safety of
+                      desktop software. Security is a paramount concern at Gamzway, and we prioritize the safety of
                       the rummy game application and its users.<br/><br/>
                       Should you encounter any hiccups or need assistance with understanding the game or any
-                      back-office features, the Mobzway team is just one click away. We're here to help!
+                      back-office features, the Gamzway team is just one click away. We're here to help!
                   </span> */}
             </div>
             {/* <button onClick={toggleReadMore}>
@@ -525,7 +525,7 @@ const RummyGame = () => {
           <div className='solutions-desc-container'>
             <div className='solutions-desc'>
             <br/><br/>
-            <span>Focussing on real-money and casual card games, Mobzway is among the top game developers in India.  This is the reason our customers chose us: </span>
+            <span>Focussing on real-money and casual card games, Gamzway is among the top game developers in India.  This is the reason our customers chose us: </span>
             <br/><br/>
             <ul>
               <li>More than one hundred successful game introductions</li>
@@ -562,7 +562,7 @@ const RummyGame = () => {
           <div className='solutions-desc-container'>
             <br/>
             <br/>
-            <h3>Benefits of Choosing Mobzway for Rummy Game Development Solutions</h3>
+            <h3>Benefits of Choosing Gamzway for Rummy Game Development Solutions</h3>
             <br/>
             <ul >
                 <li>Licensed software with comprehensive legal documentation.</li>

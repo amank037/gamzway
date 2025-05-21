@@ -18,7 +18,7 @@ const testimonials = [
         country: "AUSTRALIA"
     },
     {
-        text: "One of the best online gaming solution providers. One can choose from their range of products and their products are customizable as well. I would like to recommend Mobzway without any reservations.",
+        text: "One of the best online gaming solution providers. One can choose from their range of products and their products are customizable as well. I would like to recommend Gamzway without any reservations.",
         name: "SAUL SMIKET",
         country: "USA"
     },

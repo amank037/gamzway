@@ -5,7 +5,7 @@ import AchievementsBanner from "../../../components/AchievementsBanner/Achieveme
 const landingItems = [
   {
     title: "CASINO API DEVELOPMENT COMPANY",
-    description: "Mobzway’s Casino API offers a powerful solution to integrate a wide range of casino games, including slots, table games, and live dealer experiences. Designed for seamless integration, high performance, and secure transactions, our API enables operators to launch and manage engaging casino platforms with ease and efficiency.",
+    description: "Gamzway’s Casino API offers a powerful solution to integrate a wide range of casino games, including slots, table games, and live dealer experiences. Designed for seamless integration, high performance, and secure transactions, our API enables operators to launch and manage engaging casino platforms with ease and efficiency.",
     button: "REQUEST A QUOTE",
   }
 ]

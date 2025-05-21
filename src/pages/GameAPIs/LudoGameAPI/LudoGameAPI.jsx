@@ -5,7 +5,7 @@ import AchievementsBanner from "../../../components/AchievementsBanner/Achieveme
 const landingItems = [
   {
     title: "LUDO GAME API DEVELOPMENT",
-    description: "Looking for the right Ludo game solution for your business, don't hesitate to connect with Mobzway for professional Ludo game development company. Experience with engaging gameplay and vibrant graphics.",
+    description: "Looking for the right Ludo game solution for your business, don't hesitate to connect with Gamzway for professional Ludo game development company. Experience with engaging gameplay and vibrant graphics.",
     button: "REQUEST A QUOTE",
   }
 ]

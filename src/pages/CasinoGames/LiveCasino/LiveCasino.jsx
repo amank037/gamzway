@@ -22,7 +22,7 @@ const platformItems = [
       {
         image: "https://beta.mobzway.com/assets/images/Native_Mobile.webp",
         title: "NATIVE MOBILE",
-        description: "Mobzway offers game app development services for all mobile devices, compatible with all platforms, our best white label software for android, iOS or windows."
+        description: "Gamzway offers game app development services for all mobile devices, compatible with all platforms, our best white label software for android, iOS or windows."
       },
       {
         image: "https://beta.mobzway.com/assets/images/Mac_PC.webp",
@@ -37,7 +37,7 @@ const productItems = [
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Poker.webp",
     title: "Poker Game Development",
-    description: "Mobzway provides poker game development for all the popular poker games like Texas Hold’em, Omaha, Seven Stud, OFC Poker, and more. Our seasoned game developers utilize cutting-edge gaming technology to offer the player's best poker gaming experience.",
+    description: "Gamzway provides poker game development for all the popular poker games like Texas Hold’em, Omaha, Seven Stud, OFC Poker, and more. Our seasoned game developers utilize cutting-edge gaming technology to offer the player's best poker gaming experience.",
     href: "/skill-games/poker"
   },
   {
@@ -49,13 +49,13 @@ const productItems = [
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Teenpatti.webp",
     title: "Teen Patti Game Development",
-    description: "Mobzway offers ready-to-use Teen Patti solutions for business ventures. We build customized solutions for all the variants like Fox,Vintage, and Teen Patti Plus. We provide solutions for all desktop & mobile devices, and web browsers at the best prices.",
+    description: "Gamzway offers ready-to-use Teen Patti solutions for business ventures. We build customized solutions for all the variants like Fox,Vintage, and Teen Patti Plus. We provide solutions for all desktop & mobile devices, and web browsers at the best prices.",
     href: "/game-apis/teen-patti"
   },
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Casino.webp",
     title: "Casino Software",
-    description: "For the online casino game entrepreneurs and businesses, Mobzway offers customized casino game solutions. All the popular casino games like Roulette, Blackjack, Slot, Baccarat, etc. are designed and developed at our gaming studio as per your business needs.",
+    description: "For the online casino game entrepreneurs and businesses, Gamzway offers customized casino game solutions. All the popular casino games like Roulette, Blackjack, Slot, Baccarat, etc. are designed and developed at our gaming studio as per your business needs.",
     href: "/casino-games"
   },
 ]
@@ -64,7 +64,7 @@ const demoItems = [
   {
     featuresText: [
       {
-        title: "Start your business journey with Mobzway"
+        title: "Start your business journey with Gamzway"
       }
     ],
     description: "Try Our Games, and explore all the features and solutions you need to start, run, and grow your business.",
@@ -76,7 +76,7 @@ const demoItems = [
 const landingItems = [
   {
     title: "LIVE CASINO SOFTWARE PROVIDER",
-    description: "Discover excellence by connecting with the leading global live casino software providers – Mobzway! Contact us now to address all your live casino solutions requirements and receive competitive quotes for game development. Entrust our team of highly skilled gaming software developers to create the ultimate live dealer casino software tailored to your needs. Partner with the premier casino software provider today.",
+    description: "Discover excellence by connecting with the leading global live casino software providers – Gamzway! Contact us now to address all your live casino solutions requirements and receive competitive quotes for game development. Entrust our team of highly skilled gaming software developers to create the ultimate live dealer casino software tailored to your needs. Partner with the premier casino software provider today.",
     button: "REQUEST A DEMO",
   }
 ]

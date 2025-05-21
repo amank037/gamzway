@@ -5,7 +5,7 @@ import AchievementsBanner from "../../../components/AchievementsBanner/Achieveme
 const landingItems = [
   {
     title: "TABLE GAMES DEVELOPMENT COMPANY",
-    description: "Mobzway develops high-quality digital table games like poker, blackjack, roulette, and baccarat. Designed for realism and fairness, our table games combine smooth mechanics with secure RNG systems, providing engaging and competitive experiences that keep players entertained on both desktop and mobile platforms.",
+    description: "Gamzway develops high-quality digital table games like poker, blackjack, roulette, and baccarat. Designed for realism and fairness, our table games combine smooth mechanics with secure RNG systems, providing engaging and competitive experiences that keep players entertained on both desktop and mobile platforms.",
     button: "REQUEST A QUOTE",
   }
 ]

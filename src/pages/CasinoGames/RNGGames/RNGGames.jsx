@@ -5,7 +5,7 @@ import AchievementsBanner from "../../../components/AchievementsBanner/Achieveme
 const landingItems = [
   {
     title: "RNG GAME DEVELOPMENT",
-    description: "Mobzway offers state-of-the-art RNG (Random Number Generator) games, ensuring fair and unpredictable outcomes for slots, casino, and rummy games. Our RNG-certified technology guarantees transparency and trust, delivering thrilling gameplay experiences across platforms while meeting international gaming standards for security and compliance.",
+    description: "Gamzway offers state-of-the-art RNG (Random Number Generator) games, ensuring fair and unpredictable outcomes for slots, casino, and rummy games. Our RNG-certified technology guarantees transparency and trust, delivering thrilling gameplay experiences across platforms while meeting international gaming standards for security and compliance.",
     button: "REQUEST A QUOTE",
   }
 ]

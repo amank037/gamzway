@@ -5,7 +5,7 @@ import AchievementsBanner from "../../../components/AchievementsBanner/Achieveme
 const landingItems = [
   {
     title: "ANDAR BAHAR API DEVELOPMENT COMPANY",
-    description: "Looking for the development of andar bahar game software? Mobzway offers you with a complete andar bahar software solution for all gaming devices, including mobiles, desktops. Also get the best online andar bharat game solution to start your own website for this unique card game. Request for attractive quotes now!",
+    description: "Looking for the development of andar bahar game software? Gamzway offers you with a complete andar bahar software solution for all gaming devices, including mobiles, desktops. Also get the best online andar bharat game solution to start your own website for this unique card game. Request for attractive quotes now!",
     button: "REQUEST A QUOTE",
   }
 ]

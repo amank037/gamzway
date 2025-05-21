@@ -5,7 +5,7 @@ import AchievementsBanner from "../../../components/AchievementsBanner/Achieveme
 const landingItems = [
   {
     title: "POKER GAME API DEVELOPMENT",
-    description: "Want to hire best Poker API provider company, that lets you start your online poker business with top notch technology? Mobzway's Poker API solution is the best fit for you.",
+    description: "Want to hire best Poker API provider company, that lets you start your online poker business with top notch technology? Gamzway's Poker API solution is the best fit for you.",
     button: "REQUEST A QUOTE",
   }
 ]

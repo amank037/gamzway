@@ -12,7 +12,7 @@ import ContactBanner from "../../../components/ContactBanner/ContactBanner"
 const landingItems = [
   {
     title: "SLOT GAME DEVELOPMENT COMPANY",
-    description: "Hire Mobzway, the best slot game development company in India, USA & UK and take a successful leap in the online casino business. No matter if it’s the mobile, desktop or web audience you’re targeting, we offer customized and flexible solutions for all. Get in touch with us to know the most attractive quotes and offers!",
+    description: "Hire Gamzway, the best slot game development company in India, USA & UK and take a successful leap in the online casino business. No matter if it’s the mobile, desktop or web audience you’re targeting, we offer customized and flexible solutions for all. Get in touch with us to know the most attractive quotes and offers!",
     button: "REQUEST A QUOTE",
   }
 ]
@@ -32,12 +32,12 @@ const featuresGrid = [
   {
     image: "https://beta.mobzway.com/assets/images/baccarat02.png",
     title: "Multiplayer Slots",
-    description: "Developed by Mobzway, the slot game software allows the players to go for multiple slots, thus adding more excitement to the games."
+    description: "Developed by Gamzway, the slot game software allows the players to go for multiple slots, thus adding more excitement to the games."
   },
   {
     image: "https://beta.mobzway.com/assets/images/slot03.png",
     title: "Big Jackpots",
-    description: "Slot software solution developed by Mobzway gives the players to go for bigger jackpots and earn more, thus keeping them hooked with the games."
+    description: "Slot software solution developed by Gamzway gives the players to go for bigger jackpots and earn more, thus keeping them hooked with the games."
   },
   {
     image: "https://beta.mobzway.com/assets/images/1_free_spin.png",
@@ -62,7 +62,7 @@ const featuresGrid = [
   {
     image: "https://beta.mobzway.com/assets/images/baccarat08.png",
     title: "Back Office & CRM",
-    description: "Mobzway’s slot game solutions offer distinct and most user-friendly backend management systems and CRM access so that managing the gaming business becomes easy for operators."
+    description: "Gamzway’s slot game solutions offer distinct and most user-friendly backend management systems and CRM access so that managing the gaming business becomes easy for operators."
   },
   {
     image: "https://beta.mobzway.com/assets/images/baccarat09.png",
@@ -90,7 +90,7 @@ const productItems = [
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Poker.webp",
     title: "Poker Game Development",
-    description: "Mobzway provides poker game development for all the popular poker games like Texas Hold’em, Omaha, Seven Stud, OFC Poker, and more. Our seasoned game developers utilize cutting-edge gaming technology to offer the player's best poker gaming experience.",
+    description: "Gamzway provides poker game development for all the popular poker games like Texas Hold’em, Omaha, Seven Stud, OFC Poker, and more. Our seasoned game developers utilize cutting-edge gaming technology to offer the player's best poker gaming experience.",
     href: "/skill-games/poker"
   },
   {
@@ -102,13 +102,13 @@ const productItems = [
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Teenpatti.webp",
     title: "Teen Patti Game Development",
-    description: "Mobzway offers ready-to-use Teen Patti solutions for business ventures. We build customized solutions for all the variants like Fox,Vintage, and Teen Patti Plus. We provide solutions for all desktop & mobile devices, and web browsers at the best prices.",
+    description: "Gamzway offers ready-to-use Teen Patti solutions for business ventures. We build customized solutions for all the variants like Fox,Vintage, and Teen Patti Plus. We provide solutions for all desktop & mobile devices, and web browsers at the best prices.",
     href: "/game-apis/teen-patti"
   },
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/product_ludo.webp",
     title: "LUDO Game Development",
-    description: "If you are looking forward to acquiring online ludo game solutions, Mobzway Technologies is among the most famous ludo app development companies. We offer both ready-to-live and customized gaming solutions for Android, iOS, Web, and Desktop using HTML 5.",
+    description: "If you are looking forward to acquiring online ludo game solutions, Gamzway Technologies is among the most famous ludo app development companies. We offer both ready-to-live and customized gaming solutions for Android, iOS, Web, and Desktop using HTML 5.",
     href: "/skill-games/ludo"
   },
 ]
@@ -117,7 +117,7 @@ const demoItems = [
   {
     featuresText: [
       {
-        title: "Start your business journey with Mobzway"
+        title: "Start your business journey with Gamzway"
       }
     ],
     description: "Try Our Games, and explore all the features and solutions you need to start, run, and grow your business.",
@@ -170,17 +170,17 @@ const Slots = () => {
           </div>
           <div className='solutions-desc-container'>
             <p className='solutions-desc'>
-            Mobzway Technologies is one of the leading Slot Game Development Company in India, produces most secure slot game with best graphics. Mobzway design the game module with intricate details and clubs with the intelligence of game architects. Advanced design tools, updated ideas and exponential experience act as a backbone of our brilliant game developers. Hiring has also been challenging for Mobzway, hence it ensures a proper set of qualified, talented and diligent young achievers are ready to shape their fortune with Mobzway. Our Slot Game developers have developed game for the variety of the platforms such as android, iOS, website gaming and stand-alone software application.
+            Gamzway Technologies is one of the leading Slot Game Development Company in India, produces most secure slot game with best graphics. Gamzway design the game module with intricate details and clubs with the intelligence of game architects. Advanced design tools, updated ideas and exponential experience act as a backbone of our brilliant game developers. Hiring has also been challenging for Gamzway, hence it ensures a proper set of qualified, talented and diligent young achievers are ready to shape their fortune with Gamzway. Our Slot Game developers have developed game for the variety of the platforms such as android, iOS, website gaming and stand-alone software application.
                   <br/><br/>
-                  Slot game comes with the complete package of the secure host and client connection, ravishing gameplay, artificial intelligence, upgradable modules and gift surprises. Mobzway team withholds dynamic, innovative and talented game developers ready to convert the ideas of game entrepreneurs into business ideas. Our Slot Game are Tested and Quality Assured for load testing, efficient gameplay, multiplayer options, guest mode, etc.
+                  Slot game comes with the complete package of the secure host and client connection, ravishing gameplay, artificial intelligence, upgradable modules and gift surprises. Gamzway team withholds dynamic, innovative and talented game developers ready to convert the ideas of game entrepreneurs into business ideas. Our Slot Game are Tested and Quality Assured for load testing, efficient gameplay, multiplayer options, guest mode, etc.
                   <br/><br/>
                   Social can be connected in Slot Game like Facebook, Gmail, apple ID, etc. to get a world scenario and leader board game play. The leader board can be set to multiple duration as per game entrepreneurs attracting more Slot game lover to relish their time with the unique creation. Players in Slot game can also chat, discussing the tactics, making a slot app or slot machine software a real life scenario i.e. talking while playing hence dual enjoyment. Players in the slot game could book tables, use game lobby, buy chips to give their game a boost. Targeting a global clientele, our slot game developers have designed game into multilingual support.
 
                   <span className={`solutions-desc-more ${showMore ? 'show' : ''}`}>
                   <br/><br/>
-                  Mobzway game developers have incorporated a feature to play the game with real or virtual money, premium in-app purchases capable of yielding handsome business returns. Each and every source of online payment has been established as Credit / Debit cards, online banking, payu, etc.
+                  Gamzway game developers have incorporated a feature to play the game with real or virtual money, premium in-app purchases capable of yielding handsome business returns. Each and every source of online payment has been established as Credit / Debit cards, online banking, payu, etc.
                   <br/><br/>
-                  Mobzway believes into a strict bug-free Slot Game Development for the satisfactory global clientele and burns the midnight oil to give our clients a perfect on-time project delivery. Also, Mobzway seeks forward to build an eternal customer relationship with game entrepreneurs. Feel free to discuss your ideas with us. We are glad to help you!
+                  Gamzway believes into a strict bug-free Slot Game Development for the satisfactory global clientele and burns the midnight oil to give our clients a perfect on-time project delivery. Also, Gamzway seeks forward to build an eternal customer relationship with game entrepreneurs. Feel free to discuss your ideas with us. We are glad to help you!
                   </span>
             </p>
             <button onClick={toggleReadMore}>

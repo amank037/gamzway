@@ -12,7 +12,7 @@ import ProductSection from '../../../components/ProductSection/ProductSection'
 const ludocarouselData = [
   {
     title: "Ludo Game Development Company",
-    description: "Looking for the right Ludo game solution for your business, don't hesitate to connect with Mobzway for professional Ludo game development company. Experience with engaging gameplay and vibrant graphics.",
+    description: "Looking for the right Ludo game solution for your business, don't hesitate to connect with Gamzway for professional Ludo game development company. Experience with engaging gameplay and vibrant graphics.",
     image: "https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif",
     isMainTitle: true,
   },
@@ -41,7 +41,7 @@ const ludocarouselData = [
 const modesItems = [
   {
     title:"Modes Of Ludo Game",
-    description: "There are different modes of ludo gaming options that Mobzway Technologies offer for your players to choose from. Let's have a quick look at them."
+    description: "There are different modes of ludo gaming options that Gamzway Technologies offer for your players to choose from. Let's have a quick look at them."
   }
 ]
 
@@ -179,7 +179,7 @@ const readyItems = [
 const adminfeaturesTitle = [
   {
     title: "Admin Control Features",
-    description: "With our best Ludo software solutions, we offer the best BackOffice and CRM tools which make game management easy. You can enjoy a user-friendly dashboard along with all the essential & valuable features to manage the game rooms in real-time. It is essential to imbibe some control features for the admin, and Mobzway Technologies has ensured that. So, let's have a quick look at them."
+    description: "With our best Ludo software solutions, we offer the best BackOffice and CRM tools which make game management easy. You can enjoy a user-friendly dashboard along with all the essential & valuable features to manage the game rooms in real-time. It is essential to imbibe some control features for the admin, and Gamzway Technologies has ensured that. So, let's have a quick look at them."
   }
 ]
 
@@ -192,7 +192,7 @@ const adminfeaturesGrid = [
   {
     image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/game-management.png",
     title: "Game Rooms",
-    description: "Mobzway's online gaming solutions include an immaculate game room with thorough options for gaming solutions from which your gamers may pick."
+    description: "Gamzway's online gaming solutions include an immaculate game room with thorough options for gaming solutions from which your gamers may pick."
   },
   {
     image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/tournament-management.png",
@@ -275,8 +275,8 @@ const platformItems = [
 
 const chooseTitle = [
   {
-    title: "Why Choose Mobzway As Your Ludo Game Development Company?",
-    description: "Mobzway brings to you the best gaming artwork, technology, platform compatibility, security, and post-sales so that your ludo gaming business always stays on top."
+    title: "Why Choose Gamzway As Your Ludo Game Development Company?",
+    description: "Gamzway brings to you the best gaming artwork, technology, platform compatibility, security, and post-sales so that your ludo gaming business always stays on top."
   }
 ]
 
@@ -300,7 +300,7 @@ const faqData1 = [
     description: "We have more than six years of relevant experience in the niche of ludo game app development. Our extensive experience in this field has enabled us to be one of the best companies from whom you can procure your ludo gaming solution."
   },
   {
-    title: "How Many do Mobzway provide Ludo Game variations?",
+    title: "How Many do Gamzway provide Ludo Game variations?",
     description: "Our ludo gaming has four variants: Live Challenges, Tournaments, Timer, and Classic."
   },
   {
@@ -344,7 +344,7 @@ const productItems = [
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Poker.webp",
     title: "Poker Game Development",
-    description: "Mobzway provides poker game development for all the popular poker games like Texas Hold’em, Omaha, Seven Stud, OFC Poker, and more. Our seasoned game developers utilize cutting-edge gaming technology to offer the player's best poker gaming experience.",
+    description: "Gamzway provides poker game development for all the popular poker games like Texas Hold’em, Omaha, Seven Stud, OFC Poker, and more. Our seasoned game developers utilize cutting-edge gaming technology to offer the player's best poker gaming experience.",
     href: "/skill-games/poker"
   },
   {
@@ -356,13 +356,13 @@ const productItems = [
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Teenpatti.webp",
     title: "Teen Patti Game Development",
-    description: "Mobzway offers ready-to-use Teen Patti solutions for business ventures. We build customized solutions for all the variants like Fox,Vintage, and Teen Patti Plus. We provide solutions for all desktop & mobile devices, and web browsers at the best prices.",
+    description: "Gamzway offers ready-to-use Teen Patti solutions for business ventures. We build customized solutions for all the variants like Fox,Vintage, and Teen Patti Plus. We provide solutions for all desktop & mobile devices, and web browsers at the best prices.",
     href: "/game-apis/teen-patti"
   },
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Casino.webp",
     title: "Casino Software",
-    description: "For the online casino game entrepreneurs and businesses, Mobzway offers customized casino game solutions. All the popular casino games like Roulette, Blackjack, Slot, Baccarat, etc. are designed and developed at our gaming studio as per your business needs.",
+    description: "For the online casino game entrepreneurs and businesses, Gamzway offers customized casino game solutions. All the popular casino games like Roulette, Blackjack, Slot, Baccarat, etc. are designed and developed at our gaming studio as per your business needs.",
     href: "/casino-games"
   },
 ]
@@ -371,7 +371,7 @@ const demoItems = [
   {
     featuresText: [
       {
-        title: "Start your business journey with Mobzway"
+        title: "Start your business journey with Gamzway"
       }
     ],
     description: "Try Our Games, and explore all the features and solutions you need to start, run, and grow your business.",
@@ -417,9 +417,9 @@ const LudoGame = () => {
           <div className='solutions-desc-container'>
             <p className='solutions-desc'>
             <br/><br/>
-            Mobzway Technologies is the leading Ludo game app development company serving the clients in India, the USA, the UK, and Australia. We specialize in delivering next-generation Ludo game development services to both established gaming businesses and ambitious entrepreneurs. Our expert developers craft Ludo games that strike the perfect balance between simplicity and engagement, capturing the essence of traditional Ludo games with a modern twist.
+            Gamzway Technologies is the leading Ludo game app development company serving the clients in India, the USA, the UK, and Australia. We specialize in delivering next-generation Ludo game development services to both established gaming businesses and ambitious entrepreneurs. Our expert developers craft Ludo games that strike the perfect balance between simplicity and engagement, capturing the essence of traditional Ludo games with a modern twist.
             <br/> <br/> Our Ludo game creators offer tailored solutions for iOS, Android, Web, and Desktop platforms. As a dedicated Ludo game development company, we are committed to creating exceptional games that captivate players for extended periods. Leveraging contemporary graphics, animations, immersive sound effects, and cutting-edge technology, we bring forth the finest Ludo gaming experiences on virtual platforms. Moreover, we prioritize robust security measures to safeguard player data privacy and payment security.
-            <br/> <br/> Our customizable Ludo game development company are designed to meet each client's specific needs. The globally recognized game design expertise of Mobzway combines stunning visuals with the latest technology.
+            <br/> <br/> Our customizable Ludo game development company are designed to meet each client's specific needs. The globally recognized game design expertise of Gamzway combines stunning visuals with the latest technology.
             <br/> <br/>Our professional iOS and Android game development team meticulously assess client requirements, creating a comprehensive development plan open to client feedback. We value our customers' input and integrate it into our services to ensure all their needs are met. In addition, our Ludo game developer services come with a 24-hour technical support system, ensuring you're never left on your own.
             <br/> <br/>Why wait to jumpstart your Ludo game business? Connect with us today! We are your trusted Ludo game development company, offering top-notch services for Ludo app development, competitive Ludo game app development cost, and unparalleled expertise in the field.
             </p>

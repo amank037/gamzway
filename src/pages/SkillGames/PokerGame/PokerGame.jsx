@@ -19,7 +19,7 @@ const pokercarouselData = [
   },
   {
     title: "Poker game development Company",
-    description: "Get the best Online Poker Game App & website solution developed by Mobzway! With the leading Poker Game Development Company we ensure the top-end delivery of our Poker products in the gaming industry.",
+    description: "Get the best Online Poker Game App & website solution developed by Gamzway! With the leading Poker Game Development Company we ensure the top-end delivery of our Poker products in the gaming industry.",
     image: "https://beta.mobzway.com/assets/images/pokerSlide.webp",
   }
 ]
@@ -64,7 +64,7 @@ const platformItems = [
       {
         image: "https://beta.mobzway.com/assets/images/Native_Mobile.webp",
         title: "NATIVE MOBILE",
-        description: "Mobzway offers game app development services for all mobile devices, compatible with all platforms, our best poker game for android, iOS, or windows."
+        description: "Gamzway offers game app development services for all mobile devices, compatible with all platforms, our best poker game for android, iOS, or windows."
       },
       {
         image: "https://beta.mobzway.com/assets/images/Mac_PC.webp",
@@ -91,7 +91,7 @@ const productItems = [
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Poker.webp",
     title: "Poker Game Development",
-    description: "Mobzway provides poker game development for all the popular poker games like Texas Hold’em, Omaha, Seven Stud, OFC Poker, and more. Our seasoned game developers utilize cutting-edge gaming technology to offer the player's best poker gaming experience.",
+    description: "Gamzway provides poker game development for all the popular poker games like Texas Hold’em, Omaha, Seven Stud, OFC Poker, and more. Our seasoned game developers utilize cutting-edge gaming technology to offer the player's best poker gaming experience.",
     href: "/skill-games/poker"
   },
   {
@@ -103,13 +103,13 @@ const productItems = [
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Teenpatti.webp",
     title: "Teen Patti Game Development",
-    description: "Mobzway offers ready-to-use Teen Patti solutions for business ventures. We build customized solutions for all the variants like Fox,Vintage, and Teen Patti Plus. We provide solutions for all desktop & mobile devices, and web browsers at the best prices.",
+    description: "Gamzway offers ready-to-use Teen Patti solutions for business ventures. We build customized solutions for all the variants like Fox,Vintage, and Teen Patti Plus. We provide solutions for all desktop & mobile devices, and web browsers at the best prices.",
     href: "/game-apis/teen-patti"
   },
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/product_ludo.webp",
     title: "LUDO Game Development",
-    description: "If you are looking forward to acquiring online ludo game solutions, Mobzway Technologies is among the most famous ludo app development companies. We offer both ready-to-live and customized gaming solutions for Android, iOS, Web, and Desktop using HTML 5.",
+    description: "If you are looking forward to acquiring online ludo game solutions, Gamzway Technologies is among the most famous ludo app development companies. We offer both ready-to-live and customized gaming solutions for Android, iOS, Web, and Desktop using HTML 5.",
     href: "/skill-games/ludo"
   },
 ]
@@ -123,30 +123,30 @@ const faqTitle = [
 const faqData1 = [
   {
     title: "Can you integrate multiplayer function into my poker game?",
-    description: "Yes, Mobzway specializes in multiplayer integration to enhance your poker game's interactive features and engagement.",
+    description: "Yes, Gamzway specializes in multiplayer integration to enhance your poker game's interactive features and engagement.",
   },
   {
     title: "Is poker game illegal in India",
-    description: "The legal status of poker varies in India by state. Mobzway can help ensure compliance with local gaming regulations and laws."
+    description: "The legal status of poker varies in India by state. Gamzway can help ensure compliance with local gaming regulations and laws."
   },
   {
     title: "How much does it cost to build a solid Poker Software?",
-    description: "The cost of developing poker software depends on your specific requirements and features. Mobzway offers customized solutions to fit your budget."
+    description: "The cost of developing poker software depends on your specific requirements and features. Gamzway offers customized solutions to fit your budget."
   }
 ]
 
 const faqData2 = [
   {
     title:"How to ensure security in a Poker Game App?",
-    description: "Mobzway ensures security through encryption, secure payment gateways, and regular audits, safeguarding user data and transactions."
+    description: "Gamzway ensures security through encryption, secure payment gateways, and regular audits, safeguarding user data and transactions."
   },
   {
     title: "How long will it take to build a Poker Game",
-    description: "The development time for a poker game varies based on complexity and features, but Mobzway provides efficient and timely development services."
+    description: "The development time for a poker game varies based on complexity and features, but Gamzway provides efficient and timely development services."
   },
   {
     title: "Which is the best online poker game software development company?",
-    description: "Mobzway is a leading online poker software development company, offering high-quality, customizable solutions to meet your gaming business needs."
+    description: "Gamzway is a leading online poker software development company, offering high-quality, customizable solutions to meet your gaming business needs."
   }
 ]
 
@@ -154,7 +154,7 @@ const demoItems = [
   {
     featuresText: [
       {
-        title: "Start your business journey with Mobzway"
+        title: "Start your business journey with Gamzway"
       }
     ],
     description: "Try Our Games, and explore all the features and solutions you need to start, run, and grow your business.",
@@ -183,22 +183,22 @@ const PokerGame = () => {
     {
       image: "https://beta.mobzway.com/assets/images/poker-game-development/omaha02.webp",
       title: "PLO",
-      description: "Customized and flexible Pot-Limit Omaha solutions are also developed by our gaming experts at Mobzway to let you earn PLO lovers."
+      description: "Customized and flexible Pot-Limit Omaha solutions are also developed by our gaming experts at Gamzway to let you earn PLO lovers."
     },
     {
       image: "https://beta.mobzway.com/assets/images/poker-game-development/04.webp",
       title: "Sit & Go",
-      description: "Mobzway also provides the most advanced-tech solutions for the Sit & Go variation of poker games for all virtual gaming devices."
+      description: "Gamzway also provides the most advanced-tech solutions for the Sit & Go variation of poker games for all virtual gaming devices."
     },
     {
       image: "https://beta.mobzway.com/assets/images/poker-game-development/05.webp",
       title: "Poker Tournaments",
-      description: "Online poker game app solutions offered by Mobzway come with tournaments feature to let the operators organize their dedicated tournaments."
+      description: "Online poker game app solutions offered by Gamzway come with tournaments feature to let the operators organize their dedicated tournaments."
     },
     {
       image: "https://beta.mobzway.com/assets/images/poker-game-development/06.webp",
       title: "OFC",
-      description: "At Mobzway, we also offer OFC, aka Open Face Chinese Poker solution for mobile, web, and desktop devices."
+      description: "At Gamzway, we also offer OFC, aka Open Face Chinese Poker solution for mobile, web, and desktop devices."
     },
     {
       image: "https://beta.mobzway.com/assets/images/poker-game-development/07.webp",
@@ -228,7 +228,7 @@ const PokerGame = () => {
     {
       image: "https://beta.mobzway.com/assets/images/poker-game-development/12.webp",
       title: "Back Office & CRM",
-      description: "Mobzway’s poker solutions offer distinct and most user-friendly backend management systems and CRM access so that managing the gaming business becomes easy for operators."
+      description: "Gamzway’s poker solutions offer distinct and most user-friendly backend management systems and CRM access so that managing the gaming business becomes easy for operators."
     }
   ]
   
@@ -265,7 +265,7 @@ const PokerGame = () => {
           </div>
           <div className='solutions-desc-container'>
             <p className='solutions-desc'>
-            Mobzway is a leading poker game development company in India, USA & UK, which offers a superior class of game development services. Our highly experienced poker game developers go the extra mile to give the poker lovers a different and top-notch gaming experience.
+            Gamzway is a leading poker game development company in India, USA & UK, which offers a superior class of game development services. Our highly experienced poker game developers go the extra mile to give the poker lovers a different and top-notch gaming experience.
                   <br/><br/>
                   As the best poker game for android, iOS, or web platforms and our game designers, make sure that a realistic experience is delivered on all sorts of virtual platforms. We also offer customized poker software development services for the game operators who wish to run their online poker rooms.
                   <br/><br/>
@@ -312,7 +312,7 @@ const PokerGame = () => {
             <br/> <br/> As we understand and value our fellow clients' needs, we provide them with an open and transparent discussion with our gaming experts, which allows them to discuss their requirements in detail and get personalized Solutions.
             <br/> <br/>Our core lies in poker game development, which features striking visual effects, artificial intelligence, multi-currency support, peer-to-peer gaming experience, elite technology, and compatibility with multiple operating systems and devices.
             <br/> <br/>We aim to benefit our clients. Therefore, while creating games, we make sure that maximum audience retention is achieved and fabulous entertainment is delivered. Our gaming connoisseurs also ensure that our game offers a very realistic and seamless gaming experience.
-            <br/> <br/> We serve as a dedicated poker game developer to our clients to better insight into gaming solutions to suit the best as per their development needs. Mobzway gives the superior class of poker game development services, which delight the game lovers. Our company understands the requirement of game admirers and, according to their requirement, provides reliable, secure, precise, and realistic game service. Our proficient team of developers will help you get the best live poker game apps ever as per your requirement.
+            <br/> <br/> We serve as a dedicated poker game developer to our clients to better insight into gaming solutions to suit the best as per their development needs. Gamzway gives the superior class of poker game development services, which delight the game lovers. Our company understands the requirement of game admirers and, according to their requirement, provides reliable, secure, precise, and realistic game service. Our proficient team of developers will help you get the best live poker game apps ever as per your requirement.
             </p>
             <button>
               REQUEST A QUOTE
