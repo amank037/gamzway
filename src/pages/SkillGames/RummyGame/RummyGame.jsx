@@ -231,7 +231,7 @@ const productItems = [
   },
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Casino.webp",
-    title: "Casino Game",
+    title: "Casino Games",
     description: "For the online casino game entrepreneurs and businesses, Gamzway offers customized casino game solutions. All the popular casino games like Roulette, Blackjack, Slot, Baccarat, etc. are designed and developed at our gaming studio as per your business needs.",
     href: "/casino-games"
   },
