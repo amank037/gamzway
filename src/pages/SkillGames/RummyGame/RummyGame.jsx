@@ -189,38 +189,38 @@ const standoutTitle = [
   }
 ]
 
-const questionsData = [
-  {
-    title: "What is an Online Rummy Game?",
-    description: "An online rummy game is a card game that allows you to play the rummy game with real players from all over the globe. It is an exciting and fun game that helps you to improve your strategic skills. Online rummy games are thrilling, easy, and refreshing at the same time. This game is for adults only and not for children. You can play this game of cards with your family and friends."
-  },
-  {
-    title: "Why do we need online rummy game development services?",
-    description: "If you want the best rummy software and want to launch it as soon as possible, then our rummy game development services can be the greatest option for you. We have experienced game developers and we provide attractive offers on a daily basis. We are a leading and worldwide trusted rummy game development company that helps you take your online rummy game to the next level."
-  },
-  {
-    title: "How much cost do I require to invest in rummy website development?",
-    description: "If you want an attractive and fully featured rummy website, then you have to invest around 6 lakh in rummy website development. However, the amount may differ depending on your requirements and features. The love for rummy game in India is increasing day by day as it is an interesting and skill-based game. Rummy games are completely legal in India and so most people want to have their own rummy website. If you are one of them, do contact us for rummy website development."
-  },
-  {
-    title: "What is your USP in Rummy Game Development?",
-    description: "We built a rummy game for all platforms; either you want a desktop version (Windows or Mac), mobile version (Android or iOS) or a web version. We have a team of best, highly skilled and professional rummy game developers who can help you expand your online game business."
-  },
-  {
-    title: "How Do You Make a Rummy Game?",
-    description: "Here are some points:\nPre-Production: Business Requirement ⇢ Branding Details ⇢ Payment gateway ⇢ Target Audience\n\nProduction: Art Production ⇢ Graphics Integration ⇢ Website & Payment gateway ⇢ Quality Control\n\nPost-Production: Patches & Updates ⇢ Server Maintenance ⇢ Technical Support"
-  },
-  {
-    title: "How many online rummy game development solutions are provided by Mobzway?",
-    description: "Being the most reputable online rummy game development company, we have provided the solutions at our best. We offer both web and mobile rummy games, payment gateway integration, a user-friendly back end so that the admin can manage the rummy business efficiently, and many more."
-  }
-]
+// const questionsData = [
+//   {
+//     title: "What is an Online Rummy Game?",
+//     description: "An online rummy game is a card game that allows you to play the rummy game with real players from all over the globe. It is an exciting and fun game that helps you to improve your strategic skills. Online rummy games are thrilling, easy, and refreshing at the same time. This game is for adults only and not for children. You can play this game of cards with your family and friends."
+//   },
+//   {
+//     title: "Why do we need online rummy game development services?",
+//     description: "If you want the best rummy software and want to launch it as soon as possible, then our rummy game development services can be the greatest option for you. We have experienced game developers and we provide attractive offers on a daily basis. We are a leading and worldwide trusted rummy game development company that helps you take your online rummy game to the next level."
+//   },
+//   {
+//     title: "How much cost do I require to invest in rummy website development?",
+//     description: "If you want an attractive and fully featured rummy website, then you have to invest around 6 lakh in rummy website development. However, the amount may differ depending on your requirements and features. The love for rummy game in India is increasing day by day as it is an interesting and skill-based game. Rummy games are completely legal in India and so most people want to have their own rummy website. If you are one of them, do contact us for rummy website development."
+//   },
+//   {
+//     title: "What is your USP in Rummy Game Development?",
+//     description: "We built a rummy game for all platforms; either you want a desktop version (Windows or Mac), mobile version (Android or iOS) or a web version. We have a team of best, highly skilled and professional rummy game developers who can help you expand your online game business."
+//   },
+//   {
+//     title: "How Do You Make a Rummy Game?",
+//     description: "Here are some points:\nPre-Production: Business Requirement ⇢ Branding Details ⇢ Payment gateway ⇢ Target Audience\n\nProduction: Art Production ⇢ Graphics Integration ⇢ Website & Payment gateway ⇢ Quality Control\n\nPost-Production: Patches & Updates ⇢ Server Maintenance ⇢ Technical Support"
+//   },
+//   {
+//     title: "How many online rummy game development solutions are provided by Mobzway?",
+//     description: "Being the most reputable online rummy game development company, we have provided the solutions at our best. We offer both web and mobile rummy games, payment gateway integration, a user-friendly back end so that the admin can manage the rummy business efficiently, and many more."
+//   }
+// ]
 
-const faqTitle = [
-  {
-    title: "Rummy GAME DEVELOPMENT FAQS"
-  }
-]
+// const faqTitle = [
+//   {
+//     title: "Rummy GAME DEVELOPMENT FAQS"
+//   }
+// ]
 
 const productItems = [
   {
@@ -263,61 +263,57 @@ const demoItems = [
 
 const faqAccordionData = [
   {
-    title: "Is Rummy an Indian Game?",
-    description: "Yes, it is an Indian game. It has been played for many decades now and it is also known as 'Paplu' in India."
+    title: "Can one host an online rummy game in India legally?",
+    description: "Under Indian law, rummy is indeed acknowledged as a game of skill and legal in most states.  We guarantee our site follows legal systems."
   },
   {
-    title: "How many users can your rummy game accommodate?",
-    description: "There is no limitation in the number of users as it is a cloud-based auto-scalable solution. As per our tested data, it can accommodate 1 lakh or more concurrent players"
+    title: "Custom rummy app development takes what length of time?",
+    description: "The complexity determines development time; still, our white-label solution can be started in 15 to 30 days.  Custom apps require 6–10 weeks."
   },
   {
-    title: "Is Rummy Legal in India?",
-    description: "Yes, rummy is legal in India, and the Supreme Court of India declared that it is a game of skill."
+    title: "Can I combine wallets and payment gateways in Q3?",
+    description: "We support UPI, Paytm, Razorpay, and other main payment methods."
   },
   {
-    title: "Do you provide a Rummy website as well as a rummy app?",
-    description: "Yes, we provide a rummy website also. We offer cross-browser and cross-platform supportable games for the web and application."
+    title: "Exist source code ownership?",
+    description: " Indeed, we provide per agreement flexible licensing options, including source code ownership."
   },
   {
-    title: "Is your rummy game app accessible on all mobile devices?",
-    description: "Our rummy game app is accessible on all mobile devices like iOS, Android."
-  },
-  {
-    title: "What is the estimated time to develop a rummy game app & website?",
-    description: "Mobzway's Rummy game development experts take approximately six months to 1 year to develop a rummy game app and website."
+    title: "Following launch, what type of assistance do you provide?",
+    description: "We provide 24-hour technical assistance, feature updates, server management, bug fixes, and total maintenance."
   }
 ]
 
-const technicalAccordionData = [
-  {
-    title: "How many rummy game variations are provided by Mobzway?",
-    description: "We are offering Point Rummy, 101 and 201 Pool Rummy, Deals Rummy with 2 and 6 players table along with different kinds of tournaments."
-  },
-  {
-    title: "What are the requirements to get started on a rummy website?",
-    description: "As Rummy is a Game of Skill, there is no need for any license or legal approval or any other Govt approval. You can just set up your business and start running the game."
-  },
-  {
-    title: "Which Country has the most Rummy Game Players?",
-    description: "When it comes to rummy games, India serves around 76% of its total traffic and every 4 out of 10 card game players prefer playing this game of cards."
-  },
-  {
-    title: "How Many Jokers are there in Rummy?",
-    description: "There are 5 Joker cards in the game, with players being able to use four of them. One Joker is turned up crosswise under the closed deck, visible to all players. In the following way, this card determines an additional set of jokers for that hand: Regardless of color, the rank is the same."
-  },
-  {
-    title: "Which Technology is Best for Rummy Game Development?",
-    description: "It depends on the usability. For the browser-based game, HTML5 is best. For Mobile apps, Unity is the best. The best options will be a fast & secure game engine and back-office Java, PHP, Nodejs, and NoSQL."
-  },
-  {
-    title: "How can you help me with Rummy website Development?",
-    description: "You just have to contact us and tell us your requirements and features you want and leave rest on us. Our customized dedicated team will contact you and therefore will work on the requirements."
-  },
-  {
-    title: "Will you manage payment gateway integration, or do I have to take care of it?",
-    description: "We will take care of the payment gateway integration, which includes instant deposit & withdrawal through UPI, Paytm, Other Wallets, Debit Card, Credit card, Net banking, etc."
-  }
-]
+// const technicalAccordionData = [
+//   {
+//     title: "How many rummy game variations are provided by Mobzway?",
+//     description: "We are offering Point Rummy, 101 and 201 Pool Rummy, Deals Rummy with 2 and 6 players table along with different kinds of tournaments."
+//   },
+//   {
+//     title: "What are the requirements to get started on a rummy website?",
+//     description: "As Rummy is a Game of Skill, there is no need for any license or legal approval or any other Govt approval. You can just set up your business and start running the game."
+//   },
+//   {
+//     title: "Which Country has the most Rummy Game Players?",
+//     description: "When it comes to rummy games, India serves around 76% of its total traffic and every 4 out of 10 card game players prefer playing this game of cards."
+//   },
+//   {
+//     title: "How Many Jokers are there in Rummy?",
+//     description: "There are 5 Joker cards in the game, with players being able to use four of them. One Joker is turned up crosswise under the closed deck, visible to all players. In the following way, this card determines an additional set of jokers for that hand: Regardless of color, the rank is the same."
+//   },
+//   {
+//     title: "Which Technology is Best for Rummy Game Development?",
+//     description: "It depends on the usability. For the browser-based game, HTML5 is best. For Mobile apps, Unity is the best. The best options will be a fast & secure game engine and back-office Java, PHP, Nodejs, and NoSQL."
+//   },
+//   {
+//     title: "How can you help me with Rummy website Development?",
+//     description: "You just have to contact us and tell us your requirements and features you want and leave rest on us. Our customized dedicated team will contact you and therefore will work on the requirements."
+//   },
+//   {
+//     title: "Will you manage payment gateway integration, or do I have to take care of it?",
+//     description: "We will take care of the payment gateway integration, which includes instant deposit & withdrawal through UPI, Paytm, Other Wallets, Debit Card, Credit card, Net banking, etc."
+//   }
+// ]
 
 
 const RummyGame = () => {
@@ -633,7 +629,7 @@ const RummyGame = () => {
 
       <ContactBanner contactItems={requestItems} />
 
-      <div className='questions-section'>
+      {/* <div className='questions-section'>
         {questionsData.map((question, index) => (
           <div key={index} className='question-container'>
             <FeaturesHeader 
@@ -642,16 +638,14 @@ const RummyGame = () => {
             />
           </div>
         ))}
-      </div>
+      </div> */}
 
       <div className='faq-section'>
-        <FeaturesHeader featuresText={faqTitle} />
+        {/* <FeaturesHeader featuresText={faqTitle} /> */}
 
         <div className='faq-accordion-container'>
           
           <AccordionSection data={faqAccordionData} />
-
-          <AccordionSection data={technicalAccordionData} />
 
           
         </div>
