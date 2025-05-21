@@ -12,6 +12,10 @@
     font-style: normal;
   }
   
+::selection {
+background: #ffcc00; /* Your custom color */
+color: #000000;
+}
 
 :root {
     --primary-yellow: #FFD700;
