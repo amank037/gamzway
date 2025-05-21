@@ -218,7 +218,7 @@ const standoutTitle = [
 
 const faqTitle = [
   {
-    title: "Rummy GAME DEVELOPMENT FAQS"
+    title: "Rummy GAME FAQS"
   }
 ]
 
