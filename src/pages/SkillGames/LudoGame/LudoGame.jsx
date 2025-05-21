@@ -5,7 +5,6 @@ import AchievementsBanner from '../../../components/AchievementsBanner/Achieveme
 import ContactBanner from '../../../components/ContactBanner/ContactBanner'
 import PlatformSection from '../../../components/PlatformSection/PlatformSection'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
-import ClientSection from '../../../components/ClientSection/ClientSection'
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
 
@@ -508,7 +507,6 @@ const LudoGame = () => {
         <button className='faq-btn'><span>ASK A QUESTION</span></button>
       </div>
 
-      <ClientSection />
 
       <PaymentSection />
 

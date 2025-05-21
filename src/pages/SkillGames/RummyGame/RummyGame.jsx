@@ -5,7 +5,6 @@ import AchievementsBanner from '../../../components/AchievementsBanner/Achieveme
 import FeaturesHeader from '../../../components/FeaturesSection/FeaturesHeader/FeaturesHeader'
 import ContactBanner from '../../../components/ContactBanner/ContactBanner'
 import PlatformSection from '../../../components/PlatformSection/PlatformSection'
-import ClientSection from '../../../components/ClientSection/ClientSection'
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
@@ -666,7 +665,6 @@ const RummyGame = () => {
         </a>
       </div>
 
-      <ClientSection />
 
       <PaymentSection />
 
