@@ -40,7 +40,6 @@
 }
 
 .slide-title {
-  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(2.5rem, 6vw, 6rem);
   line-height: 0.9;
