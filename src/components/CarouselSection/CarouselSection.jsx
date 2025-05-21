@@ -1,56 +1,17 @@
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules"
-// import { useState } from 'react'
+import { Navigation, Pagination, Autoplay } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
-import "swiper/css/effect-fade"
 import "./CarouselSection.css"
-import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 
 function CarouselSection({ carouselData }) {
-//   const [textSwiper, setTextSwiper] = useState(null)
-//   const [imageSwiper, setImageSwiper] = useState(null)
-//   const [contactType, setContactType] = useState('phone')
-//   const [contactValue, setContactValue] = useState('')
-//   const [name, setName] = useState('')
-
-//   const renderContactInput = () => {
-//       switch(contactType) {
-//           case 'phone':
-//           case 'whatsapp':
-//               return (
-//                   <PhoneInput
-//                       country={'in'}
-//                       value={contactValue}
-//                       onChange={phone => setContactValue(phone)}
-//                       containerClass="phone-input-container"
-//                       inputClass="contact-input"
-//                   />
-//               )
-//           default:
-//               return (
-//                   <input 
-//                       type={contactType === 'email' ? 'email' : 'text'}
-//                       placeholder={`Enter your ${contactType}`}
-//                       value={contactValue}
-//                       onChange={(e) => setContactValue(e.target.value)}
-//                       className="contact-input"
-//                   />
-//               )
-//       }
-//   }
-
   return (
     <div className="carousel-wrapper">
       <div className="carousel-container">
         <Swiper
-          modules={[Navigation, Pagination, Autoplay, EffectFade]}
-          effect="fade"
-          fadeEffect={{
-            crossFade: true
-          }}
+          modules={[Navigation, Pagination, Autoplay]} 
           navigation={{
             nextEl: '.custom-next',
             prevEl: '.custom-prev'
@@ -62,7 +23,7 @@ function CarouselSection({ carouselData }) {
               return '<span class="' + className + '"></span>';
             },
           }}
-          speed={1000}
+          speed={800}
           autoplay={{ 
             delay: 4000,
             disableOnInteraction: false 

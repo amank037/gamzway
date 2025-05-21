@@ -41,28 +41,30 @@
 
 .slide-title {
   font-family: "Bebas Neue", sans-serif;
-  font-size: clamp(2.5rem, 6vw, 6rem);
+  font-size: 50px;
   line-height: 0.9;
   margin-bottom: 30px;
   color: var(--primary-yellow);
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
   word-wrap: break-word;
 }
 
 .highlight {
   display: block;
-  font-size: 1.5rem;
-  color: #fff;
+  font-size: 14px;
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--primary-yellow);
   margin-bottom: 10px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 2px;
+  opacity: 0.6;
 }
 
 .slide-description {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.5;
   color: #fff;
   max-width: 600px;
 }
