@@ -549,7 +549,7 @@ const RummyGame = () => {
           <div className='solutions-desc-container'>
             <div className='solutions-desc'>
             <br/><br/>
-            <span>Focussing on real-money and casual card games, Gamzway is among the top game developers in India.  This is the reason our customers chose us: </span>
+            <span className='text-yellow'>Focussing on real-money and casual card games, Gamzway is among the top game developers in India.  This is the reason our customers chose us: </span>
             <br/><br/>
             <ul>
               <li>More than one hundred successful game introductions</li>

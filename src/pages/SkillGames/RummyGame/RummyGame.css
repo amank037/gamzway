@@ -188,6 +188,9 @@
     background-color: var(--primary-yellow);
     transform: translateY(-2px);
 }
+.text-yellow{
+    color: var(--primary-yellow);
+}
 
 /* .features-section {
     width: 100%;
