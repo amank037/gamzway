@@ -281,6 +281,30 @@ const faqAccordionData = [
   {
     title: "Following launch, what type of assistance do you provide?",
     description: "We provide 24-hour technical assistance, feature updates, server management, bug fixes, and total maintenance."
+  },
+  {
+    title: "What is an Online Rummy Game?",
+    description: "An online rummy game is a card game that allows you to play the rummy game with real players from all over the globe. It is an exciting and fun game that helps you to improve your strategic skills. Online rummy games are thrilling, easy, and refreshing at the same time. This game is for adults only and not for children. You can play this game of cards with your family and friends."
+  },
+  {
+    title: "Why do we need online rummy game development services?",
+    description: "If you want the best rummy software and want to launch it as soon as possible, then our rummy game development services can be the greatest option for you. We have experienced game developers and we provide attractive offers on a daily basis. We are a leading and worldwide trusted rummy game development company that helps you take your online rummy game to the next level."
+  },
+  {
+    title: "How much cost do I require to invest in rummy website development?",
+    description: "If you want an attractive and fully featured rummy website, then you have to invest around 6 lakh in rummy website development. However, the amount may differ depending on your requirements and features. The love for rummy game in India is increasing day by day as it is an interesting and skill-based game. Rummy games are completely legal in India and so most people want to have their own rummy website. If you are one of them, do contact us for rummy website development."
+  },
+  {
+    title: "What is your USP in Rummy Game Development?",
+    description: "We built a rummy game for all platforms; either you want a desktop version (Windows or Mac), mobile version (Android or iOS) or a web version. We have a team of best, highly skilled and professional rummy game developers who can help you expand your online game business."
+  },
+  {
+    title: "How Do You Make a Rummy Game?",
+    description: "Here are some points:\nPre-Production: Business Requirement ⇢ Branding Details ⇢ Payment gateway ⇢ Target Audience\n\nProduction: Art Production ⇢ Graphics Integration ⇢ Website & Payment gateway ⇢ Quality Control\n\nPost-Production: Patches & Updates ⇢ Server Maintenance ⇢ Technical Support"
+  },
+  {
+    title: "How many online rummy game development solutions are provided by Gamzway?",
+    description: "Being the most reputable online rummy game development company, we have provided the solutions at our best. We offer both web and mobile rummy games, payment gateway integration, a user-friendly back end so that the admin can manage the rummy business efficiently, and many more."
   }
 ]
 
@@ -629,7 +653,7 @@ const RummyGame = () => {
 
       <ContactBanner contactItems={requestItems} />
 
-      <div className='questions-section'>
+      {/* <div className='questions-section'>
         {questionsData.map((question, index) => (
           <div key={index} className='question-container'>
             <FeaturesHeader 
@@ -638,7 +662,7 @@ const RummyGame = () => {
             />
           </div>
         ))}
-      </div>
+      </div> */}
 
       <div className='faq-section'>
         <FeaturesHeader featuresText={faqTitle} />
