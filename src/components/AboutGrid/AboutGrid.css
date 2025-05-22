@@ -52,11 +52,11 @@
 }
 
 .about-grid .about-grid-item .about-grid-image-title-wrap img {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     object-fit: contain;
-    background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--secondary-yellow) 100%);
-    border-radius: 20px;
+    /* background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--secondary-yellow) 100%); */
+    border-radius: 30px;
     padding: 20px;
     transition: all 0.4s ease;
 }

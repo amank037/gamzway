@@ -11,9 +11,9 @@ function ProductSection({ productGrid }) {
   return (
     <div className="product-section">
         <FeaturesHeader featuresText={productTitle}/>
-        <div className="product-grid">
+        <div className="product-section-grid">
             {productGrid.map((item, index) => (
-                <a href={item.href} className="product-grid-item" key={index}>
+                <a href={item.href} className="product-section-grid-item" key={index}>
                     <img src={item.image} alt='' />
                     <h3>{item.title}</h3>
                     <p>{item.description}</p>

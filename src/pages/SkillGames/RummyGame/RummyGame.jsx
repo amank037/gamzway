@@ -9,6 +9,7 @@ import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 import AboutGrid from '../../../components/AboutGrid/AboutGrid'
+import FeaturesGrid from '../../../components/FeaturesSection/FeaturesGrid/FeaturesGrid'
 
 const rummyCarouselData = [
   {
@@ -124,10 +125,14 @@ const platformItems = [
   }
 ]
 
-const featuresItems = [
+const featuresTitle =[
   {
     title: "What features define our Rummy Game App?",
     description: "We provide a comprehensive gaming experience with features focused on gameplay, user engagement, administration, and security:",
+  }
+]
+const featuresItems = [
+  {
     sections: [
       {
         title: "Fundamental Gameplay",
@@ -500,7 +505,7 @@ const RummyGame = () => {
 
       <PlatformSection platformItems={platformItems}/>
 
-      <div className="features-section">
+      {/* <div className="features-section">
         <div className="features-container">
           <div className="features-header">
             <FeaturesHeader featuresText={[{ title: featuresItems[0].title }]} />
@@ -526,7 +531,8 @@ const RummyGame = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
+      <FeaturesGrid features={featuresItems[0]} featuresTitle={featuresTitle} />
 
 
       <div className='solutions-rummy-section'>

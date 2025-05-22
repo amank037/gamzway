@@ -7,25 +7,26 @@ import './ClientSection.css'
 
 const clientTitle = [
     {
-        title: "WHAT DO CLIENTS SAY ABOUT US"
+        title: "What Comments Clients Made About Us?",
+        description:" We create enduring relationships rather than only provide goods.  Some of our customers have to say here:"
     }
 ]
 
 const testimonials = [
     {
-        text: "Their professional designers were friendly, and really helpful. They worked with utmost dedication and that impressed me. Although I was doubtful at the beginning, they finished and handed over my project within the stipulated time.",
-        name: "PITER",
-        country: "AUSTRALIA"
+        text: "\"Thanks to Gamzway's staff, our Teen Patti platform launched in just ten days! Not bad are the UI, stability, and backend dashboard.\"",
+        name: "Ravi Malhotra",
+        country: "Has a Gaming Startup"
     },
     {
-        text: "One of the best online gaming solution providers. One can choose from their range of products and their products are customizable as well. I would like to recommend Gamzway without any reservations.",
-        name: "SAUL SMIKET",
-        country: "USA"
+        text: "\"The support staff is really excellent. They even tailored several important elements after launch and assisted with local compliance. Extremely advised.\"",
+        name: "Fatima A.",
+        country: "Dream App Entrepreneur"
     },
     {
-        text: "Right from the level of conceptualisation to the ending of my work, they have always coordinated and communicated everything with me. This has enabled me to guide them towards an infallible product.",
-        name: "BERNARD JONES",
-        country: "GERMANY"
+        text: "\"The first three months following introduction show really remarkable return on investment. The white label model saved several hours of work.\"",
+        name: "Jonathan K.",
+        country: "Operator in Online Gaming"
     }
 ]
 
@@ -65,24 +66,24 @@ function ClientSection() {
                     </Swiper>
                 </div>
 
-            <div className="stars-row">
+            {/* <div className="stars-row">
                 <img src="https://i.ibb.co/Zzg4JDXz/01a-01.png" alt="Rating Star" />
                 <img src="https://i.ibb.co/xtnt8pQf/01a-01-1.png" alt="Rating Star" />
                 <img src="https://i.ibb.co/nNFRk3Fm/01a-01-2.png" alt="Rating Star" />
                 <img src="https://i.ibb.co/5xxxCQhD/01a-01-3.png" alt="Rating Star" />
             </div>
 
-                <div className="badges-grid">
-                    <div className="badge-wrapper">
-                        <img src="https://beta.mobzway.com/assets/images/rummy-game-development/softwaresuggest.webp" alt="Software Suggest Badge" />
-                    </div>
-                    <div className="badge-wrapper">
-                        <img src="https://beta.mobzway.com/assets/images/rummy-game-development/topmobileappdevelopers.webp" alt="Top Mobile App Developers Badge" />
-                    </div>
-                    <div className="badge-wrapper">
-                        <img src="https://beta.mobzway.com/assets/images/rummy-game-development/capterra.webp" alt="Capterra Badge" />
-                    </div>
+            <div className="badges-grid">
+                <div className="badge-wrapper">
+                    <img src="https://beta.mobzway.com/assets/images/rummy-game-development/softwaresuggest.webp" alt="Software Suggest Badge" />
                 </div>
+                <div className="badge-wrapper">
+                    <img src="https://beta.mobzway.com/assets/images/rummy-game-development/topmobileappdevelopers.webp" alt="Top Mobile App Developers Badge" />
+                </div>
+                <div className="badge-wrapper">
+                    <img src="https://beta.mobzway.com/assets/images/rummy-game-development/capterra.webp" alt="Capterra Badge" />
+                </div>
+            </div> */}
             </div>
         </div>
     )

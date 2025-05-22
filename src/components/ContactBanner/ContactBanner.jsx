@@ -9,7 +9,7 @@ function ContactBanner({ contactItems }) {
       {contactItems.map((item, index) => (
         <div key={index} className="contact-banner-container">
           <div className="contact-banner-content">
-            <FeaturesHeader featuresText={item.featuresText} titleStyle={{fontSize: "64px"}}/>
+            <FeaturesHeader featuresText={item.featuresText} titleStyle={{fontSize: "48px"}}/>
             <p className="contact-banner-desc">
               {item.description.split('\n').map((line, idx) => (
                 <React.Fragment key={idx}>

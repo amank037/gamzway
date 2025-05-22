@@ -3,7 +3,6 @@ import "./Slots.css"
 import LandingSection from "../../../components/LandingSection/LandingSection"
 import AchievementsBanner from "../../../components/AchievementsBanner/AchievementsBanner"
 import FeaturesHeader from "../../../components/FeaturesSection/FeaturesHeader/FeaturesHeader"
-import ClientSection from "../../../components/ClientSection/ClientSection"
 import PaymentSection from "../../../components/PaymentSection/PaymentSection"
 import ProductSection from "../../../components/ProductSection/ProductSection"
 import ContactBanner from "../../../components/ContactBanner/ContactBanner"
@@ -205,7 +204,6 @@ const Slots = () => {
         </div>
       </div>
 
-      <ClientSection />
       <PaymentSection />
       <ProductSection productGrid={productItems} />
       <ContactBanner contactItems={demoItems}/>
