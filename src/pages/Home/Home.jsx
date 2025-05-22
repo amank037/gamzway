@@ -32,6 +32,28 @@ const engagementModelsText = [
     }
 ]
 
+// const productGrid = [
+//     { image: "https://www.mobzway.com/assets/images/game-icon/poker.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/rummy.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/ludo.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/teenpatti.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/callbreak.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/tambola.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/snake.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/livecasino.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/aviator.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/andar.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/blackjack.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/baccrat.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/tiger.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/roulete.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/slots.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/sicbo.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/keno.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/triple.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/ball.webp" },
+//     { image: "https://www.mobzway.com/assets/images/game-icon/virtual.webp" }
+// ]
 
 const chooseTitle =[
     {
