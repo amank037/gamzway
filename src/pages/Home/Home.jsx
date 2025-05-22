@@ -2,11 +2,13 @@ import React, { useState } from 'react'
 import './Home.css'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
+import { motion } from "framer-motion"
 import FeaturesHeader from '../../components/FeaturesSection/FeaturesHeader/FeaturesHeader'
 import ProductGrid from '../../components/ProductGrid/ProductGrid'
 import ContactBanner from '../../components/ContactBanner/ContactBanner'
 import AboutGrid from '../../components/AboutGrid/AboutGrid'
 import FeaturesGrid from '../../components/FeaturesSection/FeaturesGrid/FeaturesGrid'
+
 
 const productfeaturesText = [
     {
@@ -52,33 +54,6 @@ const engagementModelsText = [
     }
 ]
 
-const aboutGrid = [
-  {
-    image:"/platform-100.png",
-    title:"Cross-Platform",
-    description:"Android, iOS, Web, Desktop compatibility"
-  },
-  {
-    image:"/scalable-100.png",
-    title:"Scalable Architecture",
-    description:"Support thousands of concurrent players"
-  },
-  {
-    image:"/browser-customization-100.png",
-    title:"Customizable UI",
-    description:"Customizable themes and interfaces for brand personalization"
-  },
-  {
-    image:"/globe-100.png",
-    title:"Global Ready",
-    description:"Multi-language and multi-currency support"
-  },
-  {
-    image:"/admin-100.png",
-    title:"Admin Control",
-    description:"Admin panel and analytics dashboard for complete business control"
-  },
-]
 
 const chooseTitle =[
     {
@@ -164,17 +139,46 @@ const Home = () => {
         }
     }
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault()
-    console.log({
-      name,
-      contactType,
-      contactValue
-    })
-    setName('')
-    setContactType('phone')
-    setContactValue('')
-  }
+    const handleFormSubmit = (e) => {
+        e.preventDefault()
+        console.log({
+        name,
+        contactType,
+        contactValue
+        })
+        setName('')
+        setContactType('phone')
+        setContactValue('')
+    }
+
+    const platformGrid = [
+        {
+          image:"/platform-100.png",
+          title:"Cross-Platform",
+          description:"Android, iOS, Web, Desktop compatibility"
+        },
+        {
+          image:"/scalable-100.png",
+          title:"Scalable Architecture",
+          description:"Support thousands of concurrent players"
+        },
+        {
+          image:"/browser-customization-100.png",
+          title:"Customizable UI",
+          description:"Customizable themes and interfaces for brand personalization"
+        },
+        {
+          image:"/globe-100.png",
+          title:"Global Ready",
+          description:"Multi-language and multi-currency support"
+        },
+        {
+          image:"/admin-100.png",
+          title:"Admin Control",
+          description:"Admin panel and analytics dashboard for complete business control"
+        },
+      ]
+      
 
   return (
     <div className='home-div'>
@@ -243,7 +247,50 @@ const Home = () => {
         <div className='platform-feature-section'>
                 <FeaturesHeader featuresText={platformFeaturesText}/>
                 <div className='platform-features'>
-                    <AboutGrid aboutGrid={aboutGrid}/>
+                    <div className='platform-feature-grid'>
+                    {platformGrid.map((item, index) => (
+                        <motion.div 
+                        key={index} 
+                        className="platform-feature-card"
+                        whileHover={{ y: -5 }}
+                        transition={{ duration: 0.3 }}
+                    >
+                        <motion.div 
+                            className="feature-image-container"
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ duration: 0.3 }}
+                        >
+                            <motion.div
+                                className="glossy-effect"
+                                style={{
+                                    position: "absolute",
+                                    top: 0,
+                                    left: "-100%",
+                                    width: "300%",
+                                    height: "100%",
+                                    background: "linear-gradient(90deg, transparent 0%, rgba(255,255,255,0) 35%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 65%, transparent 100%)",
+                                    transform: "skewX(-20deg)",
+                                    zIndex: 2,
+                                    pointerEvents: "none"
+                                }}
+                                animate={{
+                                    left: ["-100%", "100%"]
+                                }}
+                                transition={{
+                                    duration: 1.5,
+                                    repeat:Infinity,
+                                    repeatDelay: 0.5,
+                                    ease: "easeInOut",
+                                    repeatType: "mirror"
+                                }}
+                            />
+                            <img src={item.image} alt={item.title} style={{ zIndex: 1 }} />
+                        </motion.div>
+                        <h3>{item.title}</h3>
+                        <p>{item.description}</p>
+                    </motion.div>
+                    ))}
+                    </div>
                 </div>
         </div>
 
