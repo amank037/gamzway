@@ -279,7 +279,6 @@ const Home = () => {
                                 transition={{
                                     duration: 1.5,
                                     repeat:Infinity,
-                                    repeatDelay: 0.5,
                                     ease: "easeInOut",
                                     repeatType: "mirror"
                                 }}

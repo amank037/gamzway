@@ -10,6 +10,7 @@ import ProductSection from '../../../components/ProductSection/ProductSection'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 import AboutGrid from '../../../components/AboutGrid/AboutGrid'
 import FeaturesGrid from '../../../components/FeaturesSection/FeaturesGrid/FeaturesGrid'
+import CustomGrid from '../../../components/CustomGrid/CustomGrid'
 
 const rummyCarouselData = [
   {
@@ -372,6 +373,64 @@ const aboutGrid = [
 //   }
 // ]
 
+const crmItems = [
+  {
+    title: "Dashboard",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/dashboard.png"
+  },
+  {
+    title: "Game Rooms",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/game-management.png"
+  },
+  {
+    title: "Tournaments",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/tournament-management.png"
+  },
+  {
+    title: "Hand History",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/game-history.png"
+  },
+  {
+    title: "Player Management",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/player-management.png"
+  },
+  {
+    title: "Users & Sub Admins",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/user-management.png"
+  },
+  {
+    title: "Affiliates",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/affiliate-management.png"
+  },
+  {
+    title: "Finance",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/finance-management.png"
+  },
+  {
+    title: "Notifications",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/notificstion-management.png"
+  },
+  {
+    title: "Promotions",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/promotion-management.png"
+  },
+  {
+    title: "Analytics",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/analytics.png"
+  },
+  {
+    title: "Reports",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/reports.png"
+  }
+]
+
+const crmTitle =[
+  { 
+    title: "backoffice & CRM",
+    description: "We offer the best BackOffice and CRM tools with our rummy software solutions, making game management easy. You can enjoy a user-friendly dashboard and all the essential & valuable features to manage the game rooms." 
+  }
+]
+
 
 const RummyGame = () => {
   // const [showMore, setShowMore] = useState(false)
@@ -504,6 +563,8 @@ const RummyGame = () => {
       <ContactBanner contactItems={contactData} />
 
       <PlatformSection platformItems={platformItems}/>
+
+      <CustomGrid customgridItems={crmItems} customTitle={crmTitle} />
 
       {/* <div className="features-section">
         <div className="features-container">
