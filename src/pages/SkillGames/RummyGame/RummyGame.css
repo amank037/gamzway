@@ -29,7 +29,7 @@
 .carousel-swiper::before {
     left: 0%;
     top: 60%;
-    animation: float-left 6s ease-in-out infinite;
+    animation: float-left 4s ease-in-out infinite;
 }
 
 .carousel-swiper::after {
