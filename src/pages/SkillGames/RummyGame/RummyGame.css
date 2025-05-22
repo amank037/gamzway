@@ -33,7 +33,7 @@
 }
 
 .carousel-swiper::after {
-    right: -15%;
+    right: -15%;    
     top: 30%;
     filter: blur(8px);
     opacity: 0.6;
