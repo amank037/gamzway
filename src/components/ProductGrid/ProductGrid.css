@@ -5,7 +5,7 @@
     margin: 40px auto;
     width: 100%;
     max-width: 1000px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .product-grid-item {
@@ -108,12 +108,12 @@
 
 @media (max-width: 768px) {
     .product-grid-item {
-        width: calc(50% - 10px);
+        width: calc(40% - 10px);
     }
 }
 
 @media (max-width: 480px) {
     .product-grid-item {
-        width: 100%;
+        width: 80%;
     }
 }
