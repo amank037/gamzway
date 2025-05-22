@@ -490,23 +490,14 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
-    display: flex;
-    align-items: center;
-    gap: 40px;
 }
 
-.choose-container img {
-    width: 45%;
-    height: auto;
-    border-radius: 15px;
-}
 
 .choose-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 30px;
     margin: 60px 0;
-    width: 55%;
 }
 
 .choose-card {
@@ -557,12 +548,6 @@
         flex-direction: column;
         gap: 30px;
     }
-
-    .choose-container img {
-        width: 100%;
-        max-width: 500px;
-    }
-
     .choose-grid {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);

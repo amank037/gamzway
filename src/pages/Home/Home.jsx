@@ -7,7 +7,6 @@ import ProductGrid from '../../components/ProductGrid/ProductGrid'
 import ContactBanner from '../../components/ContactBanner/ContactBanner'
 import AboutGrid from '../../components/AboutGrid/AboutGrid'
 import FeaturesGrid from '../../components/FeaturesSection/FeaturesGrid/FeaturesGrid'
-import ClientSection from '../../components/ClientSection/ClientSection'
 
 const productfeaturesText = [
     {
@@ -79,53 +78,6 @@ const aboutGrid = [
     title:"Admin Control",
     description:"Admin panel and analytics dashboard for complete business control"
   },
-]
-
-const techTitle = [
-    {
-        title: "The Technology Powering Our Products",
-        description: "Gamzway's strength lies in the technological ecosystem we've built over the years. From scalable server architecture to innovative frameworks, each game is backed by rock-solid infrastructure.",
-    }
-]
-
-const techItems = [
-    {
-      sections: [
-        {
-          title: "Frontend",
-          points: [
-            "React.js",
-            "Flutter",
-            "Unity",
-          ]
-        },
-        {
-          title: "Backend",
-          points: [
-            "Node.js",
-            "PHP",
-            "MongoDB",
-            "MySQL"
-          ]
-        },
-        {
-          title: "Cloud",
-          points: [
-            "AWS",
-            "Google Cloud",
-            "Azure"
-          ]
-        },
-        {
-          title: "Security",
-          points: [
-            "SSL",
-            "Anti-fraud AI",
-            "2FA"
-          ]
-        }
-      ]
-    }
 ]
 
 const chooseTitle =[
@@ -295,34 +247,7 @@ const Home = () => {
                 </div>
         </div>
 
-        {/* <div className="features-section">
-            <div className="features-container">
-            <div className="features-header">
-                <FeaturesHeader featuresText={[{ title: featuresItems[0].title }]} />
-                <p className="features-description">{featuresItems[0].description}</p>
-            </div>
-            
-            <div className="features-grid">
-                {featuresItems[0].sections.map((section, index) => (
-                <div key={index} className="feature-category">
-                    <div className="feature-category-header">
-                    <h3>{section.title}</h3>
-                    <div className="category-line"></div>
-                    </div>
-                    <div className="feature-points">
-                    {section.points.map((point, pointIndex) => (
-                        <div key={pointIndex} className="feature-point">
-                        <span className="point-bullet"></span>
-                        <p>{point}</p>
-                        </div>
-                    ))}
-                    </div>
-                </div>
-                ))}
-            </div>
-            </div>
-        </div> */}
-        <FeaturesGrid features={techItems[0]} featuresTitle={techTitle}/>
+
 
         <div className='engagement-section'>
             <FeaturesHeader featuresText={engagementModelsText}/>
@@ -362,7 +287,6 @@ const Home = () => {
             <FeaturesHeader featuresText={chooseTitle}/>
             <div className='choose-container'>
                 {/* <h2 className='choose-title'>Why Should One Choose Us?</h2> */}
-                <img src="https://www.mobzway.com/assets/images/why-chhose-banner3.webp" alt="" />
                 <div className='choose-grid'>
                     <div className='choose-card'>
                         <div className='card-icon'>
@@ -370,13 +294,6 @@ const Home = () => {
                         </div>
                         <h3>Quick Time to Market</h3>
                         <p>Launch faster with our pre-built solutions</p>
-                    </div>
-                    <div className='choose-card'>
-                        <div className='card-icon'>
-                            <i className="fas fa-code"></i>
-                        </div>
-                        <h3>Complete Ownership</h3>
-                        <p>Full ownership of all source codes</p>
                     </div>
                     <div className='choose-card'>
                         <div className='card-icon'>
@@ -411,7 +328,6 @@ const Home = () => {
             <ContactBanner contactItems={quoteItems}/>
         </div>
 
-        <ClientSection />
         
         <div className='support-section'>
             <FeaturesHeader featuresText={supportTitle}/>
