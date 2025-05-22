@@ -376,6 +376,7 @@
 
 .platform-feature-card:hover {
     transform: translateY(-5px);
+    cursor: pointer;
 }
 .platform-feature-card:hover .feature-image-container {
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
