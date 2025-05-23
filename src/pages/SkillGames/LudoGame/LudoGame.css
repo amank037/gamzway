@@ -15,6 +15,27 @@
     overflow: hidden;
     min-height: 100vh;
 }
+.landingImg{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    width: 40%;
+}
+
+.regarding-section {
+    width: 100%;
+    max-width: 1140px;
+    padding: 50px 0;
+    margin: 0 auto;
+    position: relative;
+}
+.regarding-section p{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-align: center;
+    padding: 20px 0;
+}
 
 .modes-section {
     width: 100%;
@@ -51,7 +72,7 @@
 .modes-section > *:not(.modes-grid) {
     position: relative;
     z-index: 2;
-    max-width: 1140px;
+    max-width: 10 1140px;
     margin: 0 auto;
 }
 
@@ -60,7 +81,8 @@
     text-align: center;
     border: 1px solid #ffffff;
     transition: all 0.3s ease-in-out;
-    border-radius: 10px;
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
 }
 .modes-grid .modes-grid-item:hover {
     transform: translateY(-3px);
@@ -72,7 +94,6 @@
 .modes-grid .modes-grid-item {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     padding-bottom: 20px;
     gap: 20px;
@@ -81,10 +102,12 @@
 .modes-grid .modes-grid-item img {
     border-radius: 50%;
     padding: 5px;
+    margin: 0 auto 25px;
     width: 100px;
     overflow: visible;
     border: 2px solid #514200;
     box-shadow: 0px 0px 10px 1px var(--secondary-yellow);
+    background-color: var(--primary-yellow);
 }
 
 .modes-grid .modes-grid-item h3 {
@@ -94,7 +117,7 @@
 }
 
 .modes-grid .modes-grid-item p {
-    font-size: 16px;
+    font-size: 14px;
     color: rgb(255, 255, 255);
     font-weight: 500;
 }
@@ -104,6 +127,7 @@
     width: 100%;
     position: relative;
     overflow: hidden;
+    padding-bottom: 50px;
 }
 
 .solutions-ludo-section::before {
@@ -138,6 +162,12 @@
 .solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container .solutions-desc{
     text-align: justify;
     position: relative;
+}
+.solutions-ludo-section .solutions-ludo-p{
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
 }
 
 .features-section {
@@ -270,6 +300,7 @@
     border: 1px solid #ffffff;
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
+    backdrop-filter: blur(10px);
 }
 .admin-features-grid .admin-features-grid-item:hover {
     transform: translateY(-3px);
@@ -284,13 +315,13 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
-    gap: 20px;
+    gap: 10px;
 }
 
 .admin-features-grid .admin-features-grid-item img {
     border-radius: 50%;
     padding: 5px;
-    width: 100px;
+    width: 70px;
     overflow: visible;
     /* border: 2px solid #514200; */
     /* box-shadow: 0px 0px 10px 1px var(--secondary-yellow); */
@@ -358,7 +389,7 @@
     justify-content: center;
 }
 .ludo-faq-section .ludo-faq-container{
-    max-width: 1240px;
+    max-width: 840px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -369,6 +400,11 @@
  .ludo-faq-right {
     flex: 1;
  }
+
+
+.path-section{
+    padding: 80px;
+}
 
 @media screen and (max-width: 1200px) {
     .modes-section,

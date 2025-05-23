@@ -10,7 +10,15 @@
     src: url('/fonts/Lokanova-Std.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-  }
+}
+
+@font-face {
+    font-family: 'VampireWars';
+    src: url('/fonts/Vampire\ Wars.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
   
 ::selection {
 background: #ffcc00; /* Your custom color */

@@ -536,26 +536,7 @@ const RummyGame = () => {
                     <li> Strong backend for user management, game tracking, income, and security tracking in Admin & Analytics Panel.</li>
                   </ul>
                   <br/><br/>
-                  {/* <span className={`solutions-desc-more ${showMore ? 'show' : ''}`}>
-                      Our skilled rummy game developers specialize in creating intuitive UI for
-                      multiplayer rummy game apps and websites. They design game engines to facilitate UI development
-                      and actively craft protocols for games. We deliver web and mobile games with enticing features
-                      like a highly rewarding loyalty program, daily free tournaments with points, seamless
-                      withdrawals, and much more.<br/><br/>
-                      Gamzway's Rummy Game Development team prioritizes user experience, offering a range of features
-                      such as player and game management, virtual money practice for less-experienced players, and the
-                      thrill of real-money play for seasoned gamers. In-app deposits provide support for players
-                      seeking to boost their levels of experience. We also ensure player confidentiality through the
-                      option of private tables. Our games are accessible via mobile applications, websites, and
-                      desktop software. Security is a paramount concern at Gamzway, and we prioritize the safety of
-                      the rummy game application and its users.<br/><br/>
-                      Should you encounter any hiccups or need assistance with understanding the game or any
-                      back-office features, the Gamzway team is just one click away. We're here to help!
-                  </span> */}
             </div>
-            {/* <button onClick={toggleReadMore}>
-              {showMore ? 'Read Less' : 'Read More'}
-            </button> */}
           </div>
         </div>
       </div>

@@ -41,10 +41,10 @@
 }
 
 .poker-stack-glow {
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -60%) rotate(-5deg);
-    width: 90%;
+    width: 100%;
     z-index: 2;
     opacity: 0.8;
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -58,6 +58,10 @@
     width: 70%;
     z-index: 5;
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    font-family: 'VampireWars';
+    color: var(--primary-yellow);
+    font-size: 3rem;
 }
 
 .poker-image-stack:hover .poker-stack-text {

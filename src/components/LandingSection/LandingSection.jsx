@@ -8,6 +8,7 @@ function LandingSection({ landingItems }) {
             <div key={index} className='landing-text'>
                 <h1>{item.title}</h1>
                 <p>{item.description}</p>
+                <p>{item.description2}</p>
                 <button className='landing-btn'><span>{item.button}</span></button>
             </div>
         ))}
