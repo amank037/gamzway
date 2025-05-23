@@ -41,7 +41,7 @@ import LandingSection from '../../../components/LandingSection/LandingSection'
 const landingItems = [
   {
     title: "LUDO GAME",
-    description: " Ludo is a sentimental event that brings friends and family together, not only a board game.  The game has easily evolved into mobile and web platforms in the digital age of today, allowing everyone to play anywhere, any time.  At Mobzway Technologies, we enable companies to use modern Ludo game development tools catered to Android, iOS, desktop, and web, so harnessing the everlasting appeal of Ludo.",
+    description: " Ludo is a sentimental event that brings friends and family together, not only a board game.  The game has easily evolved into mobile and web platforms in the digital age of today, allowing everyone to play anywhere, any time.  At Gamzway Technologies, we enable companies to use modern Ludo game development tools catered to Android, iOS, desktop, and web, so harnessing the everlasting appeal of Ludo.",
     description2:"Rich design, real-time multiplayer interaction, and monetising options combined in our Ludo game apps help companies increase user base and income.  We provide dependable, scalable, reasonably priced development tools whether your needs call for a pre-built solution ready to use or a bespoke Ludo program.",
     button: "GET STARTED"
   }
@@ -187,7 +187,7 @@ const readyItems = [
         title:"Ready to talk about your ludo game concept?"
       }
     ],
-    description: " Designed a Ludo app or wish to start your own gaming platform?  Let us realise your idea.  Mobzway is ready to help your company, regardless of its size—established entertainment brand or game startup—with tailored, ready-to-launch Ludo solutions. \n  Our staff can help with end-to--end deployment, MVP development, prototype construction, and consulting.  We will assist you in selecting appropriate features, organising your monetising strategy, and producing a flawless game fit for your company objectives.",
+    description: " Designed a Ludo app or wish to start your own gaming platform?  Let us realise your idea.  Gamzway is ready to help your company, regardless of its size—established entertainment brand or game startup—with tailored, ready-to-launch Ludo solutions. \n  Our staff can help with end-to--end deployment, MVP development, prototype construction, and consulting.  We will assist you in selecting appropriate features, organising your monetising strategy, and producing a flawless game fit for your company objectives.",
     hrefText: "LET'S TALK"
   }
 ]
@@ -247,7 +247,7 @@ const platformItems = [
   {
     featuresText:[
       {
-        title: "WE BUILD THE POKER GAME FOR ALL PLATFORMS",
+        title: "WE BUILD THE LUDO GAME FOR ALL PLATFORMS",
         description: "We create Ludo games for several platforms so that users of any device may enjoy the same experience:"
       }
     ],
@@ -289,7 +289,7 @@ const platformItems = [
 const chooseTitle = [
   {
     title: "Why Choose Gamzway As Your Ludo Game Development Company?",
-    description: " Regarding gaming solutions, Mobzway is one of a reliable development partner.  Here is the reason companies all over choose us:"
+    description: " Regarding gaming solutions, Gamzway is one of a reliable development partner.  Here is the reason companies all over choose us:"
   }
 ]
 
@@ -389,8 +389,8 @@ const demoItems = [
 
 const pathItems = [
   {
-    title: "Start Your Entrepreneurial Path with Mobzway",
-    description: "Your aspiration to start a gaming company starts here.  At Mobzway, we help companies produce amazing digital games by combining strong code, innovative storytelling, and immersive gameplay design.  Whether it's a big-scale gaming platform or a hobby turned enterprise, our staff delivers professionally and passionately. \n One dice rolls at a time, let us construct your success narrative!"
+    title: "Start Your Entrepreneurial Path with Gamzway",
+    description: "Your aspiration to start a gaming company starts here.  At Gamzway, we help companies produce amazing digital games by combining strong code, innovative storytelling, and immersive gameplay design.  Whether it's a big-scale gaming platform or a hobby turned enterprise, our staff delivers professionally and passionately. \n One dice rolls at a time, let us construct your success narrative!"
   }
 ]
 
@@ -410,7 +410,7 @@ const LudoGame = () => {
         <FeaturesHeader featuresText={regardingItems} />
         <p>Four players of the multiplayer board game Ludo race their tokens from start to finish depending on dice rolls.  Originally from the Indian game "Pachisi," Ludo is still a household favourite in all age groups and has gained popularity all around.  For smartphone users, its simplicity, chance-based excitement, and social gaming fit.</p>
         <p>Particularly post-2020, online ludo games have witnessed a tremendous increase in participation as consumers search for simple but entertaining games to play with friends, family, or random opponent.  Live multiplayer, in-game chat, bonus awards, and customising choices abound in the digital form to keep consumers returning for more.</p>
-        <p> At Mobzway, we bring to screens with interactive elements, seamless graphics, and easy controls the same thrills.</p>
+        <p> At Gamzway, we bring to screens with interactive elements, seamless graphics, and easy controls the same thrills.</p>
       </div>
 
       <div className='modes-section'>
@@ -521,7 +521,7 @@ const LudoGame = () => {
                 <br/>
                 <li>Dedicated Support: Constant updates, bug corrections, and help following launch.</li>
                 <br/> <br/>
-                <p>Our first priorities are creating things that entertain, interact, and convert.  Using Mobzway lets you create a profitable digital business rather than only a game.</p>  
+                <p>Our first priorities are creating things that entertain, interact, and convert.  Using Gamzway lets you create a profitable digital business rather than only a game.</p>  
             </ul>
           </div>
         </div>

@@ -42,10 +42,10 @@ const AchievementsBanner = () => {
   }, [])
 
   const achievements = [
-    { number: 500, suffix: '+', title: 'GAMES LAUNCHED', image: 'https://beta.mobzway.com/assets/images/game-launched1.png' },
-    { number: 300, suffix: '+', title: 'SATISFIED CUSTOMERS', image: 'https://beta.mobzway.com/assets/images/satisfied-customers1.png' },
-    { number: 97, suffix: '%', title: 'CLIENT RETENTION', image: 'https://beta.mobzway.com/assets/images/rummy-game-development/client-retension1.webp' },
-    { number: 100, suffix: 'K+', title: 'PLAYERS', image: 'https://beta.mobzway.com/assets/images/players1.png' }
+    { number: 500, suffix: '+', title: 'GAMES LAUNCHED' },
+    { number: 300, suffix: '+', title: 'SATISFIED CUSTOMERS' },
+    { number: 97, suffix: '%', title: 'CLIENT RETENTION' },
+    { number: 100, suffix: 'K+', title: 'PLAYERS' }
   ]
 
   return (
@@ -53,9 +53,7 @@ const AchievementsBanner = () => {
       <div className='ach-container'>
         {achievements.map((achievement, index) => (
           <div className='ach-card' key={index}>
-            <div className='ach-icon'>
-              <img className='ach-img' src={achievement.image} alt={achievement.title} />
-            </div>
+            
             <div className='ach-text'>
               <h1 
                 ref={el => countersRef.current[index] = el}

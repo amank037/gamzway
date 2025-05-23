@@ -4,16 +4,19 @@ import AchievementsBanner from "../../../components/AchievementsBanner/Achieveme
 import FeaturesHeader from "../../../components/FeaturesSection/FeaturesHeader/FeaturesHeader"
 import ContactBanner from "../../../components/ContactBanner/ContactBanner"
 import AccordionSection from "../../../components/AccordionSection/AccordionSection"
+import CustomGrid from "../../../components/CustomGrid/CustomGrid"
+import PaymentSection from "../../../components/PaymentSection/PaymentSection"
+import PlatformSection from "../../../components/PlatformSection/PlatformSection"
+import ProductSection from "../../../components/ProductSection/ProductSection"
 
 const landingItems = [
   {
     title: "CALL BREAK GAME DEVELOPMENT",
-    description: "Call Break has become a hot item in the digital gaming market as millions of fans across South Asia and growing taste for skill-based real-money card games drive demand.  At Mobzway Technologies, we bring this venerable card game to life with engaging gaming, real-time multiplayer sync, sophisticated CRM tools, and monetising strategies maximising involvement and income.",
+    description: "Call Break has become a hot item in the digital gaming market as millions of fans across South Asia and growing taste for skill-based real-money card games drive demand.  At Gamzway Technologies, we bring this venerable card game to life with engaging gaming, real-time multiplayer sync, sophisticated CRM tools, and monetising strategies maximising involvement and income.",
     description2: "Serving gaming startups, businesses, and entrepreneurs develop unique Call Break games across Android, iOS, and Web, we are a reputable Call Break Card Game Development Company.",
     button: "REQUEST A QUOTE",
   }
 ]
-
 const breakservicesTitle = [
   {
     title: "Contact Development Services for Break Cards",
@@ -35,36 +38,73 @@ const hireItems = [
         title:" Hire Developers of Call Break Cards Games"
       }
     ],
-    description: "  Highly talented Call Break Card Game developers for hire from Mobzway specialise in multiplayer card game logic, real-time frameworks, and UI animation.",
+    description: "  Highly talented Call Break Card Game developers for hire from Gamzway specialise in multiplayer card game logic, real-time frameworks, and UI animation.",
     hrefText: "LET'S TALK"
   }
 ]
 
-const whyHireTitle = [
-  {
-    title: "Why Hire Mobzway's Call Break Card Game Developers?",
-    description: "We provide flexible engagement models whether your project calls for a full-time staff or developers on a contract basis."
-  }
-]
+// const whyHireTitle = [
+//   {
+//     title: "Why Hire Gamzway's Call Break Card Game Developers?",
+//     description: "We provide flexible engagement models whether your project calls for a full-time staff or developers on a contract basis."
+//   }
+// ]
 
-const callModesTitle = [
+const crmItems = [
   {
-    title: "Call modes for Break Cards",
-    description: "Give your consumers a great range of experiences using several gameplay styles:"
-  }
-]
-
-const featuresTitle = [
+    title: "Dashboard",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/dashboard.png"
+  },
   {
-    title: "Call Break Game Development Characteristics",
-    description: "We incorporate a strong feature set to provide your Call Break game a competitive edge."
+    title: "Game Rooms",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/game-management.png"
+  },
+  {
+    title: "Tournaments",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/tournament-management.png"
+  },
+  {
+    title: "Hand History",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/game-history.png"
+  },
+  {
+    title: "Player Management",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/player-management.png"
+  },
+  {
+    title: "Users & Sub Admins",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/user-management.png"
+  },
+  {
+    title: "Affiliates",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/affiliate-management.png"
+  },
+  {
+    title: "Finance",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/finance-management.png"
+  },
+  {
+    title: "Notifications",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/notificstion-management.png"
+  },
+  {
+    title: "Promotions",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/promotion-management.png"
+  },
+  {
+    title: "Analytics",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/analytics.png"
+  },
+  {
+    title: "Reports",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/reports.png"
   }
 ]
 
 const crmTitle =[
   { 
-    title: "Back Office Features and CRM",
-    description: "We provide you an intelligent CRM and Backoffice System to simplify user and game management, so enabling complete control over your game environment." 
+    title: "backoffice & CRM",
+    description: "We offer the best BackOffice and CRM tools with our rummy software solutions, making game management easy. You can enjoy a user-friendly dashboard and all the essential & valuable features to manage the game rooms." 
   }
 ]
 
@@ -77,13 +117,6 @@ const waitItems = [
     ],
     description: "Leverage the always expanding card gaming market. We assist you regardless of your intended use—a fully monetised platform or a casual game.",
     hrefText: "LET'S TALK"
-  }
-]
-
-const benefitsTitle = [
-  {
-    title: "Why is Mobzway the superior call break game development company?",
-    description: "Our unique value in Call Break game production comes from combining technical competence, artistic vision, and market expertise."
   }
 ]
 
@@ -116,6 +149,147 @@ const faqAccordionData =[
     description: "One can get ready in 4–6 weeks with a simple version.  An elaborate form including CRM and wallet might take ten to twelve weeks."
   },
 ]
+
+const chooseTitle = [
+  {
+    title: "Why choose Gamzway for Call Break Card Game Development?",
+    description: "Gamzway is a leading Call Break Card Game Development Company with a team of highly skilled developers, designers, and project managers.  We offer a wide range of Call Break Card Game Development services including:"
+  }
+]
+
+const adminfeaturesTitle = [
+  {
+    title: " Features of Administration Control",
+    description: "Our Ludo game has a strong administrative panel with the following options to help you totally control over your gaming platform:"
+  }
+]
+
+const adminfeaturesGrid = [
+  {
+    image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/player-management.png",
+    title: "",
+    description: "View, block or unblock users in user management."
+  },
+  
+  {
+    image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/dashboard.png",
+    title: "",
+    description: "Track games performed, player performance, and real-time statistics in gaming analytics."
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/finance-management.png",
+    title: "",
+    description: "Revenue Reports: Control commissions and obtain clear income results"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/game-management.png",
+    title: "",
+    description: "Change rules, token colours, and dice features in your custom game."
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/affiliate-management.png",
+    title: "",
+    description: "Set up referral networks, welcome bonuses, and prizes in promotions and offers."
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/notificstion-management.png",
+    title: "",
+    description: "Push Notifications: Send gamers quick alerts or advertising messages."
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/user-management.png",
+    title: "",
+    description: "Multi-Admin Access: Assign roles with varying degrees of authorization (e.g., Moderator, Super Admin.)."
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/analytics.png",
+    title: "",
+    description: "Enable IP blocking, fraud detection, and suspicious activity alerts in security management."
+  }
+]
+
+const platformItems = [
+  {
+    featuresText:[
+      {
+        title: "WE BUILD THE CALL BREAK GAME FOR ALL PLATFORMS",
+        description: "We create CCall Break games for several platforms so that users of any device may enjoy the same experience:"
+      }
+    ],
+    platformGrid:[
+      {
+        image: "https://beta.mobzway.com/assets/images/HTML_five-broweswer.webp",
+        title: "HTML 5 BROWSER",
+        description: ""
+      },
+      {
+        image: "https://img.icons8.com/?size=480&id=17836&format=png",
+        title: "Android Game App",
+        description: ""
+      },
+      {
+        image: "https://img.icons8.com/?size=240&id=bN2IQyaCUVk5&format=png",
+        title: "IOS GAME APP",
+        description: ""
+      },
+      {
+        image: "https://beta.mobzway.com/assets/images/Mac_PC.webp",
+        title: "DESKTOP VERSION",
+        description: ""
+      },
+      {
+        image: "https://img.icons8.com/?size=480&id=IPzemd2v4Ubj&format=png",
+        title: "CROSS PLATFORM UNITY BUILDS",
+        description: ""
+      },
+      {
+        image: "https://img.icons8.com/?size=200&id=MKRHZpOBBZqD&format=png",
+        title: "SMART TV COMPATIBILITY (ON-DEMAND)",
+        description: ""
+      }
+    ]
+  }
+]
+
+const productItems = [
+  {
+    image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Poker.webp",
+    title: "Poker Game",
+    description: "Gamzway provides poker game development for all the popular poker games like Texas Hold’em, Omaha, Seven Stud, OFC Poker, and more. Our seasoned game developers utilize cutting-edge gaming technology to offer the player's best poker gaming experience.",
+    href: "/skill-games/poker"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/poker-game-development/Product_Rummy.webp",
+    title: "Rummy Game",
+    description: "The highly talented team of rummy software developers ensures that very engaging and customized solutions of this “game of skill” are offered to the gaming clients. All the popular versions of rummy are developed as per the client’s requirements.",
+    href: "/skill-games/rummy"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Teenpatti.webp",
+    title: "Teen Patti Game",
+    description: "Gamzway offers ready-to-use Teen Patti solutions for business ventures. We build customized solutions for all the variants like Fox,Vintage, and Teen Patti Plus. We provide solutions for all desktop & mobile devices, and web browsers at the best prices.",
+    href: "/game-apis/teen-patti"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Casino.webp",
+    title: "Casino Software",
+    description: "For the online casino game entrepreneurs and businesses, Gamzway offers customized casino game solutions. All the popular casino games like Roulette, Blackjack, Slot, Baccarat, etc. are designed and developed at our gaming studio as per your business needs.",
+    href: "/casino-games"
+  },
+]
+
+const demoItems = [
+  {
+    featuresText: [
+      {
+        title: " Demand a free demo"
+      }
+    ],
+    description: "Interested to observe the operation of our Call Break app?  Click here to arrange your free demo and view our Call Break game from the viewpoints of the player and administrator.  View the interface, features, and performance live action.",
+    hrefText: "TRY DEMO"
+  }
+]
+
 
 const CallBreakGame = () => {
   return (
@@ -176,9 +350,22 @@ const CallBreakGame = () => {
                     <div className='break-model-icon'>
                         <i className="fas fa-cube"></i>
                     </div>
-                    <p>Using Mobzway gives you a complete business ecosystem rather than only a game.</p>
+                    <p>Using Gamzway gives you a complete business ecosystem rather than only a game.</p>
                 </div>
             </div>
+      </div>
+
+      <div className='admin-features-section'>
+        <FeaturesHeader featuresText={adminfeaturesTitle} />
+        <div className='admin-features-grid'>
+        {adminfeaturesGrid.map((item, index) => (
+          <div className='admin-features-grid-item' key={index}>
+              <img src={item.image} alt="" />
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+          </div>
+          ))}
+        </div>
       </div>
 
       <div className="regarding-section">
@@ -189,237 +376,45 @@ const CallBreakGame = () => {
 
       <ContactBanner contactItems={hireItems}/>
 
-      <div className='hire-developers-section'>
-        <FeaturesHeader featuresText={whyHireTitle}/>
-        <div className='break-models-grid'>
-          <div className='break-model-card'>
-            <div className='break-model-icon'>
-              <i className="fas fa-code"></i>
-            </div>
-            <p>Mastery of HTML 5, Cocos2d, and Unity</p>
-          </div>
-          <div className='break-model-card'>
-            <div className='break-model-icon'>
-              <i className="fas fa-server"></i>
-            </div>
-            <p>Live gameplay expertise in Node.js with Socket.IO</p>
-          </div>
-          <div className='break-model-card'>
-            <div className='break-model-icon'>
-              <i className="fas fa-cog"></i>
-            </div>
-            <p>Custom rules and bidding rational application</p>
-          </div>
-          <div className='break-model-card'>
-            <div className='break-model-icon'>
-              <i className="fas fa-shield-alt"></i>
-            </div>
-            <p>Real-money compliance (SSL, licensing, RNG)</p>
-          </div>
-          <div className='break-model-card'>
-            <div className='break-model-icon'>
-              <i className="fas fa-tasks"></i>
-            </div>
-            <p>Agile projects carried out using open reporting</p>
-          </div>
-          <div className='break-model-card'>
-            <div className='break-model-icon'>
-              <i className="fas fa-trophy"></i>
-            </div>
-            <p>Fantasy Games: Custom leagues and prize pools</p>
-          </div>
-          <div className='break-model-card'>
-            <div className='break-model-icon'>
-              <i className="fas fa-brain"></i>
-            </div>
-            <p>AI rationale and point-based scoring</p>
-          </div>
-          <div className='break-model-card'>
-            <div className='break-model-icon'>
-              <i className="fas fa-chart-line"></i>
-            </div>
-            <p>Leaderboards and dynamic scorebooks</p>
-          </div>
-        </div>
-        <div className="hire-description">
-          <p>Similar to fantasy cricket or rummy, Mobzway allows you to design and scale a Fantasy Call Break Card Game where participants may join leagues, form teams, and win rewards. Perfect for companies trying to use competitive card gaming, this strategy increases lifetime value and player retention.</p>
-        </div>
-      </div>
-      
-      <div className="call-modes-section">
-        <FeaturesHeader featuresText={callModesTitle}/>
-        <div className="modes-container">
-          <div className="mode-card">
-            <i className="fas fa-dice"></i>
-            <h3>Classic Mode</h3>
-            <p>Play the conventional Call Break style</p>
-          </div>
-          <div className="mode-card">
-            <i className="fas fa-bolt"></i>
-            <h3>Quick Mode</h3>
-            <p>Shorter rounds for immediate enjoyment</p>
-          </div>
-          <div className="mode-card">
-            <i className="fas fa-user-friends"></i>
-            <h3>Private Table Mode</h3>
-            <p>Invite only rooms for pals</p>
-          </div>
-          <div className="mode-card">
-            <i className="fas fa-trophy"></i>
-            <h3>Tournament Mode</h3>
-            <p>Participate in bracket-style contests</p>
-          </div>
-          <div className="mode-card">
-            <i className="fas fa-robot"></i>
-            <h3>Practice Mode</h3>
-            <p>Perfect talents versus artificial intelligence</p>
-          </div>
-        </div>
-      </div>
+      <PlatformSection platformItems={platformItems}/>
 
-      <div className="callbreak-features-section">
-        <FeaturesHeader featuresText={featuresTitle}/>
-        <div className="callbreak-features-container">
-          <div className="callbreak-features-essential">
-            <h3><i className="fas fa-star"></i> Essential Features</h3>
-            <ul>
-              <li><i className="fas fa-check"></i> Real-time multiplayer matching</li>
-              <li><i className="fas fa-check"></i> Visually striking card animations</li>
-              <li><i className="fas fa-check"></i> Sound FX and game event comments</li>
-              <li><i className="fas fa-check"></i> Simple UI</li>
-              <li><i className="fas fa-check"></i> Multi-language assistance</li>
-              <li><i className="fas fa-check"></i> Safe login from OTP, social, or email</li>
-            </ul>
+      <div className='solutions-ludo2-section bg-1'>
+        <div className='solutions-ludo2-top'>
+          <FeaturesHeader featuresText={chooseTitle}/>
+        </div>
+
+        <div className='solutions-ludo2-bottom'>
+          <div className='solutions-img'>
+            <img src="https://beta.mobzway.com/assets/images/why-choose.png" alt="" style={{ width: '400px', paddingTop: '30px'}}/>
           </div>
-          <div className="callbreak-features-enhanced">
-            <h3><i className="fas fa-gem"></i> Enhanced Features</h3>
-            <ul>
-              <li><i className="fas fa-check"></i> Consult and earn modules</li>
-              <li><i className="fas fa-check"></i> Live chat with emoticons</li>
-              <li><i className="fas fa-check"></i> Programs for daily and weekly rewards</li>
-              <li><i className="fas fa-check"></i> Facebook Audience Network integration and AdMob</li>
-              <li><i className="fas fa-check"></i> Real-money wallet, bonus, and withdraw management</li>
+          <div className='solutions-desc-container'>
+            <br/>
+            <br/>
+            <ul >
+                <li>Over eight years of gaming development expertise, industry experience.</li>
+                <br/>
+                <li>Customisable Solutions with branding and feature control: white-label choices Pre-built solutions lower time-to----market and help to speed deployment.</li>
+                <br/>
+                <li> Perfect team including project managers, QA experts, UI/UX designers, game developers.</li>
+                <br/>
+                <li>Perfect data security compliance with GDPR and encrypted with techniques.</li>
+                <br/>
+                <li>Competitive packages for businesses and startups offer reasonably priced costs.</li>
+                <br/>
+                <li>Dedicated Support: Constant updates, bug corrections, and help following launch.</li>
+                <br/> <br/>
+                <p>Our first priorities are creating things that entertain, interact, and convert.  Using Gamzway lets you create a profitable digital business rather than only a game.</p>  
             </ul>
           </div>
         </div>
       </div>
       
-      <div className="callbreak-crm">
-        <FeaturesHeader featuresText={crmTitle}/>
-        <div className="crm-grid">
-          <div className="crm-section">
-            <h3><i className="fas fa-tools"></i> Important CRM Tools</h3>
-            <div className="crm-features">
-              <div className="crm-feature-item">
-                <i className="fas fa-user-plus"></i>
-                <p>Player onboarding and activity tracking</p>
-              </div>
-              <div className="crm-feature-item">
-                <i className="fas fa-users-cog"></i>
-                <p>Player segmentation to provide customised incentives</p>
-              </div>
-              <div className="crm-feature-item">
-                <i className="fas fa-bell"></i>
-                <p>Email and push notification systems</p>
-              </div>
-              <div className="crm-feature-item">
-                <i className="fas fa-bullhorn"></i>
-                <p>Campaign development and extra work assignment</p>
-              </div>
-              <div className="crm-feature-item">
-                <i className="fas fa-chart-pie"></i>
-                <p>Reports and behaviour analysis of users</p>
-              </div>
-            </div>
-          </div>
-          <div className="crm-section">
-            <h3><i className="fas fa-cogs"></i> Backoffice Features</h3>
-            <div className="crm-features">
-              <div className="crm-feature-item">
-                <i className="fas fa-gamepad"></i>
-                <p>Match and tournament keeping under observation</p>
-              </div>
-              <div className="crm-feature-item">
-                <i className="fas fa-file-invoice-dollar"></i>
-                <p>Transcript of transactions and payment records</p>
-              </div>
-              <div className="crm-feature-item">
-                <i className="fas fa-wallet"></i>
-                <p>Recharging a wallet and handling withdrawals</p>
-              </div>
-              <div className="crm-feature-item">
-                <i className="fas fa-user-shield"></i>
-                <p>Audits and role-based worker access</p>
-              </div>
-              <div className="crm-feature-item">
-                <i className="fas fa-headset"></i>
-                <p>Support ticket system and complaint resolving process</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="crm-footer">
-          <p>These instruments enable you to run the platform effectively and propel expansion using informed decisions based on data.</p>
-        </div>
-      </div>
 
-      {/* <div className="why-wait-section">
-        <div className="why-wait-content">
-          <h2>Why wait? Let's design your call break game right now.</h2>
-          <p>Leverage the always expanding card gaming market. We assist you regardless of your intended use—a fully monetised platform or a casual game:</p>
-          <div className="why-wait-points">
-            <div className="point-item">
-              <i className="fas fa-rocket"></i>
-              <span>Get in front of market sooner</span>
-            </div>
-            <div className="point-item">
-              <i className="fas fa-shield-alt"></i>
-              <span>Verify excellent security</span>
-            </div>
-            <div className="point-item">
-              <i className="fas fa-star"></i>
-              <span>Provide unparalleled game</span>
-            </div>
-            <div className="point-item">
-              <i className="fas fa-expand-arrows-alt"></i>
-              <span>Easy scale</span>
-            </div>
-          </div>
-          <button className="cta-button">Get your own Call Break game started by talking to us now</button>
-        </div>
-      </div> */}
+      <CustomGrid customgridItems={crmItems} customTitle={crmTitle} />
 
       <ContactBanner contactItems={waitItems}/>
 
-      <div className="benefits-section">
-        <FeaturesHeader featuresText={benefitsTitle}/>
-
-        <div className="why-superior">
-          <div className="superior-points">
-            <div className="superior-item">
-              <i className="fas fa-globe-americas"></i>
-              <p>Trusted by worldwide clients from Asia, Europe, and the US</p>
-            </div>
-            <div className="superior-item">
-              <i className="fas fa-users"></i>
-              <p>Committed game designers, programmers, testers, and project managers</p>
-            </div>
-            <div className="superior-item">
-              <i className="fas fa-gavel"></i>
-              <p>Legal compliance for games using real money</p>
-            </div>
-            <div className="superior-item">
-              <i className="fas fa-headset"></i>
-              <p>Technical support available 24/7 following launch</p>
-            </div>
-            <div className="superior-item">
-              <i className="fas fa-file-code"></i>
-              <p>100% source code ownership combined with documentation</p>
-            </div>
-          </div>
-          <p className="closing-text">Selecting Mobzway is selecting a partner that respects your company as it stands.</p>
-        </div>
-      </div>
+      <PaymentSection />
 
       <div className='faq-section'>
         <FeaturesHeader featuresText={faqTitle} />
@@ -432,6 +427,10 @@ const CallBreakGame = () => {
             <span className="btn-border"></span>
         </a>
       </div>
+      
+      <ProductSection productGrid={productItems}/>
+
+      <ContactBanner contactItems={demoItems}/>
       
     </div>
   )

@@ -100,7 +100,7 @@ const productItems = [
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Poker.webp",
     title: "Poker Game",
-    description: " Explore Mobzway’s full-stack poker game development services. From Texas Hold’em and Omaha to Seven Stud and OFC Poker, our team builds immersive poker experiences using modern gaming frameworks. We deliver secure, scalable, and high-performance poker game apps for web and mobile platforms.",
+    description: " Explore Gamzway’s full-stack poker game development services. From Texas Hold’em and Omaha to Seven Stud and OFC Poker, our team builds immersive poker experiences using modern gaming frameworks. We deliver secure, scalable, and high-performance poker game apps for web and mobile platforms.",
     href: "/skill-games/poker"
   },
   {
@@ -112,13 +112,13 @@ const productItems = [
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Teenpatti.webp",
     title: "Teen Patti Game",
-    description: "Get ready-to-deploy or customized Teen Patti game development solutions for mobile, web, and desktop. Whether it's Classic, Fox, Vintage, or Teen Patti Plus, Mobzway develops high-performance card games that attract and retain users.",
+    description: "Get ready-to-deploy or customized Teen Patti game development solutions for mobile, web, and desktop. Whether it's Classic, Fox, Vintage, or Teen Patti Plus, Gamzway develops high-performance card games that attract and retain users.",
     href: "/game-apis/teen-patti"
   },
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/product_ludo.webp",
     title: "LUDO Game",
-    description: " Looking to launch your Ludo game app? Mobzway delivers reliable and visually appealing Ludo game development for Android, iOS, and browsers using HTML5. Choose from ready-to-live or fully customized game solutions for your brand.",
+    description: " Looking to launch your Ludo game app? Gamzway delivers reliable and visually appealing Ludo game development for Android, iOS, and browsers using HTML5. Choose from ready-to-live or fully customized game solutions for your brand.",
     href: "/skill-games/ludo"
   },
 ]
