@@ -9,7 +9,7 @@
 }
 
 .product-grid-item {
-    width: calc(25% - 15px);
+    width: calc(25% - 30px);
     position: relative;
     background: transparent;
 }
@@ -57,6 +57,7 @@
     transform: translate(-50%, -50%);
     width: 100%;
     z-index: 3;
+    animation: floatCards 4s ease-in-out infinite;
 }
 
 .poker-stack-chips-left {
@@ -65,6 +66,7 @@
     transform: translate(-50%, -50%);
     width: 70%;
     z-index: 4;
+    animation: floatChipsLeft 5s ease-in-out infinite;
 }
 
 .poker-stack-chips-right {
@@ -73,6 +75,43 @@
     transform: translate(0, -50%);
     width: 70%;
     z-index: 4;
+    animation: floatChipsRight 4.5s ease-in-out infinite 0.5s;
+}
+
+@keyframes floatCards {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-50%, -55%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes floatChipsLeft {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-55%, -48%) rotate(-5deg);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes floatChipsRight {
+    0% {
+        transform: translate(0, -50%);
+    }
+    50% {
+        transform: translate(5%, -48%) rotate(5deg);
+    }
+    100% {
+        transform: translate(0, -50%);
+    }
 }
 
 .poker-stack-text {
