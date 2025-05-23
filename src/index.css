@@ -18,10 +18,8 @@ color: #000000;
 }
 
 :root {
-    /* --primary-yellow: #FFD700; */
-    --primary-yellow: #F3BF44;
-    /* --secondary-yellow: #fcd10a; */
-    --secondary-yellow: #F3BF44;
+    --primary-yellow: #FFD700;
+    --secondary-yellow: #fcd10a;
     --text-color: #FFFFFF;
     --background-black: #111111;
 }
