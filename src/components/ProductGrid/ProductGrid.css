@@ -68,138 +68,125 @@
     opacity: 0.9;
 }
 
-.poker-stack-card1{
+/* .poker-stack-card1 {
     z-index: 3;
-    transform: translate(10%, -270%);
+    position: absolute;
+    top: 15%;
+    left: 5%;
     width: 40%;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    animation: floatCard1 4s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.6s;
 }
-.poker-stack-card2{
+
+.poker-stack-card2 {
     z-index: 4;
-    transform: translate(65%, -290%);
+    position: absolute;
+    top: 0%;
+    left: 25%;
     width: 35%;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); 
-    animation: floatCard2 4s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
 }
-.poker-stack-card3{
+
+.poker-stack-card3 {
     z-index: 5;
-    transform: translate(95%, -235%);
+    position: absolute;
+    top: 10%;
+    left: 38%;
     width: 40%;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    animation: floatCard3 4s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 }
-.poker-stack-card4{
+
+.poker-stack-card4 {
     z-index: 6;
-    transform: translate(110%, -220%);
+    position: absolute;
+    top: 10%;
+    left: 50%;
     width: 45%;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    animation: floatCard4 4s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
+
 .poker-image-stack:hover .poker-stack-card1 {
-    transform: translate(-20%, -290%) scale(1.1) !important;
+    top: 4%;
+    left: 0%;
+    transform: scale(1.1);
 }
+
 .poker-image-stack:hover .poker-stack-card2 {
-    transform: translate(45%, -310%) scale(1.1) !important;
+    top: -10%;
+    left: 22%;
+    transform: scale(1.1);
 }
+
 .poker-image-stack:hover .poker-stack-card3 {
-    transform: translate(100%, -265%) scale(1.1) !important;
+    top: -1%;
+    left: 42%;
+    transform: scale(1.1);
 }
+
 .poker-image-stack:hover .poker-stack-card4 {
-    transform: translate(130%, -250%) scale(1.1) !important;
-}
-@keyframes floatCard1 {
-    0%, 100% { transform: translate(10%, -270%) scale(1); }
-    50% { transform: translate(10%, -275%) rotate(2deg) scale(1); }
-}
-
-@keyframes floatCard2 {
-    0%, 100% { transform: translate(65%, -290%) scale(1); }
-    50% { transform: translate(65%, -295%) rotate(-2deg) scale(1); }
-}
-
-@keyframes floatCard3 {
-    0%, 100% { transform: translate(95%, -235%) scale(1); }
-    50% { transform: translate(95%, -240%) rotate(3deg) scale(1); }
-}
-
-@keyframes floatCard4 {
-    0%, 100% { transform: translate(110%, -220%) scale(1); }
-    50% { transform: translate(110%, -225%) rotate(-3deg) scale(1); }
-}
+    top: 0%;
+    left: 55%;
+    transform: scale(1.1);
+} */
 
 
-.poker-chip-left-top{
+
+.poker-chip-left-top {
     z-index: 7;
-    transform: translate(-15%, -210%);
+    position: absolute;
+    top: 40%;
+    left: -8%;
     width: 50%;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    animation: floatChipLeftTop 5s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.poker-chip-left-bottom{
+
+.poker-chip-left-bottom {
     z-index: 6;
-    transform: translate(20%, -170%);
-    width: 38%;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    animation: floatChipLeftBottom 5s ease-in-out infinite 0.5s;
+    position: absolute;
+    top: 52%;
+    left: 10%;
+    width: 40%;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.poker-chip-right-top{
+
+.poker-chip-right-top {
     z-index: 7;
-    transform: translate(110%, -190%);
+    position: absolute;
+    top: 47%;
+    left: 55%;
     width: 50%;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    animation: floatChipRightTop 5s ease-in-out infinite 1s;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.poker-chip-right-bottom{
+
+.poker-chip-right-bottom {
     z-index: 6;
-    transform: translate(140%, -175%);
+    position: absolute;
+    top: 60%;
+    left: 55%;
     width: 38%;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    animation: floatChipRightBottom 5s ease-in-out infinite 1.5s;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .poker-image-stack:hover .poker-chip-left-top {
-    transform: translate(-35%, -230%) scale(1.1) !important;
+    top: 33%;
+    left: -15%;
+    transform: scale(1.1);
 }
+
 .poker-image-stack:hover .poker-chip-left-bottom {
-    transform: translate(0%, -190%) scale(1.1) !important;
+    top: 47%;
+    left: 5%;
+    transform: scale(1.1);
 }
+
 .poker-image-stack:hover .poker-chip-right-top {
-    transform: translate(130%, -210%) scale(1.1) !important;
+    top: 38%;
+    left: 60%;
+    transform: scale(1.1);
 }
+
 .poker-image-stack:hover .poker-chip-right-bottom {
-    transform: translate(160%, -195%) scale(1.1) !important;
-}
-@keyframes floatChipLeftTop {
-    0%, 100% { transform: translate(-15%, -210%) scale(1); }
-    50% { transform: translate(-15%, -215%) rotate(-5deg) scale(1); }
-}
-
-@keyframes floatChipLeftBottom {
-    0%, 100% { transform: translate(20%, -170%) scale(1); }
-    50% { transform: translate(20%, -175%) rotate(5deg) scale(1); }
-}
-
-@keyframes floatChipRightTop {
-    0%, 100% { transform: translate(110%, -190%) scale(1); }
-    50% { transform: translate(110%, -195%) rotate(5deg) scale(1); }
-}
-
-@keyframes floatChipRightBottom {
-    0%, 100% { transform: translate(140%, -175%) scale(1); }
-    50% { transform: translate(140%, -180%) rotate(-5deg) scale(1); }
-}
-
-
-
-.poker-image-stack:hover .poker-stack-card1,
-.poker-image-stack:hover .poker-stack-card2,
-.poker-image-stack:hover .poker-stack-card3,
-.poker-image-stack:hover .poker-stack-card4,
-.poker-image-stack:hover .poker-chip-left-top,
-.poker-image-stack:hover .poker-chip-left-bottom,
-.poker-image-stack:hover .poker-chip-right-top,
-.poker-image-stack:hover .poker-chip-right-bottom {
-    animation-play-state: paused !important;
+    top: 55%;
+    left: 60%;
+    transform: scale(1.1);
 }
 
 .poker-stack-card1,
