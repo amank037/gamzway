@@ -26,7 +26,7 @@
     width: 100%;
     height: auto;
     object-fit: contain;
-    transition: all 0.3s ease;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .poker-stack-bg {
@@ -48,89 +48,113 @@
     width: 90%;
     z-index: 2;
     opacity: 0.8;
-    transition: all 0.5s ease;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .poker-stack-cards {
     top: 30%;
     left: 48%;
-    transform: translate(-50%, -50%);
-    width: 100%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 90%;
     z-index: 3;
     animation: floatCards 4s ease-in-out infinite;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .poker-stack-chips-left {
     top: 60%;
     left: 25%;
-    transform: translate(-50%, -50%);
-    width: 70%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 60%;
     z-index: 4;
     animation: floatChipsLeft 5s ease-in-out infinite;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .poker-stack-chips-right {
     top: 65%;
     left: 40%;
-    transform: translate(0, -50%);
-    width: 70%;
+    transform: translate(0, -50%) scale(1);
+    width: 60%;
     z-index: 4;
     animation: floatChipsRight 4.5s ease-in-out infinite 0.5s;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes floatCards {
-    0% {
-        transform: translate(-50%, -50%);
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
     }
     50% {
-        transform: translate(-50%, -55%);
-    }
-    100% {
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -55%) scale(1);
     }
 }
 
 @keyframes floatChipsLeft {
-    0% {
-        transform: translate(-50%, -50%);
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
     }
     50% {
-        transform: translate(-55%, -48%) rotate(-5deg);
-    }
-    100% {
-        transform: translate(-50%, -50%);
+        transform: translate(-55%, -48%) rotate(-5deg) scale(1);
     }
 }
 
 @keyframes floatChipsRight {
-    0% {
-        transform: translate(0, -50%);
+    0%, 100% {
+        transform: translate(0, -50%) scale(1);
     }
     50% {
-        transform: translate(5%, -48%) rotate(5deg);
-    }
-    100% {
-        transform: translate(0, -50%);
+        transform: translate(5%, -48%) rotate(5deg) scale(1);
     }
 }
 
+@keyframes floatCardsHover {
+    0%, 100% {
+        transform: translate(-50%, -55%) scale(1.1);
+    }
+    50% {
+        transform: translate(-50%, -60%) scale(1.1);
+    }
+}
+
+@keyframes floatChipsLeftHover {
+    0%, 100% {
+        transform: translate(-60%, -50%) scale(1.1);
+    }
+    50% {
+        transform: translate(-65%, -48%) rotate(-5deg) scale(1.1);
+    }
+}
+
+@keyframes floatChipsRightHover {
+    0%, 100% {
+        transform: translate(10%, -50%) scale(1.1);
+    }
+    50% {
+        transform: translate(15%, -48%) rotate(5deg) scale(1.1);
+    }
+}
+
+.poker-image-stack:hover .poker-stack-cards {
+    animation: floatCardsHover 4s ease-in-out infinite;
+}
+
+.poker-image-stack:hover .poker-stack-chips-left {
+    animation: floatChipsLeftHover 5s ease-in-out infinite;
+}
+
+.poker-image-stack:hover .poker-stack-chips-right {
+    animation: floatChipsRightHover 4.5s ease-in-out infinite;
+}
 .poker-stack-text {
     bottom: 5%;
     left: 50%;
     transform: translate(-50%, 0);
     width: 70%;
     z-index: 5;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.poker-image-stack:hover .poker-stack-cards {
-    transform: translate(-50%, -55%) scale(1.1);
-}
-.poker-image-stack:hover .poker-stack-chips-left {
-    transform: translate(-60%, -50%) scale(1.1);
-}
-.poker-image-stack:hover .poker-stack-chips-right {
-    transform: translate(10%, -50%) scale(1.1);
-}
 .poker-image-stack:hover .poker-stack-text {
     transform: translate(-50%, -5%) scale(1.1);
 }
