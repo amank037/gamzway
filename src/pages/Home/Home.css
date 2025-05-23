@@ -459,7 +459,6 @@
     background: url('../../assets/heroBg.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    pointer-events: none;
 }
 
 /* .engagement-section::before{

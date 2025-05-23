@@ -544,6 +544,7 @@ const LudoGame = () => {
       <PaymentSection />
 
       <ProductSection productGrid={productItems}/>
+      
       <div className='path-section'>
       <FeaturesHeader featuresText={pathItems}/>
       </div>
