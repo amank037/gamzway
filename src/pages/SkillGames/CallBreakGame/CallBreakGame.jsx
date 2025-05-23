@@ -5,7 +5,8 @@ import AchievementsBanner from "../../../components/AchievementsBanner/Achieveme
 const landingItems = [
   {
     title: "CALL BREAK GAME DEVELOPMENT",
-    description: "We develop appealing kids' games targeted towards various age ranges. Our experts possess a thorough understanding of the nuances of the genre and create quality output in line with the best in the industry.",
+    description: "Call Break has become a hot item in the digital gaming market as millions of fans across South Asia and growing taste for skill-based real-money card games drive demand.  At Mobzway Technologies, we bring this venerable card game to life with engaging gaming, real-time multiplayer sync, sophisticated CRM tools, and monetising strategies maximising involvement and income.",
+    description2: "Serving gaming startups, businesses, and entrepreneurs develop unique Call Break games across Android, iOS, and Web, we are a reputable Call Break Card Game Development Company.",
     button: "REQUEST A QUOTE",
   }
 ]

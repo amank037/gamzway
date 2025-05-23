@@ -32,7 +32,7 @@ function ProductGrid() {
             <div className="chip-container chip-right-bottom">
               <img src="/ProductImages/poker/poker-chip-right-bottom.png" alt="Poker Chips Right" className="poker-stack-img" />
             </div>
-            <h1 className='poker-stack-img poker-stack-text'>POKER</h1>
+            <h1 className='poker-stack-img poker-stack-text product-title'>POKER</h1>
           </div>
         </a>
       </div>
@@ -66,7 +66,7 @@ function ProductGrid() {
             <div className="chip-container chip-right-bottom">
               <img src="/ProductImages/poker/poker-chip-right-bottom.png" alt="Poker Chips Right" className="poker-stack-img" />
             </div>
-            <h1 className='poker-stack-img poker-stack-text'>POKER</h1>
+            <h1 className='poker-stack-img poker-stack-text product-title'>POKER</h1>
           </div>
         </a>
       </div>
@@ -100,7 +100,7 @@ function ProductGrid() {
             <div className="chip-container chip-right-bottom">
               <img src="/ProductImages/poker/poker-chip-right-bottom.png" alt="Poker Chips Right" className="poker-stack-img" />
             </div>
-            <h1 className='poker-stack-img poker-stack-text'>POKER</h1>
+            <h1 className='poker-stack-img poker-stack-text product-title'>POKER</h1>
           </div>
         </a>
       </div>

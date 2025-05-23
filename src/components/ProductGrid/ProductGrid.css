@@ -58,6 +58,9 @@
     width: 70%;
     z-index: 5;
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-title{
     text-decoration: none;
     font-family: 'VampireWars';
     color: var(--primary-yellow);
