@@ -68,76 +68,16 @@
     opacity: 0.9;
 }
 
-/* .poker-stack-card1 {
-    z-index: 3;
-    position: absolute;
-    top: 15%;
-    left: 5%;
-    width: 40%;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.6s;
-}
-
-.poker-stack-card2 {
-    z-index: 4;
-    position: absolute;
-    top: 0%;
-    left: 25%;
-    width: 35%;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
-}
-
-.poker-stack-card3 {
-    z-index: 5;
-    position: absolute;
-    top: 10%;
-    left: 38%;
-    width: 40%;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
-}
-
-.poker-stack-card4 {
-    z-index: 6;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    width: 45%;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-}
-
-.poker-image-stack:hover .poker-stack-card1 {
-    top: 4%;
-    left: 0%;
-    transform: scale(1.1);
-}
-
-.poker-image-stack:hover .poker-stack-card2 {
-    top: -10%;
-    left: 22%;
-    transform: scale(1.1);
-}
-
-.poker-image-stack:hover .poker-stack-card3 {
-    top: -1%;
-    left: 42%;
-    transform: scale(1.1);
-}
-
-.poker-image-stack:hover .poker-stack-card4 {
-    top: 0%;
-    left: 55%;
-    transform: scale(1.1);
-} */
-
-
-
 .card-container {
     position: absolute;
     animation: float 4s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .chip-container {
     position: absolute;
     animation: chipFloat 5s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card1 {
