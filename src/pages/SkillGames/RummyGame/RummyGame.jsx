@@ -489,7 +489,7 @@ const RummyGame = () => {
 
   return (
     <div className='rummy-game'>
-      <div className='carousel-swiper'>
+      <div className='rummy-carousel-swiper'>
         <CarouselSection carouselData={rummyCarouselData} />
       </div>
 

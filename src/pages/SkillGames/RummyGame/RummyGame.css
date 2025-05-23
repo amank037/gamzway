@@ -2,7 +2,7 @@
     width: 100%;
 }
 
-.rummy-game .carousel-swiper {
+.rummy-game .rummy-carousel-swiper {
     background: url(https://beta.mobzway.com/assets/images/rummy-game-development/rummy-game-development.webp);
     background-color: rgba(0, 0, 0, 0.80);
     background-blend-mode: overlay;
@@ -14,8 +14,8 @@
     overflow: hidden;
     min-height: 100vh;
 }
-.carousel-swiper::before,
-.carousel-swiper::after {
+.rummy-carousel-swiper::before,
+.rummy-carousel-swiper::after {
     content: '';
     position: absolute;
     background-image: url('https://framerusercontent.com/images/O9TzSBpPNIkIup9KacnFutJPoQ.png');
@@ -26,13 +26,13 @@
     pointer-events: none;
 }
 
-.carousel-swiper::before {
+.rummy-carousel-swiper::before {
     left: 0%;
     top: 60%;
     animation: float-left 4s ease-in-out infinite;
 }
 
-.carousel-swiper::after {
+.rummy-carousel-swiper::after {
     right: -15%;    
     top: 30%;
     filter: blur(8px);
