@@ -19,17 +19,17 @@ function ProductGrid() {
   const card4Controls = useAnimation();
 
   const handleHoverStart = () => {
-    card1Controls.start({ scale: 1.1, top: '4%', left: '0%',transition: { delay: 0.6, duration: 0.5 } });
-    card2Controls.start({ scale: 1.1, top: '-10%', left: '22%',transition: { delay: 0.4, duration: 0.5 } });
-    card3Controls.start({ scale: 1.1, top: '-1%', left: '42%',transition: { delay: 0.2, duration: 0.5 } });
-    card4Controls.start({ scale: 1.1, top: '0%', left: '55%', transition: { delay: 0.0, duration: 0.5 } });
+    card1Controls.start({ scale: 1.1, top: '4%', left: '0%',transition: { delay: 0.6, duration: 0.3 } });
+    card2Controls.start({ scale: 1.1, top: '-10%', left: '22%',transition: { delay: 0.4, duration: 0.3 } });
+    card3Controls.start({ scale: 1.1, top: '-1%', left: '42%',transition: { delay: 0.2, duration: 0.3 } });
+    card4Controls.start({ scale: 1.1, top: '0%', left: '55%', transition: { delay: 0.0, duration: 0.3 } });
   };
 
   const handleHoverEnd = () => {
-    card1Controls.start({ scale: 1, top: '15%', left: '5%', transition: { delay: 0.6, duration: 0.5 } });
-    card2Controls.start({ scale: 1, top: '0%', left: '25%', transition: { delay: 0.4, duration: 0.5 }  });
-    card3Controls.start({ scale: 1, top: '10%', left: '38%', transition: { delay: 0.2, duration: 0.5 } });
-    card4Controls.start({ scale: 1, top: '10%', left: '50%', transition: { delay: 0.0, duration: 0.5 }  });
+    card1Controls.start({ scale: 1, top: '15%', left: '5%', transition: { delay: 0.6, duration: 0.3 } });
+    card2Controls.start({ scale: 1, top: '0%', left: '25%', transition: { delay: 0.4, duration: 0.3 }  });
+    card3Controls.start({ scale: 1, top: '10%', left: '38%', transition: { delay: 0.2, duration: 0.3 } });
+    card4Controls.start({ scale: 1, top: '10%', left: '50%', transition: { delay: 0.0, duration: 0.3 }  });
   };
 
   const chipFloatAnimation = {
