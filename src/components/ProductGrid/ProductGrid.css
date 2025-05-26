@@ -14,14 +14,14 @@
     background: transparent;
 }
 
-.poker-image-stack {
+.image-stack {
     position: relative;
     width: 100%;
     height: 100%;
     display: block;
 }
 
-.poker-stack-img {
+.stack-img {
     position: absolute;
     width: 100%;
     height: auto;
@@ -52,10 +52,11 @@
 
 
 .poker-stack-text {
-    bottom: 5%;
+    text-align: center;
+    bottom: 7%;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 70%;
+    width: 100%;
     z-index: 5;
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -64,30 +65,31 @@
     text-decoration: none;
     font-family: 'VampireWars';
     color: var(--primary-yellow);
-    font-size: 3rem;
+    font-size: 2rem;
+    width: 100%;
 }
 
-.poker-image-stack:hover .poker-stack-text {
+.image-stack:hover .poker-stack-text {
     transform: translate(-50%, -5%) scale(1.1);
 }
-.poker-image-stack:hover .poker-stack-glow {
+.image-stack:hover .poker-stack-glow {
     transform: translate(-50%, -50%) rotate(-5deg) scale(2);
     opacity: 0.9;
 }
 
-.card-container {
+.poker-card-container {
     position: absolute;
     animation: float 4s ease-in-out infinite;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.chip-container {
+.poker-chip-container {
     position: absolute;
     animation: chipFloat 5s ease-in-out infinite;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card1 {
+.poker-card1 {
     z-index: 3;
     top: 15%;
     left: 5%;
@@ -95,7 +97,7 @@
     animation-delay: 0s;
 }
 
-.card2 {
+.poker-card2 {
     z-index: 4;
     top: 0%;
     left: 25%;
@@ -103,7 +105,7 @@
     animation-delay: 0.5s;
 }
 
-.card3 {
+.poker-card3 {
     z-index: 5;
     top: 10%;
     left: 38%;
@@ -111,7 +113,7 @@
     animation-delay: 1s;
 }
 
-.card4 {
+.poker-card4 {
     z-index: 6;
     top: 10%;
     left: 50%;
@@ -119,7 +121,7 @@
     animation-delay: 1.5s;
 }
 
-.chip-left-top {
+.poker-chip-left-top {
     z-index: 7;
     top: 40%;
     left: -8%;
@@ -127,7 +129,7 @@
     animation-delay: 0s;
 }
 
-.chip-left-bottom {
+.poker-chip-left-bottom {
     z-index: 6;
     top: 52%;
     left: 10%;
@@ -135,7 +137,7 @@
     animation-delay: 0.5s;
 }
 
-.chip-right-top {
+.poker-chip-right-top {
     z-index: 7;
     top: 47%;
     left: 55%;
@@ -143,7 +145,7 @@
     animation-delay: 1s;
 }
 
-.chip-right-bottom {
+.poker-chip-right-bottom {
     z-index: 6;
     top: 60%;
     left: 55%;
@@ -161,56 +163,56 @@
     50% { transform: translateY(-10px) rotate(15deg); }
 }
 
-.poker-image-stack:hover .card1 {
+.image-stack:hover .poker-card1 {
     top: 4%;
     left: 0%;
     transform: scale(1.1);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.6s;
 }
 
-.poker-image-stack:hover .card2 {
+.image-stack:hover .poker-card2 {
     top: -10%;
     left: 22%;
     transform: scale(1.1);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
 }
 
-.poker-image-stack:hover .card3 {
+.image-stack:hover .poker-card3 {
     top: -1%;
     left: 42%;
     transform: scale(1.1);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 }
 
-.poker-image-stack:hover .card4 {
+.image-stack:hover .poker-card4 {
     top: 0%;
     left: 55%;
     transform: scale(1.1);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
-.poker-image-stack:hover .chip-left-top {
+.image-stack:hover .poker-chip-left-top {
     top: 33%;
     left: -15%;
     transform: scale(1.1);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.poker-image-stack:hover .chip-left-bottom {
+.image-stack:hover .poker-chip-left-bottom {
     top: 47%;
     left: 5%;
     transform: scale(1.1);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.poker-image-stack:hover .chip-right-top {
+.image-stack:hover .poker-chip-right-top {
     top: 38%;
     left: 60%;
     transform: scale(1.1);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.poker-image-stack:hover .chip-right-bottom {
+.image-stack:hover .poker-chip-right-bottom {
     top: 55%;
     left: 60%;
     transform: scale(1.1);
@@ -235,4 +237,730 @@
     .product-grid-item {
         width: 80%;
     }
+}
+
+
+.rummy-card-container1,
+.rummy-card-container2,
+.rummy-card-container3,
+.rummy-card-container4 {
+    position: absolute;
+    animation: rummyFloat 4s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 30%;
+}
+@keyframes rummyFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px) rotate(2deg); }
+}
+
+.rummy-card1 {
+    z-index: 3;
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.rummy-card2 {
+    z-index: 3;
+    top: 10%;
+    left: 20%;
+    animation-delay: 0.2s;
+}
+
+.rummy-card3 {
+    z-index: 3;
+    top: 10%;
+    left: 30%;
+    animation-delay: 0.4s;
+}
+
+.rummy-card4 {
+    z-index: 4;
+    top: 20%;
+    right: 10%;
+    animation-delay: 0.6s;
+}
+
+.rummy-card5 {
+    z-index: 4;
+    top: 20%;
+    right: 20%;
+    animation-delay: 0.8s;
+}
+
+.rummy-card6 {
+    z-index: 4;
+    top: 20%;
+    right: 30%;
+    animation-delay: 1s;
+}
+
+.rummy-card7 {
+    z-index: 4;
+    top: 20%;
+    right: 40%;
+    animation-delay: 1.2s;
+}
+
+.rummy-card8 {
+    z-index: 5;
+    top: 35%;
+    left: 10%;
+    animation-delay: 1.4s;
+}
+
+.rummy-card9 {
+    z-index: 5;
+    top: 35%;
+    left: 20%;
+    animation-delay: 1.6s;
+}
+
+.rummy-card10 {
+    z-index: 5;
+    top: 35%;
+    left: 30%;
+    animation-delay: 1.8s;
+}
+
+.rummy-card11 {
+    z-index: 6;
+    top: 45%;
+    right: 10%;
+    animation-delay: 2s;
+}
+
+.rummy-card12 {
+    z-index: 6;
+    top: 45%;
+    right: 20%;
+    animation-delay: 2.2s;
+}
+
+.rummy-card13 {
+    z-index: 6;
+    top: 45%;
+    right: 30%;
+    animation-delay: 2.4s;  
+}
+
+.rummy-table {
+    z-index: 2;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.image-stack:hover .rummy-card1 {
+    top: 5%;
+    left: 5%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.6s;
+}
+
+.image-stack:hover .rummy-card2 {
+    top: 5%;
+    left: 15%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+
+.image-stack:hover .rummy-card3 {
+    top: 5%;
+    left: 25%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.image-stack:hover .rummy-card4 {
+    top: 15%;
+    right: 5%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.6s;
+}
+
+.image-stack:hover .rummy-card5 {
+    top: 15%;
+    right: 15%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+
+.image-stack:hover .rummy-card6 {
+    top: 15%;
+    right: 25%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.image-stack:hover .rummy-card7 {
+    top: 15%;
+    right: 35%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+.image-stack:hover .rummy-card8 {
+    top: 30%;
+    left: 5%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.6s;
+}
+
+.image-stack:hover .rummy-card9 {
+    top: 30%;
+    left: 15%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+
+.image-stack:hover .rummy-card10 {
+    top: 30%;
+    left: 25%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.image-stack:hover .rummy-card11 {
+    top: 40%;
+    right: 5%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.6s;
+}
+
+.image-stack:hover .rummy-card12 {
+    top: 40%;
+    right: 15%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+
+.image-stack:hover .rummy-card13 {
+    top: 40%;
+    right: 25%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+
+.ludo-ghoti-container {
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 75%;
+    z-index: 3;
+}
+
+
+.ludo-dice-container {
+    position: absolute;
+    animation: diceFloat 5s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 25%;
+    z-index: 4;
+}
+
+@keyframes diceFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(10deg); }
+}
+
+@keyframes ghotiFloat1 {
+    0%, 100% { transform: rotate(-10deg) translateY(0); }
+    50% { transform: rotate(-10deg) translateY(-5px); }
+}
+
+@keyframes ghotiFloat2 {
+    0%, 100% { transform: rotate(15deg) translateY(0); }
+    50% { transform: rotate(15deg) translateY(-5px); }
+}
+
+.ludoghoti1 {
+    top: 20%;
+    left: -10%;
+    animation: ghotiFloat1 4s ease-in-out infinite;
+    animation-delay: 0s;
+    transform: rotate(20deg);
+}
+
+.ludoghoti2 {
+    top: 20%;
+    right: -20%;
+    animation: ghotiFloat2 4s ease-in-out infinite;
+    animation-delay: 0.5s;
+    transform: rotate(-25deg);
+}
+
+.dice1 {
+    bottom: 20%;
+    left: 15%;
+    animation-delay: 0.2s;
+}
+
+.dice2 {
+    bottom: 20%;
+    right: 15%;
+    animation-delay: 0.7s;
+}
+
+.image-stack:hover .ludoghoti1 {
+    top: 10%;
+    left: -10%;
+    transform: translateY(-10px) scale(1.1) rotate(20deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.image-stack:hover .ludoghoti2 {
+    top: 10%;
+    right: -10%;
+    transform: translateY(-10px) scale(1.1) rotate(-25deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.image-stack:hover .dice1 {
+    bottom: 30%;
+    left: 10%;
+    transform: translateY(-5px) rotate(15deg) scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+}
+
+.image-stack:hover .dice2 {
+    bottom: 30%;
+    right: 10%;
+    transform: translateY(-5px) rotate(-15deg) scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+
+.teen-card-container {
+    position: absolute;
+    animation: rummyFloat 4s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.teen-board-container {
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+}
+.teen-board{
+    z-index: 2;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.teen-card1{
+    z-index: 3;
+    top: 25%;
+    left: 45%;
+    animation-delay: 0s;
+    width: 58%;
+}
+.teen-card2{
+    z-index: 5;
+    top: 20%;
+    left: 28%;
+    animation-delay: 0.2s;
+    width: 46%;
+}
+.teen-card3{
+    z-index: 4;
+    top: 25%;
+    left: 0%;
+    animation-delay: 0.4s;
+    width: 58%;
+}
+.image-stack:hover .teen-card1 {
+    top: 15%;
+    left: 55%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.6s;
+}
+.image-stack:hover .teen-card2 {
+    top: 0%;
+    left: 28%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+.image-stack:hover .teen-card3 {
+    top: 15%;
+    left: -10%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;  
+}
+
+
+.call-card-container {
+    position: absolute;
+    animation: rummyFloat 4s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 35%;
+}
+.call-card1 {
+    z-index: 5;
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.call-card2 {
+    z-index: 4;
+    top: 5%;
+    left: 20%;
+    animation-delay: 0.2s;
+}
+.call-card3 {
+    z-index: 3;
+    top: 32%;
+    left: 35%;
+    animation-delay: 0.4s;
+}
+
+.call-card4 {
+    z-index: 2;
+    top: 20%;
+    left: 50%;
+    animation-delay: 0.6s;
+}
+.image-stack:hover .call-card1 {
+    top: 20%;
+    left: 0%;
+    transform: scale(1.1);
+}
+.image-stack:hover .call-card2 {
+    top: -5%;
+    left: 20%;
+    transform: scale(1.1);
+}
+
+.image-stack:hover .call-card3 {
+    top: 38%;
+    left: 30%;
+    transform: scale(1.1);
+}
+.image-stack:hover .call-card4 {
+    top: 20%;
+    left: 55%;
+    transform: scale(1.1);
+}
+
+.tambola-card-container {
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 90%;
+}
+@keyframes tambolaFloat1 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px) rotate(2deg); }
+}
+@keyframes tambolaFloat2 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-7px) rotate(-2deg); }
+}
+@keyframes tambolaFloat3 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px) rotate(2deg); }
+}
+.tambola-card1 {
+    z-index: 5;
+    top: 10%;
+    left: 0%;
+    animation-delay: 0s;
+    animation: tambolaFloat1 4s ease-in-out infinite;
+}
+
+.tambola-card2 {
+    z-index: 4;
+    top: 32%;
+    left: 0%;
+    animation-delay: 0.2s;
+    animation: tambolaFloat2 4s ease-in-out infinite;
+}
+.tambola-card3 {
+    z-index: 3;
+    top: 55%;
+    left: 0%;
+    animation-delay: 0.4s;
+    animation: tambolaFloat3 7s ease-in-out infinite;
+}
+
+.image-stack:hover .tambola-card1 {
+    top: 10%;
+    left: -10%;
+    transform: scale(1.1);
+}
+.image-stack:hover .tambola-card2 {
+    top: 32%;
+    left: 20%;
+    transform: scale(1.1);
+}
+
+.image-stack:hover .tambola-card3 {
+    top: 55%;
+    left: -10%;
+    transform: scale(1.1);
+}
+
+.snake-board-container {
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 90%;
+}
+.snake-card-container {
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 70%;
+}
+
+@keyframes snakeFloat1 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px) rotate(2deg); }
+}
+@keyframes snakeFloat2 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-7px) rotate(-2deg); }
+}
+@keyframes snakeFloat3 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+.snake-card1 {
+    z-index: 5;
+    top: 35%;
+    left: 10%;
+    animation-delay: 0s;
+    animation: snakeFloat1 4s ease-in-out infinite;
+}
+
+.snake-card2 {
+    z-index: 4;
+    top: 10%;
+    left: 10%;
+    animation-delay: 0.2s;
+    animation: snakeFloat2 4s ease-in-out infinite;
+}
+.snake-board {
+    z-index: 3;
+    top: 10%;
+    left: 0%;
+    animation-delay: 0.4s;
+    animation: snakeFloat3 7s ease-in-out infinite;
+}
+
+.image-stack:hover .snake-card1 {
+    top: 25%;
+    left: -10%;
+    transform: scale(1.1);
+}
+.image-stack:hover .snake-card2 {
+    top: 0%;
+    left: 20%;
+    transform: scale(1.1);
+}
+
+.image-stack:hover .snake-board {
+    transform: scale(1.1);
+}
+
+.aviator-card-container {
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes aviatorFloat1 {
+    0%, 100% { transform: translateY(0) rotate(2deg); }
+    50% { transform: translateY(-8px) rotate(-2deg); }
+}
+
+@keyframes aviatorFloat2 {
+    0%, 100% { transform: translateY(0) rotate(-2deg); }
+    50% { transform: translateY(-12px) rotate(2deg); }
+}
+
+@keyframes aviatorFloat3 {
+    0%, 100% { transform: translateY(0) rotate(0deg) scaleX(-1); }
+    50% { transform: translateY(-6px) rotate(3deg) scaleX(-1); }
+}
+
+@keyframes aviatorFloat4 {
+    0%, 100% { transform: translateY(0) rotate(0deg) scaleX(-1); }
+    50% { transform: translateY(-10px) rotate(-3deg) scaleX(-1); }
+}
+
+.aviator-left-card1 {
+    z-index: 4;
+    top: 5%;
+    left: 0%;
+    animation: aviatorFloat1 4s ease-in-out infinite;
+    animation-delay: 0s;
+    width: 80%;
+}
+
+.aviator-left-card2 {
+    z-index: 5;
+    top: 10%;
+    left: 0%;
+    animation: aviatorFloat2 4.5s ease-in-out infinite;
+    animation-delay: 0.2s;
+    width: 80%;
+}
+
+.aviator-right-card1 {
+    z-index: 4;
+    top: 35%;
+    left: 40%;
+    animation: aviatorFloat3 5s ease-in-out infinite;
+    animation-delay: 0.4s;
+    width: 60%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.aviator-right-card2 {
+    z-index: 5;
+    top: 40%;
+    left: 40%;
+    animation: aviatorFloat4 4.2s ease-in-out infinite;
+    animation-delay: 0.6s;
+    width: 60%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.image-stack:hover .aviator-left-card1 {
+    top: 3%;
+    left: -10%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.image-stack:hover .aviator-left-card2 {
+    top: 5%;
+    left: -10%;
+    transform: scale(1.5);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.image-stack:hover .aviator-right-card1 {
+    top: 40%;
+    left: 45%;
+    transform: scale(1.1) scaleX(-1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.image-stack:hover .aviator-right-card2 {
+    top: 48%;
+    left: 45%;
+    transform: scale(1.5) scaleX(-1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.andar-card-container {
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes andarFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(-3deg); }
+}
+.andar-card1{
+    z-index: 4;
+    top: 20%;
+    left: 5%;
+    animation-delay: 0s;
+    width: 50%;
+    animation: andarFloat 4s ease-in-out infinite;
+}
+.andar-card2{
+    z-index: 3;
+    top: 10%;
+    left: 40%;
+    animation-delay: 0.2s;
+    width: 50%;
+    animation: andarFloat 7s ease-in-out infinite;
+}
+.image-stack:hover .andar-card1 {
+    top: 15%;
+    left: -10%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.image-stack:hover .andar-card2 {
+    top: 10%;
+    left: 45%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.blackjack-card-container {
+    position: absolute;
+    animation: rummyFloat 4s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.blackjack-board-container {
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+}
+.blackjack-board{
+    z-index: 2;
+    bottom: 50%;
+    left: 0%;
+}
+.blackjack-card1{
+    z-index: 3;
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+    width: 65%;
+}
+.blackjack-card2{
+    z-index: 4;
+    top: 10%;
+    left: 35%;
+    animation-delay: 0.2s;
+    width: 70%;
+}
+.image-stack:hover .blackjack-card1 {
+    top: 0%;
+    left: -5%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+.image-stack:hover .blackjack-card2 {
+    top: 0%;
+    left: 40%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+.image-stack:hover .blackjack-board {
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;  
+}
+
+.baccarat-card-container {
+    position: absolute;
+    animation: rummyFloat 4s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.baccarat-card1{
+    z-index: 3;
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+    width: 63%;
+}
+.baccarat-card2{
+    z-index: 4;
+    top: 10%;
+    left: 35%;
+    animation-delay: 0.2s;
+    width: 55%;
+}
+.image-stack:hover .baccarat-card1 {
+    top: 0%;
+    left: -5%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+.image-stack:hover .baccarat-card2 {
+    top: 0%;
+    left: 40%;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s; 
 }
