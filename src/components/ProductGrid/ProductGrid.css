@@ -942,14 +942,14 @@
     top: 10%;
     left: 5%;
     animation-delay: 0s;
-    width: 63%;
+    width: 60%;
 }
 .baccarat-card2{
     z-index: 4;
     top: 10%;
     left: 35%;
     animation-delay: 0.2s;
-    width: 55%;
+    width: 60%;
 }
 .image-stack:hover .baccarat-card1 {
     top: 0%;

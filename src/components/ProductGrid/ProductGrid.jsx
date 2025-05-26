@@ -228,7 +228,7 @@ function ProductGrid() {
         <a href="">
           <div className="image-stack">
             <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
-            <img src="/ProductImages/Andar Bahar/za-66.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
+            <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
             <div className="andar-card-container andar-card1">
               <img src="/ProductImages/Andar Bahar/za-64.png" alt="" className="stack-img"/>
             </div>

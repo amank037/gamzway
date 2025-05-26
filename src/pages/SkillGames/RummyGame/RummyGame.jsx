@@ -11,46 +11,47 @@ import AccordionSection from '../../../components/AccordionSection/AccordionSect
 import AboutGrid from '../../../components/AboutGrid/AboutGrid'
 import FeaturesGrid from '../../../components/FeaturesSection/FeaturesGrid/FeaturesGrid'
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
+import RummyCarousel from '../../../components/RummyCarousel/RummyCarousel'
 
-const rummyCarouselData = [
-  {
-    title: "Rummy Game Development Company",
-    description:
-      "Are you in search of the top rummy game development company? Gamzway specializes in rummy game development, offering comprehensive solutions for creating the best online rummy game app and website.",
-    image: "https://beta.mobzway.com/assets/images/rummy-software/Rummy-07.webp",
-    isMainTitle: true,
-  },
-  {
-    title: "A23 Rummy",
-    description:
-      "Want to build app like A23 Rummy game? Gamzway specializes in rummy game development, offering a comprehensive range of solutions for creating the best online rummy game app and website.",
-    image: "https://beta.mobzway.com/assets/images/rummy-software/Rummy-03.webp",
-  },
-  {
-    title: "Junglee Rummy",
-    description:
-      "Build the app similar to Junglee Rummy for user friendliness and unique features just like Junglee Rummy for kick starting your journey. Elevate your online game business with our expert assistance.",
-    image: "https://beta.mobzway.com/assets/images/rummy-software/Rummy-02.webp",
-  },
-  {
-    title: "Rummy Circle",
-    description:
-      "Want to experience exciting games and tournaments for your Rummy gaming business? We are providing rummy platform similar to Rummy Circle and meet your expectations while getting the best app developed by Rummy game developers.",
-    image: "https://beta.mobzway.com/assets/images/rummy-software/Rummy-11.webp",
-  },
-  {
-    title: "Rummy Time",
-    description:
-      "Developing the classic card games for the gaming business with the years of experience. Build the classic enjoyable gaming interface with user-friendly features for your gaming business. Best Rummy game development company.",
-    image: "https://beta.mobzway.com/assets/images/rummy-software/Rummy-04.webp",
-  },
-  {
-    title: "Rummy Culture",
-    description:
-      "Hire the Rummy game app developers for your gaming business requirements, with over 9+ years of experience we are specialized in the rummy gaming industry and proeficient in building game similar to Rummy Culture.",
-    image: "https://beta.mobzway.com/assets/images/rummy-software/Rummy-01.webp",
-  },
-]
+// const rummyCarouselData = [
+//   {
+//     title: "Rummy Game Development Company",
+//     description:
+//       "Are you in search of the top rummy game development company? Gamzway specializes in rummy game development, offering comprehensive solutions for creating the best online rummy game app and website.",
+//     image: "https://beta.mobzway.com/assets/images/rummy-software/Rummy-07.webp",
+//     isMainTitle: true,
+//   },
+//   {
+//     title: "A23 Rummy",
+//     description:
+//       "Want to build app like A23 Rummy game? Gamzway specializes in rummy game development, offering a comprehensive range of solutions for creating the best online rummy game app and website.",
+//     image: "https://beta.mobzway.com/assets/images/rummy-software/Rummy-03.webp",
+//   },
+//   {
+//     title: "Junglee Rummy",
+//     description:
+//       "Build the app similar to Junglee Rummy for user friendliness and unique features just like Junglee Rummy for kick starting your journey. Elevate your online game business with our expert assistance.",
+//     image: "https://beta.mobzway.com/assets/images/rummy-software/Rummy-02.webp",
+//   },
+//   {
+//     title: "Rummy Circle",
+//     description:
+//       "Want to experience exciting games and tournaments for your Rummy gaming business? We are providing rummy platform similar to Rummy Circle and meet your expectations while getting the best app developed by Rummy game developers.",
+//     image: "https://beta.mobzway.com/assets/images/rummy-software/Rummy-11.webp",
+//   },
+//   {
+//     title: "Rummy Time",
+//     description:
+//       "Developing the classic card games for the gaming business with the years of experience. Build the classic enjoyable gaming interface with user-friendly features for your gaming business. Best Rummy game development company.",
+//     image: "https://beta.mobzway.com/assets/images/rummy-software/Rummy-04.webp",
+//   },
+//   {
+//     title: "Rummy Culture",
+//     description:
+//       "Hire the Rummy game app developers for your gaming business requirements, with over 9+ years of experience we are specialized in the rummy gaming industry and proeficient in building game similar to Rummy Culture.",
+//     image: "https://beta.mobzway.com/assets/images/rummy-software/Rummy-01.webp",
+//   },
+// ]
 
 const aboutText = [
   {
@@ -175,13 +176,6 @@ const featuresItems = [
   }
 ]
 
-// const chooseTitle = [
-//   {
-//     title: "Why Choose Gamzway As Your Rummy Game Development Company",
-//     description: "Clients choose Gamzway for Rummy Game Development for several reasons, primarily due to our exceptional software offerings. Our unique software stands out due to its robust architecture, heightened security measures, compatibility across various platforms, and cutting-edge technology. Gamzway Technologies has emerged as a trailblazer in rummy game development, surpassing standard game products by providing advanced rummy development solutions. We prioritize delivering top-notch services to meet our clients' strategic goals and service plans. Our gaming products feature top-tier attributes and functionality, offering users a lifelike experience. With a substantial base of satisfied clients who consistently praise our applications for their outstanding quality and seamless performance, Gamzway has established itself as a prominent player in the game development industry. Our team includes a pool of gaming experts and specialists, including software developers, graphic designers, animators, and quality analysts. Thanks to their expertise, we deliver flawless rummy mobile applications and development services, complemented by post-development technical support."
-//   }
-// ]
-
 const hireTitle = [
   {
     title: "WHY HAVE YOUR RUMMY GAME FROM GAMZWAY?"
@@ -194,33 +188,6 @@ const standoutTitle = [
     description: "Our business-centric approach lets us match game elements to your monetising objectives. Get your game app ready in weeks, not months to accelerate time-to- market."
   }
 ]
-
-// const questionsData = [
-//   {
-//     title: "What is an Online Rummy Game?",
-//     description: "An online rummy game is a card game that allows you to play the rummy game with real players from all over the globe. It is an exciting and fun game that helps you to improve your strategic skills. Online rummy games are thrilling, easy, and refreshing at the same time. This game is for adults only and not for children. You can play this game of cards with your family and friends."
-//   },
-//   {
-//     title: "Why do we need online rummy game development services?",
-//     description: "If you want the best rummy software and want to launch it as soon as possible, then our rummy game development services can be the greatest option for you. We have experienced game developers and we provide attractive offers on a daily basis. We are a leading and worldwide trusted rummy game development company that helps you take your online rummy game to the next level."
-//   },
-//   {
-//     title: "How much cost do I require to invest in rummy website development?",
-//     description: "If you want an attractive and fully featured rummy website, then you have to invest around 6 lakh in rummy website development. However, the amount may differ depending on your requirements and features. The love for rummy game in India is increasing day by day as it is an interesting and skill-based game. Rummy games are completely legal in India and so most people want to have their own rummy website. If you are one of them, do contact us for rummy website development."
-//   },
-//   {
-//     title: "What is your USP in Rummy Game Development?",
-//     description: "We built a rummy game for all platforms; either you want a desktop version (Windows or Mac), mobile version (Android or iOS) or a web version. We have a team of best, highly skilled and professional rummy game developers who can help you expand your online game business."
-//   },
-//   {
-//     title: "How Do You Make a Rummy Game?",
-//     description: "Here are some points:\nPre-Production: Business Requirement ⇢ Branding Details ⇢ Payment gateway ⇢ Target Audience\n\nProduction: Art Production ⇢ Graphics Integration ⇢ Website & Payment gateway ⇢ Quality Control\n\nPost-Production: Patches & Updates ⇢ Server Maintenance ⇢ Technical Support"
-//   },
-//   {
-//     title: "How many online rummy game development solutions are provided by Gamzway?",
-//     description: "Being the most reputable online rummy game development company, we have provided the solutions at our best. We offer both web and mobile rummy games, payment gateway integration, a user-friendly back end so that the admin can manage the rummy business efficiently, and many more."
-//   }
-// ]
 
 const faqTitle = [
   {
@@ -342,37 +309,6 @@ const aboutGrid = [
   },
 ]
 
-// const technicalAccordionData = [
-//   {
-//     title: "How many rummy game variations are provided by Gamzway?",
-//     description: "We are offering Point Rummy, 101 and 201 Pool Rummy, Deals Rummy with 2 and 6 players table along with different kinds of tournaments."
-//   },
-//   {
-//     title: "What are the requirements to get started on a rummy website?",
-//     description: "As Rummy is a Game of Skill, there is no need for any license or legal approval or any other Govt approval. You can just set up your business and start running the game."
-//   },
-//   {
-//     title: "Which Country has the most Rummy Game Players?",
-//     description: "When it comes to rummy games, India serves around 76% of its total traffic and every 4 out of 10 card game players prefer playing this game of cards."
-//   },
-//   {
-//     title: "How Many Jokers are there in Rummy?",
-//     description: "There are 5 Joker cards in the game, with players being able to use four of them. One Joker is turned up crosswise under the closed deck, visible to all players. In the following way, this card determines an additional set of jokers for that hand: Regardless of color, the rank is the same."
-//   },
-//   {
-//     title: "Which Technology is Best for Rummy Game Development?",
-//     description: "It depends on the usability. For the browser-based game, HTML5 is best. For Mobile apps, Unity is the best. The best options will be a fast & secure game engine and back-office Java, PHP, Nodejs, and NoSQL."
-//   },
-//   {
-//     title: "How can you help me with Rummy website Development?",
-//     description: "You just have to contact us and tell us your requirements and features you want and leave rest on us. Our customized dedicated team will contact you and therefore will work on the requirements."
-//   },
-//   {
-//     title: "Will you manage payment gateway integration, or do I have to take care of it?",
-//     description: "We will take care of the payment gateway integration, which includes instant deposit & withdrawal through UPI, Paytm, Other Wallets, Debit Card, Credit card, Net banking, etc."
-//   }
-// ]
-
 const crmItems = [
   {
     title: "Dashboard",
@@ -433,64 +369,12 @@ const crmTitle =[
 
 
 const RummyGame = () => {
-  // const [showMore, setShowMore] = useState(false)
-
-  // const toggleReadMore = () => {
-  //   setShowMore(!showMore);
-  // }
-
-  // const featuresGrid = [
-  //   {
-  //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r04.webp",
-  //     title: "Tournaments",
-  //     description: "Game tournaments offer better competitiveness among players which helps to get & retain players."
-  //   },
-  //   {
-  //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r05.webp",
-  //     title: "Private Table",
-  //     description: "To let your players enjoy their favorite rummy game with friends or family, we offer private tables."
-  //   },
-  //   {
-  //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r06.webp",
-  //     title: "Multi-Language",
-  //     description: "We also develop an online rummy website and app that support multiple regional languages for offering a better game playing experience."
-  //   },
-  //   {
-  //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r07.webp",
-  //     title: "Rewards & Loyalty",
-  //     description: "Rummy games that we develop come with rewards & loyalty features so that you have an option to incentivize the players and increase engagement."
-  //   },
-  //   {
-  //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r08.webp",
-  //     title: "Back Office & CRM",
-  //     description: "For easy business management, we provide a feature-rich back office along with CRM."
-  //   },
-  //   {
-  //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r09.webp",
-  //     title: "RNG Certified Games",
-  //     description: "To offer a fair gaming experience to the player, our developed rummy game uses the best RNG algorithm which can be certified."
-  //   },
-  //   {
-  //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r10.webp",
-  //     title: "Anti Fraud System",
-  //     description: "Our rummy game app and website feature robust security systems to keep gaming and business activities free from fraud."
-  //   },
-  //   {
-  //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r11.webp",
-  //     title: "Responsible Gaming",
-  //     description: "We at Gamzway promote responsible gaming by implementing different checkpoints on player's daily deposit & spending."
-  //   },
-  //   {
-  //     image: "https://beta.mobzway.com/assets/images/rummy-game-development/r12.webp",
-  //     title: "Payment Security",
-  //     description: "Our rummy software supports most of the payment gateways, which can facilitate deposit & withdraw through different wallets & cards."
-  //   }
-  // ]
 
   return (
     <div className='rummy-game'>
       <div className='rummy-carousel-swiper'>
-        <CarouselSection carouselData={rummyCarouselData} />
+        {/* <CarouselSection carouselData={rummyCarouselData} /> */}
+        <RummyCarousel />
       </div>
 
       <AchievementsBanner />
