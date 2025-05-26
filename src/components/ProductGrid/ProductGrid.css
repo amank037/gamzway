@@ -553,21 +553,21 @@
     top: 25%;
     left: 45%;
     animation-delay: 0s;
-    width: 58%;
+    width: 50%;
 }
 .teen-card2{
     z-index: 5;
     top: 20%;
     left: 28%;
     animation-delay: 0.2s;
-    width: 46%;
+    width: 40%;
 }
 .teen-card3{
     z-index: 4;
     top: 25%;
     left: 0%;
     animation-delay: 0.4s;
-    width: 58%;
+    width: 50%;
 }
 .image-stack:hover .teen-card1 {
     top: 15%;
@@ -593,7 +593,7 @@
     position: absolute;
     animation: rummyFloat 4s ease-in-out infinite;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    width: 35%;
+    width: 30%;
 }
 .call-card1 {
     z-index: 5;
