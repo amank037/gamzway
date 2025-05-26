@@ -281,10 +281,10 @@ function ProductGrid() {
             <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
             <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
             <div className="dragon-img-container">
-              <img src="/public/ProductImages/dragon tiger/2-01.png" alt="" className="stack-img"/>
+              <img src="/ProductImages/dragon tiger/2-01.png" alt="" className="stack-img"/>
             </div>
             <div className="dragon-bg-container">
-              <img src="/public/ProductImages/dragon tiger/1-01.png" alt="" className="stack-img"/>
+              <img src="/ProductImages/dragon tiger/1-01.png" alt="" className="stack-img"/>
             </div>
           </div>
           <h1 className='stack-img poker-stack-text product-title'>DRAGON & TIGER</h1>
