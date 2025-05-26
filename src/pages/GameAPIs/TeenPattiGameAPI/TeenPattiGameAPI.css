@@ -22,3 +22,8 @@
 .landing-teen-patti-api-section {
     background-blend-mode: overlay;
 }
+
+.teenpatti-choose-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+}

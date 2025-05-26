@@ -73,10 +73,10 @@ function ProductGrid() {
               <img src="/ProductImages/Rummy/za-54.png" alt="" className="stack-img"/>
             </div>
             <div className="rummy-card-container4 rummy-card11">
-              <img src="/ProductImages/Rummy/za-49.png" alt="" className="stack-img"/>
+              <img src="/ProductImages/Rummy/za-55.png" alt="" className="stack-img"/>
             </div>
             <div className="rummy-card-container4 rummy-card12">
-              <img src="/ProductImages/Rummy/za-55.png" alt="" className="stack-img"/>
+              <img src="/ProductImages/Rummy/za-56.png" alt="" className="stack-img"/>
             </div>
             <div className="rummy-card-container4 rummy-card13">
               <img src="/ProductImages/Rummy/za-57.png" alt="" className="stack-img"/>
@@ -274,6 +274,58 @@ function ProductGrid() {
           <h1 className='stack-img poker-stack-text product-title'>BACCARAT</h1>
         </a>
       </div>
+
+      <div className='product-grid-item'>
+        <a href="">
+          <div className="image-stack">
+            <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
+            <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
+          </div>
+          <h1 className='stack-img poker-stack-text product-title'>DRAGON & TIGER</h1>
+        </a>
+      </div>
+
+      <div className='product-grid-item'>
+        <a href="">
+          <div className="image-stack">
+            <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
+            <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
+            <div className="roulette-chip-container roulette-chip1">
+              <img src="/ProductImages/European Roulette/za-84.png" alt="" className="stack-img"/>
+            </div>
+            <div className="roulette-chip-container roulette-chip2">
+              <img src="/ProductImages/European Roulette/za-85.png" alt="" className="stack-img"/>
+            </div>
+            <div className="roulette-chip-container roulette-chip3">
+              <img src="/ProductImages/European Roulette/za-86.png" alt="" className="stack-img"/>
+            </div>
+            <div className="roulette-chip-container roulette-chip4">
+              <img src="/ProductImages/European Roulette/za-87.png" alt="" className="stack-img"/>
+            </div>
+            <div className="roulette-chip-container roulette-chip5">
+              <img src="/ProductImages/European Roulette/za-88.png" alt="" className="stack-img"/>
+            </div>
+            <div className="roulette-chip-container roulette-chip6">
+              <img src="/ProductImages/European Roulette/za-89.png" alt="" className="stack-img"/>
+            </div>
+            <div className="roulette-chip-container roulette-chip7">
+              <img src="/ProductImages/European Roulette/za-90.png" alt="" className="stack-img"/>
+            </div>
+            <div className="roulette-chip-container roulette-chip8">
+              <img src="/ProductImages/European Roulette/za-91.png" alt="" className="stack-img"/>
+            </div>
+            <div className="roulette-chip-container roulette-chip9">
+              <img src="/ProductImages/European Roulette/za-92.png" alt="" className="stack-img"/>
+            </div>
+            <div className="roulette-board-container roulette-board">
+              <img src="/ProductImages/European Roulette/za-94.png" alt="" className="stack-img"/>
+            </div>
+          </div>
+          <h1 className='stack-img poker-stack-text product-title'>ROULETTE</h1>
+        </a>
+      </div>
+
+      
       
     </div>
   )

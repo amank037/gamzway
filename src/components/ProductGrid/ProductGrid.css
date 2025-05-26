@@ -247,7 +247,7 @@
     position: absolute;
     animation: rummyFloat 4s ease-in-out infinite;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    width: 30%;
+    width: 20%;
 }
 @keyframes rummyFloat {
     0%, 100% { transform: translateY(0); }
@@ -306,21 +306,21 @@
 .rummy-card8 {
     z-index: 5;
     top: 35%;
-    left: 10%;
+    left: 20%;
     animation-delay: 1.4s;
 }
 
 .rummy-card9 {
     z-index: 5;
     top: 35%;
-    left: 20%;
+    left: 30%;
     animation-delay: 1.6s;
 }
 
 .rummy-card10 {
     z-index: 5;
     top: 35%;
-    left: 30%;
+    left: 40%;
     animation-delay: 1.8s;
 }
 
@@ -963,4 +963,156 @@
     left: 40%;
     transform: scale(1.1);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s; 
+}
+
+.roulette-chip-container {
+    position: absolute;
+    animation: rouletteChipFloat 4s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 12%;
+}
+
+.roulette-board-container {
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 80%;
+    z-index: 2;
+    bottom: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes rouletteChipFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(20deg); }
+}
+
+.roulette-chip1 {
+    z-index: 4;
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.roulette-chip2 {
+    z-index: 4;
+    top: 15%;
+    left: 40%;
+    animation-delay: 0.1s;
+}
+
+.roulette-chip3 {
+    z-index: 4;
+    top: 12%;
+    right: 25%;
+    animation-delay: 0.2s;
+}
+
+.roulette-chip4 {
+    z-index: 4;
+    top: 25%;
+    left: 15%;
+    animation-delay: 0.3s;
+}
+
+.roulette-chip5 {
+    z-index: 4;
+    top: 28%;
+    right: 15%;
+    animation-delay: 0.4s;
+}
+
+.roulette-chip6 {
+    z-index: 4;
+    top: 35%;
+    left: 30%;
+    animation-delay: 0.5s;
+}
+
+.roulette-chip7 {
+    z-index: 4;
+    top: 40%;
+    right: 30%;
+    animation-delay: 0.6s;
+}
+
+.roulette-chip8 {
+    z-index: 4;
+    top: 45%;
+    left: 20%;
+    animation-delay: 0.7s;
+}
+
+.roulette-chip9 {
+    z-index: 4;
+    top: 42%;
+    right: 10%;
+    animation-delay: 0.8s;
+}
+.image-stack:hover .roulette-chip1 {
+    top: 5%;
+    left: 0%;
+    transform: scale(1.1) rotate(15deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+.image-stack:hover .roulette-chip2 {
+    top: 10%;
+    left: 20%;
+    transform: scale(1.1) rotate(-15deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+}
+
+.image-stack:hover .roulette-chip3 {
+    top: 8%;
+    right: 20%;
+    transform: scale(1.1) rotate(20deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.image-stack:hover .roulette-chip4 {
+    top: 20%;
+    left: 10%;
+    transform: scale(1.1) rotate(-20deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+}
+
+.image-stack:hover .roulette-chip5 {
+    top: 23%;
+    right: 10%;
+    transform: scale(1.1) rotate(15deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+
+.image-stack:hover .roulette-chip6 {
+    top: 30%;
+    left: 25%;
+    transform: scale(1.1) rotate(-15deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+}
+
+.image-stack:hover .roulette-chip7 {
+    top: 35%;
+    right: 25%;
+    transform: scale(1.1) rotate(20deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.6s;
+}
+
+.image-stack:hover .roulette-chip8 {
+    top: 40%;
+    left: 5%;
+    transform: scale(1.1) rotate(-20deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.7s;
+}
+
+.image-stack:hover .roulette-chip9 {
+    top: 37%;
+    right: 5%;
+    transform: scale(1.1) rotate(15deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.8s;
+}
+
+.image-stack:hover .roulette-board {
+    transform: translateX(-50%) scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
