@@ -419,18 +419,5 @@
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
 }
 
-.sixth-slide-cards-container:hover .sixth-slide-chip1 {
-    top: 50%;
-    left: 35%;
-    scale: 1.15;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
-}
 
-.sixth-slide-cards-container:hover .sixth-slide-chip2 {
-    top: 50%;
-    left: 0%;
-    scale: 1.15;
-    transform: rotate(-15deg);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
-}
 
