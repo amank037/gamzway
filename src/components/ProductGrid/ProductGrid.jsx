@@ -331,7 +331,65 @@ function ProductGrid() {
         </a>
       </div>
 
+      <div className='product-grid-item'>
+        <a href="">
+          <div className="image-stack">
+            <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
+            <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
+            <h1 className='stack-img poker-stack-text product-title'>SLOTS</h1>
+          </div>
+        </a>
+      </div>
+
+      <div className='product-grid-item'>
+        <a href="">
+          <div className="image-stack">
+            <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
+            <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
+            <h1 className='stack-img poker-stack-text product-title'>SICBO</h1>
+          </div>
+        </a>
+      </div>
       
+      <div className='product-grid-item'>
+        <a href="">
+          <div className="image-stack">
+            <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
+            <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
+            <h1 className='stack-img poker-stack-text product-title'>KENO</h1>
+          </div>
+        </a>
+      </div>
+
+      <div className='product-grid-item'>
+        <a href="">
+          <div className="image-stack">
+            <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
+            <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
+            <h1 className='stack-img poker-stack-text product-title'>TRIPLE CHANCE</h1>
+          </div>
+        </a>
+      </div>
+
+      <div className='product-grid-item'>
+        <a href="">
+          <div className="image-stack">
+            <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
+            <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
+            <h1 className='stack-img poker-stack-text product-title'>8 BALL POOL</h1>
+          </div>
+        </a>
+      </div>
+
+      <div className='product-grid-item'>
+        <a href="">
+          <div className="image-stack">
+            <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
+            <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
+            <h1 className='stack-img poker-stack-text product-title'>VIRTUAL HORSE</h1>
+          </div>
+        </a>
+      </div>
       
     </div>
   )
