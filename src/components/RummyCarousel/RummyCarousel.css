@@ -365,7 +365,6 @@
 .sixth-slide-chip1, .sixth-slide-chip2 {
     position: absolute;
     width: 80%;
-    animation: chipFloat 3s ease-in-out infinite;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
