@@ -143,24 +143,33 @@ function RummyCarousel() {
               </div>
                 <div className="sixth-slide-cards-container">
                   <div className="sixth-slide-card-container sixth-slide-card1">
-                    <img src="/rummyPage/slides/1st slide/01-01.png" alt="" className="stack-img"/>
+                    <img src="/rummyPage/slides/6th slide/01-01.png" alt="" className="stack-img"/>
                   </div>
                   
                   <div className="sixth-slide-card-container sixth-slide-card2">
-                    <img src="/rummyPage/slides/1st slide/01-02.png" alt="" className="stack-img"/>
+                    <img src="/rummyPage/slides/6th slide/01-02.png" alt="" className="stack-img"/>
                   </div>
                   
                   <div className="sixth-slide-card-container sixth-slide-card3">
-                    <img src="/rummyPage/slides/1st slide/01-03.png" alt="" className="stack-img"/>
+                    <img src="/rummyPage/slides/6th slide/01-03.png" alt="" className="stack-img"/>
                   </div>
                   
                   <div className="sixth-slide-card-container sixth-slide-card4">
-                    <img src="/rummyPage/slides/1st slide/01-13.png" alt="" className="stack-img"/>
+                    <img src="/rummyPage/slides/6th slide/01-04.png" alt="" className="stack-img"/>
                   </div>
 
-                  <div className="sixth-slide-icon-container sixth-slide-icon1">
-                    <img src="/rummyPage/slides/1st slide/1.png" alt=""  className="stack-img"/>
+                  <div className="sixth-slide-card-container sixth-slide-card5">
+                    <img src="/rummyPage/slides/6th slide/01-13.png" alt=""  className="stack-img"/>
                   </div>
+
+                  <div className="sixth-slide-chip-container sixth-slide-chip1">
+                    <img src="/rummyPage/slides/6th slide/Untitled-7.png" alt="" className="stack-img"/>
+                  </div>
+
+                  <div className="sixth-slide-chip-container sixth-slide-chip2">
+                    <img src="/rummyPage/slides/6th slide/one-01.png" alt="" className="stack-img"/>
+                  </div>
+
                 </div>
               </div>
           </SwiperSlide>

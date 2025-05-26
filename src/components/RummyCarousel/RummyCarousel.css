@@ -1,4 +1,4 @@
-/* Import base carousel styles from CarouselSection.css */
+
 .rummy-carousel-wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -233,7 +233,7 @@
     left: 0%;
 }
 
-/* Update hover selectors to match component structure */
+
 .slide-content:hover .first-slide-card1 {
     transform: translateY(-25px) rotate(-12deg) scale(1.1);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -281,6 +281,157 @@
 
 .slide-content:hover .first-slide-title2 {
     transform: translateY(-8px) scale(1.05);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+}
+
+@keyframes floatSixthFirst {
+    0%, 100% { transform: translateY(0) rotate(-20deg); }
+    50% { transform: translateY(-15px) rotate(-25deg); }
+}
+
+@keyframes floatSixthMiddle1 {
+    0%, 100% { transform: translateY(-5px) rotate(-8deg); }
+    50% { transform: translateY(-20px) rotate(-14deg); }
+}
+
+@keyframes floatSixthMiddle2 {
+    0%, 100% { transform: translateY(-8px) rotate(0deg); }
+    50% { transform: translateY(-18px) rotate(0deg); }
+}
+
+@keyframes floatSixthLast {
+    0%, 100% { transform: translateY(0) rotate(8deg); }
+    50% { transform: translateY(-15px) rotate(14deg); }
+}
+
+@keyframes chipFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.sixth-slide-cards-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.sixth-slide-card1 {
+    position: absolute;
+    width: 30%;
+    top: 20%;
+    left: 5%;
+    animation: floatSixthFirst 4s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sixth-slide-card2 {
+    position: absolute;
+    width: 30%;
+    top: 20%;
+    left: 20%;
+    animation: floatSixthMiddle1 4.5s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sixth-slide-card3 {
+    position: absolute;
+    width: 30%;
+    top: 20%;
+    left: 35%;
+    animation: floatSixthMiddle2 4.2s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sixth-slide-card4 {
+    position: absolute;
+    width: 30%;
+    top: 20%;
+    left: 50%;
+    animation: floatSixthLast 4.8s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sixth-slide-card5 {
+    position: absolute;
+    width: 30%;
+    top: 20%;
+    left: 65%;
+    animation: floatSixthLast 5s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sixth-slide-chip1, .sixth-slide-chip2 {
+    position: absolute;
+    width: 80%;
+    animation: chipFloat 3s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sixth-slide-chip1 {
+    top: 35%;
+    left: 25%;
+    animation-delay: 0.2s;
+    width: 70%;
+    z-index: 4;
+}
+
+.sixth-slide-chip2 {
+    top: 35%;
+    left: 0%;
+    animation-delay: 0.4s;
+    width: 80%;
+    z-index: 3;
+}
+
+.sixth-slide-cards-container:hover .sixth-slide-card1 {
+    top: 15%;
+    left: 3%;
+    scale: 1.1;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sixth-slide-cards-container:hover .sixth-slide-card2 {
+    top: 13%;
+    left: 14%;
+    scale: 1.1;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+}
+
+.sixth-slide-cards-container:hover .sixth-slide-card3 {
+    top: 11%;
+    left: 35%;
+    scale: 1.1;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.sixth-slide-cards-container:hover .sixth-slide-card4 {
+    top: 15%;
+    left: 60%;
+    scale: 1.1;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+}
+
+.sixth-slide-cards-container:hover .sixth-slide-card5 {
+    top: 13%;
+    left: 75%;
+    scale: 1.1;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+
+.sixth-slide-cards-container:hover .sixth-slide-chip1 {
+    top: 50%;
+    left: 35%;
+    scale: 1.15;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.sixth-slide-cards-container:hover .sixth-slide-chip2 {
+    top: 50%;
+    left: 0%;
+    scale: 1.15;
+    transform: rotate(-15deg);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
 }
 

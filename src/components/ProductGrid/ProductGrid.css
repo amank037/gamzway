@@ -964,6 +964,35 @@
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s; 
 }
 
+.dragon-bg-container{
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    z-index: 2;
+    top: 0%;
+    opacity:0;
+}
+.dragon-img-container{
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 70%;
+    z-index: 3;
+    top: 5%;
+    left: 10%;
+    animation: rummyFloat 4s ease-in-out infinite;
+}
+/* .image-stack:hover .dragon-bg-container {
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+} */
+.image-stack:hover .dragon-img-container {
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    top: -5%;
+    left: 10%;
+}
+
 .roulette-chip-container {
     position: absolute;
     animation: rouletteChipFloat 4s ease-in-out infinite;
