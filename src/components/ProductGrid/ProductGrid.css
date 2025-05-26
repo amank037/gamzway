@@ -970,7 +970,7 @@
     width: 100%;
     z-index: 2;
     top: 0%;
-    opacity:0;
+    opacity:1;
 }
 .dragon-img-container{
     position: absolute;
@@ -981,11 +981,10 @@
     left: 10%;
     animation: rummyFloat 4s ease-in-out infinite;
 }
-/* .image-stack:hover .dragon-bg-container {
+.image-stack:hover .dragon-bg-container {
     transform: scale(1.1);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 1;
-} */
+}
 .image-stack:hover .dragon-img-container {
     transform: scale(1.1);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
