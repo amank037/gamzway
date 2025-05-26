@@ -7,6 +7,9 @@ import FeaturesGrid from '../../../components/FeaturesSection/FeaturesGrid/Featu
 import PlatformSection from '../../../components/PlatformSection/PlatformSection'
 import ContactBanner from '../../../components/ContactBanner/ContactBanner'
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
+import AccordionSection from '../../../components/AccordionSection/AccordionSection'
+import PaymentSection from '../../../components/PaymentSection/PaymentSection'
+import ProductSection from '../../../components/ProductSection/ProductSection'
 
 const landingItems = [
   {
@@ -214,6 +217,84 @@ const crmTitle =[
   }
 ]
 
+const faqTitle = [
+  {
+    title: "TEEN PATTI FAQS"
+  }
+]
+
+const faqAccordionData = [
+  {
+    title: "What is Teen Patti software?",
+    description: "Teen Patti software is a digital platform designed to simulate the traditional Indian card game of Teen Patti. It allows players to enjoy real-time multiplayer gameplay, place bets, and interact with other users using mobile apps, web browsers, or PC versions."
+  },
+  {
+    title: "Can I get a white-label Teen Patti solution?",
+    description: "Yes. We offer fully customizable white-label Teen Patti software, allowing you to launch your own brand with unique themes, features, and monetization strategies. You get complete ownership with minimal development time."
+  },
+  {
+    title: "Is Teen Patti software legal to operate?",
+    description: "The legality of operating a Teen Patti game platform depends on your local jurisdiction. We recommend consulting legal counsel based on your target region. Our software can be tailored to comply with region-specific gaming regulations."
+  },
+  {
+    title: "Which platforms do you support for Teen Patti games?",
+    description: "Our Teen Patti software is available for HTML5 web browsers, Android and iOS native mobile apps, and desktop platforms including both Mac and Windows. We ensure seamless performance and responsiveness across all devices."
+  },
+  {
+    title: "What game modes are included in your Teen Patti software?",
+    description: "We offer a wide range of Teen Patti game modes such as No Limit Classic, Pot Limit, VIP Teen Patti, AK47, Joker Variants, Muflis, Hukum, and 10x Boot. These can be customized to suit your platform’s player preferences."
+  },
+  {
+    title: "Can I integrate secure payment gateways into the software?",
+    description: "Absolutely. Our Teen Patti solutions support integration with multiple secure and widely used payment gateways, enabling smooth deposits and withdrawals. We prioritize data security and user protection."
+  },
+  {
+    title: "How do I monetize my Teen Patti platform?",
+    description: "You can monetize through in-app purchases, entry fees, ads, VIP memberships, and virtual gifts. We help you configure multiple revenue channels tailored to your business model."
+  },
+  {
+    title: "Do you offer ongoing maintenance and support?",
+    description: "Yes, we provide end-to-end support including regular updates, troubleshooting, server management, and feature upgrades to ensure your platform runs smoothly post-launch."
+  },
+  {
+    title: "How secure is your Teen Patti software?",
+    description: "Our software is built with industry-standard encryption protocols, anti-fraud systems, and advanced security frameworks to prevent data breaches, unfair play, and unauthorized access."
+  },
+  {
+    title: "Can I customize the look and feel of the game?",
+    description: "Yes. We provide complete customization options including UI/UX design, themes, game rules, table settings, and in-game elements like emojis and avatars — all aligned with your brand identity."
+  }
+]
+
+const productItems = [
+  {
+    image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Poker.webp",
+    title: "Poker Game",
+    description: "Gamzway provides poker game development for all the popular poker games like Texas Hold’em, Omaha, Seven Stud, OFC Poker, and more. Our seasoned game developers utilize cutting-edge gaming technology to offer the player's best poker gaming experience.",
+    href: "/skill-games/poker"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Casino.webp",
+    title: "Casino Games",
+    description: "For the online casino game entrepreneurs and businesses, Gamzway offers customized casino game solutions. All the popular casino games like Roulette, Blackjack, Slot, Baccarat, etc. are designed and developed at our gaming studio as per your business needs.",
+    href: "/casino-games"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Teenpatti.webp",
+    title: "Teen Patti Game",
+    description: "Gamzway offers ready-to-use Teen Patti solutions for business ventures. We build customized solutions for all the variants like Fox,Vintage, and Teen Patti Plus. We provide solutions for all desktop & mobile devices, and web browsers at the best prices.",
+    href: "/game-apis/teen-patti"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/rummy-game-development/product_ludo.webp",
+    title: "LUDO Game",
+    description: "If you are looking forward to acquiring online ludo game solutions, Gamzway Technologies is among the most famous ludo app development companies. We offer both ready-to-live and customized gaming solutions for Android, iOS, Web, and Desktop using HTML 5.",
+    href: "/skill-games/ludo"
+  },
+]
+
+
+
 const TeenPattiGameAPI = () => {
   return (
     <div className="teen-patti-api-game">
@@ -271,7 +352,22 @@ const TeenPattiGameAPI = () => {
 
       <CustomGrid customgridItems={crmItems} customTitle={crmTitle} />
 
-      
+      <div className='faq-section'>
+        <FeaturesHeader featuresText={faqTitle} />
+
+        <div className='faq-accordion-container'>
+          <AccordionSection data={faqAccordionData} />
+        </div>
+        <a className="faq-btn" href="">
+            <span className="btn-text">ASK A QUESTION</span>
+            <span className="btn-border"></span>
+        </a>
+      </div>
+
+      <PaymentSection />
+
+      <ProductSection productGrid={productItems}/>
+
 
     </div>
   )
