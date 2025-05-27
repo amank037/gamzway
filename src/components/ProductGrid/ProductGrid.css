@@ -1615,7 +1615,7 @@
 .horse-container{
     position: absolute;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    top: 0%;
+    top: 20%;
     left: 0%;
     width: 100%;
     z-index: 4;
