@@ -399,8 +399,40 @@ const RummyGame = () => {
         </div>
 
         <div className='solutions-rummy-bottom'>
-          <div className='solutions-img'>
-            <img src="https://beta.mobzway.com/assets/images/rummy-game-development/rummy-game-development-solutions%201.webp" alt="" />
+          <div className='solutions-img slide-cards-container'>
+            <div className='sol-board-container'>
+              <img src="/rummyPage/solutions/1-01.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol-card0'>
+              <img src="/rummyPage/solutions/cards-01.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol-cards-container sol-card1'>
+              <img src="/rummyPage/solutions/2-01.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol-cards-container sol-card2'>
+              <img src="/rummyPage/solutions/3-01.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol-cards-container sol-card3'>
+              <img src="/rummyPage/solutions/4-01.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol-cards-container sol-card4'>
+              <img src="/rummyPage/solutions/5-01.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol-coins-container sol-coin1'>
+              <img src="/rummyPage/solutions/6-01.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol-coins-container sol-coin2'>
+              <img src="/rummyPage/solutions/7-01.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol-coins-container sol-coin3'>
+              <img src="/rummyPage/solutions/8-01.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol-coins-container sol-coin4'>
+              <img src="/rummyPage/solutions/9-01.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol-coins-container sol-coin5'>
+              <img src="/rummyPage/solutions/10-01.png" alt="" className="image-stack"/>
+            </div>
           </div>
           <div className='solutions-desc-container'>
             <div className='solutions-desc'>

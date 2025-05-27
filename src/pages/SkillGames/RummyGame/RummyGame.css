@@ -102,6 +102,136 @@
 /* .solutions-rummy-section .solutions-rummy-bottom .solutions-img{
 
 } */
+
+.solutions-img {
+    position: relative !important;
+    width: 100% !important;
+    height: inherit !important;
+    display: block !important;
+  }
+  
+  @keyframes cardFloat1 {
+    0%, 100% { transform: translateY(0) rotate(-8deg); }
+    50% { transform: translateY(-15px) rotate(-12deg); }
+  }
+  
+  @keyframes cardFloat2 {
+    0%, 100% { transform: translateY(-5px) rotate(-4deg); }
+    50% { transform: translateY(-20px) rotate(-8deg); }
+  }
+  
+  @keyframes cardFloat3 {
+    0%, 100% { transform: translateY(-8px) rotate(0deg); }
+    50% { transform: translateY(-18px) rotate(0deg); }
+  }
+  
+  @keyframes cardFloat4 {
+    0%, 100% { transform: translateY(-5px) rotate(4deg); }
+    50% { transform: translateY(-20px) rotate(8deg); }
+  }
+  
+  @keyframes cardFloat5 {
+    0%, 100% { transform: translateY(0) rotate(8deg); }
+    50% { transform: translateY(-15px) rotate(12deg); }
+  }
+  
+  @keyframes coinFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+
+  .sol-board-container {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    z-index: 1;
+    bottom: 20%;
+    left: 5%;   
+  }
+  
+  .sol-cards-container {
+    position: absolute;
+    width: 20%;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 4;
+  }
+  
+  .sol-card0 {
+    top: 15%;
+    left: 10%;
+    position: absolute;
+    width: 80%;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+  }
+  
+  .sol-card1 {
+    top: 50%;
+    left: 5%;
+    animation: cardFloat2 4.5s ease-in-out infinite;
+  }
+  
+  .sol-card2 {
+    top: 50%;
+    left: 70%;
+    animation: cardFloat3 4.2s ease-in-out infinite;
+  }
+  
+  .sol-card3 {
+    top: 5%;
+    left: 55%;
+    animation: cardFloat4 4.8s ease-in-out infinite;
+  }
+  
+  .sol-card4 {
+    top: 0%;
+    left: 30%;
+    animation: cardFloat5 5s ease-in-out infinite;
+  }
+  
+  .sol-coins-container {
+    position: absolute;
+    width: 15%;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 5;
+  }
+  
+  .sol-coin1 {
+    top: 20%;
+    left: 0%;
+    animation: coinFloat 3s ease-in-out infinite;
+  }
+  
+  .sol-coin2 {
+    top: 10%;
+    left: 15%;
+    animation: coinFloat 3.2s ease-in-out infinite;
+  }
+  
+  .sol-coin3 {
+    top: 0%;
+    left: 30%;
+    animation: coinFloat 3.4s ease-in-out infinite;
+  }
+  
+  .sol-coin4 {
+    top: 35%;
+    left: 75%;
+    animation: coinFloat 3.6s ease-in-out infinite;
+  }
+  .sol-coin5{
+    top: 55%;
+    left: 65%;
+    animation: coinFloat 3.8s ease-in-out infinite;
+  }
+  
+  .image-stack {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
 .solutions-rummy-section .solutions-rummy-bottom .solutions-desc-container{
     
     padding: 0 20px;
