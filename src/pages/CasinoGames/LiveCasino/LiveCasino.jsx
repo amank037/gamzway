@@ -5,29 +5,31 @@ import PlatformSection from '../../../components/PlatformSection/PlatformSection
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
 import ContactBanner from '../../../components/ContactBanner/ContactBanner'
+import FeaturesHeader from '../../../components/FeaturesSection/FeaturesHeader/FeaturesHeader'
+
 
 const platformItems = [
   {
     featuresText:[
       {
-        title: "WE BUILD THE POKER GAME FOR ALL PLATFORMS"
+        title: "Live Casino Types: "
       }
     ],
     platformGrid:[
       {
-        image: "https://beta.mobzway.com/assets/images/HTML_five-broweswer.webp",
-        title: "HTML 5 BROWSER",
-        description: "Our white label software company offers gaming solutions for all the desktop devices. Be it Mac or Windows operating systems, we provide white label software for all."
+        image: "https://cdn-icons-png.flaticon.com/512/10646/10646478.png",
+        title: " Live Dealer",
+        description: " Professional studios sent real-time gameplay including trained human dealers."
       },
       {
-        image: "https://beta.mobzway.com/assets/images/Native_Mobile.webp",
-        title: "NATIVE MOBILE",
-        description: "Gamzway offers game app development services for all mobile devices, compatible with all platforms, our best white label software for android, iOS or windows."
+        image: "https://cdn-icons-png.flaticon.com/512/2991/2991463.png",
+        title: "Live Mobile Casino",
+        description: " Perfected for tablets and smartphones, guarantees seamless, low-latency gameplay. Custom-branded apps with real-time gaming interactions accessible for Android and iOS Live Casino App."
       },
       {
-        image: "https://beta.mobzway.com/assets/images/Mac_PC.webp",
-        title: "MAC/WINDOWS",
-        description: "We offer game solutions for popular web browsers like Chrome, Internet Explorer, etc. Our cutting-edge technology ensures better streaming and low data consumption on web browsers."
+        image: "https://cdn-icons-png.flaticon.com/512/4695/4695995.png",
+        title: " Live Casino Based on VR",
+        description: "Enter a virtual gambling hall supported by virtual reality to have an unmatched immersive experience."
       },
     ]
   }
@@ -72,23 +74,73 @@ const demoItems = [
   }
 ]
 
-
 const landingItems = [
   {
     title: "LIVE CASINO SOFTWARE PROVIDER",
-    description: "Discover excellence by connecting with the leading global live casino software providers – Gamzway! Contact us now to address all your live casino solutions requirements and receive competitive quotes for game development. Entrust our team of highly skilled gaming software developers to create the ultimate live dealer casino software tailored to your needs. Partner with the premier casino software provider today.",
+    description: " True time live casino games offer the true casino experience right on to users' screens.  Players can join actual dealers and enjoy vintage games including blackjack, roulette, and baccarat from anywhere in the world by means of high-definition streaming and interactive interfaces.  Unlike RNG-based games, live casinos combine the excitement of land-based casinos with the ease of internet platforms, therefore providing a more immersive and transparent gaming experience.",
+    description2:" Our speciality at Gamzway is creating scalable live casino solutions from right from a user's desktop or mobile device that mimic the glitz of Las Vegas, Macau, and Monte Carlo.",
     button: "REQUEST A DEMO",
   }
 ]
 
+
+const featuresItems = [
+  {
+    title: "Games we Offer",
+    description: "Gamzway presents a large selection of live casino games catered to worldwide users:"
+  } 
+]
+
+
 const LiveCasino = () => {
+
+  const featuresGrid = [
+    { title: "Live Roulette",
+      image: "https://beta.mobzway.com/assets/images/dragon-tiger-bg.jpg"
+     },
+    { title: "Active Blackjack",
+      image:"https://beta.mobzway.com/assets/images/dragon-tiger-bg.jpg"
+     },
+    { title: "Live Banking Games",
+      image:"https://beta.mobzway.com/assets/images/dragon-tiger-bg.jpg" },
+    { title: "Live Andar Bahar",
+      image:"https://beta.mobzway.com/assets/images/dragon-tiger-bg.jpg" },
+    { title: "Live Teen Patti",
+      image:"https://beta.mobzway.com/assets/images/dragon-tiger-bg.jpg" },
+    { title: "Live Casino Poker",
+      image:"https://beta.mobzway.com/assets/images/dragon-tiger-bg.jpg" },
+    { title: "Dragon Tiger Live",
+      image:"https://beta.mobzway.com/assets/images/dragon-tiger-bg.jpg" },
+    { title: "Living Sic Bo",
+      image:"https://beta.mobzway.com/assets/images/dragon-tiger-bg.jpg" },
+    { title: "Live Casino Hold'em",
+      image:"https://beta.mobzway.com/assets/images/dragon-tiger-bg.jpg" }
+  ];
+  
+  
   return (
     <div className="livecasino-game">
       <div className="landing-livecasino-section">
-      <LandingSection landingItems={landingItems}/>
+        <LandingSection landingItems={landingItems}/>
       </div>
+
+      <div className="livecasino-types">
+        <PlatformSection platformItems={platformItems}/>
+      </div>
+
+      <div className='livecasino-features-section'>
+        <FeaturesHeader featuresText={featuresItems} />
+        <div className='livecasino-features-grid'>
+        {featuresGrid.map((item, index) => (
+          <div className='livecasino-features-grid-item' key={index}>
+            <img src={item.image} alt={item.title} />
+              <h3>{item.title}</h3>
+          </div>
+          ))}
+        </div>
+      </div>
+
       <AchievementsBanner />
-      <PlatformSection platformItems={platformItems}/>
       <PaymentSection />
       <ProductSection productGrid={productItems}/>
       <ContactBanner contactItems={demoItems}/>

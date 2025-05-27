@@ -792,6 +792,7 @@
     animation: aviatorFloat1 4s ease-in-out infinite;
     animation-delay: 0s;
     width: 80%;
+    opacity: 0;
 }
 
 .aviator-left-card2 {
@@ -805,7 +806,7 @@
 
 .aviator-right-card1 {
     z-index: 4;
-    top: 35%;
+    top: 40%;
     left: 40%;
     animation: aviatorFloat3 5s ease-in-out infinite;
     animation-delay: 0.4s;
@@ -817,10 +818,10 @@
 .aviator-right-card2 {
     z-index: 5;
     top: 40%;
-    left: 40%;
+    left: 30%;
     animation: aviatorFloat4 4.2s ease-in-out infinite;
     animation-delay: 0.6s;
-    width: 60%;
+    width: 70%;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
