@@ -35,7 +35,7 @@ function RummyCarousel() {
                 <p className="slide-description">Are you in search of the top rummy game development company? Gamzway specializes in rummy game development, offering comprehensive solutions for creating the best online rummy game app and website.</p>
               </div>
 
-                <div className="first-slide-cards-container">              
+                <div className="slide-cards-container">              
                   <div className="first-slide-card-container first-slide-card1">
                     <img src="/rummyPage/slides/1st slide/01-01.png" alt="" className="stack-img"/>
                   </div>
@@ -81,10 +81,22 @@ function RummyCarousel() {
                 <h2 className="slide-title">A23 Rummy</h2>
                 <p className="slide-description">Want to build app like A23 Rummy game? Gamzway specializes in rummy game development, offering a comprehensive range of solutions for creating the best online rummy game app and website.</p>
               </div>
-              <div className="image-content">
-                <div className="rummy-cards-container">
-                  <img src="https://beta.mobzway.com/assets/images/rummy-software/Rummy-03.webp" alt="" />
-                </div>
+              <div className="slide-cards-content">
+                  <div className="second-slide-bg-container">
+                    <img src="/rummyPage/slides/2nd slide/1.png" alt="" className="stack-img"/>
+                  </div>
+                  <div className="second-slide-card-container second-slide-card1">
+                    <img src="/rummyPage/slides/2nd slide/2.png" alt="" className="stack-img"/>
+                  </div>
+                  <div className="second-slide-card-container second-slide-card2">
+                    <img src="/rummyPage/slides/2nd slide/3.png" alt="" className="stack-img"/>
+                  </div>
+                  <div className="second-slide-card-container second-slide-card3">
+                    <img src="/rummyPage/slides/2nd slide/4.png" alt="" className="stack-img"/>
+                  </div>
+                  <div className="second-slide-card-container second-slide-card4">
+                    <img src="/rummyPage/slides/2nd slide/5.png" alt="" className="stack-img"/>
+                  </div>
               </div>
             </div>
           </SwiperSlide>

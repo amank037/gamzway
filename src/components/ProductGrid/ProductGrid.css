@@ -516,14 +516,14 @@
 }
 
 .image-stack:hover .dice1 {
-    bottom: 30%;
+    bottom: 45%;
     left: 10%;
     transform: translateY(-5px) rotate(15deg) scale(1.1);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
 }
 
 .image-stack:hover .dice2 {
-    bottom: 30%;
+    bottom: 45%;
     right: 10%;
     transform: translateY(-5px) rotate(-15deg) scale(1.1);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
