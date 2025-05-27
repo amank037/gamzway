@@ -1384,12 +1384,16 @@
 
 .sicbo-dice-container {
     position: absolute;
-    animation: sicboDiceFloat 4s ease-in-out infinite;
+    
+} 
+.sicbo-2, .sicbo-1{
+    animation: sicboDiceFloat 5s ease-in-out infinite;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}  
+    transform-origin: 50% 50%;
+} 
 @keyframes sicboDiceFloat {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-10px) rotate(10deg); }
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-10px) rotate(360deg); }
 }
 .sicbo-box-container{
     position: absolute;
