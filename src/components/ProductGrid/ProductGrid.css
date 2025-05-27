@@ -447,7 +447,7 @@
 .ludo-ghoti-container {
     position: absolute;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    width: 75%;
+    width: 60%;
     z-index: 3;
 }
 
@@ -456,49 +456,47 @@
     position: absolute;
     animation: diceFloat 5s ease-in-out infinite;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    width: 25%;
+    width: 40%;
     z-index: 4;
 }
 
 @keyframes diceFloat {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-15px) rotate(10deg); }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
 }
 
 @keyframes ghotiFloat1 {
-    0%, 100% { transform: rotate(-10deg) translateY(0); }
-    50% { transform: rotate(-10deg) translateY(-5px); }
+    0%, 100% { transform: rotate(0deg) translateY(0); }
+    50% { transform: rotate(0deg) translateY(-5px); }
 }
 
 @keyframes ghotiFloat2 {
-    0%, 100% { transform: rotate(15deg) translateY(0); }
-    50% { transform: rotate(15deg) translateY(-5px); }
+    0%, 100% { transform: rotate(0deg) translateY(0); }
+    50% { transform: rotate(0deg) translateY(-5px); }
 }
 
 .ludoghoti1 {
-    top: 20%;
-    left: -10%;
+    top: 10%;
+    left: 0%;
     animation: ghotiFloat1 4s ease-in-out infinite;
     animation-delay: 0s;
-    transform: rotate(20deg);
 }
 
 .ludoghoti2 {
-    top: 20%;
-    right: -20%;
+    top: 10%;
+    right: 0%;
     animation: ghotiFloat2 4s ease-in-out infinite;
     animation-delay: 0.5s;
-    transform: rotate(-25deg);
 }
 
 .dice1 {
-    bottom: 20%;
+    bottom: 50%;
     left: 15%;
     animation-delay: 0.2s;
 }
 
 .dice2 {
-    bottom: 20%;
+    bottom: 50%;
     right: 15%;
     animation-delay: 0.7s;
 }
@@ -703,12 +701,12 @@
 .snake-board-container {
     position: absolute;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    width: 90%;
+    width: 100%;
 }
 .snake-card-container {
     position: absolute;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    width: 70%;
+    width: 60%;
 }
 
 @keyframes snakeFloat1 {
@@ -758,6 +756,87 @@
 }
 
 .image-stack:hover .snake-board {
+    transform: scale(1.1);
+}
+
+.live-board-container {
+    z-index: 2;
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    top: 10%;
+    left: 0%;
+}
+.live-card-container {
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 60%;
+    top: 30%;
+    left: 20%;
+    z-index: 3;
+}
+.live-chip-container{
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 30%;
+    z-index: 4;
+}
+.live-chip1{
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+    animation: liveFloat1 4s ease-in-out infinite;
+}
+@keyframes liveFloat1 {
+    0%, 100% { transform: translateY(0) rotate(2deg); }
+    50% { transform: translateY(-8px) rotate(-2deg); }
+}
+.live-chip2{
+    top: 20%;
+    left: 60%;
+    animation-delay: 0.2s;
+    animation: liveFloat2 4s ease-in-out infinite;  
+}
+@keyframes liveFloat2 {
+    0%, 100% { transform: translateY(0) rotate(-2deg); }
+    50% { transform: translateY(-12px) rotate(2deg); }
+}
+.live-chip3{
+    top: 50%;
+    left: 5%;
+    animation-delay: 0s;
+    animation: liveFloat1 4s ease-in-out infinite;
+}
+.live-chip4{
+    top: 50%;
+    left: 65%;
+    animation-delay: 0.2s;
+    animation: liveFloat2 4s ease-in-out infinite;
+}
+.image-stack:hover .live-board-container {
+    transform: scale(1.1);
+}
+.image-stack:hover .live-card-container {
+    transform: scale(1.1);
+}
+.image-stack:hover .live-chip1 {
+    top: 10%;
+    left: 0%;
+    transform: scale(1.1);
+}
+.image-stack:hover .live-chip2 {
+    top: 10%;
+    left: 80%;
+    transform: scale(1.1);
+}
+.image-stack:hover .live-chip3 {
+    top: 40%;
+    left: 0%;
+    transform: scale(1.1);
+}
+.image-stack:hover .live-chip4 {
+    top: 40%;
+    left: 80%;
     transform: scale(1.1);
 }
 
@@ -1142,5 +1221,406 @@
 
 .image-stack:hover .roulette-board {
     transform: translateX(-50%) scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slots-card-container {
+    position: absolute;
+    animation: slotCardFloat 4s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes slotCardFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(10deg); }
+}
+
+.slots-coin-container{
+    position: absolute;
+    animation: slotCoinFloat 4s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes slotCoinFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(10deg); }
+}
+.slots-bg-container{
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    z-index: 2;
+    top: 15%;
+}
+
+.slots-card1 {
+    z-index: 4;
+    top: 5%;
+    left: 25%;
+    animation-delay: 0s;
+    width: 30%;
+}
+.slots-card2 {
+    z-index: 4;
+    top: 10%;
+    left: 60%;
+    animation-delay: 0.2s;
+    width: 30%; 
+}
+.slots-card3 {
+    z-index: 4;
+    top: 65%;
+    left: 5%;
+    animation-delay: 0.4s;
+    width: 40%;
+}
+.slots-card4 {
+    z-index: 4;
+    top: 68%;
+    left: 60%;
+    animation-delay: 0.6s;
+    width: 30%;
+}
+
+.slots-coin1 {
+    z-index: 4;
+    top: 5%;
+    left: 30%;
+    animation-delay: 0s;
+    width: 17%;
+}
+.slots-coin2 {
+    z-index: 4;
+    top: 20%;
+    left: 20%;
+    animation-delay: 0.2s;
+    width: 17%;
+}
+.slots-coin3 {
+    z-index: 4;
+    top: 38%;
+    left: 75%;
+    animation-delay: 0.4s;
+    width: 30%;
+}
+.slots-coin4 {
+    z-index: 2;
+    top: 75%;
+    left: 60%;
+    animation-delay: 0.6s;
+    width: 17%;
+}
+.slots-coin5{
+    z-index: 4;
+    top: 55%;
+    left: 15%;
+    animation-delay: 0.8s;
+    width: 25%;
+}
+.image-stack:hover .slots-card1 {
+    top: 0%;
+    left: 20%;
+    transform: scale(1.1) rotate(15deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.image-stack:hover .slots-card2 {
+    top: 5%;
+    left: 65%;
+    transform: scale(1.1) rotate(-15deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+}
+
+.image-stack:hover .slots-card3 {
+    top: 60%;
+    left: 10%;
+    transform: scale(1.1) rotate(-10deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+
+.image-stack:hover .slots-card4 {
+    top: 63%;
+    left: 65%;
+    transform: scale(1.1) rotate(10deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+}
+
+.image-stack:hover .slots-coin1 {
+    top: 0%;
+    left: 35%;
+    transform: scale(1.2) rotate(45deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+}
+
+.image-stack:hover .slots-coin2 {
+    top: 15%;
+    left: 15%;
+    transform: scale(1.2) rotate(-45deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+
+.image-stack:hover .slots-coin3 {
+    top: 33%;
+    left: 80%;
+    transform: scale(1.2) rotate(60deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+}
+
+.image-stack:hover .slots-coin4 {
+    top: 70%;
+    left: 65%;
+    transform: scale(1.2) rotate(-60deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.6s;
+}
+
+.image-stack:hover .slots-coin5 {
+    top: 50%;
+    left: 10%;
+    transform: scale(1.2) rotate(30deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.7s;
+}
+
+.image-stack:hover .slots-bg-container {
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sicbo-dice-container {
+    position: absolute;
+    animation: sicboDiceFloat 4s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}  
+@keyframes sicboDiceFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(10deg); }
+}
+.sicbo-box-container{
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    z-index: 5;
+    top: -5%;
+}
+.sicbo-dice1 {
+    z-index: 4;
+    top: 15%;
+    left: 35%;
+    animation-delay: 0s;
+    width: 30%;
+}
+.sicbo-dice2 {
+    z-index: 4;
+    top: 27%;
+    right: 25%;
+    animation-delay: 0.2s;
+    width: 30%;
+}
+.image-stack:hover .sicbo-dice1 {
+    top: 12%;
+    left: 32%;
+    transform: scale(1.2) rotate(15deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.image-stack:hover .sicbo-dice2 {
+    top: 25%;
+    right: 23%;
+    transform: scale(1.2) rotate(-15deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+
+.image-stack:hover .sicbo-box-container {
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.keno-ball-container{
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes kenoBallFloat1 {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(10deg); }
+}
+.keno-ball1 {
+    animation: kenoBallFloat1 4s ease-in-out infinite;
+    z-index: 4;
+    top: 5%;
+    left: 35%;
+    animation-delay: 0s;
+    width: 40%;
+}
+@keyframes kenoBallFloat2 {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(-10deg); }
+}
+.keno-ball2 {
+    animation: kenoBallFloat2 4s ease-in-out infinite;
+    z-index: 4;
+    top: 27%;
+    left: 0%;
+    animation-delay: 0.2s;
+    width: 45%;
+}
+@keyframes kenoBallFloat3 {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(10deg); }
+}
+.keno-ball3 {
+    animation: kenoBallFloat3 4s ease-in-out infinite;
+    z-index: 4;
+    top: 40%;
+    left: 50%;
+    animation-delay: 0.4s;
+    width: 45%;
+}
+.image-stack:hover .keno-ball1 {
+    top: 2%;
+    left: 40%;
+    transform: scale(1.2) rotate(15deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+.image-stack:hover .keno-ball2 {
+    top: 25%;
+    left: -10%;
+    transform: scale(1.2) rotate(-15deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+.image-stack:hover .keno-ball3 {
+    top: 38%;
+    left: 55%;
+    transform: scale(1.2) rotate(10deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.6s;
+}
+
+.triple-ball-container{
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes tripleBallFloat1 {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(10deg); }
+}
+.triple-ball1 {
+    animation: tripleBallFloat1 4s ease-in-out infinite;
+    z-index: 4;
+    top: 5%;
+    left: 10%;
+    animation-delay: 0s;
+    width: 50%;
+}
+@keyframes tripleBallFloat2 {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(-10deg); }
+}
+.triple-ball2 {
+    animation: tripleBallFloat2 4s ease-in-out infinite;
+    z-index: 5;
+    top: 20%;
+    left: 20%;
+    animation-delay: 0.2s;
+    width: 60%;
+}
+@keyframes tripleBallFloat3 {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(10deg); }
+}
+.triple-ball3 {
+    animation: tripleBallFloat3 4s ease-in-out infinite;
+    z-index: 4;
+    top: 40%;
+    left: 50%;
+    animation-delay: 0.4s;
+    width: 50%;
+}
+.image-stack:hover .triple-ball1 {
+    top: 0%;
+    left: 5%;
+    transform: scale(1.2) rotate(15deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+.image-stack:hover .triple-ball2 {
+
+    transform: scale(1.2) rotate(-15deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s; 
+}
+.image-stack:hover .triple-ball3 {
+    top: 45%;
+    left: 55%;
+    transform: scale(1.2) rotate(10deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+
+
+.pool-ball-container{
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes poolBallFloat1 {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(10deg); }
+}
+.pool-ball1 {
+    z-index: 4;
+    bottom: 28%;
+    left: 0%;
+    animation-delay: 0s;
+    width: 100%;
+}
+.pool-ball2{
+    animation: poolBallFloat1 4s ease-in-out infinite;
+    z-index: 5;
+    top: 30%;
+    left: 25%;
+    animation-delay: 0.2s;
+    width: 60%;
+}
+.pool-ball3{
+    animation: poolBallFloat1 4s ease-in-out infinite;
+    z-index: 4;
+    top: 20%;
+    left: 5%;
+    animation-delay: 0.2s;
+    width: 50%;
+}
+.pool-ball4{
+    animation: poolBallFloat1 4s ease-in-out infinite;
+    z-index: 4;
+    top: 20%;
+    left: 50%;
+    animation-delay: 0.2s;
+    width: 50%;
+}
+.image-stack:hover .pool-ball1 {
+    transform: scale(1.2) rotate(15deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+.image-stack:hover .pool-ball2 {
+    top: 25%;
+    left: 25%;
+    transform: scale(1.2) rotate(-15deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+.image-stack:hover .pool-ball3 {
+    top: 15%;
+    left: 0%;
+    transform: scale(1.2) rotate(10deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+.image-stack:hover .pool-ball4 {
+    top: 15%;
+    left: 55%;
+    transform: scale(1.2) rotate(10deg);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+
+.horse-container{
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    top: 0%;
+    left: -20%;
+    width: 110%;
+    z-index: 4;
+}
+.image-stack:hover .horse-container {
+    transform: scale(1.1);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }

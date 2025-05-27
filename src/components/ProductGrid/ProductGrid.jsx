@@ -99,10 +99,10 @@ function ProductGrid() {
               <img src="/ProductImages/ludo/ghoti.png" alt="" className="stack-img"/>
             </div>
             <div className="ludo-dice-container dice1">
-              <img src="/ProductImages/ludo/za-59.png" alt="" />
+              <img src="/ProductImages/ludo/za-59.png" alt="" className="stack-img"/>
             </div>
             <div className="ludo-dice-container dice2">
-              <img src="/ProductImages/ludo/za-58.png" alt="" />
+              <img src="/ProductImages/ludo/za-58.png" alt="" className="stack-img" />
             </div>
             <h1 className='stack-img poker-stack-text product-title'>LUDO</h1>
           </div>
@@ -196,6 +196,28 @@ function ProductGrid() {
           <div className="image-stack">
             <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
             <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
+            <div className="live-board-container">
+              <video autoPlay loop muted playsInline className="stack-img">
+                <source src="/ProductImages/Live Casino/Untitled-1.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="live-chip-container live-chip1">
+              <img src="/ProductImages/Live Casino/2-01.png" alt="" className="stack-img"/>
+            </div>
+            <div className="live-chip-container live-chip2">
+              <img src="/ProductImages/Live Casino/3-01.png" alt="" className="stack-img"/>
+            </div>
+            <div className="live-chip-container live-chip3">
+              <img src="/ProductImages/Live Casino/4-01.png" alt="" className="stack-img"/>
+            </div>
+            <div className="live-chip-container live-chip4">
+              <img src="/ProductImages/Live Casino/5-01.png" alt="" className="stack-img"/>
+            </div>
+            <div className="live-card-container">
+              <img src="/ProductImages/Live Casino/1-01.png" alt="" className="stack-img"/>
+            </div>
+
             <h1 className='stack-img poker-stack-text product-title'>LIVE CASINO</h1>
           </div>
         </a>
@@ -336,6 +358,37 @@ function ProductGrid() {
           <div className="image-stack">
             <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
             <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
+            <div className="slots-card-container slots-card1">
+              <img src="/ProductImages/Slots/5-01.png" alt="" className="stack-img"/>
+            </div>
+            <div className="slots-card-container slots-card2">
+              <img src="/ProductImages/Slots/4-01.png" alt="" className="stack-img"/>
+            </div>
+            <div className="slots-card-container slots-card3">
+              <img src="/ProductImages/Slots/3-01.png" alt="" className="stack-img"/>
+            </div>
+            <div className="slots-card-container slots-card4">
+              <img src="/ProductImages/Slots/2.png" alt="" className="stack-img"/>
+            </div>
+            <div className="slots-coin-container slots-coin1">
+              <img src="/ProductImages/Slots/coin 1.png" alt="" className="stack-img"/>
+            </div>
+            <div className="slots-coin-container slots-coin2">
+              <img src="/ProductImages/Slots/coin 2.png" alt="" className="stack-img"/>
+            </div>
+            <div className="slots-coin-container slots-coin3">
+              <img src="/ProductImages/Slots/coin 3.png" alt="" className="stack-img"/>
+            </div>
+            <div className="slots-coin-container slots-coin4">
+              <img src="/ProductImages/Slots/coin 4.png" alt="" className="stack-img"/>
+            </div>
+            <div className="slots-coin-container slots-coin5">
+              <img src="/ProductImages/Slots/coin 5.png" alt="" className="stack-img"/>
+            </div>
+            <div className="slots-bg-container slots-bg">
+              <img src="/ProductImages/Slots/bg.png" alt="" className="stack-img"/>
+            </div>
+
             <h1 className='stack-img poker-stack-text product-title'>SLOTS</h1>
           </div>
         </a>
@@ -346,6 +399,15 @@ function ProductGrid() {
           <div className="image-stack">
             <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
             <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
+            <div className="sicbo-dice-container sicbo-dice1">
+              <img src="/ProductImages/Sicbo/2-01.png" alt="" className="stack-img"/>
+            </div>
+            <div className="sicbo-dice-container sicbo-dice2">
+              <img src="/ProductImages/Sicbo/3-01.png" alt="" className="stack-img"/>
+            </div>
+            <div className="sicbo-box-container sicbo-box">
+              <img src="/ProductImages/Sicbo/1-01.png" alt="" className="stack-img"/>
+            </div>
             <h1 className='stack-img poker-stack-text product-title'>SICBO</h1>
           </div>
         </a>
@@ -356,6 +418,15 @@ function ProductGrid() {
           <div className="image-stack">
             <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
             <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
+            <div className="keno-ball-container keno-ball1">
+              <img src="/ProductImages/keno/1.png" alt="" className="stack-img"/>
+            </div>
+            <div className="keno-ball-container keno-ball2">
+              <img src="/ProductImages/keno/2.png" alt="" className="stack-img"/>
+            </div>
+            <div className="keno-ball-container keno-ball3">
+              <img src="/ProductImages/keno/3.png" alt="" className="stack-img"/>
+            </div>
             <h1 className='stack-img poker-stack-text product-title'>KENO</h1>
           </div>
         </a>
@@ -366,6 +437,15 @@ function ProductGrid() {
           <div className="image-stack">
             <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
             <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
+            <div className="triple-ball-container triple-ball1">
+              <img src="/ProductImages/Triple Chance/1.png" alt="" className="stack-img"/>
+            </div>
+            <div className="triple-ball-container triple-ball2">
+              <img src="/ProductImages/Triple Chance/2.png" alt="" className="stack-img"/>
+            </div>
+            <div className="triple-ball-container triple-ball3">
+              <img src="/ProductImages/Triple Chance/3.png" alt="" className="stack-img"/>
+            </div>
             <h1 className='stack-img poker-stack-text product-title'>TRIPLE CHANCE</h1>
           </div>
         </a>
@@ -376,6 +456,18 @@ function ProductGrid() {
           <div className="image-stack">
             <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
             <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
+            <div className="pool-ball-container pool-ball1">
+              <img src="/ProductImages/8 ball pool/1.png" alt="" className="stack-img"/>
+            </div>
+            <div className="pool-ball-container pool-ball2">
+              <img src="/ProductImages/8 ball pool/2.png" alt="" className="stack-img"/>
+            </div>
+            <div className="pool-ball-container pool-ball3">
+              <img src="/ProductImages/8 ball pool/3.png" alt="" className="stack-img"/>
+            </div>
+            <div className="pool-ball-container pool-ball4">
+              <img src="/ProductImages/8 ball pool/4.png" alt="" className="stack-img"/>
+              </div>
             <h1 className='stack-img poker-stack-text product-title'>8 BALL POOL</h1>
           </div>
         </a>
@@ -386,6 +478,9 @@ function ProductGrid() {
           <div className="image-stack">
             <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
             <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
+            <div className="horse-container">
+              <img src="/ProductImages/Virtual Horse/1.gif" alt="" className="stack-img"/>
+            </div>
             <h1 className='stack-img poker-stack-text product-title'>VIRTUAL HORSE</h1>
           </div>
         </a>
