@@ -813,9 +813,7 @@
     animation-delay: 0.2s;
     animation: liveFloat2 4s ease-in-out infinite;
 }
-.image-stack:hover .live-board-container {
-    transform: scale(1.1);
-}
+
 .image-stack:hover .live-card-container {
     transform: scale(1.1);
 }
@@ -830,12 +828,12 @@
     transform: scale(1.1);
 }
 .image-stack:hover .live-chip3 {
-    top: 40%;
+    top: 60%;
     left: 0%;
     transform: scale(1.1);
 }
 .image-stack:hover .live-chip4 {
-    top: 40%;
+    top: 60%;
     left: 80%;
     transform: scale(1.1);
 }
