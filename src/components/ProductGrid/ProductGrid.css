@@ -1073,17 +1073,17 @@
 
 .roulette-chip-container {
     position: absolute;
-    animation: rouletteChipFloat 4s ease-in-out infinite;
+    /* animation: rouletteChipFloat 4s ease-in-out infinite; */
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    width: 12%;
+    /* width: 12%; */
 }
 
 .roulette-board-container {
     position: absolute;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
-    z-index: 2;
-    top: 5%;
+    z-index: 5;
+    top: -20%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -1095,9 +1095,10 @@
 
 .roulette-chip1 {
     z-index: 4;
-    top: 10%;
-    left: 10%;
+    top: 0%;
+    left: 0%;
     animation-delay: 0s;
+    width: 100%;
 }
 
 .roulette-chip2 {

@@ -316,9 +316,9 @@ function ProductGrid() {
             <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
             <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
             <div className="roulette-chip-container roulette-chip1">
-              <img src="/ProductImages/European Roulette/za-84.png" alt="" className="stack-img"/>
+              <img src="/ProductImages/European Roulette/table.png" alt="" className="stack-img"/>
             </div>
-            <div className="roulette-chip-container roulette-chip2">
+            {/* <div className="roulette-chip-container roulette-chip2">
               <img src="/ProductImages/European Roulette/za-85.png" alt="" className="stack-img"/>
             </div>
             <div className="roulette-chip-container roulette-chip3">
@@ -341,7 +341,7 @@ function ProductGrid() {
             </div>
             <div className="roulette-chip-container roulette-chip9">
               <img src="/ProductImages/European Roulette/za-92.png" alt="" className="stack-img"/>
-            </div>
+            </div> */}
             <div className="roulette-board-container roulette-board">
               <img src="/ProductImages/Live Casino/Untitled-1.gif" alt="" className="stack-img"/>
             </div>
