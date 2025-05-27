@@ -1388,7 +1388,7 @@
     
 } 
 .sicbo-2, .sicbo-1{
-    animation: sicboDiceFloat 5s ease-in-out infinite;
+    animation: sicboDiceFloat 5s linear infinite;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     transform-origin: 50% 50%;
 } 
@@ -1406,27 +1406,27 @@
 .sicbo-dice1 {
     z-index: 4;
     top: 15%;
-    left: 35%;
+    left: 32%;
     animation-delay: 0s;
     width: 30%;
 }
 .sicbo-dice2 {
     z-index: 4;
     top: 27%;
-    right: 25%;
+    right: 28%;
     animation-delay: 0.2s;
     width: 30%;
 }
 .image-stack:hover .sicbo-dice1 {
-    top: 0%;
-    left: 5%;
+    top: 13%;
+    left: 35%;
     transform: scale(1.2) rotate(15deg);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 }
 
 .image-stack:hover .sicbo-dice2 {
-    top: 15%;
-    right: 0%;
+    top: 25%;
+    right: 30%;
     transform: scale(1.2) rotate(-15deg);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
 }
