@@ -781,6 +781,14 @@
     width: 30%;
     z-index: 4;
 }
+.woman-card{
+    position: absolute;
+    z-index: 3;
+    top: 30%;
+    left: -40%;
+    animation-delay: 0s;
+    width: 100%;
+}
 .live-chip1{
     top: 20%;
     left: 10%;
@@ -802,8 +810,8 @@
     50% { transform: translateY(-12px) rotate(2deg); }
 }
 .live-chip3{
-    top: 50%;
-    left: 5%;
+    top: 60%;
+    left: 15%;
     animation-delay: 0s;
     animation: liveFloat1 4s ease-in-out infinite;
 }

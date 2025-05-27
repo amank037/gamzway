@@ -214,7 +214,9 @@ function ProductGrid() {
             <div className="live-card-container">
               <img src="/ProductImages/Live Casino/1-01.png" alt="" className="stack-img"/>
             </div>
-
+            <div className="woman-card">
+              <img src="/ProductImages/Live Casino/2.png" alt="" className="stack-img"/>
+            </div>
             <h1 className='stack-img poker-stack-text product-title'>LIVE CASINO</h1>
           </div>
         </a>
