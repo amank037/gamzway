@@ -96,7 +96,7 @@ const LiveCasino = () => {
 
   const featuresGrid = [
     { title: "Live Roulette",
-      image: "https://beta.mobzway.com/assets/images/dragon-tiger-bg.jpg"
+      image: "https://beta.mobzway.com/assets/images/roulette-bg.jpg"
      },
     { title: "Active Blackjack",
       image:"https://beta.mobzway.com/assets/images/dragon-tiger-bg.jpg"
@@ -106,9 +106,9 @@ const LiveCasino = () => {
     { title: "Live Andar Bahar",
       image:"https://beta.mobzway.com/assets/images/dragon-tiger-bg.jpg" },
     { title: "Live Teen Patti",
-      image:"https://beta.mobzway.com/assets/images/dragon-tiger-bg.jpg" },
+      image:"https://beta.mobzway.com/assets/images/teenpatti-20-bg.jpg" },
     { title: "Live Casino Poker",
-      image:"https://beta.mobzway.com/assets/images/dragon-tiger-bg.jpg" },
+      image:"https://beta.mobzway.com/assets/images/three-card-poker-bg.jpg" },
     { title: "Dragon Tiger Live",
       image:"https://beta.mobzway.com/assets/images/dragon-tiger-bg.jpg" },
     { title: "Living Sic Bo",
@@ -134,7 +134,7 @@ const LiveCasino = () => {
         {featuresGrid.map((item, index) => (
           <div className='livecasino-features-grid-item' key={index}>
             <img src={item.image} alt={item.title} />
-              <h3>{item.title}</h3>
+            <h3>{item.title}</h3>
           </div>
           ))}
         </div>

@@ -806,11 +806,11 @@
 
 .aviator-right-card1 {
     z-index: 4;
-    top: 40%;
-    left: 40%;
-    animation: aviatorFloat3 5s ease-in-out infinite;
-    animation-delay: 0.4s;
-    width: 60%;
+    top: 10%;
+    left: 0%;
+    /* animation: aviatorFloat3 5s ease-in-out infinite;
+    animation-delay: 0.4s; */
+    width: 100%;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
@@ -837,12 +837,12 @@
     transform: scale(1.5);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.image-stack:hover .aviator-right-card1 {
+/* .image-stack:hover .aviator-right-card1 {
     top: 40%;
     left: 45%;
     transform: scale(1.1) scaleX(-1);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 .image-stack:hover .aviator-right-card2 {
     top: 48%;
     left: 45%;
