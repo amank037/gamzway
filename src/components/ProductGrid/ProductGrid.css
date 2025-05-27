@@ -1081,9 +1081,9 @@
 .roulette-board-container {
     position: absolute;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    width: 80%;
+    width: 100%;
     z-index: 2;
-    bottom: 55%;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
 }

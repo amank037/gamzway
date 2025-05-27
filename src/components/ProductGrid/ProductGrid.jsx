@@ -343,7 +343,7 @@ function ProductGrid() {
               <img src="/ProductImages/European Roulette/za-92.png" alt="" className="stack-img"/>
             </div>
             <div className="roulette-board-container roulette-board">
-              <img src="/ProductImages/European Roulette/za-94.png" alt="" className="stack-img"/>
+              <img src="/public/ProductImages/Live Casino/Untitled-1.gif" alt="" className="stack-img"/>
             </div>
           </div>
           <h1 className='stack-img poker-stack-text product-title'>ROULETTE</h1>
