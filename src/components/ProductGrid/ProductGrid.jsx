@@ -383,7 +383,7 @@ function ProductGrid() {
               <img src="/ProductImages/Slots/coin 5.png" alt="" className="stack-img"/>
             </div>
             <div className="slots-bg-container slots-bg">
-              <img src="/ProductImages/Slots/bg.png" alt="" className="stack-img"/>
+              <img src="/ProductImages/Slots/bg.gif" alt="" className="stack-img"/>
             </div>
 
             <h1 className='stack-img poker-stack-text product-title'>SLOTS</h1>
