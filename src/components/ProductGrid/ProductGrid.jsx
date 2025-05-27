@@ -197,7 +197,7 @@ function ProductGrid() {
             <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
             <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
             <div className="live-board-container">
-              <img src="/public/ProductImages/Live Casino/Untitled-1.gif" alt="" className="stack-img"/>
+              <img src="/ProductImages/Live Casino/Untitled-1.gif" alt="" className="stack-img"/>
             </div>
             <div className="live-chip-container live-chip1">
               <img src="/ProductImages/Live Casino/2-01.png" alt="" className="stack-img"/>
