@@ -9,6 +9,7 @@ import FeaturesHeader from '../../../components/FeaturesSection/FeaturesHeader/F
 import FeaturesGrid from '../../../components/FeaturesSection/FeaturesGrid/FeaturesGrid'
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
 import AboutGrid from '../../../components/AboutGrid/AboutGrid'
+import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 
 const landingItems = [
   {
@@ -29,68 +30,53 @@ const typesItems = [
     ],
     platformGrid:[
       {
-        image: "https://cdn-icons-png.flaticon.com/512/10646/10646478.png",
+        image: "https://m.media-amazon.com/images/I/81gxO1PbQeL.png",
         title: "Arcade Fishing Games",
         description: "Fast-paced and packed of action, arcade fishing games are ideal for individuals who desire quick gameplay and instant rewards."
       },
       {
-        image: "https://cdn-icons-png.flaticon.com/512/2991/2991463.png",
+        image: "https://m.media-amazon.com/images/I/81MxyhqXgJL.png",
         title: "Skill-Based Games",
         description: "Perfect for competitive players, these games capture fish by calling accuracy, timing, and experience."
       },
       {
-        image: "https://cdn-icons-png.flaticon.com/512/4695/4695995.png",
+        image: "https://img.40407.com/upload/202401/28/3415eyrxS2n5RVo.jpg",
         title: "Multiplayer Fishing Games",
         description: "Players might enter rooms, compete in real-time, and climb leaderboards for incentives and bragging rights."
-      },
-      {
-        image: "https://cdn-icons-png.flaticon.com/512/4695/4695995.png",
-        title: "Casual Mobile Fishing Games",
-        description: "Designed with simple tap-and-play concepts, suited for light players."
-      },
-      {
-        image: "https://cdn-icons-png.flaticon.com/512/4695/4695995.png",
-        title: "Real Money Hunting Games",
-        description: "These permit actual tokens or awards let in serious players seeking profit-based amusement."
-      },
-      {
-        image: "https://cdn-icons-png.flaticon.com/512/4695/4695995.png",
-        title: "VR/AR Fishing Games",
-        description: "Improve realism and involvement by allowing players underwater virtually, enhancing the actual experience."
       }
     ]
   }
 ]
 
-const featuresItems = [
-  {
-    title: "We have fishing games",
-    description: "At Gamzway, we provide a range of tailored fishing games appropriate for many business types and target groups:"
-  } 
-]
+// const featuresItems = [
+//   {
+//     title: "We have fishing games",
+//     description: "At Gamzway, we provide a range of tailored fishing games appropriate for many business types and target groups:"
+//   } 
+// ]
 
-const featuresGrid = [
-  { 
-    title: "3D Multiplayer Fishing",
-    image: "https://beta.mobzway.com/assets/images/roulette-bg.jpg"
-  },
-  { 
-    title: "Skill-Based Tournament Fishing",
-    image:"https://beta.mobzway.com/assets/images/casino-war-bg.jpg"
-  },
-  { 
-    title: "Real-Money Fishing Competition",
-    image:"https://beta.mobzway.com/assets/images/multi-table-bg.jpg" 
-  },
-  { 
-    title: "Hybrid Fishing-Slot Game",
-    image:"https://beta.mobzway.com/assets/images/andar-bahar-bg.jpg" 
-  },
-  { 
-    title: "Fantasy Fish League",
-    image:"https://beta.mobzway.com/assets/images/teenpatti-20-bg.jpg" 
-  }
-]
+// const featuresGrid = [
+//   { 
+//     title: "3D Multiplayer Fishing",
+//     image: "https://beta.mobzway.com/assets/images/roulette-bg.jpg"
+//   },
+//   { 
+//     title: "Skill-Based Tournament Fishing",
+//     image:"https://beta.mobzway.com/assets/images/casino-war-bg.jpg"
+//   },
+//   { 
+//     title: "Real-Money Fishing Competition",
+//     image:"https://beta.mobzway.com/assets/images/multi-table-bg.jpg" 
+//   },
+//   { 
+//     title: "Hybrid Fishing-Slot Game",
+//     image:"https://beta.mobzway.com/assets/images/andar-bahar-bg.jpg" 
+//   },
+//   { 
+//     title: "Fantasy Fish League",
+//     image:"https://beta.mobzway.com/assets/images/teenpatti-20-bg.jpg" 
+//   }
+// ]
 
 const hireTitle = [
   {
@@ -294,6 +280,35 @@ const productItems = [
   },
 ]
 
+const faqTitle = [
+  {
+    title: "Development FAQs on Fishing Games"
+  }
+]
+
+const accordionData = [
+  {
+    title: "Development of a fishing game takes what length of time?",
+    description: "Depending on complexity and features, a standard fishing game runs 4 to 8 weeks."
+  },
+  {
+    title: "Could I create a real-money fishing game?",
+    description: "Indeed, we favour real-money systems that follow rules set by your country."
+  },
+  {
+    title: "Do you help with game marketing?",
+    description: "Absolutely. We help with ASO, game release plans, and influencer relationships."
+  },
+  {
+    title: "Will my game follow a blueprint or be original?",
+    description: "Your game will be totally custom-built to fit your market needs and brand identity."
+  },
+  {
+    title: "Could I ask for changes or updates following launch?",
+    description: "Yes. We provide post-launch support plans covering scalability, upgrading, and game optimisation."
+  }
+]
+
 const FishingGames = () => {
   return (
     <div className="fishing-game">
@@ -306,18 +321,12 @@ const FishingGames = () => {
         <PlatformSection platformItems={typesItems}/>
       </div>
 
-      <div className='fishing-features-section'>
+      {/* <div className='fishing-features-section'>
         <FeaturesHeader featuresText={featuresItems} />
         <div className='fishing-features-grid'>
-          {/* {featuresGrid.map((item, index) => (
-            <div className='fishing-features-grid-item' key={index}>
-              <img src={item.image} alt={item.title} />
-              <h3>{item.title}</h3>
-            </div>
-          ))} */}
           <AboutGrid aboutGrid={featuresGrid} />
         </div>
-      </div>
+      </div> */}
 
       <div className='solutions-fishing-section'>
         <div className='solutions-fishing-top'>
@@ -368,6 +377,11 @@ const FishingGames = () => {
           features={developmentFeatures}
           featuresTitle={developmentTitle}
         />
+      </div>
+
+      <div className="faq-section">
+        <FeaturesHeader featuresText={faqTitle}/>
+        <AccordionSection data={accordionData} className="fishing-faq" />
       </div>
 
       <PaymentSection />
