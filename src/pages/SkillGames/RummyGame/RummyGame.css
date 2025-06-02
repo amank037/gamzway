@@ -106,7 +106,7 @@
 .solutions-img {
     position: relative !important;
     width: 100% !important;
-    height: inherit !important;
+    height: 500px !important;
     display: block !important;
   }
   
@@ -146,7 +146,7 @@
     width: 90%;
     height: auto;
     z-index: 1;
-    bottom: 20%;
+    top: 35%;
     left: 5%;   
   }
   
@@ -158,7 +158,7 @@
   }
   
   .sol-rummy-card0 {
-    top: 15%;
+    top: 10%;
     left: 10%;
     position: absolute;
     width: 80%;
