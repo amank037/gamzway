@@ -233,11 +233,11 @@
     }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .product-grid-item {
         width: 80%;
     }
-}
+} */
 
 
 .rummy-card-container1,
@@ -1090,8 +1090,8 @@
     width: 44%;
     aspect-ratio: 1;
     z-index: 5;
-    top: 19%;
-    left: 49%;
+    top: 4%;
+    left: 27%;
     position: absolute;
 }
 .roulette-board-container .roulette-board{
@@ -1131,10 +1131,10 @@
 }
 @keyframes rotate360 {
     from {
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform:  rotate(0deg);
     }
     to {
-        transform: translate(-50%, -50%) rotate(360deg);
+        transform:  rotate(360deg);
     }
 }
 .roulette-chip1 {
@@ -1180,8 +1180,8 @@
 
 .slots-card1 {
     z-index: 4;
-    top: 5%;
-    left: 25%;
+    top: 55%;
+    left: 55%;
     animation-delay: 0s;
     width: 30%;
 }
@@ -1243,8 +1243,8 @@
     width: 25%;
 }
 .image-stack:hover .slots-card1 {
-    top: 0%;
-    left: 20%;
+    top: 50%;
+    left: 50%;
     transform: scale(1.1) rotate(15deg);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 }

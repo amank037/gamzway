@@ -335,17 +335,17 @@ function ProductGrid() {
             <img src="/ProductImages/poker/poker-bg.png" alt="Poker bg" className="stack-img poker-stack-bg" />
             <img src="/ProductImages/poker/poker-glow.png" alt="Poker Glow" className="stack-img poker-stack-glow" />
             <div className="slots-card-container slots-card1">
-              <img src="/ProductImages/Slots/5-01.png" alt="" className="stack-img"/>
+              <img src="/ProductImages/Slots/coin 1.png" alt="" className="stack-img"/>
             </div>
             <div className="slots-card-container slots-card2">
-              <img src="/ProductImages/Slots/4-01.png" alt="" className="stack-img"/>
+              <img src="/ProductImages/Slots/coin 2.png" alt="" className="stack-img"/>
             </div>
             <div className="slots-card-container slots-card3">
-              <img src="/ProductImages/Slots/3-01.png" alt="" className="stack-img"/>
+              <img src="/ProductImages/Slots/coin 3.png" alt="" className="stack-img"/>
             </div>
-            <div className="slots-card-container slots-card4">
-              <img src="/ProductImages/Slots/2.png" alt="" className="stack-img"/>
-            </div>
+            {/* <div className="slots-card-container slots-card4">
+              <img src="/ProductImages/Slots/coin 4.png" alt="" className="stack-img"/>
+            </div> */}
             <div className="slots-coin-container slots-coin1">
               <img src="/ProductImages/Slots/coin 1.png" alt="" className="stack-img"/>
             </div>
