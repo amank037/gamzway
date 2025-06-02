@@ -1194,8 +1194,8 @@
 }
 .slots-card3 {
     z-index: 4;
-    top: 65%;
-    left: 5%;
+    top: 35%;
+    left: -5%;
     animation-delay: 0.4s;
     width: 40%;
 }
@@ -1209,8 +1209,8 @@
 
 .slots-coin1 {
     z-index: 4;
-    top: 5%;
-    left: 30%;
+    top: 25%;
+    left: 40%;
     animation-delay: 0s;
     width: 17%;
 }

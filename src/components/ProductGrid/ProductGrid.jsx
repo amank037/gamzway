@@ -355,9 +355,9 @@ function ProductGrid() {
             <div className="slots-coin-container slots-coin3">
               <img src="/ProductImages/Slots/coin 3.png" alt="" className="stack-img"/>
             </div>
-            <div className="slots-coin-container slots-coin4">
+            {/* <div className="slots-coin-container slots-coin4">
               <img src="/ProductImages/Slots/coin 4.png" alt="" className="stack-img"/>
-            </div>
+            </div> */}
             <div className="slots-coin-container slots-coin5">
               <img src="/ProductImages/Slots/coin 5.png" alt="" className="stack-img"/>
             </div>

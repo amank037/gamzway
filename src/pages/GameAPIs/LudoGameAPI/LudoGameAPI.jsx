@@ -5,7 +5,8 @@ import AchievementsBanner from "../../../components/AchievementsBanner/Achieveme
 const landingItems = [
   {
     title: "LUDO GAME API DEVELOPMENT",
-    description: "Looking for the right Ludo game solution for your business, don't hesitate to connect with Gamzway for professional Ludo game development company. Experience with engaging gameplay and vibrant graphics.",
+    description: "Ludo is a cultural phenomenon embraced by millions of people throughout millennia and across countries, not only a board game.  Ludo has resurfaced as a major component in informal multiplayer entertainment as mobile gaming stretches its digital sphere.  Gamzway provides a strong and scalable Ludo Game API designed to satisfy high-performance needs while maintaining games fair, fluid, and interesting therefore enabling gaming companies with this potential.",
+    description2:"Entrepreneurs and businesses wishing to enter or grow in the online board game market will find our Ludo Game API a plug-and-play solution.  Our API provides a technical and creative edge whether you are expanding an existing product line or starting your platform.",
     button: "REQUEST A QUOTE",
   }
 ]
