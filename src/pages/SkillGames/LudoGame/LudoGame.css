@@ -205,26 +205,26 @@
 }
 
 .sol-ludo-piece1 {
-    top: 15%;
+    top: 25%;
     left: 10%;
     animation: pieceFloat1 4s ease-in-out infinite;
 }
 
 .sol-ludo-piece2 {
-    top: 50%;
-    left: 5%;
+    top: 40%;
+    left: 45%;
     animation: pieceFloat2 4.5s ease-in-out infinite;
 }
 
 .sol-ludo-piece3 {
-    top: 5%;
-    left: 55%;
+    top: 20%;
+    left: 40%;
     animation: pieceFloat3 4.2s ease-in-out infinite;
 }
 
 .sol-ludo-piece4 {
-    top: 0%;
-    left: 30%;
+    top: 30%;
+    left: 70%;
     animation: pieceFloat4 5s ease-in-out infinite;
 }
 
@@ -236,8 +236,8 @@
 }
 
 .sol-ludo-dice1 {
-    top: 20%;
-    left: 70%;
+    top:10%;
+    left: 30%;
     animation: diceFloat 3s ease-in-out infinite;
 }
 
