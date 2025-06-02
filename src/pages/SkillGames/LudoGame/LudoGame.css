@@ -247,7 +247,109 @@
     left: 65%;
     animation: diceRotate 5s linear infinite reverse;
 }
+.solutions-img-1 {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    height: inherit;
+    display: block;
+    margin: 0 auto;
+}
 
+
+@media screen and (max-width: 993px) {
+    .solutions-ludo-section .solutions-ludo-bottom {
+        flex-direction: column;
+        gap: 50px;
+        padding: 20px;
+    }
+
+    .solutions-img-1 {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+
+    .sol-ludo-dice-container {
+        width: 20%;
+    }
+
+
+    .sol-ludo-piece1 {
+        top: 15%;
+        left: 25%;
+    }
+
+    .sol-ludo-piece2 {
+        top: 40%;
+        left: 50%;
+    }
+
+    .sol-ludo-piece3 {
+        top: 10%;
+        left: 45%;
+    }
+
+    .sol-ludo-piece4 {
+        top: 25%;
+        left: 70%;
+    }
+
+    .sol-ludo-dice1 {
+        top: 5%;
+        left: 5%;
+    }
+
+    .sol-ludo-dice2 {
+        top: 45%;
+        left: 75%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .solutions-img-1 {
+        padding: 0 10px;
+    }
+
+    .sol-ludo-pieces-container {
+        width: 30%;
+    }
+
+    .sol-ludo-dice-container {
+        width: 25%;
+    }
+
+    .sol-ludo-piece1 {
+        top: 8%;
+        left: 2%;
+    }
+
+    .sol-ludo-piece2 {
+        top: 35%;
+        left: 0%;
+    }
+
+    .sol-ludo-piece3 {
+        top: 8%;
+        left: 40%;
+    }
+
+    .sol-ludo-piece4 {
+        top: 3%;
+        left: 20%;
+    }
+
+    .sol-ludo-dice1 {
+        top: 12%;
+        left: 60%;
+    }
+
+    .sol-ludo-dice2 {
+        top: 40%;
+        left: 55%;
+    }
+}
 .image-stack {
     width: 100%;
     height: auto;
