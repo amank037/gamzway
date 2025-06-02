@@ -320,32 +320,9 @@ function ProductGrid() {
             <div className="roulette-chip-container roulette-chip1">
               <img src="/ProductImages/European Roulette/table.png" alt="" className="stack-img"/>
             </div>
-            {/* <div className="roulette-chip-container roulette-chip2">
-              <img src="/ProductImages/European Roulette/za-85.png" alt="" className="stack-img"/>
-            </div>
-            <div className="roulette-chip-container roulette-chip3">
-              <img src="/ProductImages/European Roulette/za-86.png" alt="" className="stack-img"/>
-            </div>
-            <div className="roulette-chip-container roulette-chip4">
-              <img src="/ProductImages/European Roulette/za-87.png" alt="" className="stack-img"/>
-            </div>
-            <div className="roulette-chip-container roulette-chip5">
-              <img src="/ProductImages/European Roulette/za-88.png" alt="" className="stack-img"/>
-            </div>
-            <div className="roulette-chip-container roulette-chip6">
-              <img src="/ProductImages/European Roulette/za-89.png" alt="" className="stack-img"/>
-            </div>
-            <div className="roulette-chip-container roulette-chip7">
-              <img src="/ProductImages/European Roulette/za-90.png" alt="" className="stack-img"/>
-            </div>
-            <div className="roulette-chip-container roulette-chip8">
-              <img src="/ProductImages/European Roulette/za-91.png" alt="" className="stack-img"/>
-            </div>
-            <div className="roulette-chip-container roulette-chip9">
-              <img src="/ProductImages/European Roulette/za-92.png" alt="" className="stack-img"/>
-            </div> */}
-            <div className="roulette-board-container roulette-board">
-              <img src="/ProductImages/Live Casino/Untitled-1.gif" alt="" className="stack-img"/>
+            <div className="roulette-board-container">
+              <img src="/ProductImages/European Roulette/roulette.png" alt="" className="stack-img  roulette-board"/>
+              <div className="roulette-ball"></div>
             </div>
           </div>
           <h1 className='stack-img poker-stack-text product-title'>ROULETTE</h1>
