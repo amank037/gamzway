@@ -22,3 +22,21 @@
 .landing-ludo-api-section {
     background-blend-mode: overlay;
 }
+
+.ludo-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+}
+
+@media screen and (max-width: 768px) {
+    .ludo-choose-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ludo-choose-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
