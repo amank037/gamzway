@@ -182,7 +182,10 @@
     0%, 100% { transform: translateY(-5px) rotate(4deg); }
     50% { transform: translateY(-20px) rotate(8deg); }
 }
-
+@keyframes diceFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
 
 .sol-ludo-board-container {
     position: absolute;
@@ -195,38 +198,38 @@
 
 .sol-ludo-pieces-container {
     position: absolute;
-    width: 10%;
+    width: 20%;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 4;
 }
 
 .sol-ludo-piece1 {
-    top: 40%;
-    left: 25%;
+    top: 30%;
+    left: 20%;
     animation: pieceFloat1 4s ease-in-out infinite;
 }
 
 .sol-ludo-piece2 {
-    top: 55%;
-    left: 50%;
+    top: 50%;
+    left: 45%;
     animation: pieceFloat2 4.5s ease-in-out infinite;
 }
 
 .sol-ludo-piece3 {
-    top: 30%;
+    top: 20%;
     left: 45%;
     animation: pieceFloat3 4.2s ease-in-out infinite;
 }
 
 .sol-ludo-piece4 {
-    top: 40%;
-    left: 70%;
+    top: 30%;
+    left: 65%;
     animation: pieceFloat4 5s ease-in-out infinite;
 }
 
 .sol-ludo-dice-container {
     position: absolute;
-    width: 15%;
+    width: 20%;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 5;
 }
@@ -237,15 +240,15 @@
 }
 
 .sol-ludo-dice1 {
-    top:20%;
-    left: 30%;
-    animation: diceRotate 3s linear infinite;
+    top:10%;
+    left: 20%;
+    animation: diceFloat 3s linear infinite;
 }
 
 .sol-ludo-dice2 {
     top: 55%;
     left: 65%;
-    animation: diceRotate 5s linear infinite reverse;
+    animation: diceFloat 5s linear infinite reverse;
 }
 .solutions-img-1 {
     position: relative;
