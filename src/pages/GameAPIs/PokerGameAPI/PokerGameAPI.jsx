@@ -6,6 +6,9 @@ import FeaturesGrid from '../../../components/FeaturesSection/FeaturesGrid/Featu
 import PlatformSection from '../../../components/PlatformSection/PlatformSection'
 import ContactBanner from '../../../components/ContactBanner/ContactBanner'
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
+import ProductSection from '../../../components/ProductSection/ProductSection'
+import PaymentSection from '../../../components/PaymentSection/PaymentSection'
+import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 
 const landingItems = [
   {
@@ -117,6 +120,70 @@ const servicesTitle = [
   }
 ]
 
+const faqTitle = [
+  {
+    title: "POKER GAME API FAQ",
+    description: ""
+  }
+]
+
+const faqData = [
+  {
+    title: " Is it possible to make the poker game my brand's specific?",
+    description: "True!  We provide complete white-label customising including rules, design, and functionality."
+  },
+  {
+    title: "Following deployment, what type of support do you provide?",
+    description: "For every one of our clients, we offer updates, technical support available 24/7, and maintenance."
+  },
+  {
+    title: "Exists a safe poker game API?",
+    description: " Sure.  End-to- end encryption, firewalls, and anti- cheat systems define our platform."
+  },
+  {
+    title: "Are multi-currency payments something you endorse?",
+    description: "Absolutely including regional currencies, fiat, and cryptocurrencies."
+  }
+]
+
+const beginItems = [
+  {
+    featuresText:[
+      {
+        title:"Begin Your Business Travel with Gamzway"
+      }
+    ],
+    description: "Whether your company is new or established, Gamzway's Poker Game API is your starting point into the explosive internet poker scene.  Your poker ambitions are just one API away from reality under total control, limitless customising, and dependable support.",
+    hrefText: "GET IN TOUCH"
+  }
+]
+const productItems = [
+  {
+    image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Poker.webp",
+    title: "Poker Game",
+    description: "Gamzway provides poker game development for all the popular poker games like Texas Hold’em, Omaha, Seven Stud, OFC Poker, and more. Our seasoned game developers utilize cutting-edge gaming technology to offer the player's best poker gaming experience.",
+    href: "/skill-games/poker"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/poker-game-development/Product_Rummy.webp",
+    title: "Rummy Game",
+    description: "The highly talented team of rummy software developers ensures that very engaging and customized solutions of this “game of skill” are offered to the gaming clients. All the popular versions of rummy are developed as per the client’s requirements.",
+    href: "/skill-games/rummy"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Teenpatti.webp",
+    title: "Teen Patti Game",
+    description: "Gamzway offers ready-to-use Teen Patti solutions for business ventures. We build customized solutions for all the variants like Fox,Vintage, and Teen Patti Plus. We provide solutions for all desktop & mobile devices, and web browsers at the best prices.",
+    href: "/game-apis/teen-patti"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Casino.webp",
+    title: "Casino Software",
+    description: "For the online casino game entrepreneurs and businesses, Gamzway offers customized casino game solutions. All the popular casino games like Roulette, Blackjack, Slot, Baccarat, etc. are designed and developed at our gaming studio as per your business needs.",
+    href: "/casino-games"
+  },
+]
+
 const PokerGameAPI = () => {
   return (
     <div className="poker-api-game">
@@ -199,6 +266,22 @@ const PokerGameAPI = () => {
           </div>
         </div>
       </div>
+
+      <div className="ludo-faq-section">
+        <FeaturesHeader featuresText={faqTitle}/>
+        <div className="ludo-faq-container">
+          <div className="ludo-faq-left">
+            <AccordionSection data={faqData}/>
+          </div>
+        </div>
+        <button className='faq-btn'><span>ASK A QUESTION</span></button>
+      </div>
+
+      <PaymentSection />
+
+      <ProductSection productGrid={productItems}/>
+
+      <ContactBanner contactItems={beginItems}/>
     </div>
   )
 }
