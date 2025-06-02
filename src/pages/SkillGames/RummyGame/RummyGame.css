@@ -141,7 +141,7 @@
   }
   
 
-  .sol-board-container {
+  .sol-rummy-board-container {
     position: absolute;
     width: 90%;
     height: auto;
@@ -150,14 +150,14 @@
     left: 5%;   
   }
   
-  .sol-cards-container {
+  .sol-rummy-cards-container {
     position: absolute;
     width: 20%;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 4;
   }
   
-  .sol-card0 {
+  .sol-rummy-card0 {
     top: 15%;
     left: 10%;
     position: absolute;
@@ -166,61 +166,61 @@
     z-index: 2;
   }
   
-  .sol-card1 {
+  .sol-rummy-card1 {
     top: 50%;
     left: 5%;
     animation: cardFloat2 4.5s ease-in-out infinite;
   }
   
-  .sol-card2 {
+  .sol-rummy-card2 {
     top: 50%;
     left: 70%;
     animation: cardFloat3 4.2s ease-in-out infinite;
   }
   
-  .sol-card3 {
+  .sol-rummy-card3 {
     top: 5%;
     left: 55%;
     animation: cardFloat4 4.8s ease-in-out infinite;
   }
   
-  .sol-card4 {
+  .sol-rummy-card4 {
     top: 0%;
     left: 30%;
     animation: cardFloat5 5s ease-in-out infinite;
   }
   
-  .sol-coins-container {
+  .sol-rummy-coins-container {
     position: absolute;
     width: 15%;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 5;
   }
   
-  .sol-coin1 {
+  .sol-rummy-coin1 {
     top: 20%;
     left: 0%;
     animation: coinFloat 3s ease-in-out infinite;
   }
   
-  .sol-coin2 {
+  .sol-rummy-coin2 {
     top: 10%;
     left: 15%;
     animation: coinFloat 3.2s ease-in-out infinite;
   }
   
-  .sol-coin3 {
+  .sol-rummy-coin3 {
     top: 0%;
     left: 30%;
     animation: coinFloat 3.4s ease-in-out infinite;
   }
   
-  .sol-coin4 {
+  .sol-rummy-coin4 {
     top: 35%;
     left: 75%;
     animation: coinFloat 3.6s ease-in-out infinite;
   }
-  .sol-coin5{
+  .sol-rummy-coin5{
     top: 55%;
     left: 65%;
     animation: coinFloat 3.8s ease-in-out infinite;

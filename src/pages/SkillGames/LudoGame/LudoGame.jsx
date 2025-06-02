@@ -431,8 +431,28 @@ const LudoGame = () => {
           <FeaturesHeader featuresText={servicesTitle}/>
         </div>
         <div className='solutions-ludo-bottom'>
-          <div className='solutions-img'>
-              <img src="https://beta.mobzway.com/assets/images/poker-game-development/poker-game-developer.webp" alt="" />
+          <div className='solutions-img-1'>
+            <div className='sol-ludo-board-container'>
+              <img src="/ludoPage/solutions/1-01.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol-ludo-pieces-container sol-ludo-piece1'>
+              <img src="/ludoPage/solutions/2-01.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol-ludo-pieces-container sol-ludo-piece2'>
+              <img src="/ludoPage/solutions/3-01.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol-ludo-pieces-container sol-ludo-piece3'>
+              <img src="/ludoPage/solutions/4-01.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol-ludo-pieces-container sol-ludo-piece4'>
+              <img src="/ludoPage/solutions/5-01.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol-ludo-dice-container sol-ludo-dice1'>
+              <img src="/ludoPage/solutions/6-01.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol-ludo-dice-container sol-ludo-dice2'>
+              <img src="/ludoPage/solutions/7-01.png" alt="" className="image-stack"/>
+            </div>
           </div>
 
           <div className='solutions-desc-container'>
