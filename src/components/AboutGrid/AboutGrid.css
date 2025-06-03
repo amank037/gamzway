@@ -65,12 +65,21 @@
 .about-grid .about-grid-item .about-grid-image-title-wrap::before{
     content: '';
     position: absolute;
-    top: -10%;
-    left: 10%;
-    width: 80%;
-    height: 80%;
-    background: radial-gradient(circle, rgba(255, 217, 0, 0.561) 10%, transparent 50%);
+    top: 30%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(
+        circle,
+        rgba(255, 217, 0, 0.8) 10%,
+        rgba(255, 217, 0, 0.4) 20%,
+        rgba(255, 217, 0, 0.1) 40%,
+        transparent 70%
+    );
+    filter: blur(10px);
     z-index: 0;
+    pointer-events: none;
 
 }
 
@@ -83,10 +92,11 @@
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
-    background: linear-gradient(135deg, #ffffff 0%, #cccccc 100%);
+    /* background: linear-gradient(135deg, #ffffff 0%, #cccccc 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
     margin: 0;
+    z-index: 1;
 }
 
 .about-grid .about-grid-item p {

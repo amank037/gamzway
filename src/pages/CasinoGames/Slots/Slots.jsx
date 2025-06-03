@@ -6,13 +6,48 @@ import FeaturesHeader from "../../../components/FeaturesSection/FeaturesHeader/F
 import PaymentSection from "../../../components/PaymentSection/PaymentSection"
 import ProductSection from "../../../components/ProductSection/ProductSection"
 import ContactBanner from "../../../components/ContactBanner/ContactBanner"
+import AboutGrid from "../../../components/AboutGrid/AboutGrid"
 
 
 const landingItems = [
   {
     title: "SLOT GAME DEVELOPMENT COMPANY",
-    description: "Hire Gamzway, the best slot game development company in India, USA & UK and take a successful leap in the online casino business. No matter if it’s the mobile, desktop or web audience you’re targeting, we offer customized and flexible solutions for all. Get in touch with us to know the most attractive quotes and offers!",
+    description: "Slot games are one of the most competent, successful, recognizable kinds of casino entertainment all the world. Top choice for both sincere and casual players, the slot games are famous for their convenient use, pleasing look, and exciting perks.",
+    description2:"Our strengths in the company is launching exciting slot games which mixes graphics, imagination & science to provide fabulous outcomes for casino users. Our slot games has creation services center on providing real time money experiences, with innovation, excellent graphics keeping interest of the users.",
     button: "REQUEST A QUOTE",
+  }
+]
+
+const typesTitle = [
+  {
+    title: "Types of Slot Games"
+  }
+]
+const typesGrid = [
+  {
+    title: "Classic slot games",
+    description: "3-reel classic games with fruit symbols.",
+    image: "/teenapiPage/no-limit.png"
+  },
+  {
+    title: "Progressive slots",
+    description: "slot games jack based wherein users participation results in increase rewards.",
+    image: "/teenapiPage/pot-teen.png"
+  },
+  {
+    title: "Multiplereelgames",
+    description: "The exciting winning competition increases the excitement of the users.",
+    image: "/teenapiPage/vip-teen-patti.png"
+  },
+  {
+    title: "3-Dimensional slot games",
+    description: "The 3-Dimensional slot games are the most popular slot games in the market.",
+    image: "/teenapiPage/ak7.png"
+  },
+  {
+    title: "Slots with the brand names",
+    description: "Slot games with the brand names are the most popular slot games in the market.",
+    image: "/teenapiPage/highest-joker.png"
   }
 ]
 
@@ -157,6 +192,11 @@ const Slots = () => {
       <LandingSection landingItems={landingItems}/>
       </div>
       <AchievementsBanner />
+
+      <div>
+        <FeaturesHeader featuresText={typesTitle}/>
+        <AboutGrid aboutGrid={typesGrid}/>
+      </div>
 
       <div className='solutions-slot-section'>
         <div className='solutions-slot-top'>
