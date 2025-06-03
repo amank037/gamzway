@@ -325,7 +325,7 @@ const TambolaGame = () => {
             <p>Every customer is seen by us as a collaborator, and every project as a shared vision.</p>
           </div>
           <div className='solutions-img'>
-            <img src="https://beta.mobzway.com/assets/images/rummy-game-development/hire-rummy-game-developer.webp" alt="" />
+            <img src="/tambolaPage/solutions/2.png" alt="" />
           </div>
         </div>
       </div>
