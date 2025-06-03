@@ -1,10 +1,26 @@
 .landing-callbreak-section {
-    background-image: url(https://beta.mobzway.com/assets/images/roulette_banner.png);
+    position: relative;
+    background-image: url('../../../assets/callbreakBg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
     height: 100vh !important;
     margin-top: -134px;
+}
+
+.landing-callbreak-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.landing-callbreak-section > * {
+    z-index: 2;
 }
 
 .break-services-section{
