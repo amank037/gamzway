@@ -27,43 +27,43 @@ const typesTitle = [
 const typesGrid = [
   {
     title: "No Limit Classic Teen Patti",
-    image: "https://www.mobzway.com/assets/images/teenpattiplatform/no-limit-classic-teen-patti.png"
+    image: "/teenapiPage/no-limit.png"
   },
   {
     title: "Pot Limit Classic Teen Patti",
-    image: "https://www.mobzway.com/assets/images/teenpattiplatform/pot-limit-classic-teen-patti.png"
+    image: "/teenapiPage/pot-teen.png"
   },
   {
     title: "VIP Teen Patti",
-    image: "https://www.mobzway.com/assets/images/teenpattiplatform/vip-teen-patti.png"
+    image: "/teenapiPage/vip-teen-patti.png"
   },
   {
     title: "AK47",
-    image: "https://www.mobzway.com/assets/images/teenpattiplatform/ak7.png"
+    image: "/teenapiPage/ak7.png"
   },
   {
     title: "Highest Joker",
-    image: "https://www.mobzway.com/assets/images/teenpattiplatform/highest-joker.png"
+    image: "/teenapiPage/highest-joker.png"
   },
   {
     title: "Lowest Joker",
-    image: "https://www.mobzway.com/assets/images/teenpattiplatform/lowest-joker.png"
+    image: "/teenapiPage/lowest-joker.png"
   },
   {
     title: "Joker",
-    image: "https://www.mobzway.com/assets/images/teenpattiplatform/joker.png"
+    image: "/teenapiPage/joker.png"
   },
   {
     title: "Muflis",
-    image: "https://www.mobzway.com/assets/images/teenpattiplatform/muflis1.png"
+    image: "/teenapiPage/muflis1.png"
   },
   {
     title: "Hukum",
-    image: "https://www.mobzway.com/assets/images/teenpattiplatform/hukum.png"
+    image: "/teenapiPage/hukum.png"
   },
   {
     title: "10x Boot",
-    image: "https://www.mobzway.com/assets/images/teenpattiplatform/10xboot.png"
+    image: "/teenapiPage/10x.png"
   }
 ]
 

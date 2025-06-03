@@ -56,10 +56,11 @@
     height: 130px;
     object-fit: contain;
     /* background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--secondary-yellow) 100%); */
-    border-radius: 30px;
-    padding: 20px;
+    /* border-radius: 30px;
+    padding: 20px; */
     transition: all 0.4s ease;
 }
+
 
 .about-grid .about-grid-item:hover .about-grid-image-title-wrap img {
     transform: scale(1.1) rotate(5deg);
