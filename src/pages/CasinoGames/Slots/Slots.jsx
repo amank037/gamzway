@@ -1,4 +1,4 @@
-import { useState } from "react"
+
 import "./Slots.css"
 import LandingSection from "../../../components/LandingSection/LandingSection"
 import AchievementsBanner from "../../../components/AchievementsBanner/AchievementsBanner"
@@ -7,6 +7,7 @@ import PaymentSection from "../../../components/PaymentSection/PaymentSection"
 import ProductSection from "../../../components/ProductSection/ProductSection"
 import ContactBanner from "../../../components/ContactBanner/ContactBanner"
 import AboutGrid from "../../../components/AboutGrid/AboutGrid"
+import AccordionSection from "../../../components/AccordionSection/AccordionSection"
 
 
 const landingItems = [
@@ -166,7 +167,7 @@ const touchItems = [
         title:"GET IN TOUCH, ASK US ANYTHING"
       }
     ],
-    description: "Are you looking for an expert consultation on starting your online gaming business? Or want advice on getting the best game to engage poker players? Connect with us now, and let’s make things happen for you.",
+    description: "If you need a unique or got to solution for your brand of casino. Our employees are here to assist you with their technical knowledge,fast replies. Our Aim is to walk with you through every stage to innovate things from the start or ready to develop slot solution. ",
     hrefText: "LET'S TALK"
   }
 ]
@@ -176,15 +177,32 @@ const solutionsTitle = [
     title: "ONLINE SLOT GAME DEVELOPMENT SOLUTIONS"
   }
 ]
+const faqTitle = [
+  {
+    title: "SLOTS FAQS"
+  }
+]
 
+const faqAccordionData = [
+  {
+    title: "Are real money supported by your slot games?",
+    description: "True.  With integration of payment and wallet systems, we present both real-money and demo modes."
+  },
+  {
+    title: "Usually, how does a slot game develop?",
+    description: "A whole development cycle takes four to twelve weeks depending on complexity."
+  },
+  {
+    title: "Are RNG and fairness certifications something you provide?",
+    description: "Definitely.  Our games follow jurisdictional rules and employ certified RNGs."
+  },
+  {
+    title: "On app stores may your games be available?",
+    description: " Indeed, we provide web-based platforms and create slot games compliant for App Store and Google Play."
+  }
+]
 
 const Slots = () => {
-
-  const [showMore, setShowMore] = useState(false)
-
-  const toggleReadMore = () => {
-    setShowMore(!showMore);
-  }
 
   return (
     <div className="slots-game">
@@ -216,6 +234,8 @@ const Slots = () => {
                   Our 3-D designed slot games with multiple playlines candy blast mania. The games are designed to be responsive on all the main platforms android,iOS, desktop and so on.
                   <br/><br/>
                   Gamzway slot game developers are well-versed in developing a wide range of slot games for all the platforms. Our slot game developers have a unique skill set that enables them to develop slot games for all the platforms.
+                  <br/><br/>
+                  Our organization add features in every slot game with the market strategies & user satisfaction. Brilliant visuals & Animations, Multiple language capabilities, Live incentives Includes exciting sound-effects & relatable music, Return to player settings control, Promotions of slot games.
             </p>
           </div>
         </div>
@@ -234,6 +254,18 @@ const Slots = () => {
           </div>
           ))}
         </div>
+      </div>
+
+      <div className='faq-section'>
+        <FeaturesHeader featuresText={faqTitle} />
+
+        <div className='faq-accordion-container'>
+          <AccordionSection data={faqAccordionData} />
+        </div>
+        <a className="faq-btn" href="">
+            <span className="btn-text">ASK A QUESTION</span>
+            <span className="btn-border"></span>
+        </a>
       </div>
 
       <PaymentSection />
