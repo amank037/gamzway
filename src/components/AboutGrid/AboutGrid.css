@@ -62,7 +62,7 @@
     transition: all 0.4s ease;
     z-index: 1;
 }
-.about-grid .about-grid-item .about-grid-image-title-wrap::before{
+/* .about-grid .about-grid-item .about-grid-image-title-wrap::before{
     content: '';
     position: absolute;
     top: 30%;
@@ -81,7 +81,7 @@
     z-index: 0;
     pointer-events: none;
 
-}
+} */
 
 
 .about-grid .about-grid-item:hover .about-grid-image-title-wrap img {

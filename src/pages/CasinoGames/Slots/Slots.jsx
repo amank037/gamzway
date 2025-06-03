@@ -35,18 +35,18 @@ const typesGrid = [
     image: "/teenapiPage/pot-teen.png"
   },
   {
-    title: "Multiplereelgames",
+    title: "Multiple reel games",
     description: "The exciting winning competition increases the excitement of the users.",
     image: "/teenapiPage/vip-teen-patti.png"
   },
   {
-    title: "3-Dimensional slot games",
+    title: "3-D slot games",
     description: "The 3-Dimensional slot games are the most popular slot games in the market.",
     image: "/teenapiPage/ak7.png"
   },
   {
     title: "Slots with the brand names",
-    description: "Slot games with the brand names are the most popular slot games in the market.",
+    description: "We include graphics, logos from hit game series",
     image: "/teenapiPage/highest-joker.png"
   }
 ]
@@ -209,22 +209,14 @@ const Slots = () => {
           </div>
           <div className='solutions-desc-container'>
             <p className='solutions-desc'>
-            Gamzway Technologies is one of the leading Slot Game Development Company in India, produces most secure slot game with best graphics. Gamzway design the game module with intricate details and clubs with the intelligence of game architects. Advanced design tools, updated ideas and exponential experience act as a backbone of our brilliant game developers. Hiring has also been challenging for Gamzway, hence it ensures a proper set of qualified, talented and diligent young achievers are ready to shape their fortune with Gamzway. Our Slot Game developers have developed game for the variety of the platforms such as android, iOS, website gaming and stand-alone software application.
+            Our high performance downloaded slot games encourages traditional methods mechanics.
                   <br/><br/>
-                  Slot game comes with the complete package of the secure host and client connection, ravishing gameplay, artificial intelligence, upgradable modules and gift surprises. Gamzway team withholds dynamic, innovative and talented game developers ready to convert the ideas of game entrepreneurs into business ideas. Our Slot Game are Tested and Quality Assured for load testing, efficient gameplay, multiplayer options, guest mode, etc.
+                  A video slot games with fantasy themed feature with cascading reels in dragon flame.A slotgame with multiple level mystery boxes1&in jungle spin quest.
                   <br/><br/>
-                  Social can be connected in Slot Game like Facebook, Gmail, apple ID, etc. to get a world scenario and leader board game play. The leader board can be set to multiple duration as per game entrepreneurs attracting more Slot game lover to relish their time with the unique creation. Players in Slot game can also chat, discussing the tactics, making a slot app or slot machine software a real life scenario i.e. talking while playing hence dual enjoyment. Players in the slot game could book tables, use game lobby, buy chips to give their game a boost. Targeting a global clientele, our slot game developers have designed game into multilingual support.
-
-                  <span className={`solutions-desc-more ${showMore ? 'show' : ''}`}>
+                  Our 3-D designed slot games with multiple playlines candy blast mania. The games are designed to be responsive on all the main platforms android,iOS, desktop and so on.
                   <br/><br/>
-                  Gamzway game developers have incorporated a feature to play the game with real or virtual money, premium in-app purchases capable of yielding handsome business returns. Each and every source of online payment has been established as Credit / Debit cards, online banking, payu, etc.
-                  <br/><br/>
-                  Gamzway believes into a strict bug-free Slot Game Development for the satisfactory global clientele and burns the midnight oil to give our clients a perfect on-time project delivery. Also, Gamzway seeks forward to build an eternal customer relationship with game entrepreneurs. Feel free to discuss your ideas with us. We are glad to help you!
-                  </span>
+                  Gamzway slot game developers are well-versed in developing a wide range of slot games for all the platforms. Our slot game developers have a unique skill set that enables them to develop slot games for all the platforms.
             </p>
-            <button onClick={toggleReadMore}>
-              {showMore ? 'Read Less' : 'Read More'}
-            </button>
           </div>
         </div>
       </div>
