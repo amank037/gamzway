@@ -16,7 +16,7 @@ const GameAPIs = () => {
         <Routes>
           <Route index element={
             <>
-              <Link to="skill-games"><SkillGamesAPI /></Link>
+              <Link to="skill-games-api"><SkillGamesAPI /></Link>
               <Link to="casino"><CasinoAPI /></Link>
               <Link to="rummy"><RummyGameAPI /></Link>
               <Link to="teen-patti"><TeenPattiGameAPI /></Link>
@@ -25,7 +25,7 @@ const GameAPIs = () => {
               <Link to="andar-bahar"><AndarBaharAPI /></Link>
             </>
           } />
-          <Route path="skill-games" element={<SkillGamesAPI />} />
+          <Route path="skill-games-api" element={<SkillGamesAPI />} />
           <Route path="casino" element={<CasinoAPI />} />
           <Route path="rummy" element={<RummyGameAPI />} />
           <Route path="teen-patti" element={<TeenPattiGameAPI />} />
