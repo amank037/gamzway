@@ -283,27 +283,27 @@ const faqAccordionData = [
 
 const aboutGrid = [
   {
-    image: "https://beta.mobzway.com/assets/images/rummy-game-development/point-rummy.webp",
+    image: "/rummyPage/variations/point-rummy.png",
     title: "Rummy Points",
     description: " a variation fast-paced in which every point has a predefined value.  The first declaring player gains by using appropriate sets and sequences."
   },
   {
-    image: "https://beta.mobzway.com/assets/images/rummy-game-development/pool-rummy.webp",
+    image: "/rummyPage/variations/pool-rummy.png",
     title: " Rummy in Pools",
     description: " Individuals add chips to a pool.  Being the last person standing after removing others depending on points is the aim."
   },
   {
-    image: "https://beta.mobzway.com/assets/images/rummy-game-development/deal-rummy.webp",
+    image: "/rummyPage/variations/deal-rummy.png",
     title: "Rummy Dealings",
     description: " Players battle throughout a set deal count.  The one with the most chips in the end takes home.  "
   },
   {
-    image: "https://ahoygamesdotcom.b-cdn.net/wp-content/uploads/2022/05/Icon_GinRummy_1024_rounded.png",
+    image: "/rummyPage/variations/gin-rummy.png",
     title: "Rummy of Gin",
     description: " Popular in Western markets, Gin Rummy concentrates on creating melds and a low deadwood point count."
   },
   {
-    image: "https://play-lh.googleusercontent.com/YuPVFdbx2oc0dz0m8tEHWT1aPqkccJ4qZHIu4iH5fVsXnKbUJ-DyuUA1flhAuhI5TA",
+    image: "/rummyPage/variations/rummy.png",
     title: "Indian Rummy (13-Card Game)",
     description: "Often favoured in the Indian gaming scene, the traditional form of rummy was with 13 cards."
   },
@@ -402,9 +402,6 @@ const RummyGame = () => {
           <div className='solutions-img slide-cards-container'>
             <div className='sol-rummy-board-container'>
               <img src="/rummyPage/solutions/1-01.png" alt="" className="image-stack"/>
-            </div>
-            <div className='sol-rummy-card0'>
-              <img src="/rummyPage/solutions/cards-01.png" alt="" className="image-stack"/>
             </div>
             <div className='sol-rummy-cards-container sol-rummy-card1'>
               <img src="/rummyPage/solutions/2-01.png" alt="" className="image-stack"/>

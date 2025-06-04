@@ -22,3 +22,11 @@
 .landing-table-section {
     background-blend-mode: overlay;
 }
+
+.table-types {
+    padding-bottom: 40px;
+}
+.table-types .table-types-desc{
+    width: 100%;
+    text-align: center;
+}
