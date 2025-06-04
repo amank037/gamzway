@@ -64,7 +64,7 @@ function Header() {
             title: "Game APIs",
             path: "/game-apis",
             items: [
-                { name: "Skill Games API", path: "/game-apis/skill-games" },
+                { name: "Skill Games API", path: "/game-apis/skill-games-api" },
                 { name: "Casino API", path: "/game-apis/casino" },
                 { name: "Rummy Game API", path: "/game-apis/rummy" },
                 { name: "Teen Patti Game API", path: "/game-apis/teen-patti" },
