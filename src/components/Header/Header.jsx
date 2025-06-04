@@ -87,7 +87,7 @@ function Header() {
         if (path === '/') {
             return location.pathname === '/'
         }
-        return location.pathname.includes(path)
+        return location.pathname === path || location.pathname.startsWith(path + '/')
     }
 
     const closeMenu = () => {
