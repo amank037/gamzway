@@ -519,11 +519,6 @@
 }
 
 @media screen and (max-width: 992px) {
-    .about-rummy-section .about-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-    }
-
     .solutions-rummy-section .solutions-rummy-bottom {
         gap: 50px;
         display: flex;
@@ -545,10 +540,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .about-rummy-section .about-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-    }
+
     .solutions-rummy-section .solutions-rummy-bottom {
         flex-direction: column;
         gap: 30px;
@@ -615,19 +607,6 @@
 }
 
 @media screen and (max-width: 576px) {
-    .about-rummy-section .about-grid .about-grid-item {
-        padding: 20px;
-    }
-
-    .about-rummy-section .about-grid .about-grid-item .about-grid-image-title-wrap {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .about-rummy-section .about-grid .about-grid-item .about-grid-image-title-wrap h3 {
-        padding-left: 0;
-        font-size: 18px;
-    }
 
     .feature-category {
         padding: 20px;

@@ -8,7 +8,6 @@ import ContactBanner from '../../../components/ContactBanner/ContactBanner'
 import FeaturesHeader from '../../../components/FeaturesSection/FeaturesHeader/FeaturesHeader'
 import FeaturesGrid from '../../../components/FeaturesSection/FeaturesGrid/FeaturesGrid'
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
-import AboutGrid from '../../../components/AboutGrid/AboutGrid'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 
 const landingItems = [
@@ -320,13 +319,6 @@ const FishingGames = () => {
       <div className="fishing-types">
         <PlatformSection platformItems={typesItems}/>
       </div>
-
-      {/* <div className='fishing-features-section'>
-        <FeaturesHeader featuresText={featuresItems} />
-        <div className='fishing-features-grid'>
-          <AboutGrid aboutGrid={featuresGrid} />
-        </div>
-      </div> */}
 
       <div className='solutions-fishing-section'>
         <div className='solutions-fishing-top'>

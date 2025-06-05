@@ -6,8 +6,6 @@ import { motion } from "framer-motion"
 import FeaturesHeader from '../../components/FeaturesSection/FeaturesHeader/FeaturesHeader'
 import ProductGrid from '../../components/ProductGrid/ProductGrid'
 import ContactBanner from '../../components/ContactBanner/ContactBanner'
-import AboutGrid from '../../components/AboutGrid/AboutGrid'
-import FeaturesGrid from '../../components/FeaturesSection/FeaturesGrid/FeaturesGrid'
 
 
 const productfeaturesText = [

@@ -1,15 +1,15 @@
-.about-grid {
+.rummy-about-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 25px;
     margin: 40px;
 }
 
-.about-rummy-desc{
+.rummy-about-rummy-desc{
     text-align: center;
 }
 
-.about-grid .about-grid-item {
+.rummy-about-grid .rummy-about-grid-item {
     padding: 40px 30px;
     text-align: center;
     background: rgba(17, 17, 17, 0.5);
@@ -18,10 +18,11 @@
     border-radius: 20px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
-    overflow: hidden;
-}
-
-.about-grid .about-grid-item::before {
+    overflow: visible; /* changed */
+    z-index: 0;         /* added */
+  }
+  
+  .rummy-about-grid .rummy-about-grid-item::before {
     content: '';
     position: absolute;
     top: 0;
@@ -31,19 +32,21 @@
     background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, transparent 100%);
     opacity: 0;
     transition: opacity 0.4s ease;
-}
+    z-index: -1; /* added */
+  }
+  
 
-.about-grid .about-grid-item:hover {
+.rummy-about-grid .rummy-about-grid-item:hover {
     transform: translateY(-10px);
     border-color: var(--primary-yellow);
     box-shadow: 0 20px 40px rgba(255, 215, 0, 0.1);
 }
 
-.about-grid .about-grid-item:hover::before {
+.rummy-about-grid .rummy-about-grid-item:hover::before {
     opacity: 1;
 }
 
-.about-grid .about-grid-item .about-grid-image-title-wrap {
+.rummy-about-grid .rummy-about-grid-item .rummy-about-grid-image-title-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,7 +55,7 @@
     
 }
 
-.about-grid .about-grid-item .about-grid-image-title-wrap img {
+.rummy-about-grid .rummy-about-grid-item .rummy-about-grid-image-title-wrap img {
     width: 88px;
     height: 77px;
     object-fit: contain;
@@ -61,11 +64,11 @@
 }
 
 
-.about-grid .about-grid-item:hover .about-grid-image-title-wrap img {
+.rummy-about-grid .rummy-about-grid-item:hover .rummy-about-grid-image-title-wrap img {
     transform: scale(1.1) rotate(5deg);
 }
 
-.about-grid .about-grid-item .about-grid-image-title-wrap h3 {
+.rummy-about-grid .rummy-about-grid-item .rummy-about-grid-image-title-wrap h3 {
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
@@ -73,7 +76,7 @@
     z-index: 1;
 }
 
-.about-grid .about-grid-item p {
+.rummy-about-grid .rummy-about-grid-item p {
     font-size: 16px;
     line-height: 1.6;
     color: #d9d9d9;
@@ -82,31 +85,46 @@
 
 
 @media screen and (max-width: 992px) {
-    .about-grid {
+    .rummy-about-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .about-grid {
+    .rummy-about-grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .about-grid .about-grid-item {
+    .rummy-about-grid .rummy-about-grid-item {
         padding: 20px;
     }
 
-    .about-grid .about-grid-item .about-grid-image-title-wrap {
+    .rummy-about-grid .rummy-about-grid-item .rummy-about-grid-image-title-wrap {
         flex-direction: column;
         gap: 15px;
     }
 
-    .about-grid .about-grid-item .about-grid-image-title-wrap h3 {
+    .rummy-about-grid .rummy-about-grid-item .rummy-about-grid-image-title-wrap h3 {
         padding-left: 0;
         font-size: 18px;
     }
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: var(--primary-yellow);
+    font-weight: bold;
+    margin-left: 8px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.read-more-btn:hover {
+    color: #fffacd;
 }
