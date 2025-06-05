@@ -81,7 +81,7 @@ function RummyCarousel() {
                 <h2 className="slide-title">A23 Rummy</h2>
                 <p className="slide-description">Want to build app like A23 Rummy game? Gamzway specializes in rummy game development, offering a comprehensive range of solutions for creating the best online rummy game app and website.</p>
               </div>
-              <div className="slide-cards-container">
+              <div className="slide-cards-content">
                   <div className="second-slide-bg-container">
                     <img src="/rummyPage/slides/2nd slide/1.png" alt="" className="stack-img"/>
                   </div>
