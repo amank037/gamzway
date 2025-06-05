@@ -5,7 +5,7 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner'
 
-// Lazy load route components
+
 const Home = lazy(() => import('./pages/Home/Home'))
 const SkillGames = lazy(() => import('./pages/SkillGames/SkillGames'))
 const CasinoGames = lazy(() => import('./pages/CasinoGames/CasinoGames'))
