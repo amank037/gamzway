@@ -5,6 +5,8 @@ import PlatformSection from '../../../components/PlatformSection/PlatformSection
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
 import ContactBanner from '../../../components/ContactBanner/ContactBanner'
+import FeaturesGrid from '../../../components/FeaturesSection/FeaturesGrid/FeaturesGrid'
+import FeaturesHeader from '../../../components/FeaturesSection/FeaturesHeader/FeaturesHeader'
 
 const platformItems = [
   {
@@ -67,7 +69,7 @@ const demoItems = [
         title: "Start your business journey with Gamzway"
       }
     ],
-    description: "Try Our Games, and explore all the features and solutions you need to start, run, and grow your business.",
+    description: "Our white label browser games are a quick, reliable, and fun method to fulfil your goals, whether they are to get employees more involved or promote your brand outside the company. Get in touch with us to find out about available titles, ask for a sample, or start making your own experience.",
     hrefText: "TRY DEMO"
   }
 ]
@@ -75,10 +77,102 @@ const demoItems = [
 const landingItems = [
   {
     title: "WHITE LABEL SKILL GAMES SOFTWARE PROVIDER",
-    description: "Want your business to rise to new heights? Explore our cutting-edge online white label skill games software. Our white label casino solution boasts advanced technology and a plethora of features designed to keep players engaged. To ensure your success in the online skill games industry, our developers make the necessary enhancements.",
+    description: "Are you looking for a games solution that is ready to use, can be used by your team, and can carry your company's message and get your audience involved right away? Our white label browser games are a whole solution for businesses, teachers, marketers, and professionals that want to develop fun games without getting to start from scratch.",
+    description2:"We offer flexible browser-based games for everything from team-building apps to branded entertainment and corporate engagement. Our software is trustworthy, our service is easy, and we have years of experience in the sector.",
     button: "REQUEST A QUOTE",
   }
 ]
+
+const platformTitle = [
+  {
+    title: "WHITE LABEL SERVICES AT GAMZWAY"
+  }
+]
+const platformFeatures = {
+  sections: [
+    {
+      title: "CROSS-PLATFORM TECHNOLOGY",
+      points: [
+        "Games built using HTML5, WebGL, Node.js for scalability",
+        "No downloads required – runs on all major browsers",
+        "Seamless compatibility across desktop and mobile devices",
+        "Fast, secure, and stable performance on all platforms"
+      ]
+    },
+    {
+      title: "END-TO-END SUPPORT",
+      points: [
+        "Game hosting and regular maintenance",
+        "Backend and analytics integration",
+        "On-demand customer support",
+        "Continuous updates and bug fixes"
+      ]
+    },
+    {
+      title: "WHITE LABEL PROCESS",
+      points: [
+        "Choose from a library of ready-to-use browser games",
+        "Add your brand’s logo, colors, and messaging",
+        "Optional integration with LMS, CRM, or internal tools",
+        "Testing, QA, and go-live in 5–15 business days"
+      ]
+    },
+    {
+      title: "INCLUDED IN EVERY PACKAGE",
+      points: [
+        "Custom splash and loading screens",
+        "Branded logos, themes, and hidden domains",
+        "Admin panel access",
+        "Integrated analytics dashboard"
+      ]
+    },
+    {
+      title: "GAMEPLAY OPTIONS",
+      points: [
+        "Single-player or multiplayer mode availability",
+        "Multilingual support for global reach",
+        "Cross-platform real-time play",
+        "Tailored for engagement and retention"
+      ]
+    },
+    {
+      title: "CUSTOM GAME CREATION",
+      points: [
+        "Work with our team to create partial or full custom games",
+        "Designs tailored to onboarding, promotion, or training",
+        "Custom graphics, UI/UX, characters, and sounds",
+        "Aligned with brand goals and audience engagement"
+      ]
+    },
+    {
+      title: "GAME & CONTENT MANAGEMENT",
+      points: [
+        "Dedicated dashboard for content updates",
+        "Upload and manage branded assets",
+        "Access gameplay reports and analytics",
+        "Control user roles and access permissions"
+      ]
+    },
+    {
+      title: "BUSINESS FLEXIBILITY",
+      points: [
+        "Ideal for startups and enterprises alike",
+        "Flexible hosting: self-hosted or Gamzway-hosted",
+        "Scalable infrastructure to grow with your needs",
+        "Reliable service tailored to your business model"
+      ]
+    }
+  ]
+}
+
+const chooseTitle = [
+  {
+    title: "GAMZWAY WHITE LABEL SKILL GAMES EXPERIENCE",
+    description: "The games can be played in a web browser, but they are also designed to work well on mobile devices. Users may get the sense of a native app right from their mobile browsers. We can turn your white label game into a hybrid mobile app (for iOS and Android) with push notifications and the ability to publish to the app store if you like."
+  }
+]
+
+
 
 const WhiteLabelSkillGames = () => {
   return (
@@ -87,7 +181,83 @@ const WhiteLabelSkillGames = () => {
       <LandingSection landingItems={landingItems}/>
       </div>
       <AchievementsBanner />
+
+      <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
+
       <PlatformSection platformItems={platformItems}/>
+
+      <div className='choose-section'>
+        <FeaturesHeader featuresText={chooseTitle}/>
+        <div className='choose-container'>
+        <div className='choose-grid poker-choose-grid'>
+          <div className='choose-card'>
+            <div className='card-icon'>
+              <i className="fas fa-paint-brush"></i>
+            </div>
+            <h3>Extensive Customization</h3>
+            <p>From seasonal themes to gamified event-driven updates, tailor every element to fit your brand vision.</p>
+          </div>
+
+          <div className='choose-card'>
+            <div className='card-icon'>
+              <i className="fas fa-user-astronaut"></i>
+            </div>
+            <h3>Brand Avatars & Mascots</h3>
+            <p>Introduce unique brand characters and avatars to personalize the player experience and boost engagement.</p>
+          </div>
+
+          <div className='choose-card'>
+            <div className='card-icon'>
+              <i className="fas fa-music"></i>
+            </div>
+            <h3>Themed UI & Sound</h3>
+            <p>Custom soundtracks, UI components, and effects aligned with your campaign, event, or brand theme.</p>
+          </div>
+
+          <div className='choose-card'>
+            <div className='card-icon'>
+              <i className="fas fa-dice"></i>
+            </div>
+            <h3>Custom Game Rules</h3>
+            <p>Define how your game is played with personalized rules tailored to your goals and audience.</p>
+          </div>
+
+          <div className='choose-card'>
+            <div className='card-icon'>
+              <i className="fas fa-share-alt"></i>
+            </div>
+            <h3>Social Media Integration</h3>
+            <p>Connect players through shareable moments, referral mechanics, and seamless social login options.</p>
+          </div>
+
+          <div className='choose-card'>
+            <div className='card-icon'>
+              <i className="fas fa-trophy"></i>
+            </div>
+            <h3>Gamified Engagement</h3>
+            <p>Leaderboards, achievement badges, and prize systems to drive competition and player retention.</p>
+          </div>
+
+          <div className='choose-card'>
+            <div className='card-icon'>
+              <i className="fas fa-language"></i>
+            </div>
+            <h3>Multilingual Support</h3>
+            <p>Offer games in multiple languages for distributed teams, regional audiences, or global campaigns.</p>
+          </div>
+
+          <div className='choose-card'>
+            <div className='card-icon'>
+              <i className="fas fa-briefcase"></i>
+            </div>
+            <h3>Previous White Labels</h3>
+            <p>Training trivia, hiring puzzles, and learning games – custom-built for global brands, colleges, and events.</p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+
       <PaymentSection />
       <ProductSection productGrid={productItems}/>
       <ContactBanner contactItems={demoItems}/>
