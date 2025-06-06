@@ -314,13 +314,19 @@ const FishingGames = () => {
       <div className="landing-fishing-section">
         <LandingSection landingItems={landingItems}/>
         <div className='overlay-images-div'>
-          <img src="/fishingPage/bg-over.webp" alt="" className='overlay-images over1'/>
+          <img src="/fishingPage/bg-over.png" alt="" className='overlay-images over1'/>
         </div>
         <div className='overlay-images-div'>
-          <img src="/fishingPage/tree-stump.webp" alt=""  className='overlay-images over2'/>
+          <img src="/fishingPage/tree-stump.png" alt=""  className='overlay-images over2'/>
         </div>
         <div className='overlay-images-div'>
-          <img src="/fishingPage/tree-top.webp" alt=""  className='overlay-images over3'/>
+          <img src="/fishingPage/tree-top.png" alt=""  className='overlay-images over3'/>
+        </div>
+        <div className='overlay-images-div'>
+          <img src="/fishingPage/tree-stump.png" alt=""  className='overlay-images over4'/>
+        </div>
+        <div className='overlay-images-div'>
+          <img src="/fishingPage/tree-top.png" alt=""  className='overlay-images over5'/>
         </div>
       </div>
       <AchievementsBanner />

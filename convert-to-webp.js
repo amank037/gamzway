@@ -17,7 +17,7 @@ async function convertPngsToWebpInPlace(dir) {
     } else if (extname(entry.name).toLowerCase() === '.png') {
       const image = await readFile(fullPath);
       const webpBuffer = await imagemin.buffer(image, {
-        plugins: [imageminWebp({ quality: 75 })],
+        plugins: [imageminWebp({ quality: 90 })],
       });
 
       const webpPath = fullPath.replace(/\.png$/, '.webp');
