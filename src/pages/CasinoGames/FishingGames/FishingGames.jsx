@@ -29,17 +29,17 @@ const typesItems = [
     ],
     platformGrid:[
       {
-        image: "/fishingPage/arcade fishing.png",
+        image: "/fishingPage/arcade fishing.webp",
         title: "Arcade Fishing Games",
         description: "Fast-paced and packed of action, arcade fishing games are ideal for individuals who desire quick gameplay and instant rewards."
       },
       {
-        image: "/fishingPage/skilled based games.png",
+        image: "/fishingPage/skilled based games.webp",
         title: "Skill-Based Games",
         description: "Perfect for competitive players, these games capture fish by calling accuracy, timing, and experience."
       },
       {
-        image: "/fishingPage/multiplaying fishing game.png",
+        image: "/fishingPage/multiplaying fishing game.webp",
         title: "Multiplayer Fishing Games",
         description: "Players might enter rooms, compete in real-time, and climb leaderboards for incentives and bragging rights."
       }
@@ -314,13 +314,13 @@ const FishingGames = () => {
       <div className="landing-fishing-section">
         <LandingSection landingItems={landingItems}/>
         <div className='overlay-images-div'>
-          <img src="/fishingPage/bg-over.png" alt="" className='overlay-images over1'/>
+          <img src="/fishingPage/bg-over.webp" alt="" className='overlay-images over1'/>
         </div>
         <div className='overlay-images-div'>
-          <img src="/fishingPage/tree-stump.png" alt=""  className='overlay-images over2'/>
+          <img src="/fishingPage/tree-stump.webp" alt=""  className='overlay-images over2'/>
         </div>
         <div className='overlay-images-div'>
-          <img src="/fishingPage/tree-top.png" alt=""  className='overlay-images over3'/>
+          <img src="/fishingPage/tree-top.webp" alt=""  className='overlay-images over3'/>
         </div>
       </div>
       <AchievementsBanner />
@@ -362,7 +362,7 @@ const FishingGames = () => {
             </div>
           </div>
           <div className='solutions-img'>
-            <img src="/fishingPage/lap.png" alt="" />
+            <img src="/fishingPage/lap.webp" alt="" />
           </div>
         </div>
       </div>

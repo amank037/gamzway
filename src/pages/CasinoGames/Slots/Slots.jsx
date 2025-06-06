@@ -28,27 +28,27 @@ const typesGrid = [
   {
     title: "Classic slot games",
     description: "3-reel classic games with fruit symbols.",
-    image: "/teenapiPage/no-limit.png"
+    image: "/teenapiPage/no-limit.webp"
   },
   {
     title: "Progressive slots",
     description: "slot games jack based wherein users participation results in increase rewards.",
-    image: "/teenapiPage/pot-teen.png"
+    image: "/teenapiPage/pot-teen.webp"
   },
   {
     title: "Multiple reel games",
     description: "The exciting winning competition increases the excitement of the users.",
-    image: "/teenapiPage/vip-teen-patti.png"
+    image: "/teenapiPage/vip-teen-patti.webp"
   },
   {
     title: "3-D slot games",
     description: "The 3-Dimensional slot games are the most popular slot games in the market.",
-    image: "/teenapiPage/ak7.png"
+    image: "/teenapiPage/ak7.webp"
   },
   {
     title: "Slots with the brand names",
     description: "We include graphics, logos from hit game series",
-    image: "/teenapiPage/highest-joker.png"
+    image: "/teenapiPage/highest-joker.webp"
   }
 ]
 

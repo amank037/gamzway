@@ -37,38 +37,38 @@ function RummyCarousel() {
 
                 <div className="slide-cards-container">              
                   <div className="first-slide-card-container first-slide-card1">
-                    <img src="/rummyPage/slides/1st slide/01-01.png" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/1st slide/01-01.webp" alt="" className="stacks-img"/>
                   </div>
                   
                   <div className="first-slide-card-container first-slide-card2">
-                    <img src="/rummyPage/slides/1st slide/01-02.png" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/1st slide/01-02.webp" alt="" className="stacks-img"/>
                   </div>
                   
                   <div className="first-slide-card-container first-slide-card3">
-                    <img src="/rummyPage/slides/1st slide/01-03.png" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/1st slide/01-03.webp" alt="" className="stacks-img"/>
                   </div>
                   
                   <div className="first-slide-card-container first-slide-card4">
-                    <img src="/rummyPage/slides/1st slide/01-13.png" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/1st slide/01-13.webp" alt="" className="stacks-img"/>
                   </div>
 
                   <div className="first-slide-icon-container first-slide-icon1">
-                    <img src="/rummyPage/slides/1st slide/1.png" alt=""  className="stacks-img"/>
+                    <img src="/rummyPage/slides/1st slide/1.webp" alt=""  className="stacks-img"/>
                   </div>
                   <div className="first-slide-icon-container first-slide-icon2">
-                    <img src="/rummyPage/slides/1st slide/2.png" alt=""  className="stacks-img"/>
+                    <img src="/rummyPage/slides/1st slide/2.webp" alt=""  className="stacks-img"/>
                   </div>
                   <div className="first-slide-icon-container first-slide-icon3">
-                    <img src="/rummyPage/slides/1st slide/3.png" alt=""  className="stacks-img"/>
+                    <img src="/rummyPage/slides/1st slide/3.webp" alt=""  className="stacks-img"/>
                   </div>
                   <div className="first-slide-icon-container first-slide-icon4">
-                    <img src="/rummyPage/slides/1st slide/4.png" alt=""  className="stacks-img"/>
+                    <img src="/rummyPage/slides/1st slide/4.webp" alt=""  className="stacks-img"/>
                   </div>
                   <div className="first-slide-title-container first-slide-title1">
-                    <img src="/rummyPage/slides/1st slide/rummy.png" alt=""  className="stacks-img"/>
+                    <img src="/rummyPage/slides/1st slide/rummy.webp" alt=""  className="stacks-img"/>
                   </div>
                   <div className="first-slide-title-container first-slide-title2">
-                    <img src="/rummyPage/slides/1st slide/Untitled-4.png" alt="" className="stacks-img" />
+                    <img src="/rummyPage/slides/1st slide/Untitled-4.webp" alt="" className="stacks-img" />
                   </div>
                 </div>
             </div>
@@ -83,19 +83,19 @@ function RummyCarousel() {
               </div>
               <div className="slide-cards-container">
                   <div className="second-slide-bg-container">
-                    <img src="/rummyPage/slides/2nd slide/1.png" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/2nd slide/1.webp" alt="" className="stacks-img"/>
                   </div>
                   <div className="second-slide-card-container second-slide-card1">
-                    <img src="/rummyPage/slides/2nd slide/2.png" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/2nd slide/2.webp" alt="" className="stacks-img"/>
                   </div>
                   <div className="second-slide-card-container second-slide-card2">
-                    <img src="/rummyPage/slides/2nd slide/3.png" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/2nd slide/3.webp" alt="" className="stacks-img"/>
                   </div>
                   <div className="second-slide-card-container second-slide-card3">
-                    <img src="/rummyPage/slides/2nd slide/4.png" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/2nd slide/4.webp" alt="" className="stacks-img"/>
                   </div>
                   <div className="second-slide-card-container second-slide-card4">
-                    <img src="/rummyPage/slides/2nd slide/5.png" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/2nd slide/5.webp" alt="" className="stacks-img"/>
                   </div>
               </div>
             </div>
@@ -155,31 +155,31 @@ function RummyCarousel() {
               </div>
                 <div className="sixth-slide-cards-container">
                   <div className="sixth-slide-card-container sixth-slide-card1">
-                    <img src="/rummyPage/slides/6th slide/01-01.png" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/6th slide/01-01.webp" alt="" className="stacks-img"/>
                   </div>
                   
                   <div className="sixth-slide-card-container sixth-slide-card2">
-                    <img src="/rummyPage/slides/6th slide/01-02.png" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/6th slide/01-02.webp" alt="" className="stacks-img"/>
                   </div>
                   
                   <div className="sixth-slide-card-container sixth-slide-card3">
-                    <img src="/rummyPage/slides/6th slide/01-03.png" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/6th slide/01-03.webp" alt="" className="stacks-img"/>
                   </div>
                   
                   <div className="sixth-slide-card-container sixth-slide-card4">
-                    <img src="/rummyPage/slides/6th slide/01-04.png" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/6th slide/01-04.webp" alt="" className="stacks-img"/>
                   </div>
 
                   <div className="sixth-slide-card-container sixth-slide-card5">
-                    <img src="/rummyPage/slides/6th slide/01-13.png" alt=""  className="stacks-img"/>
+                    <img src="/rummyPage/slides/6th slide/01-13.webp" alt=""  className="stacks-img"/>
                   </div>
 
                   <div className="sixth-slide-chip-container sixth-slide-chip1">
-                    <img src="/rummyPage/slides/6th slide/Untitled-7.png" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/6th slide/Untitled-7.webp" alt="" className="stacks-img"/>
                   </div>
 
                   <div className="sixth-slide-chip-container sixth-slide-chip2">
-                    <img src="/rummyPage/slides/6th slide/one-01.png" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/6th slide/one-01.webp" alt="" className="stacks-img"/>
                   </div>
 
                 </div>

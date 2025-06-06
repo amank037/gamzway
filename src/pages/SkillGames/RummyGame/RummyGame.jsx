@@ -283,27 +283,27 @@ const faqAccordionData = [
 
 // const aboutGrid = [
 //   {
-//     image: "/rummyPage/variations/point-rummy.png",
+//     image: "/rummyPage/variations/point-rummy.webp",
 //     title: "Rummy Points",
 //     description: " a variation fast-paced in which every point has a predefined value.  The first declaring player gains by using appropriate sets and sequences."
 //   },
 //   {
-//     image: "/rummyPage/variations/pool-rummy.png",
+//     image: "/rummyPage/variations/pool-rummy.webp",
 //     title: " Rummy in Pools",
 //     description: " Individuals add chips to a pool.  Being the last person standing after removing others depending on points is the aim."
 //   },
 //   {
-//     image: "/rummyPage/variations/deal-rummy.png",
+//     image: "/rummyPage/variations/deal-rummy.webp",
 //     title: "Rummy Dealings",
 //     description: " Players battle throughout a set deal count.  The one with the most chips in the end takes home.  "
 //   },
 //   {
-//     image: "/rummyPage/variations/gin-rummy.png",
+//     image: "/rummyPage/variations/gin-rummy.webp",
 //     title: "Rummy of Gin",
 //     description: " Popular in Western markets, Gin Rummy concentrates on creating melds and a low deadwood point count."
 //   },
 //   {
-//     image: "/rummyPage/variations/rummy.png",
+//     image: "/rummyPage/variations/rummy.webp",
 //     title: "Indian Rummy (13-Card Game)",
 //     description: "Often favoured in the Indian gaming scene, the traditional form of rummy was with 13 cards."
 //   },
@@ -401,34 +401,34 @@ const RummyGame = () => {
         <div className='solutions-rummy-bottom'>
           <div className='solutions-img slide-cards-container'>
             <div className='sol-rummy-board-container'>
-              <img src="/rummyPage/solutions/1-01.png" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/1-01.webp" alt="" className="image-stack"/>
             </div>
             <div className='sol-rummy-cards-container sol-rummy-card1'>
-              <img src="/rummyPage/solutions/2-01.png" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/2-01.webp" alt="" className="image-stack"/>
             </div>
             <div className='sol-rummy-cards-container sol-rummy-card2'>
-              <img src="/rummyPage/solutions/3-01.png" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/3-01.webp" alt="" className="image-stack"/>
             </div>
             <div className='sol-rummy-cards-container sol-rummy-card3'>
-              <img src="/rummyPage/solutions/4-01.png" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/4-01.webp" alt="" className="image-stack"/>
             </div>
             <div className='sol-rummy-cards-container sol-rummy-card4'>
-              <img src="/rummyPage/solutions/5-01.png" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/5-01.webp" alt="" className="image-stack"/>
             </div>
             <div className='sol-rummy-coins-container sol-rummy-coin1'>
-              <img src="/rummyPage/solutions/6-01.png" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/6-01.webp" alt="" className="image-stack"/>
             </div>
             <div className='sol-rummy-coins-container sol-rummy-coin2'>
-              <img src="/rummyPage/solutions/7-01.png" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/7-01.webp" alt="" className="image-stack"/>
             </div>
             <div className='sol-rummy-coins-container sol-rummy-coin3'>
-              <img src="/rummyPage/solutions/8-01.png" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/8-01.webp" alt="" className="image-stack"/>
             </div>
             <div className='sol-rummy-coins-container sol-rummy-coin4'>
-              <img src="/rummyPage/solutions/9-01.png" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/9-01.webp" alt="" className="image-stack"/>
             </div>
             <div className='sol-rummy-coins-container sol-rummy-coin5'>
-              <img src="/rummyPage/solutions/10-01.png" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/10-01.webp" alt="" className="image-stack"/>
             </div>
           </div>
           <div className='solutions-desc-container'>

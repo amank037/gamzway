@@ -27,43 +27,43 @@ const typesTitle = [
 const typesGrid = [
   {
     title: "No Limit Classic Teen Patti",
-    image: "/teenapiPage/no-limit.png"
+    image: "/teenapiPage/no-limit.webp"
   },
   {
     title: "Pot Limit Classic Teen Patti",
-    image: "/teenapiPage/pot-teen.png"
+    image: "/teenapiPage/pot-teen.webp"
   },
   {
     title: "VIP Teen Patti",
-    image: "/teenapiPage/vip-teen-patti.png"
+    image: "/teenapiPage/vip-teen-patti.webp"
   },
   {
     title: "AK47",
-    image: "/teenapiPage/ak7.png"
+    image: "/teenapiPage/ak7.webp"
   },
   {
     title: "Highest Joker",
-    image: "/teenapiPage/highest-joker.png"
+    image: "/teenapiPage/highest-joker.webp"
   },
   {
     title: "Lowest Joker",
-    image: "/teenapiPage/lowest-joker.png"
+    image: "/teenapiPage/lowest-joker.webp"
   },
   {
     title: "Joker",
-    image: "/teenapiPage/joker.png"
+    image: "/teenapiPage/joker.webp"
   },
   {
     title: "Muflis",
-    image: "/teenapiPage/muflis1.png"
+    image: "/teenapiPage/muflis1.webp"
   },
   {
     title: "Hukum",
-    image: "/teenapiPage/hukum.png"
+    image: "/teenapiPage/hukum.webp"
   },
   {
     title: "10x Boot",
-    image: "/teenapiPage/10x.png"
+    image: "/teenapiPage/10x.webp"
   }
 ]
 

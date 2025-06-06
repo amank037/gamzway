@@ -151,27 +151,27 @@ const Home = () => {
 
     const platformGrid = [
         {
-          image:"/platform-100.png",
+          image:"/platform-100.webp",
           title:"Cross-Platform",
           description:"Android, iOS, Web, Desktop compatibility"
         },
         {
-          image:"/scalable-100.png",
+          image:"/scalable-100.webp",
           title:"Scalable Architecture",
           description:"Support thousands of concurrent players"
         },
         {
-          image:"/browser-customization-100.png",
+          image:"/browser-customization-100.webp",
           title:"Customizable UI",
           description:"Customizable themes and interfaces for brand personalization"
         },
         {
-          image:"/globe-100.png",
+          image:"/globe-100.webp",
           title:"Global Ready",
           description:"Multi-language and multi-currency support"
         },
         {
-          image:"/admin-100.png",
+          image:"/admin-100.webp",
           title:"Admin Control",
           description:"Admin panel and analytics dashboard for complete business control"
         },
@@ -417,7 +417,7 @@ const Home = () => {
                     <button className='demo-btn'>Schedule a Demo</button>
                 </div>
                 <div className='journey-image'>
-                    <img src="/path-to-your-image.png" alt="Gaming Business Journey" />
+                    <img src="/path-to-your-image.webp" alt="Gaming Business Journey" />
                 </div>
             </div>
         </div> */}

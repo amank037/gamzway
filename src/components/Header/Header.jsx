@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './Header.css'
-import logo from '../../assets/1-03.png'
+import logo from '../../assets/1-03.webp'
 import RequestModal from '../RequestModal/RequestModal';
 
 function Header() {

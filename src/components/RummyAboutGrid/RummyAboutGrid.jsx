@@ -13,7 +13,7 @@ function RummyAboutGrid() {
 
       <div className='rummy-about-grid-item'>
         <div className='rummy-about-grid-image-title-wrap'>
-          <img src="/rummyPage/variations/point-rummy.png" alt="" />
+          <img src="/rummyPage/variations/point-rummy.webp" alt="" />
           <h3>Rummy Points</h3>
         </div>
         <p>
@@ -27,7 +27,7 @@ function RummyAboutGrid() {
 
       <div className='rummy-about-grid-item'>
         <div className='rummy-about-grid-image-title-wrap'>
-          <img src="/rummyPage/variations/pool-rummy.png" alt="" />
+          <img src="/rummyPage/variations/pool-rummy.webp" alt="" />
           <h3>Rummy in Pools</h3>
         </div>
         <p>
@@ -41,7 +41,7 @@ function RummyAboutGrid() {
 
       <div className='rummy-about-grid-item'>
         <div className='rummy-about-grid-image-title-wrap'>
-          <img src="/rummyPage/variations/deal-rummy.png" alt="" />
+          <img src="/rummyPage/variations/deal-rummy.webp" alt="" />
           <h3>Rummy Dealings</h3>
         </div>
         <p>
@@ -55,7 +55,7 @@ function RummyAboutGrid() {
 
       <div className='rummy-about-grid-item'>
         <div className='rummy-about-grid-image-title-wrap'>
-          <img src="/rummyPage/variations/gin-rummy.png" alt="" />
+          <img src="/rummyPage/variations/gin-rummy.webp" alt="" />
           <h3>Rummy of Gin</h3>
         </div>
         <p>
@@ -69,7 +69,7 @@ function RummyAboutGrid() {
 
       <div className='rummy-about-grid-item'>
         <div className='rummy-about-grid-image-title-wrap'>
-          <img src="/rummyPage/variations/rummy.png" alt="" />
+          <img src="/rummyPage/variations/rummy.webp" alt="" />
           <h3>Indian Rummy (13-Card Game)</h3>
         </div>
         <p>
