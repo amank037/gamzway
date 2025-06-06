@@ -522,7 +522,27 @@ const RummyGame = () => {
             </button>
           </div>
           <div className='solutions-img'>
-            <img src="https://beta.mobzway.com/assets/images/rummy-game-development/hire-rummy-game-developer.webp" alt="" />
+            <div className='sol2-rummy-board-container'>
+              <img src="/rummyPage/solutions2/1.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol2-rummy-cards-container sol2-rummy-card1'>
+              <img src="/rummyPage/solutions2/card1.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol2-rummy-cards-container sol2-rummy-card2'>
+              <img src="/rummyPage/solutions2/card2.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol2-rummy-cards-container sol2-rummy-card3'>
+              <img src="/rummyPage/solutions2/card3.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol2-rummy-coins-container sol2-rummy-coin1'>
+              <img src="/rummyPage/solutions2/chip1.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol2-rummy-coins-container sol2-rummy-coin2'>
+              <img src="/rummyPage/solutions2/chip2.png" alt="" className="image-stack"/>
+            </div>
+            <div className='sol2-rummy-coins-container sol2-rummy-coin3'>
+              <img src="/rummyPage/solutions2/chip3.png" alt="" className="image-stack"/>
+            </div>
           </div>
         </div>
       </div>

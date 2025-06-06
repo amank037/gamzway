@@ -37,19 +37,19 @@ function RummyCarousel() {
 
                 <div className="slide-cards-container">              
                   <div className="first-slide-card-container first-slide-card1">
-                    <img src="/rummyPage/slides/1st slide/01-01.webp" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/1st slide/1(1).png" alt="" className="stacks-img"/>
                   </div>
                   
                   <div className="first-slide-card-container first-slide-card2">
-                    <img src="/rummyPage/slides/1st slide/01-02.webp" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/1st slide/2(1).png" alt="" className="stacks-img"/>
                   </div>
                   
                   <div className="first-slide-card-container first-slide-card3">
-                    <img src="/rummyPage/slides/1st slide/01-03.webp" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/1st slide/3(1).png" alt="" className="stacks-img"/>
                   </div>
                   
                   <div className="first-slide-card-container first-slide-card4">
-                    <img src="/rummyPage/slides/1st slide/01-13.webp" alt="" className="stacks-img"/>
+                    <img src="/rummyPage/slides/1st slide/4(1).png" alt="" className="stacks-img"/>
                   </div>
 
                   <div className="first-slide-icon-container first-slide-icon1">

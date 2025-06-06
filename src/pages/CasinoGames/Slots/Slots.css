@@ -30,41 +30,41 @@
 }
 .slots-overlay-images{
     position: absolute;
-    height: 8%;
+    height:10%;
 }
 .slots-over1{
     top: 30%;
-    right: 90%;
+    right: 30%;
     z-index: 1;
     animation: slots-overFloat 2s ease-in-out infinite;
 }
 .slots-over2{
     top: 45%;
-    right: 10%;
+    right: 11%;
     z-index: 1;
     animation: slots-overFloat 3s ease-in-out infinite;
 }
 .slots-over3{
     top: 50%;
-    right: 50%;
+    right: 26%;
     z-index: 1;
     animation: slots-overFloat 4s ease-in-out infinite;
 }
 .slots-over4{
     top: 70%;
-    right: 70%;
+    right: 20%;
     z-index: 1;
     animation: slots-overFloat 5s ease-in-out infinite;
 }
 .slots-over5{
-    top: 20%;
-    right: 30%;
+    top: 30%;
+    right: 17%;
     z-index: 1;
     animation: slots-overFloat 3s ease-in-out infinite;
 }
 .slots-over6{
-    top: 10%;
-    right: 50%;
+    top: 20%;
+    right: 20%;
     z-index: 1;
     animation: slots-overFloat 2s ease-in-out infinite;
 }

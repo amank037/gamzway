@@ -263,6 +263,67 @@
     transform: translateY(-20px);
 } */
 
+.sol2-rummy-board-container {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    z-index: 1;
+    left: 5%;   
+    top:10%;
+  }
+  
+  .sol2-rummy-cards-container {
+    position: absolute;
+    width: 40%;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 4;
+  }
+  
+  .sol2-rummy-card1 {
+    top: 30%;
+    left: 0%;
+    animation: cardFloat2 4.5s ease-in-out infinite;
+  }
+  
+  .sol2-rummy-card2 {
+    top: 0%;
+    left: 10%;
+    animation: cardFloat3 4.2s ease-in-out infinite;
+    z-index: 0
+  }
+  
+  .sol2-rummy-card3 {
+    top: 5%;
+    left: 70%;
+    animation: cardFloat4 4.8s ease-in-out infinite;
+  }
+
+  
+  .sol2-rummy-coins-container {
+    position: absolute;
+    width: 15%;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 5;
+  }
+  
+  .sol2-rummy-coin1 {
+    top: 30%;
+    left: 15%;
+    animation: coinFloat 3s ease-in-out infinite;
+  }
+  
+  .sol2-rummy-coin2 {
+    top: 40%;
+    left: 75%;
+    animation: coinFloat 3.2s ease-in-out infinite;
+  }
+  
+  .sol2-rummy-coin3 {
+    top: 50%;
+    left: 75%;
+    animation: coinFloat 3.4s ease-in-out infinite;
+  }
+
 
 .solutions-rummy-section .solutions-rummy-bottom .solutions-desc-container button {
     background-color: var(--secondary-yellow);
