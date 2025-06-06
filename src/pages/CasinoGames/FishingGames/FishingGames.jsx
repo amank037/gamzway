@@ -29,17 +29,17 @@ const typesItems = [
     ],
     platformGrid:[
       {
-        image: "https://m.media-amazon.com/images/I/81gxO1PbQeL.png",
+        image: "/fishingPage/arcade fishing.png",
         title: "Arcade Fishing Games",
         description: "Fast-paced and packed of action, arcade fishing games are ideal for individuals who desire quick gameplay and instant rewards."
       },
       {
-        image: "https://m.media-amazon.com/images/I/81MxyhqXgJL.png",
+        image: "/fishingPage/skilled based games.png",
         title: "Skill-Based Games",
         description: "Perfect for competitive players, these games capture fish by calling accuracy, timing, and experience."
       },
       {
-        image: "https://img.40407.com/upload/202401/28/3415eyrxS2n5RVo.jpg",
+        image: "/fishingPage/multiplaying fishing game.png",
         title: "Multiplayer Fishing Games",
         description: "Players might enter rooms, compete in real-time, and climb leaderboards for incentives and bragging rights."
       }
@@ -353,7 +353,7 @@ const FishingGames = () => {
             </div>
           </div>
           <div className='solutions-img'>
-            <img src="https://beta.mobzway.com/assets/images/rummy-game-development/hire-rummy-game-developer.webp" alt="" />
+            <img src="/fishingPage/lap.png" alt="" />
           </div>
         </div>
       </div>
