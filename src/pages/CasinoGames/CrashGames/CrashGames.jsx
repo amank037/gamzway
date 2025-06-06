@@ -353,6 +353,21 @@ const CrashGames = () => {
     <div className="crash-game">
       <div className="landing-crash-section">
         <LandingSection landingItems={landingItems}/>
+        <div className='crash-overlay-images-div'>
+          <img src="/crashPage/p1.png" alt="" className='crash-overlay-images crash-over1'/>
+        </div>
+        <div className='crash-overlay-images-div'>
+          <img src="/crashPage/p2.png" alt=""  className='crash-overlay-images crash-over2'/>
+        </div>
+        <div className='crash-overlay-images-div'>
+          <img src="/crashPage/c1.png" alt=""  className='crash-overlay-images crash-over3'/>
+        </div>
+        <div className='crash-overlay-images-div'>
+          <img src="/crashPage/c2.png" alt=""  className='crash-overlay-images crash-over4'/>
+        </div>
+        <div className='crash-overlay-images-div'>
+          <img src="/crashPage/c3.png" alt=""  className='crash-overlay-images crash-over5'/>
+        </div>
       </div>
       <AchievementsBanner />
       
