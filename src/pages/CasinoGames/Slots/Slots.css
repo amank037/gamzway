@@ -34,37 +34,37 @@
 }
 .slots-over1{
     top: 30%;
-    right: 30%;
+    right: 90%;
     z-index: 1;
     animation: slots-overFloat 2s ease-in-out infinite;
 }
 .slots-over2{
     top: 45%;
-    right: 11%;
+    right: 10%;
     z-index: 1;
     animation: slots-overFloat 3s ease-in-out infinite;
 }
 .slots-over3{
     top: 50%;
-    right: 26%;
+    right: 50%;
     z-index: 1;
     animation: slots-overFloat 4s ease-in-out infinite;
 }
 .slots-over4{
     top: 70%;
-    right: 20%;
+    right: 70%;
     z-index: 1;
     animation: slots-overFloat 5s ease-in-out infinite;
 }
 .slots-over5{
-    top: 30%;
-    right: 17%;
+    top: 20%;
+    right: 30%;
     z-index: 1;
     animation: slots-overFloat 3s ease-in-out infinite;
 }
 .slots-over6{
-    top: 20%;
-    right: 20%;
+    top: 10%;
+    right: 50%;
     z-index: 1;
     animation: slots-overFloat 2s ease-in-out infinite;
 }

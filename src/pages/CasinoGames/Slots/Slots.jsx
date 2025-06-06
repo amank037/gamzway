@@ -208,24 +208,7 @@ const Slots = () => {
     <div className="slots-game">
       <div className="landing-slots-section">
         <LandingSection landingItems={landingItems}/>
-        <div className="slots-overlay-images-div">
-          <img src="/slotsPage/coins/coin-02.png" alt="" className="slots-overlay-images slots-over1"/>
-        </div>
-        <div className="slots-overlay-images-div">
-          <img src="/slotsPage/coins/coin-03.png" alt="" className="slots-overlay-images slots-over2"/>
-        </div>
-        <div className="slots-overlay-images-div">
-          <img src="/slotsPage/coins/coin-04.png" alt="" className="slots-overlay-images slots-over3"/>
-        </div>
-        <div className="slots-overlay-images-div">
-          <img src="/slotsPage/coins/coin-05.png" alt="" className="slots-overlay-images slots-over4"/>
-        </div>
-        <div className="slots-overlay-images-div">
-          <img src="/slotsPage/coins/coin-06.png" alt="" className="slots-overlay-images slots-over5"/>
-        </div>
-        <div className="slots-overlay-images-div">
-          <img src="/slotsPage/coins/coin-07.png" alt="" className="slots-overlay-images slots-over6"/>
-        </div>
+        
       </div>
       <AchievementsBanner />
 
@@ -242,6 +225,24 @@ const Slots = () => {
         <div className='solutions-slot-bottom'>
           <div className='solutions-img'>
             <img src="/slotsPage/bg-over.png" alt="" />
+            <div className="slots-overlay-images-div">
+            <img src="/slotsPage/coins/coin-02.png" alt="" className="slots-overlay-images slots-over1"/>
+            </div>
+            <div className="slots-overlay-images-div">
+              <img src="/slotsPage/coins/coin-03.png" alt="" className="slots-overlay-images slots-over2"/>
+            </div>
+            <div className="slots-overlay-images-div">
+              <img src="/slotsPage/coins/coin-04.png" alt="" className="slots-overlay-images slots-over3"/>
+            </div>
+            <div className="slots-overlay-images-div">
+              <img src="/slotsPage/coins/coin-05.png" alt="" className="slots-overlay-images slots-over4"/>
+            </div>
+            <div className="slots-overlay-images-div">
+              <img src="/slotsPage/coins/coin-06.png" alt="" className="slots-overlay-images slots-over5"/>
+            </div>
+            <div className="slots-overlay-images-div">
+              <img src="/slotsPage/coins/coin-07.png" alt="" className="slots-overlay-images slots-over6"/>
+            </div>
           </div>
           <div className='solutions-desc-container'>
             <p className='solutions-desc'>
