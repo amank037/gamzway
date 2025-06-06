@@ -1,6 +1,6 @@
 .landing-crash-section {
     position: relative;
-    background-image: url('/public/crashPage/banner\ \(1\).png');
+    background-image: url('/crashPage/banner\ \(1\).png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -17,61 +17,6 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     pointer-events: none;
-}
-
-.crash-overlay-images-div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-}
-.crash-overlay-images{
-    position: absolute;
-    height: 20%;
-}
-.crash-over1{
-    top: 40%;
-    right: 25%;
-    z-index: 1;
-    animation: crash-overFloat 2s ease-in-out infinite;
-}
-.crash-over2{
-    top: 30%;
-    right: 11%;
-    z-index: 2;
-    animation: crash-overFloat 3s ease-in-out infinite;
-}
-.crash-over3{
-    top: 35%;
-    right: 30%;
-    z-index: 2;
-    animation: crash-overFloat 4s ease-in-out infinite;
-}
-.crash-over4{
-    height: 15%;
-    top: 35%;
-    right: 15%;
-    z-index: 2;
-    animation: crash-overFloat 5s ease-in-out infinite;
-}
-.crash-over5{
-    top: 30%;
-    right:10%;
-    z-index: 1;
-    animation: crash-overFloat 3s ease-in-out infinite;
-}
-@keyframes crash-overFloat{
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(10px);
-    }
-    100%{
-        transform: translateY(0);
-    }
 }
 
 .landing-crash-section {
@@ -214,17 +159,75 @@
     flex: 1;
 }
 
-.solutions-crash-bottom .solutions-img {
+.solutions-crash-bottom .crash-solutions-img {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    height: 500px;;
+    width: 100%;
 }
 
 .solutions-crash-bottom .solutions-img img {
     max-width: 100%;
     height: auto;
 }
+.crash-overlay-images-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+.crash-overlay-images{
+    position: absolute;
+    height: 30%;
+}
+.crash-over1{
+    top: 40%;
+    right: 50%;
+    z-index: 1;
+    animation: crash-overFloat 2s ease-in-out infinite;
+}
+.crash-over2{
+    top: 30%;
+    right: 11%;
+    z-index: 2;
+    animation: crash-overFloat 3s ease-in-out infinite;
+}
+.crash-over3{
+    top: 30%;
+    right: 60%;
+    z-index: 2;
+    animation: crash-overFloat 4s ease-in-out infinite;
+}
+.crash-over4{
+    height: 30%;
+    top: 35%;
+    right: 20%;
+    z-index: 2;
+    animation: crash-overFloat 5s ease-in-out infinite;
+}
+.crash-over5{
+    top: 30%;
+    right:10%;
+    z-index: 1;
+    animation: crash-overFloat 3s ease-in-out infinite;
+}
+@keyframes crash-overFloat{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .crash-features-grid {
