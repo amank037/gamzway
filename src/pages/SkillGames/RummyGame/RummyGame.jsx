@@ -521,7 +521,7 @@ const RummyGame = () => {
               REQUEST A QUOTE
             </button>
           </div>
-          <div className='solutions-img'>
+          <div className='solutions-img slide-cards-container'>
             <div className='sol2-rummy-board-container'>
               <img src="/rummyPage/solutions2/1.png" alt="" className="image-stack"/>
             </div>

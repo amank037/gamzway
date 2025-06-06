@@ -98,6 +98,7 @@
 .solutions-rummy-section .solutions-rummy-bottom{
     display: flex;
     gap: 100px;
+    overflow: hidden;
 }
 /* .solutions-rummy-section .solutions-rummy-bottom .solutions-img{
 
@@ -108,6 +109,7 @@
     width: 100% !important;
     height: 500px !important;
     display: block !important;
+    overflow: hidden;
   }
   
   @keyframes cardFloat1 {
@@ -323,6 +325,19 @@
     left: 75%;
     animation: coinFloat 3.4s ease-in-out infinite;
   }
+
+  .solutions-img {
+    position: relative !important;
+    width: 100% !important;
+    height: 500px !important;
+    display: block !important;
+    overflow: hidden;
+  }
+  @media screen and (max-width: 768px) {
+    .solutions2-img{
+        display: none;
+    }
+}
 
 
 .solutions-rummy-section .solutions-rummy-bottom .solutions-desc-container button {
