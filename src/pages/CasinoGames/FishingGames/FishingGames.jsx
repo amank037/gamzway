@@ -313,6 +313,15 @@ const FishingGames = () => {
     <div className="fishing-game">
       <div className="landing-fishing-section">
         <LandingSection landingItems={landingItems}/>
+        <div className='overlay-images-div'>
+          <img src="/fishingPage/bg-over.png" alt="" className='overlay-images over1'/>
+        </div>
+        <div className='overlay-images-div'>
+          <img src="/fishingPage/tree-stump.png" alt=""  className='overlay-images over2'/>
+        </div>
+        <div className='overlay-images-div'>
+          <img src="/fishingPage/tree-top.png" alt=""  className='overlay-images over3'/>
+        </div>
       </div>
       <AchievementsBanner />
       
