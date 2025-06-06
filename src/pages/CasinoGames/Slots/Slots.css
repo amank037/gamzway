@@ -1,5 +1,5 @@
 .landing-slots-section {
-    background-image: url(https://beta.mobzway.com/assets/images/slot_banner.png);
+    background-image: url('/slotsPage/banner.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -15,10 +15,71 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.1);
     pointer-events: none;
     z-index: 0;
 }
+
+.slots-overlay-images-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+.slots-overlay-images{
+    position: absolute;
+    height: 8%;
+}
+.slots-over1{
+    top: 30%;
+    right: 30%;
+    z-index: 1;
+    animation: slots-overFloat 2s ease-in-out infinite;
+}
+.slots-over2{
+    top: 45%;
+    right: 11%;
+    z-index: 1;
+    animation: slots-overFloat 3s ease-in-out infinite;
+}
+.slots-over3{
+    top: 50%;
+    right: 26%;
+    z-index: 1;
+    animation: slots-overFloat 4s ease-in-out infinite;
+}
+.slots-over4{
+    top: 70%;
+    right: 20%;
+    z-index: 1;
+    animation: slots-overFloat 5s ease-in-out infinite;
+}
+.slots-over5{
+    top: 30%;
+    right: 17%;
+    z-index: 1;
+    animation: slots-overFloat 3s ease-in-out infinite;
+}
+.slots-over6{
+    top: 20%;
+    right: 20%;
+    z-index: 1;
+    animation: slots-overFloat 2s ease-in-out infinite;
+}
+@keyframes slots-overFloat{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 .slots-game > *:not(.landing-slots-section) {
     position: relative;
     z-index: 1;

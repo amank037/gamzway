@@ -60,62 +60,62 @@ const featuresItems = [
 
 const featuresGrid = [
   {
-    image: "https://beta.mobzway.com/assets/images/baccarat01.png",
+    image: "/slotsPage/1.webp",
     title: "Single Player",
     description: "Our online slot game solution gives players the convenience of playing the slot games in single player mode."
   },
   {
-    image: "https://beta.mobzway.com/assets/images/baccarat02.png",
+    image: "/slotsPage/2.webp",
     title: "Multiplayer Slots",
     description: "Developed by Gamzway, the slot game software allows the players to go for multiple slots, thus adding more excitement to the games."
   },
   {
-    image: "https://beta.mobzway.com/assets/images/slot03.png",
+    image: "/slotsPage/3.webp",
     title: "Big Jackpots",
     description: "Slot software solution developed by Gamzway gives the players to go for bigger jackpots and earn more, thus keeping them hooked with the games."
   },
   {
-    image: "https://beta.mobzway.com/assets/images/1_free_spin.png",
+    image: "/slotsPage/4.webp",
     title: "Free Spin",
     description: "For higher engagement and to drive more number of players on the platforms, our slot games also come with the free spin feature."
   },
   {
-    image: "https://beta.mobzway.com/assets/images/baccarat05.png",
+    image: "/slotsPage/5.webp",
     title: "RNG Certified Games",
     description: "To ensure that the slot games come with random results and promote fair play, the games developed by us are RNG certified."
   },
   {
-    image: "https://beta.mobzway.com/assets/images/baccarat06.png",
+    image: "/slotsPage/6.webp",
     title: "Risk Management",
     description: "For operators’ peace of mind, we build solutions that are backed by highly advanced risk management tools."
   },
   {
-    image: "https://beta.mobzway.com/assets/images/baccarat07.png",
+    image: "/slotsPage/7.webp",
     title: "Multi-Language",
     description: "For engaging the players from specific regions, we also design slot game/apps/websites in multiple languages."
   },
   {
-    image: "https://beta.mobzway.com/assets/images/baccarat08.png",
+    image: "/slotsPage/8.webp",
     title: "Back Office & CRM",
     description: "Gamzway’s slot game solutions offer distinct and most user-friendly backend management systems and CRM access so that managing the gaming business becomes easy for operators."
   },
   {
-    image: "https://beta.mobzway.com/assets/images/baccarat09.png",
+    image: "/slotsPage/9.webp",
     title: "Rewards & Loyalty",
     description: "Our rewards and loyalty feature allows slot game businesses to launch their dedicated rewards and loyalty campaigns and increase engagement."
   },
   {
-    image: "https://beta.mobzway.com/assets/images/baccarat10.png",
+    image: "/slotsPage/10.webp",
     title: "Anti Fraud System",
     description: "To restrict any kind of frauds in the games, our slot game software comes with the best anti-fraud systems to ensure peace to both the players and operators."
   },
   {
-    image: "https://beta.mobzway.com/assets/images/baccarat11.png",
+    image: "/slotsPage/11.webp",
     title: "Responsible Gaming",
     description: "Our slot game solutions strictly ensure user privacy and data safety so that customers can enjoy the games worry-free."
   },
   {
-    image: "https://beta.mobzway.com/assets/images/baccarat12.png",
+    image: "/slotsPage/12.webp",
     title: "World Class Security",
     description: "Our slot game solutions are hosted on the world’s most secured hosting platforms to keep the hackers away."
   }
@@ -207,7 +207,25 @@ const Slots = () => {
   return (
     <div className="slots-game">
       <div className="landing-slots-section">
-      <LandingSection landingItems={landingItems}/>
+        <LandingSection landingItems={landingItems}/>
+        <div className="slots-overlay-images-div">
+          <img src="/slotsPage/coins/coin-02.png" alt="" className="slots-overlay-images slots-over1"/>
+        </div>
+        <div className="slots-overlay-images-div">
+          <img src="/slotsPage/coins/coin-03.png" alt="" className="slots-overlay-images slots-over2"/>
+        </div>
+        <div className="slots-overlay-images-div">
+          <img src="/slotsPage/coins/coin-04.png" alt="" className="slots-overlay-images slots-over3"/>
+        </div>
+        <div className="slots-overlay-images-div">
+          <img src="/slotsPage/coins/coin-05.png" alt="" className="slots-overlay-images slots-over4"/>
+        </div>
+        <div className="slots-overlay-images-div">
+          <img src="/slotsPage/coins/coin-06.png" alt="" className="slots-overlay-images slots-over5"/>
+        </div>
+        <div className="slots-overlay-images-div">
+          <img src="/slotsPage/coins/coin-07.png" alt="" className="slots-overlay-images slots-over6"/>
+        </div>
       </div>
       <AchievementsBanner />
 
@@ -223,7 +241,7 @@ const Slots = () => {
 
         <div className='solutions-slot-bottom'>
           <div className='solutions-img'>
-            <img src="https://beta.mobzway.com/assets/images/slot_sol_1.png" alt="" />
+            <img src="/slotsPage/bg-over.png" alt="" />
           </div>
           <div className='solutions-desc-container'>
             <p className='solutions-desc'>
