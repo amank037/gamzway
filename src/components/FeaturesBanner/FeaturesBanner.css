@@ -1,0 +1,27 @@
+.features-banner{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+}
+.features-banner-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.features-banner-item{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 25%;
+}
+
+.features-banner-line{
+    border-top: 2px solid #ffd90086;
+    width: 50%;
+}
+
+

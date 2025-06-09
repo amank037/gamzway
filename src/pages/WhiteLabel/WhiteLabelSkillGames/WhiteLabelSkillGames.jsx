@@ -77,8 +77,8 @@ const demoItems = [
 const landingItems = [
   {
     title: "WHITE LABEL SKILL GAMES SOFTWARE PROVIDER",
-    description: "Are you looking for a games solution that is ready to use, can be used by your team, and can carry your company's message and get your audience involved right away? Our white label browser games are a whole solution for businesses, teachers, marketers, and professionals that want to develop fun games without getting to start from scratch.",
-    description2:"We offer flexible browser-based games for everything from team-building apps to branded entertainment and corporate engagement. Our software is trustworthy, our service is easy, and we have years of experience in the sector.",
+    description: "Are you looking for a games solution that is ready to use, can be used by your team, and can carry your company's message and get your audience involved right away?",
+    description2:"We offer flexible browser-based games for everything from team-building apps to branded entertainment and corporate engagement.",
     button: "REQUEST A QUOTE",
   }
 ]

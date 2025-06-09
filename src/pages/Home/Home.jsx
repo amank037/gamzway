@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 import FeaturesHeader from '../../components/FeaturesSection/FeaturesHeader/FeaturesHeader'
 import ProductGrid from '../../components/ProductGrid/ProductGrid'
 import ContactBanner from '../../components/ContactBanner/ContactBanner'
+import CarouselSection from '../../components/CarouselSection/CarouselSection'
 
 
 const productfeaturesText = [
@@ -14,7 +15,6 @@ const productfeaturesText = [
         description: "At Gamzway, we provide a large selection of market-tested, customisable, multiple devices optimised pre-built gaming items."
     }
 ]
-
 
 const platformFeaturesText = [
     {
@@ -29,29 +29,6 @@ const engagementModelsText = [
         description: "Gamzway offers flexible engagement models to suit both enterprises and startups."
     }
 ]
-
-// const productGrid = [
-//     { image: "https://www.mobzway.com/assets/images/game-icon/poker.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/rummy.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/ludo.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/teenpatti.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/callbreak.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/tambola.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/snake.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/livecasino.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/aviator.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/andar.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/blackjack.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/baccrat.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/tiger.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/roulete.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/slots.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/sicbo.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/keno.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/triple.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/ball.webp" },
-//     { image: "https://www.mobzway.com/assets/images/game-icon/virtual.webp" }
-// ]
 
 const chooseTitle =[
     {
@@ -181,16 +158,11 @@ const Home = () => {
   return (
     <div className='home-div'>
         <div className='hero-div'>
-            <div className='hero-nested-div'>
+            {/* <div className='hero-nested-div'>
 
                 <h1 className='hero-title'>WELCOME TO GAMZWAY</h1>
                 <p className='hero-title-dec'>Welcome to Gamzway, where entertainment meets inventiveness.  Leading name in real-money and skill-based gaming solutions, we specialise in pre-ready games to enable you to get off right away.  Whether your company is established operator, gaming startup, or entrepreneurial, our plug-and-play gaming solutions guarantee a quick, effective, scalable launch. 
                     <br/><br/>Driven by a strong backend and easy interface, our games are meant to provide great performance, flawless gameplay, and rich user experiences.</p>
-
-                {/* <div className='hero-btns'>
-                    <a className='hero-btn-red' href="">Buy</a>
-                    <a className='' href="">Try demos</a>
-                </div> */}
 
                 <div className="carousel-form">
                     <p className="form-heading"> All set to open your gaming portal?  Complete the form here and contact our knowledgeable team right now.</p>
@@ -225,13 +197,8 @@ const Home = () => {
                     <button type="submit" className="consultation-btn">Free Consultation</button>
                     </form>
                 </div>
-
-                {/* <div className='hero-video-div'>
-                    <video autoPlay muted loop>
-                        <source src="https://enterra-poker.com/wp-content/themes/enterra-poker-2024/video/Enterra_Poker_website_Desktop_Horizont_EN_1140x640_2.mp4" type="video/mp4"/>
-                    </video>
-                </div> */}  
-            </div>
+            </div> */}
+            <CarouselSection/>
         </div>
 
         <div className='products-div'>

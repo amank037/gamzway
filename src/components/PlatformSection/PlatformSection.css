@@ -64,6 +64,7 @@
     background: rgba(17, 17, 17, 0.5);
     backdrop-filter: blur(10px);
     border-radius: 20px;
+    border: 1px solid rgba(255, 217, 0, 0.149);
     padding: 30px;
     height: 100%;
     display: flex;

@@ -1,4 +1,6 @@
 import './LudoGame.css'
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay } from "swiper/modules"
 import FeaturesHeader from '../../../components/FeaturesSection/FeaturesHeader/FeaturesHeader'
 import CarouselSection from '../../../components/CarouselSection/CarouselSection'
 import AchievementsBanner from '../../../components/AchievementsBanner/AchievementsBanner'
@@ -8,6 +10,12 @@ import AccordionSection from '../../../components/AccordionSection/AccordionSect
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
 import LandingSection from '../../../components/LandingSection/LandingSection'
+
+import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
+import AboutSection from '../../../components/AboutSection/AboutSection'
+import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+import FeaturesBannerV2 from '../../../components/FeaturesBannerV2/FeaturesBannerV2'
+import PromoTools from '../../../components/PromoTools/PromoTools'
 
 // const ludocarouselData = [
 //   {
@@ -41,47 +49,61 @@ import LandingSection from '../../../components/LandingSection/LandingSection'
 const landingItems = [
   {
     title: "LUDO GAME",
-    description: " Ludo is a sentimental event that brings friends and family together, not only a board game.  The game has easily evolved into mobile and web platforms in the digital age of today, allowing everyone to play anywhere, any time.  At Gamzway Technologies, we enable companies to use modern Ludo game development tools catered to Android, iOS, desktop, and web, so harnessing the everlasting appeal of Ludo.",
-    description2:"Rich design, real-time multiplayer interaction, and monetising options combined in our Ludo game apps help companies increase user base and income.  We provide dependable, scalable, reasonably priced development tools whether your needs call for a pre-built solution ready to use or a bespoke Ludo program.",
+    description: " Ludo is a sentimental event that brings friends and family together, not only a board game. ",
+    description2: "At Gamzway Technologies, we enable companies to use modern Ludo game development tools catered to Android, iOS, desktop, and web, so harnessing the everlasting appeal of Ludo.",
     button: "GET STARTED"
   }
 ]
 
-const regardingItems = [
+// const landingv2 = [
+//   {
+//     title: "LUDO",
+//     image:"https://spribe.co/assets/images/games/carousel/av-03.jpg"
+//   }
+// ]
+const aboutItems = [
   {
-    title: "REGARDING LUDO GAME",
+    description: "Four players of the multiplayer board game Ludo race their tokens from start to finish depending on dice rolls. Ludo is a household favourite in all age groups and has gained popularity all around.",
+    description3: "At Gamzway, we bring to screens with interactive elements, seamless graphics, and easy controls the same thrills.",
+    image: "https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif"
   }
 ]
 
-const modesItems = [
-  {
-    title:"Modes Of Ludo Game",
-    description: " We create flexible Ludo game apps featuring many game variants to fit various playing approaches:"
-  }
-]
+// const regardingItems = [
+//   {
+//     title: "REGARDING LUDO GAME",
+//   }
+// ]
 
-const modesGrid = [
-  {
-    image:"https://beta.mobzway.com/assets/images/classic.png",
-    title:"Classic Style",
-    description: "Standard Ludo rules define this classic 2–4 player mode.  Before their opponent, players roll the dice hoping to advance all of their tokens to the home area."
-  },
-  {
-    image:"https://beta.mobzway.com/assets/images/tournaments.png",
-    title:"Easy Mode",
-    description: "The Quick Mode shortens the gameplay by lowering token count or move requirements, so allowing users who enjoy faster games less time needed."
-  },
-  {
-    image:"https://beta.mobzway.com/assets/images/timer.png",
-    title:"Private Table States",
-    description: " Using special codes, members of a private table can design secret chambers and play with friends or relatives."
-  },
-  {
-    image:"https://beta.mobzway.com/assets/images/tournaments.png",
-    title:"Tournament States",
-    description: "This competitive mode consists of entrance-fee-based matches whereby participants may join contests and earn either virtual or actual prizes. These several gameplay styles improve involvement, keep users, and let companies create several income sources. "
-  },
-]
+// const modesItems = [
+//   {
+//     title:"Modes Of Ludo Game",
+//     description: " We create flexible Ludo game apps featuring many game variants to fit various playing approaches:"
+//   }
+// ]
+
+// const modesGrid = [
+//   {
+//     image:"https://beta.mobzway.com/assets/images/classic.png",
+//     title:"Classic Style",
+//     description: "Standard Ludo rules define this classic 2–4 player mode.  Before their opponent, players roll the dice hoping to advance all of their tokens to the home area."
+//   },
+//   {
+//     image:"https://beta.mobzway.com/assets/images/tournaments.png",
+//     title:"Easy Mode",
+//     description: "The Quick Mode shortens the gameplay by lowering token count or move requirements, so allowing users who enjoy faster games less time needed."
+//   },
+//   {
+//     image:"https://beta.mobzway.com/assets/images/timer.png",
+//     title:"Private Table States",
+//     description: " Using special codes, members of a private table can design secret chambers and play with friends or relatives."
+//   },
+//   {
+//     image:"https://beta.mobzway.com/assets/images/tournaments.png",
+//     title:"Tournament States",
+//     description: "This competitive mode consists of entrance-fee-based matches whereby participants may join contests and earn either virtual or actual prizes. These several gameplay styles improve involvement, keep users, and let companies create several income sources. "
+//   },
+// ]
 
 const servicesTitle = [
   {
@@ -182,145 +204,145 @@ const servicesTitle = [
 
 const readyItems = [
   {
-    featuresText:[
+    featuresText: [
       {
-        title:"Ready to talk about your ludo game concept?"
+        title: "Ready to talk about your ludo game concept?"
       }
     ],
-    description: " Designed a Ludo app or wish to start your own gaming platform?  Let us realise your idea.  Gamzway is ready to help your company, regardless of its size—established entertainment brand or game startup—with tailored, ready-to-launch Ludo solutions. \n  Our staff can help with end-to--end deployment, MVP development, prototype construction, and consulting.  We will assist you in selecting appropriate features, organising your monetising strategy, and producing a flawless game fit for your company objectives.",
+    description: " Designed a Ludo app or wish to start your own gaming platform?  Let us realise your idea.  Gamzway is ready to help your company, regardless of its size—established entertainment brand or game startup—with tailored, ready-to-launch Ludo solutions.",
     hrefText: "LET'S TALK"
   }
 ]
 
-const adminfeaturesTitle = [
-  {
-    title: " Features of Administration Control",
-    description: "Our Ludo game has a strong administrative panel with the following options to help you totally control over your gaming platform:"
-  }
-]
+// const adminfeaturesTitle = [
+//   {
+//     title: " Features of Administration Control",
+//     description: "Our Ludo game has a strong administrative panel with the following options to help you totally control over your gaming platform:"
+//   }
+// ]
 
-const adminfeaturesGrid = [
-  {
-    image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/player-management.png",
-    title: "",
-    description: "View, block or unblock users in user management."
-  },
-  
-  {
-    image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/dashboard.png",
-    title: "",
-    description: "Track games performed, player performance, and real-time statistics in gaming analytics."
-  },
-  {
-    image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/finance-management.png",
-    title: "",
-    description: "Revenue Reports: Control commissions and obtain clear income results"
-  },
-  {
-    image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/game-management.png",
-    title: "",
-    description: "Change rules, token colours, and dice features in your custom game."
-  },
-  {
-    image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/affiliate-management.png",
-    title: "",
-    description: "Set up referral networks, welcome bonuses, and prizes in promotions and offers."
-  },
-  {
-    image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/notificstion-management.png",
-    title: "",
-    description: "Push Notifications: Send gamers quick alerts or advertising messages."
-  },
-  {
-    image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/user-management.png",
-    title: "",
-    description: "Multi-Admin Access: Assign roles with varying degrees of authorization (e.g., Moderator, Super Admin.)."
-  },
-  {
-    image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/analytics.png",
-    title: "",
-    description: "Enable IP blocking, fraud detection, and suspicious activity alerts in security management."
-  }
-]
+// const adminfeaturesGrid = [
+//   {
+//     image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/player-management.png",
+//     title: "",
+//     description: "View, block or unblock users in user management."
+//   },
 
-const platformItems = [
-  {
-    featuresText:[
-      {
-        title: "WE BUILD THE LUDO GAME FOR ALL PLATFORMS",
-        description: "We create Ludo games for several platforms so that users of any device may enjoy the same experience:"
-      }
-    ],
-    platformGrid:[
-      {
-        image: "https://beta.mobzway.com/assets/images/HTML_five-broweswer.webp",
-        title: "HTML 5 BROWSER",
-        description: ""
-      },
-      {
-        image: "https://img.icons8.com/?size=480&id=17836&format=png",
-        title: "Android Game App",
-        description: ""
-      },
-      {
-        image: "https://img.icons8.com/?size=240&id=bN2IQyaCUVk5&format=png",
-        title: "IOS GAME APP",
-        description: ""
-      },
-      {
-        image: "https://beta.mobzway.com/assets/images/Mac_PC.webp",
-        title: "DESKTOP VERSION",
-        description: ""
-      },
-      {
-        image: "https://img.icons8.com/?size=480&id=IPzemd2v4Ubj&format=png",
-        title: "CROSS PLATFORM UNITY BUILDS",
-        description: ""
-      },
-      {
-        image: "https://img.icons8.com/?size=200&id=MKRHZpOBBZqD&format=png",
-        title: "SMART TV COMPATIBILITY (ON-DEMAND)",
-        description: ""
-      }
-    ]
-  }
-]
+//   {
+//     image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/dashboard.png",
+//     title: "",
+//     description: "Track games performed, player performance, and real-time statistics in gaming analytics."
+//   },
+//   {
+//     image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/finance-management.png",
+//     title: "",
+//     description: "Revenue Reports: Control commissions and obtain clear income results"
+//   },
+//   {
+//     image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/game-management.png",
+//     title: "",
+//     description: "Change rules, token colours, and dice features in your custom game."
+//   },
+//   {
+//     image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/affiliate-management.png",
+//     title: "",
+//     description: "Set up referral networks, welcome bonuses, and prizes in promotions and offers."
+//   },
+//   {
+//     image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/notificstion-management.png",
+//     title: "",
+//     description: "Push Notifications: Send gamers quick alerts or advertising messages."
+//   },
+//   {
+//     image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/user-management.png",
+//     title: "",
+//     description: "Multi-Admin Access: Assign roles with varying degrees of authorization (e.g., Moderator, Super Admin.)."
+//   },
+//   {
+//     image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/analytics.png",
+//     title: "",
+//     description: "Enable IP blocking, fraud detection, and suspicious activity alerts in security management."
+//   }
+// ]
 
-const chooseTitle = [
-  {
-    title: "Why Choose Gamzway As Your Ludo Game Development Company?",
-    description: " Regarding gaming solutions, Gamzway is one of a reliable development partner.  Here is the reason companies all over choose us:"
-  }
-]
+// const platformItems = [
+//   {
+//     featuresText:[
+//       {
+//         title: "WE BUILD THE LUDO GAME FOR ALL PLATFORMS",
+//         description: "We create Ludo games for several platforms so that users of any device may enjoy the same experience:"
+//       }
+//     ],
+//     platformGrid:[
+//       {
+//         image: "https://beta.mobzway.com/assets/images/HTML_five-broweswer.webp",
+//         title: "HTML 5 BROWSER",
+//         description: ""
+//       },
+//       {
+//         image: "https://img.icons8.com/?size=480&id=17836&format=png",
+//         title: "Android Game App",
+//         description: ""
+//       },
+//       {
+//         image: "https://img.icons8.com/?size=240&id=bN2IQyaCUVk5&format=png",
+//         title: "IOS GAME APP",
+//         description: ""
+//       },
+//       {
+//         image: "https://beta.mobzway.com/assets/images/Mac_PC.webp",
+//         title: "DESKTOP VERSION",
+//         description: ""
+//       },
+//       {
+//         image: "https://img.icons8.com/?size=480&id=IPzemd2v4Ubj&format=png",
+//         title: "CROSS PLATFORM UNITY BUILDS",
+//         description: ""
+//       },
+//       {
+//         image: "https://img.icons8.com/?size=200&id=MKRHZpOBBZqD&format=png",
+//         title: "SMART TV COMPATIBILITY (ON-DEMAND)",
+//         description: ""
+//       }
+//     ]
+//   }
+// ]
 
-const faqTitle = [
-  {
-    title: " Ludo Game Programming Questions"
-  }
-]
+// const chooseTitle = [
+//   {
+//     title: "Why Choose Gamzway As Your Ludo Game Development Company?",
+//     description: " Regarding gaming solutions, Gamzway is one of a reliable development partner.  Here is the reason companies all over choose us:"
+//   }
+// ]
 
-const faqData1 = [
-  {
-    title: "Could I create my own branding on the Ludo game app?",
-    description: " Indeed, our Ludo game can be tailored with your branding, colour schemes, and extra features and is entirely white-label."
-  },
-  {
-    title: "When might a Ludo game be launched?",
-    description: "We merely need a few days to introduce our ready-made fix.  Customised solutions could require three to six weeks depending on their intricacy."
-  },
-  {
-    title: "Could one incorporate a real money gambling capability?",
-    description: " Exactly!  We provide modules like wallets, payment gateways, and withdrawal systems for real money gambling."
-  },
-  {
-    title: "Using a Ludo game app, how may I make money?",
-    description: "Entry fees, adverts, subscriptions, in-app purchases, and tournament prizes all let you make money."
-  },
-  {
-    title: " Do you support multilingualism?",
-    description: " Indeed, we may combine several languages to enable you to target either a worldwide or a regional audience."
-  }
-]
+// const faqTitle = [
+//   {
+//     title: " Ludo Game Programming Questions"
+//   }
+// ]
+
+// const faqData1 = [
+//   {
+//     title: "Could I create my own branding on the Ludo game app?",
+//     description: " Indeed, our Ludo game can be tailored with your branding, colour schemes, and extra features and is entirely white-label."
+//   },
+//   {
+//     title: "When might a Ludo game be launched?",
+//     description: "We merely need a few days to introduce our ready-made fix.  Customised solutions could require three to six weeks depending on their intricacy."
+//   },
+//   {
+//     title: "Could one incorporate a real money gambling capability?",
+//     description: " Exactly!  We provide modules like wallets, payment gateways, and withdrawal systems for real money gambling."
+//   },
+//   {
+//     title: "Using a Ludo game app, how may I make money?",
+//     description: "Entry fees, adverts, subscriptions, in-app purchases, and tournament prizes all let you make money."
+//   },
+//   {
+//     title: " Do you support multilingualism?",
+//     description: " Indeed, we may combine several languages to enable you to target either a worldwide or a regional audience."
+//   }
+// ]
 // const faqData2 = [
 //   {
 //     title: "Do you provide continued maintenance support for Ludo mobile game development?",
@@ -352,68 +374,96 @@ const productItems = [
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Poker.webp",
     title: "Poker Game",
-    description: "Gamzway provides poker game development for all the popular poker games like Texas Hold’em, Omaha, Seven Stud, OFC Poker, and more. Our seasoned game developers utilize cutting-edge gaming technology to offer the player's best poker gaming experience.",
+    description: "Gamzway provides poker game development for all the popular poker games.",
     href: "/skill-games/poker"
   },
   {
     image: "https://beta.mobzway.com/assets/images/poker-game-development/Product_Rummy.webp",
     title: "Rummy Game",
-    description: "The highly talented team of rummy software developers ensures that very engaging and customized solutions of this “game of skill” are offered to the gaming clients. All the popular versions of rummy are developed as per the client’s requirements.",
+    description: "The highly talented team of rummy software developers ensures that everything is engaging.",
     href: "/skill-games/rummy"
   },
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Teenpatti.webp",
     title: "Teen Patti Game",
-    description: "Gamzway offers ready-to-use Teen Patti solutions for business ventures. We build customized solutions for all the variants like Fox,Vintage, and Teen Patti Plus. We provide solutions for all desktop & mobile devices, and web browsers at the best prices.",
+    description: "Gamzway offers ready-to-use Teen Patti solutions for business ventures.",
     href: "/game-apis/teen-patti"
   },
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Casino.webp",
     title: "Casino Software",
-    description: "For the online casino game entrepreneurs and businesses, Gamzway offers customized casino game solutions. All the popular casino games like Roulette, Blackjack, Slot, Baccarat, etc. are designed and developed at our gaming studio as per your business needs.",
+    description: "For the online casino game entrepreneurs and businesses, Gamzway offers customized casino game solutions.",
     href: "/casino-games"
   },
 ]
 
-const demoItems = [
-  {
-    featuresText: [
-      {
-        title: " Demand a free demo"
-      }
-    ],
-    description: "Interested to observe the operation of our Ludo app?  Click here to arrange your free demo and view our Ludo game from the viewpoints of the player and administrator.  View the interface, features, and performance live action.",
-    hrefText: "TRY DEMO"
-  }
-]
+// const demoItems = [
+//   {
+//     featuresText: [
+//       {
+//         title: " Demand a free demo"
+//       }
+//     ],
+//     description: "Interested to observe the operation of our Ludo app?  Click here to arrange your free demo and view our Ludo game from the viewpoints of the player and administrator.  View the interface, features, and performance live action.",
+//     hrefText: "TRY DEMO"
+//   }
+// ]
 
-const pathItems = [
-  {
-    title: "Start Your Entrepreneurial Path with Gamzway",
-    description: "Your aspiration to start a gaming company starts here.  At Gamzway, we help companies produce amazing digital games by combining strong code, innovative storytelling, and immersive gameplay design.  Whether it's a big-scale gaming platform or a hobby turned enterprise, our staff delivers professionally and passionately. \n One dice rolls at a time, let us construct your success narrative!"
-  }
-]
+// const pathItems = [
+//   {
+//     title: "Start Your Entrepreneurial Path with Gamzway",
+//     description: "Your aspiration to start a gaming company starts here.  At Gamzway, we help companies produce amazing digital games by combining strong code, innovative storytelling, and immersive gameplay design.  Whether it's a big-scale gaming platform or a hobby turned enterprise, our staff delivers professionally and passionately. \n One dice rolls at a time, let us construct your success narrative!"
+//   }
+// ]
 
 
 const LudoGame = () => {
   return (
     <div className='ludo-game'>
+
       <div className='carousel-swiper'>
-        {/* <CarouselSection carouselData={ludocarouselData}/> */}
-        <LandingSection landingItems={landingItems}/>
-        <img src="https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif" alt="" className="landingImg"/>
+        <LandingPageV2 landingItems={landingItems} />
+        {/* <img src="https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif" alt="" className="landingImg"/> */}
+        <Swiper
+          modules={[Autoplay]}
+          className='landingImg'
+          loop={true}
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+          }}
+          speed={1000}
+          slidesPerView={1}
+        >
+          <SwiperSlide>
+            <img src="https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif" alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif" alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif" alt="" />
+          </SwiperSlide>
+        </Swiper>
       </div>
-
       <AchievementsBanner />
+      <AboutSection aboutItems={aboutItems} />
 
-      <div className='regarding-section'>
+      <FeaturesBanner />
+      <img src="https://spribe.co/assets/images/av-devices.png" alt="" className='ludo-devices-img' />
+      <FeaturesBannerV2 />
+      <PromoTools />
+
+
+
+      {/* <div className='regarding-section'>
         <FeaturesHeader featuresText={regardingItems} />
         <p>Four players of the multiplayer board game Ludo race their tokens from start to finish depending on dice rolls.  Originally from the Indian game "Pachisi," Ludo is still a household favourite in all age groups and has gained popularity all around.  For smartphone users, its simplicity, chance-based excitement, and social gaming fit.</p>
         <p>Particularly post-2020, online ludo games have witnessed a tremendous increase in participation as consumers search for simple but entertaining games to play with friends, family, or random opponent.  Live multiplayer, in-game chat, bonus awards, and customising choices abound in the digital form to keep consumers returning for more.</p>
         <p> At Gamzway, we bring to screens with interactive elements, seamless graphics, and easy controls the same thrills.</p>
-      </div>
+      </div> */}
 
-      <div className='modes-section'>
+      {/* <div className='modes-section'>
         <FeaturesHeader featuresText={modesItems} />
         <div className='modes-grid'>
         {modesGrid.map((item, index) => (
@@ -424,84 +474,82 @@ const LudoGame = () => {
           </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       <div className='solutions-ludo-section'>
         <div className='solutions-ludo-top'>
-          <FeaturesHeader featuresText={servicesTitle}/>
+          <FeaturesHeader featuresText={servicesTitle} />
         </div>
         <div className='solutions-ludo-bottom'>
           <div className='solutions-img-1'>
             <div className='sol-ludo-board-container'>
-              <img src="/ludoPage/solutions/1-01.webp" alt="" className="image-stack"/>
+              <img src="/ludoPage/solutions/1-01.webp" alt="" className="image-stack" />
             </div>
             <div className='sol-ludo-pieces-container sol-ludo-piece1'>
-              <img src="/ludoPage/solutions/2-01.webp" alt="" className="image-stack"/>
+              <img src="/ludoPage/solutions/2-01.webp" alt="" className="image-stack" />
             </div>
             <div className='sol-ludo-pieces-container sol-ludo-piece2'>
-              <img src="/ludoPage/solutions/3-01.webp" alt="" className="image-stack"/>
+              <img src="/ludoPage/solutions/3-01.webp" alt="" className="image-stack" />
             </div>
             <div className='sol-ludo-pieces-container sol-ludo-piece3'>
-              <img src="/ludoPage/solutions/4-01.webp" alt="" className="image-stack"/>
+              <img src="/ludoPage/solutions/4-01.webp" alt="" className="image-stack" />
             </div>
             <div className='sol-ludo-pieces-container sol-ludo-piece4'>
-              <img src="/ludoPage/solutions/5-01.webp" alt="" className="image-stack"/>
+              <img src="/ludoPage/solutions/5-01.webp" alt="" className="image-stack" />
             </div>
             <div className='sol-ludo-dice-container sol-ludo-dice1'>
-              <img src="/ludoPage/solutions/6-01.webp" alt="" className="image-stack"/>
+              <img src="/ludoPage/solutions/6-01.webp" alt="" className="image-stack" />
             </div>
             <div className='sol-ludo-dice-container sol-ludo-dice2'>
-              <img src="/ludoPage/solutions/7-01.webp" alt="" className="image-stack"/>
+              <img src="/ludoPage/solutions/7-01.webp" alt="" className="image-stack" />
             </div>
           </div>
 
           <div className='solutions-desc-container'>
-            <p className='solutions-desc'>
-                  <br/>
-                  <ul>
-                    <li>Real-time interaction with two to four players makes up multiplayer support</li>
-                    <br/>
-                    <li>Intelligent computer opponent when playing offline is smart AI bot</li>
-                    <br/>
-                    <li>In-game chat: players' text and voice messages</li>
-                    <br/>
-                    <li>Wallet System: Integrated virtual deposit and withdrawal wallet</li>
-                    <br/>
-                    <li>Daily Rewards — Increase player interaction with gifts, spins, and login bonuses.</li>
-                    <br/>
-                    <li> Leaderboards: Globally and locally ranked systems meant to inspire rivalry.</li>
-                    <br/>
-                    <li>Custom avatars let players upload or choose avatars to personalise their profiles.</li>
-                    <br/>
-                    <li>Anti-Fraud Algorithms: Guarantee of a level playing field and prevent cheating</li>
-                    <br/>
-                    <li>Cross-platform compatibility: flawless Android, iOS, web, desktop experience.</li>
-                    <br/>
-                    <li>Social Media Integration: Simple Facebook, Google, Apple ID, etc. login</li>
-                    <br/>
-                  </ul>
-            </p>
+            <div className='solutions-desc'>
+              <br />
+              <div className='solutions-ludo-grid'>
+                <div className='solutions-ludo-grid-item'>
+                  <img src="/real-time.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Real-time interaction</p>
+                </div>
+                <div className='solutions-ludo-grid-item'>
+                  <img src="/bot.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Smart AI Bots</p>
+                </div>
+                <div className='solutions-ludo-grid-item'>
+                  <img src="/chat.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>In-Game Chats</p>
+                </div>
+                <div className='solutions-ludo-grid-item'>
+                  <img src="/security.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Anti-Fraud Algorithms</p>
+                </div>
+                <div className='solutions-ludo-grid-item'>
+                  <img src="/platform.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Cross-Platform Compatibility</p>
+                </div>
+                <div className='solutions-ludo-grid-item'>
+                  <img src="/social-media.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Social-Media Integration</p>
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
         <p className='solutions-ludo-p'> These elements not only make gaming interesting but also inspire gamers to come back often, hence enhancing user retention.</p>
       </div>
 
-      {/* <div className='features-section'>
-        <FeaturesHeader featuresText={featuresTitle} />
-        <div className='features-grid'>
-        {featuresGrid.map((item, index) => (
-          <div className='features-grid-item' key={index}>
-              <img src={item.image} alt="" />
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-          </div>
-          ))}
-        </div>
-      </div> */}
+      <ContactBanner contactItems={readyItems} />
 
-      <ContactBanner contactItems={readyItems}/>
-
-      <div className='admin-features-section'>
+      {/* <div className='admin-features-section'>
         <FeaturesHeader featuresText={adminfeaturesTitle} />
         <div className='admin-features-grid'>
         {adminfeaturesGrid.map((item, index) => (
@@ -512,11 +560,11 @@ const LudoGame = () => {
           </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
-      <PlatformSection platformItems={platformItems}/>
+      {/* <PlatformSection platformItems={platformItems}/> */}
 
-      <div className='solutions-ludo2-section bg-1'>
+      {/* <div className='solutions-ludo2-section bg-1'>
         <div className='solutions-ludo2-top'>
           <FeaturesHeader featuresText={chooseTitle}/>
         </div>
@@ -545,31 +593,28 @@ const LudoGame = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="ludo-faq-section">
+      {/* <div className="ludo-faq-section">
         <FeaturesHeader featuresText={faqTitle}/>
         <div className="ludo-faq-container">
           <div className="ludo-faq-left">
             <AccordionSection data={faqData1}/>
           </div>
-          {/* <div className="ludo-faq-right">
-            <AccordionSection data={faqData2}/>
-          </div> */}
         </div>
         <button className='faq-btn'><span>ASK A QUESTION</span></button>
-      </div>
+      </div> */}
 
 
       <PaymentSection />
 
-      <ProductSection productGrid={productItems}/>
-      
-      <div className='path-section'>
-      <FeaturesHeader featuresText={pathItems}/>
-      </div>
+      <ProductSection productGrid={productItems} />
 
-      <ContactBanner contactItems={demoItems}/>
+      {/* <div className='path-section'>
+      <FeaturesHeader featuresText={pathItems}/>
+      </div> */}
+
+      {/* <ContactBanner contactItems={demoItems}/> */}
 
 
     </div>

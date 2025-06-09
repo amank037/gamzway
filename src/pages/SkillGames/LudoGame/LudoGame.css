@@ -21,6 +21,9 @@
     right: 5%;
     width: 40%;
 }
+.landingImg img{
+    width: 100%;
+}
 
 .regarding-section {
     width: 100%;
@@ -127,17 +130,18 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 
 .solutions-ludo-section::before {
     content: '';
     position: absolute;
-    top: 400p0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: url('https://i.ibb.co/HRLpG6v/feature-bg-1.png');
+    opacity: 0.3;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -162,6 +166,7 @@
     height: inherit;
     display: block;
 }
+
 
 @keyframes pieceFloat1 {
     0%, 100% { transform: translateY(0) rotate(-8deg); }
@@ -365,6 +370,31 @@
 .solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container .solutions-desc{
     text-align: justify;
     position: relative;
+}
+.solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container .solutions-desc .solutions-ludo-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container .solutions-desc .solutions-ludo-grid .solutions-ludo-grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container .solutions-desc .solutions-ludo-grid .solutions-ludo-grid-item img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+.solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container .solutions-desc .solutions-ludo-grid .solutions-ludo-grid-item:hover img{
+    transform: scale(1.1);
+}
+.solutions-banner-line{
+    border-top: 2px solid #ffd90086;
+    width: 100%;
 }
 .solutions-ludo-section .solutions-ludo-p{
     max-width: 1140px;
@@ -727,4 +757,10 @@
         font-size: 16px !important;
         padding: 8px 16px;
     }
+}
+
+.ludo-devices-img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }

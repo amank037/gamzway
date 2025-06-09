@@ -1,0 +1,28 @@
+.features-bannerv2{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+}
+.features-bannerv2-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.features-bannerv2-item{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    width: 25%;
+    height: 400px;
+}
+
+.features-bannerv2-line{
+    border-top: 2px solid #ffd90086;
+    width: 50%;
+}
+
+

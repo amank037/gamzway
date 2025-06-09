@@ -1,0 +1,52 @@
+.promo-tools{
+    width: 100%;
+    height: 100%;
+}
+
+.promo-container{
+    max-width: 1140px;
+    margin: 50px auto;
+
+}
+
+.promo-cards-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.promo-card1, .promo-card2{
+    position: relative;
+    margin-top: 20px;
+}
+.promo-card1{
+    flex: 1;
+}
+.promo-card2{
+    width: 40%;
+}
+.promo-card1 img{
+    border-radius: 10px;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.promo-card2 img{
+    border-radius: 10px;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.promo-text-card{
+    border-radius: 20px;
+    width: 90%;
+    margin: -20px auto 0;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+    z-index: 2;
+    position:relative;
+}

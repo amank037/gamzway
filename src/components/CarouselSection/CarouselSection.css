@@ -1,9 +1,8 @@
 .carousel-wrapper {
-  max-width: 1440px;
+  max-width: 1140px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  padding: 20px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,8 +26,8 @@
   grid-template-columns: 1.2fr 0.8fr;
   gap: 40px;
   align-items: center;
-  padding: 60px 40px 0;
-  min-height: 600px;
+  padding: 20px 40px 0;
+  min-height: 400px;
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -94,6 +93,7 @@
   width: calc(100% - 80px);
   bottom: 0px;
   left: 40px; */
+  margin-top: 150px;
   padding: 10px 40px 40px;
   display: flex;
   align-items: center;
@@ -153,7 +153,179 @@
   width: 50px;
 }
 
-/* Removed form-related CSS */
+.carousel-form {
+  position: absolute;
+  width: 80%;
+  margin-right:auto;
+  top: 60%;
+  left: 3%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.033);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+.form-heading {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-container {
+  display: flex;
+  
+  gap: 20px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.name-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  height: 50px;
+}
+
+.name-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-group {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.contact-type {
+  min-width: 120px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  height: 50px;
+}
+.contact-type option {
+  color: black;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  height: 50px;
+}
+.contact-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.phone-input-container {
+  flex: 1;
+}
+
+.phone-input-container .form-control {
+  width: 100% !important;
+  padding: 12px 16px 12px 50px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 10px !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  font-size: 1rem !important;
+  height: auto !important;
+}
+
+.phone-input-container .flag-dropdown {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: none !important;
+  border-radius: 10px 0 0 10px !important;
+}
+
+.phone-input-container .selected-flag {
+  background: transparent !important;
+  padding: 0 0 0 12px !important;
+}
+
+.consultation-btn {
+  width: 100%;
+  max-width: 200px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: var(--primary-yellow);
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.consultation-btn:hover {
+  background: #FFC000;
+}
+
+@media (max-width: 993px) {
+  .carousel-form {
+      padding: 20px;
+      margin: 30px auto;
+  }
+
+  .contact-group {
+      flex-direction: column;
+  }
+
+  .contact-type {
+      width: 100%;
+      min-width: unset;
+  }
+
+  .form-container {
+      flex-direction: column;
+  }
+
+  .form-heading {
+      font-size: 1.1rem;
+  }
+
+  .consultation-btn{
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-form {
+      padding: 15px;
+      margin: 20px auto;
+  }
+
+  .name-input,
+  .contact-input,
+  .contact-type,
+  .phone-input-container .form-control {
+      font-size: 0.9rem;
+      padding: 10px 14px;
+  }
+
+  .consultation-btn {
+      padding: 12px;
+      font-size: 0.9rem;
+  }
+}
+
 
 @media (max-width: 1200px) {
   .slide-content {
