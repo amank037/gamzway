@@ -13,7 +13,7 @@ import CustomGrid from "../../../components/CustomGrid/CustomGrid"
 import LandingPageV2 from "../../../components/LandingPageV2/LandingPageV2"
 import ChooseGrid from "../../../components/ChooseGrid/ChooseGrid"
 import FeaturesBanner from "../../../components/FeaturesBanner/FeaturesBanner"
-import PlatformImg from "../../../components/PlatformImg/PlatformImg"
+import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 
 const landingItems = [
   {

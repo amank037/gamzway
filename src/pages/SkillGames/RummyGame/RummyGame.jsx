@@ -17,7 +17,7 @@ import AboutSection from '../../../components/AboutSection/AboutSection'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import FeaturesBannerV2 from '../../../components/FeaturesBannerV2/FeaturesBannerV2'
 import PromoTools from '../../../components/PromoTools/PromoTools'
-import PlatformImg from '../../../components/PlatformImg/PlatformImg'
+import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 
 
 const aboutItems = [

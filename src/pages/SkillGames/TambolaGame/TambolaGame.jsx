@@ -15,7 +15,7 @@ import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import PlatformSection from '../../../components/PlatformSection/PlatformSection'
 import PromoTools from '../../../components/PromoTools/PromoTools'
 import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
-import PlatformImg from '../../../components/PlatformImg/PlatformImg'
+import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 
 const landingItems = [
   {

@@ -15,7 +15,7 @@ import PromoTools from '../../../components/PromoTools/PromoTools'
 import PlatformSection from '../../../components/PlatformSection/PlatformSection'
 import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
 import SnakeLadderLanding from './SnakeLadderLanding/SnakeLadderLanding'
-import PlatformImg from '../../../components/PlatformImg/PlatformImg'
+import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 
 const landingItems = [
   {
