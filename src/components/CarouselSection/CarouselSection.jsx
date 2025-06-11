@@ -16,32 +16,32 @@ const carouselData = [
   {
     title: "Ludo",
     description: "Rich design, real-time multiplayer interaction, and monetising options combined in our Ludo game apps help companies increase user base and income. We provide dependable, scalable, reasonably priced development tools whether your needs call for a pre-built solution ready to use or a bespoke Ludo program.",
-    image: "https://beta.mobzway.com/assets/images/ludo-game-development/ludo-king.webp"
+    image: "https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif"
   },
   {
     title: "Rummy",
     description: "Are you in search of the top rummy game development company? Gamzway specializes in rummy game development, offering comprehensive solutions for creating the best online rummy game app and website.",
-    image: "https://beta.mobzway.com/assets/images/ludo-game-development/zupee-ludo.webp"
+    image: "https://beta.mobzway.com/assets/images/rummy-software/Rummy-11.webp"
   },
   {
     title: "Snake & Ladder",
     description: "Want to build the game similar to Ludo Sikandar app? Contact us today for the ludo game app development services provided by us, with 9+ years of experience developers featuring customizable settings for diverse player preference.",
-    image: "https://beta.mobzway.com/assets/images/ludo-game-development/ludo-Sikandar.webp"
+    image: "https://beta.mobzway.com/assets/images/ludo-game-development/snake-ladder.webp"
   },
   {
     title: "Call Break",
     description: "Serving gaming startups, businesses, and entrepreneurs develop unique Call Break games across Android, iOS, and Web, we are a reputable Call Break Card Game Development Company.",
-    image: "https://beta.mobzway.com/assets/images/ludo-game-development/snake-ladder.webp"
+    image: "https://beta.mobzway.com/assets/images/rummy-software/Rummy-04.webp"
   },
   {
     title: "Poker",
     description: "Experience the thrill and strategy of a classic Poker Game designed for all skill levels. Whether you're a casual player or a seasoned card shark, our immersive poker experience brings realistic gameplay, smooth interface, and competitive features right to your fingertips.",
-    image: "https://beta.mobzway.com/assets/images/ludo-game-development/ludo-king.webp"
+    image: "https://beta.mobzway.com/assets/images/poker-game-development-company.webp"
   },
   {
     title: "White Label Casino",
     description: "Want your casino business to rise to new heights? Explore our cutting-edge online white label casino software. Our white label casino solution boasts advanced technology and a plethora of features designed to keep players engaged.",
-    image: "https://beta.mobzway.com/assets/images/ludo-game-development/ludo-king.webp"
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
   }
 ]
 

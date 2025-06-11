@@ -11,6 +11,8 @@ import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
 import PlatformImg from '../../../components/PlatformImg/PlatformImg'
+import AboutSection from '../../../components/AboutSection/AboutSection'
+import FeaturesGrid from '../../../components/FeaturesSection/FeaturesGrid/FeaturesGrid'
 
 const platformItems = [
   {
@@ -163,6 +165,63 @@ const crmTitle = [
   }
 ]
 
+const aboutItems = [
+  {
+    description: "Our white label solutions come with software that is good for businesses and assistance for the whole life cycle. Our games work well on all major browsers and devices and don't need to be downloaded.",
+    description3: "They were made with safe and flexible web technologies like HTML5, WebGL, Node.js, and others.",
+    image: "https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif"
+  }
+]
+
+// const platformTitle = [
+//   {
+//     title: "WHITE LABEL CASINO SERVICES AT GAMZWAY"
+//   }
+// ]
+// const platformFeatures = {
+//   sections: [
+//     {
+//       title: "CROSS-PLATFORM TECHNOLOGY",
+//       points: [
+//       ]
+//     },
+//     {
+//       title: "END-TO-END SUPPORT",
+//       points: [
+//       ]
+//     },
+//     {
+//       title: "WHITE LABEL PROCESS",
+//       points: [
+//       ]
+//     },
+//     {
+//       title: "INCLUDED IN EVERY PACKAGE",
+//       points: [
+//       ]
+//     },
+//     {
+//       title: "GAMEPLAY OPTIONS",
+//       points: [
+//       ]
+//     },
+//     {
+//       title: "CUSTOM GAME CREATION",
+//       points: [
+//       ]
+//     },
+//     {
+//       title: "GAME & CONTENT MANAGEMENT",
+//       points: [
+//       ]
+//     },
+//     {
+//       title: "BUSINESS FLEXIBILITY",
+//       points: [
+//       ]
+//     }
+//   ]
+// }
 
 const WhiteLabelCasino = () => {
   return (
@@ -174,7 +233,11 @@ const WhiteLabelCasino = () => {
 
       <AchievementsBanner />
 
+      <AboutSection aboutItems={aboutItems} />
+
       <FeaturesBanner />
+
+      {/* <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} /> */}
 
       <ChooseGrid />
 

@@ -10,6 +10,12 @@ import AccordionSection from '../../../components/AccordionSection/AccordionSect
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
 
+import FeaturesGridV3 from '../../../components/FeaturesGridV3/FeaturesGridV3'
+import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import PromoTools from '../../../components/PromoTools/PromoTools'
+import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+
 const landingItems = [
   {
     title: "TABLE GAMES DEVELOPMENT",
@@ -19,63 +25,59 @@ const landingItems = [
   }
 ]
 
-const typesItems = [
-  {
-    featuresText:[
+const featuresTitleV3 =[
       {
         title: " Various Kinds of Table Games",
         description: "We address a wide spectrum of virtual table games to satisfy different tastes of casino players:"
       }
-    ],
-    platformGrid:[
+    ]
+const featuresGridV3 =[
       { 
         title: "Blackjack",
         image: "https://cdn-icons-png.flaticon.com/512/10646/10646123.png",
-        description:"Blackjack is a timeless classic now driven by verified RNG for safe gameplay."
+
       },
       { 
         title: "Roulette",
         image: "https://cdn-icons-png.flaticon.com/512/2038/2038363.png",
-        description:" European, American, and French variations include vibrant table UI for roulette."
+
       },
       {
         title: "Poker",
         image:"https://cdn-icons-png.flaticon.com/512/9590/9590095.png",
-        description:" Poker is a popular card game with RNG-based gameplay for fair value."
+
       },
       {
         title: "Baccarat",
         image: "https://cdn-icons-png.flaticon.com/512/4694/4694389.png",
-        description:"Smooth gameplay with adjustable betting limits and payout systems in baccarat guarantees."
+
       },
       { 
         title: "Teen Patti",
         image: "https://cdn-icons-png.flaticon.com/512/1055/1055846.png",
-        description:" Popular in India and Asian countries, Teen Patti presents RNG-backed fair value."
+
       },
       { 
         title: "Andar Bahar",
         image: "https://cdn-icons-png.flaticon.com/512/10073/10073807.png",
-        description:"Available on digital version, fast-paced card game with regional appeal called Andar Bahar."
+
       },
       { 
         title: "Sic Bo",
         image: "https://cdn-icons-png.flaticon.com/512/7400/7400798.png",
-        description:"Sic Bo is a real-time outcome based dice game enabled by RNG with safe betting."
+
       },
       { 
         title: "Dragon Tiger",
         image: "https://www.kpis.in/newassets/img/dragon-tiger/dragon-tiger.png",
-        description:" Dragon Tiger is a quick RNG outcome simple but interesting game."
+
       },
       { 
         title: "Hi-Lo",
         image: "https://cdn-icons-png.flaticon.com/512/10553/10553465.png",
-        description:"Hi-Lo is a simple game with real-time outcome based on RNG."
+
       }
     ]
-  }
-]
 
 const hireTitle = [
   {
@@ -279,59 +281,23 @@ const TableGames = () => {
 
       <AchievementsBanner />
 
-      <div className="table-types">
+      <FeaturesBanner />
+
+
+      {/* <div className="table-types">
         <PlatformSection platformItems={typesItems}/>
         <h3 className='table-types-desc'>Every game is designed for performance, fairness, and user involvement on many devices.</h3>
-      </div>
+      </div> */}
 
-      <div className='solutions-crash-section'>
-        <div className='solutions-crash-top'>
-          <FeaturesHeader featuresText={hireTitle}/>
-        </div>
+      <FeaturesGridV3 featuresTitleV3={featuresTitleV3} featuresGridV3={featuresGridV3}/>
 
-        <div className='solutions-crash-bottom'>
-          <div className='solutions-desc-container'>
-            <div className='solutions-desc'>
-              <br/><br/>
-              <span className='text-yellow'>Our table games are built on principles of fairness, engagement, and reliability.</span>
-              <br/><br/>
-              <ul>
-                <li>Clearly Fair RNG Engine guarantees objective results and adherence to world standards.</li>
-                <br/>
-                <li> Designed for cross-platform gaming, High-Performance Game Engine Built with Unity, HTML5, or Phaser</li>
-                <br/>
-                <li>Chat Options and Multiplayer</li>
-                <br/>
-                <li>Multi-language and Multi-currency Support</li>
-                <br/>
-                <li>Advanced SSL Security</li>
-                <br/>
-                <li>Design interactive, socially interesting gaming worlds.</li>
-                <br/>
-                <li>  Real-Time Leaderboards & Statues</li>
-                <br/>
-                <li> Track live performances to keep players competitive and involved.</li>
-              </ul>
-            </div>
-          </div>
-          <div className='solutions-img'>
-            <img src="https://beta.mobzway.com/assets/images/rummy-game-development/hire-rummy-game-developer.webp" alt="" />
-          </div>
-        </div>
-      </div>
+      <PromoTools />
+      <PlatformSection />
+      <PlatformImg />
+      <CustomGrid/>
+      <ChooseGrid />
 
       <ContactBanner contactItems={touchItems}/>
-
-      <PlatformSection platformItems={platformItems}/>
-
-      <CustomGrid customTitle={crmTitle} customgridItems={crmItems}/>
-
-      <div className="development-process-section">
-        <FeaturesGrid 
-          features={developmentFeatures}
-          featuresTitle={developmentTitle}
-        />
-      </div>
 
       <div className="faq-section">
         <FeaturesHeader featuresText={faqTitle}/>

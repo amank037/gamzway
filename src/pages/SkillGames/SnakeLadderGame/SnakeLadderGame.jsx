@@ -8,7 +8,7 @@ import ContactBanner from '../../../components/ContactBanner/ContactBanner'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
-import FeaturesGridV3 from '../../../components/FeaturesGridV3/FeaturesGridV3'
+import FeaturesGridV5 from '../../../components/FeaturesGridV5/FeaturesGridV5'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import PromoTools from '../../../components/PromoTools/PromoTools'
@@ -51,23 +51,23 @@ const variationTitle = [{
 const variationGrid = [
   {
     title: "2 Player",
-    description: ""
+    image:"",
   },
   {
     title: "4 Player",
-    description: ""
+    image:"",
   },
   {
     title: "Private Room",
-    description: ""
+    image:"",
   },
   {
     title: "Pass/Play",
-    description: ""
+    image:"",
   },
   {
     title: "Private Room For Other Players",
-    description: ""
+    image:"",
   }
 ]
 
@@ -299,7 +299,7 @@ const SnakeLadderGame = () => {
           ))}
         </div>
       </div> */}
-      <FeaturesGridV3 featuresGridV3={variationGrid} featuresTitleV3={variationTitle} />
+      <FeaturesGridV5 featuresGrid={variationGrid} featuresTitle={variationTitle} />
       <FeaturesBanner />
       <ChooseGrid />
       <PromoTools />

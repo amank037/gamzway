@@ -10,7 +10,6 @@ function FeaturesGridV4({ featuresGrid, featuresTitle }) {
             <div className='features-gridv4-item' key={index}>
                     <img src={item.image} alt="" />
                     <h3>{item.title}</h3>
-                    <p>{item.description}</p>
             </div>
             ))}
         </div>

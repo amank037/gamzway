@@ -9,6 +9,11 @@ import CustomGrid from '../../../components/CustomGrid/CustomGrid'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
+import FeaturesGridV3 from '../../../components/FeaturesGridV3/FeaturesGridV3'
+import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import PromoTools from '../../../components/PromoTools/PromoTools'
+import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
 
 const landingItems = [
   {
@@ -18,48 +23,60 @@ const landingItems = [
     button: "REQUEST A QUOTE",
   }
 ]
-
-const typesItems = [
+const landingImages = [
   {
-    featuresText:[
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+]
+
+
+const featuresTitleV3 = [
       {
-        title: "Categories of Crash Games",
-        description: "Our speciality at Gamzway is developing several variants of crash games to fit various player tastes and platform systems. We provide the following really well-liked varieties:"
+        title: "Types of Crash Games",
       }
-    ],
-    platformGrid:[
+]
+
+const featuresGridV3 = [
       {
         image: "https://cdn-icons-png.flaticon.com/512/8336/8336949.png",
         title: "Classic Crash",
-        description: "A classic multiplier game in which the thrill rises with increasing multiplier count."
+
       },
       {
         image: "https://cdn-icons-png.flaticon.com/512/1624/1624736.png",
         title: "Rocket Launch Crash",
-        description: "Visually spectacular game with rocket-themed graphics and explosive effects."
+
       },
       {
         image: "https://cdn-icons-png.flaticon.com/512/2656/2656505.png",
         title: "Crypto Crash",
-        description: "Designed for crypto casinos with instantaneous transactions and blockchain-based fairness."
+
       },
       {
         image: "https://cdn-icons-png.flaticon.com/512/2329/2329238.png",
         title: "Airplane Crash",
-        description: "A themed variation whereby players must eject before the aircraft disappears as it rises."
+
       },
       {
         image: "https://cdn-icons-png.flaticon.com/512/536/536146.png",
         title: "Real-time Crash",
-        description: "Real-time crash games whereby several participants gamble, chat, and cash out collectively."
       },
       {
         image: "https://cdn-icons-png.flaticon.com/512/536/536146.png",
         title: "Jackpot Crash Games",
-        description: "These versions incorporate a progressive jackpot system, where a portion of each bet contributes to a jackpot pool."
       }
-    ]
-  }
 ]
 
 const featuresItems = [
@@ -352,25 +369,12 @@ const CrashGames = () => {
   return (
     <div className="crash-game">
       <div className="landing-crash-section">
-        <LandingSection landingItems={landingItems}/>
+        {/* <LandingSection landingItems={landingItems}/> */}
+        <LandingPageV2 landingItems={landingItems} landingImages={landingImages} />
       </div>
       <AchievementsBanner />
       
-      <div className="crash-types">
-        <PlatformSection platformItems={typesItems}/>
-      </div>
-
-      <div className='crash-features-section'>
-        <FeaturesHeader featuresText={featuresItems} />
-        <div className='crash-features-grid'>
-          {featuresGrid.map((item, index) => (
-            <div className='crash-features-grid-item' key={index}>
-              <img src={item.image} alt={item.title} />
-              <h3>{item.title}</h3>
-            </div>
-          ))}
-        </div>
-      </div>
+      <FeaturesGridV3 featuresGridV3={featuresGridV3} featuresTitleV3={featuresTitleV3} />
 
       <div className='solutions-crash-section'>
         <div className='solutions-crash-top'>
@@ -379,29 +383,40 @@ const CrashGames = () => {
 
         <div className='solutions-crash-bottom'>
           <div className='solutions-desc-container'>
-            <div className='solutions-desc'>
-              <br/><br/>
-              <span className='text-yellow'>Our crash games are built on principles of fairness, engagement, and reliability.</span>
-              <br/><br/>
-              <ul>
-                <li>Provably Fair Algorithms: Ensuring fairness</li>
-                <br/>
-                <li>Reactive Gameplay Across Devices</li>
-                <br/>
-                <li>Custom UI/UX Reflecting Your Brand</li>
-                <br/>
-                <li>Multi-language and Multi-currency Support</li>
-                <br/>
-                <li>Advanced SSL Security</li>
-                <br/>
-                <li>HD Graphics & Sound Effects</li>
-                <br/>
-                <li>AI-Driven Smart Game Logic</li>
-                <br/>
-                <li>Seamless API Integration</li>
-              </ul>
+            <div className='solutions-ludo-grid'>
+                  <div className='solutions-ludo-grid-item'>
+                    <img src="/real-time.png" alt="" />
+                    <div className='solutions-banner-line'></div>
+                    <p>Live Interaction</p>
+                  </div>
+                  <div className='solutions-ludo-grid-item'>
+                    <img src="/bot.png" alt="" />
+                    <div className='solutions-banner-line'></div>
+                    <p>Smart AI Bots</p>
+                  </div>
+                  <div className='solutions-ludo-grid-item'>
+                    <img src="/chat.png" alt="" />
+                    <div className='solutions-banner-line'></div>
+                    <p>In-Game Chats</p>
+                  </div>
+                  <div className='solutions-ludo-grid-item'>
+                    <img src="/security.png" alt="" />
+                    <div className='solutions-banner-line'></div>
+                    <p>Anti-Fraud Algorithms</p>
+                  </div>
+                  <div className='solutions-ludo-grid-item'>
+                    <img src="/platform.png" alt="" />
+                    <div className='solutions-banner-line'></div>
+                    <p>Cross-Platform Compatibility</p>
+                  </div>
+                  <div className='solutions-ludo-grid-item'>
+                    <img src="/social-media.png" alt="" />
+                    <div className='solutions-banner-line'></div>
+                    <p>Social-Media Integration</p>
+                  </div>
+
+                </div>
             </div>
-          </div>
           <div className='crash-solutions-img'>
             <div className='crash-overlay-images-div'>
             <img src="/crashPage/p1.png" alt="" className='crash-overlay-images crash-over1'/>
@@ -422,16 +437,18 @@ const CrashGames = () => {
         </div>
       </div>
 
-      <PlatformSection platformItems={platformItems}/>
+      <PromoTools />
+      <PlatformSection/>
+      <PlatformImg />
+      <CustomGrid/>
+      <ChooseGrid />
 
-      <CustomGrid customTitle={crmTitle} customgridItems={crmItems}/>
-
-      <div className="development-process-section">
+      {/* <div className="development-process-section">
         <FeaturesGrid 
           features={developmentFeatures}
           featuresTitle={developmentTitle}
         />
-      </div>
+      </div> */}
 
       <div className="faq-section">
         <FeaturesHeader featuresText={faqTitle}/>

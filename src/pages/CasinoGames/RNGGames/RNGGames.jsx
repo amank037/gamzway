@@ -10,13 +10,36 @@ import FeaturesGrid from '../../../components/FeaturesSection/FeaturesGrid/Featu
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 
+import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
+import FeaturesGridV4 from '../../../components/FeaturesGridV4/FeaturesGridV4'
+import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+
 const landingItems = [
   {
     title: "RNG GAME DEVELOPMENT",
-    description: "Digital games known as random number generator (RNG) games rely on intricate algorithms to generate totally random, fair, and objective results. These games provide players a safe and open means to enjoy gambling or betting fun online, while simulating the erratic nature of actual casino experiences.",
-    description2: "Whether it's a card dealt, a dice rolled, or a slot spin, RNG technology guarantees that every game outcome—independently and randomly—is produced free from control or outside influence. For internet casinos, this guarantees fairness certifications and conformity with international gaming rules in addition to trustworthiness.",
+    description: "Digital games known as random number generator (RNG) games rely on intricate algorithms to generate totally random, fair, and objective results.",
+    description2: "Whether it's a card dealt, a dice rolled, or a slot spin, RNG technology guarantees that every game outcome—independently and randomly—is produced free from control or outside influence.",
     button: "REQUEST A DEMO",
   }
+]
+
+const landingImages = [
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
 ]
 
 const typesItems = [
@@ -351,71 +374,25 @@ const RNGGames = () => {
   return (
     <div className="rng-game">
       <div className="landing-rng-section">
-        <LandingSection landingItems={landingItems}/>
+      <LandingPageV2 landingItems={landingItems} landingImages={landingImages} />
       </div>
       <AchievementsBanner />
-      <div className="rng-types">
-        <PlatformSection platformItems={typesItems}/>
-      </div>
 
-      <div className='rng-features-section'>
-        <FeaturesHeader featuresText={featuresItems} />
-        <div className='rng-features-grid'>
-          {featuresGrid.map((item, index) => (
-            <div className='rng-features-grid-item' key={index}>
-              <img src={item.image} alt={item.title} />
-              <h3>{item.title}</h3>
-            </div>
-          ))}
-        </div>
-      </div>
+      <FeaturesGridV4 featuresGrid={featuresGrid} featuresTitle={featuresItems} />
 
-      <div className='solutions-rng-section'>
-        <div className='solutions-rng-top'>
-          <FeaturesHeader featuresText={hireTitle}/>
-        </div>
+      <PlatformSection />
+      <PlatformImg />
+      <CustomGrid/>
+      <ChooseGrid />
 
-        <div className='solutions-rng-bottom'>
-          <div className='solutions-desc-container'>
-            <div className='solutions-desc'>
-              <br/><br/>
-              <span className='text-yellow'>RNG games developed by Gamzway are based on quality, involvement, and justice.</span>
-              <br/><br/>
-              <ul>
-                <li>Certified RNG Algorithm: Ensuring fair, objective, and tamper-proof results</li>
-                <br/>
-                <li>HD Graphics & Animations: Beautiful images and lifelike animations improve gameplay immersion</li>
-                <br/>
-                <li>Smart AI & UX Design: Games are tuned for usability and player retention</li>
-                <br/>
-                <li>Seamless Localization: Attract and keep worldwide players</li>
-                <br/>
-                <li>Cross-platform Performance: Flawless gaming on PC, tablet, and mobile devices</li>
-                <br/>
-                <li>Bonus Engine: In-house bonus systems, multipliers, jackpots, and free spins</li>
-                <br/>
-                <li>Real-Time Analytics: Immediate understanding of player behaviour</li>
-                <br/>
-                <li>Security & Fair Play: SSL encryption and RNG certification</li>
-              </ul>
-            </div>
-          </div>
-          <div className='solutions-img'>
-            <img src="https://beta.mobzway.com/assets/images/rummy-game-development/hire-rummy-game-developer.webp" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <PlatformSection platformItems={platformItems}/>
-
-      <CustomGrid customTitle={crmTitle} customgridItems={crmItems}/>
-
-      <div className="development-process-section">
+      {/* <div className="development-process-section">
         <FeaturesGrid 
           features={developmentFeatures}
           featuresTitle={developmentTitle}
         />
-      </div>
+      </div> */}
+
+
 
       <div className="faq-section">
         <FeaturesHeader featuresText={faqTitle}/>

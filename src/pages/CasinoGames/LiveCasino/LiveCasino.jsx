@@ -10,6 +10,7 @@ import FeaturesGrid from '../../../components/FeaturesSection/FeaturesGrid/Featu
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 import FeaturesGridV4 from '../../../components/FeaturesGridV4/FeaturesGridV4'
+import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 
 // const typesItems = [
 //   {
@@ -242,8 +243,7 @@ const developmentFeatures = {
       points: [
         "We know your vision, target market, and industry.",
         "Detailed analysis of business requirements and goals.",
-        "Market research and competitor analysis.",
-        "Technical feasibility assessment."
+
       ]
     },
     {
@@ -251,8 +251,7 @@ const developmentFeatures = {
       points: [
         "Interactive mock-ups made by our designers are for comments.",
         "User interface design and user experience planning.",
-        "Game flow and interaction diagrams.",
-        "Visual style guide development."
+
       ]
     },
     {
@@ -260,7 +259,7 @@ const developmentFeatures = {
       points: [
         "Setup backend systems, UI, and streaming technology integration.",
         "High-quality video streaming infrastructure setup.",
-        "Real-time communication systems implementation.",
+
       ]
     },
     {
@@ -268,7 +267,6 @@ const developmentFeatures = {
       points: [
         "We test performance, fairness, and cross-device capability strictly.",
         "Regular security audits and vulnerability testing.",
-        "Compliance with gaming regulations and standards.",
       ]
     },
     {
@@ -276,7 +274,6 @@ const developmentFeatures = {
       points: [
         "Your platform turns on, completely operational, ready for the market.",
         "Seamless deployment and integration process.",
-        "Staff training and documentation provision.",
       ]
     },
     {
@@ -284,8 +281,7 @@ const developmentFeatures = {
       points: [
         "Constant improvement, changes, and marketing direction.",
         "24/7 technical support and maintenance.",
-        "Regular updates and feature enhancements.",
-        "Performance analytics and optimization suggestions."
+
       ]
     },
     {
@@ -293,7 +289,6 @@ const developmentFeatures = {
       points: [
         "Excellent portfolio in real money, skill, and casino games.",
         "Expertise in multiple gaming technologies and platforms.",
-        "Proven track record of successful implementations.",
       ]
     },
     {
@@ -301,8 +296,6 @@ const developmentFeatures = {
       points: [
         "Custom game interfaces, branding, dealer configuration.",
         "Unique game variants and special features.",
-        "Branded tables and customized gaming environments.",
-        "Flexible integration with existing platforms."
       ]
     }
   ]
@@ -352,7 +345,7 @@ const LiveCasino = () => {
     { title: "Active Blackjack",
       image:"https://beta.mobzway.com/assets/images/casino-war-bg.jpg"
      },
-    { title: "Live Banking Games",
+    { title: "Live Banking",
       image:"https://beta.mobzway.com/assets/images/multi-table-bg.jpg" },
     { title: "Live Andar Bahar",
       image:"https://beta.mobzway.com/assets/images/andar-bahar-bg.jpg" },
@@ -388,32 +381,43 @@ const LiveCasino = () => {
         </div>
 
         <div className='solutions-rummy-bottom'>
-          <div className='solutions-desc-container'>
+        <div className='solutions-desc-container'>
             <div className='solutions-desc'>
-            <br/><br/>
-            <span className='text-yellow'>Our live casino solutions abound in tools meant to boost user retention, engagement, and return on investment:</span>
-            <br/><br/>
-            <ul>
-              <li> HD Live Streaming in Multiple Camera Angles for a casino ambiance from real life.</li>
-              <br/>
-              <li>Support for Multilingualism and Multiplicity</li>
-              <br/>
-              <li>Easily involve foreign players</li>
-              <br/>
-              <li>Intelligent Lobby Management</li>
-              <br/>
-              <li>Individual dealer preferences, game filters, and custom lobbies</li>
-              <br/>
-              <li> Live Chat Dealers & Players</li>
-              <br/>
-              <li>Improves user involvement and socialising.</li>
-              <br/>
-              <li> Platform Compatibility Across Media</li>
-              <br/>
-              <li>Supports desktop, Android, iOS, web apps.</li>
-            </ul>
+              <br />
+              <div className='solutions-ludo-grid'>
+                <div className='solutions-ludo-grid-item'>
+                  <img src="/real-time.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Live interaction</p>
+                </div>
+                <div className='solutions-ludo-grid-item'>
+                  <img src="/bot.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Smart AI Bots</p>
+                </div>
+                <div className='solutions-ludo-grid-item'>
+                  <img src="/chat.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>In-Game Chats</p>
+                </div>
+                <div className='solutions-ludo-grid-item'>
+                  <img src="/security.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Anti-Fraud Algorithms</p>
+                </div>
+                <div className='solutions-ludo-grid-item'>
+                  <img src="/platform.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Cross-Platform Compatibility</p>
+                </div>
+                <div className='solutions-ludo-grid-item'>
+                  <img src="/social-media.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Social-Media Integration</p>
+                </div>
+
+              </div>
             </div>
-            <p>Provably Fair Gaming guarantees openness and user confidence by use of Real-Time Audits.</p>
           </div>
           <div className='solutions-img'>
             <img src="https://beta.mobzway.com/assets/images/rummy-game-development/hire-rummy-game-developer.webp" alt="" />
@@ -427,12 +431,14 @@ const LiveCasino = () => {
 
       <CustomGrid customTitle={crmTitle} customgridItems={crmItems}/>
 
-      <div className="development-process-section">
+      {/* <div className="development-process-section">
         <FeaturesGrid 
           features={developmentFeatures}
           featuresTitle={developmentTitle}
         />
-      </div>
+      </div> */}
+
+      <ChooseGrid />
 
       <div className="faq-section">
         <FeaturesHeader featuresText={faqTitle}/>

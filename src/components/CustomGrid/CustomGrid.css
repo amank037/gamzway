@@ -1,10 +1,10 @@
 .custom-grid-section {
     width: 100%;
     padding: 50px 0;
-    background: url('../../assets/heroBg.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #000;
     padding: 40px 0;
+    z-index:3;
+    position:relative;
 }
 
 .custom-grid {

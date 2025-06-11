@@ -19,6 +19,8 @@ import FeaturesBannerV2 from '../../../components/FeaturesBannerV2/FeaturesBanne
 import PromoTools from '../../../components/PromoTools/PromoTools'
 import LudoPlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 import FeaturesGridV4 from '../../../components/FeaturesGridV4/FeaturesGridV4'
+import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+import LudoLanding from './LudoLanding/LudoLanding'
 
 // const ludocarouselData = [
 //   {
@@ -82,13 +84,13 @@ const landingImages = [
 //     image:"https://spribe.co/assets/images/games/carousel/av-03.jpg"
 //   }
 // ]
-const aboutItems = [
-  {
-    description: "Four players of the multiplayer board game Ludo race their tokens from start to finish depending on dice rolls. Ludo is a household favourite in all age groups and has gained popularity all around.",
-    description3: "At Gamzway, we bring to screens with interactive elements, seamless graphics, and easy controls the same thrills.",
-    image: "https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif"
-  }
-]
+  const aboutItems = [
+    {
+      description: "Four players of the multiplayer board game Ludo race their tokens from start to finish depending on dice rolls. Ludo is a household favourite in all age groups and has gained popularity all around.",
+      description3: "At Gamzway, we bring to screens with interactive elements, seamless graphics, and easy controls the same thrills.",
+      image: "https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif"
+    }
+  ]
 
 // const regardingItems = [
 //   {
@@ -106,22 +108,22 @@ const modesItems = [
 const modesGrid = [
   {
     image: "https://beta.mobzway.com/assets/images/classic.png",
-    title: "Classic Style",
+    title: "Classic",
    
   },
   {
-    image: "https://beta.mobzway.com/assets/images/tournaments.png",
+    image: "https://beta.mobzway.com/assets/images/timer.png",
     title: "Easy Mode",
 
   },
   {
-    image: "https://beta.mobzway.com/assets/images/timer.png",
-    title: "Private Table States",
+    image: "https://beta.mobzway.com/assets/images/tournaments.png",
+    title: "Tournaments",
 
   },
   {
     image: "https://beta.mobzway.com/assets/images/tournaments.png",
-    title: "Tournament States",
+    title: "Private Rooms",
 
   },
 ]
@@ -521,7 +523,8 @@ const LudoGame = () => {
     <div className='ludo-game'>
 
       <div className='carousel-swiper'>
-        <LandingPageV2 landingItems={landingItems} landingImages={landingImages} />
+        {/* <LandingPageV2 landingItems={landingItems} landingImages={landingImages} /> */}
+        <LudoLanding landingItems={landingItems}/>
         {/* <img src="https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif" alt="" className="landingImg"/> */}
         {/* <Swiper
           modules={[Autoplay]}
@@ -619,7 +622,7 @@ const LudoGame = () => {
                 <div className='solutions-ludo-grid-item'>
                   <img src="/real-time.png" alt="" />
                   <div className='solutions-banner-line'></div>
-                  <p>Real-time interaction</p>
+                  <p>Live Interaction</p>
                 </div>
                 <div className='solutions-ludo-grid-item'>
                   <img src="/bot.png" alt="" />
@@ -646,7 +649,6 @@ const LudoGame = () => {
                   <div className='solutions-banner-line'></div>
                   <p>Social-Media Integration</p>
                 </div>
-
               </div>
             </div>
           </div>
@@ -655,6 +657,8 @@ const LudoGame = () => {
       </div>
 
       <CustomGrid customgridItems={crmItems} customTitle={crmTitle} />
+
+      <ChooseGrid />
 
       <ContactBanner contactItems={readyItems} />
 

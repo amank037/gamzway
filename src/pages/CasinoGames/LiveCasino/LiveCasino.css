@@ -120,3 +120,35 @@
     color: var(--primary-yellow);
     transform: translateY(-2px);
 }
+
+ .solutions-ludo-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+ .solutions-ludo-grid .solutions-ludo-grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+ .solutions-ludo-grid .solutions-ludo-grid-item img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+ .solutions-ludo-grid .solutions-ludo-grid-item:hover img{
+    transform: scale(1.1);
+}
+.solutions-banner-line{
+    border-top: 2px solid #ffd90086;
+    width: 100%;
+}
+.solutions-ludo-p{
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}

@@ -20,11 +20,16 @@
     gap: 1rem;
     width: 25%;
     text-align: center;
+
+}
+.platform-section-item:hover .platform-section-icon{
+    transform: translateY(-10px);
 }
 .platform-section-icon{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .platform-section-line{
     border-top: 2px solid #ffd90086;
