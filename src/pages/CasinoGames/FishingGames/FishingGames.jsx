@@ -19,7 +19,7 @@ import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 const landingItems = [
   {
     title: "FISHING GAMES DEVELOPMENT COMPANY",
-    description: "From basic arcade fun, fishing games have developed into highly engaging, reward-driven, multiplayer experiences. With their amazing underwater graphics, genuine fish motions, and real-time multiplayer tools, these games attract both casual and competitive gamers all around.",
+    description: "With their amazing underwater graphics, genuine fish motions, and real-time multiplayer tools, these games attract both casual and competitive gamers all around.",
     description2: "From catching a rare species to participating in tournaments to unleashing power-ups, fishing games offer thrill, leisure, and strategy—all blended together. Gamzway enables us to mix enjoyment, skill, and technology such that your fishing game stands out.",
     button: "REQUEST A DEMO",
   }

@@ -113,7 +113,7 @@ const modesGrid = [
   },
   {
     image: "https://beta.mobzway.com/assets/images/timer.png",
-    title: "Easy Mode",
+    title: "Timer",
 
   },
   {
@@ -555,6 +555,7 @@ const LudoGame = () => {
 
       <PlatformSection />
       <LudoPlatformImg />
+      <CustomGrid/>
 
       {/* <div className='modes-section'>
         <FeaturesHeader featuresText={modesItems} />
@@ -656,7 +657,6 @@ const LudoGame = () => {
         <p className='solutions-ludo-p'> These elements not only make gaming interesting but also inspire gamers to come back often, hence enhancing user retention.</p>
       </div>
 
-      <CustomGrid customgridItems={crmItems} customTitle={crmTitle} />
 
       <ChooseGrid />
 

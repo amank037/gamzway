@@ -305,6 +305,7 @@ const SnakeLadderGame = () => {
       <PromoTools />
       <PlatformSection />
       <PlatformImg />
+      <CustomGrid/>
 
       {/* <FeaturesGrid features={featuresContent} featuresTitle={featuresTitle} /> */}
 
@@ -391,7 +392,7 @@ const SnakeLadderGame = () => {
         </div>
       </div>
 
-      <CustomGrid customTitle={crmTitle} customgridItems={crmItems} />
+
 
       <ContactBanner contactItems={startItems} />
 

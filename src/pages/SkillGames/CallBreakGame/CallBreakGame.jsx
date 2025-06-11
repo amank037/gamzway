@@ -408,6 +408,7 @@ const CallBreakGame = () => {
       <PlatformSection/>
 
       <PlatformImg />
+      <CustomGrid/>
 
       <ContactBanner contactItems={hireItems}/>
 
@@ -415,7 +416,6 @@ const CallBreakGame = () => {
 
       <ChooseGrid />
 
-      <CustomGrid customgridItems={crmItems} customTitle={crmTitle} />
 
       <ContactBanner contactItems={waitItems}/>
 

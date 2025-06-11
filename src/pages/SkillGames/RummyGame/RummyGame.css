@@ -25,7 +25,7 @@
     align-items: center;
     justify-content: center;
 }
-.rummy-carousel-swiper::before,
+/* .rummy-carousel-swiper::before,
 .rummy-carousel-swiper::after {
     content: '';
     position: absolute;
@@ -35,7 +35,7 @@
     width: 300px;
     height: 300px;
     pointer-events: none;
-}
+} */
 
 .rummy-carousel-swiper::before {
     left: 0%;

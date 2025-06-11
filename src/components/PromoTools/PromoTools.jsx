@@ -16,7 +16,7 @@ function PromoTools() {
                 <div className='promo-card2'>
                     <img src="https://spribe.co/assets/images/av-free-bet.png" alt="" />
                     <div className='promo-text-card'>
-                        <h2>Free Bets</h2>
+                        <h2>Practice Sessions</h2>
                         <p>Free bets are the best way to introduce game to your customers or just use as a gift in random promotions and giveaways.</p>
                     </div>
                 </div>

@@ -408,6 +408,7 @@ const RummyGame = () => {
       <PromoTools />
 
       <PlatformImg />
+      <CustomGrid/>
 
       <div className='solutions-rummy-section'>
         <div className='solutions-rummy-top'>
@@ -494,8 +495,6 @@ const RummyGame = () => {
 
 
 
-      <CustomGrid customgridItems={crmItems} customTitle={crmTitle} />
-
       {/* <div className="features-section">
         <div className="features-container">
           <div className="features-header">
@@ -523,7 +522,7 @@ const RummyGame = () => {
           </div>
         </div>
       </div> */}
-      <FeaturesGrid features={featuresItems[0]} featuresTitle={featuresTitle} />
+      {/* <FeaturesGrid features={featuresItems[0]} featuresTitle={featuresTitle} /> */}
 
 
       {/* <div className='solutions-rummy-section'>
@@ -657,7 +656,6 @@ const RummyGame = () => {
           </div>
         </div> */}
 
-      <ContactBanner contactItems={requestItems} />
 
       {/* <div className='questions-section'>
         {questionsData.map((question, index) => (

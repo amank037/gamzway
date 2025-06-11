@@ -20,7 +20,7 @@ import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 const landingItems = [
   {
     title: "TABLE GAMES DEVELOPMENT",
-    description: " Table games have been a pillar of casinos since they provide players with interesting gaming relying on different skill-set, chance, or both. At Gamzway, we bring these experiences online and provide completely tailored Table RNG Game Development solutions meant for worldwide users.",
+    description: " At Gamzway, we bring these experiences online and provide completely tailored Table RNG Game Development solutions meant for worldwide users.",
     description2:" Our profound developers create innovative and compatible table gaming environments to fit desktop and mobile users, whether they traditionally unique card games or traditional games like Blackjack and Roulette.",
     button: "REQUEST A QUOTE",
   }

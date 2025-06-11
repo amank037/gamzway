@@ -11,6 +11,7 @@ import CustomGrid from '../../../components/CustomGrid/CustomGrid'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 import FeaturesGridV4 from '../../../components/FeaturesGridV4/FeaturesGridV4'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 
 // const typesItems = [
 //   {
@@ -103,7 +104,7 @@ const demoItems = [
 const landingItems = [
   {
     title: "LIVE CASINO SOFTWARE PROVIDER",
-    description: " True time live casino games offer the true casino experience right on to users' screens.  Players can join actual dealers and enjoy vintage games including blackjack, roulette, and baccarat from anywhere in the world by means of high-definition streaming and interactive interfaces.  Unlike RNG-based games, live casinos combine the excitement of land-based casinos with the ease of internet platforms, therefore providing a more immersive and transparent gaming experience.",
+    description: " Players can join actual dealers and enjoy vintage games including blackjack, roulette, and baccarat from anywhere in the world by means of high-definition streaming and interactive interfaces.",
     description2:" Our speciality at Gamzway is creating scalable live casino solutions from right from a user's desktop or mobile device that mimic the glitz of Las Vegas, Macau, and Monte Carlo.",
     button: "REQUEST A DEMO",
   }
@@ -428,6 +429,7 @@ const LiveCasino = () => {
       <ContactBanner contactItems={contactItems}/>
 
       <PlatformSection platformItems={platformItems}/>
+      <PlatformImg />
 
       <CustomGrid customTitle={crmTitle} customgridItems={crmItems}/>
 

@@ -414,6 +414,7 @@ const PokerGame = () => {
       <PlatformSection platformItems={platformItems} />
 
       <PlatformImg />
+      <CustomGrid/>
 
       {/* <div className='solutions-poker-section'>
         <div className='solutions-poker-top'>
@@ -509,7 +510,6 @@ const PokerGame = () => {
 
       <ChooseGrid />
 
-      <CustomGrid customgridItems={crmItems} customTitle={crmTitle} />
 
       <PaymentSection />
 

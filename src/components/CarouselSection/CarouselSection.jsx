@@ -82,7 +82,7 @@ function CarouselSection() {
               <p className="slide-description">Leading name in real-money and skill-based gaming solutions, we specialise in pre-ready games to enable you to get off right away.  Whether your company is established operator, gaming startup, or entrepreneurial, our plug-and-play gaming solutions guarantee a quick, effective, scalable launch.</p>
             </div>
             <div className="image-content">
-              <img src="https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif" alt="" />
+              <img src="/heroImg.png" alt="" />
             </div>
           </div>
           </SwiperSlide>

@@ -18,8 +18,8 @@ import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
 const landingItems = [
   {
     title: "CRASH GAME DEVELOPMENT",
-    description: "Faster, adrenaline-fueled action in crash games has transformed the online casino gaming scene. These games follow basic concepts whereby players make bets before a rising multiplier 'crashes'. Aim is to Cash out to lock your gains before the game crashes.",
-    description2: "With proven fair algorithms, real-time interaction, and flawless graphics, live RNG (Random Number Generator) crash games provide an added degree of excitement. Crash games can quickly enthral a large audience regardless of your goals—engaging casual gamers or high-stakes bettors.",
+    description: "Faster, adrenaline-fueled action in crash games has transformed the online casino gaming scene. These games follow basic concepts whereby players make bets before a rising multiplier 'crashes'.",
+    description2: "With proven fair algorithms, real-time interaction, and flawless graphics, live RNG (Random Number Generator) crash games provide an added degree of excitement.",
     button: "REQUEST A QUOTE",
   }
 ]

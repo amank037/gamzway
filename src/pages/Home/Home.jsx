@@ -7,6 +7,7 @@ import FeaturesHeader from '../../components/FeaturesSection/FeaturesHeader/Feat
 import ProductGrid from '../../components/ProductGrid/ProductGrid'
 import ContactBanner from '../../components/ContactBanner/ContactBanner'
 import CarouselSection from '../../components/CarouselSection/CarouselSection'
+import ChooseGrid from '../../components/ChooseGrid/ChooseGrid'
 
 
 const productfeaturesText = [
@@ -279,49 +280,7 @@ const Home = () => {
             </div>
         </div>
 
-        <div className='choose-section'>
-            <FeaturesHeader featuresText={chooseTitle}/>
-            <div className='choose-container'>
-                {/* <h2 className='choose-title'>Why Should One Choose Us?</h2> */}
-                <div className='choose-grid'>
-                    <div className='choose-card'>
-                        <div className='card-icon'>
-                            <i className="fas fa-rocket"></i>
-                        </div>
-                        <h3>Quick Time to Market</h3>
-                        <p>Launch faster with our pre-built solutions</p>
-                    </div>
-                    <div className='choose-card'>
-                        <div className='card-icon'>
-                            <i className="fas fa-user-tie"></i>
-                        </div>
-                        <h3>Dedicated Support</h3>
-                        <p>Personal account managers for your project</p>
-                    </div>
-                    <div className='choose-card'>
-                        <div className='card-icon'>
-                            <i className="fas fa-balance-scale"></i>
-                        </div>
-                        <h3>Compliance Expertise</h3>
-                        <p>Deep knowledge of real-money gaming regulations</p>
-                    </div>
-                    <div className='choose-card'>
-                        <div className='card-icon'>
-                            <i className="fas fa-headset"></i>
-                        </div>
-                        <h3>Ongoing Support</h3>
-                        <p>Continuous support and updates post-launch</p>
-                    </div>
-                    <div className='choose-card'>
-                        <div className='card-icon'>
-                            <i className="fas fa-hand-holding-usd"></i>
-                        </div>
-                        <h3>Transparent Pricing</h3>
-                        <p>Clear pricing with no hidden fees</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <ChooseGrid />
 
         
         <div className='support-section'>
