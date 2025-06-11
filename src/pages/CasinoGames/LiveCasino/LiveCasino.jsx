@@ -9,33 +9,56 @@ import FeaturesHeader from '../../../components/FeaturesSection/FeaturesHeader/F
 import FeaturesGrid from '../../../components/FeaturesSection/FeaturesGrid/FeaturesGrid'
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
+import FeaturesGridV4 from '../../../components/FeaturesGridV4/FeaturesGridV4'
 
-const typesItems = [
+// const typesItems = [
+//   {
+//     featuresText:[
+//       {
+//         title: "Live Casino Types: "
+//       }
+//     ],
+//     platformGrid:[
+//       {
+//         image: "https://cdn-icons-png.flaticon.com/512/10646/10646478.png",
+//         title: " Live Dealer",
+//         description: " Professional studios sent real-time gameplay including trained human dealers."
+//       },
+//       {
+//         image: "https://cdn-icons-png.flaticon.com/512/2991/2991463.png",
+//         title: "Live Mobile Casino",
+//         description: " Perfected for tablets and smartphones, guarantees seamless, low-latency gameplay. Custom-branded apps with real-time gaming interactions accessible for Android and iOS Live Casino App."
+//       },
+//       {
+//         image: "https://cdn-icons-png.flaticon.com/512/4695/4695995.png",
+//         title: " Live Casino Based on VR",
+//         description: "Enter a virtual gambling hall supported by virtual reality to have an unmatched immersive experience."
+//       },
+//     ]
+//   }
+// ] 
+const featuresTitle = [
   {
-    featuresText:[
-      {
-        title: "Live Casino Types: "
-      }
-    ],
-    platformGrid:[
-      {
-        image: "https://cdn-icons-png.flaticon.com/512/10646/10646478.png",
-        title: " Live Dealer",
-        description: " Professional studios sent real-time gameplay including trained human dealers."
-      },
-      {
-        image: "https://cdn-icons-png.flaticon.com/512/2991/2991463.png",
-        title: "Live Mobile Casino",
-        description: " Perfected for tablets and smartphones, guarantees seamless, low-latency gameplay. Custom-branded apps with real-time gaming interactions accessible for Android and iOS Live Casino App."
-      },
-      {
-        image: "https://cdn-icons-png.flaticon.com/512/4695/4695995.png",
-        title: " Live Casino Based on VR",
-        description: "Enter a virtual gambling hall supported by virtual reality to have an unmatched immersive experience."
-      },
-    ]
+    title: "Live Casino types: "
   }
-] 
+]
+const featuresGridV2 = [
+  {
+    image: "https://cdn-icons-png.flaticon.com/512/10646/10646478.png",
+    title: " Live Dealer",
+    description: " Professional studios sent real-time gameplay including trained human dealers."
+  },
+  {
+    image: "https://cdn-icons-png.flaticon.com/512/2991/2991463.png",
+    title: "Live Mobile Casino",
+    description: " Perfected for tablets and smartphones, guarantees seamless, low-latency gameplay. Custom-branded apps with real-time gaming interactions accessible for Android and iOS Live Casino App."
+  },
+  {
+    image: "https://cdn-icons-png.flaticon.com/512/4695/4695995.png",
+    title: " Live Casino Based on VR",
+    description: "Enter a virtual gambling hall supported by virtual reality to have an unmatched immersive experience."
+  },
+]
 
 const productItems = [
   {
@@ -350,21 +373,14 @@ const LiveCasino = () => {
         <LandingSection landingItems={landingItems}/>
       </div>
       <AchievementsBanner />
-      <div className="livecasino-types">
-        <PlatformSection platformItems={typesItems}/>
-      </div>
 
-      <div className='livecasino-features-section'>
-        <FeaturesHeader featuresText={featuresItems} />
-        <div className='livecasino-features-grid'>
-        {featuresGrid.map((item, index) => (
-          <div className='livecasino-features-grid-item' key={index}>
-            <img src={item.image} alt={item.title} />
-            <h3>{item.title}</h3>
-          </div>
-          ))}
-        </div>
-      </div>
+      {/* <div className="livecasino-types">
+        <PlatformSection platformItems={typesItems}/>
+      </div> */}
+
+
+
+      <FeaturesGridV4 featuresGrid={featuresGrid} featuresTitle={featuresItems} />
 
       <div className='solutions-rummy-section'>
         <div className='solutions-rummy-top'>

@@ -25,4 +25,22 @@
     width: 50%;
 }
 
+.features-bannerv2-item img{
+    height: 86.5px;
+}
+
+@media screen and (max-width: 768px) {
+    .features-bannerv2-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .features-bannerv2-item{
+        width: 70%;
+        align-items: center;
+    }
+    .features-bannerv2-line{
+        width: 100%;
+    }
+}
+
 

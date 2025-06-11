@@ -18,8 +18,8 @@ const productfeaturesText = [
 
 const platformFeaturesText = [
     {
-        title: "Our Gaming Platform",
-        description: "Gamzway's products are built on our robust gaming platform, engineered for reliability, flexibility, and performance."
+        title: "FEATURES OF OUR GAMING PLATFORM",
+        description: "Gamzway's products are engineered for reliability, flexibility, and performance."
     }
 ]
 
@@ -51,7 +51,7 @@ const quoteItems =[
 
 const supportTitle = [
     {
-        title: "Aid + Let's Discuss",
+        title: "Let's Discuss",
         description: "Still have doubts. Here to assist are our professionals."
     }
 ]
@@ -75,56 +75,56 @@ const Home = () => {
     const [contactType, setContactType] = useState('phone')
     const [contactValue, setContactValue] = useState('')
 
-    const renderContactInput = () => {
-        switch(contactType) {
-        case 'phone':
-        case 'whatsapp':
-            return (
-            <PhoneInput
-                country={'in'}
-                value={contactValue}
-                onChange={phone => setContactValue(phone)}
-                containerClass="phone-input-container"
-                inputClass="contact-input"
-            />
-            )
-        case 'email':
-            return (
-            <input
-                type="email"
-                placeholder="Your Email"
-                value={contactValue}
-                onChange={(e) => setContactValue(e.target.value)}
-                className="contact-input"
-            />
-            )
-        case 'telegram':
-        case 'skype':
-            return (
-            <input
-                type="text"
-                placeholder={`Your ${contactType} ID`}
-                value={contactValue}
-                onChange={(e) => setContactValue(e.target.value)}
-                className="contact-input"
-            />
-            )
-        default:
-            return null
-        }
-    }
+    // const renderContactInput = () => {
+    //     switch(contactType) {
+    //     case 'phone':
+    //     case 'whatsapp':
+    //         return (
+    //         <PhoneInput
+    //             country={'in'}
+    //             value={contactValue}
+    //             onChange={phone => setContactValue(phone)}
+    //             containerClass="phone-input-container"
+    //             inputClass="contact-input"
+    //         />
+    //         )
+    //     case 'email':
+    //         return (
+    //         <input
+    //             type="email"
+    //             placeholder="Your Email"
+    //             value={contactValue}
+    //             onChange={(e) => setContactValue(e.target.value)}
+    //             className="contact-input"
+    //         />
+    //         )
+    //     case 'telegram':
+    //     case 'skype':
+    //         return (
+    //         <input
+    //             type="text"
+    //             placeholder={`Your ${contactType} ID`}
+    //             value={contactValue}
+    //             onChange={(e) => setContactValue(e.target.value)}
+    //             className="contact-input"
+    //         />
+    //         )
+    //     default:
+    //         return null
+    //     }
+    // }
 
-    const handleFormSubmit = (e) => {
-        e.preventDefault()
-        console.log({
-        name,
-        contactType,
-        contactValue
-        })
-        setName('')
-        setContactType('phone')
-        setContactValue('')
-    }
+    // const handleFormSubmit = (e) => {
+    //     e.preventDefault()
+    //     console.log({
+    //     name,
+    //     contactType,
+    //     contactValue
+    //     })
+    //     setName('')
+    //     setContactType('phone')
+    //     setContactValue('')
+    // }
 
     const platformGrid = [
         {
@@ -206,7 +206,6 @@ const Home = () => {
                 <FeaturesHeader featuresText={productfeaturesText} titleStyle={{color:'#000'}}/>
             </div>
             <ProductGrid/>
-            <p className='productgridDesc'>Every product is created with industry-compliant elements including live chat, multilingual help, anti-fraud systems, and safe payment gates.</p>
         </div>
 
         <div className='platform-feature-section'>
@@ -265,24 +264,10 @@ const Home = () => {
             <div className='models-grid'>
                 <div className='model-card'>
                     <div className='model-icon'>
-                        <i className="fas fa-key"></i>
-                    </div>
-                    <h3>Turnkey Model</h3>
-                    <p>Launch a fully ready-to-use gaming solution with minimal customization</p>
-                </div>
-                <div className='model-card'>
-                    <div className='model-icon'>
                         <i className="fas fa-tag"></i>
                     </div>
                     <h3>White Label Solutions</h3>
                     <p>Get a branded version of our pre-built games tailored for your business</p>
-                </div>
-                <div className='model-card'>
-                    <div className='model-icon'>
-                        <i className="fas fa-tools"></i>
-                    </div>
-                    <h3>Custom Game Development</h3>
-                    <p>Want to add a special feature or modify gameplay? We've got you covered</p>
                 </div>
                 <div className='model-card'>
                     <div className='model-icon'>
@@ -336,7 +321,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <ContactBanner contactItems={quoteItems}/>
         </div>
 
         
@@ -389,7 +373,6 @@ const Home = () => {
             </div>
         </div> */}
 
-        <ContactBanner contactItems={travelItems}/>
 
     </div>
   )

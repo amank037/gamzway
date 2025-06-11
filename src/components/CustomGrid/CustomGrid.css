@@ -1,5 +1,9 @@
 .custom-grid-section {
-    background: #222;
+    width: 100%;
+    padding: 50px 0;
+    background: url('../../assets/heroBg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 40px 0;
 }
 
@@ -16,7 +20,8 @@
 .custom-grid-item {
     width: 25%;
     box-sizing: border-box;
-    background: #222;
+    /* background: #222; */
+    backdrop-filter: blur(10px);
     color: #fff;
     display: flex;
     flex-direction: column;

@@ -2,6 +2,14 @@
     width: 100%;
 }
 
+.rummy-game *:not(.not-animate):not(.not-animate *) {
+    animation: fadeIn 1s cubic-bezier(0.38, 0.97, 0.56, 0.76);
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 .rummy-game .rummy-carousel-swiper {
     background: url(https://beta.mobzway.com/assets/images/rummy-game-development/rummy-game-development.webp);
     background-color: rgba(0, 0, 0, 0.80);
@@ -13,6 +21,9 @@
     position: relative;
     overflow: hidden;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .rummy-carousel-swiper::before,
 .rummy-carousel-swiper::after {
@@ -67,7 +78,7 @@
 .about-rummy-section {
     width: 100%;
     max-width: 1140px;
-    padding: 80px 0;
+    padding: 40px 0;
     margin: 0 auto;
     position: relative;
 }
@@ -109,7 +120,6 @@
     width: 100% !important;
     height: 500px !important;
     display: block !important;
-    overflow: hidden;
   }
   
   @keyframes cardFloat1 {
@@ -238,32 +248,38 @@
     padding: 0 20px;
 }
 .solutions-rummy-section .solutions-rummy-bottom .solutions-desc-container .solutions-desc{
-    text-align: justify;
+    
     position: relative;
 }
 .solutions-rummy-section .solutions-rummy-bottom .solutions-desc-container .solutions-desc span{
     font-size: 24px;
     font-weight: 600;
 }
-
-/* .solutions-rummy-section .solutions-rummy-bottom .solutions-desc-container .solutions-desc .solutions-desc-more {
-    display: block;
-    opacity: 0;
-    height: 0;
-    transform: translateY(-20px);
-    overflow: hidden;
-    transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out, transform 0.3s ease-in-out;
+.solutions-rummy-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 }
-
-.solutions-rummy-section .solutions-rummy-bottom .solutions-desc-container .solutions-desc .solutions-desc-more.show {
-    opacity: 1;
-    height: auto;
-    transform: translateY(0);
-    margin-top: 1rem;
+.solutions-rummy-grid .solutions-rummy-grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 20px;
 }
-.solutions-desc-more:not(.show) + button {
-    transform: translateY(-20px);
-} */
+.solutions-rummy-grid .solutions-rummy-grid-item img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+.solutions-rummy-grid .solutions-rummy-grid-item:hover img{
+    transform: scale(1.1);
+}
+.solutions-banner-line{
+    border-top: 2px solid #ffd90086;
+    width: 100%;
+}
 
 .sol2-rummy-board-container {
     position: absolute;

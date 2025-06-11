@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Pagination, Autoplay } from "swiper/modules"
 import "swiper/css"
@@ -6,7 +5,6 @@ import "swiper/css/navigation"
 import "swiper/css/pagination"
 import "./CarouselSection.css"
 import 'react-phone-input-2/lib/style.css'
-import PhoneInput from 'react-phone-input-2'
 
 const carouselData = [
   // {
@@ -49,48 +47,6 @@ const carouselData = [
 
 function CarouselSection() {
 
-  const [name, setName] = useState('')
-  const [contactType, setContactType] = useState('phone')
-  const [contactValue, setContactValue] = useState('')
-
-  const renderContactInput = () => {
-    switch(contactType) {
-    case 'phone':
-    case 'whatsapp':
-        return (
-        <PhoneInput
-            country={'in'}
-            value={contactValue}
-            onChange={phone => setContactValue(phone)}
-            containerClass="phone-input-container"
-            inputClass="contact-input"
-        />
-        )
-    case 'email':
-        return (
-        <input
-            type="email"
-            placeholder="Your Email"
-            value={contactValue}
-            onChange={(e) => setContactValue(e.target.value)}
-            className="contact-input"
-        />
-        )
-    case 'telegram':
-    case 'skype':
-        return (
-        <input
-            type="text"
-            placeholder={`Your ${contactType} ID`}
-            value={contactValue}
-            onChange={(e) => setContactValue(e.target.value)}
-            className="contact-input"
-        />
-        )
-    default:
-        return null
-    }
-}
 
 
   return (
@@ -147,49 +103,8 @@ function CarouselSection() {
           ))}
         </Swiper>
       </div>
-
-      <div className="carousel-form">
-        <p className="form-heading">Fill in the form to contact us and expand your product offering.</p>
-        <div className="form-container">
-          <div className="form-group">
-            <input 
-              type="text" 
-              placeholder="Your Name" 
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="name-input"
-            />
-          </div>
-          <div className="contact-group">
-            <select 
-              className="contact-type"
-              value={contactType}
-              onChange={(e) => {
-                setContactType(e.target.value);
-                setContactValue('');
-              }}
-            >
-              <option value="phone">Phone</option>
-              <option value="whatsapp">WhatsApp</option>
-              <option value="email">Email</option>
-              <option value="telegram">Telegram</option>
-              <option value="skype">Skype</option>
-            </select>
-            {renderContactInput()}
-          </div>
-          <button className="consultation-btn">Free Consultation</button>
-        </div>
-      </div>
       
       <div className="carousel-controls">
-        <div className="navigation-buttons">
-          <button className="custom-prev">
-            <i className="fas fa-chevron-left"></i>
-          </button>
-          <button className="custom-next">
-            <i className="fas fa-chevron-right"></i>
-          </button>
-        </div>
         <div className="custom-pagination"></div>
       </div>
     </div>

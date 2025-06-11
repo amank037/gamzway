@@ -9,13 +9,37 @@ import PaymentSection from "../../../components/PaymentSection/PaymentSection"
 import ProductSection from "../../../components/ProductSection/ProductSection"
 import AccordionSection from "../../../components/AccordionSection/AccordionSection"
 import LandingSection from "../../../components/LandingSection/LandingSection"
+import CustomGrid from "../../../components/CustomGrid/CustomGrid"
+import LandingPageV2 from "../../../components/LandingPageV2/LandingPageV2"
+import ChooseGrid from "../../../components/ChooseGrid/ChooseGrid"
+import FeaturesBanner from "../../../components/FeaturesBanner/FeaturesBanner"
+import PlatformImg from "../../../components/PlatformImg/PlatformImg"
 
 const landingItems = [
   {
     title: "Poker Game",
-    description: "Experience the thrill and strategy of a classic Poker Game designed for all skill levels. Whether you're a casual player or a seasoned card shark, our immersive poker experience brings realistic gameplay, smooth interface, and competitive features right to your fingertips. Enjoy Texas Hold’em, Omaha, and other popular poker variations anytime, anywhere.",
+    description: "Experience the thrill and strategy of a classic Poker Game designed for all skill levels. Whether you're a casual player or a seasoned card shark, our immersive poker experience brings realistic gameplay, smooth interface, and competitive features right to your fingertips.",
+    description2: "Enjoy Texas Hold’em, Omaha, and other popular poker variations anytime, anywhere.",
     button: "GET STARTED"
   }
+]
+
+const landingImages = [
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
 ]
 
 // const pokercarouselData = [
@@ -34,7 +58,12 @@ const landingItems = [
 
 const featuresItems = [
   {
-    title: "FEATURES OF POKER GAME DEVELOPED BY US"
+    title: "FEATURES OF OUR POKER GAMES"
+  }
+]
+const variantsItems = [
+  {
+    title: "VARIANTS OF POKER GAME DEVELOPED BY US"
   }
 ]
 
@@ -46,9 +75,9 @@ const featuresItems = [
 
 const touchItems = [
   {
-    featuresText:[
+    featuresText: [
       {
-        title:"Get in Touch – Ask Anything About Our Poker Game"
+        title: "Get in Touch – Ask Anything About Our Poker Game"
       }
     ],
     description: "Ready to explore the world of online poker? Whether you’re just getting started or looking for the perfect poker game to attract players, we’re here to help. Reach out to us with your questions or ideas—we’ll guide you every step of the way.",
@@ -58,27 +87,25 @@ const touchItems = [
 
 const platformItems = [
   {
-    featuresText:[
+    featuresText: [
       {
         title: "WE BUILD THE POKER GAME FOR ALL PLATFORMS",
         description: "No matter what device your audience uses, our poker game is ready to deliver a seamless gaming experience. We develop poker games that run smoothly across all popular platforms."
       }
     ],
-    platformGrid:[
+    platformGrid: [
       {
         image: "https://beta.mobzway.com/assets/images/HTML_five-broweswer.webp",
         title: "HTML5 Browser - Based Poker Game",
-        description: "Our poker game supports all modern desktop browsers—whether on Mac or Windows. With responsive design and smooth gameplay, players can enjoy online poker directly from Chrome, Firefox, Safari, and more."
       },
       {
         image: "https://beta.mobzway.com/assets/images/Native_Mobile.webp",
         title: "Native Mobile Poker Game (Android & iOS)",
-        description: " Looking for the best poker game for Android or iOS? We create fully optimized native apps that work flawlessly on all smartphones and tablets. Expect quick loading, interactive UI, and smooth performance."
+
       },
       {
         image: "https://beta.mobzway.com/assets/images/Mac_PC.webp",
         title: "Poker Game for PC and Mac",
-        description: "We build downloadable poker game applications for Windows and macOS. Players can enjoy the full poker experience with high-quality graphics, secure logins, and fast gameplay on their laptops or desktops."
       },
     ]
   }
@@ -154,7 +181,7 @@ const faqData1 = [
 
 const faqData2 = [
   {
-    title:"How long does it take to develop a poker game?",
+    title: "How long does it take to develop a poker game?",
     description: "The development timeline depends on the complexity and features of the poker game you require. Typically, a standard multiplayer poker game takes 3 to 6 months from design to deployment."
   },
   {
@@ -187,9 +214,67 @@ const demoItems = [
   }
 ]
 
-const chooseTitle = [
+// const chooseTitle = [
+//   {
+//     title: "Why Choose Gamzway as Your Poker Game Development Company?"
+//   }
+// ]
+
+const crmItems = [
   {
-    title: "Why Choose Gamzway as Your Poker Game Development Company?"
+    title: "Dashboard",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/dashboard.png"
+  },
+  {
+    title: "Game Rooms",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/game-management.png"
+  },
+  {
+    title: "Tournaments",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/tournament-management.png"
+  },
+  {
+    title: "Hand History",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/game-history.png"
+  },
+  {
+    title: "Player Management",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/player-management.png"
+  },
+  {
+    title: "Users & Sub Admins",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/user-management.png"
+  },
+  {
+    title: "Affiliates",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/affiliate-management.png"
+  },
+  {
+    title: "Finance",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/finance-management.png"
+  },
+  {
+    title: "Notifications",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/notificstion-management.png"
+  },
+  {
+    title: "Promotions",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/promotion-management.png"
+  },
+  {
+    title: "Analytics",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/analytics.png"
+  },
+  {
+    title: "Reports",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/reports.png"
+  }
+]
+
+const crmTitle = [
+  {
+    title: "backoffice & CRM",
+    description: "We offer the best BackOffice and CRM tools with our poker software solutions, making game management easy. You can enjoy a user-friendly dashboard and all the essential & valuable features to manage the game rooms."
   }
 ]
 
@@ -203,89 +288,132 @@ const PokerGame = () => {
   const featuresGrid = [
     {
       image: "https://beta.mobzway.com/assets/images/poker-game-development/01-11.webp",
-      title: "Hold'em Poker",
-      description: " Enjoy one of the most popular formats in the world – Texas Hold’em Poker – designed with smooth gameplay, real-time action, and cross-device compatibility."
+      title: "Multi Table Gameplay",
     },
     {
       image: "https://beta.mobzway.com/assets/images/poker-game-development/02.webp",
-      title: "5 Card Omaha",
-      description: "Our poker game also includes the exciting 5 Card Omaha variation, offering dynamic strategies and multi-device support."
+      title: "Private Rooms",
+
     },
     {
       image: "https://beta.mobzway.com/assets/images/poker-game-development/omaha02.webp",
-      title: "Pot-Limit Omaha (PLO)",
-      description: "Experience fast-paced, flexible PLO gameplay tailored for competitive players who love higher variance poker action.  "
+      title: "Mobile Response",
+
     },
     {
       image: "https://beta.mobzway.com/assets/images/poker-game-development/04.webp",
-      title: "Sit & Go Tournaments",
-      description: "Play quick, action-packed Sit & Go tournaments that are designed for those who want instant results and rewards."
+      title: "Multi Theme",
+
     },
     {
       image: "https://beta.mobzway.com/assets/images/poker-game-development/05.webp",
-      title: "Multi-Table Poker Tournaments",
-      description: " Host or participate in large-scale poker tournaments with structured rounds and real-time leaderboards."
+      title: "Multiple Themes",
     },
     {
       image: "https://beta.mobzway.com/assets/images/poker-game-development/06.webp",
-      title: "OFC Poker (Open Face Chinese)",
-      description: "Dive into Open Face Chinese Poker – a fun, strategic variant that challenges your skills and keeps the game fresh."
+      title: "Push Notifications",
+
     },
     {
       image: "https://beta.mobzway.com/assets/images/poker-game-development/07.webp",
       title: "Secure Payment Gateways",
-      description: "Our poker game ensures safe and encrypted transactions, so players can focus on playing without payment worries."
+
     },
     {
       image: "https://beta.mobzway.com/assets/images/poker-game-development/08.webp",
       title: "Advanced Anti-Fraud System",
-      description: "Enjoy a safe poker environment with robust anti-cheat and anti-fraud mechanisms to keep gameplay fair for all."
+
     },
     {
       image: "https://beta.mobzway.com/assets/images/poker-game-development/09.webp",
       title: "Rewards & Loyalty Programs",
-      description: "Keep players engaged through custom rewards, bonuses, and loyalty programs that encourage repeat play."
+
     },
     {
       image: "https://beta.mobzway.com/assets/images/poker-game-development/r111.webp",
       title: "RNG Certified Gameplay",
-      description: "All game mechanics are built on certified RNG systems to ensure fairness and randomness in every hand dealt."
+
     },
     {
       image: "https://beta.mobzway.com/assets/images/poker-game-development/11.webp",
       title: "Responsible Gaming Features",
-      description: "Built-in tools for responsible gaming, including playtime limits and secure data handling, ensure a safe user experience."
+
     },
     {
       image: "https://beta.mobzway.com/assets/images/poker-game-development/12.webp",
       title: "Admin Panel & CRM Access",
-      description: "Operators can manage players, monitor activity, and configure game settings with an intuitive back-office system and integrated CRM."
+
     }
   ]
-  
+
+  const variantsGrid = [
+    {
+      image: "https://beta.mobzway.com/assets/images/poker-game-development/01-11.webp",
+      title: "Hold'em Poker",
+    },
+    {
+      image: "https://beta.mobzway.com/assets/images/poker-game-development/omaha02.webp",
+      title: "PLO 4",
+    },
+    {
+      image: "https://beta.mobzway.com/assets/images/poker-game-development/omaha02.webp",
+      title: "PLO 5",
+    },
+    {
+      image: "https://beta.mobzway.com/assets/images/poker-game-development/omaha02.webp",
+      title: "PLO 6",
+    },
+    {
+      image: "https://beta.mobzway.com/assets/images/poker-game-development/04.webp",
+      title: "Sit n Go",
+    },
+    {
+      image: "https://beta.mobzway.com/assets/images/poker-game-development/05.webp",
+      title: "All in Poker",
+    },
+  ]
+
 
   return (
     <div className='poker-game'>
       <div className='carousel-swiper'>
         {/* <CarouselSection carouselData={pokercarouselData}/> */}
-        <LandingSection landingItems={landingItems}/>
-        <img src="https://beta.mobzway.com/assets/images/pokerSlide1.webp" alt="" className="landingImg"/>
+        <LandingPageV2 landingItems={landingItems} landingImages={landingImages} />
       </div>
 
       <AchievementsBanner />
 
       <div className='features-section'>
-        <FeaturesHeader featuresText={featuresItems} />
-        <div className='features-grid'>
-        {featuresGrid.map((item, index) => (
-          <div className='features-grid-item' key={index}>
+        <FeaturesHeader featuresText={variantsItems} />
+        <div className='poker-features-grid'>
+          {variantsGrid.map((item, index) => (
+            <div className='poker-features-grid-item' key={index}>
               <img src={item.image} alt="" />
               <h3>{item.title}</h3>
               <p>{item.description}</p>
-          </div>
+            </div>
           ))}
         </div>
       </div>
+
+      <FeaturesBanner />
+
+      <div className='features-section'>
+        <FeaturesHeader featuresText={featuresItems} />
+        <div className='poker-features-grid-2'>
+          {featuresGrid.map((item, index) => (
+            <div className='poker-features-grid-2-item' key={index}>
+              <img src={item.image} alt="" />
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <PlatformSection platformItems={platformItems} />
+
+      <PlatformImg />
 
       {/* <div className='solutions-poker-section'>
         <div className='solutions-poker-top'>
@@ -327,11 +455,9 @@ const PokerGame = () => {
         </div>
       </div> */}
 
-      <ContactBanner contactItems={touchItems}/>
+      <ContactBanner contactItems={touchItems} />
 
-      <PlatformSection platformItems={platformItems}/>
-
-      <div className='choose-section'>
+      {/* <div className='choose-section'>
             <FeaturesHeader featuresText={chooseTitle}/>
             <div className='choose-container'>
                 <div className='choose-grid'>
@@ -339,58 +465,69 @@ const PokerGame = () => {
                         <div className='card-icon'>
                             <i className="fas fa-microchip"></i>
                         </div>
-                        <h3>Advanced Game Architecture</h3>
+                        <h3>Rapid Launch</h3>
                         <p>Our poker game development team delivers both 2D and 3D poker games with rich graphics and seamless animations for an immersive user experience.</p>
                     </div>
                     <div className='choose-card'>
                         <div className='card-icon'>
                             <i className="fas fa-shield-alt"></i>
                         </div>
-                        <h3>End-to-End Security</h3>
+                        <h3>Completely Manage Solutions</h3>
                         <p> We prioritize user trust by integrating robust data protection protocols, fraud prevention mechanisms, and secure payment gateways in every poker game app we develop.</p>
                     </div>
                     <div className='choose-card'>
                         <div className='card-icon'>
                             <i className="fas fa-sync"></i>
                         </div>
-                        <h3>Cross-Platform Compatibility</h3>
+                        <h3>End to End Security</h3>
                         <p>Whether your users are on desktop, mobile, or web browsers, our poker games are optimized to run smoothly across all devices.</p>
                     </div>
                     <div className='choose-card'>
                         <div className='card-icon'>
                             <i className="fas fa-code"></i>
                         </div>
-                        <h3>Latest Technologies</h3>
+                        <h3>Cross Platform Compatibility</h3>
                         <p> We utilize the latest tech stack including real-time gaming engines, high-level programming languages, and responsive UI/UX to create dynamic and scalable poker platforms.</p>
                     </div>
                     <div className='choose-card'>
                         <div className='card-icon'>
                             <i className="fas fa-shopping-cart"></i>
                         </div>
-                        <h3>Buy the Best Poker Game App</h3>
+                        <h3>Bug Free Product</h3>
+                        <p>Looking to enter the market quickly? You can purchase a fully functional, customizable poker game app developed by experts at Gamzway.</p>
+                    </div>
+                    <div className='choose-card'>
+                        <div className='card-icon'>
+                            <i className="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>24x7 Support</h3>
                         <p>Looking to enter the market quickly? You can purchase a fully functional, customizable poker game app developed by experts at Gamzway.</p>
                     </div>
                 </div>
             </div>
-      </div>
+      </div> */}
+
+      <ChooseGrid />
+
+      <CustomGrid customgridItems={crmItems} customTitle={crmTitle} />
 
       <PaymentSection />
 
       <ProductSection productGrid={productItems} />
 
       <div className="faq-section">
-        <FeaturesHeader featuresText={faqTitle}/>
+        <FeaturesHeader featuresText={faqTitle} />
         <div className="faq-container">
           <div className="faq-left">
-            <AccordionSection data={faqData1}/>
+            <AccordionSection data={faqData1} />
           </div>
           <div className="faq-right">
-            <AccordionSection data={faqData2}/>
+            <AccordionSection data={faqData2} />
           </div>
         </div>
       </div>
 
-      <ContactBanner contactItems={demoItems}/>
+      <ContactBanner contactItems={demoItems} />
 
     </div>
   )

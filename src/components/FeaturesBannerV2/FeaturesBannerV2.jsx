@@ -11,7 +11,7 @@ function FeaturesBannerV2() {
                 <h3>In-game Chat</h3>
                 <div className='features-bannerv2-line'></div>
                 <img src="https://spribe.co/av-chat.e155820587b7a64a.png" alt="" />
-                <p className='bold-text'>In-game chat is a great tool for creating game community with loyal players.</p>
+                <p className='bold-text'>In-game chat is a great tool for making a gaming community with loyal players.</p>
             </div>
             <div className='features-bannerv2-item'>
                 <div className='features-bannerv2-icon'>
@@ -20,7 +20,7 @@ function FeaturesBannerV2() {
                 <h3>Live Bets</h3>
                 <div className='features-bannerv2-line'></div>
                 <img src="https://spribe.co/av-bets.6d1f08053a7d7f02.png" alt="" />
-                <p>Everyone can see how much other players are betting and winning.</p>
+                <p>Everyone can see how much other players are betting and winning, creating a live leaderboard.</p>
             </div>
             <div className='features-bannerv2-item'>
                 <div className='features-bannerv2-icon'>

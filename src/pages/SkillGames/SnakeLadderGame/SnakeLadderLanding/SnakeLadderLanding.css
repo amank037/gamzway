@@ -1,0 +1,181 @@
+.landingv2-section{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: 134px; */
+    height: 100vh;
+    padding: 0 100px;
+    gap: 100px;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+}
+.landingv2-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    z-index: 3;
+}
+.landingv2-text h1{
+    font-size: 64px;
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--secondary-yellow);
+    text-transform: uppercase;
+    font-weight: 1200;
+    margin-top: 45px;
+    text-shadow: 
+        2px 2px 0 #000,
+        4px 4px 0 rgba(0,0,0,0.5);
+    position: relative;
+}
+.landingv2-text p{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+    width: 100%;
+}
+.landingv2-btn{
+    background-color: var(--primary-yellow);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 2rem;
+    font-size: 20px;    
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 900;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    box-shadow: 
+        2px 2px 0 #000,
+        4px 4px 0 rgba(0,0,0,0.5);
+}
+.landingv2-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 
+        4px 4px 0 #000,
+        6px 6px 0 rgba(0,0,0,0.5);
+}
+.landingv2-btn:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 2rem;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.landingv2-btn:hover:before {
+    transform: scaleY(1);
+}
+.landingv2-btn span {
+    position: relative;
+    z-index: 2;
+}
+.landingv2Img{
+    width: 100%;
+}
+.landingv2Img img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .landingv2-section{
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 993px) {
+    .landingv2-section{
+        flex-direction: column;
+        padding: 0 20px;
+        margin-top: 134px;
+        gap: 20px;
+    }
+    .landingv2Img{
+        width: 70%;
+    }
+    .landingv2-text p {
+        font-size: 18px;
+    }
+}
+
+.snakelanding-images{
+    height: 100%;
+    width: 100%;
+}
+
+.snakelanding-images-container{
+    position: relative;
+    width: 100%;
+    height: 326px;
+    object-fit: contain;
+}
+
+.snakelanding-title-container{
+    position: absolute;
+    width: 50%;
+    top: 100%;
+    left: 25%;
+    z-index:5;
+}
+.snakelanding-ladder-container{
+    position: absolute;
+    width: 55%;
+    top: 100%;
+    left: 40%;
+    z-index: 1;
+}
+.snakelanding-snake1-container{
+    position: absolute;
+    width: 40%;
+    top: 20%;
+    left: 30%;
+    z-index: 1;
+}
+.snakelanding-snake2-container{
+    position: absolute;
+    width: 30%;
+    top: 60%;
+    left: 15%;
+    z-index: 1;
+}
+.snakelanding-dice1-container{
+    position: absolute;
+    width: 25%;
+    top: 100%;
+    left: 65%;
+    z-index: 1;
+    animation: diceFloat 4s ease-in-out infinite;
+}
+.snakelanding-dice2-container{
+    position: absolute;
+    width: 20%;
+    top: 15%;
+    left: 20%;
+    z-index: 1;
+    animation: diceFloat 5s ease-in-out infinite reverse;
+}
+
+@keyframe diceFloat{
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(10deg); }
+}
+
+@media screen and (max-width: 768px){
+    .snakelanding-images-container{
+        height: 200px;
+    }
+}

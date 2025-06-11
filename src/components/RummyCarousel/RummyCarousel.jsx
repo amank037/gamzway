@@ -187,15 +187,7 @@ function RummyCarousel() {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="carousel-controls">
-        <div className="navigation-buttons">
-          <button className="custom-prev">
-            <i className="fas fa-chevron-left"></i>
-          </button>
-          <button className="custom-next">
-            <i className="fas fa-chevron-right"></i>
-          </button>
-        </div>
+      <div className="rummy-carousel-controls">
         <div className="custom-pagination"></div>
       </div>
     </div>

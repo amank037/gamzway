@@ -3,6 +3,7 @@
     padding: 40px 0;  /* Reduced from 80px */
     position: relative;
     overflow: hidden;
+    z-index:6;
 }
 
 .ach-banner::before {

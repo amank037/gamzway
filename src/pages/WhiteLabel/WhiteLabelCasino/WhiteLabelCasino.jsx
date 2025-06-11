@@ -6,14 +6,20 @@ import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
 import ContactBanner from '../../../components/ContactBanner/ContactBanner'
 
+import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
+import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+import CustomGrid from '../../../components/CustomGrid/CustomGrid'
+import PlatformImg from '../../../components/PlatformImg/PlatformImg'
+
 const platformItems = [
   {
-    featuresText:[
+    featuresText: [
       {
         title: "WE BUILD THE WHITE LABEL CASINO FOR ALL PLATFORMS"
       }
     ],
-    platformGrid:[
+    platformGrid: [
       {
         image: "https://beta.mobzway.com/assets/images/HTML_five-broweswer.webp",
         title: "HTML 5 BROWSER",
@@ -31,7 +37,7 @@ const platformItems = [
       },
     ]
   }
-] 
+]
 
 const productItems = [
   {
@@ -75,22 +81,114 @@ const demoItems = [
 const landingItems = [
   {
     title: "WHITE LABEL CASINO SOFTWARE PROVIDER",
-    description: "Want your casino business to rise to new heights? Explore our cutting-edge online white label casino software. Our white label casino solution boasts advanced technology and a plethora of features designed to keep players engaged. To ensure your success in the online casino industry, our developers make the necessary enhancements.",
+    description: "Our white label browser games are a whole solution for businesses, teachers, marketers, and event planners that want to develop fun games without having to start from scratch.",
+    description2: "We offer scalable browser-based games for everything from team-building apps to branded entertainment and corporate engagement. Our software is reliable. our service is easy, and we have years of experience in the sector.",
     button: "REQUEST A QUOTE",
   }
 ]
 
+const landingImages = [
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+]
+
+const crmItems = [
+  {
+    title: "Dashboard",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/dashboard.png"
+  },
+  {
+    title: "Game Rooms",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/game-management.png"
+  },
+  {
+    title: "Tournaments",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/tournament-management.png"
+  },
+  {
+    title: "Hand History",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/game-history.png"
+  },
+  {
+    title: "Player Management",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/player-management.png"
+  },
+  {
+    title: "Users & Sub Admins",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/user-management.png"
+  },
+  {
+    title: "Affiliates",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/affiliate-management.png"
+  },
+  {
+    title: "Finance",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/finance-management.png"
+  },
+  {
+    title: "Notifications",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/notificstion-management.png"
+  },
+  {
+    title: "Promotions",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/promotion-management.png"
+  },
+  {
+    title: "Analytics",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/analytics.png"
+  },
+  {
+    title: "Reports",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/reports.png"
+  }
+]
+
+const crmTitle = [
+  {
+    title: "backoffice & CRM",
+    description: "We offer the best BackOffice and CRM tools with our poker software solutions, making game management easy. You can enjoy a user-friendly dashboard and all the essential & valuable features to manage the game rooms."
+  }
+]
+
+
 const WhiteLabelCasino = () => {
   return (
     <div className="white-label-casino-game">
+
       <div className="landing-white-label-casino-section">
-      <LandingSection landingItems={landingItems}/>
+        <LandingPageV2 landingItems={landingItems} landingImages={landingImages} />
       </div>
+
       <AchievementsBanner />
-      <PlatformSection platformItems={platformItems}/>
+
+      <FeaturesBanner />
+
+      <ChooseGrid />
+
+      <PlatformSection platformItems={platformItems} />
+
+      <PlatformImg />
+
+      <CustomGrid customgridItems={crmItems} customTitle={crmTitle} />
+
       <PaymentSection />
-      <ProductSection productGrid={productItems}/>
-      <ContactBanner contactItems={demoItems}/>
+
+      <ProductSection productGrid={productItems} />
+
+      <ContactBanner contactItems={demoItems} />
     </div>
   )
 }

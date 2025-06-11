@@ -8,14 +8,40 @@ import ContactBanner from '../../../components/ContactBanner/ContactBanner'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
+import FeaturesGridV3 from '../../../components/FeaturesGridV3/FeaturesGridV3'
+import FeaturesGridV2 from '../../../components/FeaturesGridV2/FeaturesGridV2'
+import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+import PlatformSection from '../../../components/PlatformSection/PlatformSection'
+import PromoTools from '../../../components/PromoTools/PromoTools'
+import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
+import PlatformImg from '../../../components/PlatformImg/PlatformImg'
 
 const landingItems = [
   {
     title: "TAMBOLA GAME DEVELOPMENT",
-    description: "Millions of people all around enjoy the classic number-based game Tambola, sometimes called Housie.  Played with tickets and a draw of random numbers, Tambola is an exciting, lucky game with great expectation.  Originally enjoyed at community events and meetings, it has become a well-liked online game with creative themes, customising, and real-time multiplayer support.",
-    description2: " Our area of expertise at Gamzway is developing desktop, web, and mobile high-performance Tambola game applications.  Our staff guarantees that the gameplay experience is scalable, simple, and interesting—fit for both amateur gamers and big tournament planners.",
+    description: "Originally enjoyed at community events and meetings, it has become a well-liked online game with creative themes, customising, and real-time multiplayer support.",
+    description2: " Our area of expertise at Gamzway is developing desktop, web, and mobile high-performance Tambola game applications.",
     button: "REQUEST A QUOTE",
   }
+]
+
+const landingImages = [
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
 ]
 
 const variationTitle = [{
@@ -163,10 +189,10 @@ const crmItems = [
   }
 ]
 
-const crmTitle =[
-  { 
+const crmTitle = [
+  {
     title: "backoffice & CRM",
-    description: "We offer the best BackOffice and CRM tools with our tambola software solutions, making game management easy. You can enjoy a user-friendly dashboard and all the essential & valuable features to manage the game rooms." 
+    description: "We offer the best BackOffice and CRM tools with our tambola software solutions, making game management easy. You can enjoy a user-friendly dashboard and all the essential & valuable features to manage the game rooms."
   }
 ]
 
@@ -254,25 +280,27 @@ const TambolaGame = () => {
   return (
     <div className="tambola-game">
       <div className="landing-tambola-section">
-        <LandingSection landingItems={landingItems}/>
+        <LandingPageV2 landingItems={landingItems} landingImages={landingImages} />
       </div>
       <AchievementsBanner />
 
       <div>
-        <FeaturesHeader featuresText={variationTitle}/>
-        <div className="variations-grid">
+        {/* <div className="variations-grid">
           {variationGrid.map((item, index) => (
             <div className="variation-item" key={index}>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
             </div>
           ))}
-        </div>
+        </div> */}
+        <FeaturesGridV3 featuresGridV3={variationGrid} featuresTitleV3={variationTitle} />
       </div>
 
-      <FeaturesGrid features={featuresContent} featuresTitle={featuresTitle} />
+      <FeaturesBanner />
 
-      <div>
+      {/* <FeaturesGrid features={featuresContent} featuresTitle={featuresTitle} /> */}
+
+      {/* <div>
         <FeaturesHeader featuresText={solutionsTitle}/>
         <p className="solutions-intro">Gamzway is your first-choice partner if you're looking for a Tambola gaming app combining fun, scalability, and return on investment. Our services for application development are meant to serve:</p>
         <div className="solutions-grid">
@@ -290,39 +318,54 @@ const TambolaGame = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
+      {/* <FeaturesGridV2 featuresGrid={solutionsContent} featuresTitle={solutionsTitle}/> */}
+
+      <ChooseGrid />
+
 
       <div className='solutions-rummy-section'>
         <div className='solutions-rummy-top'>
-          <FeaturesHeader featuresText={hireTitle}/>
+          <FeaturesHeader featuresText={hireTitle} />
         </div>
 
         <div className='solutions-rummy-bottom'>
           <div className='solutions-desc-container'>
             <div className='solutions-desc'>
-            <br/><br/>
-            <span className='text-yellow'>Gamzway offers under one roof technical knowledge and game creativity.  Here's the reasons customers choose us:</span>
-            <br/><br/>
-            <ul>
-              <li>End-to-- End Game Creation</li>
-              <br/>
-              <li>Customisable UI/UX with 100%</li>
-              <br/>
-              <li>Verified Track Record in Projects for Games</li>
-              <br/>
-              <li> Turnkey solutions with white labels.</li>
-              <br/>
-              <li>Specially Designed Support and Maintenance for You</li>
-              <br/>
-              <li>Agile Methodological Fast Deployment</li>
-              <br/>
-              <li>  Safe Integrations of Codes and Payments</li>
-              <br/>
-              <li>  Scalable Architecture with Reasonably Cost</li>
-              <br/>
-            </ul>
+              <br /><br />
+              <div className='solutions-rummy-grid'>
+                <div className='solutions-rummy-grid-item'>
+                  <img src="/real-time.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Real-time interaction</p>
+                </div>
+                <div className='solutions-rummy-grid-item'>
+                  <img src="/bot.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Smart AI Bots</p>
+                </div>
+                <div className='solutions-rummy-grid-item'>
+                  <img src="/chat.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>In-Game Chats</p>
+                </div>
+                <div className='solutions-rummy-grid-item'>
+                  <img src="/security.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Anti-Fraud Algorithms</p>
+                </div>
+                <div className='solutions-rummy-grid-item'>
+                  <img src="/platform.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Cross-Platform Compatibility</p>
+                </div>
+                <div className='solutions-rummy-grid-item'>
+                  <img src="/social-media.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Social-Media Integration</p>
+                </div>
+              </div>
             </div>
-            <p>Every customer is seen by us as a collaborator, and every project as a shared vision.</p>
           </div>
           <div className='solutions-img'>
             <img src="/tambolaPage/solutions/2.png" alt="" />
@@ -330,28 +373,33 @@ const TambolaGame = () => {
         </div>
       </div>
 
-      <CustomGrid customTitle={crmTitle} customgridItems={crmItems}/>
+      <PromoTools />
 
-      <ContactBanner contactItems={startItems}/>
+      <PlatformSection />
+      <PlatformImg />
 
-      
+      <CustomGrid customTitle={crmTitle} customgridItems={crmItems} />
+
+      <ContactBanner contactItems={startItems} />
+
+
       <div className='faq-section'>
         <FeaturesHeader featuresText={faqTitle} />
 
         <div className='faq-accordion-container'>
-        <AccordionSection data={faqItems} />
+          <AccordionSection data={faqItems} />
         </div>
         <a className="faq-btn" href="">
-            <span className="btn-text">ASK A QUESTION</span>
-            <span className="btn-border"></span>
+          <span className="btn-text">ASK A QUESTION</span>
+          <span className="btn-border"></span>
         </a>
       </div>
 
       <PaymentSection />
 
-      <ProductSection productGrid={productItems}/>
+      <ProductSection productGrid={productItems} />
 
-      <ContactBanner contactItems={launchItems}/>
+      <ContactBanner contactItems={launchItems} />
 
     </div>
   )

@@ -1,197 +1,45 @@
-.platform-section {
+.platform-section{
     width: 100%;
-    position: relative;
-    padding: 80px 0 40px;
-    overflow: hidden;
+    height: auto;
+    margin: 100px 0;
+    padding: 0 50px;
 }
-
-.platform-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
-    pointer-events: none;
-}
-
-.platform-container {
-    width: 100%;
+.platform-section-container{
     max-width: 1140px;
     margin: 0 auto;
-    position: relative;
-    z-index: 1;
-    padding: 0 20px;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
 }
-
-.platform-header {
-    text-align: center;
-    padding: 30px 0;
-    font-size: 30px;
-}
-
-.platform-desc {
-    text-align: center;
-    padding-bottom: 50px;
-    font-size: 18px;
-    color: #d9d9d9;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-.platform-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
-.platform-grid-item {
-    position: relative;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.platform-grid-item.animate-in {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.platform-item-content {
-    background: rgba(17, 17, 17, 0.5);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 217, 0, 0.149);
-    padding: 30px;
-    height: 100%;
+.platform-section-item{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 25%;
     text-align: center;
-    position: relative;
-    z-index: 1;
-    transition: transform 0.3s ease;
 }
-.platform-item-content:hover{
-    border: 1px solid var(--primary-yellow);
-    box-shadow: 0 0 10px var(--primary-yellow);
-    transform: scale(1.05);
+.platform-section-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.image-container {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.platform-grid-item img {
-    width: 180px;
-    height: 180px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-    position: relative;
-    z-index: 1;
-}
-
-.image-glow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.platform-section-line{
+    border-top: 2px solid #ffd90086;
     width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at center, var(--primary-yellow) 0%, transparent 70%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    filter: blur(20px);
-}
-
-.platform-grid-item h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: var(--primary-yellow);
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-}
-
-.platform-grid-item p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #ffffff;
-    margin: 0;
-}
-
-.grid-item-border {
-    position: absolute;
-    inset: 0;
-    padding: 1px;
-    border-radius: 20px;
-    background: linear-gradient(135deg, var(--primary-yellow) 0%, transparent 50%);
-    -webkit-mask: 
-        linear-gradient(#fff 0 0) content-box, 
-        linear-gradient(#fff 0 0);
-    mask: 
-        linear-gradient(#fff 0 0) content-box, 
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    opacity: 0.3;
-    transition: opacity 0.3s ease;
-}
-
-.platform-grid-item:hover .platform-item-content {
-    transform: translateY(-5px);
-}
-
-.platform-grid-item:hover .image-glow {
-    opacity: 0.3;
-}
-
-.platform-grid-item:hover img {
-    transform: scale(1.05);
-}
-
-.platform-grid-item:hover .grid-item-border {
-    opacity: 1;
 }
 
 @media screen and (max-width: 992px) {
-    .platform-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
+    .platform-section-container{
+        flex-direction: column;
+        gap: 2rem;
     }
-}
-
-@media screen and (max-width: 768px) {
-    .platform-section {
-        padding: 60px 0;
-    }
-
-    .platform-desc {
-        font-size: 16px;
-        padding-bottom: 30px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .platform-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .platform-item-content {
-        padding: 25px;
-    }
-
-    .platform-grid-item img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .platform-grid-item h3 {
-        font-size: 20px;
+    .platform-section-item{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }

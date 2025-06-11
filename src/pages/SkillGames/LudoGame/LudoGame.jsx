@@ -10,12 +10,15 @@ import AccordionSection from '../../../components/AccordionSection/AccordionSect
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
 import LandingSection from '../../../components/LandingSection/LandingSection'
+import CustomGrid from '../../../components/CustomGrid/CustomGrid'
 
 import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
 import AboutSection from '../../../components/AboutSection/AboutSection'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import FeaturesBannerV2 from '../../../components/FeaturesBannerV2/FeaturesBannerV2'
 import PromoTools from '../../../components/PromoTools/PromoTools'
+import LudoPlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import FeaturesGridV4 from '../../../components/FeaturesGridV4/FeaturesGridV4'
 
 // const ludocarouselData = [
 //   {
@@ -55,6 +58,24 @@ const landingItems = [
   }
 ]
 
+const landingImages = [
+  {
+    image: "https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif"
+  },
+]
+
 // const landingv2 = [
 //   {
 //     title: "LUDO",
@@ -75,35 +96,35 @@ const aboutItems = [
 //   }
 // ]
 
-// const modesItems = [
-//   {
-//     title:"Modes Of Ludo Game",
-//     description: " We create flexible Ludo game apps featuring many game variants to fit various playing approaches:"
-//   }
-// ]
+const modesItems = [
+  {
+    title: "Modes Of Ludo Game",
+    description: " We create flexible Ludo game apps featuring many game variants to fit various playing approaches:"
+  }
+]
 
-// const modesGrid = [
-//   {
-//     image:"https://beta.mobzway.com/assets/images/classic.png",
-//     title:"Classic Style",
-//     description: "Standard Ludo rules define this classic 2–4 player mode.  Before their opponent, players roll the dice hoping to advance all of their tokens to the home area."
-//   },
-//   {
-//     image:"https://beta.mobzway.com/assets/images/tournaments.png",
-//     title:"Easy Mode",
-//     description: "The Quick Mode shortens the gameplay by lowering token count or move requirements, so allowing users who enjoy faster games less time needed."
-//   },
-//   {
-//     image:"https://beta.mobzway.com/assets/images/timer.png",
-//     title:"Private Table States",
-//     description: " Using special codes, members of a private table can design secret chambers and play with friends or relatives."
-//   },
-//   {
-//     image:"https://beta.mobzway.com/assets/images/tournaments.png",
-//     title:"Tournament States",
-//     description: "This competitive mode consists of entrance-fee-based matches whereby participants may join contests and earn either virtual or actual prizes. These several gameplay styles improve involvement, keep users, and let companies create several income sources. "
-//   },
-// ]
+const modesGrid = [
+  {
+    image: "https://beta.mobzway.com/assets/images/classic.png",
+    title: "Classic Style",
+   
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/tournaments.png",
+    title: "Easy Mode",
+
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/timer.png",
+    title: "Private Table States",
+
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/tournaments.png",
+    title: "Tournament States",
+
+  },
+]
 
 const servicesTitle = [
   {
@@ -111,6 +132,65 @@ const servicesTitle = [
     description: "Strong emphasis on performance, player retention, and monetisation drives our Ludo games' construction.  Important characteristics include:"
   }
 ]
+
+const crmItems = [
+  {
+    title: "Dashboard",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/dashboard.png"
+  },
+  {
+    title: "Game Rooms",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/game-management.png"
+  },
+  {
+    title: "Tournaments",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/tournament-management.png"
+  },
+  {
+    title: "Hand History",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/game-history.png"
+  },
+  {
+    title: "Player Management",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/player-management.png"
+  },
+  {
+    title: "Users & Sub Admins",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/user-management.png"
+  },
+  {
+    title: "Affiliates",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/affiliate-management.png"
+  },
+  {
+    title: "Finance",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/finance-management.png"
+  },
+  {
+    title: "Notifications",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/notificstion-management.png"
+  },
+  {
+    title: "Promotions",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/promotion-management.png"
+  },
+  {
+    title: "Analytics",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/analytics.png"
+  },
+  {
+    title: "Reports",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/reports.png"
+  }
+]
+
+const crmTitle = [
+  {
+    title: "backoffice & CRM",
+    description: "We offer the best BackOffice and CRM tools with our poker software solutions, making game management easy. You can enjoy a user-friendly dashboard and all the essential & valuable features to manage the game rooms."
+  }
+]
+
 
 // const featuresTitle = [
 //   {
@@ -370,6 +450,7 @@ const readyItems = [
 //   } 
 // ]
 
+
 const productItems = [
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Poker.webp",
@@ -392,8 +473,26 @@ const productItems = [
   {
     image: "https://beta.mobzway.com/assets/images/rummy-game-development/Product_Casino.webp",
     title: "Casino Software",
-    description: "For the online casino game entrepreneurs and businesses, Gamzway offers customized casino game solutions.",
+    description: "For the online casino game entrepreneurs and businesses, we offer customized casino solutions.",
     href: "/casino-games"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/rummy-game-development/product_ludo.webp",
+    title: "LUDO Game",
+    description: "If you are looking forward to acquiring online ludo game solutions, Gamzway Technologies is among the most famous ludo app development companies. We offer both ready-to-live and customized gaming solutions for Android, iOS, Web, and Desktop using HTML 5.",
+    href: "/skill-games/ludo"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/rummy-game-development/product_ludo.webp",
+    title: "LUDO Game",
+    description: "If you are looking forward to acquiring online ludo game solutions, Gamzway Technologies is among the most famous ludo app development companies. We offer both ready-to-live and customized gaming solutions for Android, iOS, Web, and Desktop using HTML 5.",
+    href: "/skill-games/ludo"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/rummy-game-development/product_ludo.webp",
+    title: "LUDO Game",
+    description: "If you are looking forward to acquiring online ludo game solutions, Gamzway Technologies is among the most famous ludo app development companies. We offer both ready-to-live and customized gaming solutions for Android, iOS, Web, and Desktop using HTML 5.",
+    href: "/skill-games/ludo"
   },
 ]
 
@@ -422,9 +521,9 @@ const LudoGame = () => {
     <div className='ludo-game'>
 
       <div className='carousel-swiper'>
-        <LandingPageV2 landingItems={landingItems} />
+        <LandingPageV2 landingItems={landingItems} landingImages={landingImages} />
         {/* <img src="https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif" alt="" className="landingImg"/> */}
-        <Swiper
+        {/* <Swiper
           modules={[Autoplay]}
           className='landingImg'
           loop={true}
@@ -444,14 +543,33 @@ const LudoGame = () => {
           <SwiperSlide>
             <img src="https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif" alt="" />
           </SwiperSlide>
-        </Swiper>
+        </Swiper> */}
       </div>
       <AchievementsBanner />
+      <FeaturesBanner />
       <AboutSection aboutItems={aboutItems} />
 
-      <FeaturesBanner />
-      <img src="https://spribe.co/assets/images/av-devices.png" alt="" className='ludo-devices-img' />
-      <FeaturesBannerV2 />
+
+      <PlatformSection />
+      <LudoPlatformImg />
+
+      {/* <div className='modes-section'>
+        <FeaturesHeader featuresText={modesItems} />
+        <div className='modes-grid'>
+          {modesGrid.map((item, index) => (
+            <div className='modes-grid-item' key={index}>
+              <img src={item.image} alt="" />
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </div> */}
+
+      <FeaturesGridV4 featuresGrid={modesGrid} featuresTitle={modesItems} />
+
+
+
       <PromoTools />
 
 
@@ -463,18 +581,7 @@ const LudoGame = () => {
         <p> At Gamzway, we bring to screens with interactive elements, seamless graphics, and easy controls the same thrills.</p>
       </div> */}
 
-      {/* <div className='modes-section'>
-        <FeaturesHeader featuresText={modesItems} />
-        <div className='modes-grid'>
-        {modesGrid.map((item, index) => (
-          <div className='modes-grid-item' key={index}>
-              <img src={item.image} alt="" />
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-          </div>
-          ))}
-        </div>
-      </div> */}
+
 
       <div className='solutions-ludo-section'>
         <div className='solutions-ludo-top'>
@@ -546,6 +653,8 @@ const LudoGame = () => {
         </div>
         <p className='solutions-ludo-p'> These elements not only make gaming interesting but also inspire gamers to come back often, hence enhancing user retention.</p>
       </div>
+
+      <CustomGrid customgridItems={crmItems} customTitle={crmTitle} />
 
       <ContactBanner contactItems={readyItems} />
 

@@ -9,13 +9,37 @@ import PaymentSection from "../../../components/PaymentSection/PaymentSection"
 import PlatformSection from "../../../components/PlatformSection/PlatformSection"
 import ProductSection from "../../../components/ProductSection/ProductSection"
 
+import LandingPageV2 from "../../../components/LandingPageV2/LandingPageV2"
+import FeaturesGridV2 from "../../../components/FeaturesGridV2/FeaturesGridV2"
+import FeaturesBanner from "../../../components/FeaturesBanner/FeaturesBanner"
+import AboutSection from "../../../components/AboutSection/AboutSection"
+import ChooseGrid from "../../../components/ChooseGrid/ChooseGrid"
+import PromoTools from "../../../components/PromoTools/PromoTools"
+import PlatformImg from "../../../components/PlatformImg/PlatformImg"
+
 const landingItems = [
   {
     title: "CALL BREAK GAME DEVELOPMENT",
     description: "Call Break has become a hot item in the digital gaming market as millions of fans across South Asia and growing taste for skill-based real-money card games drive demand.  At Gamzway Technologies, we bring this venerable card game to life with engaging gaming, real-time multiplayer sync, sophisticated CRM tools, and monetising strategies maximising involvement and income.",
-    description2: "Serving gaming startups, businesses, and entrepreneurs develop unique Call Break games across Android, iOS, and Web, we are a reputable Call Break Card Game Development Company.",
     button: "REQUEST A QUOTE",
   }
+]
+const landingImages = [
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
 ]
 const breakservicesTitle = [
   {
@@ -23,19 +47,17 @@ const breakservicesTitle = [
     description: "Our entire Real-money games, freemium apps, fantasy tournaments, or social card gaming—call Break Game Development Services are customised to fit many corporate models.  We have:"
   }
 ]
-
 const regardingcallBreak = [
   {
     title: "ABOUT CALL BREAK GAME",
 
   }
 ]
-
 const hireItems = [
   {
     featuresText:[
       {
-        title:" Hire Developers of Call Break Cards Games"
+        title:" Hire Call Break Card Game Developers"
       }
     ],
     description: "  Highly talented Call Break Card Game developers for hire from Gamzway specialise in multiplayer card game logic, real-time frameworks, and UI animation.",
@@ -167,44 +189,44 @@ const adminfeaturesTitle = [
 const adminfeaturesGrid = [
   {
     image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/player-management.png",
-    title: "",
-    description: "View, block or unblock users in user management."
+    title: "Manage Player Interactions",
+    description: ""
   },
   
   {
     image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/dashboard.png",
-    title: "",
-    description: "Track games performed, player performance, and real-time statistics in gaming analytics."
+    title: "Track Your Statistics",
+    description: ""
   },
   {
     image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/finance-management.png",
-    title: "",
-    description: "Revenue Reports: Control commissions and obtain clear income results"
+    title: "Control Your Commissions",
+    description: ""
   },
   {
     image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/game-management.png",
-    title: "",
-    description: "Change rules, token colours, and dice features in your custom game."
+    title: "Manage Rules and Features",
+    description: ""
   },
   {
     image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/affiliate-management.png",
-    title: "",
-    description: "Set up referral networks, welcome bonuses, and prizes in promotions and offers."
+    title: "Setup Referral Networks",
+    description: ""
   },
   {
     image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/notificstion-management.png",
-    title: "",
-    description: "Push Notifications: Send gamers quick alerts or advertising messages."
+    title: "Push Notifications",
+    description: ""
   },
   {
     image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/user-management.png",
-    title: "",
-    description: "Multi-Admin Access: Assign roles with varying degrees of authorization (e.g., Moderator, Super Admin.)."
+    title: "Multi-Admin Access",
+    description: ""
   },
   {
     image: "https://beta.mobzway.com/assets/images/backoffice-crm-icon/analytics.png",
-    title: "",
-    description: "Enable IP blocking, fraud detection, and suspicious activity alerts in security management."
+    title: "Security Management",
+    description: ""
   }
 ]
 
@@ -290,16 +312,25 @@ const demoItems = [
   }
 ]
 
+const aboutItems = [  
+  {
+    description: "Played conventionally by four players from a normal 52-card deck, Call Break is a strategic trick-taking card game.  Every participant has to call, or bid the total tricks they intend to win.  The basis of scoring is players' declared bid accuracy over several rounds.",
+    image: "https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif"
+  }
+]
+
 
 const CallBreakGame = () => {
   return (
     <div className="callbreak-game">
 
       <div className="landing-callbreak-section">
-      <LandingSection landingItems={landingItems}/>
+      <LandingPageV2 landingItems={landingItems} landingImages={landingImages}/>
       </div>
 
       <AchievementsBanner />
+
+      <AboutSection aboutItems={aboutItems}/>
       
       <div className='break-services-section'>
             <FeaturesHeader featuresText={breakservicesTitle}/>
@@ -355,7 +386,7 @@ const CallBreakGame = () => {
             </div>
       </div>
 
-      <div className='admin-features-section'>
+      {/* <div className='admin-features-section'>
         <FeaturesHeader featuresText={adminfeaturesTitle} />
         <div className='admin-features-grid'>
         {adminfeaturesGrid.map((item, index) => (
@@ -366,49 +397,23 @@ const CallBreakGame = () => {
           </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
-      <div className="regarding-section">
-        <FeaturesHeader featuresText={regardingcallBreak}/>
-        <p>Played conventionally by four players from a normal 52-card deck, Call Break is a strategic trick-taking card game.  Every participant has to "call," or bid the total tricks they intend to win.  The basis of scoring is players' declared bid accuracy over several rounds.</p>
-        <p> Highly interesting is the game because of its strategic depth, tense gameplay, and competitive character.  Digital callbreak-features like leaderboards, fantasy leagues, and wallet connection help to make a product monetizable.</p>
-      </div>
+      <FeaturesBanner />
+
+      <PromoTools />
+
+      <FeaturesGridV2 featuresGrid={adminfeaturesGrid} featuresTitle={adminfeaturesTitle} />
+
+      <PlatformSection/>
+
+      <PlatformImg />
 
       <ContactBanner contactItems={hireItems}/>
 
-      <PlatformSection platformItems={platformItems}/>
 
-      <div className='solutions-ludo2-section bg-1'>
-        <div className='solutions-ludo2-top'>
-          <FeaturesHeader featuresText={chooseTitle}/>
-        </div>
 
-        <div className='solutions-ludo2-bottom'>
-          <div className='solutions-img'>
-            <img src="https://beta.mobzway.com/assets/images/why-choose.png" alt="" style={{ width: '400px', paddingTop: '30px'}}/>
-          </div>
-          <div className='solutions-desc-container'>
-            <br/>
-            <br/>
-            <ul >
-                <li>Over eight years of gaming development expertise, industry experience.</li>
-                <br/>
-                <li>Customisable Solutions with branding and feature control: white-label choices Pre-built solutions lower time-to----market and help to speed deployment.</li>
-                <br/>
-                <li> Perfect team including project managers, QA experts, UI/UX designers, game developers.</li>
-                <br/>
-                <li>Perfect data security compliance with GDPR and encrypted with techniques.</li>
-                <br/>
-                <li>Competitive packages for businesses and startups offer reasonably priced costs.</li>
-                <br/>
-                <li>Dedicated Support: Constant updates, bug corrections, and help following launch.</li>
-                <br/> <br/>
-                <p>Our first priorities are creating things that entertain, interact, and convert.  Using Gamzway lets you create a profitable digital business rather than only a game.</p>  
-            </ul>
-          </div>
-        </div>
-      </div>
-      
+      <ChooseGrid />
 
       <CustomGrid customgridItems={crmItems} customTitle={crmTitle} />
 

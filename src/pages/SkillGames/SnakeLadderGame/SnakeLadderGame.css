@@ -1,5 +1,7 @@
 .landing-snakeladder-section {
-    background-image: url(https://beta.mobzway.com/assets/images/snakeladdergamedevelopment.png);
+    background-image: url('/snakePage/emptyBg.png');
+    background-color:rgba(17, 17, 17, 0.2);
+    background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -126,5 +128,62 @@
 @media screen and (max-width: 992px) {
   .solutions-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+.sol-snake-board-container{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  bottom: 0%;
+  left: 0%;
+}
+.sol-snake-container{
+  position: absolute;
+  width: 60%;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 4;
+  top: 40%;
+  left: 20%;
+  animation: snakefloat 4s ease-in-out infinite;
+}
+.sol-snake-dice-container {
+  position: absolute;
+  width: 20%;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 4;
+}
+
+.sol-snake-dice-1 {
+  top: 30%;
+  left: 0%;
+  animation: diceFloat1 4.5s ease-in-out infinite;
+}
+
+.sol-snake-dice-2 {
+  top: 50%;
+  left: 80%;
+  animation: diceFloat2 4.2s ease-in-out infinite;
+}
+
+@keyframes diceFloat1 {
+  0%, 100% { transform: translateY(0) rotate(-8deg); }
+  50% { transform: translateY(-15px) rotate(-12deg); }
+}
+
+@keyframes diceFloat2 {
+  0%, 100% { transform: translateY(-5px) rotate(-4deg); }
+  50% { transform: translateY(-20px) rotate(-8deg); }
+}
+
+@keyframes snakefloat {
+  0%, 100% { transform: translateY(0) rotate(-8deg); }
+  50% { transform: translateY(-15px) rotate(-12deg); }
+}
+
+@media screen and (max-width: 768px) {
+  .sol-snake-img{
+      display: none !important;
   }
 }

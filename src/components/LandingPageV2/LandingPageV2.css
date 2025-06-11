@@ -1,23 +1,28 @@
-
+.landingv2-section{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: 134px; */
+    height: 100vh;
+    padding: 0 100px;
+    gap: 100px;
+}
 .overlay {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-}
-.landing-text{
+    background: rgba(0, 0, 0, 0);
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 5%;
-    width: 35%;
-    z-index: 4;
+}
+.landingv2-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
+    z-index: 3;
 }
-.landing-text h1{
+.landingv2-text h1{
     font-size: 64px;
     font-family: "Bebas Neue", sans-serif;
     color: var(--secondary-yellow);
@@ -29,13 +34,13 @@
         4px 4px 0 rgba(0,0,0,0.5);
     position: relative;
 }
-.landing-text p{
+.landingv2-text p{
     font-size: 24px;
     color: #fff;
     font-weight: 500;
     width: 100%;
 }
-.landing-btn{
+.landingv2-btn{
     background-color: var(--primary-yellow);
     border: none;
     padding: 10px 25px;
@@ -52,13 +57,13 @@
         2px 2px 0 #000,
         4px 4px 0 rgba(0,0,0,0.5);
 }
-.landing-btn:hover {
+.landingv2-btn:hover {
     transform: translate(-2px, -2px);
     box-shadow: 
         4px 4px 0 #000,
         6px 6px 0 rgba(0,0,0,0.5);
 }
-.landing-btn:before {
+.landingv2-btn:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -72,10 +77,37 @@
     top: 0;
     z-index: 1;
 }
-.landing-btn:hover:before {
+.landingv2-btn:hover:before {
     transform: scaleY(1);
 }
-.landing-btn span {
+.landingv2-btn span {
     position: relative;
     z-index: 2;
+}
+.landingv2Img{
+    width: 100%;
+}
+.landingv2Img img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .landingv2-section{
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 993px) {
+    .landingv2-section{
+        flex-direction: column;
+        padding: 0 20px;
+        margin-top: 134px;
+        gap: 20px;
+    }
+    .landingv2Img{
+        width: 70%;
+    }
+    .landingv2-text p {
+        font-size: 18px;
+    }
 }

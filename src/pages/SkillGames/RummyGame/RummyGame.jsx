@@ -13,6 +13,21 @@ import FeaturesGrid from '../../../components/FeaturesSection/FeaturesGrid/Featu
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
 import RummyCarousel from '../../../components/RummyCarousel/RummyCarousel'
 
+import AboutSection from '../../../components/AboutSection/AboutSection'
+import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+import FeaturesBannerV2 from '../../../components/FeaturesBannerV2/FeaturesBannerV2'
+import PromoTools from '../../../components/PromoTools/PromoTools'
+import PlatformImg from '../../../components/PlatformImg/PlatformImg'
+
+
+const aboutItems = [
+  {
+    description: "Rummy  known for its strategic gaming, intense competition, and real-money possibilities, rummy is among the most often played card games in India and worldwide.",
+    description3: "At Gamzway, we bring to screens with interactive elements, seamless graphics, and easy controls the same thrills.",
+    image: "https://beta.mobzway.com/assets/images/rummy-software/Rummy-11.webp"
+  }
+]
+
 // const rummyCarouselData = [
 //   {
 //     title: "Rummy Game Development Company",
@@ -80,7 +95,7 @@ const contactData = [
         title: " Looking for the ideal rummy game application for your company?"
       }
     ],
-    description: "You found the correct location. Using simple design, seamless gameplay, and loyalty-building elements, Gamzway creates rummy game apps that not only draw players but also keep them involved.\n\nOur solutions fit your monetising plan, whether your goals are adverts, real-money games, or in-app purchases.",
+    description: "Gamzway creates rummy game apps that not only draw players but also keep them involved.\nOur solutions fit your monetising plan, whether your goals are adverts, real-money games, or in-app purchases.",
     href: "",
     hrefText: "Contact Us"
   }
@@ -127,7 +142,7 @@ const platformItems = [
   }
 ]
 
-const featuresTitle =[
+const featuresTitle = [
   {
     title: "What features define our Rummy Game App?",
     description: "We provide a comprehensive gaming experience with features focused on gameplay, user engagement, administration, and security:",
@@ -360,10 +375,10 @@ const crmItems = [
   }
 ]
 
-const crmTitle =[
-  { 
+const crmTitle = [
+  {
     title: "backoffice & CRM",
-    description: "We offer the best BackOffice and CRM tools with our rummy software solutions, making game management easy. You can enjoy a user-friendly dashboard and all the essential & valuable features to manage the game rooms." 
+    description: "We offer the best BackOffice and CRM tools with our rummy software solutions, making game management easy. You can enjoy a user-friendly dashboard and all the essential & valuable features to manage the game rooms."
   }
 ]
 
@@ -372,83 +387,102 @@ const RummyGame = () => {
 
   return (
     <div className='rummy-game'>
-      <div className='rummy-carousel-swiper'>
+      <div className='rummy-carousel-swiper not-animate'>
         {/* <CarouselSection carouselData={rummyCarouselData} /> */}
         <RummyCarousel />
       </div>
 
       <AchievementsBanner />
 
-      <div className='about-rummy-section'>
-        <div className='about-rummy'>
-          <FeaturesHeader featuresText={aboutText} />
-        </div>
+      <AboutSection aboutItems={aboutItems} />
 
+      <div className='about-rummy-section'>
         <div className='about-rummy'>
           <FeaturesHeader featuresText={variationsText} />
         </div>
-
         <RummyAboutGrid />
-    
-        <p className='about-rummy-desc'>Designed with user experience, fairness, and engagement in mind, every version fits mobile and web platforms.</p>
       </div>
+
+      <FeaturesBanner />
+
+      <PromoTools />
+
+      <PlatformImg />
 
       <div className='solutions-rummy-section'>
         <div className='solutions-rummy-top'>
-          <FeaturesHeader featuresText={solutionsTitle}/>
+          <FeaturesHeader featuresText={solutionsTitle} />
         </div>
 
         <div className='solutions-rummy-bottom'>
           <div className='solutions-img slide-cards-container'>
             <div className='sol-rummy-board-container'>
-              <img src="/rummyPage/solutions/1-01.webp" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/1-01.webp" alt="" className="image-stack" />
             </div>
             <div className='sol-rummy-cards-container sol-rummy-card1'>
-              <img src="/rummyPage/solutions/2-01.webp" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/2-01.webp" alt="" className="image-stack" />
             </div>
             <div className='sol-rummy-cards-container sol-rummy-card2'>
-              <img src="/rummyPage/solutions/3-01.webp" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/3-01.webp" alt="" className="image-stack" />
             </div>
             <div className='sol-rummy-cards-container sol-rummy-card3'>
-              <img src="/rummyPage/solutions/4-01.webp" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/4-01.webp" alt="" className="image-stack" />
             </div>
             <div className='sol-rummy-cards-container sol-rummy-card4'>
-              <img src="/rummyPage/solutions/5-01.webp" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/5-01.webp" alt="" className="image-stack" />
             </div>
             <div className='sol-rummy-coins-container sol-rummy-coin1'>
-              <img src="/rummyPage/solutions/6-01.webp" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/6-01.webp" alt="" className="image-stack" />
             </div>
             <div className='sol-rummy-coins-container sol-rummy-coin2'>
-              <img src="/rummyPage/solutions/7-01.webp" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/7-01.webp" alt="" className="image-stack" />
             </div>
             <div className='sol-rummy-coins-container sol-rummy-coin3'>
-              <img src="/rummyPage/solutions/8-01.webp" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/8-01.webp" alt="" className="image-stack" />
             </div>
             <div className='sol-rummy-coins-container sol-rummy-coin4'>
-              <img src="/rummyPage/solutions/9-01.webp" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/9-01.webp" alt="" className="image-stack" />
             </div>
             <div className='sol-rummy-coins-container sol-rummy-coin5'>
-              <img src="/rummyPage/solutions/10-01.webp" alt="" className="image-stack"/>
+              <img src="/rummyPage/solutions/10-01.webp" alt="" className="image-stack" />
             </div>
           </div>
           <div className='solutions-desc-container'>
             <div className='solutions-desc'>
-                  <span>We provide complete online rummy game solutions covering:</span>
-                  <br/><br/>
-                  <ul>
-                    <li>Custom game development based on your company's specifications for UI/UX, game mechanics, and branding.</li>
-                    <br/>
-                    <li>White Label Solutions: Rapid go-to-market, capable, ready-to-launch rummy platforms.</li>
-                    <br/>
-                    <li>KYC modules, wallets, and safe payment gates all integrate real money.</li>
-                    <br/>
-                    <li>Android, iOS, and web single code bases are compatible across platforms.</li>
-                    <br/>
-                    <li>Compliance with international guidelines for random number generation and game fairness guarantees RNG Certification & Fair Play.</li>
-                    <br/>
-                    <li> Strong backend for user management, game tracking, income, and security tracking in Admin & Analytics Panel.</li>
-                  </ul>
-                  <br/><br/>
+              <span>We provide complete online rummy game solutions covering:</span>
+              <br /><br />
+              <div className='solutions-rummy-grid'>
+                <div className='solutions-rummy-grid-item'>
+                  <img src="/real-time.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Real-time interaction</p>
+                </div>
+                <div className='solutions-rummy-grid-item'>
+                  <img src="/bot.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Smart AI Bots</p>
+                </div>
+                <div className='solutions-rummy-grid-item'>
+                  <img src="/chat.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>In-Game Chats</p>
+                </div>
+                <div className='solutions-rummy-grid-item'>
+                  <img src="/security.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Anti-Fraud Algorithms</p>
+                </div>
+                <div className='solutions-rummy-grid-item'>
+                  <img src="/platform.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Cross-Platform Compatibility</p>
+                </div>
+                <div className='solutions-rummy-grid-item'>
+                  <img src="/social-media.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Social-Media Integration</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -456,7 +490,9 @@ const RummyGame = () => {
 
       <ContactBanner contactItems={contactData} />
 
-      <PlatformSection platformItems={platformItems}/>
+      {/* <PlatformSection platformItems={platformItems}/> */}
+
+
 
       <CustomGrid customgridItems={crmItems} customTitle={crmTitle} />
 
@@ -490,7 +526,7 @@ const RummyGame = () => {
       <FeaturesGrid features={featuresItems[0]} featuresTitle={featuresTitle} />
 
 
-      <div className='solutions-rummy-section'>
+      {/* <div className='solutions-rummy-section'>
         <div className='solutions-rummy-top'>
           <FeaturesHeader featuresText={hireTitle}/>
         </div>
@@ -545,8 +581,8 @@ const RummyGame = () => {
             </div>
           </div>
         </div>
-      </div>
-        
+      </div> */}
+
       {/* <div className='solutions-rummy-section bg-1'>
         <div className='solutions-rummy-top'>
           <FeaturesHeader featuresText={chooseTitle}/>
@@ -577,49 +613,49 @@ const RummyGame = () => {
           </div>
         </div>
       </div> */}
-      
-      <div className="standout-section">
-        <div className="standout-container">
-          <div className="standout-header">
-            <FeaturesHeader featuresText={[{ title: standoutTitle[0].title }]} />
-            <p className="standout-description">{standoutTitle[0].description}</p>
+
+      {/* <div className="standout-section">
+          <div className="standout-container">
+            <div className="standout-header">
+              <FeaturesHeader featuresText={[{ title: standoutTitle[0].title }]} />
+              <p className="standout-description">{standoutTitle[0].description}</p>
+            </div>
+            
+            <div className="standout-grid">
+              <div className="standout-card">
+                <div className="card-icon">
+                  <i className="fas fa-rocket"></i>
+                </div>
+                <h3>Fast Development</h3>
+                <p>Get your game to market quickly with our rapid development process</p>
+              </div>
+              
+              <div className="standout-card">
+                <div className="card-icon">
+                  <i className="fas fa-shield-alt"></i>
+                </div>
+                <h3>Secure Platform</h3>
+                <p>Built with advanced security measures and fraud prevention systems</p>
+              </div>
+              
+              <div className="standout-card">
+                <div className="card-icon">
+                  <i className="fas fa-users"></i>
+                </div>
+                <h3>User-Centric</h3>
+                <p>Designed with player experience and engagement in mind</p>
+              </div>
+              
+              <div className="standout-card">
+                <div className="card-icon">
+                  <i className="fas fa-cogs"></i>
+                </div>
+                <h3>Customizable</h3>
+                <p>Flexible solutions that adapt to your business needs</p>
+              </div>
+            </div>
           </div>
-          
-          <div className="standout-grid">
-            <div className="standout-card">
-              <div className="card-icon">
-                <i className="fas fa-rocket"></i>
-              </div>
-              <h3>Fast Development</h3>
-              <p>Get your game to market quickly with our rapid development process</p>
-            </div>
-            
-            <div className="standout-card">
-              <div className="card-icon">
-                <i className="fas fa-shield-alt"></i>
-              </div>
-              <h3>Secure Platform</h3>
-              <p>Built with advanced security measures and fraud prevention systems</p>
-            </div>
-            
-            <div className="standout-card">
-              <div className="card-icon">
-                <i className="fas fa-users"></i>
-              </div>
-              <h3>User-Centric</h3>
-              <p>Designed with player experience and engagement in mind</p>
-            </div>
-            
-            <div className="standout-card">
-              <div className="card-icon">
-                <i className="fas fa-cogs"></i>
-              </div>
-              <h3>Customizable</h3>
-              <p>Flexible solutions that adapt to your business needs</p>
-            </div>
-          </div>
-        </div>
-      </div>
+        </div> */}
 
       <ContactBanner contactItems={requestItems} />
 
@@ -641,17 +677,18 @@ const RummyGame = () => {
           <AccordionSection data={faqAccordionData} />
         </div>
         <a className="faq-btn" href="">
-            <span className="btn-text">ASK A QUESTION</span>
-            <span className="btn-border"></span>
+          <span className="btn-text">ASK A QUESTION</span>
+          <span className="btn-border"></span>
         </a>
       </div>
 
+      <div className='payment-div not-animate'>
+        <PaymentSection />
+      </div>
 
-      <PaymentSection />
+      <ProductSection productGrid={productItems} />
 
-      <ProductSection productGrid={productItems}/>
-
-      <ContactBanner contactItems={demoItems}/>
+      <ContactBanner contactItems={demoItems} />
 
     </div>
   )

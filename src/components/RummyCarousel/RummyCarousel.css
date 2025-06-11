@@ -1,17 +1,23 @@
 
-.rummy-carousel-wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  padding: 20px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  box-sizing: border-box;
+.rummy-carousel-container .swiper{
+    overflow: visible;
 }
+.rummy-carousel-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    }
 
+.rummy-carousel-controls{
+    margin-top: 100px;
+}
 
 .slide-cards-container {
     position: relative;
@@ -19,6 +25,7 @@
     height: 100%;
     display: block;
     cursor: pointer;
+    overflow: visible;
 }
 .slide-cards-content {
     position: relative;
@@ -336,7 +343,7 @@
     .rummy-carousel-wrapper{
         margin: 80px auto;
     }
-    .carousel-controls{
+    .rummy-carousel-controls{
         display: none;
     }
     .slide-content{

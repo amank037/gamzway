@@ -8,15 +8,41 @@ import ContactBanner from '../../../components/ContactBanner/ContactBanner'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
+import FeaturesGridV3 from '../../../components/FeaturesGridV3/FeaturesGridV3'
+import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+import PromoTools from '../../../components/PromoTools/PromoTools'
+import PlatformSection from '../../../components/PlatformSection/PlatformSection'
+import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
+import SnakeLadderLanding from './SnakeLadderLanding/SnakeLadderLanding'
+import PlatformImg from '../../../components/PlatformImg/PlatformImg'
 
 const landingItems = [
   {
     title: "SNAKE LADDER GAME DEVELOPMENT",
-    description: "Among the first and most often used board games available for everyone, Snake and Ladder game is played by all ages. Inspired by historic Indian conventions, the game presents a balance between virtue (ladders) and vice (snakes), therefore delivering both entertainment value and life lessons. Over decades, this venerable board game has developed from a physical game to an exciting digital experience accessible on desktop computers, tablets, and smartphones.",
-    description2: "Our area of expertise at Gamzway is developing outstanding Snake Ladder Game applications combining contemporary tech components with retro gameplay. Whether your business is established or startup, our scalable, safe, and flexible solutions help you to present a competitive and successful Snake Ladder game platform.",
+    description: "Over decades, this venerable board game has developed from a physical game to an exciting digital experience accessible on desktop computers, tablets, and smartphones.",
+    description2: "Our area of expertise at Gamzway is developing outstanding Snake Ladder Game applications combining contemporary tech components with retro gameplay. ",
     button: "REQUEST A QUOTE",
   }
 ]
+
+// const landingImages = [
+//   {
+//     image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+//   },
+//   {
+//     image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+//   },
+//   {
+//     image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+//   },
+//   {
+//     image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+//   },
+//   {
+//     image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+//   },
+// ]
 
 const variationTitle = [{
   title: "Variations in Snake Ladder Game"
@@ -24,28 +50,24 @@ const variationTitle = [{
 
 const variationGrid = [
   {
-    title: "Classic Mode",
-    description: "Ten by ten board conventional gameplay using ladders, dice rolls, and snakes in Classic Mode."
+    title: "2 Player",
+    description: ""
   },
   {
-    title: "Multiplayer Mode",
-    description: "Play multiplayer mode with friends or random users real time online."
+    title: "4 Player",
+    description: ""
   },
   {
-    title: "Tournament Mode",
-    description: "In Tournament Mode, enter or organise tournaments with rankings and awards."
+    title: "Private Room",
+    description: ""
   },
   {
-    title: "Timed Mode",
-    description: "Finish the game in the given time to get bonuses in timed mode."
+    title: "Pass/Play",
+    description: ""
   },
   {
-    title: "Custom Themes",
-    description: "Original graphic designs for custom-themed boards include from jungle, ocean, fantasy, and sci-fi themes."
-  },
-  {
-    title: "Power-Up Mode",
-    description: "Special cards or boosters like immunity against snakes or more dice rolls set Power-Up Mode on active."
+    title: "Private Room For Other Players",
+    description: ""
   }
 ]
 
@@ -120,17 +142,10 @@ const hireTitle = [{
   title: "Why did your Snake Ladder Game originate from Gamzway?"
 }]
 
-const crmTitle = [
-  { 
-    title: "BackOffice & CRM",
-    description: "Every amazing gaming experience is a result of a strong back office behind it. Our administrative panel and CRM offer complete control and management capabilities for your Snake Ladder game platform." 
-  }
-]
-
 const crmItems = [
   {
-    title: "Player Management",
-    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/player-management.png"
+    title: "Dashboard",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/dashboard.png"
   },
   {
     title: "Game Rooms",
@@ -141,8 +156,47 @@ const crmItems = [
     image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/tournament-management.png"
   },
   {
-    title: "Income Monitoring",
+    title: "Hand History",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/game-history.png"
+  },
+  {
+    title: "Player Management",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/player-management.png"
+  },
+  {
+    title: "Users & Sub Admins",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/user-management.png"
+  },
+  {
+    title: "Affiliates",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/affiliate-management.png"
+  },
+  {
+    title: "Finance",
     image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/finance-management.png"
+  },
+  {
+    title: "Notifications",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/notificstion-management.png"
+  },
+  {
+    title: "Promotions",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/promotion-management.png"
+  },
+  {
+    title: "Analytics",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/analytics.png"
+  },
+  {
+    title: "Reports",
+    image: "https://www.mobzway.com/assets/images/backoffice-crm-icon/reports.png"
+  }
+]
+
+const crmTitle = [
+  {
+    title: "backoffice & CRM",
+    description: "We offer the best BackOffice and CRM tools with our tambola software solutions, making game management easy. You can enjoy a user-friendly dashboard and all the essential & valuable features to manage the game rooms."
   }
 ]
 
@@ -230,11 +284,11 @@ const SnakeLadderGame = () => {
   return (
     <div className="snakeladder-game">
       <div className="landing-snakeladder-section">
-        <LandingSection landingItems={landingItems}/>
+        <SnakeLadderLanding landingItems={landingItems} />
       </div>
       <AchievementsBanner />
 
-      <div>
+      {/* <div>
         <FeaturesHeader featuresText={variationTitle}/>
         <div className="variations-grid">
           {variationGrid.map((item, index) => (
@@ -244,11 +298,17 @@ const SnakeLadderGame = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
+      <FeaturesGridV3 featuresGridV3={variationGrid} featuresTitleV3={variationTitle} />
+      <FeaturesBanner />
+      <ChooseGrid />
+      <PromoTools />
+      <PlatformSection />
+      <PlatformImg />
 
-      <FeaturesGrid features={featuresContent} featuresTitle={featuresTitle} />
+      {/* <FeaturesGrid features={featuresContent} featuresTitle={featuresTitle} /> */}
 
-      <div>
+      {/* <div>
         <FeaturesHeader featuresText={solutionsTitle}/>
         <p className="solutions-intro">Whether your business is gaming startup, casino operator, or entrepreneur, we will assist you to create a game platform unique in the cutthroat online gaming scene.</p>
         <div className="solutions-grid">
@@ -266,42 +326,74 @@ const SnakeLadderGame = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
+
 
       <div className='solutions-rummy-section'>
         <div className='solutions-rummy-top'>
-          <FeaturesHeader featuresText={hireTitle}/>
+          <FeaturesHeader featuresText={hireTitle} />
         </div>
 
         <div className='solutions-rummy-bottom'>
           <div className='solutions-desc-container'>
             <div className='solutions-desc'>
-            <br/><br/>
-            <span className='text-yellow'>Globally, gamzway is trusted for creating strong and interesting game apps. Here's the reason we are the first choice:</span>
-            <br/><br/>
-            <ul>
-              <li>Skilled game developers, UI/UX designers, and testers make up experienced teams.</li>
-              <br/>
-              <li>Agile methodology: quick and adaptable development approach.</li>
-              <br/>
-              <li>Custom Features: Completely designed UI and gameplay.</li>
-              <br/>
-              <li>Scalable architecture expands naturally as your user base increases.</li>
-              <br/>
-              <li>Constant updates, bug repairs, and speed improvements define post-launch support.</li>
-              <br/>
-            </ul>
+              <br /><br />
+
+              <br /><br />
+              <div className='solutions-rummy-grid'>
+                <div className='solutions-rummy-grid-item'>
+                  <img src="/real-time.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Live Interaction</p>
+                </div>
+                <div className='solutions-rummy-grid-item'>
+                  <img src="/bot.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Smart AI Bots</p>
+                </div>
+                <div className='solutions-rummy-grid-item'>
+                  <img src="/chat.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>In-Game Chats</p>
+                </div>
+                <div className='solutions-rummy-grid-item'>
+                  <img src="/security.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Anti-Fraud Algorithms</p>
+                </div>
+                <div className='solutions-rummy-grid-item'>
+                  <img src="/platform.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Cross-Platform Compatibility</p>
+                </div>
+                <div className='solutions-rummy-grid-item'>
+                  <img src="/social-media.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Social-Media Integration</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div className='solutions-img'>
-            <img src="https://beta.mobzway.com/assets/images/rummy-game-development/hire-rummy-game-developer.webp" alt="" />
+          <div className='solutions-img sol-snake-img slide-cards-container'>
+            <div className='sol-snake-board-container'>
+              <img src="/snakePage/solutions/board.png" alt="" className="image-stack" />
+            </div>
+            <div className='sol-snake-dice-container sol-snake-dice-1'>
+              <img src="/snakePage/solutions/dice-1.png" alt="" className="image-stack" />
+            </div>
+            <div className='sol-snake-dice-container sol-snake-dice-2'>
+              <img src="/snakePage/solutions/dice-2.png" alt="" className="image-stack" />
+            </div>
+            <div className='sol-snake-container'>
+              <img src="/snakePage/solutions/snake.png" alt="" className="image-stack" />
+            </div>
           </div>
         </div>
       </div>
 
-      <CustomGrid customTitle={crmTitle} customgridItems={crmItems}/>
+      <CustomGrid customTitle={crmTitle} customgridItems={crmItems} />
 
-      <ContactBanner contactItems={startItems}/>
+      <ContactBanner contactItems={startItems} />
 
       <div className='faq-section'>
         <FeaturesHeader featuresText={faqTitle} />
@@ -310,15 +402,15 @@ const SnakeLadderGame = () => {
           <AccordionSection data={faqItems} />
         </div>
         <a className="faq-btn" href="">
-            <span className="btn-text">ASK A QUESTION</span>
-            <span className="btn-border"></span>
+          <span className="btn-text">ASK A QUESTION</span>
+          <span className="btn-border"></span>
         </a>
       </div>
 
       <PaymentSection />
-      <ProductSection productGrid={productItems}/>
+      <ProductSection productGrid={productItems} />
 
-      <ContactBanner contactItems={launchItems}/>
+      <ContactBanner contactItems={launchItems} />
     </div>
   )
 }

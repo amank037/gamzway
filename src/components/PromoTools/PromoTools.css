@@ -15,6 +15,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+    padding: 0 50px;
 }
 .promo-card1, .promo-card2{
     position: relative;
@@ -49,4 +50,10 @@
     color: #000;
     z-index: 2;
     position:relative;
+}
+
+@media screen and (max-width: 768px) {
+    .promo-card2{
+        width: 100%;
+    }
 }

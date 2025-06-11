@@ -6,23 +6,26 @@
 }
 
 .product-section-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    margin-top: 40px;
+    width: 100%;
+}
+
+.product-section-grid .swiper-slide{
+    height: auto;
 }
 
 .product-section-grid-item {
     background: rgba(255, 215, 0, 0.1);
     border: 1px solid rgba(255, 215, 0, 0.3);
     border-radius: 15px;
-    overflow: hidden;
     transition: all 0.3s ease;
+    text-decoration: none;
+    min-height:100%;
+}
+.product-section-grid-item a{
     text-decoration: none;
 }
 
 .product-section-grid-item:hover {
-    transform: translateY(-10px);
     background: rgba(255, 215, 0, 0.2);
 }
 
@@ -39,8 +42,9 @@
 }
 
 .product-section-grid-item h3 {
+    text-transform: uppercase;
     color: var(--primary-yellow);
-    font-size: 16px;
+    font-size: 24px;
     margin: 20px 0;
     font-weight: 600;
     text-align: center;

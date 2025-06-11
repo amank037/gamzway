@@ -4,7 +4,6 @@ function PromoTools() {
   return (
     <div className='promo-tools'>
         <div className='promo-container'>
-            <h1>Promo Tools</h1>
             <div className='promo-cards-container'>
                 <div className='promo-card1'>
                     <img src="https://spribe.co/assets/images/av-rain.png" alt="" />
