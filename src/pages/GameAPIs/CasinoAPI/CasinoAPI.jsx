@@ -9,6 +9,14 @@ import ProductSection from '../../../components/ProductSection/ProductSection'
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 
+import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
+import FeaturesGridV3 from '../../../components/FeaturesGridV3/FeaturesGridV3'
+import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import PromoTools from '../../../components/PromoTools/PromoTools'
+import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+import CustomGrid from '../../../components/CustomGrid/CustomGrid'
+
 const landingItems = [
   {
     title: "CASINO API DEVELOPMENT COMPANY",
@@ -25,8 +33,8 @@ const platformFeatures = {
       points: [
         "Slots, table games, card games, jackpots, and live dealer choices",
         "Real-time multiplayer support with interactive tables and lobbies",
-        "Integration of smart artificial intelligence for intelligent opposition",
-        "In-built technologies for fair play and compliance management"
+        "Integration of smart artificial intelligence",
+        "In-built technologies for fair play"
       ]
     },
     {
@@ -195,13 +203,19 @@ const CasinoAPI = () => {
       </div>
       <AchievementsBanner />
 
+      <FeaturesBanner />
+
       <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
 
-      <PlatformSection platformItems={platformItems}/>
+      <PromoTools />
+      <PlatformSection />
+      <PlatformImg />
+      <CustomGrid/>
+      <ChooseGrid />
 
       <ContactBanner contactItems={findItems}/>
 
-      <div className='choose-section'>
+      {/* <div className='choose-section'>
         <FeaturesHeader featuresText={chooseTitle}/>
         <div className='choose-container'>
           <div className='choose-grid poker-choose-grid'>
@@ -235,7 +249,7 @@ const CasinoAPI = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className='solutions-poker-section'>
         <div className='solutions-poker-top'>

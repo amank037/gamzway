@@ -10,10 +10,56 @@ import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
-import PlatformImg from '../../../components/PlatformImg/PlatformImg'
+import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 import AboutSection from '../../../components/AboutSection/AboutSection'
 import FeaturesGrid from '../../../components/FeaturesSection/FeaturesGrid/FeaturesGrid'
+import PromoTools from '../../../components/PromoTools/PromoTools'
 
+const platformTitle = [
+  {
+    title: "WHITE LABEL SERVICES AT GAMZWAY"
+  }
+]
+const platformFeatures = {
+  sections: [
+    {
+      title: "END-TO-END SUPPORT",
+      points: [
+        "Game hosting and regular maintenance",
+        "Backend and analytics integration",
+        "On-demand customer support",
+        "Continuous updates and bug fixes"
+      ]
+    },
+    {
+      title: "WHITE LABEL PROCESS",
+      points: [
+        "Choose from a library of our  browser games",
+        "Add your brand’s logo, colors, and messaging",
+        "Optional integration with LMS, CRM, etc",
+        "Testing, QA, and live in 5-15 business days"
+      ]
+    },
+    {
+      title: "GAMEPLAY OPTIONS",
+      points: [
+        "Single-player or multiplayer mode",
+        "Multilingual support for global reach",
+        "Cross-platform real-time play",
+        "Private or public tables"
+      ]
+    },
+    {
+      title: "GAME MANAGEMENT",
+      points: [
+        "Dedicated dashboard for content updates",
+        "Upload and manage branded assets",
+        "Access gameplay reports and analytics",
+        "Control user roles and access permissions"
+      ]
+    }
+  ]
+}
 const platformItems = [
   {
     featuresText: [
@@ -233,19 +279,17 @@ const WhiteLabelCasino = () => {
 
       <AchievementsBanner />
 
-      <AboutSection aboutItems={aboutItems} />
+      {/* <AboutSection aboutItems={aboutItems} /> */}
 
       <FeaturesBanner />
 
-      {/* <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} /> */}
-
-      <ChooseGrid />
-
-      <PlatformSection platformItems={platformItems} />
-
+      <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
+      <PromoTools />
+      <PlatformSection />
       <PlatformImg />
-
-      <CustomGrid customgridItems={crmItems} customTitle={crmTitle} />
+      <CustomGrid/>
+      <ChooseGrid/>
+      <CustomGrid/>
 
       <PaymentSection />
 

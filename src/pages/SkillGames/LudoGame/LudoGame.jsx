@@ -130,7 +130,7 @@ const modesGrid = [
 
 const servicesTitle = [
   {
-    title: " Ludo Game App's salient features",
+    title: " Ludo Game's salient features",
     description: "Strong emphasis on performance, player retention, and monetisation drives our Ludo games' construction.  Important characteristics include:"
   }
 ]

@@ -7,30 +7,38 @@ import FeaturesHeader from '../../../components/FeaturesSection/FeaturesHeader/F
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
+import PlatformSection from '../../../components/PlatformSection/PlatformSection'
+
+import FeaturesGridV5 from '../../../components/FeaturesGridV5/FeaturesGridV5'
+import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import PromoTools from '../../../components/PromoTools/PromoTools'
+import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+import CustomGrid from '../../../components/CustomGrid/CustomGrid'
 
 const landingItems = [
   {
     title: "ANDAR BAHAR API DEVELOPMENT",
-    description: "Andar Bahar is more than just a card game; it's a cultural event that comes from India's heritage of gaming.   We have given this classic a new data on life by making it a part of a digital experience that combines old and new.   We will explain what makes our Andar Bahar game different, go over the client's needs, point out the most significant features, speak about the challenges we handled, and show you the final outcome in this overview.   We want you to feel the love and care we put into every line of code and every pixel on the screen.",
+    description: "Andar Bahar is more than just a card game; it's a cultural event that comes from India's heritage of gaming. We have given this classic a new data on life by making it a part of a digital experience that combines old and new.   We will explain what makes our Andar Bahar game different, go over the client's needs, point out the most significant features, speak a outcome in this overview.",
     button: "REQUEST A QUOTE",
   }
 ]
 
 const platformTitle = [
   {
-    title: "LUDO GAME API FEATURES"
+    title: "ANDAR BAHAR API FEATURES"
   }
 ]
 
 const platformFeatures = {
   sections: [
     {
-      title: "GAME OVERVIEW",
+      title: "GAMEPLAY OVERVIEW",
       points: [
-        "Classic Andar Bahar with fast-paced digital gameplay",
-        "Real-time multiplayer across mobile and desktop",
-        "High-quality visuals and responsive animations",
-        "Smooth, cross-platform play on Android, iOS, and browsers"
+        "Classic Andar Bahar with fast-paced gameplay",
+        "Real-time multiplayer across all devices",
+        "High-quality visuals and animations",
+        "Smooth, cross-platform play."
       ]
     },
     {
@@ -48,7 +56,7 @@ const platformFeatures = {
         "Instant skill-based matchmaking",
         "Cross-platform support with uniform controls",
         "Realistic audio and haptic feedback",
-        "Player customization for tables and card backs"
+        "Player customization for tables and cards"
       ]
     },
     {
@@ -58,42 +66,6 @@ const platformFeatures = {
         "Integration with Stripe, Paytm, Razorpay",
         "Multi-factor authentication",
         "Secure session handling"
-      ]
-    },
-    {
-      title: "ADMIN DASHBOARD",
-      points: [
-        "Ban, warn, or flag suspicious accounts",
-        "Real-time analytics for player activity",
-        "Transaction monitoring for fraud detection",
-        "Easily update banners, events, and skins"
-      ]
-    },
-    {
-      title: "BRANDING AND CUSTOMIZATION",
-      points: [
-        "White-label platform for partners",
-        "Theming support for festivals and events",
-        "Personalized experiences for better retention",
-        "No code changes needed for branding"
-      ]
-    },
-    {
-      title: "DESIGN CHALLENGES SOLVED",
-      points: [
-        "Responsive layout that adapts to screen sizes",
-        "Progressive animation loading for performance",
-        "Lightweight and smooth experience on all devices",
-        "UI remains clear and uncluttered"
-      ]
-    },
-    {
-      title: "FINAL RESULTS",
-      points: [
-        "4.5+ star ratings on app stores",
-        "High user satisfaction and retention",
-        "Handles high traffic without lag",
-        "Seasonal themes boosted engagement"
       ]
     }
   ]
@@ -192,45 +164,18 @@ const AndarBaharAPI = () => {
       </div>
       <AchievementsBanner />
 
+      <FeaturesBanner />
+
       <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
 
-      <ContactBanner contactItems={findItems}/>
+      
+      <PromoTools />
+      <PlatformSection />
+      <PlatformImg />
+      <CustomGrid/>
+      <ChooseGrid />
 
-      <div className='choose-section'>
-        <FeaturesHeader featuresText={chooseTitle}/>
-        <div className='choose-container'>
-          <div className='choose-grid ludo-choose-grid'>
-            <div className='choose-card'>
-              <div className='card-icon'>
-                <i className="fas fa-gamepad"></i>
-              </div>
-              <h3>Dynamic Game Lobby</h3>
-              <p>Dynamic and real-time game lobby featuring tournament schedules, match previews, and join statuses.</p>
-            </div>
-            <div className='choose-card'>
-              <div className='card-icon'>
-                <i className="fas fa-chart-line"></i>
-              </div>
-              <h3>Back Office Panel</h3>
-              <p>Track player statistics, match history, wallet balances, and commissions from back-office panels.</p>
-            </div>
-            <div className='choose-card'>
-              <div className='card-icon'>
-                <i className="fas fa-palette"></i>
-              </div>
-              <h3>Multiple Themes</h3>
-              <p>Multiple board designs—classic, fantasy, festive, modern—to suit a range of tastes.</p>
-            </div>
-            <div className='choose-card'>
-              <div className='card-icon'>
-                <i className="fas fa-users"></i>
-              </div>
-              <h3>CRM Integration</h3>
-              <p>Segment players, automate messaging, run focused campaigns, and honour devoted users in CRM integration.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ContactBanner contactItems={findItems}/>
 
       <div className="ludo-faq-section">
         <FeaturesHeader featuresText={faqTitle}/>

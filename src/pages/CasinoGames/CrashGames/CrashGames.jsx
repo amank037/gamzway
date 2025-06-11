@@ -374,7 +374,7 @@ const CrashGames = () => {
       </div>
       <AchievementsBanner />
       
-      <FeaturesGridV3 featuresGridV3={featuresGridV3} featuresTitleV3={featuresTitleV3} />
+      {/* <FeaturesGridV3 featuresGridV3={featuresGridV3} featuresTitleV3={featuresTitleV3} /> */}
 
       <div className='solutions-crash-section'>
         <div className='solutions-crash-top'>

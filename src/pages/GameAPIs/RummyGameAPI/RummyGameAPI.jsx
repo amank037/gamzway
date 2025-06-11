@@ -10,11 +10,18 @@ import ProductSection from '../../../components/ProductSection/ProductSection'
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 
+import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
+import FeaturesGridV3 from '../../../components/FeaturesGridV3/FeaturesGridV3'
+import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import PromoTools from '../../../components/PromoTools/PromoTools'
+import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+
 const landingItems = [
   {
     title: "RUMMY GAME API DEVELOPMENT",
-    description: "Rummy Game is a culture, a legacy, and today a digital trend inviting players all around that transcends mere traditional card games. Designed to enable you easily establish and run a completely functional, flexible, and interesting Rummy platform, the Rummy Game API built by Gamzway Whether you are launching from nothing or growing your current online gaming company, our API lets you provide flawless real-money gaming experiences with safe transactions, simple design, and thorough support.",
-    description2: "Designed with modularity, adaptability, and seamlessness in mind, the Rummy API offers several Rummy variants, game modes, and monetisation mechanisms, therefore enabling you to serve a broad range of players from casual gamers to experienced professionals.",
+    description: "Rummy Game is a culture, a legacy, and today a digital trend inviting players all around that transcends mere traditional card games. Designed to enable you easily establish and run a completely functional, flexible, and interesting Rummy platform.",
+    description2: "Designed with modularity, adaptability, and seamlessness in mind, the Rummy API offers several Rummy variants, game modes, and monetisation mechanisms.",
     button: "REQUEST A QUOTE",
   }
 ]
@@ -196,14 +203,19 @@ const RummyGameAPI = () => {
         <LandingSection landingItems={landingItems}/>
       </div>
       <AchievementsBanner />
+      <FeaturesBanner />
 
       <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
 
-      <PlatformSection platformItems={platformItems}/>
+      <PromoTools />
+      <PlatformSection />
+      <PlatformImg />
+      <CustomGrid/>
+      <ChooseGrid />
 
       <ContactBanner contactItems={findItems}/>
 
-      <div className='choose-section'>
+      {/* <div className='choose-section'>
         <FeaturesHeader featuresText={chooseTitle}/>
         <div className='choose-container'>
           <div className='choose-grid rummy-choose-grid'>
@@ -237,9 +249,9 @@ const RummyGameAPI = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className='solutions-rummy-section'>
+      {/* <div className='solutions-rummy-section'>
         <div className='solutions-rummy-top'>
           <FeaturesHeader featuresText={servicesTitle}/>
         </div>
@@ -302,7 +314,7 @@ const RummyGameAPI = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="rummy-faq-section">
         <FeaturesHeader featuresText={faqTitle}/>

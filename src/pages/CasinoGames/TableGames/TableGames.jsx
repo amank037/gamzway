@@ -10,6 +10,7 @@ import AccordionSection from '../../../components/AccordionSection/AccordionSect
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
 
+import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
 import FeaturesGridV3 from '../../../components/FeaturesGridV3/FeaturesGridV3'
 import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 import PromoTools from '../../../components/PromoTools/PromoTools'
@@ -19,10 +20,27 @@ import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 const landingItems = [
   {
     title: "TABLE GAMES DEVELOPMENT",
-    description: " Table games have been a pillar of casinos since they provide players with interesting gaming relying on different skill-set, chance, or both.  Table games are now available to players globally with RNG (Random Number Generator) technology, guaranteeing fairness, openness, and excitement in every action with the change to digital gaming.  At Gamzway, we bring these experiences online and provide completely tailored Table RNG Game Development solutions meant for worldwide users.",
+    description: " Table games have been a pillar of casinos since they provide players with interesting gaming relying on different skill-set, chance, or both. At Gamzway, we bring these experiences online and provide completely tailored Table RNG Game Development solutions meant for worldwide users.",
     description2:" Our profound developers create innovative and compatible table gaming environments to fit desktop and mobile users, whether they traditionally unique card games or traditional games like Blackjack and Roulette.",
     button: "REQUEST A QUOTE",
   }
+]
+const landingImages = [
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
+  {
+    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+  },
 ]
 
 const featuresTitleV3 =[
@@ -276,7 +294,7 @@ const TableGames = () => {
   return (
     <div className="table-game">
       <div className="landing-table-section">
-      <LandingSection landingItems={landingItems}/>
+        <LandingPageV2 landingItems={landingItems} landingImages={landingImages}/>
       </div>
 
       <AchievementsBanner />

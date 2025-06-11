@@ -9,11 +9,19 @@ import ProductSection from '../../../components/ProductSection/ProductSection'
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 
+import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
+import FeaturesGridV3 from '../../../components/FeaturesGridV3/FeaturesGridV3'
+import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import PromoTools from '../../../components/PromoTools/PromoTools'
+import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+import CustomGrid from '../../../components/CustomGrid/CustomGrid'
+
 const landingItems = [
   {
     title: "SKILL GAMES API DEVELOPMENT",
-    description: "Gamzway is a top provider of Skill Game API solutions. They help organisations create and grow safe, customisable, and cross-platform skill-based games like rummy, poker, ludo, and more. We give you the tools and experienced help you need to thrive in the real money gambling business.",
-    description2:"Gamzway's Skill Game API platform has everything you need to start, run, and grow an online skill gaming business.  Our skill gameAPI platform was developed with developers,digital operators, and business owners in mind. It has real-time data, customisable game rules, secure transactions, and tools that help you follow the law.  Our API makes sure that integration is smooth and can grow with your business, no matter if you are focusing on mobile, web, or desktop users.  We can give you everything you need, from skill game modules that are ready to go to powerful backend systems.",
+    description: "Gamzway's Skill Game API platform has everything you need to start, run, and grow an online skill gaming business.  We give you the tools and experienced help you need to thrive in the real money gambling business.",
+    description2:"Our skill gameAPI platform was developed with developers,digital operators, and business owners in mind. We can give you everything you need, from skill game modules that are ready to go to powerful backend systems.",
     button: "REQUEST A QUOTE",
   }
 ]
@@ -28,28 +36,28 @@ const platformFeatures = {
     {
       title: "SKILL GAMES PLATFORM",
       points: [
-        "Everything you need to start, run, and grow an online skill gaming business",
-        "Designed for developers, digital operators, and business owners",
-        "Real-time data, customizable game rules, and secure transactions",
+        "Everything you need to start, run, and grow a business",
+        "Designed for digital operators, and business owners",
+        "Real-time data and secure transactions",
         "Scalable API for mobile, web, and desktop integrations"
       ]
     },
     {
-      title: "INTEGRATION AND SCALABILITY",
+      title: "INTEGRATION & SCALABILITY",
       points: [
-        "Smooth API integration process tailored for different platforms",
-        "Support for legal compliance and industry regulations",
-        "Ready-to-use skill game modules and backend systems",
+        "Smooth API integration process tailored for your needs",
+        "Support for legal compliance and regulations",
+        "Ready-to-use skill game modules and systems",
         "Flexible growth-oriented architecture"
       ]
     },
     {
-      title: "TABLE LAYOUT AND GAME FUNCTIONALITY",
+      title: "TABLE LAYOUT & FUNCTIONALITY",
       points: [
-        "Simple and effective table configurations for all player levels",
+        "Simple table configurations for all player levels",
         "Responsive interfaces that adapt to any screen size",
-        "Live updates, smart scoring, and rule customization",
-        "Supports various skill-based genres like rummy, poker, ludo, and carrom"
+        "Live updates, smart scoring, rule customization",
+        "Supports skill-games like rummy, poker, ludo, carrom"
       ]
     },
     {
@@ -187,13 +195,19 @@ const SkillGamesAPI = () => {
       </div>
       <AchievementsBanner />
 
+      <FeaturesBanner />
+
       <FeaturesGrid  features={platformFeatures} featuresTitle={platformTitle} />
 
-      <PlatformSection platformItems={platformItems}/>
+      <PromoTools />
+      <PlatformSection />
+      <PlatformImg />
+      <CustomGrid/>
+      <ChooseGrid />
 
       <ContactBanner contactItems={findItems}/>
 
-      <div className='choose-section'>
+      {/* <div className='choose-section'>
         <FeaturesHeader featuresText={chooseTitle}/>
         <div className='choose-container'>
           <div className='choose-grid poker-choose-grid'>
@@ -227,9 +241,9 @@ const SkillGamesAPI = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className='solutions-poker-section'>
+      {/* <div className='solutions-poker-section'>
         <div className='solutions-poker-top'>
           <FeaturesHeader featuresText={servicesTitle}/>
         </div>
@@ -258,7 +272,7 @@ const SkillGamesAPI = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="ludo-faq-section">
         <FeaturesHeader featuresText={faqTitle}/>

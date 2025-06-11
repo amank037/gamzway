@@ -8,6 +8,14 @@ import ContactBanner from '../../../components/ContactBanner/ContactBanner'
 import FeaturesGrid from '../../../components/FeaturesSection/FeaturesGrid/FeaturesGrid'
 import FeaturesHeader from '../../../components/FeaturesSection/FeaturesHeader/FeaturesHeader'
 
+import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
+import FeaturesGridV5 from '../../../components/FeaturesGridV5/FeaturesGridV5'
+import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import PromoTools from '../../../components/PromoTools/PromoTools'
+import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+import CustomGrid from '../../../components/CustomGrid/CustomGrid'
+
 const platformItems = [
   {
     featuresText:[
@@ -91,15 +99,6 @@ const platformTitle = [
 const platformFeatures = {
   sections: [
     {
-      title: "CROSS-PLATFORM TECHNOLOGY",
-      points: [
-        "Games built using HTML5, WebGL, Node.js for scalability",
-        "No downloads required – runs on all major browsers",
-        "Seamless compatibility across desktop and mobile devices",
-        "Fast, secure, and stable performance on all platforms"
-      ]
-    },
-    {
       title: "END-TO-END SUPPORT",
       points: [
         "Game hosting and regular maintenance",
@@ -111,55 +110,28 @@ const platformFeatures = {
     {
       title: "WHITE LABEL PROCESS",
       points: [
-        "Choose from a library of ready-to-use browser games",
+        "Choose from a library of our  browser games",
         "Add your brand’s logo, colors, and messaging",
-        "Optional integration with LMS, CRM, or internal tools",
-        "Testing, QA, and go-live in 5–15 business days"
-      ]
-    },
-    {
-      title: "INCLUDED IN EVERY PACKAGE",
-      points: [
-        "Custom splash and loading screens",
-        "Branded logos, themes, and hidden domains",
-        "Admin panel access",
-        "Integrated analytics dashboard"
+        "Optional integration with LMS, CRM, etc",
+        "Testing, QA, and live in 5-15 business days"
       ]
     },
     {
       title: "GAMEPLAY OPTIONS",
       points: [
-        "Single-player or multiplayer mode availability",
+        "Single-player or multiplayer mode",
         "Multilingual support for global reach",
         "Cross-platform real-time play",
-        "Tailored for engagement and retention"
+        "Private or public tables"
       ]
     },
     {
-      title: "CUSTOM GAME CREATION",
-      points: [
-        "Work with our team to create partial or full custom games",
-        "Designs tailored to onboarding, promotion, or training",
-        "Custom graphics, UI/UX, characters, and sounds",
-        "Aligned with brand goals and audience engagement"
-      ]
-    },
-    {
-      title: "GAME & CONTENT MANAGEMENT",
+      title: "GAME MANAGEMENT",
       points: [
         "Dedicated dashboard for content updates",
         "Upload and manage branded assets",
         "Access gameplay reports and analytics",
         "Control user roles and access permissions"
-      ]
-    },
-    {
-      title: "BUSINESS FLEXIBILITY",
-      points: [
-        "Ideal for startups and enterprises alike",
-        "Flexible hosting: self-hosted or Gamzway-hosted",
-        "Scalable infrastructure to grow with your needs",
-        "Reliable service tailored to your business model"
       ]
     }
   ]
@@ -182,9 +154,15 @@ const WhiteLabelSkillGames = () => {
       </div>
       <AchievementsBanner />
 
+      <FeaturesBanner />  
+
       <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
 
-      <PlatformSection platformItems={platformItems}/>
+      <PromoTools />
+      <PlatformSection />
+      <PlatformImg />
+      <CustomGrid/>
+      <ChooseGrid />
 
       <div className='choose-section'>
         <FeaturesHeader featuresText={chooseTitle}/>

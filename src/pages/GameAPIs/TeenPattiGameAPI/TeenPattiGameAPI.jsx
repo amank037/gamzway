@@ -11,10 +11,18 @@ import AccordionSection from '../../../components/AccordionSection/AccordionSect
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
 
+import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
+import FeaturesGridV5 from '../../../components/FeaturesGridV5/FeaturesGridV5'
+import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import PromoTools from '../../../components/PromoTools/PromoTools'
+import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+
 const landingItems = [
   {
     title: "TEEN PATTI GAME API DEVELOPMENT",
-    description: "In 2025, Teen Patti continues to dominate the online card gaming scene, captivating millions of players daily with its blend of strategy, chance, and cultural appeal. As mobile gaming evolves, one key driver behind Teen Patti’s sustained popularity is seamless real-time gameplay, powered by Live Teen Patti APIs. According to recent gaming industry reports, card-based games like Teen Patti account for over 30% of mobile gaming activity in South Asia alone, highlighting the game’s massive user base and commercial potential. But what makes these apps truly engaging? The answer lies in the power of Live Teen Patti APIs—flexible, scalable source codes that bring real-time multiplayer functionality to life. Gamzway Technologies stands out as a leading Teen Patti software provider, offering cutting-edge solutions for card gaming businesses. We provide a variety of Teen Patti game variations such as No Limit Classic, Pot Limit Classic, and VIP Teen Patti.",
+    description: "In 2025, Teen Patti continues to dominate the online card gaming scene. According to recent gaming industry reports, card-based games like Teen Patti account for over 30% of mobile gaming activity in South Asia alone, highlighting the game’s massive user base and commercial potential.",
+    description2:" Gamzway Technologies stands out as a leading Teen Patti software provider, offering cutting-edge solutions for card gaming businesses. We provide a variety of Teen Patti game variations such as No Limit Classic, Pot Limit Classic, and VIP Teen Patti.",
     button: "REQUEST A QUOTE",
   }
 ]
@@ -70,10 +78,10 @@ const typesGrid = [
 const gameplayFeatures = {
   sections: [
     {
-      title: "GAME PLAY / TABLE CONFIGURATION",
+      title: "Table Configurations",
       points: [
-        "Open Table Gameplay: Open tables are where players from around the world can join and play together. These tables are public, allowing users to experience real-time multiplayer gaming.",
-        "Private Table Gameplay: Want to keep the game between friends or known players? Our private table feature lets you create a secure and exclusive Teen Patti room. ",
+        "Open Table Gameplay: These tables are public, allowing users to experience real-time multiplayer gaming.",
+        "Private Table Gameplay: Our private table feature lets you create a secure and exclusive Teen Patti room. ",
       ]
     },
     {
@@ -87,21 +95,20 @@ const gameplayFeatures = {
     {
       title: "Advanced Gameplay Rules",
       points: [
-        "Players take turns choosing to play blind (without seeing cards) or play seen (after viewing cards).",
+        "Players take turns choosing to play blind or play seen.",
         "You can bet, raise, or fold depending on your strategy.",
-        "If two players are left, either can request a show to compare cards.",
         "The player with the higher-ranking hand wins the pot."
       ]
     },
     {
       title: "Card Hand Rankings (High to Low)",
       points: [
-        "Trail (Three of a kind) – Example: A-A-A",
-        "Pure Sequence (Straight Flush) – Example: 4-5-6 of Hearts",
-        "Sequence (Straight) – Example: 7-8-9",
-        "Color (Flush) – Any three cards of the same suit",
-        "Pair – Two cards of the same rank",
-        "High Card – Highest single card if no other hand is formed"
+        "Trail (Three of a kind)",
+        "Pure Sequence (Straight Flush)",
+        "Sequence (Straight)",
+        "Color (Flush)",
+        "Pair",
+        "High Card"
       ]
     }
   ]
@@ -303,18 +310,26 @@ const TeenPattiGameAPI = () => {
       </div>
       <AchievementsBanner />
 
-      <div>
+      {/* <div>
         <FeaturesHeader featuresText={typesTitle}/>
         <AboutGrid aboutGrid={typesGrid}/>
-      </div>
+      </div> */}
+
+      <FeaturesBanner />
+
+      <FeaturesGridV5 featuresGrid={typesGrid} featuresTitle={typesTitle} />
 
       <FeaturesGrid features={gameplayFeatures} featuresTitle={gameplayTitle} />
 
-      <PlatformSection platformItems={platformItems}/>
+      <PromoTools />
+      <PlatformSection />
+      <PlatformImg />
+      <CustomGrid/>
+      <ChooseGrid />
 
       <ContactBanner contactItems={findItems}/>
 
-      <div className='choose-section'>
+      {/* <div className='choose-section'>
         <FeaturesHeader featuresText={chooseTitle}/>
         <div className='choose-container'>
           <div className='choose-grid teenpatti-choose-grid'>
@@ -348,9 +363,7 @@ const TeenPattiGameAPI = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <CustomGrid customgridItems={crmItems} customTitle={crmTitle} />
+      </div> */}
 
       <div className='faq-section'>
         <FeaturesHeader featuresText={faqTitle} />

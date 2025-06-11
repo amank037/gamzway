@@ -10,6 +10,13 @@ import ProductSection from '../../../components/ProductSection/ProductSection'
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 
+import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
+import FeaturesGridV3 from '../../../components/FeaturesGridV3/FeaturesGridV3'
+import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import PromoTools from '../../../components/PromoTools/PromoTools'
+import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+
 const landingItems = [
   {
     title: "POKER GAME API DEVELOPMENT",
@@ -24,37 +31,37 @@ const platformFeatures = {
     {
       title: "CORE PLATFORM FEATURES",
       points: [
-        "Cross-platform compatibility available for Android, iOS, Web, and desktop",
-        "Scalable architecture designed for maximum concurrent players",
-        "Real-time synchronizing guarantees flawless updates across devices",
-        "Low-latency performance with 99.9% uptime worldwide server infrastructure"
+        "Cross-platform compatibility ",
+        "Scalable architecture",
+        "Real-time synchronizing",
+        "Low-latency performance"
       ]
     },
     {
       title: "TABLE LAYOUT AND GAMEPLAY",
       points: [
         "Custom tables with 2, 6, or 9-seater options",
-        "Multiple game variants: Texas Hold'em, Omaha, 5 Card Draw, Sit & Go",
-        "Customizable timer settings, blinds, buy-ins, and betting restrictions",
-        "AI Bots support for 24/7 gameplay accessibility"
+        "Texas Hold'em, Omaha, 5 Card Draw, Sit & Go",
+        "Customizable settings and restrictions",
+        "AI Bots support"
       ]
     },
     {
       title: "CUSTOMIZATION AND BRANDING",
       points: [
-        "White-label UI that captures your brand character",
-        "Custom avatars, chip designs, and backgrounds",
-        "Multiple lobby designs and animations",
+        "White-label UI",
+        "Custom avatars and profile designs",
+        "Multiple lobby designs",
         "Festival and event-centered theme updates"
       ]
     },
     {
       title: "MANAGEMENT AND ANALYTICS",
       points: [
-        "Complete back-office management dashboard",
-        "Real-time player activity tracking",
-        "Rack analysis and commission management",
-        "Sophisticated reporting systems for player insights"
+        "Back-Office Management",
+        "Live Player Tracking",
+        "Rack analysis and management",
+        "Sophisticated reporting systems"
       ]
     }
   ]
@@ -192,49 +199,17 @@ const PokerGameAPI = () => {
       </div>
       <AchievementsBanner />
 
+      <FeaturesBanner />
       <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
-
-      <PlatformSection platformItems={platformItems}/>
+      <PromoTools />
+      <PlatformSection />
+      <PlatformImg />
+      <CustomGrid/>
+      <ChooseGrid />
 
       <ContactBanner contactItems={findItems}/>
 
-      <div className='choose-section'>
-        <FeaturesHeader featuresText={chooseTitle}/>
-        <div className='choose-container'>
-          <div className='choose-grid poker-choose-grid'>
-            <div className='choose-card'>
-              <div className='card-icon'>
-                <i className="fas fa-gamepad"></i>
-              </div>
-              <h3>Dynamic Game Lobby</h3>
-              <p>Multiple lobby designs with custom animations, avatars, and real-time game status updates.</p>
-            </div>
-            <div className='choose-card'>
-              <div className='card-icon'>
-                <i className="fas fa-chart-line"></i>
-              </div>
-              <h3>Back Office Panel</h3>
-              <p>Comprehensive dashboard for player tracking, rake analysis, and commission management.</p>
-            </div>
-            <div className='choose-card'>
-              <div className='card-icon'>
-                <i className="fas fa-palette"></i>
-              </div>
-              <h3>Multiple Themes</h3>
-              <p>Customizable themes with festival and event-centered updates to keep the experience fresh.</p>
-            </div>
-            <div className='choose-card'>
-              <div className='card-icon'>
-                <i className="fas fa-users"></i>
-              </div>
-              <h3>CRM Integration</h3>
-              <p>Advanced player segmentation, promotional campaigns, and automated communication tools.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className='solutions-poker-section'>
+      {/* <div className='solutions-poker-section'>
         <div className='solutions-poker-top'>
           <FeaturesHeader featuresText={servicesTitle}/>
         </div>
@@ -265,7 +240,7 @@ const PokerGameAPI = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="ludo-faq-section">
         <FeaturesHeader featuresText={faqTitle}/>

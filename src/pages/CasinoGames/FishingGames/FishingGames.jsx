@@ -10,6 +10,12 @@ import FeaturesGrid from '../../../components/FeaturesSection/FeaturesGrid/Featu
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 
+import FeaturesGridV3 from '../../../components/FeaturesGridV3/FeaturesGridV3'
+import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import PromoTools from '../../../components/PromoTools/PromoTools'
+import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+
 const landingItems = [
   {
     title: "FISHING GAMES DEVELOPMENT COMPANY",
@@ -19,33 +25,31 @@ const landingItems = [
   }
 ]
 
-const typesItems = [
-  {
-    featuresText:[
+
+const featuresTitleV3 =[
       {
         title: "Variations of Fishing Games",
         description: "We develop a wide spectrum of fishing games to fit every taste and demographic:"
       }
-    ],
-    platformGrid:[
+    ]
+const featuresGridV3 = [
       {
         image: "/fishingPage/arcade fishing.webp",
         title: "Arcade Fishing Games",
-        description: "Fast-paced and packed of action, arcade fishing games are ideal for individuals who desire quick gameplay and instant rewards."
+
       },
       {
         image: "/fishingPage/skilled based games.webp",
         title: "Skill-Based Games",
-        description: "Perfect for competitive players, these games capture fish by calling accuracy, timing, and experience."
+
       },
       {
         image: "/fishingPage/multiplaying fishing game.webp",
         title: "Multiplayer Fishing Games",
-        description: "Players might enter rooms, compete in real-time, and climb leaderboards for incentives and bragging rights."
+
       }
     ]
-  }
-]
+
 
 // const featuresItems = [
 //   {
@@ -331,11 +335,15 @@ const FishingGames = () => {
       </div>
       <AchievementsBanner />
       
-      <div className="fishing-types">
+      {/* <div className="fishing-types">
         <PlatformSection platformItems={typesItems}/>
-      </div>
+      </div> */}
 
-      <div className='solutions-fishing-section'>
+      <FeaturesBanner />
+
+      <FeaturesGridV3 featuresGridV3={featuresGridV3} featuresTitleV3={featuresTitleV3}/>
+
+      {/* <div className='solutions-fishing-section'>
         <div className='solutions-fishing-top'>
           <FeaturesHeader featuresText={hireTitle}/>
         </div>
@@ -371,20 +379,22 @@ const FishingGames = () => {
             <img src="/fishingPage/lap.webp" alt="" />
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <PromoTools />
+      <PlatformSection />
+      <PlatformImg />
+      <CustomGrid/>
+      <ChooseGrid />
 
       <ContactBanner contactItems={contactItems}/>
 
-      <PlatformSection platformItems={platformItems}/>
-
-      <CustomGrid customTitle={crmTitle} customgridItems={crmItems}/>
-
-      <div className="development-process-section">
+      {/* <div className="development-process-section">
         <FeaturesGrid 
           features={developmentFeatures}
           featuresTitle={developmentTitle}
         />
-      </div>
+      </div> */}
 
       <div className="faq-section">
         <FeaturesHeader featuresText={faqTitle}/>

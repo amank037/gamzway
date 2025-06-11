@@ -10,10 +10,16 @@ import AccordionSection from '../../../components/AccordionSection/AccordionSect
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
 
+import FeaturesGridV5 from '../../../components/FeaturesGridV5/FeaturesGridV5'
+import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import PromoTools from '../../../components/PromoTools/PromoTools'
+import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+
 const landingItems = [
   {
     title: "LUDO GAME API DEVELOPMENT",
-    description: "Ludo is a cultural phenomenon embraced by millions of people throughout millennia and across countries, not only a board game.  Ludo has resurfaced as a major component in informal multiplayer entertainment as mobile gaming stretches its digital sphere.  Gamzway provides a strong and scalable Ludo Game API designed to satisfy high-performance needs while maintaining games fair, fluid, and interesting therefore enabling gaming companies with this potential.",
+    description: "Gamzway provides a strong and scalable Ludo Game API designed to satisfy high-performance needs while maintaining games fair, fluid, and interesting therefore enabling gaming companies with this potential.",
     description2:"Entrepreneurs and businesses wishing to enter or grow in the online board game market will find our Ludo Game API a plug-and-play solution.  Our API provides a technical and creative edge whether you are expanding an existing product line or starting your platform.",
     button: "REQUEST A QUOTE",
   }
@@ -24,37 +30,37 @@ const platformFeatures = {
     {
       title: "CORE PLATFORM FEATURES",
       points: [
-        "Scalable architecture lets you easily accommodate rising player bases",
-        "Smooth, lag-free gameplay across devices in real-time multiplayer sync",
-        "Seamlessly handle player deposits, wins, and bonuses in your wallet",
-        "Safe, anti-cheat systems for openness and trust are included in Fair Play Engine"
+        "Scalable architecture ",
+        "Smooth, lag-free gameplay across devices",
+        "Seamlessly handle player economy",
+        "Safe, anti-cheat systems"
       ]
     },
     {
-      title: "GAME MODES AND CUSTOMIZATION",
+      title: "GAME MODES & CUSTOMIZATION",
       points: [
-        "Classic, quick, private rooms, and tournament choices are among the customisable game modes",
-        "Real Money Gaming's (RMG) support: completely following industry norms",
-        "Provide games in regional languages to localise user experience by means of bilingual support",
-        "Multiple theme options and customizable UI elements"
+        "Classic, quick, private rooms, and tournaments.",
+        "Real Money Gaming's (RMG) support",
+        "Provide games in regional languages",
+        "Multiple theme options and UI elements"
       ]
     },
     {
       title: "GAMEPLAY MECHANICS",
       points: [
-        "Table layouts for two- and four-players with real-time animations and emotes",
-        "Based on RNG (Random Number Generator) fairness, dice roll engine",
-        "Safety zones, auto mobility, kill count monitoring, turn timer, and more in game flow mechanics",
-        "Advanced matchmaking system for balanced gameplay"
+        "Table layouts for two- and four-players",
+        "Based on RNG fairness, dice roll engine",
+        "Safety zones, auto mobility, and more in game flow mechanics",
+        "Advanced matchmaking systems for balanced gameplay"
       ]
     },
     {
-      title: "PLAYER ENGAGEMENT FEATURES",
+      title: "FEATURES FOR PLAYERS",
       points: [
-        "Emojis and in-game chats help to increase player interactivity and involvement",
-        "Comprehensive leaderboard and achievement system",
-        "Regular tournaments and special events support",
-        "Social features including friend lists and player profiles"
+        "Emojis and in-game chats",
+        "Comprehensive leaderboard system",
+        "Regular tournaments and special events",
+        "Friend lists and player profiles"
       ]
     }
   ]
@@ -241,54 +247,26 @@ const productItems = [
 const LudoGameAPI = () => {
   return (
     <div className="ludo-api-game">
+
       <div className="landing-ludo-api-section">
         <LandingSection landingItems={landingItems}/>
       </div>
+
       <AchievementsBanner />
+
+      <FeaturesBanner />
 
       <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
 
-      <PlatformSection platformItems={platformItems}/>
+      <PromoTools />
+      <PlatformSection />
+      <PlatformImg />
+      <CustomGrid/>
+      <ChooseGrid />
 
       <ContactBanner contactItems={findItems}/>
 
-      <div className='choose-section'>
-        <FeaturesHeader featuresText={chooseTitle}/>
-        <div className='choose-container'>
-          <div className='choose-grid ludo-choose-grid'>
-            <div className='choose-card'>
-              <div className='card-icon'>
-                <i className="fas fa-gamepad"></i>
-              </div>
-              <h3>Dynamic Game Lobby</h3>
-              <p>Dynamic and real-time game lobby featuring tournament schedules, match previews, and join statuses.</p>
-            </div>
-            <div className='choose-card'>
-              <div className='card-icon'>
-                <i className="fas fa-chart-line"></i>
-              </div>
-              <h3>Back Office Panel</h3>
-              <p>Track player statistics, match history, wallet balances, and commissions from back-office panels.</p>
-            </div>
-            <div className='choose-card'>
-              <div className='card-icon'>
-                <i className="fas fa-palette"></i>
-              </div>
-              <h3>Multiple Themes</h3>
-              <p>Multiple board designs—classic, fantasy, festive, modern—to suit a range of tastes.</p>
-            </div>
-            <div className='choose-card'>
-              <div className='card-icon'>
-                <i className="fas fa-users"></i>
-              </div>
-              <h3>CRM Integration</h3>
-              <p>Segment players, automate messaging, run focused campaigns, and honour devoted users in CRM integration.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className='solutions-ludo-section'>
+      {/* <div className='solutions-ludo-section'>
         <div className='solutions-ludo-top'>
           <FeaturesHeader featuresText={servicesTitle}/>
         </div>
@@ -340,7 +318,7 @@ const LudoGameAPI = () => {
           </div>
         </div>
        
-      </div>
+      </div> */}
 
       <div className="ludo-faq-section">
         <FeaturesHeader featuresText={faqTitle}/>
@@ -357,6 +335,7 @@ const LudoGameAPI = () => {
       <ProductSection productGrid={productItems}/>
 
       <ContactBanner contactItems={beginItems}/>
+
     </div>
   )
 }
