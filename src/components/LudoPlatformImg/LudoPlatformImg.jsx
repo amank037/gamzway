@@ -15,7 +15,7 @@ function PlatformImg() {
         </motion.div>
         
         <div className='ludo-lap'>
-            <img src="/ludoPage/devices/ludo-lap.png" alt="" className='ludo-lap-img'/>
+            <img src="/ludoPage/devices/ludo-lap2.png" alt="" className='ludo-lap-img'/>
         </div>
         </div>
     )
