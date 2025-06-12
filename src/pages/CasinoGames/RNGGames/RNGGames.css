@@ -1,6 +1,6 @@
 .landing-rng-section {
-    background-image: url(https://beta.mobzway.com/assets/images/provider-img.png);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url(/rngPage/bg.png);
+    background-color: rgba(0, 0, 0, 0.0);
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;

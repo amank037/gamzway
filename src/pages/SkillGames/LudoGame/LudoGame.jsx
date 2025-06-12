@@ -56,7 +56,8 @@ const landingItems = [
     title: "LUDO GAME",
     description: " Ludo is a sentimental event that brings friends and family together, not only a board game. ",
     description2: "At Gamzway Technologies, we enable companies to use modern Ludo game development tools catered to Android, iOS, desktop, and web, so harnessing the everlasting appeal of Ludo.",
-    button: "GET STARTED"
+    button: "GET STARTED",
+    image:"https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif"
   }
 ]
 
@@ -549,7 +550,7 @@ const LudoGame = () => {
         </Swiper> */}
       </div>
       {/* <AchievementsBanner /> */}
-      <AboutSection aboutItems={aboutItems} />
+      {/* <AboutSection aboutItems={aboutItems} /> */}
       <FeaturesBanner />
 
 

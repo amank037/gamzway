@@ -375,6 +375,14 @@ const RNGGames = () => {
     <div className="rng-game">
       <div className="landing-rng-section">
       <LandingSection landingItems={landingItems}/>
+        <div>
+          <div className='rng-over-1'>
+            <img src="/rngPage/bgOver1.png" alt="" />
+          </div>
+          <div>
+            <img src="/rngPage/bgOver2.png" alt="" />
+          </div>
+        </div>
       </div>
       <AchievementsBanner />
 
