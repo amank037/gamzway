@@ -16,7 +16,31 @@ function LudoLanding({ landingItems}) {
                         <p>{item.description2}</p>
                     </div>
 
-                    <div className='ludo-about-card'>
+                    <div className='solutions-img-1'>
+                            <div className='sol-ludo-board-container'>
+                            <img src="/ludoPage/solutions/1-01.webp" alt="" className="image-stack" />
+                            </div>
+                            <div className='sol-ludo-pieces-container sol-ludo-piece1'>
+                            <img src="/ludoPage/solutions/2-01.webp" alt="" className="image-stack" />
+                            </div>
+                            <div className='sol-ludo-pieces-container sol-ludo-piece2'>
+                            <img src="/ludoPage/solutions/3-01.webp" alt="" className="image-stack" />
+                            </div>
+                            <div className='sol-ludo-pieces-container sol-ludo-piece3'>
+                            <img src="/ludoPage/solutions/4-01.webp" alt="" className="image-stack" />
+                            </div>
+                            <div className='sol-ludo-pieces-container sol-ludo-piece4'>
+                            <img src="/ludoPage/solutions/5-01.webp" alt="" className="image-stack" />
+                            </div>
+                            <div className='sol-ludo-dice-container sol-ludo-dice1'>
+                            <img src="/ludoPage/solutions/6-01.webp" alt="" className="image-stack" />
+                            </div>
+                            <div className='sol-ludo-dice-container sol-ludo-dice2'>
+                            <img src="/ludoPage/solutions/7-01.webp" alt="" className="image-stack" />
+                            </div>
+                        </div>
+
+                    {/* <div className='ludo-about-card'>
                         <div className='ludo-about-card-img-section'>
                             <img src={item.image} alt="" className='ludo-about-card-logo'/>
                             <img src="https://spribe.co/pf.6ace4e8705f279ee.svg" alt="" className='ludo-about-card-fair'/>
@@ -35,7 +59,7 @@ function LudoLanding({ landingItems}) {
                                 <h3>Desktop, Tablet, Mobile</h3>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             ))}
             {/* <Swiper

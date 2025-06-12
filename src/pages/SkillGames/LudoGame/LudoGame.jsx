@@ -54,7 +54,7 @@ import LudoLanding from './LudoLanding/LudoLanding'
 const landingItems = [
   {
     title: "LUDO GAME",
-    description: " Ludo is a sentimental event that brings friends and family together, not only a board game. ",
+    description: "  Rich design, real-time multiplayer interaction, and monetising options combined in our Ludo game apps help companies increase user base and income.  We provide dependable, scalable, reasonably priced development tools whether your needs call for a pre-built solution ready to use or a bespoke Ludo program. ",
     description2: "At Gamzway Technologies, we enable companies to use modern Ludo game development tools catered to Android, iOS, desktop, and web, so harnessing the everlasting appeal of Ludo.",
     button: "GET STARTED",
     image:"https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif"
@@ -561,7 +561,7 @@ const LudoGame = () => {
           <FeaturesHeader featuresText={servicesTitle} />
         </div>
         <div className='solutions-ludo-bottom'>
-          <div className='solutions-img-1'>
+          {/* <div className='solutions-img-1'>
             <div className='sol-ludo-board-container'>
               <img src="/ludoPage/solutions/1-01.webp" alt="" className="image-stack" />
             </div>
@@ -583,7 +583,28 @@ const LudoGame = () => {
             <div className='sol-ludo-dice-container sol-ludo-dice2'>
               <img src="/ludoPage/solutions/7-01.webp" alt="" className="image-stack" />
             </div>
-          </div>
+          </div> */}
+
+                    <div className='ludo-about-card'>
+                        <div className='ludo-about-card-img-section'>
+                            <img src="https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif" alt="" className='ludo-about-card-logo'/>
+                            <img src="https://spribe.co/pf.6ace4e8705f279ee.svg" alt="" className='ludo-about-card-fair'/>
+                        </div>
+                        <div className='ludo-about-card-info'>
+                            <div className='ludo-about-card-info-item'>
+                                <p>Game Type</p>
+                                <h3>Mini Game</h3>
+                            </div>
+                            <div className='ludo-about-card-info-item'>
+                                <p>Return To Player (RTP)</p>
+                                <h3>97%</h3>
+                            </div>
+                            <div className='ludo-about-card-info-item'>
+                                <p>Devices</p>
+                                <h3>Desktop, Tablet, Mobile</h3>
+                            </div>
+                        </div>
+                    </div>
 
           <div className='solutions-desc-container'>
             <div className='solutions-desc'>

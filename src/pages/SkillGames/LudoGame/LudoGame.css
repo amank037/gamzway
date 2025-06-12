@@ -151,7 +151,7 @@
 /* .solutions-ludo-section .solutions-ludo-bottom .solutions-img img{
     max-width: 400px;
 } */
-.solutions-img-1 {
+/* .solutions-img-1 {
     position: relative;
     width: 100%;
     max-width: 450px;
@@ -186,7 +186,7 @@
 
 .sol-ludo-board-container {
     position: absolute;
-    width: 90%;
+    width: 100%;
     height: auto;
     z-index: 1;
     bottom: 10%;
@@ -354,7 +354,7 @@
     width: 100%;
     height: auto;
     object-fit: contain;
-}
+} */
 .solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container{
     
     padding: 0 20px;
