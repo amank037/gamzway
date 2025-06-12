@@ -548,44 +548,12 @@ const LudoGame = () => {
           </SwiperSlide>
         </Swiper> */}
       </div>
-      <AchievementsBanner />
-      <FeaturesBanner />
+      {/* <AchievementsBanner /> */}
       <AboutSection aboutItems={aboutItems} />
+      <FeaturesBanner />
 
-
-      <PlatformSection />
-      <LudoPlatformImg />
-      <CustomGrid/>
-
-      {/* <div className='modes-section'>
-        <FeaturesHeader featuresText={modesItems} />
-        <div className='modes-grid'>
-          {modesGrid.map((item, index) => (
-            <div className='modes-grid-item' key={index}>
-              <img src={item.image} alt="" />
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-            </div>
-          ))}
-        </div>
-      </div> */}
 
       <FeaturesGridV4 featuresGrid={modesGrid} featuresTitle={modesItems} />
-
-
-
-      <PromoTools />
-
-
-
-      {/* <div className='regarding-section'>
-        <FeaturesHeader featuresText={regardingItems} />
-        <p>Four players of the multiplayer board game Ludo race their tokens from start to finish depending on dice rolls.  Originally from the Indian game "Pachisi," Ludo is still a household favourite in all age groups and has gained popularity all around.  For smartphone users, its simplicity, chance-based excitement, and social gaming fit.</p>
-        <p>Particularly post-2020, online ludo games have witnessed a tremendous increase in participation as consumers search for simple but entertaining games to play with friends, family, or random opponent.  Live multiplayer, in-game chat, bonus awards, and customising choices abound in the digital form to keep consumers returning for more.</p>
-        <p> At Gamzway, we bring to screens with interactive elements, seamless graphics, and easy controls the same thrills.</p>
-      </div> */}
-
-
 
       <div className='solutions-ludo-section'>
         <div className='solutions-ludo-top'>
@@ -657,6 +625,41 @@ const LudoGame = () => {
         <p className='solutions-ludo-p'> These elements not only make gaming interesting but also inspire gamers to come back often, hence enhancing user retention.</p>
       </div>
 
+      <PlatformSection />
+      <LudoPlatformImg />
+      <CustomGrid/>
+
+      {/* <div className='modes-section'>
+        <FeaturesHeader featuresText={modesItems} />
+        <div className='modes-grid'>
+          {modesGrid.map((item, index) => (
+            <div className='modes-grid-item' key={index}>
+              <img src={item.image} alt="" />
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </div> */}
+
+
+
+{/* 
+      <PromoTools /> */}
+
+
+
+      {/* <div className='regarding-section'>
+        <FeaturesHeader featuresText={regardingItems} />
+        <p>Four players of the multiplayer board game Ludo race their tokens from start to finish depending on dice rolls.  Originally from the Indian game "Pachisi," Ludo is still a household favourite in all age groups and has gained popularity all around.  For smartphone users, its simplicity, chance-based excitement, and social gaming fit.</p>
+        <p>Particularly post-2020, online ludo games have witnessed a tremendous increase in participation as consumers search for simple but entertaining games to play with friends, family, or random opponent.  Live multiplayer, in-game chat, bonus awards, and customising choices abound in the digital form to keep consumers returning for more.</p>
+        <p> At Gamzway, we bring to screens with interactive elements, seamless graphics, and easy controls the same thrills.</p>
+      </div> */}
+
+
+
+
+
 
       <ChooseGrid />
 
@@ -719,7 +722,7 @@ const LudoGame = () => {
       </div> */}
 
 
-      <PaymentSection />
+      {/* <PaymentSection /> */}
 
       <ProductSection productGrid={productItems} />
 
