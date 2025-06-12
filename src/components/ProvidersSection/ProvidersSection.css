@@ -109,3 +109,8 @@
     height: 40px;
     max-width: 200px;     
 }
+
+.providers-slider .swiper-wrapper{
+    align-items: center;
+    transition-timing-function : linear;
+}
