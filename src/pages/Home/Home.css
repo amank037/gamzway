@@ -357,6 +357,10 @@
     margin-bottom: 20px;
 }
 
+.platform-feature-section{
+    padding: 40px 0;
+}
+
 .platform-feature-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -368,7 +372,7 @@
 
 .platform-feature-card {
     background: transparent;
-    padding: 25px;
+    padding: 0px;
     text-align: center;
     transition: all 0.3s ease;
     position: relative;

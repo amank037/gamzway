@@ -3,13 +3,14 @@
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
+    padding-top: 40px;
     flex-direction: column;
     align-items: center;
 }
 .product-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
     margin: 40px auto;
     width: 100%;
     max-width: 1000px;
@@ -18,7 +19,7 @@
 }
 
 .product-grid-item {
-    width: calc(33% - 30px);
+    width: calc(33% - 60px);
     position: relative;
     background: transparent;
 }
@@ -95,7 +96,7 @@
     text-decoration: none;
     font-family: "Bebas Neue", sans-serif;
     color: var(--primary-yellow);
-    font-size: 2rem;
+    font-size: 2.5rem;
     width: 100%;
 }
 
@@ -1120,7 +1121,7 @@
     width: 44%;
     aspect-ratio: 1;
     z-index: 5;
-    top: 4%;
+    top: 0%;
     left: 27%;
     position: absolute;
 }
@@ -1169,7 +1170,7 @@
 }
 .roulette-chip1 {
     z-index: 4;
-    top: 0%;
+    top: -4%;
     left: 0%;
     animation-delay: 0s;
     width: 100%;
