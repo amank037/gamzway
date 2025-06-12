@@ -7,20 +7,20 @@ import { Autoplay } from "swiper/modules"
 
 function SnakeLadderLanding({ landingItems}) {
     return (
-        <div className='snakelandingv2-section'>
+        <div className='landingv2-section'>
             <div className='overlay'></div>
             {landingItems.map((item, index) => (
-                <div key={index} className='snakelandingv2-text'>
+                <div key={index} className='landingv2-text'>
                     <h1>{item.title}</h1>
                     <p>{item.description}</p>
                     <p>{item.description2}</p>
-                    <button className='snakelandingv2-btn'><span>{item.button}</span></button>
+                    <button className='landingv2-btn'><span>{item.button}</span></button>
                 </div>
             ))}
             <Swiper
             modules={[Autoplay]}
             centeredSlides={true}
-            className='snakelandingv2Img'
+            className='landingv2Img'
             loop={true}
             autoplay={{
                 delay: 5000,

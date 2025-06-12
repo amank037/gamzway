@@ -1,13 +1,13 @@
 .provider-section{
     width: 100%;
-    /* background: url('../../assets/heroBg.svg');
-    background-size: cover;
-    background-repeat: no-repeat; */
-    background: linear-gradient(45deg, #7b7b7b, #d6d6d6);
+    background: url('../../assets/svgviewer-output.svg');
+    background-size:fill;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(45deg, #7b7b7b, #d6d6d6); */
 }
 .provider-container {
     width: 100%;
-    max-width: 1140px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 50px 0;
 }
@@ -99,6 +99,14 @@
 .providers-item img{
     width: 100%;
 }
+/* .providers-slider .swiper-slide{
+    padding: 20px 10px;
+    background-color: #ffffff92;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
 
 .providers-slider{
     width: 100%;
@@ -106,7 +114,7 @@
     margin: 30px auto;
 }
 .providers-slider img{
-    height: 40px;
+    height: 60px;
     max-width: 200px;     
 }
 

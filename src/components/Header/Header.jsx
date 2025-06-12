@@ -32,7 +32,11 @@ function Header() {
     }
 
     const toggleDropdown = (index) => {
-        setActiveDropdown(activeDropdown === index ? null : index)
+        if (activeDropdown === index) {
+            setActiveDropdown(null);
+        } else {
+            setActiveDropdown(index);
+        }
     }
 
     const dropdownData = [

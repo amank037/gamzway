@@ -643,7 +643,7 @@ function ProvidersSection() {
                 delay: 0,
                 disableOnInteraction: false,
             }}
-            speed={1500}
+            speed={2000}
             loop={true}
             modules={[Autoplay]}
             className="providers-slider"
@@ -681,7 +681,7 @@ function ProvidersSection() {
                 delay: 0,
                 disableOnInteraction: false,
             }}
-            speed={1500}
+            speed={2000}
             loop={true}
             modules={[Autoplay]}
             className="providers-slider"
@@ -719,7 +719,7 @@ function ProvidersSection() {
                 delay: 0,
                 disableOnInteraction: false,
             }}
-            speed={1500}
+            speed={2000}
             loop={true}
             modules={[Autoplay]}
             className="providers-slider"
