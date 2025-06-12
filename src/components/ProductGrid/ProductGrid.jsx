@@ -262,72 +262,72 @@ function ProductGrid() {
           </a>
         </div>
 
+        <div className='product-grid-item'>
+          <a href="">
+            <div className="image-stack">
+              <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
+              <img src="/ProductImages/poker/poker-glow.webp" alt="Poker Glow" className="stack-img poker-stack-glow" />
+              <div className="andar-card-container andar-card1">
+                <img src="/ProductImages/Andar Bahar/za-64.webp" alt="" className="stack-img"/>
+              </div>
+              <div className="andar-card-container andar-card2">
+                <img src="/ProductImages/Andar Bahar/za-65.webp" alt="" className="stack-img"/>
+              </div>
+            </div>
+            <h1 className='stack-img poker-stack-text product-title'>ANDAR BAHAR</h1>
+          </a>
+        </div>
 
+        <div className='product-grid-item'>
+          <a href="">
+            <div className="image-stack">
+              <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
+              <img src="/ProductImages/poker/poker-glow.webp" alt="Poker Glow" className="stack-img poker-stack-glow" />
+              <div className="call-card-container call-card1">
+                <img src="/ProductImages/Call Break/za-36.webp" alt="" className="stack-img"/>
+              </div>
+              <div className="call-card-container call-card2">
+                <img src="/ProductImages/Call Break/za-37.webp" alt="" className="stack-img"/>
+              </div>
+              <div className="call-card-container call-card3">
+                <img src="/ProductImages/Call Break/za-38.webp" alt="" className="stack-img" />
+              </div>
+              <div className="call-card-container call-card4">
+                <img src="/ProductImages/Call Break/za-39.webp" alt="" className="stack-img" />
+              </div>
+              <h1 className='stack-img poker-stack-text product-title'>CALL BREAK</h1>
+            </div>
+          </a>
+        </div>
 
-        {/* <AnimatePresence> */}
+        <div className='product-grid-item'>
+          <a href="">
+            <div className="image-stack">
+              <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
+              <img src="/ProductImages/poker/poker-glow.webp" alt="Poker Glow" className="stack-img poker-stack-glow" />
+              <div className="baccarat-card-container baccarat-card1">
+                <img src="/ProductImages/Baccarat/za-71.webp" alt="" className="stack-img"/>
+              </div>
+              <div className="baccarat-card-container baccarat-card2">
+                <img src="/ProductImages/Baccarat/za-70.webp" alt="" className="stack-img"/>
+              </div>
+            </div>
+            <h1 className='stack-img poker-stack-text product-title'>BACCARAT</h1>
+          </a>
+        </div>
+
+        <AnimatePresence>
           {showMore &&
-            // <motion.div
-            //     initial={{ height: 0, opacity: 0 }}
-            //     animate={{ height: 'auto', opacity: 1 }}
-            //     exit={{ height: 0, opacity: 0 }}
-            //     transition={{ duration: 0.3, ease: 'easeInOut' }}
-            //     style={{ overflow: 'hidden' }}
-            //     className="product-grid"
-            //   >
+            <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: 'auto', opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.3, ease: 'easeInOut' }}
+                style={{ overflow: 'hidden' }}
+                className="productv2-grid"
+              >
             <>
-                <div className='product-grid-item'>
-                  <a href="">
-                    <div className="image-stack">
-                      <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
-                      <img src="/ProductImages/poker/poker-glow.webp" alt="Poker Glow" className="stack-img poker-stack-glow" />
-                      <div className="andar-card-container andar-card1">
-                        <img src="/ProductImages/Andar Bahar/za-64.webp" alt="" className="stack-img"/>
-                      </div>
-                      <div className="andar-card-container andar-card2">
-                        <img src="/ProductImages/Andar Bahar/za-65.webp" alt="" className="stack-img"/>
-                      </div>
-                    </div>
-                    <h1 className='stack-img poker-stack-text product-title'>ANDAR BAHAR</h1>
-                  </a>
-                </div>
 
-                <div className='product-grid-item'>
-                  <a href="">
-                    <div className="image-stack">
-                      <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
-                      <img src="/ProductImages/poker/poker-glow.webp" alt="Poker Glow" className="stack-img poker-stack-glow" />
-                      <div className="call-card-container call-card1">
-                        <img src="/ProductImages/Call Break/za-36.webp" alt="" className="stack-img"/>
-                      </div>
-                      <div className="call-card-container call-card2">
-                        <img src="/ProductImages/Call Break/za-37.webp" alt="" className="stack-img"/>
-                      </div>
-                      <div className="call-card-container call-card3">
-                        <img src="/ProductImages/Call Break/za-38.webp" alt="" className="stack-img" />
-                      </div>
-                      <div className="call-card-container call-card4">
-                        <img src="/ProductImages/Call Break/za-39.webp" alt="" className="stack-img" />
-                      </div>
-                      <h1 className='stack-img poker-stack-text product-title'>CALL BREAK</h1>
-                    </div>
-                  </a>
-                </div>
-
-                <div className='product-grid-item'>
-                  <a href="">
-                    <div className="image-stack">
-                      <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
-                      <img src="/ProductImages/poker/poker-glow.webp" alt="Poker Glow" className="stack-img poker-stack-glow" />
-                      <div className="baccarat-card-container baccarat-card1">
-                        <img src="/ProductImages/Baccarat/za-71.webp" alt="" className="stack-img"/>
-                      </div>
-                      <div className="baccarat-card-container baccarat-card2">
-                        <img src="/ProductImages/Baccarat/za-70.webp" alt="" className="stack-img"/>
-                      </div>
-                    </div>
-                    <h1 className='stack-img poker-stack-text product-title'>BACCARAT</h1>
-                  </a>
-                </div>
 
                 <div className='product-grid-item'>
                   <a href="">
@@ -478,9 +478,9 @@ function ProductGrid() {
                   </a>
                 </div>
                 </>
-            // </motion.div>
+            </motion.div>
           }
-        {/* </AnimatePresence> */}
+        </AnimatePresence>
         
       </div>
       

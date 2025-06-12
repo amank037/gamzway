@@ -678,9 +678,8 @@ function ProvidersSection() {
             autoplay={{
                 delay: 0,
                 disableOnInteraction: false,
-                reverseDirection: true,
             }}
-            speed={1200}
+            speed={1000}
             loop={true}
             modules={[Autoplay]}
             className="providers-slider"

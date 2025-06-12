@@ -4,7 +4,7 @@ import FeaturesHeader from '../../components/FeaturesSection/FeaturesHeader/Feat
 
 const chooseTitle = [
     {
-        title: "Top Reasons to Choose Gamzway for Your Game Development Needs"
+        title: "Top Reasons to Choose Gamzway"
     }
 ]
 

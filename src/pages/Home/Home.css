@@ -366,7 +366,7 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 30px;
     padding: 40px 20px;
-    max-width: 1140px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -704,7 +704,7 @@
 }
 
 .support-container {
-    max-width: 1140px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     text-align: center;

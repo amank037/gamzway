@@ -13,7 +13,7 @@ import ProvidersSection from '../../components/ProvidersSection/ProvidersSection
 
 const productfeaturesText = [
     {
-        title: "Our Games: View Our Pre-Ready Games",
+        title: "Explore Our Ready-to-Play Games",
         description: "At Gamzway, we provide a large selection of market-tested, customisable, multiple devices optimised pre-built gaming items."
     }
 ]
