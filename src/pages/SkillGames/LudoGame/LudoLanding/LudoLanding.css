@@ -132,16 +132,21 @@
 
 .ludo-about-card{
     display: flex;
-    height: 70%;
+    height: 40%;
     width: 50%;
     gap: 1rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
     padding: 1.5rem;
     border-radius: 1rem;
-    backdrop-filter: blur(10px);
+
     /* box-shadow: 0px 0px 40px 10px rgba(255,215,0,0.72);
     -webkit-box-shadow: 0px 0px 40px 10px rgba(255,215,0,0.72);
     -moz-box-shadow: 0px 0px 40px 10px rgba(255,215,0,0.72); */
+    /* background-image: '/ludoPage/bg.png'; */
+    background-image: url(/ludoPage/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     box-shadow: 0px 0px 40px 10px rgba(255, 238, 0, 0.72);
     animation: fadeIn 1s ease-in-out;
 }
@@ -160,16 +165,17 @@
     margin: 0 auto;
 }
 .ludo-about-card-img-section .ludo-about-card-fair{
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
 }
 
 .ludo-about-card-info{
     width: 50%;
+    padding-left: 10px;
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content:space-evenly;
 }
 .ludo-about-card-info p{
     font-size: 1.2rem;
