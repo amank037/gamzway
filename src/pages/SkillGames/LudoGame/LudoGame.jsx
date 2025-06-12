@@ -644,8 +644,7 @@ const LudoGame = () => {
 
 
 
-{/* 
-      <PromoTools /> */}
+      {/* <PromoTools /> */}
 
 
 

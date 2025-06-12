@@ -51,23 +51,23 @@ const variationTitle = [{
 const variationGrid = [
   {
     title: "2 Player",
-    image:"",
+    image:"/snakePage/types/2 player.png",
   },
   {
     title: "4 Player",
-    image:"",
+    image:"/snakePage/types/4 player-01-01.png",
   },
   {
     title: "Private Room",
-    image:"",
+    image:"/snakePage/types/private room.png",
   },
   {
     title: "Pass/Play",
-    image:"",
+    image:"/snakePage/types/pass nd play-01.png",
   },
   {
     title: "Private Room For Other Players",
-    image:"",
+    image:"/snakePage/types/private room for player-01.png",
   }
 ]
 

@@ -616,7 +616,7 @@ function ProvidersSection() {
     return (
         <div className="provider-section">
         <div className="provider-container">
-            <h1 className="provider-title"> <span>GAME PROVIDERS</span></h1>
+            <h1 className="provider-title"> <span>GAME</span> <span>PROVIDERS</span> </h1>
             <Swiper
             spaceBetween={30}
             slidesPerView={5}
