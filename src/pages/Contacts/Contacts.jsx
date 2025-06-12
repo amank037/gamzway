@@ -3,7 +3,7 @@ import FeaturesHeader from "../../components/FeaturesSection/FeaturesHeader/Feat
 
 const supportTitle = [
     {
-        title: "Let's Discuss",
+        title: "Bring Your Vision to Life – Contact Us",
         description: "Still have doubts. Here to assist are our professionals."
     }
 ]
