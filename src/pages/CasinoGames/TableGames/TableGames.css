@@ -1,6 +1,8 @@
 .landing-table-section {
     position: relative;
     background-image: url(https://beta.mobzway.com/assets/images/provider-img.png);
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -8,7 +10,7 @@
     margin-top: -134px;
 }
 
-.landing-table-section::before {
+/* .landing-table-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -17,7 +19,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     pointer-events: none;
-}
+} */
 
 .landing-table-section {
     background-blend-mode: overlay;

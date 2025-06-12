@@ -9,6 +9,7 @@ import SkillGames from './pages/SkillGames/SkillGames'
 import CasinoGames from './pages/CasinoGames/CasinoGames'
 import GameAPIs from './pages/GameAPIs/GameAPIs'
 import WhiteLabel from './pages/WhiteLabel/WhiteLabel'
+import Contacts from './pages/Contacts/Contacts'
 
 
 // const Home = lazy(() => import('./pages/Home/Home'))
@@ -29,6 +30,7 @@ function App() {
             <Route path="/casino-games/*" element={<CasinoGames />} />
             <Route path="/game-apis/*" element={<GameAPIs />} />
             <Route path="/white-label/*" element={<WhiteLabel />} />
+            <Route path="/contacts" element={<Contacts />} />
           </Routes>
         {/* </Suspense> */}
         <Footer />

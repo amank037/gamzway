@@ -15,6 +15,7 @@ import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 import PromoTools from '../../../components/PromoTools/PromoTools'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+import AboutSection from '../../../components/AboutSection/AboutSection'
 
 const landingItems = [
   {
@@ -312,6 +313,13 @@ const accordionData = [
   }
 ]
 
+const aboutItems = [
+  {
+    description:" Our fishing games abound with strong, user-attracting elements, simulated bait control, hook physics, fish artificial intelligence—realistic fishing mechanics. Beautiful animations and images showing a life-like underwater landscape with flowing fish movements. Events & Leaderboards: Maintaining the players' participation with regular contests helps Real-time interactions generated during games using live chat constitute multiplayer chat support.",
+    image:"/fishingPage/bg-over.png"
+  }
+]
+
 const FishingGames = () => {
   return (
     <div className="fishing-game">
@@ -340,6 +348,8 @@ const FishingGames = () => {
       </div> */}
 
       <FeaturesBanner />
+
+      <AboutSection aboutItems={aboutItems}/>
 
       <FeaturesGridV3 featuresGridV3={featuresGridV3} featuresTitleV3={featuresTitleV3}/>
 

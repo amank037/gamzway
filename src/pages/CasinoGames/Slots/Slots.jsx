@@ -17,6 +17,7 @@ import PlatformSection from "../../../components/PlatformSection/PlatformSection
 import ChooseGrid from "../../../components/ChooseGrid/ChooseGrid"
 import PlatformImg from "../../../components/LudoPlatformImg/LudoPlatformImg"
 import CustomGrid from "../../../components/CustomGrid/CustomGrid"
+import AboutSection from "../../../components/AboutSection/AboutSection"
 
 const landingItems = [
   {
@@ -205,6 +206,13 @@ const faqAccordionData = [
   }
 ]
 
+const aboutItems = [
+  {
+    description:"Slot games are one of the most competent, successful, recognizable kinds of casino entertainment all the world. Top choice for both sincere and casual players, the slot games are famous for their convenient use, pleasing look, and exciting perks. Our strengths in the company is launching exciting slot games which mixes graphics, imagination & science to provide fabulous outcomes for casino users.",
+    image:"/slotsPage/bg-over.png"
+  }
+]
+
 const Slots = () => {
 
   return (
@@ -233,6 +241,8 @@ const Slots = () => {
 
       <AchievementsBanner />
 
+      <AboutSection aboutItems={aboutItems} />
+
       <div>
         <FeaturesGridV5 featuresGrid={typesGrid} featuresTitle={typesTitle}/>
       </div>
@@ -246,7 +256,7 @@ const Slots = () => {
       <CustomGrid/>
 
       
-      <div className='solutions-slot-section'>
+      {/* <div className='solutions-slot-section'>
         <div className='solutions-slot-top'>
           <FeaturesHeader featuresText={solutionsTitle}/>
         </div>
@@ -291,7 +301,7 @@ const Slots = () => {
               </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <ContactBanner contactItems={touchItems}/>
 

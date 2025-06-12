@@ -8,7 +8,6 @@ import { Autoplay } from "swiper/modules"
 function LandingPageV2({ landingItems, landingImages }) {
   return (
     <div className='landingv2-section'>
-        <div className='overlay'></div>
         {landingItems.map((item, index) => (
             <div key={index} className='landingv2-text'>
                 <h1>{item.title}</h1>

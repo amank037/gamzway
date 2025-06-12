@@ -1,11 +1,11 @@
 .footer-div {
     width: 100%;
-    margin-top: auto;
+    /* margin-top: auto; */
+    margin-bottom: 0;
     padding: 60px 0;
     color: white;
-    background: linear-gradient(225deg, rgba(24, 24, 24, 0.9) 0%, rgba(19, 19, 19, 0.95) 100%);
+    background: var(--background-black);
 }
-
 .footer-container {
     max-width: 1140px;
     margin: 0 auto;

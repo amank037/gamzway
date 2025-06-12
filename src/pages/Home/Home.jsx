@@ -8,25 +8,26 @@ import ProductGrid from '../../components/ProductGrid/ProductGrid'
 import ContactBanner from '../../components/ContactBanner/ContactBanner'
 import CarouselSection from '../../components/CarouselSection/CarouselSection'
 import ChooseGrid from '../../components/ChooseGrid/ChooseGrid'
+import ProvidersSection from '../../components/ProvidersSection/ProvidersSection'
 
 
 const productfeaturesText = [
     {
-        title: "Our Products: View Our Pre-Ready Games",
+        title: "Our Games: View Our Pre-Ready Games",
         description: "At Gamzway, we provide a large selection of market-tested, customisable, multiple devices optimised pre-built gaming items."
     }
 ]
 
 const platformFeaturesText = [
     {
-        title: "FEATURES OF OUR GAMING PLATFORM",
+        title: "HIGHLIGHTS OF OUR GAMING PLATFORM",
         description: "Gamzway's products are engineered for reliability, flexibility, and performance."
     }
 ]
 
 const engagementModelsText = [
     {
-        title: "Our Models: Engagement That Fits Your Business",
+        title: "Our Engagement Models That Fits Your Business",
         description: "Gamzway offers flexible engagement models to suit both enterprises and startups."
     }
 ]
@@ -209,6 +210,37 @@ const Home = () => {
             <ProductGrid/>
         </div>
 
+
+        
+        <div className='engagement-section'>
+            <FeaturesHeader featuresText={engagementModelsText}/>
+            <div className='models-grid'>
+                <div className='model-card'>
+                    <div className='model-icon'>
+                        <i className="fas fa-handshake"></i>
+                    </div>
+                    <h3>Game APIs</h3>
+                    <p>Integrate leading studios with top games with our practical, scalable API solution.</p>
+                </div>
+                <div className='model-card'>
+                    <div className='model-icon'>
+                        <i className="fas fa-handshake"></i>
+                    </div>
+                    <h3>Game Aggregators</h3>
+                    <p>Access an extensive selection of popular casino games through a single API</p>
+                </div>
+                <div className='model-card'>
+                    <div className='model-icon'>
+                        <i className="fas fa-tag"></i>
+                    </div>
+                    <h3>White Label Solutions</h3>
+                    <p>Get a branded version of our pre-built games tailored for your business</p>
+                </div>
+
+
+            </div>
+        </div>
+
         <div className='platform-feature-section'>
                 <FeaturesHeader featuresText={platformFeaturesText}/>
                 <div className='platform-features'>
@@ -260,25 +292,6 @@ const Home = () => {
 
 
 
-        <div className='engagement-section'>
-            <FeaturesHeader featuresText={engagementModelsText}/>
-            <div className='models-grid'>
-                <div className='model-card'>
-                    <div className='model-icon'>
-                        <i className="fas fa-tag"></i>
-                    </div>
-                    <h3>White Label Solutions</h3>
-                    <p>Get a branded version of our pre-built games tailored for your business</p>
-                </div>
-                <div className='model-card'>
-                    <div className='model-icon'>
-                        <i className="fas fa-handshake"></i>
-                    </div>
-                    <h3>Revenue Share Partnership</h3>
-                    <p>A low-investment approach with shared growth and revenue</p>
-                </div>
-            </div>
-        </div>
 
         <ChooseGrid />
 
@@ -318,6 +331,8 @@ const Home = () => {
                 <p className='support-footer'>From technical enquiries to revenue models, our consultative approach guarantees you never be left wondering. We explain everything.</p>
             </div>
         </div>
+
+        <ProvidersSection />
 
         {/* <div className='start-journey-section'>
             <div className='journey-container'>

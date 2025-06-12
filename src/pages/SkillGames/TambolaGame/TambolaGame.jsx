@@ -8,6 +8,7 @@ import ContactBanner from '../../../components/ContactBanner/ContactBanner'
 import AccordionSection from '../../../components/AccordionSection/AccordionSection'
 import PaymentSection from '../../../components/PaymentSection/PaymentSection'
 import ProductSection from '../../../components/ProductSection/ProductSection'
+import FeaturesGridV4 from '../../../components/FeaturesGridV4/FeaturesGridV4'
 import FeaturesGridV3 from '../../../components/FeaturesGridV3/FeaturesGridV3'
 import FeaturesGridV2 from '../../../components/FeaturesGridV2/FeaturesGridV2'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
@@ -45,33 +46,25 @@ const landingImages = [
 ]
 
 const variationTitle = [{
-  title: "Tambola Game Variations"
+  title: "Tambola Game Features"
 }]
 
 const variationGrid = [
   {
-    title: "Classic Tambola",
-    description: "Traditional 90-number ticket game with one-line, two-line, and full-house gains. Perfect for authentic Tambola experience."
+    title: "Private Tambola Game",
+    image:"/secure-data.png",
   },
   {
-    title: "Rapid Tambola",
-    description: "A quicker variation for short sessions with less numbers, ideal for fast-paced gaming environments."
+    title: "Multi Game Platform",
+    image:"/platform-100.png"
   },
   {
-    title: "Picture Tambola",
-    description: "Perfect for youngsters or theme-based games, this variant replaces numbers with images or symbols for a more engaging experience."
+    title: "In-Game Chat",
+    image:"/chat.png"
   },
   {
-    title: "Alphabet Tambola",
-    description: "Played with letters rather than numbers, ideal for themed or educational gatherings."
-  },
-  {
-    title: "Custom Branded Games",
-    description: "Businesses can order completely branded or custom-featured games for virtual events or marketing initiatives."
-  },
-  {
-    title: "Flexible Game Modes",
-    description: "Our system lets you be flexible in switching between modes or mix something original depending on your audience and goal."
+    title: "Customised Solutions",
+    image:"/browser-customization-100.png"
   }
 ]
 
@@ -293,7 +286,7 @@ const TambolaGame = () => {
             </div>
           ))}
         </div> */}
-        <FeaturesGridV3 featuresGridV3={variationGrid} featuresTitleV3={variationTitle} />
+        <FeaturesGridV4 featuresGrid={variationGrid} featuresTitle={variationTitle} />
       </div>
 
       <FeaturesBanner />

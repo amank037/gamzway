@@ -383,6 +383,8 @@ const PokerGame = () => {
 
       <AchievementsBanner />
 
+      <FeaturesBanner />
+
       <div className='features-section'>
         <FeaturesHeader featuresText={variantsItems} />
         <div className='poker-features-grid'>
@@ -396,9 +398,9 @@ const PokerGame = () => {
         </div>
       </div>
 
-      <FeaturesBanner />
 
-      <div className='features-section'>
+
+      {/* <div className='features-section'>
         <FeaturesHeader featuresText={featuresItems} />
         <div className='poker-features-grid-2'>
           {featuresGrid.map((item, index) => (
@@ -409,7 +411,7 @@ const PokerGame = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       <PlatformSection platformItems={platformItems} />
 

@@ -17,7 +17,6 @@ function LudoLanding({ landingItems}) {
             ))}
             <Swiper
             modules={[Autoplay]}
-            centeredSlides={true}
             className='ludolandingImg'
             loop={true}
             autoplay={{
@@ -36,7 +35,7 @@ function LudoLanding({ landingItems}) {
                     <img src="/ludoPage/devices/ludo-mob.png" alt=""/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/ludoPage/devices/ludo-lap2.png" alt=""/>
+                    <img src="/ludoPage/devices/ludo-lap2-slider.png" alt=""/>
                 </SwiperSlide>
             </Swiper>
         </div>

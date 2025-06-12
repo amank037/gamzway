@@ -102,13 +102,13 @@
     cursor: pointer;
     padding: 8px 16px;
     display: block;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
 }
 
 .header-contacts a {
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
@@ -147,7 +147,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     list-style-type: none;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
@@ -235,7 +235,7 @@
     }
 
     .nav-menu .nav-menu-ul .dropdown > span {
-        font-size: 18px;
+        font-size: 14px;
         padding: 10px 0;
     }
 
@@ -251,7 +251,7 @@
     }
 
     .header-contacts a {
-        font-size: 18px;
+        font-size: 14px;
         background-color: transparent;
         color: white;
         min-width: auto;
@@ -285,7 +285,7 @@
     .dropdown-menu li a {
         background: transparent;
         color: #fff;
-        font-size: 16px;
+        font-size: 14px;
         min-width: auto;
         padding: 8px 20px;
     }

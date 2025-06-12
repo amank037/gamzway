@@ -14,12 +14,13 @@ import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 import PromoTools from '../../../components/PromoTools/PromoTools'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
+import AboutSection from '../../../components/AboutSection/AboutSection'
 
 const landingItems = [
   {
     title: "CRASH GAME DEVELOPMENT",
     description: "Faster, adrenaline-fueled action in crash games has transformed the online casino gaming scene. These games follow basic concepts whereby players make bets before a rising multiplier 'crashes'.",
-    description2: "With proven fair algorithms, real-time interaction, and flawless graphics, live RNG (Random Number Generator) crash games provide an added degree of excitement.",
+    description2: "With proven fair algorithms, real-time interaction, and flawless graphics, live Crash (Random Number Generator) crash games provide an added degree of excitement.",
     button: "REQUEST A QUOTE",
   }
 ]
@@ -82,7 +83,7 @@ const featuresGridV3 = [
 const featuresItems = [
   {
     title: "Activities We Offer",
-    description: "Apart than crash games, we present a whole suite of Live RNG-based casino games:"
+    description: "Apart than crash games, we present a whole suite of Live Crash-based casino games:"
   } 
 ]
 
@@ -123,8 +124,8 @@ const featuresGrid = [
 
 const hireTitle = [
   {
-    title: "Our RNG Games' Characteristics",
-    description: "We designed our RNG games with the contemporary player in mind. Important elements consist in:"
+    title: "Our Crash Games' Characteristics",
+    description: "We designed our Crash games with the contemporary player in mind. Important elements consist in:"
   }
 ]
 
@@ -132,8 +133,8 @@ const platformItems = [
   {
     featuresText:[
       {
-        title: "Our Online RNG Game Platforms",
-        description: "RNG games developed by Gamzway fit several platforms and locations. We affirm:"
+        title: "Our Online Crash Game Platforms",
+        description: "Crash games developed by Gamzway fit several platforms and locations. We affirm:"
       }
     ],
     platformGrid:[
@@ -215,7 +216,7 @@ const crmItems = [
 
 const developmentTitle = [
   {
-    title: "How We Create the Greatest RNG Games",
+    title: "How We Create the Greatest Crash Games",
     description: "Our approach of game production is meant to produce excellence, quickness, and customising:"
   }
 ]
@@ -243,7 +244,7 @@ const developmentFeatures = {
     {
       title: "Game Logic Programming",
       points: [
-        "RNG engine development",
+        "Crash engine development",
         "Performance optimization",
         "Fairness algorithms",
         "Real-time data sync"
@@ -288,7 +289,7 @@ const developmentFeatures = {
     {
       title: "Our Expertise",
       points: [
-        "RNG gaming expertise",
+        "Crash gaming expertise",
         "Real money gaming",
         "Scalable solutions",
         "Open communication"
@@ -326,29 +327,29 @@ const productItems = [
 
 const faqTitle = [
   {
-    title: "RNG Games Development FAQ"
+    title: "Crash Games Development FAQ"
   }
 ]
 
 const accordionData = [
   {
-    title: "Different from live dealer games, what distinguishes RNG games?",
-    description: "Faster, more scalable, and perfect for automated casinos, RNG games create outcomes using mathematical algorithms."
+    title: "Different from live dealer games, what distinguishes Crash games?",
+    description: "Faster, more scalable, and perfect for automated casinos, Crash games create outcomes using mathematical algorithms."
   },
   {
     title: "Are crash games allowed?",
-    description: " Many countries allow crash games; if the platform follows local gambling regulations and employs certified RNG software, they are lawful."
+    description: " Many countries allow crash games; if the platform follows local gambling regulations and employs certified Crash software, they are lawful."
   },
   {
     title: "Can we include your crash games into our current casino?",
     description: " Indeed, we offer flawless API interaction with your wallet structure and present systems."
   },
   {
-    title: "Building a crash or RNG game takes what length of time?",
+    title: "Building a crash or Crash game takes what length of time?",
     description: "Usually depending on platform needs and customising, it takes 4 to 8 weeks."
   },
   {
-    title: "Are white label RNG casino platforms something you provide?",
+    title: "Are white label Crash casino platforms something you provide?",
     description: "We do indeed offer turnkey casino solutions together with white labels.."
   }
 ]
@@ -360,8 +361,15 @@ const touchItems = [
         title: "Get in Touch - Ask Us Anything",
       }
     ],
-    description: " All set to realise your casino concept?  Either want a live demo or need assistance selecting the appropriate RNG games?",
+    description: " All set to realise your casino concept?  Either want a live demo or need assistance selecting the appropriate Crash games?",
     hrefText: "CONTACT US",
+  }
+]
+
+const aboutItems = [
+  {
+    description:" We follow your objectives, regional particular requirements, and compliance standards. Our creative team creates beautiful, simple interfaces in UI/UX design. RNG engines are coded for performance, speed, and fairness under game logic programming. Games are linked to your platform using real-time data sync. Testing and quality assurance guarantees safe, error-free gameplay on several devices.",
+    image:"/crashPage/p1.png"
   }
 ]
 
@@ -369,10 +377,12 @@ const CrashGames = () => {
   return (
     <div className="crash-game">
       <div className="landing-crash-section">
-        {/* <LandingSection landingItems={landingItems}/> */}
-        <LandingPageV2 landingItems={landingItems} landingImages={landingImages} />
+        <LandingSection landingItems={landingItems}/>
+        {/* <LandingPageV2 landingItems={landingItems} landingImages={landingImages} /> */}
       </div>
       <AchievementsBanner />
+
+      <AboutSection aboutItems={aboutItems} />
       
       {/* <FeaturesGridV3 featuresGridV3={featuresGridV3} featuresTitleV3={featuresTitleV3} /> */}
 
@@ -452,7 +462,7 @@ const CrashGames = () => {
 
       <div className="faq-section">
         <FeaturesHeader featuresText={faqTitle}/>
-        <AccordionSection data={accordionData} className="rng-faq" />
+        <AccordionSection data={accordionData} className="Crash-faq" />
       </div>
 
       <ContactBanner contactItems={touchItems} />

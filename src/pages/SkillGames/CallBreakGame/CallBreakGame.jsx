@@ -20,25 +20,20 @@ import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 const landingItems = [
   {
     title: "CALL BREAK GAME DEVELOPMENT",
-    description: "Call Break has become a hot item in the digital gaming market as millions of fans across South Asia and growing taste for skill-based real-money card games drive demand.  At Gamzway Technologies, we bring this venerable card game to life with engaging gaming, real-time multiplayer sync, sophisticated CRM tools, and monetising strategies maximising involvement and income.",
+    description: "Call Break has become a hot item in the digital gaming market as millions of fans across South Asia and growing taste for skill-based real-money card games drive demand.",
+    description2: "At Gamzway Technologies, we bring this venerable card game to life with engaging gaming, real-time multiplayer sync, sophisticated CRM tools, and monetising strategies maximising involvement and income.",
     button: "REQUEST A QUOTE",
   }
 ]
 const landingImages = [
   {
-    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+    image: "/callbreakPage/banner-over.png"
   },
   {
-    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+    image: "/callbreakPage/banner-over.png"
   },
   {
-    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
-  },
-  {
-    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
-  },
-  {
-    image: "https://beta.mobzway.com/assets/images/pokerSlide1.webp"
+    image: "/callbreakPage/banner-over.png"
   },
 ]
 const breakservicesTitle = [
@@ -315,7 +310,7 @@ const demoItems = [
 const aboutItems = [  
   {
     description: "Played conventionally by four players from a normal 52-card deck, Call Break is a strategic trick-taking card game.  Every participant has to call, or bid the total tricks they intend to win.  The basis of scoring is players' declared bid accuracy over several rounds.",
-    image: "https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif"
+    image: "/callbreakPage/banner-over.png"
   }
 ]
 

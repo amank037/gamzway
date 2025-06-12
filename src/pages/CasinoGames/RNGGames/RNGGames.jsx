@@ -374,7 +374,7 @@ const RNGGames = () => {
   return (
     <div className="rng-game">
       <div className="landing-rng-section">
-      <LandingPageV2 landingItems={landingItems} landingImages={landingImages} />
+      <LandingSection landingItems={landingItems}/>
       </div>
       <AchievementsBanner />
 

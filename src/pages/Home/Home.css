@@ -484,8 +484,6 @@
 
 .model-card {
     background: rgba(0, 0, 0, 0.4);
-    width: 50%;
-    margin: 0 auto;
     padding: 40px 30px;
     border-radius: 0;
     position: relative;
@@ -533,7 +531,7 @@
 
 @media (max-width: 768px) {
     .models-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         gap: 20px;
     }
 

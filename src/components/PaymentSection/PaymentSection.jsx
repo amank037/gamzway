@@ -2,6 +2,36 @@ import './PaymentSection.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
 
+const paymentGateways = [
+  {
+    image:"https://beta.mobzway.com/assets/images/rummy-game-development/CashfreePayments.webp"
+  },
+  {
+    image:"https://beta.mobzway.com/assets/images/rummy-game-development/Razorpay.webp"
+  },
+  {
+    image:"https://beta.mobzway.com/assets/images/rummy-game-development/Payu.webp"
+  },
+  {
+    image:"https://beta.mobzway.com/assets/images/rummy-game-development/Paytm.webp"
+  },
+  {
+    image:"https://beta.mobzway.com/assets/images/rummy-game-development/Neteller.webp"
+  },
+  {
+    image:"https://beta.mobzway.com/assets/images/rummy-game-development/PayPal.webp"
+  },
+  {
+    image:"https://beta.mobzway.com/assets/images/rummy-game-development/Bitcoin.webp"
+  },
+    {
+    image:"https://beta.mobzway.com/assets/images/rummy-game-development/Stripe.webp"
+  },
+  {
+    image:"https://beta.mobzway.com/assets/images/rummy-game-development/Skrill.webp"
+  },
+]
+
 
 function PaymentSection() {
   return (
@@ -38,33 +68,13 @@ function PaymentSection() {
           modules={[Autoplay]}
           className="payments-swiper"
         >
-          <SwiperSlide>
-            <img src="https://beta.mobzway.com/assets/images/rummy-game-development/CashfreePayments.webp" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://beta.mobzway.com/assets/images/rummy-game-development/Razorpay.webp" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://beta.mobzway.com/assets/images/rummy-game-development/Payu.webp" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://beta.mobzway.com/assets/images/rummy-game-development/Paytm.webp" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://beta.mobzway.com/assets/images/rummy-game-development/Neteller.webp" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://beta.mobzway.com/assets/images/rummy-game-development/PayPal.webp" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://beta.mobzway.com/assets/images/rummy-game-development/Bitcoin.webp" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://beta.mobzway.com/assets/images/rummy-game-development/Stripe.webp" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://beta.mobzway.com/assets/images/rummy-game-development/Skrill.webp" alt="" />
-          </SwiperSlide>
+
+            {paymentGateways.map((item, index) => (
+              <SwiperSlide>
+                <img key={index} src={item.image} alt="" />
+              </SwiperSlide>
+            ))}
+
         </Swiper>
 
       </div>

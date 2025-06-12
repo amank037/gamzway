@@ -5,7 +5,7 @@
 
 .ludo-game .carousel-swiper {
     background: url(https://beta.mobzway.com/assets/images/ludo_banner.jpg);
-    background-color: rgba(0, 0, 0, 0.80);
+    background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;

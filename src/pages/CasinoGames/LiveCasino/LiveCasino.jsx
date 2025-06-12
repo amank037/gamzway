@@ -341,23 +341,21 @@ const LiveCasino = () => {
 
   const featuresGrid = [
     { title: "Live Roulette",
-      image: "https://beta.mobzway.com/assets/images/roulette-bg.jpg"
-     },
+      image: "/liveCasino/features/multi table.png" },
     { title: "Active Blackjack",
-      image:"https://beta.mobzway.com/assets/images/casino-war-bg.jpg"
-     },
+      image:"/teenapiPage/hukum.png" },
     { title: "Live Banking",
-      image:"https://beta.mobzway.com/assets/images/multi-table-bg.jpg" },
+      image:"/liveCasino/features/casino war.png" },
     { title: "Live Andar Bahar",
-      image:"https://beta.mobzway.com/assets/images/andar-bahar-bg.jpg" },
+      image:"/liveCasino/features/andar bahar.png" },
     { title: "Live Teen Patti",
-      image:"https://beta.mobzway.com/assets/images/teenpatti-20-bg.jpg" },
+      image:"/liveCasino/features/teen patti.png" },
     { title: "Live Casino Poker",
-      image:"https://beta.mobzway.com/assets/images/three-card-poker-bg.jpg" },
+      image:"/liveCasino/features/three card poker.png" },
     { title: "Dragon Tiger Live",
-      image:"https://beta.mobzway.com/assets/images/dragon-tiger-bg.jpg" },
+      image:"/liveCasino/features/dragon tiger.png" },
     { title: "Live Baccarat",
-      image:"https://beta.mobzway.com/assets/images/baccart-bg.jpg" }
+      image:"/liveCasino/features/baccart.png" }
   ]
   
   

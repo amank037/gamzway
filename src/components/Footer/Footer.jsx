@@ -22,7 +22,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='footer-middle'>
+            {/* <div className='footer-middle'>
                 <ul className='footer-middle-left'>
                     <li><a href="https://www.mobzway.com/portfolio/">Products</a></li>
                     <li><a href="https://www.mobzway.com/company-brochure/">Buy</a></li>
@@ -39,7 +39,7 @@ const Footer = () => {
                     <li><a href="https://www.mobzway.com/contact-us/">Contacts</a></li>
                     <li><a href="https://www.mobzway.com/about-us/">About Us</a></li>
                 </ul>
-            </div>
+            </div> */}
 
             {/* <div className='footer-right'>
                 <img src="https://enterra-poker.com/wp-content/themes/enterra-poker-2024/img/footer/mga1.png" alt="" />
