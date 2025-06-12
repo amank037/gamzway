@@ -1,4 +1,4 @@
-.landingv2-section{
+.snakelandingv2-section{
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -81,5 +81,24 @@
 @media screen and (max-width: 768px){
     .snakelanding-images-container{
         height: 200px;
+    }
+}
+
+.snakelandingImg{
+    width: 100%;
+}
+.snakelandingImg .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.snakelandingImg img{
+    max-height: 500px;
+}
+
+
+@media screen and (max-width: 993px) {
+    .snakelandingImg{
+        width: 70%;
     }
 }

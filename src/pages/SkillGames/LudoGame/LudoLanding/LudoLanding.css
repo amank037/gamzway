@@ -1,4 +1,4 @@
-.landingv2-section{
+.ludolandingv2-section{
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -28,7 +28,7 @@
 
 
 @media screen and (max-width: 993px) {
-    .ludolandingImg{
-        width: 70%;
+    .ludolandingImg img{
+        width: 50%;
     }
 }

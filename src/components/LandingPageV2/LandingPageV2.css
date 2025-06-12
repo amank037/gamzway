@@ -109,6 +109,7 @@
 
 @media screen and (max-width: 993px) {
     .landingv2-section{
+        align-items: center;
         flex-direction: column;
         padding: 0 20px;
         margin-top: 134px;
@@ -116,6 +117,10 @@
     }
     .landingv2Img{
         width: 70%;
+    }
+    .landingv2-text{
+        align-items: center;
+        text-align: center;
     }
     .landingv2-text p {
         font-size: 18px;

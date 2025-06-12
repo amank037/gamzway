@@ -122,7 +122,7 @@ const modesGrid = [
 
   },
   {
-    image: "https://beta.mobzway.com/assets/images/tournaments.png",
+    image: "/ludoPage/private.png",
     title: "Private Rooms",
 
   },

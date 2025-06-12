@@ -3,7 +3,7 @@
     /* background: url('../../assets/heroBg.svg');
     background-size: cover;
     background-repeat: no-repeat; */
-    background: linear-gradient(45deg, #646363, #393939);
+    background: linear-gradient(45deg, #7b7b7b, #d6d6d6);
 }
 .provider-container {
     width: 100%;

@@ -14,6 +14,7 @@ import LandingPageV2 from "../../../components/LandingPageV2/LandingPageV2"
 import ChooseGrid from "../../../components/ChooseGrid/ChooseGrid"
 import FeaturesBanner from "../../../components/FeaturesBanner/FeaturesBanner"
 import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import FeaturesGridV3 from "../../../components/FeaturesGridV3/FeaturesGridV3"
 
 const landingItems = [
   {
@@ -385,7 +386,7 @@ const PokerGame = () => {
 
       <FeaturesBanner />
 
-      <div className='features-section'>
+      {/* <div className='features-section'>
         <FeaturesHeader featuresText={variantsItems} />
         <div className='poker-features-grid'>
           {variantsGrid.map((item, index) => (
@@ -396,7 +397,9 @@ const PokerGame = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
+
+      <FeaturesGridV3 featuresGridV3={variantsGrid} featuresTitleV3={variantsItems} />
 
 
 

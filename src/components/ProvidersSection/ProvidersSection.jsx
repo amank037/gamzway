@@ -1,6 +1,7 @@
 import './ProvidersSection.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
+import "swiper/css/free-mode"
 
 const providersImages = [
     {
@@ -642,7 +643,7 @@ function ProvidersSection() {
                 delay: 0,
                 disableOnInteraction: false,
             }}
-            speed={1000}
+            speed={2000}
             loop={true}
             modules={[Autoplay]}
             className="providers-slider"
@@ -657,6 +658,7 @@ function ProvidersSection() {
             <Swiper
             spaceBetween={30}
             slidesPerView={5}
+            freeMode={true}
             breakpoints={{
                 1200: {
                 slidesPerView: 5,
@@ -679,7 +681,7 @@ function ProvidersSection() {
                 delay: 0,
                 disableOnInteraction: false,
             }}
-            speed={1000}
+            speed={2000}
             loop={true}
             modules={[Autoplay]}
             className="providers-slider"
@@ -694,6 +696,7 @@ function ProvidersSection() {
             <Swiper
             spaceBetween={30}
             slidesPerView={5}
+            freeMode={true}
             breakpoints={{
                 1200: {
                 slidesPerView: 5,
@@ -716,7 +719,7 @@ function ProvidersSection() {
                 delay: 0,
                 disableOnInteraction: false,
             }}
-            speed={1000}
+            speed={2000}
             loop={true}
             modules={[Autoplay]}
             className="providers-slider"
@@ -727,6 +730,7 @@ function ProvidersSection() {
                 </SwiperSlide>
                 ))}
             </Swiper>
+
 
         </div>
         </div>

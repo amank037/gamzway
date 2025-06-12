@@ -394,7 +394,7 @@ const RummyGame = () => {
 
       <AchievementsBanner />
 
-      <AboutSection aboutItems={aboutItems} />
+      {/* <AboutSection aboutItems={aboutItems} /> */}
 
       <div className='about-rummy-section'>
         <div className='about-rummy'>
