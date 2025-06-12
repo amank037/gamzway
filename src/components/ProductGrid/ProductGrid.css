@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     gap: 40px;
     margin: 40px auto;
-    width: 100%;
+    width: 80%;
     max-width: 1000px;
     justify-content: space-around;
     transition: all 3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -96,7 +96,7 @@
     text-decoration: none;
     font-family: "Bebas Neue", sans-serif;
     color: var(--primary-yellow);
-    font-size: 2.5rem;
+    font-size: 2rem;
     width: 100%;
 }
 

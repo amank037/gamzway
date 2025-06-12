@@ -613,12 +613,13 @@ const providersImages3 =[
 
 function ProvidersSection() {
     return (
-        <div className="payments-section">
-        <div className="payments-container">
-            <h1 className="payments-title">GAME PROVIDERS</h1>
+        <div className="provider-section">
+        <div className="provider-container">
+            <h1 className="provider-title"> <span>GAME PROVIDERS</span></h1>
             <Swiper
             spaceBetween={30}
             slidesPerView={5}
+            freeMode={true}
             breakpoints={{
                 1200: {
                 slidesPerView: 5,
@@ -644,7 +645,7 @@ function ProvidersSection() {
             speed={1000}
             loop={true}
             modules={[Autoplay]}
-            className="payments-swiper"
+            className="providers-slider"
             >
                 {providersImages.map((item, index) => (
                 <SwiperSlide>
@@ -652,6 +653,7 @@ function ProvidersSection() {
                 </SwiperSlide>
                 ))}
             </Swiper>
+            
             <Swiper
             spaceBetween={30}
             slidesPerView={5}
@@ -676,11 +678,12 @@ function ProvidersSection() {
             autoplay={{
                 delay: 0,
                 disableOnInteraction: false,
+                reverseDirection: true,
             }}
-            speed={1000}
+            speed={1200}
             loop={true}
             modules={[Autoplay]}
-            className="payments-swiper"
+            className="providers-slider"
             >
                 {providersImages2.map((item, index) => (
                 <SwiperSlide>
@@ -717,7 +720,7 @@ function ProvidersSection() {
             speed={1000}
             loop={true}
             modules={[Autoplay]}
-            className="payments-swiper"
+            className="providers-slider"
             >
                 {providersImages3.map((item, index) => (
                 <SwiperSlide>

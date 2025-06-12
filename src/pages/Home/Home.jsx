@@ -233,7 +233,7 @@ const Home = () => {
                     <div className='model-icon'>
                         <i className="fas fa-tag"></i>
                     </div>
-                    <h3>White Label Solutions</h3>
+                    <h3>White Label Platform</h3>
                     <p>Get a branded version of our pre-built games tailored for your business</p>
                 </div>
 
@@ -295,6 +295,8 @@ const Home = () => {
 
         <ChooseGrid />
 
+
+        <ProvidersSection />
         
         <div className='support-section'>
             <FeaturesHeader featuresText={supportTitle}/>
@@ -332,7 +334,6 @@ const Home = () => {
             </div>
         </div>
 
-        <ProvidersSection />
 
         {/* <div className='start-journey-section'>
             <div className='journey-container'>

@@ -1,0 +1,110 @@
+.provider-section{
+    width: 100%;
+    background: url('../../assets/heroBg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.provider-container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/* .provider-title{
+    font-family: 'Lokanova-Std', 'Arial', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+} */
+.provider-title {
+    text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: 'Lokanova-Std', 'Arial', sans-serif;
+    padding: 20px 0;
+}
+
+.provider-title span {
+    animation: colorFade 10s infinite;
+    font-size: inherit;
+    font-family: 'Lokanova-Std', 'Arial', sans-serif;
+    font-weight: 400;
+}
+
+.provider-title span:first-child {
+    animation: colorFadeReverse 10s infinite;
+}
+
+.provider-title span.no-animation {
+    animation: none !important;
+    color: inherit;
+}
+
+.provider-desc {
+    font-size: 16px;
+    color: #d9d9d9;
+    font-weight: 500;
+}
+
+@keyframes colorFade {
+    0% {
+        color: var(--primary-yellow);
+    }
+    50% {
+        color: #ffffff;
+    }
+    100% {
+        color: var(--primary-yellow);
+    }
+}
+
+@keyframes colorFadeReverse {
+    0% {
+        color: #ffffff;
+    }
+    50% {
+        color: var(--primary-yellow);
+    }
+    100% {
+        color: #ffffff;
+    }
+}
+
+.providers-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+.providers-item{
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 215, 0, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.providers-item:hover{
+    transform: translateY(-5px);
+    border-color: var(--primary-yellow);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.1);
+}
+.providers-item img{
+    width: 100%;
+}
+
+.providers-slider{
+    width: 100%;
+    max-width: 1140px;
+    margin: 30px auto;
+}
+.providers-slider img{
+    height: 40px;
+    max-width: 200px;     
+}
