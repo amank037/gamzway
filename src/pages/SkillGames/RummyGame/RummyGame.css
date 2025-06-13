@@ -12,12 +12,12 @@
 
 .rummy-game .rummy-carousel-swiper {
     background: url(/rummyPage/bg.png);
-    background-color: rgba(0, 0, 0, 0.30);
+    background-color: rgba(0, 0, 0, 0.0);
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: -135px auto 0;
+    margin: -121px auto 0;
     position: relative;
     overflow: hidden;
     min-height: 100vh;
