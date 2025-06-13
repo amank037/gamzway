@@ -1,3 +1,8 @@
+.snakeladder-game{
+  overflow-x: hidden;
+  width: 100%;
+  margin-top: -134px;
+}
 .landing-snakeladder-section {
     background-image: url('/snakePage/emptyBg.png');
     background-color:rgba(17, 17, 17, 0.2);

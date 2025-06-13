@@ -26,7 +26,7 @@ import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 
 const landingItems =[
   {
-    title: "Rummy Game Development Company",
+    title: "Rummy Game",
     description:"Are you in search of the top rummy game development company? Gamzway specializes in rummy game development, offering comprehensive solutions for creating the best online rummy game app and website.",
     description2:"Rummy  known for its strategic gaming, intense competition, and real-money possibilities, rummy is among the most often played card games in India and worldwide. At Gamzway, we bring to screens with interactive elements, seamless graphics, and easy controls the same thrills."
   }
@@ -90,14 +90,14 @@ const aboutText = [
 
 const variationsText = [
   {
-    title: "Variations of Rummy Mobile Game",
+    title: "Modes of Rummy Game",
     description: " We create all main forms of rummy games to guarantee that one platform will let your users enjoy a range of experiences:"
   }
 ]
 
 const solutionsTitle = [
   {
-    title: "ONLINE RUMMY GAME FEATURES",
+    title: "RUMMY GAME'S SALIENT FEATURES",
     description: "Focussing on real-money and casual card games, Gamzway is among the top game developers in India.  These are the reasons our customers chose us:"
   }
 ]

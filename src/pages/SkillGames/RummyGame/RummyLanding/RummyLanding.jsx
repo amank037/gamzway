@@ -46,9 +46,9 @@ function RummyLanding({ landingItems}) {
                             <div className="first-rummy-slide-title-container first-rummy-slide-title1">
                                 <img src="/rummyPage/slides/1st slide/rummy.webp" alt=""  className="stacks-img"/>
                             </div>
-                            <div className="first-rummy-slide-title-container first-rummy-slide-title2">
+                            {/* <div className="first-rummy-slide-title-container first-rummy-slide-title2">
                                 <img src="/rummyPage/slides/1st slide/Untitled-4.webp" alt="" className="stacks-img" />
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

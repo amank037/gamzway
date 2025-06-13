@@ -22,7 +22,7 @@ import TambolaLanding from './TambolaLanding/TambolaLanding'
 
 const landingItems = [
   {
-    title: "TAMBOLA GAME DEVELOPMENT",
+    title: "TAMBOLA GAME",
     description: "Originally enjoyed at community events and meetings, it has become a well-liked online game with creative themes, customising, and real-time multiplayer support.",
     description2: " Our area of expertise at Gamzway is developing desktop, web, and mobile high-performance Tambola game applications.",
     button: "REQUEST A QUOTE",
@@ -106,7 +106,7 @@ const featuresContent = {
 }
 
 const solutionsTitle = [{
-  title: "Searching for the Perfect Tambola Game Solution for Your Business?",
+  title: "TAMBOLA GAME'S SALIENT FEATURES",
   description:" At Gamzway, we provide whole Tambola game development solutions with modern technology and safe backend support.  Our solutions are catered to your particular objectives regardless of your business organisation, community platform, or gaming company."
 }]
 

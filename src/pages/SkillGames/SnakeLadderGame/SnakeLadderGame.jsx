@@ -46,7 +46,7 @@ const landingItems = [
 // ]
 
 const variationTitle = [{
-  title: "Variations in Snake Ladder Game"
+  title: "Modes Of Snake Ladder Game"
 }]
 
 const variationGrid = [
@@ -140,7 +140,7 @@ const featuresContent = {
 // }
 
 const solutionsTitle = [{
-  title: "Looking for ideal Snake & Ladder Game Solution for Your Company?",
+  title: "SNAKE & LADDER GAME'S SALIENT",
   description:" At Gamzway, we provide whole Snake & Ladder game development solutions with modern technology and safe backend support.  Our solutions are catered to your particular objectives regardless of your business organisation, community platform, or gaming company."
 }]
 

@@ -55,3 +55,23 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .ludo-devices-container{
+        height: 40vh;
+    }
+    .ludo-mob{
+        top: 5%;
+        left: 10%;
+    }
+    .ludo-mob-img{
+        width: 30%;
+    }
+    .ludo-lap{
+        top: 50%;
+        left: 75%;
+    }
+    .ludo-lap-img{
+        width: 120%;
+    }
+}

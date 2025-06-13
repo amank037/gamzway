@@ -66,7 +66,7 @@ const featuresItems = [
 ]
 const variantsItems = [
   {
-    title: "VARIANTS OF POKER GAME DEVELOPED BY US"
+    title: "MODES OF POKER GAME"
   }
 ]
 
@@ -283,7 +283,7 @@ const crmTitle = [
 
 const solutionsTitle =[
   {
-    title: "POKER GAME FEATURES",
+    title: "POKER GAME'S SALIENT FEATURES",
     description: " Gamzway is a leading poker game development company in India, USA & UK, which offers a superior class of game development services. Our highly experienced poker game developers go the extra mile to give the poker lovers a different and top-notch gaming experience."
   }
 ]

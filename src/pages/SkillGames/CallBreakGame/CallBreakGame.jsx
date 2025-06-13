@@ -22,7 +22,7 @@ import FeaturesGridV5 from "../../../components/FeaturesGridV5/FeaturesGridV5"
 
 const landingItems = [
   {
-    title: "CALL BREAK GAME DEVELOPMENT",
+    title: "CALL BREAK GAME",
     description: "Call Break has become a hot item in the digital gaming market as millions of fans across South Asia and growing taste for skill-based real-money card games drive demand.",
     description2: "At Gamzway Technologies, we bring this venerable card game to life with engaging gaming, real-time multiplayer sync, sophisticated CRM tools, and monetising strategies maximising involvement and income.",
     button: "REQUEST A QUOTE",
@@ -359,7 +359,7 @@ const featuresGrid = [
 
 const featuresTitle = [
   {
-    title:"Variants of Call Break Games",
+    title:"Modes of Call Break Game",
     description:" Give your consumers a great range of experiences using several gameplay styles:"
   }
 ]
@@ -377,7 +377,7 @@ const CallBreakGame = () => {
 
       <div className="landing-callbreak-section">
       {/* <LandingPageV2 landingItems={landingItems} landingImages={landingImages}/> */}
-      <CallBreakLanding landingItems={landingItems}/>
+        <CallBreakLanding landingItems={landingItems}/>
       </div>
 
       <FeaturesBanner />

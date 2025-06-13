@@ -1,11 +1,17 @@
+.callbreak-game {
+    overflow-x: hidden;
+    width: 100%;
+    margin-top: -134px;
+}
 .landing-callbreak-section {
     position: relative;
     background-image: url('/callbreakPage/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    height: 100vh !important;
+    min-height: 100vh !important;
     margin-top: -121px;
+
 }
 
 .landing-callbreak-section::before {

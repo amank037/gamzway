@@ -193,14 +193,26 @@
   animation: slideUp 0.3s ease-in-out forwards;
 }
 
-
-.dropdown:hover .dropdown-menu {
+/* .dropdown:hover .dropdown-menu {
+    display: flex;
+    color: white;
+    max-height: 1000px;
+    opacity: 1;
+} */
+.dropdown:hover .dropdown-menu,
+.dropdown.active .dropdown-menu {
     display: flex;
     color: white;
     max-height: 1000px;
     opacity: 1;
 }
-
+@media (min-width: 992px) {
+    .dropdown:not(:hover):not(.active) .dropdown-menu {
+        display: none;
+        max-height: 0;
+        opacity: 0;
+    }
+}
 .dropdown-menu li {
     /* padding: 8px 16px; */
     white-space: nowrap;
@@ -221,8 +233,7 @@
     width: 100%;
     display: block;
     border-radius: 0;
-    margin: 5px;
-    padding: 10px
+    padding: 15px
 }
 
 .dropdown-menu li a:hover {

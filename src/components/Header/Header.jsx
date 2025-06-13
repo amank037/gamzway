@@ -9,12 +9,13 @@ function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isSticky, setIsSticky] = useState(false)
     const [activeDropdown, setActiveDropdown] = useState(null)
+    const [forceCloseDropdown, setForceCloseDropdown] = useState(false)
     const location = useLocation()
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 50) {
+            if (window.scrollY > 0) {
                 setIsSticky(true)
             } else {
                 setIsSticky(false)
@@ -27,6 +28,17 @@ function Header() {
             window.removeEventListener('scroll', handleScroll)
         }
     }, [])
+
+    useEffect(() =>{
+        const handleClickOutside = (e) => {
+            if (activeDropdown !== null && !e.target.closest('.dropdown')) {
+                setActiveDropdown(null)
+            }
+        }
+
+        document.addEventListener('mousedown', handleClickOutside)
+        return () => {document.removeEventListener('mousedown', handleClickOutside)}
+    }, [activeDropdown])
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen)
@@ -88,6 +100,28 @@ function Header() {
         },
     ]
 
+    const handleDropdownItemClick = (e) => {
+        e.stopPropagation()
+        // Force close dropdown on desktop by adding a class
+        setForceCloseDropdown(true)
+        setActiveDropdown(null)
+        
+        // Reset after a short delay to allow for navigation
+        setTimeout(() => {
+            setForceCloseDropdown(false)
+        }, 100)
+        
+        closeMenu()
+    }
+
+    const handleDropdownMouseLeave = () => {
+        // Only close if we're in force close mode (after clicking an item)
+        if (forceCloseDropdown) {
+            setActiveDropdown(null)
+            setForceCloseDropdown(false)
+        }
+    }
+
     const isActive = (path) => {
         if (path === '/') {
             return location.pathname === '/'
@@ -141,7 +175,7 @@ function Header() {
                         // className={isActive('/contacts') ? 'active' : ''}
                         onClick={(e) => {
                             
-                            // setIsModalOpen(true);
+                            setIsModalOpen(true);
                             closeMenu();
                         }}
                     >

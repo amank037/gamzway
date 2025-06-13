@@ -1,3 +1,8 @@
+.tambola-game{
+    overflow-x: hidden;
+    width: 100%;
+    margin-top: -134px;
+}
 .landing-tambola-section {
     background-image: url('/tambolaPage/bg.png');
     background-color: rgba(0, 0, 0, 0.2);
@@ -5,7 +10,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    height: 100vh !important;
+    min-height: 100vh !important;
     margin-top: -121px;
 }
 /* .landing-tambola-section::before {

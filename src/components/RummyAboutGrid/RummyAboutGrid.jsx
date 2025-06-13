@@ -7,6 +7,7 @@ function RummyAboutGrid() {
   const [showMore3, setShowMore3] = useState(false)
   const [showMore4, setShowMore4] = useState(false)
   const [showMore5, setShowMore5] = useState(false)
+  const [showMore6, setShowMore6] = useState(false)
 
   return (
     <div className='rummy-about-grid'>
@@ -14,11 +15,11 @@ function RummyAboutGrid() {
       <div className='rummy-about-grid-item'>
         <div className='rummy-about-grid-image-title-wrap'>
           <img src="/rummyPage/variations/point-rummy.webp" alt="" />
-          <h3>Rummy Points</h3>
+          <h3>Points Rummy</h3>
         </div>
         <p>
-          A variation fast-paced in which every point has a 
-          {showMore1 && " predefined value. The first declaring player gains by using appropriate sets and sequences."}
+          A variation fast-paced in which every
+          {showMore1 && " point has a predefined value. The first declaring player gains by using appropriate sets and sequences."}
           <button onClick={() => setShowMore1(!showMore1)} className="read-more-btn">
             {showMore1 ? "Read Less" : "Read More"}
           </button>
@@ -28,7 +29,7 @@ function RummyAboutGrid() {
       <div className='rummy-about-grid-item'>
         <div className='rummy-about-grid-image-title-wrap'>
           <img src="/rummyPage/variations/pool-rummy.webp" alt="" />
-          <h3>Rummy in Pools</h3>
+          <h3>Pool <br/> Rummy</h3>
         </div>
         <p>
           Individuals add chips to a pool. Being the last
@@ -42,7 +43,7 @@ function RummyAboutGrid() {
       <div className='rummy-about-grid-item'>
         <div className='rummy-about-grid-image-title-wrap'>
           <img src="/rummyPage/variations/deal-rummy.webp" alt="" />
-          <h3>Rummy Dealings</h3>
+          <h3>Deals <br/>Rummy</h3>
         </div>
         <p>
           Players battle throughout a set deal count.
@@ -56,11 +57,11 @@ function RummyAboutGrid() {
       <div className='rummy-about-grid-item'>
         <div className='rummy-about-grid-image-title-wrap'>
           <img src="/rummyPage/variations/gin-rummy.webp" alt="" />
-          <h3>Rummy of Gin</h3>
+          <h3>Gin <br/>  Rummy</h3>
         </div>
         <p>
-          Popular in Western markets, Gin Rummy generally 
-          {showMore4 && "concentrates on creating melds and a low deadwood point count."}
+          Popular in Western markets, Gin
+          {showMore4 && " Rummy generally concentrates on creating melds and a low deadwood point count."}
           <button onClick={() => setShowMore4(!showMore4)} className="read-more-btn">
             {showMore4 ? "Read Less" : "Read More"}
           </button>
@@ -70,13 +71,27 @@ function RummyAboutGrid() {
       <div className='rummy-about-grid-item'>
         <div className='rummy-about-grid-image-title-wrap'>
           <img src="/rummyPage/variations/rummy.webp" alt="" />
-          <h3>Indian Rummy</h3>
+          <h3>13 Card Rummy</h3>
         </div>
         <p>
-          Often favoured in the Indian gaming scene, it is
-          {showMore5 && " the traditional form of rummy was with 13 cards."}
+          Often favoured in the Indian gaming scene
+          {showMore5 && ", it is the traditional form of rummy was with 13 cards."}
           <button onClick={() => setShowMore5(!showMore5)} className="read-more-btn">
             {showMore5 ? "Read Less" : "Read More"}
+          </button>
+        </p>
+      </div>
+
+      <div className='rummy-about-grid-item'>
+        <div className='rummy-about-grid-image-title-wrap'>
+          <img src="https://beta.mobzway.com/assets/images/rummy-software/Rummy-04.webp" alt="" />
+          <h3>21 Card Rummy</h3>
+        </div>
+        <p>
+        Fast-paced game with 21 cards, 
+          {showMore6 && "form sets and sequences to achieve the lowest score."}
+          <button onClick={() => setShowMore6(!showMore6)} className="read-more-btn">
+            {showMore6 ? "Read Less" : "Read More"}
           </button>
         </p>
       </div>
