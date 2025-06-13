@@ -4,7 +4,6 @@ import './Header.css'
 import logo from '../../assets/1-03.webp'
 import RequestModal from '../RequestModal/RequestModal'
 import Logo from '../Logo/Logo'
-import { set } from 'mongoose'
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
