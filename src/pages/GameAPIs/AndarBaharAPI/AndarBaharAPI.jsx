@@ -171,7 +171,7 @@ const AndarBaharAPI = () => {
       
       <PromoTools />
       <PlatformSection />
-      <PlatformImg />
+      {/* <PlatformImg /> */}
       <CustomGrid/>
       <ChooseGrid />
 

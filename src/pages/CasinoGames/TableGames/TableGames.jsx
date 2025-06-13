@@ -290,6 +290,13 @@ const productItems = [
   },
 ]
 
+const deviceImages = [
+  {
+    image1:"/ludoPage/devices/ludo-mob.png",
+    image2:"/ludoPage/devices/ludo-lap2.webp"
+  }
+]
+
 const TableGames = () => {
   return (
     <div className="table-game">
@@ -312,7 +319,7 @@ const TableGames = () => {
 
       <PromoTools />
       <PlatformSection />
-      <PlatformImg />
+      <PlatformImg deviceImages={deviceImages}/>
       <CustomGrid/>
       <ChooseGrid />
 

@@ -286,7 +286,7 @@ const WhiteLabelCasino = () => {
       <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
       <PromoTools />
       <PlatformSection />
-      <PlatformImg />
+      {/* <PlatformImg /> */}
       <CustomGrid/>
       <ChooseGrid/>
       <CustomGrid/>

@@ -201,7 +201,7 @@ const SkillGamesAPI = () => {
 
       <PromoTools />
       <PlatformSection />
-      <PlatformImg />
+      {/* <PlatformImg /> */}
       <CustomGrid/>
       <ChooseGrid />
 

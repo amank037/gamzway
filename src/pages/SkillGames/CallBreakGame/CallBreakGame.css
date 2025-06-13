@@ -19,11 +19,11 @@
     z-index: 1;
 }
 
-.landing-callbreak-section > * {
+.landing-callbreak-section>* {
     z-index: 2;
 }
 
-.break-services-section{
+.break-services-section {
     width: 100%;
     padding: 50px 0;
     background: url('../../../assets/heroBg.svg');
@@ -49,11 +49,12 @@
     padding: 50px 0;
     margin: 0 auto;
     position: relative;
-    background: url('https://i.ibb.co/HRLpG6v/feature-bg-1.png');
+    background: url('');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .poker-features-section::before {
     content: '';
     position: absolute;
@@ -64,6 +65,7 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
+
 .poker-features-grid {
     position: relative;
     z-index: 2;
@@ -75,7 +77,7 @@
     padding: 20px 0;
 }
 
-.features-section > *:not(.poker-features-grid) {
+.features-section>*:not(.poker-features-grid) {
     position: relative;
     z-index: 2;
     max-width: 1140px;
@@ -128,7 +130,7 @@
     transform: translateY(-5px) scale(1.02);
     background: rgba(255, 215, 0, 0.03);
     border-color: transparent;
-    box-shadow: 
+    box-shadow:
         0 10px 30px rgba(255, 215, 0, 0.1),
         0 5px 15px rgba(0, 0, 0, 0.2);
 }

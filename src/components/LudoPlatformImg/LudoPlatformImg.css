@@ -8,6 +8,7 @@
     padding: 40px 0;
     position: relative;
     z-index: 1;
+    overflow-x: clip;
 }
 
 .ludo-mob{
@@ -35,3 +36,22 @@
     transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 992px) {
+    .ludo-devices-container{
+        height: 50vh;
+    }
+    .ludo-mob{
+        top: 5%;
+        left: 10%;
+    }
+    .ludo-mob-img{
+        width: 30%;
+    }
+    .ludo-lap{
+        top: 50%;
+        left: 75%;
+    }
+    .ludo-lap-img{
+        width: 100%;
+    }
+}

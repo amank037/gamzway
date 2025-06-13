@@ -4,6 +4,7 @@
     flex-direction: row;
     align-items: center;
     /* margin-top: 134px; */
+  /* margin-top: 20px; */
     height: 100vh;
     padding: 0 100px;
     gap: 100px;
@@ -14,7 +15,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
     z-index: 3;
 }
@@ -41,7 +42,7 @@
     align-items: flex-start;
     gap: 20px;
     z-index: 3;
-    width: 60%;
+    width: 50%;
 }
 .ludolandingv2-text h1{
     font-size: 64px;
@@ -130,91 +131,12 @@
 }
 
 
-.ludo-about-card{
-    display: flex;
-    height: 30%;
-    width: 50%;
-    gap: 1rem;
-    margin: auto 0;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    position: relative;
-
-    /* box-shadow: 0px 0px 40px 10px rgba(255,215,0,0.72);
-    -webkit-box-shadow: 0px 0px 40px 10px rgba(255,215,0,0.72);
-    -moz-box-shadow: 0px 0px 40px 10px rgba(255,215,0,0.72); */
-    /* background-image: '/ludoPage/bg.png'; */
-    background-image: url(/ludoPage/bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: 0px 0px 40px 10px rgba(255, 238, 0, 0.72);
-    animation: fadeIn 1s ease-in-out;
-}
-.ludo-about-card::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    backdrop-filter: blur(5px); /* Modern backdrop blur (for elements over the background) */
-    z-index: 0;
-    border-radius: 1.5rem;
-}
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-.ludo-about-card-img-section{
-    width: 50%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-        z-index: 1;
-}
-.ludo-about-card-img-section .ludo-about-card-logo{
-    width: 100%;
-    margin: 0 auto;
-}
-.ludo-about-card-img-section .ludo-about-card-fair{
-    width: 80%;
-    margin: 0 auto;
-}
-
-.ludo-about-card-info{
-    width: 50%;
-    padding-left: 10px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    z-index: 1;
-}
-.ludo-about-card-info p{
-    font-size: 1.2rem;
-    font-weight: 400;
-}
-
-
-@media screen and (max-width: 1024px) {
-    .ludo-about-card{
-        width: 100%;
-    }
-    .ludo-about-card-info{
-        width: 100%;
-    }
-}
-
-
-.solutions-img-1 {
+/* .ludo-solutions-img-1 {
     position: relative;
     width: 100%;
-    width: 500px;
-    height: inherit;
+    height: 500px;
     display: block;
-}
+} */
 
 
 @keyframes pieceFloat1 {
@@ -243,41 +165,41 @@
 
 .sol-ludo-board-container {
     position: absolute;
-    width: 120%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     z-index: 1;
-    bottom: 0%;
+    bottom: -10%;
     left: 0%;
 }
 
 .sol-ludo-pieces-container {
     position: absolute;
-    width: 25%;
+    width: 20%;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 4;
 }
 
 .sol-ludo-piece1 {
     top: 10%;
-    left: 20%;
+    left: 10%;
     animation: pieceFloat1 4s ease-in-out infinite;
 }
 
 .sol-ludo-piece2 {
     top: 35%;
-    left: 50%;
+    left: 40%;
     animation: pieceFloat2 4.5s ease-in-out infinite;
 }
 
 .sol-ludo-piece3 {
     top: 0%;
-    left: 45%;
+    left: 40%;
     animation: pieceFloat3 4.2s ease-in-out infinite;
 }
 
 .sol-ludo-piece4 {
     top: 20%;
-    left: 80%;
+    left: 70%;
     animation: pieceFloat4 5s ease-in-out infinite;
 }
 
@@ -295,7 +217,7 @@
 
 .sol-ludo-dice1 {
     top:0%;
-    left: 10%;
+    left: 0%;
     animation: diceFloat 3s linear infinite;
 }
 
@@ -304,11 +226,11 @@
     left: 75%;
     animation: diceFloat 5s linear infinite reverse;
 }
-.solutions-img-1 {
+.ludo-solutions-img-1 {
     position: relative;
     width: 100%;
-    max-width: 450px;
-    height: inherit;
+    max-width: 500px;
+    height: 400px;
     display: block;
     margin: 0 auto;
 }
@@ -321,7 +243,7 @@
         padding: 20px;
     }
 
-    .solutions-img-1 {
+    .ludo-solutions-img-1 {
         max-width: 100%;
         padding: 0 20px;
     }
@@ -365,26 +287,26 @@
 
 
 @media screen and (max-width: 480px) {
-    .solutions-img-1 {
+    .ludo-solutions-img-1 {
         padding: 0 10px;
     }
 
     .sol-ludo-pieces-container {
-        width: 30%;
+        width: 20%;
     }
 
     .sol-ludo-dice-container {
-        width: 25%;
+        width: 15%;
     }
 
     .sol-ludo-piece1 {
         top: 8%;
-        left: 2%;
+        left: 15%;
     }
 
     .sol-ludo-piece2 {
         top: 35%;
-        left: 0%;
+        left: 45%;
     }
 
     .sol-ludo-piece3 {
@@ -393,22 +315,57 @@
     }
 
     .sol-ludo-piece4 {
-        top: 3%;
-        left: 20%;
+        top: 15%;
+        left: 70%;
     }
 
     .sol-ludo-dice1 {
         top: 12%;
-        left: 60%;
+        left: 10%;
     }
 
     .sol-ludo-dice2 {
         top: 40%;
-        left: 55%;
+        left: 65%;
     }
 }
 .image-stack {
     width: 100%;
     height: auto;
     object-fit: contain;
+}
+
+@media screen and (max-width: 993px) {
+    .ludolandingv2-section{
+        align-items: center;
+        flex-direction: column;
+        padding: 0 20px;
+        margin-top: 134px;
+        gap: 100px;
+    }
+    .ludolandingv2-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .ludolandingv2-text{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .ludolandingv2-text p {
+        font-size: 18px;
+    }
+    .pokerbg-container {
+        width: 60%;
+        padding: 0 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .pokerbg-container {
+        padding: 0 10px;
+    }
 }

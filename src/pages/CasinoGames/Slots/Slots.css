@@ -20,7 +20,7 @@
     z-index: 0;
 }
 
-.slots-overlay-images-div{
+.slots-overlay-images-div {
     position: absolute;
     top: 0;
     left: 0;
@@ -28,59 +28,69 @@
     width: 100%;
     overflow-x: hidden;
 }
-.slots-overlay-images{
+
+.slots-overlay-images {
     position: absolute;
-    height:10%;
+    height: 10%;
 }
-.slots-over1{
+
+.slots-over1 {
     top: 30%;
     right: 30%;
     z-index: 1;
     animation: slots-overFloat 2s ease-in-out infinite;
 }
-.slots-over2{
+
+.slots-over2 {
     top: 45%;
     right: 11%;
     z-index: 1;
     animation: slots-overFloat 3s ease-in-out infinite;
 }
-.slots-over3{
+
+.slots-over3 {
     top: 50%;
     right: 26%;
     z-index: 1;
     animation: slots-overFloat 4s ease-in-out infinite;
 }
-.slots-over4{
+
+.slots-over4 {
     top: 70%;
     right: 20%;
     z-index: 1;
     animation: slots-overFloat 5s ease-in-out infinite;
 }
-.slots-over5{
+
+.slots-over5 {
     top: 30%;
     right: 17%;
     z-index: 1;
     animation: slots-overFloat 3s ease-in-out infinite;
 }
-.slots-over6{
+
+.slots-over6 {
     top: 20%;
     right: 20%;
     z-index: 1;
     animation: slots-overFloat 2s ease-in-out infinite;
 }
-@keyframes slots-overFloat{
-    0%{
+
+@keyframes slots-overFloat {
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(10px);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
 
-.slots-game > *:not(.landing-slots-section) {
+.slots-game>*:not(.landing-slots-section) {
     position: relative;
     z-index: 1;
 }
@@ -91,11 +101,12 @@
     padding: 50px 0;
     margin: 0 auto;
     position: relative;
-    background: url('https://i.ibb.co/HRLpG6v/feature-bg-1.png');
+    background: url('');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .features-slot-section::before {
     content: '';
     position: absolute;
@@ -106,6 +117,7 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
+
 .features-slot-grid {
     position: relative;
     z-index: 2;
@@ -117,7 +129,7 @@
     padding: 20px 0;
 }
 
-.features-slot-section > *:not(.features-slot-grid) {
+.features-slot-section>*:not(.features-slot-grid) {
     position: relative;
     z-index: 2;
     max-width: 1140px;
@@ -131,6 +143,7 @@
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
 }
+
 .features-slot-grid .features-slot-grid-item:hover {
     transform: translateY(-3px);
     background: linear-gradient(0deg, rgba(255, 215, 0, 0.5) 0%, rgba(255, 215, 0, 0) 100%);
@@ -169,24 +182,28 @@
     font-weight: 500;
 }
 
-.solutions-slot-section{
+.solutions-slot-section {
     width: 100%;
     max-width: 1140px;
     padding: 50px 0;
     margin: 0 auto;
 }
-.solutions-slot-section .solutions-slot-bottom{
+
+.solutions-slot-section .solutions-slot-bottom {
     display: flex;
     gap: 100px;
 }
-.solutions-slot-section .solutions-slot-bottom .solutions-img img{
+
+.solutions-slot-section .solutions-slot-bottom .solutions-img img {
     max-width: 400px;
 }
-.solutions-slot-section .solutions-slot-bottom .solutions-desc-container{
-    
+
+.solutions-slot-section .solutions-slot-bottom .solutions-desc-container {
+
     padding: 0 20px;
 }
-.solutions-slot-section .solutions-slot-bottom .solutions-desc-container .solutions-desc{
+
+.solutions-slot-section .solutions-slot-bottom .solutions-desc-container .solutions-desc {
     text-align: justify;
     position: relative;
 }
@@ -225,7 +242,7 @@
     background-color: #FFC700;
 }
 
-.solutions-desc-more:not(.show) + button {
+.solutions-desc-more:not(.show)+button {
     transform: translateY(-20px);
 }
 
@@ -240,7 +257,7 @@
     .landing-text {
         width: 80%;
     }
-    
+
     .solutions-slot-section .solutions-slot-bottom {
         flex-direction: column;
         gap: 50px;

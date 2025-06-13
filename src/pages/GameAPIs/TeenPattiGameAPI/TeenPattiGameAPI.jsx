@@ -323,7 +323,7 @@ const TeenPattiGameAPI = () => {
 
       <PromoTools />
       <PlatformSection />
-      <PlatformImg />
+      {/* <PlatformImg /> */}
       <CustomGrid/>
       <ChooseGrid />
 

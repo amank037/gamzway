@@ -369,17 +369,23 @@ const touchItems = [
     hrefText: "CONTACT US",
   }
 ]
+const deviceImages = [
+  {
+    image1:"/ludoPage/devices/ludo-mob.png",
+    image2:"/ludoPage/devices/ludo-lap2.webp"
+  }
+]
 
 const RNGGames = () => {
   return (
     <div className="rng-game">
       <div className="landing-rng-section">
       <LandingSection landingItems={landingItems}/>
-        <div>
+        <div className='rng-over'>
           <div className='rng-over-1'>
             <img src="/rngPage/bgOver1.png" alt="" />
           </div>
-          <div>
+          <div className='rng-over-2'>
             <img src="/rngPage/bgOver2.png" alt="" />
           </div>
         </div>
@@ -389,7 +395,7 @@ const RNGGames = () => {
       <FeaturesGridV4 featuresGrid={featuresGrid} featuresTitle={featuresItems} />
 
       <PlatformSection />
-      <PlatformImg />
+      <PlatformImg deviceImages={deviceImages}/>
       <CustomGrid/>
       <ChooseGrid />
 

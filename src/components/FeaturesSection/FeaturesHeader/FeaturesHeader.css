@@ -14,14 +14,14 @@
 }
 
 .features-title span {
-    animation: colorFade 10s infinite;
+    animation: colorFade 10s infinite !important;
     font-size: inherit;
     font-family: 'Lokanova-Std', 'Arial', sans-serif;
     font-weight: 400;
 }
 
 .features-title span:first-child {
-    animation: colorFadeReverse 10s infinite;
+    animation: colorFadeReverse 10s infinite !important;
 }
 
 .features-title span.no-animation {

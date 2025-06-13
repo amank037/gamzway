@@ -21,6 +21,7 @@ import LudoPlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg
 import FeaturesGridV4 from '../../../components/FeaturesGridV4/FeaturesGridV4'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import LudoLanding from './LudoLanding/LudoLanding'
+import SolutionsSection from '../../../components/SolutionsSection/SolutionsSection'
 
 // const ludocarouselData = [
 //   {
@@ -135,6 +136,21 @@ const servicesTitle = [
     description: "Strong emphasis on performance, player retention, and monetisation drives our Ludo games' construction.  Important characteristics include:"
   }
 ]
+
+const solutionsTitle = [
+  {
+    title: " Ludo Game's salient features",
+    description: "Strong emphasis on performance, player retention, and monetisation drives our Ludo games' construction.  Important characteristics include:"
+  }
+]
+
+const solutionsItems = [{
+  image:"https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif",
+  gametype: "Skill Game",
+  rtp: "90%",
+  devices: "Android, iOS, Web, Desktop",
+  background:"/ludoPage/bg.png"
+}]
 
 const crmItems = [
   {
@@ -518,6 +534,13 @@ const productItems = [
 //   }
 // ]
 
+const deviceImages = [
+  {
+    image1:"/ludoPage/devices/ludo-mob.png",
+    image2:"/ludoPage/devices/ludo-lap2.webp"
+  }
+]
+
 
 const LudoGame = () => {
   return (
@@ -556,55 +579,33 @@ const LudoGame = () => {
 
       <FeaturesGridV4 featuresGrid={modesGrid} featuresTitle={modesItems} />
 
-      <div className='solutions-ludo-section'>
+      <SolutionsSection solutionsItems={solutionsItems}  solutionsTitle={solutionsTitle}/>
+
+      {/* <div className='solutions-ludo-section'>
         <div className='solutions-ludo-top'>
           <FeaturesHeader featuresText={servicesTitle} />
         </div>
         <div className='solutions-ludo-bottom'>
-          {/* <div className='solutions-img-1'>
-            <div className='sol-ludo-board-container'>
-              <img src="/ludoPage/solutions/1-01.webp" alt="" className="image-stack" />
-            </div>
-            <div className='sol-ludo-pieces-container sol-ludo-piece1'>
-              <img src="/ludoPage/solutions/2-01.webp" alt="" className="image-stack" />
-            </div>
-            <div className='sol-ludo-pieces-container sol-ludo-piece2'>
-              <img src="/ludoPage/solutions/3-01.webp" alt="" className="image-stack" />
-            </div>
-            <div className='sol-ludo-pieces-container sol-ludo-piece3'>
-              <img src="/ludoPage/solutions/4-01.webp" alt="" className="image-stack" />
-            </div>
-            <div className='sol-ludo-pieces-container sol-ludo-piece4'>
-              <img src="/ludoPage/solutions/5-01.webp" alt="" className="image-stack" />
-            </div>
-            <div className='sol-ludo-dice-container sol-ludo-dice1'>
-              <img src="/ludoPage/solutions/6-01.webp" alt="" className="image-stack" />
-            </div>
-            <div className='sol-ludo-dice-container sol-ludo-dice2'>
-              <img src="/ludoPage/solutions/7-01.webp" alt="" className="image-stack" />
-            </div>
-          </div> */}
-
-                    <div className='ludo-about-card'>
-                        <div className='ludo-about-card-img-section'>
-                            <img src="https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif" alt="" className='ludo-about-card-logo'/>
-                            <img src="https://spribe.co/pf.6ace4e8705f279ee.svg" alt="" className='ludo-about-card-fair'/>
-                        </div>
-                        <div className='ludo-about-card-info'>
-                            <div className='ludo-about-card-info-item'>
-                                <p>Game Type</p>
-                                <h3>Mini Game</h3>
-                            </div>
-                            <div className='ludo-about-card-info-item'>
-                                <p>Return To Player (RTP)</p>
-                                <h3>97%</h3>
-                            </div>
-                            <div className='ludo-about-card-info-item'>
-                                <p>Devices</p>
-                                <h3>Desktop, Tablet, Mobile</h3>
-                            </div>
-                        </div>
-                    </div>
+          <div className='ludo-about-card'>
+              <div className='ludo-about-card-img-section'>
+                  <img src="https://beta.mobzway.com/assets/images/ludo-game-development/banner_img.avif" alt="" className='ludo-about-card-logo'/>
+                  <img src="https://spribe.co/pf.6ace4e8705f279ee.svg" alt="" className='ludo-about-card-fair'/>
+              </div>
+              <div className='ludo-about-card-info'>
+                  <div className='ludo-about-card-info-item'>
+                      <p>Game Type</p>
+                      <h3>Mini Game</h3>
+                  </div>
+                  <div className='ludo-about-card-info-item'>
+                      <p>Return To Player (RTP)</p>
+                      <h3>97%</h3>
+                  </div>
+                  <div className='ludo-about-card-info-item'>
+                      <p>Devices</p>
+                      <h3>Desktop, Tablet, Mobile</h3>
+                  </div>
+              </div>
+          </div>
 
           <div className='solutions-desc-container'>
             <div className='solutions-desc'>
@@ -645,10 +646,10 @@ const LudoGame = () => {
           </div>
         </div>
         <p className='solutions-ludo-p'> These elements not only make gaming interesting but also inspire gamers to come back often, hence enhancing user retention.</p>
-      </div>
+      </div> */}
 
       <PlatformSection />
-      <LudoPlatformImg />
+      <LudoPlatformImg deviceImages={deviceImages}/>
       <CustomGrid/>
 
       {/* <div className='modes-section'>

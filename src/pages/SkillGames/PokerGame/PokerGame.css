@@ -1,8 +1,9 @@
-.poker-game{
+.poker-game {
     width: 100%;
 }
+
 .poker-game .carousel-swiper {
-    background: url('/ludoPage/bg.png');
+    background: url('/pokerPage/bg.png');
     background-color: rgba(0, 0, 0, 0.2);
     background-blend-mode: overlay;
     background-repeat: no-repeat;
@@ -13,7 +14,8 @@
     overflow: hidden;
     min-height: 100vh;
 }
-.poker-game .carousel-swiper .landingImg{
+
+.poker-game .carousel-swiper .landingImg {
     position: absolute;
     top: 20%;
     right: 5%;
@@ -26,11 +28,12 @@
     padding: 50px 0;
     margin: 0 auto;
     position: relative;
-    background: url('https://i.ibb.co/HRLpG6v/feature-bg-1.png');
+    background: url('');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .features-section::before {
     content: '';
     position: absolute;
@@ -41,6 +44,7 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
+
 .poker-features-grid {
     position: relative;
     z-index: 2;
@@ -52,7 +56,7 @@
     padding: 20px 0;
 }
 
-.features-section > *:not(.poker-features-grid) {
+.features-section>*:not(.poker-features-grid) {
     position: relative;
     z-index: 2;
     max-width: 1140px;
@@ -105,7 +109,7 @@
     transform: translateY(-5px) scale(1.02);
     background: rgba(255, 215, 0, 0.03);
     border-color: transparent;
-    box-shadow: 
+    box-shadow:
         0 10px 30px rgba(255, 215, 0, 0.1),
         0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -168,7 +172,7 @@
     padding: 20px 0;
 }
 
-.features-section > *:not(.poker-features-grid-2) {
+.features-section>*:not(.poker-features-grid-2) {
     position: relative;
     z-index: 2;
     max-width: 1140px;
@@ -221,7 +225,7 @@
     transform: translateY(-5px) scale(1.02);
     background: rgba(255, 215, 0, 0.03);
     border-color: transparent;
-    box-shadow: 
+    box-shadow:
         0 10px 30px rgba(255, 215, 0, 0.1),
         0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -269,24 +273,28 @@
     color: rgba(255, 255, 255, 1);
 }
 
-.solutions-poker-section{
+.solutions-poker-section {
     width: 100%;
     max-width: 1140px;
     padding: 50px 0;
     margin: 0 auto;
 }
-.solutions-poker-section .solutions-poker-bottom{
+
+.solutions-poker-section .solutions-poker-bottom {
     display: flex;
     gap: 100px;
 }
-.solutions-poker-section .solutions-poker-bottom .solutions-img img{
+
+.solutions-poker-section .solutions-poker-bottom .solutions-img img {
     max-width: 400px;
 }
-.solutions-poker-section .solutions-poker-bottom .solutions-desc-container{
-    
+
+.solutions-poker-section .solutions-poker-bottom .solutions-desc-container {
+
     padding: 0 20px;
 }
-.solutions-poker-section .solutions-poker-bottom .solutions-desc-container .solutions-desc{
+
+.solutions-poker-section .solutions-poker-bottom .solutions-desc-container .solutions-desc {
     text-align: justify;
     position: relative;
 }
@@ -306,14 +314,15 @@
 }
 
 
-.bold-text{
+.bold-text {
     font-weight: 700;
 }
 
-.faq-section{
+.faq-section {
     width: 100%;
 }
-.faq-section .faq-container{
+
+.faq-section .faq-container {
     max-width: 1240px;
     width: 100%;
     display: flex;

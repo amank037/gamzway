@@ -24,7 +24,8 @@
     margin: 0 auto;
     position: relative;
 }
-.regarding-section p{
+
+.regarding-section p {
     font-size: 18px;
     color: rgb(255, 255, 255);
     font-weight: 500;
@@ -38,11 +39,12 @@
     padding: 50px 0;
     margin: 0 auto;
     position: relative;
-    background: url('https://i.ibb.co/HRLpG6v/feature-bg-1.png');
+    background: url('');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .modes-section::before {
     content: '';
     position: absolute;
@@ -53,6 +55,7 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
+
 .modes-grid {
     position: relative;
     z-index: 2;
@@ -64,7 +67,7 @@
     padding: 20px 0;
 }
 
-.modes-section > *:not(.modes-grid) {
+.modes-section>*:not(.modes-grid) {
     position: relative;
     z-index: 2;
     max-width: 10 1140px;
@@ -79,6 +82,7 @@
     border-radius: 40px;
     backdrop-filter: blur(10px);
 }
+
 .modes-grid .modes-grid-item:hover {
     transform: translateY(-3px);
     background: linear-gradient(0deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 215, 0, 0) 70%);
@@ -118,7 +122,7 @@
 }
 
 
-.solutions-ludo-section{
+.solutions-ludo-section {
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -132,15 +136,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://i.ibb.co/HRLpG6v/feature-bg-1.png');
+    background: url('');
     opacity: 0.3;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transform: scaleX(-1);
-    
 }
-.solutions-ludo-section .solutions-ludo-bottom{
+
+.solutions-ludo-section .solutions-ludo-bottom {
     display: flex;
     gap: 100px;
     max-width: 1140px;
@@ -148,6 +152,7 @@
     margin: 0 auto;
     width: 100%;
 }
+
 /* .solutions-ludo-section .solutions-ludo-bottom .solutions-img img{
     max-width: 400px;
 } */
@@ -355,45 +360,145 @@
     height: auto;
     object-fit: contain;
 } */
-.solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container{
-    
+.solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container {
+
     padding: 0 20px;
 }
-.solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container .solutions-desc{
+
+.solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container .solutions-desc {
     text-align: justify;
     position: relative;
 }
-.solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container .solutions-desc .solutions-ludo-grid{
+
+.solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container .solutions-desc .solutions-ludo-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
-.solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container .solutions-desc .solutions-ludo-grid .solutions-ludo-grid-item{
+
+.solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container .solutions-desc .solutions-ludo-grid .solutions-ludo-grid-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
     margin-bottom: 20px;
 }
-.solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container .solutions-desc .solutions-ludo-grid .solutions-ludo-grid-item img{
+
+.solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container .solutions-desc .solutions-ludo-grid .solutions-ludo-grid-item img {
     width: 100px;
     height: 100px;
     margin: 0 auto;
     transition: transform 0.3s ease-in-out;
 }
-.solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container .solutions-desc .solutions-ludo-grid .solutions-ludo-grid-item:hover img{
+
+.solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container .solutions-desc .solutions-ludo-grid .solutions-ludo-grid-item:hover img {
     transform: scale(1.1);
 }
-.solutions-banner-line{
+
+.solutions-banner-line {
     border-top: 2px solid #ffd90086;
     width: 100%;
 }
-.solutions-ludo-section .solutions-ludo-p{
+
+.solutions-ludo-section .solutions-ludo-p {
     max-width: 1140px;
     margin: 0 auto;
     width: 100%;
     text-align: center;
 }
+
+.ludo-about-card {
+    display: flex;
+    height: 30%;
+    width: 50%;
+    gap: 1rem;
+    margin: auto 0;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    position: relative;
+
+    /* box-shadow: 0px 0px 40px 10px rgba(255,215,0,0.72);
+    -webkit-box-shadow: 0px 0px 40px 10px rgba(255,215,0,0.72);
+    -moz-box-shadow: 0px 0px 40px 10px rgba(255,215,0,0.72); */
+    /* background-image: '/ludoPage/bg.png'; */
+    background-image: url(/ludoPage/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 40px 10px rgba(255, 238, 0, 0.72);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.ludo-about-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    /* Modern backdrop blur (for elements over the background) */
+    z-index: 0;
+    border-radius: 1.5rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ludo-about-card-img-section {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.ludo-about-card-img-section .ludo-about-card-logo {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ludo-about-card-img-section .ludo-about-card-fair {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ludo-about-card-info {
+    width: 50%;
+    padding-left: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+.ludo-about-card-info p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .ludo-about-card {
+        width: 100%;
+    }
+
+    .ludo-about-card-info {
+        width: 100%;
+    }
+}
+
 
 .features-section {
     width: 100%;
@@ -401,11 +506,12 @@
     padding: 50px 0;
     margin: 0 auto;
     position: relative;
-    background: url('https://i.ibb.co/HRLpG6v/feature-bg-1.png');
+    background: url('');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .features-section::before {
     content: '';
     position: absolute;
@@ -416,6 +522,7 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
+
 .features-grid {
     position: relative;
     z-index: 2;
@@ -428,7 +535,7 @@
     padding: 20px 0;
 }
 
-.features-section > *:not(.features-grid) {
+.features-section>*:not(.features-grid) {
     position: relative;
     z-index: 2;
     max-width: 1140px;
@@ -442,6 +549,7 @@
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
 }
+
 .features-grid .features-grid-item:hover {
     transform: translateY(-3px);
     background: linear-gradient(0deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 215, 0, 0) 70%);
@@ -485,11 +593,12 @@
     padding: 50px 0;
     margin: 0 auto;
     position: relative;
-    background: url('https://i.ibb.co/HRLpG6v/feature-bg-1.png');
+    background: url('');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .admin-features-section::before {
     content: '';
     position: absolute;
@@ -500,6 +609,7 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
+
 .admin-features-grid {
     position: relative;
     z-index: 2;
@@ -512,7 +622,7 @@
     padding: 20px 0;
 }
 
-.admin-features-section > *:not(.admin-features-grid) {
+.admin-features-section>*:not(.admin-features-grid) {
     position: relative;
     z-index: 2;
     max-width: 1140px;
@@ -527,6 +637,7 @@
     border-radius: 10px;
     backdrop-filter: blur(10px);
 }
+
 .admin-features-grid .admin-features-grid-item:hover {
     transform: translateY(-3px);
     background: linear-gradient(0deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 215, 0, 0) 70%);
@@ -564,24 +675,28 @@
     font-weight: 500;
 }
 
-.solutions-ludo2-section{
+.solutions-ludo2-section {
     width: 100%;
     max-width: 1140px;
     padding: 50px 0;
     margin: 0 auto;
 }
-.solutions-ludo2-section .solutions-ludo2-bottom{
+
+.solutions-ludo2-section .solutions-ludo2-bottom {
     display: flex;
     gap: 100px;
 }
-.solutions-ludo2-section .solutions-ludo2-bottom .solutions-img img{
+
+.solutions-ludo2-section .solutions-ludo2-bottom .solutions-img img {
     max-width: 400px;
 }
-.solutions-ludo2-section .solutions-ludo2-bottom .solutions-desc-container{
-    
+
+.solutions-ludo2-section .solutions-ludo2-bottom .solutions-desc-container {
+
     padding: 0 20px;
 }
-.solutions-ludo2-section .solutions-ludo2-bottom .solutions-desc-container .solutions-desc{
+
+.solutions-ludo2-section .solutions-ludo2-bottom .solutions-desc-container .solutions-desc {
     text-align: justify;
     position: relative;
 }
@@ -605,7 +720,7 @@
     background-color: #FFC700;
 }
 
-.ludo-faq-section{
+.ludo-faq-section {
     width: 100%;
     margin-bottom: 50px;
     display: flex;
@@ -613,7 +728,8 @@
     align-items: center;
     justify-content: center;
 }
-.ludo-faq-section .ludo-faq-container{
+
+.ludo-faq-section .ludo-faq-container {
     max-width: 840px;
     width: 100%;
     display: flex;
@@ -621,17 +737,19 @@
     gap: 30px;
     margin: 0 auto;
 }
+
 .ludo-faq-left,
- .ludo-faq-right {
+.ludo-faq-right {
     flex: 1;
- }
+}
 
 
-.path-section{
+.path-section {
     padding: 80px;
 }
 
 @media screen and (max-width: 1200px) {
+
     .modes-section,
     .solutions-ludo-section,
     .solutions-ludo2-section {
@@ -660,12 +778,14 @@
         flex-direction: column;
         align-items: center;
     }
-    .solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container .solutions-desc .solutions-ludo-grid{
+
+    .solutions-ludo-section .solutions-ludo-bottom .solutions-desc-container .solutions-desc .solutions-ludo-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
-    .solutions-img-1{
+
+    .solutions-img-1 {
         height: 300px;
         max-width: 400px;
         display: block;
@@ -755,7 +875,7 @@
     }
 }
 
-.ludo-devices-img{
+.ludo-devices-img {
     width: 100%;
     max-width: 100%;
     height: auto;

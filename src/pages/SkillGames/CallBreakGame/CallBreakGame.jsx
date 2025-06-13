@@ -16,6 +16,9 @@ import AboutSection from "../../../components/AboutSection/AboutSection"
 import ChooseGrid from "../../../components/ChooseGrid/ChooseGrid"
 import PromoTools from "../../../components/PromoTools/PromoTools"
 import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import CallBreakLanding from "./CallBreakLanding/CallBreakLanding"
+import SolutionsSection from "../../../components/SolutionsSection/SolutionsSection"
+import FeaturesGridV5 from "../../../components/FeaturesGridV5/FeaturesGridV5"
 
 const landingItems = [
   {
@@ -314,20 +317,78 @@ const aboutItems = [
   }
 ]
 
+const solutionsTitle =[
+  {
+    title: " Call Break Game's salient features",
+    description: "Strong emphasis on performance, player retention, and monetisation drives our Call Break games' construction.  Important characteristics include:"
+  }
+]
+
+const solutionsItems =[
+  {
+    image:"/callbreakPage/banner-over.png",
+    gametype: "Skill Game",
+    rtp: "90%",
+    devices: "Android, iOS, Web, Desktop",
+    background:"/callbreakPage/bg.png"
+  }
+]
+
+const featuresGrid = [
+  {
+    title:"Classic 4-Player Mode",
+    image:"/callbreakPage/types/4 player-01.png"
+  },
+  {
+    title:"Private Room Mode",
+    image:"/callbreakPage/types/private room play-01.png"
+  },
+  {
+    title:"tournament Mode",
+    image:"/callbreakPage/types/tournament-01.png"
+  },
+  {
+    title:"Practice Mode",
+    image:"/callbreakPage/types/practice-01.png"
+  },
+  {
+    title:"Online Public Table Mode",
+    image:"/callbreakPage/types/online public mode-01.png"
+  },
+]
+
+const featuresTitle = [
+  {
+    title:"Variants of Call Break Games",
+    description:" Give your consumers a great range of experiences using several gameplay styles:"
+  }
+]
+
+const deviceImages =[
+  {
+    image1: "/callbreakPage/devices/mob.png",
+    image2: "/callbreakPage/devices/lap.png"
+  }
+]
 
 const CallBreakGame = () => {
   return (
     <div className="callbreak-game">
 
       <div className="landing-callbreak-section">
-      <LandingPageV2 landingItems={landingItems} landingImages={landingImages}/>
+      {/* <LandingPageV2 landingItems={landingItems} landingImages={landingImages}/> */}
+      <CallBreakLanding landingItems={landingItems}/>
       </div>
 
-      <AchievementsBanner />
+      <FeaturesBanner />
 
-      <AboutSection aboutItems={aboutItems}/>
+      <FeaturesGridV5 featuresGrid={featuresGrid} featuresTitle={featuresTitle}/>
+
+      {/* <AchievementsBanner /> */}
+
+      {/* <AboutSection aboutItems={aboutItems}/> */}
       
-      <div className='break-services-section'>
+      {/* <div className='break-services-section'>
             <FeaturesHeader featuresText={breakservicesTitle}/>
             <div className='break-models-grid'>
                 <div className='break-model-card'>
@@ -379,7 +440,9 @@ const CallBreakGame = () => {
                     <p>Using Gamzway gives you a complete business ecosystem rather than only a game.</p>
                 </div>
             </div>
-      </div>
+      </div> */}
+
+      <SolutionsSection solutionsItems={solutionsItems}  solutionsTitle={solutionsTitle}/>
 
       {/* <div className='admin-features-section'>
         <FeaturesHeader featuresText={adminfeaturesTitle} />
@@ -394,27 +457,21 @@ const CallBreakGame = () => {
         </div>
       </div> */}
 
-      <FeaturesBanner />
 
-      <PromoTools />
 
-      <FeaturesGridV2 featuresGrid={adminfeaturesGrid} featuresTitle={adminfeaturesTitle} />
+      {/* <PromoTools /> */}
+
+      {/* <FeaturesGridV2 featuresGrid={adminfeaturesGrid} featuresTitle={adminfeaturesTitle} /> */}
 
       <PlatformSection/>
-
-      <PlatformImg />
+      <PlatformImg  deviceImages={deviceImages}/>
       <CustomGrid/>
+      <ChooseGrid />
 
       <ContactBanner contactItems={hireItems}/>
 
+      {/* <ContactBanner contactItems={waitItems}/> */}
 
-
-      <ChooseGrid />
-
-
-      <ContactBanner contactItems={waitItems}/>
-
-      <PaymentSection />
 
       <div className='faq-section'>
         <FeaturesHeader featuresText={faqTitle} />

@@ -213,6 +213,13 @@ const aboutItems = [
   }
 ]
 
+const deviceImages = [
+  {
+    image1:"/ludoPage/devices/ludo-mob.png",
+    image2:"/ludoPage/devices/ludo-lap2.webp"
+  }
+]
+
 const Slots = () => {
 
   return (
@@ -252,7 +259,7 @@ const Slots = () => {
 
 
       <PlatformSection />
-      <PlatformImg />
+      <PlatformImg deviceImages={deviceImages}/>
       <CustomGrid/>
 
       

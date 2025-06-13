@@ -18,6 +18,19 @@ import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import FeaturesBannerV2 from '../../../components/FeaturesBannerV2/FeaturesBannerV2'
 import PromoTools from '../../../components/PromoTools/PromoTools'
 import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import RummyLanding from './RummyLanding/RummyLanding'
+import SolutionsSection from '../../../components/SolutionsSection/SolutionsSection'
+import LudoPlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+
+
+const landingItems =[
+  {
+    title: "Rummy Game Development Company",
+    description:"Are you in search of the top rummy game development company? Gamzway specializes in rummy game development, offering comprehensive solutions for creating the best online rummy game app and website.",
+    description2:"Rummy  known for its strategic gaming, intense competition, and real-money possibilities, rummy is among the most often played card games in India and worldwide. At Gamzway, we bring to screens with interactive elements, seamless graphics, and easy controls the same thrills."
+  }
+]
 
 
 const aboutItems = [
@@ -84,7 +97,18 @@ const variationsText = [
 
 const solutionsTitle = [
   {
-    title: "ONLINE RUMMY GAME SOLUTIONS"
+    title: "ONLINE RUMMY GAME FEATURES",
+    description: "Focussing on real-money and casual card games, Gamzway is among the top game developers in India.  These are the reasons our customers chose us:"
+  }
+]
+
+const solutionsItems =[
+  {
+    image:"https://beta.mobzway.com/assets/images/rummy-software/Rummy-11.webp",
+    gametype: "Skill Game",
+    rtp: "90%",
+    devices: "Android, iOS, Web, Desktop",
+    background:"/rummyPage/bg.png"
   }
 ]
 
@@ -382,6 +406,13 @@ const crmTitle = [
   }
 ]
 
+const deviceImages =[
+  {
+    image1: "/rummyPage/devices/mob.png",
+    image2: "/rummyPage/devices/lap.png"
+  }
+]
+
 
 const RummyGame = () => {
 
@@ -389,10 +420,12 @@ const RummyGame = () => {
     <div className='rummy-game'>
       <div className='rummy-carousel-swiper not-animate'>
         {/* <CarouselSection carouselData={rummyCarouselData} /> */}
-        <RummyCarousel />
+        {/* <RummyCarousel /> */}
+        <RummyLanding landingItems={landingItems} />
       </div>
+      <FeaturesBanner />
 
-      <AchievementsBanner />
+      {/* <AchievementsBanner /> */}
 
       {/* <AboutSection aboutItems={aboutItems} /> */}
 
@@ -403,14 +436,16 @@ const RummyGame = () => {
         <RummyAboutGrid />
       </div>
 
-      <FeaturesBanner />
+      <SolutionsSection solutionsItems={solutionsItems}  solutionsTitle={solutionsTitle}/>
 
-      <PromoTools />
+      {/* <PromoTools /> */}
 
-      <PlatformImg />
+      <PlatformSection />
+      <LudoPlatformImg  deviceImages={deviceImages}/>
       <CustomGrid/>
+      <ChooseGrid />
 
-      <div className='solutions-rummy-section'>
+      {/* <div className='solutions-rummy-section'>
         <div className='solutions-rummy-top'>
           <FeaturesHeader featuresText={solutionsTitle} />
         </div>
@@ -487,7 +522,7 @@ const RummyGame = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <ContactBanner contactItems={contactData} />
 
@@ -680,9 +715,9 @@ const RummyGame = () => {
         </a>
       </div>
 
-      <div className='payment-div not-animate'>
+      {/* <div className='payment-div not-animate'>
         <PaymentSection />
-      </div>
+      </div> */}
 
       <ProductSection productGrid={productItems} />
 

@@ -1,0 +1,365 @@
+.rummylanding-section{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: 134px; */
+  /* margin-top: 20px; */
+    height: 100vh;
+    padding: 0 100px;
+    gap: 100px;
+    position: relative;
+}
+
+.rummylanding-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    z-index: 3;
+}
+/* .rummylanding-section::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+
+} */
+/* .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+} */
+.rummylanding-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    z-index: 3;
+    width: 60%;
+}
+.rummylanding-text h1{
+    font-size: 64px;
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--secondary-yellow);
+    text-transform: uppercase;
+    font-weight: 1200;
+    margin-top: 45px;
+    text-shadow: 
+        2px 2px 0 #000,
+        4px 4px 0 rgba(0,0,0,0.5);
+    position: relative;
+}
+.rummylanding-text p{
+    font-size: 1.4rem;
+    color: #fff;
+    width: 100%;
+}
+.rummylanding-btn{
+    background-color: var(--primary-yellow);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 2rem;
+    font-size: 20px;    
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 900;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    box-shadow: 
+        2px 2px 0 #000,
+        4px 4px 0 rgba(0,0,0,0.5);
+}
+.rummylanding-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 
+        4px 4px 0 #000,
+        6px 6px 0 rgba(0,0,0,0.5);
+}
+.rummylanding-btn:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 2rem;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.rummylanding-btn:hover:before {
+    transform: scaleY(1);
+}
+.rummylanding-btn span {
+    position: relative;
+    z-index: 2;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+}
+
+.rummybg-container {
+    position: relative;
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-rummy-slide-card-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@keyframes floatFirst {
+    0%, 100% { transform: translateY(0) rotate(-5deg); }
+    50% { transform: translateY(-15px) rotate(-8deg); }
+}
+
+@keyframes floatMiddle1 {
+    0%, 100% { transform: translateY(-5px) rotate(-2deg); }
+    50% { transform: translateY(-20px) rotate(-4deg); }
+}
+
+@keyframes floatMiddle2 {
+    0%, 100% { transform: translateY(-8px) rotate(2deg); }
+    50% { transform: translateY(-18px) rotate(4deg); }
+}
+
+@keyframes floatLast {
+    0%, 100% { transform: translateY(0) rotate(5deg); }
+    50% { transform: translateY(-15px) rotate(8deg); }
+}
+
+.first-rummy-slide-card1 {
+    position: absolute;
+    width: 20%;
+    top: 0%;
+    left: 25%;
+    animation: floatFirst 4s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.first-rummy-slide-card2 {
+    position: absolute;
+    width: 20%;
+    top: 0%;
+    left: 35%;
+    animation: floatMiddle1 4.5s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.first-rummy-slide-card3 {
+    position: absolute;
+    width: 20%;
+    top: 0%;
+    left: 45%;
+    animation: floatMiddle2 4.2s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.first-rummy-slide-card4 {
+    position: absolute;
+    width: 20%;
+    top: 0%;
+    left: 55%;
+    animation: floatLast 4.8s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes iconFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.first-rummy-slide-icon1, .first-rummy-slide-icon2,
+.first-rummy-slide-icon3, .first-rummy-slide-icon4 {
+    animation: iconFloat 3s ease-in-out infinite;
+}
+
+.first-rummy-slide-icon2 { animation-delay: 0.2s; }
+.first-rummy-slide-icon3 { animation-delay: 0.4s; }
+.first-rummy-slide-icon4 { animation-delay: 0.6s; }
+
+@keyframes titleFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.first-rummy-slide-title1, .first-rummy-slide-title2 {
+    animation: titleFloat 4s ease-in-out infinite;
+}
+
+.first-rummy-slide-title2 { animation-delay: 0.3s; }
+.first-rummy-slide-icon-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+}
+.first-rummy-slide-icon1 {
+    position: absolute;
+    width: 10%;
+    top: 40%;
+    left: 25%;
+}
+.first-rummy-slide-icon2 {
+    position: absolute;
+    width: 10%;
+    top: 40%;
+    left: 35%;
+}
+.first-rummy-slide-icon3 {
+    position: absolute;
+    width: 10%;
+    top: 40%;
+    left: 45%;
+}
+.first-rummy-slide-icon4 {
+    position: absolute;
+    width: 10%;
+    top: 40%;
+    left: 55%;
+}
+
+.first-rummy-slide-title-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.first-rummy-slide-title1 {
+    position: absolute;
+    width: 50%;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+.first-rummy-slide-title2 {
+    position: absolute;
+    width: 50%;
+    top: 85%;
+    left: 25%;
+    transform: translate(-50%, -50%)
+}
+
+
+
+@media screen and (max-width: 993px) {
+    .rummylanding-section{
+        align-items: center;
+        flex-direction: column;
+        padding: 0 20px;
+        margin-top: 134px;
+        gap: 100px;
+    }
+    .rummylanding-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .rummylanding-text{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .rummylanding-text p {
+        font-size: 18px;
+    }
+    .rummybg-container {
+        width: 60%;
+        padding: 0 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .rummy-slide-cards-container{
+        width: 100%;
+        min-height: 280px;
+    }
+    .rummy-slide-cards-content{
+        width: 100%;
+        min-height: 280px;
+    }
+    .first-rummy-slide-card1{
+        width: 30%;
+        top: 20%;
+        left: 10%;
+    }
+    .first-rummy-slide-card2{
+        width: 30%;
+        top: 20%;
+        left: 25%;
+    }
+    .first-rummy-slide-card3{
+        width: 30%;
+        top: 20%;
+        left: 35%;
+    }
+    .first-rummy-slide-card4{
+        width: 30%;
+        top: 20%;
+        left: 45%;
+    }
+    .first-rummy-slide-icon1{
+        width: 17%;
+        top: 55%;
+        left: 5%;
+    }
+    .first-rummy-slide-icon2{
+        width: 17%;
+        top: 55%;
+        left: 20%;
+    }
+    .first-rummy-slide-icon3{
+        width: 17%;
+        top: 55%;
+        left: 35%;
+    }
+    .first-rummy-slide-icon4{
+        width: 17%;
+        top: 55%;
+        left: 50%;
+    }
+    .first-rummy-slide-title1{
+        width: 70%;
+        top: 68%;
+        left: 10%;
+    }
+    .first-rummy-slide-title2{
+        width: 70%;
+        top: 80%;
+        left: 10%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .rummybg-container {
+        padding: 0 10px;
+    }
+}
+.image-stack {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}

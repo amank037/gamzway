@@ -13,8 +13,10 @@ import CustomGrid from "../../../components/CustomGrid/CustomGrid"
 import LandingPageV2 from "../../../components/LandingPageV2/LandingPageV2"
 import ChooseGrid from "../../../components/ChooseGrid/ChooseGrid"
 import FeaturesBanner from "../../../components/FeaturesBanner/FeaturesBanner"
-import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import LudoPlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 import FeaturesGridV3 from "../../../components/FeaturesGridV3/FeaturesGridV3"
+import PokerLanding from "./PokerLanding/PokerLanding"
+import SolutionsSection from "../../../components/SolutionsSection/SolutionsSection"
 
 const landingItems = [
   {
@@ -279,6 +281,30 @@ const crmTitle = [
   }
 ]
 
+const solutionsTitle =[
+  {
+    title: "POKER GAME FEATURES",
+    description: " Gamzway is a leading poker game development company in India, USA & UK, which offers a superior class of game development services. Our highly experienced poker game developers go the extra mile to give the poker lovers a different and top-notch gaming experience."
+  }
+]
+
+const solutionsItems =[
+  {
+    image:"https://beta.mobzway.com/assets/images/poker-game-development-company.webp",
+    gametype: "Skill Game",
+    rtp: "90%",
+    devices: "Android, iOS, Web, Desktop",
+    background:"/pokerPage/bg.png"
+  }
+]
+
+const deviceImages =[
+  {
+    image1: "/pokerPage/devices/mob.png",
+    image2: "/pokerPage/devices/lap.png"
+  }
+]
+
 const PokerGame = () => {
   // const [showMore, setShowMore] = useState(false)
 
@@ -379,10 +405,13 @@ const PokerGame = () => {
     <div className='poker-game'>
       <div className='carousel-swiper'>
         {/* <CarouselSection carouselData={pokercarouselData}/> */}
-        <LandingPageV2 landingItems={landingItems} landingImages={landingImages} />
+        <PokerLanding landingItems={landingItems} />
+        <div>
+
+        </div>
       </div>
 
-      <AchievementsBanner />
+      {/* <AchievementsBanner /> */}
 
       <FeaturesBanner />
 
@@ -401,6 +430,8 @@ const PokerGame = () => {
 
       <FeaturesGridV3 featuresGridV3={variantsGrid} featuresTitleV3={variantsItems} />
 
+      <SolutionsSection solutionsItems={solutionsItems}  solutionsTitle={solutionsTitle}/>
+
 
 
       {/* <div className='features-section'>
@@ -416,9 +447,9 @@ const PokerGame = () => {
         </div>
       </div> */}
 
-      <PlatformSection platformItems={platformItems} />
+      <PlatformSection />
 
-      <PlatformImg />
+      <LudoPlatformImg deviceImages={deviceImages}/>
       <CustomGrid/>
 
       {/* <div className='solutions-poker-section'>
@@ -460,7 +491,7 @@ const PokerGame = () => {
           </div>
         </div>
       </div> */}
-
+      <ChooseGrid />
       <ContactBanner contactItems={touchItems} />
 
       {/* <div className='choose-section'>
@@ -513,12 +544,12 @@ const PokerGame = () => {
             </div>
       </div> */}
 
-      <ChooseGrid />
 
 
-      <PaymentSection />
 
-      <ProductSection productGrid={productItems} />
+      {/* <PaymentSection /> */}
+
+
 
       <div className="faq-section">
         <FeaturesHeader featuresText={faqTitle} />
@@ -533,7 +564,7 @@ const PokerGame = () => {
       </div>
 
       <ContactBanner contactItems={demoItems} />
-
+      <ProductSection productGrid={productItems} />
     </div>
   )
 }

@@ -209,7 +209,7 @@ const RummyGameAPI = () => {
 
       <PromoTools />
       <PlatformSection />
-      <PlatformImg />
+      {/* <PlatformImg /> */}
       <CustomGrid/>
       <ChooseGrid />
 

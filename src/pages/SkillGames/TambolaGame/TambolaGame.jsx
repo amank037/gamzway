@@ -17,6 +17,8 @@ import PlatformSection from '../../../components/PlatformSection/PlatformSection
 import PromoTools from '../../../components/PromoTools/PromoTools'
 import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
 import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import SolutionsSection from '../../../components/SolutionsSection/SolutionsSection'
+import TambolaLanding from './TambolaLanding/TambolaLanding'
 
 const landingItems = [
   {
@@ -104,28 +106,19 @@ const featuresContent = {
 }
 
 const solutionsTitle = [{
-  title: "Searching for the Perfect Tambola Game Solution for Your Business?"
+  title: "Searching for the Perfect Tambola Game Solution for Your Business?",
+  description:" At Gamzway, we provide whole Tambola game development solutions with modern technology and safe backend support.  Our solutions are catered to your particular objectives regardless of your business organisation, community platform, or gaming company."
 }]
 
-const solutionsContent = {
-  sections: [{
-    title: "EVENT ORGANIZERS",
-    icon: "fa-calendar-check",
-    points: ["Event Organisation Businesses", "Corporate Event planners"]
-  }, {
-    title: "GAMING PLATFORMS",
-    icon: "fa-gamepad",
-    points: ["Online Gaming Gateways", "Social Clubhouses"]
-  }, {
-    title: "COMMUNITY SERVICES",
-    icon: "fa-hands-helping",
-    points: ["Fundraisers and Non-Governmental Organisations", "Learning Centres"]
-  }, {
-    title: "CUSTOMIZATION",
-    icon: "fa-sliders-h",
-    points: ["Customisable game logic and white-label solutions help us to make sure your app speaks to your brand and goals."]
-  }]
-}
+const solutionsContent = [
+  {
+    image:"/tambolaPage/bg-over-mini.png",
+    gametype: "Skill Game",
+    rtp: "90%",
+    devices: "Android, iOS, Web, Desktop",
+    background:"/tambolaPage/bg.png"
+  }
+]
 
 const hireTitle = [{
   title: "Why have your Tambola Game at Gamzway?"
@@ -269,27 +262,28 @@ const launchItems = [
   }
 ]
 
+const deviceImages = [
+  {
+    image1:"/tambolaPage/devices/mob.png",
+    image2:"/tambolaPage/devices/lap.png"
+  }
+]
+
 const TambolaGame = () => {
   return (
     <div className="tambola-game">
-      <div className="landing-tambola-section">
-        <LandingPageV2 landingItems={landingItems} landingImages={landingImages} />
-      </div>
-      <AchievementsBanner />
 
-      <div>
-        {/* <div className="variations-grid">
-          {variationGrid.map((item, index) => (
-            <div className="variation-item" key={index}>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-            </div>
-          ))}
-        </div> */}
-        <FeaturesGridV4 featuresGrid={variationGrid} featuresTitle={variationTitle} />
+      <div className="landing-tambola-section">
+        <TambolaLanding landingItems={landingItems}/>
       </div>
 
       <FeaturesBanner />
+
+      {/* <div>
+        <FeaturesGridV4 featuresGrid={variationGrid} featuresTitle={variationTitle} />
+      </div> */}
+
+      <SolutionsSection solutionsItems={solutionsContent} solutionsTitle={solutionsTitle} />
 
       {/* <FeaturesGrid features={featuresContent} featuresTitle={featuresTitle} /> */}
 
@@ -314,9 +308,9 @@ const TambolaGame = () => {
       </div> */}
       {/* <FeaturesGridV2 featuresGrid={solutionsContent} featuresTitle={solutionsTitle}/> */}
 
-      <ChooseGrid />
 
 
+{/* 
       <div className='solutions-rummy-section'>
         <div className='solutions-rummy-top'>
           <FeaturesHeader featuresText={hireTitle} />
@@ -364,14 +358,15 @@ const TambolaGame = () => {
             <img src="/tambolaPage/solutions/2.png" alt="" />
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <PromoTools />
 
       <PlatformSection />
-      <PlatformImg />
+      <PlatformImg deviceImages={deviceImages}/>
 
       <CustomGrid customTitle={crmTitle} customgridItems={crmItems} />
+
+      <ChooseGrid />
 
       <ContactBanner contactItems={startItems} />
 
@@ -388,7 +383,7 @@ const TambolaGame = () => {
         </a>
       </div>
 
-      <PaymentSection />
+      {/* <PaymentSection /> */}
 
       <ProductSection productGrid={productItems} />
 

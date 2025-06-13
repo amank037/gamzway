@@ -1,0 +1,61 @@
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.logo-main {
+    display: flex;
+    gap: 0px;
+}
+
+.logo-letter{
+    height: 28px;
+    width: auto;
+}
+.logo-letter img{
+    height: 100%;
+}
+
+.logo-z img{
+    height: 40px;
+    width: auto;
+}
+.logo-subtext{
+    height: 10px;
+}
+.logo-subtext img{
+    height: 100%;
+    width: auto;
+}
+
+.logo-subtext {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    width: 70%;
+    margin-top: 10px;
+    position: absolute;
+    left: 95%;
+    top: 75%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .logo-letter img {
+    height: 20px;
+    }
+
+    .logo-z img {
+    height: 30px;
+    }
+    .logo-subtext img {
+    height: 8px;
+    }
+    .logo-subtext{
+        top: 40%;
+    }
+}

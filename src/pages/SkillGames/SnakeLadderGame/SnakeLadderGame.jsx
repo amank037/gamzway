@@ -16,10 +16,11 @@ import PlatformSection from '../../../components/PlatformSection/PlatformSection
 import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
 import SnakeLadderLanding from './SnakeLadderLanding/SnakeLadderLanding'
 import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import SolutionsSection from '../../../components/SolutionsSection/SolutionsSection'
 
 const landingItems = [
   {
-    title: "SNAKE LADDER GAME DEVELOPMENT",
+    title: "SNAKE LADDER GAME",
     description: "Over decades, this venerable board game has developed from a physical game to an exciting digital experience accessible on desktop computers, tablets, and smartphones.",
     description2: "Our area of expertise at Gamzway is developing outstanding Snake Ladder Game applications combining contemporary tech components with retro gameplay. ",
     button: "REQUEST A QUOTE",
@@ -106,37 +107,52 @@ const featuresContent = {
   }]
 }
 
+// const solutionsTitle = [{
+//   title: "Looking for ideal Snake Ladder Game Solution for Your Company?"
+// }]
+
+// const solutionsContent = {
+//   sections: [{
+//     title: "PLATFORM SUPPORT",
+//     icon: "fa-mobile-alt",
+//     points: ["Android (Tablets & Phones)", "iOS, or iPhone and iPad", "Web browsers including Chrome, Firefox, Safari, etc."]
+//   }, {
+//     title: "DESKTOP & HYBRID",
+//     icon: "fa-desktop",
+//     points: ["Desktop applications (Windows and macOS)", "Hybrid platforms and smart TVs"]
+//   }, {
+//     title: "GAME FEATURES",
+//     icon: "fa-gamepad",
+//     points: [
+//       "Real-time matching for multiplayer games",
+//       "Solo gaming alternative driven by artificial intelligence",
+//       "Rankings and leaderboards"
+//     ]
+//   }, {
+//     title: "USER FEATURES",
+//     icon: "fa-users",
+//     points: [
+//       "Text messaging and voice chat",
+//       "User profile and avatars",
+//       "In-app purchases and incentives"
+//     ]
+//   }]
+// }
+
 const solutionsTitle = [{
-  title: "Looking for ideal Snake Ladder Game Solution for Your Company?"
+  title: "Looking for ideal Snake & Ladder Game Solution for Your Company?",
+  description:" At Gamzway, we provide whole Snake & Ladder game development solutions with modern technology and safe backend support.  Our solutions are catered to your particular objectives regardless of your business organisation, community platform, or gaming company."
 }]
 
-const solutionsContent = {
-  sections: [{
-    title: "PLATFORM SUPPORT",
-    icon: "fa-mobile-alt",
-    points: ["Android (Tablets & Phones)", "iOS, or iPhone and iPad", "Web browsers including Chrome, Firefox, Safari, etc."]
-  }, {
-    title: "DESKTOP & HYBRID",
-    icon: "fa-desktop",
-    points: ["Desktop applications (Windows and macOS)", "Hybrid platforms and smart TVs"]
-  }, {
-    title: "GAME FEATURES",
-    icon: "fa-gamepad",
-    points: [
-      "Real-time matching for multiplayer games",
-      "Solo gaming alternative driven by artificial intelligence",
-      "Rankings and leaderboards"
-    ]
-  }, {
-    title: "USER FEATURES",
-    icon: "fa-users",
-    points: [
-      "Text messaging and voice chat",
-      "User profile and avatars",
-      "In-app purchases and incentives"
-    ]
-  }]
-}
+const solutionsContent = [
+  {
+    image:"/snakePage/bg-over-mini.png",
+    gametype: "Skill Game",
+    rtp: "90%",
+    devices: "Android, iOS, Web, Desktop",
+    background:"/snakePage/emptyBg.png"
+  }
+]
 
 const hireTitle = [{
   title: "Why did your Snake Ladder Game originate from Gamzway?"
@@ -279,6 +295,12 @@ const launchItems = [
   }
 ]
 
+const deviceImages = [
+  {
+    image1:"/snakePage/devices/mob.png",
+    image2:"/snakePage/devices/lap.png"
+  }
+]
 
 const SnakeLadderGame = () => {
   return (
@@ -286,8 +308,8 @@ const SnakeLadderGame = () => {
       <div className="landing-snakeladder-section">
         <SnakeLadderLanding landingItems={landingItems} />
       </div>
-      <AchievementsBanner />
-
+      {/* <AchievementsBanner /> */}
+      <FeaturesBanner />
       {/* <div>
         <FeaturesHeader featuresText={variationTitle}/>
         <div className="variations-grid">
@@ -300,12 +322,12 @@ const SnakeLadderGame = () => {
         </div>
       </div> */}
       <FeaturesGridV5 featuresGrid={variationGrid} featuresTitle={variationTitle} />
-      <FeaturesBanner />
-      <ChooseGrid />
-      <PromoTools />
+      <SolutionsSection solutionsItems={solutionsContent} solutionsTitle={solutionsTitle} />
+
       <PlatformSection />
-      <PlatformImg />
+      <PlatformImg  deviceImages={deviceImages}/>
       <CustomGrid/>
+      <ChooseGrid />
 
       {/* <FeaturesGrid features={featuresContent} featuresTitle={featuresTitle} /> */}
 
@@ -329,7 +351,7 @@ const SnakeLadderGame = () => {
         </div>
       </div> */}
 
-
+{/* 
       <div className='solutions-rummy-section'>
         <div className='solutions-rummy-top'>
           <FeaturesHeader featuresText={hireTitle} />
@@ -390,7 +412,7 @@ const SnakeLadderGame = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 
@@ -408,7 +430,6 @@ const SnakeLadderGame = () => {
         </a>
       </div>
 
-      <PaymentSection />
       <ProductSection productGrid={productItems} />
 
       <ContactBanner contactItems={launchItems} />

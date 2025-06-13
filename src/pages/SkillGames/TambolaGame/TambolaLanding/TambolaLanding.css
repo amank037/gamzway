@@ -1,0 +1,329 @@
+.tambolalanding-section{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: 134px; */
+  margin-top: 20px;
+    height: 100vh;
+    padding: 0 100px;
+    gap: 100px;
+    position: relative;
+}
+
+.tambolalanding-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    z-index: 3;
+}
+/* .tambolalanding-section::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+
+} */
+/* .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+} */
+.tambolalanding-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    z-index: 3;
+    width: 60%;
+}
+.tambolalanding-text h1{
+    font-size: 64px;
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--secondary-yellow);
+    text-transform: uppercase;
+    font-weight: 1200;
+    margin-top: 45px;
+    text-shadow: 
+        2px 2px 0 #000,
+        4px 4px 0 rgba(0,0,0,0.5);
+    position: relative;
+}
+.tambolalanding-text p{
+    font-size: 1.4rem;
+    color: #fff;
+    width: 100%;
+}
+.tambolalanding-btn{
+    background-color: var(--primary-yellow);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 2rem;
+    font-size: 20px;    
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 900;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    box-shadow: 
+        2px 2px 0 #000,
+        4px 4px 0 rgba(0,0,0,0.5);
+}
+.tambolalanding-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 
+        4px 4px 0 #000,
+        6px 6px 0 rgba(0,0,0,0.5);
+}
+.tambolalanding-btn:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 2rem;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.tambolalanding-btn:hover:before {
+    transform: scaleY(1);
+}
+.tambolalanding-btn span {
+    position: relative;
+    z-index: 2;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+}
+
+.tambolabg-container {
+    position: relative;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tambolabg-title-container{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.tambolabg-ball-container{
+    position: absolute;
+    width: 20%;
+}
+.tambolabg-ball1{
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.tambolabg-ball2{
+    top: 80%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+}
+.tambolabg-ball3{
+    top: 80%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+}
+
+.tambolabg-board-container{
+    position: absolute;
+    width: 50%;
+}
+.tambolabg-board1{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.tambolabg-board2{
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.tambolabg-coin-container{
+    position: absolute;
+}
+.tambolabg-coin1{
+    top: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    animation: coinFloat 2s ease-in-out infinite;
+}
+.tambolabg-coin2{
+    top: 40%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    animation: coinFloat 2s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+.tambolabg-coin3{
+    top: 65%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    animation: coinFloat 2s ease-in-out infinite;
+    animation-delay: 0.4s; 
+}
+.tambolabg-coin4{
+    top: 80%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    animation: coinFloat 2s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+.tambolabg-coin5{
+    top: 100%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    animation: coinFloat 2s ease-in-out infinite;
+
+}
+.tambolabg-coin6{
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: coinFloat 2s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+.tambolabg-coin7{
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    animation: coinFloat 2s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+.tambolabg-coin8{
+    top: 10%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    animation: coinFloat 2s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+
+@keyframes coinFloat {
+    0%, 100% { transform: translateY(0) rotate(-8deg); }
+    50% { transform: translateY(-15px) rotate(-12deg); }
+}
+
+
+@media screen and (max-width: 993px) {
+    .tambolalanding-section{
+        align-items: center;
+        flex-direction: column;
+        padding: 0 20px;
+        margin-top: 134px;
+        gap: 100px;
+    }
+    .tambolalanding-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .tambolalanding-text{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .tambolalanding-text p {
+        font-size: 18px;
+    }
+    .tambolabg-container {
+        width: 60%;
+        padding: 0 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .tambolabg-container {
+        padding: 0 10px;
+    }
+}
+.image-stack {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+@media screen and (max-width: 993px) {
+
+}
+
+@media screen and (max-width: 480px) {
+    .tambolabg-container{
+        width: 100%;
+    }
+
+    .tambolabg-title-container{
+        top: 45%;
+    }
+    .tambolabg-ball1{
+        top: 50%;
+    }
+    .tambolabg-ball2{
+        top: 55%;
+    }
+    .tambolabg-ball3{
+        top: 55%;
+    }
+    .tambolabg-board1{
+        top: 35%;
+    }
+    .tambolabg-board2{
+        top: 30%;
+    }
+    .tambolabg-coin1{
+        top: 0%;
+    }
+    .tambolabg-coin2{
+        top: 10%;
+    }
+    .tambolabg-coin3{
+        top: 30%;
+    }
+    .tambolabg-coin4{
+        top: 40%;
+        left: 0%;
+    }
+    .tambolabg-coin5{
+        top: 50%;
+        left: 80%;
+    }
+    .tambolabg-coin6{
+        top: 60%;
+    }
+    .tambolabg-coin7{
+        top: 0%;
+    }
+    .tambolabg-coin8{
+        top: 10%;
+    }
+
+}

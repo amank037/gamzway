@@ -203,7 +203,7 @@ const PokerGameAPI = () => {
       <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
       <PromoTools />
       <PlatformSection />
-      <PlatformImg />
+      {/* <PlatformImg /> */}
       <CustomGrid/>
       <ChooseGrid />
 

@@ -13,6 +13,7 @@ import FeaturesGridV4 from '../../../components/FeaturesGridV4/FeaturesGridV4'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 
+
 // const typesItems = [
 //   {
 //     featuresText:[
@@ -336,6 +337,13 @@ const accordionData = [
     description: "Yes! We provide specific help, upkeep, and feature updates."
   }
 ]
+const deviceImages = [
+  {
+    image1:"/ludoPage/devices/ludo-mob.png",
+    image2:"/ludoPage/devices/ludo-lap2.webp"
+  }
+]
+
 
 const LiveCasino = () => {
 
@@ -427,7 +435,7 @@ const LiveCasino = () => {
       <ContactBanner contactItems={contactItems}/>
 
       <PlatformSection platformItems={platformItems}/>
-      <PlatformImg />
+      <PlatformImg deviceImages={deviceImages}/>
 
       <CustomGrid customTitle={crmTitle} customgridItems={crmItems}/>
 

@@ -160,7 +160,7 @@ const WhiteLabelSkillGames = () => {
 
       <PromoTools />
       <PlatformSection />
-      <PlatformImg />
+      {/* <PlatformImg /> */}
       <CustomGrid/>
       <ChooseGrid />
 

@@ -1,0 +1,221 @@
+.callbreaklanding-section{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: 134px; */
+    margin-top:20px;
+    height: 100vh;
+    padding: 0 100px;
+    gap: 100px;
+    position: relative;
+}
+
+.callbreaklanding-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    z-index: 3;
+}
+/* .callbreaklanding-section::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+
+} */
+/* .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+} */
+.callbreaklanding-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    z-index: 3;
+    width: 60%;
+}
+.callbreaklanding-text h1{
+    font-size: 64px;
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--secondary-yellow);
+    text-transform: uppercase;
+    font-weight: 1200;
+    margin-top: 45px;
+    text-shadow: 
+        2px 2px 0 #000,
+        4px 4px 0 rgba(0,0,0,0.5);
+    position: relative;
+}
+.callbreaklanding-text p{
+    font-size: 1.4rem;
+    color: #fff;
+    width: 100%;
+}
+.callbreaklanding-btn{
+    background-color: var(--primary-yellow);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 2rem;
+    font-size: 20px;    
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 900;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    box-shadow: 
+        2px 2px 0 #000,
+        4px 4px 0 rgba(0,0,0,0.5);
+}
+.callbreaklanding-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 
+        4px 4px 0 #000,
+        6px 6px 0 rgba(0,0,0,0.5);
+}
+.callbreaklanding-btn:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 2rem;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.callbreaklanding-btn:hover:before {
+    transform: scaleY(1);
+}
+.callbreaklanding-btn span {
+    position: relative;
+    z-index: 2;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+}
+
+.callbreakbg-container {
+    position: relative;
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 993px) {
+    .callbreaklanding-section{
+        align-items: center;
+        flex-direction: column;
+        padding: 0 20px;
+        margin-top: 134px;
+        gap: 100px;
+    }
+    .callbreaklanding-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .callbreaklanding-text{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .callbreaklanding-text p {
+        font-size: 18px;
+    }
+    .callbreakbg-container {
+        width: 60%;
+        padding: 0 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .callbreakbg-container {
+        padding: 0 10px;
+    }
+}
+.image-stack {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.callbreakbg-over{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 70%;
+    height: 70%;
+    z-index: 2;
+    left: 45%;
+    top: -40%;
+    transform: translateX(-50%);
+}
+.callbreakbg-title{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    width: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    z-index: 3;
+    animation: zoomIn 4s ease-in-out infinite;
+}
+
+@keyframes zoomIn{
+    0%, 100%{
+        transform: scale(0.75);
+    }
+    50%{
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 993px) {
+    .callbreakbg-over{
+        left: 50%;
+        top: 0%;
+        transform: translateX(-50%);
+    }
+    .callbreakbg-title{
+        top: 55%;
+        left: 25%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .callbreakbg-container{
+        width: 100%;
+    }
+    .callbreakbg-over{
+        left: 50%;
+        top: 0%;
+        transform: translateX(-50%);
+    }
+    .callbreakbg-title{
+        top: 45%;
+        left: 25%;
+    }
+}

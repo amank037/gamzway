@@ -8,6 +8,52 @@
     height: 100vh !important;
     margin-top: -135px;
 }
+
+.rng-over {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.rng-over-1 {
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    animation: rngFloat 4s ease-in-out infinite;
+}
+
+.rng-over-1 img {
+    width: 300px;
+    height: auto;
+}
+
+.rng-over-2 {
+    position: absolute;
+    bottom: 35%;
+    right: 17%;
+    animation: rngFloat 3s ease-in-out infinite;
+}
+
+.rng-over-2 img {
+    width: 200px;
+    height: auto;
+}
+
+@keyframes rngFloat {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(-8deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(-12deg);
+    }
+}
+
+
+
+
 /* .landing-rng-section::before {
     content: '';
     position: absolute;
@@ -25,7 +71,7 @@
     padding: 50px 0;
     margin: 0 auto;
     position: relative;
-    background: url('https://i.ibb.co/HRLpG6v/feature-bg-1.png');
+    background: url('');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -53,7 +99,7 @@
     padding: 20px 0;
 }
 
-.rng-features-section > *:not(.rng-features-grid) {
+.rng-features-section>*:not(.rng-features-grid) {
     position: relative;
     z-index: 2;
     max-width: 1140px;
@@ -104,7 +150,7 @@
     transform: translateY(-5px) scale(1.02);
     background: rgba(255, 215, 0, 0.03);
     border-color: transparent;
-    box-shadow: 
+    box-shadow:
         0 10px 30px rgba(255, 215, 0, 0.1),
         0 5px 15px rgba(0, 0, 0, 0.2);
 }

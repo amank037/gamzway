@@ -13,11 +13,12 @@
     padding: 50px 0;
     margin: 0 auto;
     position: relative;
-    background: url('https://i.ibb.co/HRLpG6v/feature-bg-1.png');
+    background: url('');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .livecasino-features-section::before {
     content: '';
     position: absolute;
@@ -28,6 +29,7 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
+
 .livecasino-features-grid {
     position: relative;
     z-index: 2;
@@ -39,7 +41,7 @@
     padding: 20px 0;
 }
 
-.livecasino-features-section > *:not(.livecasino-features-grid) {
+.livecasino-features-section>*:not(.livecasino-features-grid) {
     position: relative;
     z-index: 2;
     max-width: 1140px;
@@ -90,7 +92,7 @@
     transform: translateY(-5px) scale(1.02);
     background: rgba(255, 215, 0, 0.03);
     border-color: transparent;
-    box-shadow: 
+    box-shadow:
         0 10px 30px rgba(255, 215, 0, 0.1),
         0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -121,32 +123,37 @@
     transform: translateY(-2px);
 }
 
- .solutions-ludo-grid{
+.solutions-ludo-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
- .solutions-ludo-grid .solutions-ludo-grid-item{
+
+.solutions-ludo-grid .solutions-ludo-grid-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
     margin-bottom: 20px;
 }
- .solutions-ludo-grid .solutions-ludo-grid-item img{
+
+.solutions-ludo-grid .solutions-ludo-grid-item img {
     width: 100px;
     height: 100px;
     margin: 0 auto;
     transition: transform 0.3s ease-in-out;
 }
- .solutions-ludo-grid .solutions-ludo-grid-item:hover img{
+
+.solutions-ludo-grid .solutions-ludo-grid-item:hover img {
     transform: scale(1.1);
 }
-.solutions-banner-line{
+
+.solutions-banner-line {
     border-top: 2px solid #ffd90086;
     width: 100%;
 }
-.solutions-ludo-p{
+
+.solutions-ludo-p {
     max-width: 1140px;
     margin: 0 auto;
     width: 100%;

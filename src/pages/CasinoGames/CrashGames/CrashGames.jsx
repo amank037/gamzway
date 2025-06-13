@@ -372,7 +372,12 @@ const aboutItems = [
     image:"/crashPage/p1.png"
   }
 ]
-
+const deviceImages = [
+  {
+    image1:"/ludoPage/devices/ludo-mob.png",
+    image2:"/ludoPage/devices/ludo-lap2.webp"
+  }
+]
 const CrashGames = () => {
   return (
     <div className="crash-game">
@@ -449,7 +454,7 @@ const CrashGames = () => {
 
       <PromoTools />
       <PlatformSection/>
-      <PlatformImg />
+      <PlatformImg deviceImages={deviceImages}/>
       <CustomGrid/>
       <ChooseGrid />
 

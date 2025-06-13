@@ -42,10 +42,11 @@ const AchievementsBanner = () => {
   }, [])
 
   const achievements = [
-    { number: 48, suffix: '+', title: 'GAMES AVAILABLE', image: 'https://beta.mobzway.com/assets/images/game-launched1.png' },
-    { number: 6, suffix: '+', title: 'LANGUAGE OPTIONS', image: 'https://beta.mobzway.com/assets/images/satisfied-customers1.png' },
-    { number: 62, suffix: '+', title: 'TABLES AVAILABLE', image: 'https://beta.mobzway.com/assets/images/rummy-game-development/client-retension1.webp' },
-    { number: 10, suffix: '+', title: 'UNIQUE GAME VARIETY', image: 'https://beta.mobzway.com/assets/images/players1.png' }
+    { number: 6000, suffix: '+', title: 'GAMES AVAILABLE', image: 'https://beta.mobzway.com/assets/images/game-launched1.png' },
+    { number: 1250, suffix: '+', title: 'SATISFIED BRANDS', image: 'https://beta.mobzway.com/assets/images/players1.png' },
+
+    { number: 100, suffix: '+', title: 'GAME PROVIDERS', image: 'https://beta.mobzway.com/assets/images/rummy-game-development/client-retension1.webp' },
+    { number: 6, suffix: '+', title: 'LANGUAGE & CURRENCY', image: 'https://beta.mobzway.com/assets/images/satisfied-customers1.png' },
   ]
 
   return (

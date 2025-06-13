@@ -260,7 +260,7 @@ const LudoGameAPI = () => {
 
       <PromoTools />
       <PlatformSection />
-      <PlatformImg />
+      {/* <PlatformImg /> */}
       <CustomGrid/>
       <ChooseGrid />
 

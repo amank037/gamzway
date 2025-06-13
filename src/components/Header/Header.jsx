@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './Header.css'
 import logo from '../../assets/1-03.webp'
-import RequestModal from '../RequestModal/RequestModal';
+import RequestModal from '../RequestModal/RequestModal'
+import Logo from '../Logo/Logo'
+import { set } from 'mongoose'
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -102,7 +104,10 @@ function Header() {
     return (
         <div className={`header-div ${isSticky ? 'sticky' : ''}`}>
             <div className='header-container'>
-                <Link to="/" onClick={closeMenu}><img src={logo} alt="" /></Link>
+                <Link to="/" onClick={closeMenu}>
+                    {/* <img src={logo} alt="" /> */}
+                    <Logo />
+                </Link>
                 <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
                     <ul className='nav-menu-ul'>
                         {dropdownData.map((dropdown, index) => (
@@ -118,26 +123,30 @@ function Header() {
                                             key={i}
                                             className={isActive(item.path) ? 'active' : ''}
                                         >
-                                            <Link to={item.path} onClick={closeMenu}>{item.name}</Link>
+                                            <Link 
+                                                to={item.path}
+                                                onClick={(e) => {
+                                                    e.stopPropagation()
+                                                    closeMenu()
+                                                }}
+                                            >{item.name}</Link>
                                         </li>
                                     ))}
                                 </ul>
                             </li>
                         ))}
-                        <li className={`header-contacts ${isActive('/contacts') ? 'active' : ''}`}>
-                            <Link to="/contacts" onClick={closeMenu}>Contacts</Link>
-                        </li>
                     </ul>
                     <Link 
-                        to="#" 
-                        className={isActive('/request') ? 'active' : ''}
+                        to="/contacts" 
+                        className='contact-link'
+                        // className={isActive('/contacts') ? 'active' : ''}
                         onClick={(e) => {
-                            e.preventDefault();
-                            setIsModalOpen(true);
+                            
+                            // setIsModalOpen(true);
                             closeMenu();
                         }}
                     >
-                        Submit a request
+                        Contact Us
                     </Link>
                 </div>
                 <div className="hamburger" onClick={toggleMenu}>
