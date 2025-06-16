@@ -17,6 +17,7 @@ import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
 import SkillLanding from './SkillLanding/SkillLanding'
+import SolutionsAPI from '../../../components/SolutionsAPI/SolutionsAPI'
 
 const landingItems = [
   {
@@ -32,46 +33,46 @@ const platformTitle = [
     title: "SKILL GAMES API FEATURES"
   }
 ]
-// const platformFeatures = {
-//   sections: [
-//     {
-//       title: "SKILL GAMES PLATFORM",
-//       points: [
-//         "Everything you need to start, run, and grow a business",
-//         "Designed for digital operators, and business owners",
-//         "Real-time data and secure transactions",
-//         "Scalable API for mobile, web, and desktop integrations"
-//       ]
-//     },
-//     {
-//       title: "INTEGRATION & SCALABILITY",
-//       points: [
-//         "Smooth API integration process tailored for your needs",
-//         "Support for legal compliance and regulations",
-//         "Ready-to-use skill game modules and systems",
-//         "Flexible growth-oriented architecture"
-//       ]
-//     },
-//     {
-//       title: "TABLE LAYOUT & FUNCTIONALITY",
-//       points: [
-//         "Simple table configurations for all player levels",
-//         "Responsive interfaces that adapt to any screen size",
-//         "Live updates, smart scoring, rule customization",
-//         "Supports skill-games like rummy, poker, ludo, carrom"
-//       ]
-//     },
-//     {
-//       title: "GAMEPLAY EXPERIENCE",
-//       points: [
-//         "Dynamic gameplay with multiplayer and solo challenge options",
-//         "Custom rule sets per game or tournament",
-//         "Real-time feedback and interactive player experiences",
-//         "Optimized for competitive and casual gaming environments"
-//       ]
-//     }
-//   ]
-// }
+const platformFeatures = {
+  sections: [
+    {
+      title: "SKILL GAMES PLATFORM",
+      points: [
+        "Everything you need to start, run, and grow a business",
+        "Designed for digital operators, and business owners",
+        "Real-time data and secure transactions",
+        "Scalable API for mobile, web, and desktop integrations"
+      ]
+    },
+    {
+      title: "INTEGRATION & SCALABILITY",
+      points: [
+        "Smooth API integration process tailored for your needs",
+        "Support for legal compliance and regulations",
+        "Ready-to-use skill game modules and systems",
+        "Flexible growth-oriented architecture"
+      ]
+    },
+    {
+      title: "TABLE LAYOUT & FUNCTIONALITY",
+      points: [
+        "Simple table configurations for all player levels",
+        "Responsive interfaces that adapt to any screen size",
+        "Live updates, smart scoring, rule customization",
+        "Supports skill-games like rummy, poker, ludo, carrom"
+      ]
+    },
+    {
+      title: "GAMEPLAY EXPERIENCE",
+      points: [
+        "Dynamic gameplay with multiplayer and solo challenges",
+        "Custom rule sets per game or tournament",
+        "Real-time feedback and interactive player experiences",
+        "Optimized for competitive and casual gaming environments"
+      ]
+    }
+  ]
+}
 
 const apiplatformFeatures = {
   sections: [
@@ -252,9 +253,11 @@ const SkillGamesAPI = () => {
       </div>
       <AchievementsBanner />
 
+      <SolutionsAPI />
+
       <FeaturesBanner />
 
-      <FeaturesGrid  features={apiplatformFeatures} featuresTitle={platformTitle} />
+      <FeaturesGrid  features={platformFeatures} featuresTitle={platformTitle} />
 
       {/* <PromoTools /> */}
       <PlatformSection />
