@@ -158,7 +158,7 @@ function Header() {
                     <ul className='nav-menu-ul'>
                         {dropdownData.map((dropdown, index) => (
                             <li 
-                                className={`dropdown ${activeDropdown === index ? 'active' : ''} ${isActive(dropdown.path) ? 'current' : ''} ${forceCloseDropdown && activeDropdown === index ? 'force-close' : ''}`}
+                                className={`dropdown ${activeDropdown === index ? 'active' : ''} ${isActive(dropdown.path) ? 'current' : ''} ${forceCloseDropdown === true ? 'force-close' : ''}`}
                                 key={index}
                                 onClick={() => toggleDropdown(index)}
                                 onMouseEnter={() => handleDropdownMouseEnter(index)}
@@ -185,11 +185,11 @@ function Header() {
                         to="/contacts" 
                         className='contact-link'
                         // className={isActive('/contacts') ? 'active' : ''}
-                        onClick={(e) => {
+                        // onClick={(e) => {
                             
-                            setIsModalOpen(true);
-                            closeMenu();
-                        }}
+                        //     setIsModalOpen(true);
+                        //     closeMenu();
+                        // }}
                     >
                         Contact Us
                     </Link>
