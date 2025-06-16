@@ -349,17 +349,17 @@ const TableGames = () => {
 
 
       <PlatformSection />
-      <PlatformImg deviceImages={deviceImages}/>
+      {/* <PlatformImg deviceImages={deviceImages}/> */}
       <CustomGrid/>
       <ChooseGrid />
 
-      <ContactBanner contactItems={touchItems}/>
+
 
       <div className="faq-section">
         <FeaturesHeader featuresText={faqTitle}/>
         <AccordionSection data={accordionData} className="rng-faq" />
       </div>
-
+      <ContactBanner contactItems={touchItems}/>
       <PaymentSection />
 
       <ProductSection productGrid={productItems}/>

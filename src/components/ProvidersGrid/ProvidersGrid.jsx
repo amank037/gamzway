@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const providersImagesVisible =[
     {
-    src:"/src/assets/1-03.webp",
+    src:"/logo.png",
     alt:"Gamzway",
     title:"Gamzway"
     },

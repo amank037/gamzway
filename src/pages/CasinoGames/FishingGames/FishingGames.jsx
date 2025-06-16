@@ -400,7 +400,7 @@ const FishingGames = () => {
       </div> */}
 
       <PlatformSection />
-      <PlatformImg deviceImages={deviceImages}/>
+      {/* <PlatformImg deviceImages={deviceImages}/> */}
       <CustomGrid/>
       <ChooseGrid />
 

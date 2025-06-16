@@ -469,7 +469,7 @@ const LiveCasino = () => {
         <AccordionSection data={accordionData} className="live-casino-faq" />
       </div>
       <ContactBanner contactItems={demoItems}/>
-      <PaymentSection />
+      {/* <PaymentSection /> */}
       <ProductSection productGrid={productItems}/>
 
       

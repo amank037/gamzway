@@ -57,10 +57,11 @@
 
 
 import './PlatformSection.css'
-
+import FeaturesHeader from '../FeaturesSection/FeaturesHeader/FeaturesHeader'
 function PlatformSection() {
   return (
     <div className='platform-section'>
+        <FeaturesHeader featuresText={[{title: "WE BUILD GAMES FOR ALL PLATFORMS", description: ""}]}/>
         <div className='platform-section-container'>
             <div className='platform-section-item'>
                 <div className='platform-section-icon'>

@@ -397,7 +397,7 @@ const RNGGames = () => {
       <FeaturesGridV4 featuresGrid={featuresGrid} featuresTitle={featuresItems} />
 
       <PlatformSection />
-      <PlatformImg deviceImages={deviceImages}/>
+      {/* <PlatformImg deviceImages={deviceImages}/> */}
       <CustomGrid/>
       <ChooseGrid />
 

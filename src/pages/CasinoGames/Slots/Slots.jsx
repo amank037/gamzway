@@ -263,7 +263,7 @@ const Slots = () => {
 
 
       <PlatformSection />
-      <PlatformImg deviceImages={deviceImages}/>
+      {/* <PlatformImg deviceImages={deviceImages}/> */}
       <CustomGrid/>
 
       
@@ -314,7 +314,7 @@ const Slots = () => {
         </div>
       </div> */}
 
-      <ContactBanner contactItems={touchItems}/>
+
 
       <ChooseGrid />
 
