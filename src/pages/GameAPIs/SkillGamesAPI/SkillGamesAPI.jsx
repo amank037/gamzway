@@ -262,7 +262,7 @@ const SkillGamesAPI = () => {
       <CustomGrid/>
       <ChooseGrid />
 
-      <ContactBanner contactItems={findItems}/>
+      {/* <ContactBanner contactItems={findItems}/> */}
 
       {/* <div className='choose-section'>
         <FeaturesHeader featuresText={chooseTitle}/>
@@ -340,8 +340,6 @@ const SkillGamesAPI = () => {
         </div>
         <button className='faq-btn'><span>ASK A QUESTION</span></button>
       </div>
-
-      <PaymentSection />
 
       <ProductSection productGrid={productItems}/>
 
