@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     padding: 0;
-    min-height: calc(100vh - 134px - 180px );
+    min-height: calc(100vh - 121px - 180px );
     display: flex;
     flex-direction: column;
 }

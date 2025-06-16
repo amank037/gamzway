@@ -9,7 +9,7 @@ function LandingSection({ landingItems }) {
                 <h1>{item.title}</h1>
                 <p>{item.description}</p>
                 <p>{item.description2}</p>
-                <button className='landing-btn'><span>{item.button}</span></button>
+                {/* <button className='landing-btn'><span>{item.button}</span></button> */}
             </div>
         ))}
     </div>

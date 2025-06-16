@@ -181,10 +181,10 @@
     object-fit: contain;
 }
 .callbreakbg-title{
+    width: 50%;
     position: absolute;
     top: 50%;
-    left: 50%;
-    width: 40%;
+    left: 20%;
     transform: translate(-50%, -50%);
     height: auto;
     z-index: 3;

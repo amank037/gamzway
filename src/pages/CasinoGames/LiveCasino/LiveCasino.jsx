@@ -12,6 +12,7 @@ import AccordionSection from '../../../components/AccordionSection/AccordionSect
 import FeaturesGridV4 from '../../../components/FeaturesGridV4/FeaturesGridV4'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
+import ProvidersSection from '../../../components/ProvidersSection/ProvidersSection'
 
 
 // const typesItems = [
@@ -374,6 +375,8 @@ const LiveCasino = () => {
       </div>
       <AchievementsBanner />
 
+      <ProvidersSection />
+
       {/* <div className="livecasino-types">
         <PlatformSection platformItems={typesItems}/>
       </div> */}
@@ -435,7 +438,7 @@ const LiveCasino = () => {
       <ContactBanner contactItems={contactItems}/>
 
       <PlatformSection platformItems={platformItems}/>
-      <PlatformImg deviceImages={deviceImages}/>
+      {/* <PlatformImg deviceImages={deviceImages}/> */}
 
       <CustomGrid customTitle={crmTitle} customgridItems={crmItems}/>
 

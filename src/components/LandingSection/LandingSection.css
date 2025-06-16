@@ -18,7 +18,7 @@
     gap: 20px;
 }
 .landing-text h1{
-    font-size: 56px;
+    font-size: 48px;
     font-family: "Bebas Neue", sans-serif;
     color: var(--secondary-yellow);
     text-transform: uppercase;
@@ -30,7 +30,7 @@
     position: relative;
 }
 .landing-text p{
-    font-size: 24px;
+    font-size: 18px;
     color: #fff;
     font-weight: 500;
     width: 100%;
