@@ -1,8 +1,8 @@
 import './SkillGamesAPI.css'
 import LandingSection from "../../../components/LandingSection/LandingSection"
 import AchievementsBanner from "../../../components/AchievementsBanner/AchievementsBanner"
-import FeaturesGrid from '../../../components/FeaturesSection/FeaturesGrid/FeaturesGrid'
-import PlatformSection from '../../../components/PlatformSection/PlatformSection'
+import FeaturesGrid from '../../../components/FeaturesGridAPI/FeaturesGridAPI'
+import PlatformSection from '../../../components/PlatformSectionAPIs/PlatformSectionAPIs'
 import ContactBanner from '../../../components/ContactBanner/ContactBanner'
 import FeaturesHeader from '../../../components/FeaturesSection/FeaturesHeader/FeaturesHeader'
 import ProductSection from '../../../components/ProductSection/ProductSection'
@@ -16,6 +16,7 @@ import PromoTools from '../../../components/PromoTools/PromoTools'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
+import SkillLanding from './SkillLanding/SkillLanding'
 
 const landingItems = [
   {
@@ -31,42 +32,83 @@ const platformTitle = [
     title: "SKILL GAMES API FEATURES"
   }
 ]
-const platformFeatures = {
+// const platformFeatures = {
+//   sections: [
+//     {
+//       title: "SKILL GAMES PLATFORM",
+//       points: [
+//         "Everything you need to start, run, and grow a business",
+//         "Designed for digital operators, and business owners",
+//         "Real-time data and secure transactions",
+//         "Scalable API for mobile, web, and desktop integrations"
+//       ]
+//     },
+//     {
+//       title: "INTEGRATION & SCALABILITY",
+//       points: [
+//         "Smooth API integration process tailored for your needs",
+//         "Support for legal compliance and regulations",
+//         "Ready-to-use skill game modules and systems",
+//         "Flexible growth-oriented architecture"
+//       ]
+//     },
+//     {
+//       title: "TABLE LAYOUT & FUNCTIONALITY",
+//       points: [
+//         "Simple table configurations for all player levels",
+//         "Responsive interfaces that adapt to any screen size",
+//         "Live updates, smart scoring, rule customization",
+//         "Supports skill-games like rummy, poker, ludo, carrom"
+//       ]
+//     },
+//     {
+//       title: "GAMEPLAY EXPERIENCE",
+//       points: [
+//         "Dynamic gameplay with multiplayer and solo challenge options",
+//         "Custom rule sets per game or tournament",
+//         "Real-time feedback and interactive player experiences",
+//         "Optimized for competitive and casual gaming environments"
+//       ]
+//     }
+//   ]
+// }
+
+const apiplatformFeatures = {
   sections: [
     {
-      title: "SKILL GAMES PLATFORM",
+      title: "How the Integration Process Works",
       points: [
-        "Everything you need to start, run, and grow a business",
-        "Designed for digital operators, and business owners",
-        "Real-time data and secure transactions",
-        "Scalable API for mobile, web, and desktop integrations"
+        "Initial requirements assessment – Define your platform’s specific needs for a tailored approach.",
+        "API deployment – The live casino API is integrated into your system by your team or our experts.",
+        "Testing and optimisation – Rigorous testing ensures the functionality and performance of all games.",
+        "Launch and support – Your platform goes live, supported by ongoing assistance to ensure smooth operations."
       ]
     },
     {
-      title: "INTEGRATION & SCALABILITY",
+      title: "Customisation and Scalability Features",
       points: [
-        "Smooth API integration process tailored for your needs",
-        "Support for legal compliance and regulations",
-        "Ready-to-use skill game modules and systems",
-        "Flexible growth-oriented architecture"
+        "Branded tables – Customise every aspect, from table layouts to dealer uniforms, for brand consistency.",
+        "Global adaptation – Multilingual support and currency options for different regions.",
+        "Scalable options – Easily add new games or features as your platform grows.",
+        "We allow operators to design their offerings, ensuring an experience that resonates with their audience. "
       ]
     },
     {
-      title: "TABLE LAYOUT & FUNCTIONALITY",
+      title: "Challenges in Live Casino API Integration",
       points: [
-        "Simple table configurations for all player levels",
-        "Responsive interfaces that adapt to any screen size",
-        "Live updates, smart scoring, rule customization",
-        "Supports skill-games like rummy, poker, ludo, carrom"
+        "Compatibility issues – Legacy systems may not support the latest APIs.",
+        "Integration downtime – Transitioning to new systems can temporarily disrupt operations.",
+        "Data security concerns – Protecting sensitive player information is a top priority.",
+        "Player experience gaps – Poorly optimised APIs can result in lag or gameplay interruptions."
       ]
     },
     {
-      title: "GAMEPLAY EXPERIENCE",
+      title: "How We Solve These Challenges",
       points: [
-        "Dynamic gameplay with multiplayer and solo challenge options",
-        "Custom rule sets per game or tournament",
-        "Real-time feedback and interactive player experiences",
-        "Optimized for competitive and casual gaming environments"
+        "Thorough compatibility checks – We ensure that the API works seamlessly with your existing systems.",
+        "Quick deployment – Our team reduces downtime by streamlining the integration process.",
+        "High-level security – Advanced encryption, fraud detection, and compliance with international regulations safeguard player data.",
+        "Optimised performance – APIs are tested rigorously to deliver smooth, uninterrupted gameplay, ensuring players remain engaged."
       ]
     }
   ]
@@ -191,15 +233,30 @@ const SkillGamesAPI = () => {
   return (
     <div className="skill-api-game">
       <div className="landing-skill-api-section">
-      <LandingSection landingItems={landingItems}/>
+        <LandingSection landingItems={landingItems}/>
+        <SkillLanding />
+        {/* <div className='landing-skill-api-overlay'>
+          <div className='skill-api-chip-container'>
+            <img src="/skillAPI/bg-over/bg-over.png" alt="" className='image-stack'/>
+          </div>
+          <div className='skill-api-card-container'>
+            <img src="/skillAPI/bg-over/cards.png" alt="" className='image-stack'/>
+          </div>
+          <div className='skill-api-dice-container skill-api-dice1'>
+            <img src="/skillAPI/bg-over/dice1.png" alt="" className='image-stack'/>
+          </div>
+          <div className='skill-api-dice-container skill-api-dice2'>
+            <img src="/skillAPI/bg-over/dice2.png" alt="" className='image-stack'/>
+          </div>
+        </div> */}
       </div>
       <AchievementsBanner />
 
       <FeaturesBanner />
 
-      <FeaturesGrid  features={platformFeatures} featuresTitle={platformTitle} />
+      <FeaturesGrid  features={apiplatformFeatures} featuresTitle={platformTitle} />
 
-      <PromoTools />
+      {/* <PromoTools /> */}
       <PlatformSection />
       {/* <PlatformImg /> */}
       <CustomGrid/>

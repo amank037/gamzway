@@ -1,6 +1,6 @@
 .landing-skill-api-section {
     position: relative;
-    background-image: url(https://beta.mobzway.com/assets/images/provider-img.png);
+    background-image: url('/skillAPI/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -22,3 +22,6 @@
 .landing-skill-api-section {
     background-blend-mode: overlay;
 }
+
+
+

@@ -147,6 +147,14 @@ function Header() {
         }
     }
 
+    const handleMobileClick  = (index) =>{
+        if(window.innerWidth < 991){
+            // toggleDropdown(index)
+            setActiveDropdown(index)
+            setForceCloseDropdown(false)
+        }
+    }
+
     return (
         <div className={`header-div ${isSticky ? 'sticky' : ''}`}>
             <div className='header-container'>
@@ -161,6 +169,7 @@ function Header() {
                                 className={`dropdown ${activeDropdown === index ? 'active' : ''} ${isActive(dropdown.path) ? 'current' : ''} ${forceCloseDropdown === true ? 'force-close' : ''}`}
                                 key={index}
                                 // onClick={() => toggleDropdown(index)}
+                                onClick={() => handleMobileClick(index)}
                                 onMouseEnter={() => handleDropdownMouseEnter(index)}
                                 onMouseLeave={handleDropdownMouseLeave}
                             >
