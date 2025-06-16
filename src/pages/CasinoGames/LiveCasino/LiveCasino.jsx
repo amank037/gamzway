@@ -381,6 +381,9 @@ const LiveCasino = () => {
         <PlatformSection platformItems={typesItems}/>
       </div> */}
 
+      <div>
+        <div></div>
+      </div>
 
 
       <FeaturesGridV4 featuresGrid={featuresGrid} featuresTitle={featuresItems} />

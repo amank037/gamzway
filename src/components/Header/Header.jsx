@@ -33,6 +33,7 @@ function Header() {
         const handleClickOutside = (e) => {
             if (activeDropdown !== null && !e.target.closest('.dropdown')) {
                 setActiveDropdown(null)
+                setForceCloseDropdown(false)
             }
         }
 
@@ -50,6 +51,7 @@ function Header() {
         } else {
             setActiveDropdown(index);
         }
+        setForceCloseDropdown(false)
     }
 
     const dropdownData = [
@@ -100,26 +102,6 @@ function Header() {
         },
     ]
 
-    const handleDropdownItemClick = (e) => {
-        e.stopPropagation()
-
-        setForceCloseDropdown(true)
-        setActiveDropdown(null)
-
-        setTimeout(() => {
-            setForceCloseDropdown(false)
-        }, 100)
-        
-        closeMenu()
-    }
-
-    const handleDropdownMouseLeave = () => {
-        if (forceCloseDropdown) {
-            setActiveDropdown(null)
-            setForceCloseDropdown(false)
-        }
-    }
-
     const isActive = (path) => {
         if (path === '/') {
             return location.pathname === '/'
@@ -132,19 +114,54 @@ function Header() {
         setActiveDropdown(null)
     }
 
+    const handleDropdownItemClick = (e) => {
+        e.stopPropagation()
+        // Force close dropdown on desktop by adding a class
+        setForceCloseDropdown(true)
+        setActiveDropdown(null)
+        
+        // Reset after a short delay to allow for navigation
+        setTimeout(() => {
+            setForceCloseDropdown(false)
+        }, 100)
+        
+        closeMenu()
+    }
+
+    const handleDropdownMouseEnter = (index) => {
+        if (window.innerWidth > 991) {
+            setActiveDropdown(index)
+            setForceCloseDropdown(false)
+        }
+    }
+
+    const handleDropdownMouseLeave = () => {
+        // Only on desktop and if not force closing
+        if (window.innerWidth > 991 && !forceCloseDropdown) {
+            setActiveDropdown(null)
+        }
+        // If we're in force close mode, reset it
+        if (forceCloseDropdown) {
+            setActiveDropdown(null)
+            setForceCloseDropdown(false)
+        }
+    }
+
     return (
         <div className={`header-div ${isSticky ? 'sticky' : ''}`}>
             <div className='header-container'>
                 <Link to="/" onClick={closeMenu}>
+                    {/* <img src={logo} alt="" /> */}
                     <Logo />
                 </Link>
                 <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
                     <ul className='nav-menu-ul'>
                         {dropdownData.map((dropdown, index) => (
                             <li 
-                                className={`dropdown ${activeDropdown === index ? 'active' : ''} ${isActive(dropdown.path) ? 'current' : ''}`}
+                                className={`dropdown ${activeDropdown === index ? 'active' : ''} ${isActive(dropdown.path) ? 'current' : ''} ${forceCloseDropdown && activeDropdown === index ? 'force-close' : ''}`}
                                 key={index}
                                 onClick={() => toggleDropdown(index)}
+                                onMouseEnter={() => handleDropdownMouseEnter(index)}
                                 onMouseLeave={handleDropdownMouseLeave}
                             >
                                 <span>{dropdown.title}</span>
@@ -156,10 +173,6 @@ function Header() {
                                         >
                                             <Link 
                                                 to={item.path}
-                                                // onClick={(e) => {
-                                                //     e.stopPropagation()
-                                                //     closeMenu()
-                                                // }}
                                                 onClick={handleDropdownItemClick}
                                             >{item.name}</Link>
                                         </li>
@@ -171,7 +184,12 @@ function Header() {
                     <Link 
                         to="/contacts" 
                         className='contact-link'
-                        onClick={handleDropdownItemClick}
+                        // className={isActive('/contacts') ? 'active' : ''}
+                        onClick={(e) => {
+                            
+                            setIsModalOpen(true);
+                            closeMenu();
+                        }}
                     >
                         Contact Us
                     </Link>
