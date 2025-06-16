@@ -116,7 +116,7 @@
 .callbreakbg-container {
     position: relative;
     width: 50%;
-    height: 300px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +127,7 @@
         align-items: center;
         flex-direction: column;
         padding: 0 20px;
-        margin-top: 134px;
+        /* margin-top: 134px; */
         gap: 100px;
     }
     .callbreaklanding-container{
@@ -165,21 +165,27 @@
 
 .callbreakbg-over{
     position: absolute;
-    top: 0;
+    /* top: -10%; */
     left: 10%;
-    width: 70%;
-    height: 70%;
+    /* width: 70%; */
+    width: 100%;
+    height: 100%;
     z-index: 2;
     left: 45%;
-    top: -40%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.callbreakbg-over img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .callbreakbg-title{
     position: absolute;
-    top: 35%;
-    left: 20%;
-    width: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    transform: translate(-50%, -50%);
     height: auto;
     z-index: 3;
     animation: zoomIn 4s ease-in-out infinite;

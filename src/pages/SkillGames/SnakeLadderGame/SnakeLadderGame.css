@@ -1,7 +1,7 @@
 .snakeladder-game{
   overflow-x: hidden;
   width: 100%;
-  margin-top: -134px;
+  margin-top: -121px;
 }
 .landing-snakeladder-section {
     background-image: url('/snakePage/emptyBg.png');
@@ -11,7 +11,7 @@
     background-size: cover;
     background-position: top center;
     height: 100vh !important;
-    margin-top: -121px;
+    /* margin-top: -121px; */
 }
 
 .variations-grid {

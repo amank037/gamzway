@@ -102,11 +102,10 @@ function Header() {
 
     const handleDropdownItemClick = (e) => {
         e.stopPropagation()
-        // Force close dropdown on desktop by adding a class
+
         setForceCloseDropdown(true)
         setActiveDropdown(null)
-        
-        // Reset after a short delay to allow for navigation
+
         setTimeout(() => {
             setForceCloseDropdown(false)
         }, 100)
@@ -115,7 +114,6 @@ function Header() {
     }
 
     const handleDropdownMouseLeave = () => {
-        // Only close if we're in force close mode (after clicking an item)
         if (forceCloseDropdown) {
             setActiveDropdown(null)
             setForceCloseDropdown(false)
@@ -138,7 +136,6 @@ function Header() {
         <div className={`header-div ${isSticky ? 'sticky' : ''}`}>
             <div className='header-container'>
                 <Link to="/" onClick={closeMenu}>
-                    {/* <img src={logo} alt="" /> */}
                     <Logo />
                 </Link>
                 <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
@@ -148,6 +145,7 @@ function Header() {
                                 className={`dropdown ${activeDropdown === index ? 'active' : ''} ${isActive(dropdown.path) ? 'current' : ''}`}
                                 key={index}
                                 onClick={() => toggleDropdown(index)}
+                                onMouseLeave={handleDropdownMouseLeave}
                             >
                                 <span>{dropdown.title}</span>
                                 <ul className='dropdown-menu'>
@@ -158,10 +156,11 @@ function Header() {
                                         >
                                             <Link 
                                                 to={item.path}
-                                                onClick={(e) => {
-                                                    e.stopPropagation()
-                                                    closeMenu()
-                                                }}
+                                                // onClick={(e) => {
+                                                //     e.stopPropagation()
+                                                //     closeMenu()
+                                                // }}
+                                                onClick={handleDropdownItemClick}
                                             >{item.name}</Link>
                                         </li>
                                     ))}
@@ -172,12 +171,7 @@ function Header() {
                     <Link 
                         to="/contacts" 
                         className='contact-link'
-                        // className={isActive('/contacts') ? 'active' : ''}
-                        onClick={(e) => {
-                            
-                            setIsModalOpen(true);
-                            closeMenu();
-                        }}
+                        onClick={handleDropdownItemClick}
                     >
                         Contact Us
                     </Link>

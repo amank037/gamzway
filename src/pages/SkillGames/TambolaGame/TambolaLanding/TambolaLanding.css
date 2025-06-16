@@ -236,7 +236,7 @@
         align-items: center;
         flex-direction: column;
         padding: 500px 20px;
-        margin-top: 134px;
+        /* margin-top: 134px; */
         gap: 100px;
     }
     .tambolalanding-container{
