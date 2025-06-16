@@ -160,7 +160,7 @@ function Header() {
                             <li 
                                 className={`dropdown ${activeDropdown === index ? 'active' : ''} ${isActive(dropdown.path) ? 'current' : ''} ${forceCloseDropdown === true ? 'force-close' : ''}`}
                                 key={index}
-                                onClick={() => toggleDropdown(index)}
+                                // onClick={() => toggleDropdown(index)}
                                 onMouseEnter={() => handleDropdownMouseEnter(index)}
                                 onMouseLeave={handleDropdownMouseLeave}
                             >

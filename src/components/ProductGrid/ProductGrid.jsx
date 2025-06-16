@@ -332,8 +332,7 @@ function ProductGrid() {
                 style={{ overflow: 'hidden' }}
                 className="productv2-grid"
               >
-            <>
-
+                <>
                 <div className='product-grid-item'>
                   <a href="">
                     <div className="image-stack">

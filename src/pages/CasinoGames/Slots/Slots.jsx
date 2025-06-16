@@ -18,10 +18,11 @@ import ChooseGrid from "../../../components/ChooseGrid/ChooseGrid"
 import PlatformImg from "../../../components/LudoPlatformImg/LudoPlatformImg"
 import CustomGrid from "../../../components/CustomGrid/CustomGrid"
 import AboutSection from "../../../components/AboutSection/AboutSection"
+import ProvidersGrid from "../../../components/ProvidersGrid/ProvidersGrid"
 
 const landingItems = [
   {
-    title: "SLOT GAME DEVELOPMENT COMPANY",
+    title: "SLOT GAMES",
     description: "Top choice for both sincere and casual players, the slot games are famous for their convenient use, pleasing look, and exciting perks.",
     description2:"Our slot games has creation services center on providing real time money experiences, with innovation, excellent graphics keeping interest of the users.",
     button: "REQUEST A QUOTE",
@@ -246,7 +247,10 @@ const Slots = () => {
         </div>
       </div>
 
+
+
       <AchievementsBanner />
+      <ProvidersGrid />
 
       <AboutSection aboutItems={aboutItems} />
 
@@ -254,8 +258,8 @@ const Slots = () => {
         <FeaturesGridV5 featuresGrid={typesGrid} featuresTitle={typesTitle}/>
       </div>
 
-      <FeaturesBanner />
-      <PromoTools />
+      {/* <FeaturesBanner />
+      <PromoTools /> */}
 
 
       <PlatformSection />
@@ -341,10 +345,10 @@ const Slots = () => {
             <span className="btn-border"></span>
         </a>
       </div>
-
+      <ContactBanner contactItems={demoItems}/>
       <PaymentSection />
       <ProductSection productGrid={productItems} />
-      <ContactBanner contactItems={demoItems}/>
+
 
     </div>
   )

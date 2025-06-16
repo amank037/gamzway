@@ -15,10 +15,11 @@ import PromoTools from '../../../components/PromoTools/PromoTools'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
 import AboutSection from '../../../components/AboutSection/AboutSection'
+import ProvidersGrid from '../../../components/ProvidersGrid/ProvidersGrid'
 
 const landingItems = [
   {
-    title: "CRASH GAME DEVELOPMENT",
+    title: "CRASH GAMES",
     description: "Faster, adrenaline-fueled action in crash games has transformed the online casino gaming scene. These games follow basic concepts whereby players make bets before a rising multiplier 'crashes'.",
     description2: "With proven fair algorithms, real-time interaction, and flawless graphics, live Crash (Random Number Generator) crash games provide an added degree of excitement.",
     button: "REQUEST A QUOTE",
@@ -387,6 +388,8 @@ const CrashGames = () => {
       </div>
       <AchievementsBanner />
 
+      <ProvidersGrid />
+
       <AboutSection aboutItems={aboutItems} />
       
       {/* <FeaturesGridV3 featuresGridV3={featuresGridV3} featuresTitleV3={featuresTitleV3} /> */}
@@ -452,7 +455,6 @@ const CrashGames = () => {
         </div>
       </div>
 
-      <PromoTools />
       <PlatformSection/>
       <PlatformImg deviceImages={deviceImages}/>
       <CustomGrid/>

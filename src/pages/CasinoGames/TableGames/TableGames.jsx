@@ -16,10 +16,11 @@ import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 import PromoTools from '../../../components/PromoTools/PromoTools'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+import ProvidersGrid from '../../../components/ProvidersGrid/ProvidersGrid'
 
 const landingItems = [
   {
-    title: "TABLE GAMES DEVELOPMENT",
+    title: "TABLE GAMES",
     description: " At Gamzway, we bring these experiences online and provide completely tailored Table RNG Game Development solutions meant for worldwide users.",
     description2:" Our profound developers create innovative and compatible table gaming environments to fit desktop and mobile users, whether they traditionally unique card games or traditional games like Blackjack and Roulette.",
     button: "REQUEST A QUOTE",
@@ -303,11 +304,40 @@ const TableGames = () => {
       <div className="landing-table-section">
         <LandingSection landingItems={landingItems}/>
         {/* <LandingPageV2 landingItems={landingItems} landingImages={landingImages}/> */}
+        <div className='table-overlay-images-div'>
+          <div className='table-card-container table-card1'>
+            <img src="/tableGames/bg-over/card1.png" alt="" className='image-stack'/>
+          </div>
+          <div className='table-card-container table-card2'>
+            <img src="/tableGames/bg-over/card2.png" alt="" className='image-stack'/>
+          </div>
+          <div className='table-card-container table-card3'>
+            <img src="/tableGames/bg-over/card3.png" alt="" className='image-stack'/>
+          </div>
+          <div className='table-coin-container table-coin1'>
+            <img src="/tableGames/bg-over/coin1.png" alt="" className='image-stack'/>
+          </div>
+          <div className='table-coin-container table-coin2'>
+            <img src="/tableGames/bg-over/coin2.png" alt="" className='image-stack'/>
+          </div>
+          <div className='table-coin-container table-coin3'>
+            <img src="/tableGames/bg-over/coin3.png" alt="" className='image-stack'/>
+          </div>
+          <div className='table-coin-container table-coin4'>
+            <img src="/tableGames/bg-over/coin4.png" alt="" className='image-stack'/>
+          </div>
+          <div className='table-dice-container table-dice1'>
+            <img src="/tableGames/bg-over/dice1.png" alt="" className='image-stack'/>
+          </div>
+          <div className='table-dice-container table-dice2'>
+            <img src="/tableGames/bg-over/dice2.png" alt="" className='image-stack'/>
+          </div>
+        </div>
       </div>
 
       <AchievementsBanner />
+      <ProvidersGrid />
 
-      <FeaturesBanner />
 
 
       {/* <div className="table-types">
@@ -317,7 +347,7 @@ const TableGames = () => {
 
       <FeaturesGridV3 featuresTitleV3={featuresTitleV3} featuresGridV3={featuresGridV3}/>
 
-      <PromoTools />
+
       <PlatformSection />
       <PlatformImg deviceImages={deviceImages}/>
       <CustomGrid/>

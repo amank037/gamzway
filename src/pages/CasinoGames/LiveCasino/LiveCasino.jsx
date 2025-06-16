@@ -13,6 +13,8 @@ import FeaturesGridV4 from '../../../components/FeaturesGridV4/FeaturesGridV4'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 import ProvidersSection from '../../../components/ProvidersSection/ProvidersSection'
+import ProvidersGrid from '../../../components/ProvidersGrid/ProvidersGrid'
+import FeaturesGridV8 from '../../../components/FeaturesGridV8/FeaturesGridV8'
 
 
 // const typesItems = [
@@ -105,7 +107,7 @@ const demoItems = [
 
 const landingItems = [
   {
-    title: "LIVE CASINO SOFTWARE PROVIDER",
+    title: "LIVE CASINO GAMES",
     description: " Players can join actual dealers and enjoy vintage games including blackjack, roulette, and baccarat from anywhere in the world by means of high-definition streaming and interactive interfaces.",
     description2:" Our speciality at Gamzway is creating scalable live casino solutions from right from a user's desktop or mobile device that mimic the glitz of Las Vegas, Macau, and Monte Carlo.",
     button: "REQUEST A DEMO",
@@ -122,7 +124,7 @@ const featuresItems = [
 
 const hireTitle = [
   {
-    title: "Our Live Casino's Characteristics",
+    title: "Our Live Casino's Features",
   }
 ]
 
@@ -346,6 +348,8 @@ const deviceImages = [
 ]
 
 
+
+
 const LiveCasino = () => {
 
   const featuresGrid = [
@@ -372,21 +376,27 @@ const LiveCasino = () => {
     <div className="livecasino-game">
       <div className="landing-livecasino-section">
         <LandingSection landingItems={landingItems}/>
+        <div className="casino-overlay-images-div">
+          <div className='casino-overlay-live'>
+            <img src="/liveCasino/live.png" alt="" className='image-stack'/>
+          </div>
+          <div className='casino-overlay-casino'>
+            <img src="/liveCasino/casino.png" alt="" className='image-stack'/>
+          </div>
+        </div>
       </div>
       <AchievementsBanner />
 
-      <ProvidersSection />
+      {/* <ProvidersSection /> */}
+      <ProvidersGrid />
 
       {/* <div className="livecasino-types">
         <PlatformSection platformItems={typesItems}/>
       </div> */}
 
-      <div>
-        <div></div>
-      </div>
 
 
-      <FeaturesGridV4 featuresGrid={featuresGrid} featuresTitle={featuresItems} />
+      <FeaturesGridV8 featuresGrid={featuresGrid} featuresTitle={featuresItems} />
 
       <div className='solutions-rummy-section'>
         <div className='solutions-rummy-top'>
@@ -404,29 +414,29 @@ const LiveCasino = () => {
                   <p>Live interaction</p>
                 </div>
                 <div className='solutions-ludo-grid-item'>
-                  <img src="/bot.png" alt="" />
+                  <img src="/security.png" alt="" />
                   <div className='solutions-banner-line'></div>
-                  <p>Smart AI Bots</p>
+                  <p>Control Over Fairness</p>
                 </div>
                 <div className='solutions-ludo-grid-item'>
-                  <img src="/chat.png" alt="" />
+                  <img src="/scalable-100.png" alt="" />
                   <div className='solutions-banner-line'></div>
-                  <p>In-Game Chats</p>
+                  <p>Wide Game Selection</p>
                 </div>
                 <div className='solutions-ludo-grid-item'>
                   <img src="/security.png" alt="" />
                   <div className='solutions-banner-line'></div>
-                  <p>Anti-Fraud Algorithms</p>
+                  <p>24/7 Availability</p>
+                </div>
+                <div className='solutions-ludo-grid-item'>
+                  <img src="/graph.png" alt="" />
+                  <div className='solutions-banner-line'></div>
+                  <p>Fast Betting Software</p>
                 </div>
                 <div className='solutions-ludo-grid-item'>
                   <img src="/platform.png" alt="" />
                   <div className='solutions-banner-line'></div>
-                  <p>Cross-Platform Compatibility</p>
-                </div>
-                <div className='solutions-ludo-grid-item'>
-                  <img src="/social-media.png" alt="" />
-                  <div className='solutions-banner-line'></div>
-                  <p>Social-Media Integration</p>
+                  <p>Cross Platform Compatibility</p>
                 </div>
 
               </div>
@@ -438,7 +448,7 @@ const LiveCasino = () => {
         </div>
       </div>
 
-      <ContactBanner contactItems={contactItems}/>
+      {/* <ContactBanner contactItems={contactItems}/> */}
 
       <PlatformSection platformItems={platformItems}/>
       {/* <PlatformImg deviceImages={deviceImages}/> */}
@@ -458,9 +468,10 @@ const LiveCasino = () => {
         <FeaturesHeader featuresText={faqTitle}/>
         <AccordionSection data={accordionData} className="live-casino-faq" />
       </div>
+      <ContactBanner contactItems={demoItems}/>
       <PaymentSection />
       <ProductSection productGrid={productItems}/>
-      <ContactBanner contactItems={demoItems}/>
+
       
       
     </div>

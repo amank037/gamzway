@@ -16,10 +16,11 @@ import PromoTools from '../../../components/PromoTools/PromoTools'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import AboutSection from '../../../components/AboutSection/AboutSection'
+import ProvidersGrid from '../../../components/ProvidersGrid/ProvidersGrid'
 
 const landingItems = [
   {
-    title: "FISHING GAMES DEVELOPMENT COMPANY",
+    title: "FISHING GAMES",
     description: "With their amazing underwater graphics, genuine fish motions, and real-time multiplayer tools, these games attract both casual and competitive gamers all around.",
     description2: "From catching a rare species to participating in tournaments to unleashing power-ups, fishing games offer thrill, leisure, and strategy—all blended together. Gamzway enables us to mix enjoyment, skill, and technology such that your fishing game stands out.",
     button: "REQUEST A DEMO",
@@ -354,7 +355,7 @@ const FishingGames = () => {
         <PlatformSection platformItems={typesItems}/>
       </div> */}
 
-      <FeaturesBanner />
+      <ProvidersGrid/>
 
       <AboutSection aboutItems={aboutItems}/>
 
@@ -398,13 +399,12 @@ const FishingGames = () => {
         </div>
       </div> */}
 
-      <PromoTools />
       <PlatformSection />
       <PlatformImg deviceImages={deviceImages}/>
       <CustomGrid/>
       <ChooseGrid />
 
-      <ContactBanner contactItems={contactItems}/>
+
 
       {/* <div className="development-process-section">
         <FeaturesGrid 
@@ -417,7 +417,7 @@ const FishingGames = () => {
         <FeaturesHeader featuresText={faqTitle}/>
         <AccordionSection data={accordionData} className="fishing-faq" />
       </div>
-
+      <ContactBanner contactItems={contactItems}/>
       <PaymentSection />
       <ProductSection productGrid={productItems}/>
     </div>

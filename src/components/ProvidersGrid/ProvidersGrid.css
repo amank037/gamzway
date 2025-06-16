@@ -1,0 +1,119 @@
+.providers-grid-div{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #fff;
+
+}
+
+.providers-grid-div .provider-title {
+    text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: 'Lokanova-Std', 'Arial', sans-serif;
+    padding: 20px 0;
+}
+
+.providers-grid-div .provider-title span {
+    animation: colorFade2 10s infinite;
+    font-size: inherit;
+    font-family: 'Lokanova-Std', 'Arial', sans-serif;
+    font-weight: 400;
+}
+
+.providers-grid-div .provider-title span:first-child {
+    animation: colorFadeReverse2 10s infinite;
+}
+
+.providers-grid-div .provider-title span.no-animation {
+    animation: none !important;
+    color: inherit;
+}
+
+@keyframes colorFade2 {
+    0% {
+        color: var(--primary-yellow);
+    }
+    50% {
+        color: #000000;
+    }
+    100% {
+        color: var(--primary-yellow);
+    }
+}
+
+@keyframes colorFadeReverse2 {
+    0% {
+        color: #ffffff;
+    }
+    50% {
+        color: var(--primary-yellow);
+    }
+    100% {
+        color: #000000;
+    }
+}
+
+.providers-grid-btn-container{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.providers-grid-show-more-btn{
+    background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--secondary-yellow) 100%);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2);
+}
+.providers-grid-show-more-btn:hover{
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.6);
+}
+.show-more-arrow{
+    margin-left: 10px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.providers-grid-show-more-btn:hover .show-more-arrow{
+    /* transform: translateX(5px); */
+    margin-left: 20px;
+}
+
+.providers-grid{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin: 20px auto;
+}
+.providers-grid-item{
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.375);
+    background-color: rgb(128, 128, 128);
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.providers-grid-item:hover{
+    transform: scale(1.1);
+    background-color: #ffd900;
+}
+.providers-grid-item img{
+    width: 100%;
+}
+
+

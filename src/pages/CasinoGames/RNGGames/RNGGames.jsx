@@ -14,10 +14,11 @@ import LandingPageV2 from '../../../components/LandingPageV2/LandingPageV2'
 import FeaturesGridV4 from '../../../components/FeaturesGridV4/FeaturesGridV4'
 import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
+import ProvidersGrid from '../../../components/ProvidersGrid/ProvidersGrid'
 
 const landingItems = [
   {
-    title: "RNG GAME DEVELOPMENT",
+    title: "RNG GAMES",
     description: "Digital games known as random number generator (RNG) games rely on intricate algorithms to generate totally random, fair, and objective results.",
     description2: "Whether it's a card dealt, a dice rolled, or a slot spin, RNG technology guarantees that every game outcome—independently and randomly—is produced free from control or outside influence.",
     button: "REQUEST A DEMO",
@@ -391,6 +392,7 @@ const RNGGames = () => {
         </div>
       </div>
       <AchievementsBanner />
+    <ProvidersGrid />
 
       <FeaturesGridV4 featuresGrid={featuresGrid} featuresTitle={featuresItems} />
 
