@@ -1,7 +1,7 @@
 .custom-grid-section {
     width: 100%;
     padding: 50px 0;
-    background-color: #000;
+    /* background-color: #000; */
     padding: 40px 0;
     z-index:3;
     position:relative;

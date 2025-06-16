@@ -221,6 +221,74 @@ const deviceImages = [
   }
 ]
 
+const providersImages =[
+  {
+  src:"/logo-black.png",
+  alt:"Gamzway",
+  title:"Gamzway"
+  },
+  {
+  src: "/providers/7mojos.webp",
+  alt: "7Mojos",
+  title: "7Mojos"
+  },
+  {
+  src: "/providers/betgames.webp",
+  alt: "BetGames",
+  title: "BetGames"
+  },
+  {
+  src: "/providers/evolution.webp",
+  alt: "Evolution Gaming Casinos",
+  title: "Evolution Gaming Casinos"
+  },
+  {
+  src: "/providers/ezugi.webp",
+  alt: "Ezugi",
+  title: "Ezugi"
+  },
+  {
+  src:"/providers/hogaming.webp",
+  alt:"Ho gaming",
+  title:"Ho gaming"
+  },
+  {
+  src:"/providers/iconic21.webp",
+  alt:"Iconic21",
+  title:"Iconic21"
+  },
+  {
+  src:"/providers/live88.webp",
+  alt:"Live88",
+  title:"Live88"
+  },
+  {
+  src:"/providers/playtech.webp",
+  alt:"Playtech Live",
+  title:"Playtech Live"
+  },
+  {
+  src: "/providers/pragmatic.webp",
+  alt: "Pragmatic Play Games",
+  title: "Pragmatic Play Games"
+  },
+  {
+  src:"/providers/sagaming.webp",
+  alt:"SA Gaming",
+  title:"SA Gaming"
+  },
+  {
+  src: "/providers/skywind.webp",
+  alt: "Skywind",
+  title: "Skywind"
+  },
+  {
+  src: "/providers/vivo.webp",
+  alt: "Vivo Gaming",
+  title: "Vivo Gaming"
+  }
+]
+
 const Slots = () => {
 
   return (
@@ -250,7 +318,7 @@ const Slots = () => {
 
 
       <AchievementsBanner />
-      <ProvidersGrid />
+      <ProvidersGrid providersImages={providersImages} providersImagesLength={7}/>
 
       <AboutSection aboutItems={aboutItems} />
 
@@ -346,7 +414,7 @@ const Slots = () => {
         </a>
       </div>
       <ContactBanner contactItems={demoItems}/>
-      <PaymentSection />
+      {/* <PaymentSection /> */}
       <ProductSection productGrid={productItems} />
 
 

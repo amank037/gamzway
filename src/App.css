@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     background-color: var(--background-black);
+    /* background: url('/gradient-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat; */
 }
 
 .App {

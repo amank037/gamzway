@@ -1,8 +1,11 @@
 .providers-grid-div{
     width: 100%;
     padding: 50px 0;
-    background-color: #fff;
-
+    /* background: radial-gradient(circle at 50% 120%, #ffd700, #b69b0f, #726311, #362f0b, #1a1600, #141000, #0c0900, #000000); */
+    /* background: url(/src/assets/svgviewer-output.svg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: #fff;;
 }
 
 .providers-grid-div .provider-title {
@@ -43,7 +46,7 @@
 
 @keyframes colorFadeReverse2 {
     0% {
-        color: #ffffff;
+        color: #000000;
     }
     50% {
         color: var(--primary-yellow);
@@ -90,17 +93,17 @@
 .providers-grid{
     max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* grid-template-columns: repeat(6 , 1fr); */
     gap: 25px;
     margin: 20px auto;
 }
 .providers-grid-item{
-    height: 100px;
+    height: 120px;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     margin: auto;
-    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.375);
-    background-color: rgb(128, 128, 128);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.375);
+    /* background-color: rgb(118, 118, 118); */
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
     backdrop-filter: blur(10px);
@@ -111,9 +114,28 @@
 .providers-grid-item:hover{
     transform: scale(1.1);
     background-color: #ffd900;
+    border: 1px solid #000;
 }
 .providers-grid-item img{
     width: 100%;
 }
 
 
+@media screen and (max-width: 1200px) {
+    .providers-grid{
+        grid-template-columns: repeat(4 , 1fr) !important;
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 768px){
+    .providers-grid{
+        grid-template-columns: repeat(3 , 1fr) !important;
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 480px){
+    .providers-grid{
+        grid-template-columns: repeat(2 , 1fr) !important;
+        padding: 0 30px;
+    }
+}
