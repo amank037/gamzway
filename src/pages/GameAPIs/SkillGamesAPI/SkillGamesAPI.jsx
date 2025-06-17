@@ -255,11 +255,12 @@ const SkillGamesAPI = () => {
 
       <SolutionsAPI />
 
-      <FeaturesBanner />
 
-      <FeaturesGrid  features={platformFeatures} featuresTitle={platformTitle} />
+
+      {/* <FeaturesGrid  features={platformFeatures} featuresTitle={platformTitle} /> */}
 
       {/* <PromoTools /> */}
+            <FeaturesBanner />
       <PlatformSection />
       {/* <PlatformImg /> */}
       <CustomGrid/>

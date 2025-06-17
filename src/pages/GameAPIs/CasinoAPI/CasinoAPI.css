@@ -1,6 +1,6 @@
 .landing-casino-api-section {
     position: relative;
-    background-image: url(https://beta.mobzway.com/assets/images/livecasino_banner.jpg);
+    background-image: url(/casinoAPI/bg.png); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -8,7 +8,7 @@
     margin-top: -121px;
 }
 
-.landing-casino-api-section::before {
+/* .landing-casino-api-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -17,7 +17,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     pointer-events: none;
-}
+} */
 
 .landing-casino-api-section {
     background-blend-mode: overlay;

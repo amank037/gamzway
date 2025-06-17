@@ -3,7 +3,7 @@ import FeaturesHeader from '../FeaturesSection/FeaturesHeader/FeaturesHeader'
 
 function SolutionsAPI() {
   return (
-    <div>
+    <div className='solutions-api-section'>
         <div>
             <FeaturesHeader featuresText={[{title: "How the Integration Process Works", description: ""}]}/>
             <div className="timeline">

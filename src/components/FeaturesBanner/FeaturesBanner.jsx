@@ -1,8 +1,12 @@
+import FeaturesHeader from '../FeaturesSection/FeaturesHeader/FeaturesHeader'
 import './FeaturesBanner.css'
+
+const featuresText = [{title: "OUR API SPECIALITIES", description: ""}]
 
 function FeaturesBanner() {
   return (
     <div className='features-banner'>
+        <FeaturesHeader featuresText={featuresText}/>
         <div className='features-banner-container'>
             <div className='features-banner-item'>
                 <div className='features-banner-icon'>
