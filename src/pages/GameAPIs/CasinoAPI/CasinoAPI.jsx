@@ -16,6 +16,7 @@ import PromoTools from '../../../components/PromoTools/PromoTools'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
+import SolutionsAPI from '../../../components/SolutionsAPI/SolutionsAPI'
 
 const landingItems = [
   {
@@ -205,9 +206,10 @@ const CasinoAPI = () => {
 
       <FeaturesBanner />
 
+      <SolutionsAPI />
+
       <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
 
-      <PromoTools />
       <PlatformSection />
       {/* <PlatformImg /> */}
       <CustomGrid/>
@@ -251,7 +253,7 @@ const CasinoAPI = () => {
         </div>
       </div> */}
 
-      <div className='solutions-poker-section'>
+      {/* <div className='solutions-poker-section'>
         <div className='solutions-poker-top'>
           <FeaturesHeader featuresText={servicesTitle}/>
         </div>
@@ -282,7 +284,7 @@ const CasinoAPI = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="ludo-faq-section">
         <FeaturesHeader featuresText={faqTitle}/>
@@ -293,8 +295,6 @@ const CasinoAPI = () => {
         </div>
         <button className='faq-btn'><span>ASK A QUESTION</span></button>
       </div>
-
-      <PaymentSection />
 
       <ProductSection productGrid={productItems}/>
 

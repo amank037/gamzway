@@ -10,9 +10,6 @@
     gap: 40px;
 }
 
-.api-benefit{
-
-}
 
 .api-benefit-container{
     max-width: 1200px;
@@ -94,7 +91,7 @@
     content: '';
     position: absolute;
     left: 50%;
-    top: 47%;
+    top: 50%;
     width: 2px;
     height:65%;
     background: var(--primary-yellow);
@@ -103,7 +100,7 @@
 
 .timeline-item {
     position: relative;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     width: 100%;
 }
 
@@ -140,6 +137,7 @@
     padding: 20px;
     /* background: #64646408; */
     backdrop-filter: blur(5px);
+    border: 1px solid #ffffff18;
     border-radius: 8px;
     /* box-shadow: 0 0 5px 1px #ffd70099; */
     transition: all 0.3s ease-in-out;
@@ -250,7 +248,7 @@
     /* background: rgba(255, 217, 0, 0.01); */
     background-color: #00000081;
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid #ffffff18;
     border-radius: 15px;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
@@ -358,17 +356,19 @@
 }
 .challenges-solutions-container .challenges-solutions {
     display: flex;
+    max-width: 800px;
+    margin: 0 auto;
     gap: 20px;
     margin-top: 20px;
 }
 
-.challenges-list {
+.challenges-solutions-container .challenges-list {
     flex: 1;
     border-right: 1px solid #ffffff18;
     padding-right: 20px;
 }
 
-.challenge-item {
+.challenges-solutions-container .challenge-item {
     padding: 12px;
     margin: 5px 0;
     cursor: pointer;
@@ -378,23 +378,22 @@
     backdrop-filter: blur(5px);
 }
 
-.challenge-item:hover {
+.challenges-solutions-container .challenge-item:hover {
     backdrop-filter: blur(5px);
     background-color: #00000054;
 }
 
-.challenge-item.active {
+.challenges-solutions-container .challenge-item.active {
     background-color: #000000a8;
     backdrop-filter: blur(5px);
     border-left: 4px solid var(--primary-yellow);
     font-weight: bold;
 }
-.solution-detail {
+.challenges-solutions-container .solution-detail {
     flex: 2;
     margin: auto 0;
 }
-
-.solution-content {
+.challenges-solutions-container .solution-content {
     background-color: #000000a8;
     backdrop-filter: blur(5px);
     padding: 15px;
@@ -403,7 +402,7 @@
     border-left: 4px solid var(--primary-yellow);
 }
 
-.closing-note {
+.challenges-solutions-container .closing-note {
     margin-top: 20px;
     font-style: italic;
     color: rgba(255, 255, 255, 0.664);

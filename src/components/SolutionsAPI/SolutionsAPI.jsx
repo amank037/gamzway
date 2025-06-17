@@ -3,22 +3,6 @@ import { useState } from 'react'
 import FeaturesHeader from '../FeaturesSection/FeaturesHeader/FeaturesHeader'
 
 const challengeData = [
-    // {
-    //     challenge: "Compatibility issues",
-    //     solution: "Thorough compatibility checks – We ensure that the API works seamlessly with your existing systems."
-    // },
-    // {
-    //     challenge: "Integration downtime",
-    //     solution: "Quick deployment – Our team reduces downtime by streamlining the integration process."
-    // },
-    // {
-    //     challenge: "Data security concerns",
-    //     solution: "High-level security – Advanced encryption, fraud detection, and compliance with international regulations safeguard player data."
-    // },
-    // {
-    //     challenge: "Player experience gaps",
-    //     solution: "Optimised performance – APIs are tested rigorously to deliver smooth, uninterrupted gameplay, ensuring players remain engaged."
-    // }
     {
         challenge: "Compatibility issues",
         solution: `
@@ -262,8 +246,6 @@ function SolutionsAPI() {
                 </div>
 
                 <div className="solution-detail">
-                    {/* <h3>How We Solve These Challenges</h3>
-                    <p>Our solutions are designed to address these challenges with precision:</p> */}
                     <div className="solution-content">
                         {challengeData[activeTab].solution}
                     </div>

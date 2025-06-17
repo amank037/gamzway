@@ -16,6 +16,7 @@ import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 import PromoTools from '../../../components/PromoTools/PromoTools'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+import SolutionsAPI from '../../../components/SolutionsAPI/SolutionsAPI'
 
 const landingItems = [
   {
@@ -204,10 +205,8 @@ const RummyGameAPI = () => {
       </div>
       <AchievementsBanner />
       <FeaturesBanner />
-
+      <SolutionsAPI />
       <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
-
-      <PromoTools />
       <PlatformSection />
       {/* <PlatformImg /> */}
       <CustomGrid/>
