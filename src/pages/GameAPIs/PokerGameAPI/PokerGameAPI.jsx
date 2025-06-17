@@ -18,6 +18,7 @@ import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import PokerLanding from '../../SkillGames/PokerGame/PokerLanding/PokerLanding'
 import SolutionsAPI from '../../../components/SolutionsAPI/SolutionsAPI'
+import CrmAPI from '../../../components/CrmAPI/CrmAPI'
 
 const landingItems = [
   {
@@ -205,10 +206,10 @@ const PokerGameAPI = () => {
 
       <FeaturesBanner />
       <SolutionsAPI />
-      <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
+      {/* <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} /> */}
       <PlatformSection />
       {/* <PlatformImg /> */}
-      <CustomGrid/>
+      <CrmAPI />
       <ChooseGrid />
 
       <ContactBanner contactItems={findItems}/>

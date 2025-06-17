@@ -63,11 +63,11 @@ const crmItems = [
 
 function CrmAPI() {
   return (
-    <div className='custom-grid-section'>
+    <div className='crm-grid-section'>
         <FeaturesHeader featuresText={crmTitle} />
-        <div className='custom-grid'>
+        <div className='crm-grid'>
             {crmItems.map((item,index) => (
-                <div key={index} className='custom-grid-item'>
+                <div key={index} className='crm-grid-item'>
                     <img src={item.image} alt={item.alt} />
                     <h3>{item.title}</h3>
                 </div>

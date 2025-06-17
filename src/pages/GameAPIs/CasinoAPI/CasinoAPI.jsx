@@ -17,6 +17,7 @@ import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
 import SolutionsAPI from '../../../components/SolutionsAPI/SolutionsAPI'
+import CrmAPI from '../../../components/CrmAPI/CrmAPI'
 
 const landingItems = [
   {
@@ -208,12 +209,12 @@ const CasinoAPI = () => {
 
       <SolutionsAPI />
 
-      <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
+      {/* <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} /> */}
 
       <PlatformSection />
       {/* <PlatformImg /> */}
       <CustomGrid/>
-      <ChooseGrid />
+      <CrmAPI />
 
       <ContactBanner contactItems={findItems}/>
 

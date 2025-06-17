@@ -321,7 +321,7 @@ const TeenPattiGameAPI = () => {
 
       <FeaturesGridV5 featuresGrid={typesGrid} featuresTitle={typesTitle} />
       <SolutionsAPI />
-      <FeaturesGrid features={gameplayFeatures} featuresTitle={gameplayTitle} />
+      {/* <FeaturesGrid features={gameplayFeatures} featuresTitle={gameplayTitle} /> */}
 
       <PlatformSection />
       {/* <PlatformImg /> */}

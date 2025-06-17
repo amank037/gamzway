@@ -16,6 +16,7 @@ import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
 import SolutionsAPI from '../../../components/SolutionsAPI/SolutionsAPI'
+import CrmAPI from '../../../components/CrmAPI/CrmAPI'
 
 const landingItems = [
   {
@@ -167,10 +168,10 @@ const AndarBaharAPI = () => {
 
       <FeaturesBanner />
       <SolutionsAPI />
-      <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
+      {/* <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} /> */}
       <PlatformSection />
       {/* <PlatformImg /> */}
-      <CustomGrid/>
+      <CrmAPI />
       <ChooseGrid />
 
       <ContactBanner contactItems={findItems}/>
@@ -185,7 +186,6 @@ const AndarBaharAPI = () => {
         <button className='faq-btn'><span>ASK A QUESTION</span></button>
       </div>
 
-      <PaymentSection />
 
       <ProductSection productGrid={productItems}/>
 

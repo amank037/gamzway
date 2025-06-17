@@ -16,6 +16,7 @@ import PromoTools from '../../../components/PromoTools/PromoTools'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import SolutionsAPI from '../../../components/SolutionsAPI/SolutionsAPI'
+import CrmAPI from '../../../components/CrmAPI/CrmAPI'
 
 const landingItems = [
   {
@@ -258,11 +259,11 @@ const LudoGameAPI = () => {
 
       <FeaturesBanner />
       <SolutionsAPI />
-      <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
+      {/* <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} /> */}
 
       <PlatformSection />
       {/* <PlatformImg /> */}
-      <CustomGrid/>
+      <CrmAPI />
       <ChooseGrid />
 
       <ContactBanner contactItems={findItems}/>
