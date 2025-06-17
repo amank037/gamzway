@@ -3,7 +3,7 @@ import './LandingSection.css'
 function LandingSection({ landingItems }) {
   return (
     <div className='landing-section'>
-        <div className='overlay'></div>
+        {/* <div className='overlay'></div> */}
         {landingItems.map((item, index) => (
             <div key={index} className='landing-text'>
                 <h1>{item.title}</h1>

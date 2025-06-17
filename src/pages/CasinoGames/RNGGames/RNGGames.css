@@ -8,7 +8,11 @@
     height: 100vh !important;
     margin-top: -121px;
 }
-
+@media screen and (max-width: 768px){
+    .landing-rng-section {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
 .rng-over {
     width: 100%;
     height: 100%;
@@ -37,6 +41,15 @@
 .rng-over-2 img {
     width: 200px;
     height: auto;
+}
+
+@media screen and (max-width: 768px){
+    .rng-over-1{
+        bottom: 0%;
+    }
+    .rng-over-2{
+        bottom: 15%;
+    }
 }
 
 @keyframes rngFloat {

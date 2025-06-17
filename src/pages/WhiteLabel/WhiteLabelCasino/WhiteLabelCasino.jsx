@@ -274,7 +274,7 @@ const WhiteLabelCasino = () => {
     <div className="white-label-casino-game">
 
       <div className="landing-white-label-casino-section">
-        <LandingPageV2 landingItems={landingItems} landingImages={landingImages} />
+        <LandingSection landingItems={landingItems} />
       </div>
 
       <AchievementsBanner />

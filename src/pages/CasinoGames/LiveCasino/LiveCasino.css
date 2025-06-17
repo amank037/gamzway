@@ -29,7 +29,7 @@
     top: 82%;
     left: 77%;
     /* transform: translate(-50%, -50%); */
-    animation: casinoFloat1 4s ease-in-out infinite;
+    animation: casinoFloat1 5s ease-in-out infinite;
 }
 @keyframes casinoFloat1 {
     0%, 100% { transform: translateY(0); }
@@ -39,6 +39,18 @@
 @keyframes casinoFloat2 {
     0%, 100% { transform: translateY(-5px); }
     50% { transform: translateY(-20px); }
+}
+@media screen and (max-width: 768px){
+    .casino-overlay-casino{
+        width: 50%;
+        left:25%;
+        transform: translate(-50%, -50%);
+    }
+    .casino-overlay-live{
+        width: 30%;
+        left:25%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .landing-livecasino-section::before {
