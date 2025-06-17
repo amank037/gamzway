@@ -18,18 +18,55 @@
 }
 .rummy-api-title-container{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 70%;
+    left: 75%;
     transform: translate(-50%, -50%);
+    width: 35%;
 }
 .rummy-api-chip-container{
-    width: 10%;
+    position: absolute;
+    width: 7%;
 }
 .rummy-api-coin-container{
-    width: 10%;
+    position: absolute;
+    width: 7%;
+}
+.rummy-api-chip1{
+    top: 50%;
+    left: 55%;
+    animation: chipFloat 4s ease-in-out infinite;
+}
+.rummy-api-chip2{
+    top: 10%;
+    left: 70%;
+    animation: chipFloat 4.5s ease-in-out infinite;
+}
+.rummy-api-chip3{
+    top: 20%;
+    left: 80%;
+    animation: chipFloat 5s ease-in-out infinite;
+}
+.rummy-api-coin1{
+    top: 30%;
+    left: 50%;
+    animation: coinFloat 4s ease-in-out infinite;
+}
+.rummy-api-coin2{
+    top: 50%;
+    left: 70%;
+    animation: coinFloat 4.5s ease-in-out infinite;
+}
+@keyframes coinFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
-.landing-rummy-api-section::before {
+@keyframes chipFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-14px); }
+}
+
+/* .landing-rummy-api-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -38,7 +75,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     pointer-events: none;
-}
+} */
 
 .landing-rummy-api-section {
     background-blend-mode: overlay;
@@ -98,6 +135,57 @@
 }
 
 @media screen and (max-width: 768px) {
+    .landing-rummy-api-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        pointer-events: none;
+    }
+    .rummy-api-title-container{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+    }
+    .rummy-api-chip-container{
+        position: absolute;
+        width: 20%;
+    }
+    .rummy-api-coin-container{
+        position: absolute;
+        width: 20%;
+    }
+    .rummy-api-chip1{
+        top: 90%;
+        left: 55%;
+        animation: chipFloat 4s ease-in-out infinite;
+    }
+    .rummy-api-chip2{
+        top: 70%;
+        left: 70%;
+        animation: chipFloat 4.5s ease-in-out infinite;
+    }
+    .rummy-api-chip3{
+        top: 60%;
+        left: 10%;
+        animation: chipFloat 5s ease-in-out infinite;
+    }
+    .rummy-api-coin1{
+        top: 30%;
+        left: 50%;
+        animation: coinFloat 4s ease-in-out infinite;
+    }
+    .rummy-api-coin2{
+        top: 50%;
+        left: 70%;
+        animation: coinFloat 4.5s ease-in-out infinite;
+    }
+
     .solutions-rummy-bottom {
         flex-direction: column;
         padding: 20px;

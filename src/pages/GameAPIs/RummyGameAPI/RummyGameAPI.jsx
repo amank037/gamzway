@@ -205,7 +205,7 @@ const RummyGameAPI = () => {
         <LandingSection landingItems={landingItems}/>
         <div className='landing-rummy-api-overlay'>
           <div className='rummy-api-title-container'>
-            <img src="/rummyAPI/title.png" alt="" className='image-stack'/>
+            <img src="/rummyAPI/bg-title.png" alt="" className='image-stack'/>
           </div>
           <div className='rummy-api-chip-container rummy-api-chip1'>
             <img src="/rummyAPI/chip1.png" alt="" className='image-stack'/>
