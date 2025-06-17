@@ -5,28 +5,32 @@ import FeaturesHeader from '../FeaturesSection/FeaturesHeader/FeaturesHeader'
 const challengeData = [
     {
         challenge: "Compatibility issues",
+        solutionTitle: "Thorough compatibility checks",
         solution: `
-          Thorough compatibility checks – Our team conducts a comprehensive audit of your legacy systems to identify potential conflicts before integration begins. We use modular API adapters to bridge gaps between older systems and modern protocols, ensuring seamless communication. Additionally, we provide a sandbox environment for testing API behavior with your specific setup, minimizing surprises during deployment.
+            Our team conducts a comprehensive audit of your legacy systems to identify potential conflicts before integration begins. We use modular API adapters to bridge gaps between older systems and modern protocols, ensuring seamless communication. Additionally, we provide a sandbox environment for testing API behavior with your specific setup, minimizing surprises during deployment.
         `
-      },
-      {
+    },
+    {
         challenge: "Integration downtime",
+        solutionTitle: "Quick deployment with zero-downtime strategies",
         solution: `
-          Quick deployment with zero-downtime strategies – We implement blue-green deployment techniques to switch traffic between old and new systems without interruption. Our automated rollback system detects integration anomalies within 30 seconds, reverting changes if needed. For critical systems, we offer phased rollouts that update components incrementally while maintaining full operational capacity.
+            We implement blue-green deployment techniques to switch traffic between old and new systems without interruption. Our automated rollback system detects integration anomalies within 30 seconds, reverting changes if needed. For critical systems, we offer phased rollouts that update components incrementally while maintaining full operational capacity.
         `
-      },
-      {
+    },
+    {
         challenge: "Data security concerns",
+        solutionTitle: "Multi-layered security framework",
         solution: `
-          Multi-layered security framework – All data transmissions use TLS 1.3 encryption with perfect forward secrecy. Our fraud detection system analyzes 120+ behavioral parameters in real-time, with machine learning models updated hourly. We maintain PCI DSS Level 1 certification and conduct quarterly penetration testing by independent security firms. Data residency options ensure compliance with regional regulations like GDPR and CCPA.
+            All data transmissions use TLS 1.3 encryption with perfect forward secrecy. Our fraud detection system analyzes 120+ behavioral parameters in real-time, with machine learning models updated hourly. We maintain PCI DSS Level 1 certification and conduct quarterly penetration testing by independent security firms. Data residency options ensure compliance with regional regulations like GDPR and CCPA.
         `
-      },
-      {
+    },
+    {
         challenge: "Player experience gaps",
+        solutionTitle: "Performance-optimized API architecture",
         solution: `
-          Performance-optimized API architecture – Our edge computing network delivers API responses in under 50ms globally. Adaptive quality scaling automatically adjusts video bitrates and gameplay sync based on network conditions. We implement WebSocket connections for real-time updates, eliminating polling delays. Rigorous load testing simulates 10,000 concurrent users before certification, with automated failover to backup nodes during traffic spikes.
+            Our edge computing network delivers API responses in under 50ms globally. Adaptive quality scaling automatically adjusts video bitrates and gameplay sync based on network conditions. We implement WebSocket connections for real-time updates, eliminating polling delays. Rigorous load testing simulates 10,000 concurrent users before certification, with automated failover to backup nodes during traffic spikes.
         `
-      }
+    }
 ]
 
 
@@ -246,6 +250,7 @@ function SolutionsAPI() {
                 </div>
 
                 <div className="solution-detail">
+                    <h3>{challengeData[activeTab].solutionTitle}</h3>
                     <div className="solution-content">
                         {challengeData[activeTab].solution}
                     </div>

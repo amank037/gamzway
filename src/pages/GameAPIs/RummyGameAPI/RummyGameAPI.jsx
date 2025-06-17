@@ -203,6 +203,26 @@ const RummyGameAPI = () => {
     <div className="rummy-api-game">
       <div className="landing-rummy-api-section">
         <LandingSection landingItems={landingItems}/>
+        <div className='landing-rummy-api-overlay'>
+          <div className='rummy-api-title-container'>
+            <img src="/rummyAPI/title.png" alt="" className='image-stack'/>
+          </div>
+          <div className='rummy-api-chip-container rummy-api-chip1'>
+            <img src="/rummyAPI/chip1.png" alt="" className='image-stack'/>
+          </div>
+          <div className='rummy-api-chip-container rummy-api-chip2'>
+            <img src="/rummyAPI/chip2.png" alt="" className='image-stack'/>
+          </div>
+          <div className='rummy-api-chip-container rummy-api-chip3'>
+            <img src="/rummyAPI/chip3.png" alt="" className='image-stack'/>
+          </div>
+          <div className='rummy-api-coin-container rummy-api-coin1'>
+            <img src="/rummyAPI/coin1.png" alt="" className='image-stack'/>
+          </div>
+          <div className='rummy-api-coin-container rummy-api-coin2'>
+            <img src="/rummyAPI/coin2.png" alt="" className='image-stack'/>
+          </div>
+        </div>
       </div>
       <AchievementsBanner />
       <FeaturesBanner />
