@@ -22,7 +22,7 @@ import CrmAPI from '../../../components/CrmAPI/CrmAPI'
 
 const landingItems = [
   {
-    title: "SKILL GAMES API DEVELOPMENT",
+    title: "SKILL GAMES API",
     description: "Gamzway's Skill Game API platform has everything you need to start, run, and grow an online skill gaming business.  We give you the tools and experienced help you need to thrive in the real money gambling business.",
     description2:"Our skill gameAPI platform was developed with developers,digital operators, and business owners in mind. We can give you everything you need, from skill game modules that are ready to go to powerful backend systems.",
     button: "REQUEST A QUOTE",
