@@ -18,6 +18,7 @@ import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
 import SkillLanding from './SkillLanding/SkillLanding'
 import SolutionsAPI from '../../../components/SolutionsAPI/SolutionsAPI'
+import CrmAPI from '../../../components/CrmAPI/CrmAPI'
 
 const landingItems = [
   {
@@ -228,7 +229,12 @@ const productItems = [
     href: "/casino-games"
   },
 ]
-
+const supportTitle = [
+  {
+      title: "Let's Discuss",
+      description: "Still have doubts. Here to assist are our professionals."
+  }
+]
 
 const SkillGamesAPI = () => {
   return (
@@ -252,18 +258,17 @@ const SkillGamesAPI = () => {
         </div> */}
       </div>
       <AchievementsBanner />
-
+      <FeaturesBanner />
       <SolutionsAPI />
-
 
 
       {/* <FeaturesGrid  features={platformFeatures} featuresTitle={platformTitle} /> */}
 
       {/* <PromoTools /> */}
-            <FeaturesBanner />
+
       <PlatformSection />
       {/* <PlatformImg /> */}
-      <CustomGrid/>
+      <CrmAPI/>
       <ChooseGrid />
 
       {/* <ContactBanner contactItems={findItems}/> */}
@@ -335,6 +340,8 @@ const SkillGamesAPI = () => {
         </div>
       </div> */}
 
+            <ContactBanner contactItems={beginItems}/>
+
       <div className="ludo-faq-section">
         <FeaturesHeader featuresText={faqTitle}/>
         <div className="ludo-faq-container">
@@ -347,7 +354,7 @@ const SkillGamesAPI = () => {
 
       <ProductSection productGrid={productItems}/>
 
-      <ContactBanner contactItems={beginItems}/>
+
     </div>
   )
 }
