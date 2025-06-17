@@ -1,29 +1,21 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-// import { Suspense, lazy } from 'react'
+import { BrowserRouter as Router, Routes, Route, ScrollRestoration } from 'react-router-dom'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner'
 import Home from './pages/Home/Home'
 import SkillGames from './pages/SkillGames/SkillGames'
 import CasinoGames from './pages/CasinoGames/CasinoGames'
 import GameAPIs from './pages/GameAPIs/GameAPIs'
 import WhiteLabel from './pages/WhiteLabel/WhiteLabel'
 import Contacts from './pages/Contacts/Contacts'
-
-
-// const Home = lazy(() => import('./pages/Home/Home'))
-// const SkillGames = lazy(() => import('./pages/SkillGames/SkillGames'))
-// const CasinoGames = lazy(() => import('./pages/CasinoGames/CasinoGames'))
-// const GameAPIs = lazy(() => import('./pages/GameAPIs/GameAPIs'))
-// const WhiteLabel = lazy(() => import('./pages/WhiteLabel/WhiteLabel'))
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
 function App() {
   return (
     <Router>
       <div className='App'>
         <Header />
-        {/* <Suspense fallback={<LoadingSpinner />}> */}
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/skill-games/*" element={<SkillGames />} />
@@ -32,7 +24,6 @@ function App() {
             <Route path="/white-label/*" element={<WhiteLabel />} />
             <Route path="/contacts" element={<Contacts />} />
           </Routes>
-        {/* </Suspense> */}
         <Footer />
       </div>
     </Router>

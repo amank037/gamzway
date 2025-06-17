@@ -1,6 +1,6 @@
 .landing-andar-bahar-api-section {
     position: relative;
-    background-image: url(https://www.mobzway.com/assets/images/andarbahar_banner.png);
+    background-image: url('/andarbaharAPI/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -15,10 +15,107 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     pointer-events: none;
 }
 
 .landing-andar-bahar-api-section {
     background-blend-mode: overlay;
+}
+
+
+.landing-andarbahar-api-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.andarbahar-api-title-container{
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+}
+.andarbahar-api-chip-container{
+    position: absolute;
+    width: 7%;
+}
+.andarbahar-api-coin-container{
+    position: absolute;
+    width: 7%;
+}
+.andarbahar-api-chip1{
+    top: 50%;
+    left: 55%;
+    animation: chipFloat 4s ease-in-out infinite;
+}
+.andarbahar-api-chip2{
+    top: 10%;
+    left: 70%;
+    animation: chipFloat 4.5s ease-in-out infinite;
+}
+.andarbahar-api-chip3{
+    top: 20%;
+    left: 80%;
+    animation: chipFloat 5s ease-in-out infinite;
+}
+.andarbahar-api-chip4{
+    top: 30%;
+    left: 50%;
+    animation: chipFloat 4s ease-in-out infinite;
+}
+@keyframes chipFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-14px); }
+}
+
+@media screen and (max-width: 768px) {
+    .landing-andar-bahar-api-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        pointer-events: none;
+    }
+    .andarbahar-api-title-container{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+    }
+    .andarbahar-api-chip-container{
+        position: absolute;
+        width: 20%;
+    }
+    .andarbahar-api-coin-container{
+        position: absolute;
+        width: 20%;
+    }
+    .andarbahar-api-chip1{
+        top: 90%;
+        left: 55%;
+        animation: chipFloat 4s ease-in-out infinite;
+    }
+    .andarbahar-api-chip2{
+        top: 65%;
+        left: 70%;
+        animation: chipFloat 4.5s ease-in-out infinite;
+    }
+    .andarbahar-api-chip3{
+        top: 60%;
+        left: 10%;
+        animation: chipFloat 5s ease-in-out infinite;
+    }
+    .andarbahar-api-chip4{
+        top: 30%;
+        left: 50%;
+        animation: chipFloat 4s ease-in-out infinite;
+    }
 }

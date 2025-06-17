@@ -162,7 +162,26 @@ const AndarBaharAPI = () => {
   return (
     <div className="andar-bahar-api-game">
       <div className="landing-andar-bahar-api-section">
-      <LandingSection landingItems={landingItems}/>
+        <LandingSection landingItems={landingItems}/>
+
+        <div className='landing-andarbahar-api-overlay'>
+          <div className='andarbahar-api-title-container'>
+            <img src="/andarbaharAPI/bg-title.png" alt="" className='image-stack'/>
+          </div>
+          <div className='andarbahar-api-chip-container andarbahar-api-chip1'>
+            <img src="/andarbaharAPI/chip1.png" alt="" className='image-stack'/>
+          </div>
+          <div className='andarbahar-api-chip-container andarbahar-api-chip2'>
+            <img src="/andarbaharAPI/chip2.png" alt="" className='image-stack'/>
+          </div>
+          <div className='andarbahar-api-chip-container andarbahar-api-chip3'>
+            <img src="/andarbaharAPI/chip3.png" alt="" className='image-stack'/>
+          </div>
+          <div className='andarbahar-api-chip-container andarbahar-api-chip4'>
+            <img src="/andarbaharAPI/chip1.png" alt="" className='image-stack'/>
+          </div>
+        </div>
+        
       </div>
       <AchievementsBanner />
 
