@@ -1,11 +1,14 @@
 .landing-poker-api-section {
-    position: relative;
-    background-image: url(https://i.ibb.co/Xx2LHwYy/why-choose-poker-webp.png);
+    background: url('/pokerPage/bg.png');
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
-    height: 100vh !important;
-    margin-top: -121px;
+    background-position: center;
+    margin: -121px auto 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
 }
 
 .landing-poker-api-section::before {

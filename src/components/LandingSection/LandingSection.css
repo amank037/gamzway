@@ -79,3 +79,26 @@
     position: relative;
     z-index: 2;
 }
+
+@media screen and (max-width: 1200px) {
+    .landing-section{
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 993px) {
+    .landing-section{
+        padding: 0 20px;
+    }
+    .landing-text{
+        align-items: center;
+        text-align: center;
+        top: 40%;
+    }
+    .landing-text h1 {
+        font-size: 48px;
+    }
+    .landing-text p {
+        font-size: 18px;
+    }
+}

@@ -20,7 +20,7 @@ import SolutionsAPI from '../../../components/SolutionsAPI/SolutionsAPI'
 
 const landingItems = [
   {
-    title: "CASINO API DEVELOPMENT COMPANY",
+    title: "CASINO API",
     description: " With our strong and flexible Casino Game API, we at Gamzway deliver the pleasures of Vegas directly to your digital door.  Our API allows smooth integration of classic and new casino games including Blackjack, Roulette, Poker, Baccarat, Slots, and more, thereby helping companies start or improve their iGaming platforms.",
     description2: " Whether you run an established operator or a startup, our casino game API offers the technological basis to create first-rate gaming experiences.  Our API is everything you need to rapidly and effectively scale thanks to strong backend systems, high-performance gameplay, and flexible design elements.",
     button: "REQUEST A QUOTE",

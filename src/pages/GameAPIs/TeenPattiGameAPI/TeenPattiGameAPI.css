@@ -1,6 +1,6 @@
 .landing-teen-patti-api-section {
     position: relative;
-    background-image: url('../../../assets/teenapiBg.webp');
+    background-image: url('/teenapiPage/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -8,7 +8,7 @@
     margin-top: -121px;
 }
 
-.landing-teen-patti-api-section::before {
+/* .landing-teen-patti-api-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -17,10 +17,27 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     pointer-events: none;
-}
+} */
 
 .landing-teen-patti-api-section {
     background-blend-mode: overlay;
+}
+
+.landing-teen-patti-api-img{
+    position:absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+@media screen and (max-width:768px){
+    .landing-teen-patti-api-img{
+        position:absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
 }
 
 .teenpatti-choose-grid{

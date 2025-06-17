@@ -16,10 +16,12 @@ import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 import PromoTools from '../../../components/PromoTools/PromoTools'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+import PokerLanding from '../../SkillGames/PokerGame/PokerLanding/PokerLanding'
+import SolutionsAPI from '../../../components/SolutionsAPI/SolutionsAPI'
 
 const landingItems = [
   {
-    title: "POKER GAME API DEVELOPMENT",
+    title: "POKER GAME API",
     description: "Online gaming is exploding, and poker is at the core of this change. At Gamzway, we offer a modern poker game API that lets developers, gaming businesses, and entrepreneurs start and expand strong, engaging poker platforms. Our API guarantees flawless game mechanics, real-time performance, and an interesting user experience whether your aim is desktop, web, or mobile users.",
     description2: "Built to provide scalability, security, and speed—all with a plug-and-play configuration—our poker game API provides From Texas Hold'em and Omaha to private poker rooms and tournaments, we have everything you need to introduce a competitive product onto the market.",
     button: "REQUEST A QUOTE",
@@ -195,13 +197,15 @@ const PokerGameAPI = () => {
   return (
     <div className="poker-api-game">
       <div className="landing-poker-api-section">
-        <LandingSection landingItems={landingItems}/>
+        <div>
+          <PokerLanding landingItems={landingItems}/>
+        </div>
       </div>
       <AchievementsBanner />
 
       <FeaturesBanner />
+      <SolutionsAPI />
       <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
-      <PromoTools />
       <PlatformSection />
       {/* <PlatformImg /> */}
       <CustomGrid/>
@@ -252,7 +256,6 @@ const PokerGameAPI = () => {
         <button className='faq-btn'><span>ASK A QUESTION</span></button>
       </div>
 
-      <PaymentSection />
 
       <ProductSection productGrid={productItems}/>
 

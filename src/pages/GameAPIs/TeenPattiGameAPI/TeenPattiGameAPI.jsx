@@ -17,10 +17,11 @@ import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 import PromoTools from '../../../components/PromoTools/PromoTools'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+import SolutionsAPI from '../../../components/SolutionsAPI/SolutionsAPI'
 
 const landingItems = [
   {
-    title: "TEEN PATTI GAME API DEVELOPMENT",
+    title: "TEEN PATTI GAME API",
     description: "In 2025, Teen Patti continues to dominate the online card gaming scene. According to recent gaming industry reports, card-based games like Teen Patti account for over 30% of mobile gaming activity in South Asia alone, highlighting the game’s massive user base and commercial potential.",
     description2:" Gamzway Technologies stands out as a leading Teen Patti software provider, offering cutting-edge solutions for card gaming businesses. We provide a variety of Teen Patti game variations such as No Limit Classic, Pot Limit Classic, and VIP Teen Patti.",
     button: "REQUEST A QUOTE",
@@ -29,7 +30,7 @@ const landingItems = [
 
 const typesTitle = [
   {
-    title: "TEEN PATTI PLATFORM - GET EVERYTHING WHAT YOU NEED"
+    title: "TEEN PATTI VARIATIONS"
   }
 ]
 const typesGrid = [
@@ -307,6 +308,7 @@ const TeenPattiGameAPI = () => {
     <div className="teen-patti-api-game">
       <div className="landing-teen-patti-api-section">
         <LandingSection landingItems={landingItems}/>
+        <img src="/teenapiPage/bg-over.png" alt="" className='landing-teen-patti-api-img'/>
       </div>
       <AchievementsBanner />
 
@@ -318,10 +320,9 @@ const TeenPattiGameAPI = () => {
       <FeaturesBanner />
 
       <FeaturesGridV5 featuresGrid={typesGrid} featuresTitle={typesTitle} />
-
+      <SolutionsAPI />
       <FeaturesGrid features={gameplayFeatures} featuresTitle={gameplayTitle} />
 
-      <PromoTools />
       <PlatformSection />
       {/* <PlatformImg /> */}
       <CustomGrid/>
@@ -376,8 +377,6 @@ const TeenPattiGameAPI = () => {
             <span className="btn-border"></span>
         </a>
       </div>
-
-      <PaymentSection />
 
       <ProductSection productGrid={productItems}/>
 

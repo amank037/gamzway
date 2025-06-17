@@ -1,6 +1,6 @@
 .landing-ludo-api-section {
     position: relative;
-    background-image: url(https://www.mobzway.com/assets/images/ludo_banner.jpg);
+    background-image: url('/ludoAPI/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -15,8 +15,24 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     pointer-events: none;
+}
+
+.landing-ludo-api-img{
+    position:absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+}
+@media screen and (max-width: 768px){
+    .landing-ludo-api-img{
+        width: 50%;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .landing-ludo-api-section {

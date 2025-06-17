@@ -15,10 +15,11 @@ import PromoTools from '../../../components/PromoTools/PromoTools'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
+import SolutionsAPI from '../../../components/SolutionsAPI/SolutionsAPI'
 
 const landingItems = [
   {
-    title: "ANDAR BAHAR API DEVELOPMENT",
+    title: "ANDAR BAHAR API",
     description: "Andar Bahar is more than just a card game; it's a cultural event that comes from India's heritage of gaming. We have given this classic a new data on life by making it a part of a digital experience that combines old and new.   We will explain what makes our Andar Bahar game different, go over the client's needs, point out the most significant features, speak a outcome in this overview.",
     button: "REQUEST A QUOTE",
   }
@@ -165,11 +166,8 @@ const AndarBaharAPI = () => {
       <AchievementsBanner />
 
       <FeaturesBanner />
-
+      <SolutionsAPI />
       <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
-
-      
-      <PromoTools />
       <PlatformSection />
       {/* <PlatformImg /> */}
       <CustomGrid/>

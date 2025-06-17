@@ -20,7 +20,7 @@ import SolutionsAPI from '../../../components/SolutionsAPI/SolutionsAPI'
 
 const landingItems = [
   {
-    title: "RUMMY GAME API DEVELOPMENT",
+    title: "RUMMY GAME API",
     description: "Rummy Game is a culture, a legacy, and today a digital trend inviting players all around that transcends mere traditional card games. Designed to enable you easily establish and run a completely functional, flexible, and interesting Rummy platform.",
     description2: "Designed with modularity, adaptability, and seamlessness in mind, the Rummy API offers several Rummy variants, game modes, and monetisation mechanisms.",
     button: "REQUEST A QUOTE",
@@ -325,7 +325,6 @@ const RummyGameAPI = () => {
         <button className='faq-btn'><span>ASK A QUESTION</span></button>
       </div>
 
-      <PaymentSection />
 
       <ProductSection productGrid={productItems}/>
 

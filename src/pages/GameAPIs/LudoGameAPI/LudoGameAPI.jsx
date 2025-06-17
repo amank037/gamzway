@@ -15,10 +15,11 @@ import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 import PromoTools from '../../../components/PromoTools/PromoTools'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
+import SolutionsAPI from '../../../components/SolutionsAPI/SolutionsAPI'
 
 const landingItems = [
   {
-    title: "LUDO GAME API DEVELOPMENT",
+    title: "LUDO GAME API",
     description: "Gamzway provides a strong and scalable Ludo Game API designed to satisfy high-performance needs while maintaining games fair, fluid, and interesting therefore enabling gaming companies with this potential.",
     description2:"Entrepreneurs and businesses wishing to enter or grow in the online board game market will find our Ludo Game API a plug-and-play solution.  Our API provides a technical and creative edge whether you are expanding an existing product line or starting your platform.",
     button: "REQUEST A QUOTE",
@@ -250,15 +251,15 @@ const LudoGameAPI = () => {
 
       <div className="landing-ludo-api-section">
         <LandingSection landingItems={landingItems}/>
+        <img src="/ludoAPI/bg-over.png" alt="" className='landing-ludo-api-img'/>
       </div>
 
       <AchievementsBanner />
 
       <FeaturesBanner />
-
+      <SolutionsAPI />
       <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
 
-      <PromoTools />
       <PlatformSection />
       {/* <PlatformImg /> */}
       <CustomGrid/>
@@ -329,8 +330,6 @@ const LudoGameAPI = () => {
         </div>
         <button className='faq-btn'><span>ASK A QUESTION</span></button>
       </div>
-
-      <PaymentSection />
 
       <ProductSection productGrid={productItems}/>
 
