@@ -159,15 +159,14 @@ const WhiteLabelSkillGames = () => {
 
       <WhiteLabelContent />
 
-      <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
+      {/* <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} /> */}
 
-      <PromoTools />
       <PlatformSection />
       {/* <PlatformImg /> */}
       <CustomGrid/>
       <ChooseGrid />
 
-      <div className='choose-section'>
+      {/* <div className='choose-section'>
         <FeaturesHeader featuresText={chooseTitle}/>
         <div className='choose-container'>
         <div className='choose-grid poker-choose-grid'>
@@ -237,7 +236,7 @@ const WhiteLabelSkillGames = () => {
         </div>
 
         </div>
-      </div>
+      </div> */}
 
       <PaymentSection />
       <ProductSection productGrid={productItems}/>

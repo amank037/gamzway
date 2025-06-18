@@ -1,5 +1,6 @@
 import './WhiteLabelContent.css'
 import FeaturesHeader from '../FeaturesSection/FeaturesHeader/FeaturesHeader'
+import FeaturesGridV3 from '../FeaturesGridV3/FeaturesGridV3'
 
 function WhiteLabelContent() {
 
@@ -76,6 +77,54 @@ function WhiteLabelContent() {
         },
     ]
 
+    const casinoTitle = [
+    {
+        title: "White Label Casino Software For Various Games",
+        description:"Our white-label casino software comprises an expansive range of games that cater to player’s preferences offering thrilling game experiences."
+    }
+    ]
+
+    const casinoGrid =[
+        {
+            image:"/poker.png",
+            title:"Poker",
+            description:"Poker is a popular casino card game played between two to ten players where they bet to hold the best possible hand of cards. The person with the best cards in hand has a high probability of winning."
+        },
+        {
+            image:"/baccarat.png",
+            title:"Baccarat",
+            description:"Baccarat is one of the staple card games with simple gameplay where up to fourteen players can play. The players don't have control of the cards they win or tie by placing bets based on the outcome."
+        },
+        {
+            image:"/slots.png",
+            title:"Slot",
+            description:"Slot machines are a popular casino game often referred to as a one-armed bandit. The players place bets by spinning the reels to align with the specified combination to win rewards and bonus rounds."
+        },
+        {
+            image:"/roulette.png",
+            title:"Roulette",
+            description:"Roulette is a famous casino game with a spinning wheel and ball the players bet based on the outcomes where the ball lands on the wheel. The game includes several various French, American, European, etc."
+        },
+        {
+            image:"/bingo.png",
+            title:"Bingo",
+            description:"Bingo is a social game where numbers are called out randomly to achieve a pre-determined pattern for winning. The bingo game has several variations such as U-pick’Em bingo, Shotgun bingo, Quick shot bingo, etc."
+        },
+        {
+            image:"/blackjack.png",
+            title:"Blackjack",
+            description:"Blackjack is a popular strategic casino card game that is often referred to as “twenty-one”. The game is played using a deck of cards against the dealer. The player with hands of cards close to twenty-one wins the match."
+        },
+    ]
+
+    const featuresTitle = [
+        {
+            title: "Features of Our White Label Online Casino",
+            description: "Being the pro player in casino game development, We craft white-label casino solutions that are integrated with top-notch features aiming to deliver an immersive gaming experience to the users.            "
+        }
+    ]
+
+
   return (
     <div className='white-label-content'>
         <div className='white-what'>
@@ -142,13 +191,173 @@ function WhiteLabelContent() {
             </div>
         </div>
 
-        <div></div>
+        {/* <div className='white-benefits'>
+            <FeaturesHeader featuresText={[{title: "Benefits of White Label Casino", description: "Availing of white-label online casinos provides countless benefits for anyone who wishes to enter the igaming industry. Explore the key benefits of white-label casino software."}]} />
+            <div className='white-benefits-container'>
+                <div className='white-benefits-grid'>
+                    {benefitsGrid.map((item, index) => (
+                        <div className='white-benefits-grid-item' key={index}>
+                            <h1>{item.id}</h1>
+                            <h3>{item.title}</h3>
+                            <p>{item.description}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div> */}
 
-        <div></div>
+        <div className='white-benefits'>
+            <FeaturesHeader featuresText={[{title: "Benefits of White Label Casino", description: "Availing of white-label online casinos provides countless benefits for anyone who wishes to enter the igaming industry. Explore the key benefits of white-label casino software."}]} />
+            <div className='white-benefits-container'>
+                <div className='white-benefits-grid poker-white-benefits-grid'>
+                    <div className='white-benefits-card'>
+                        <div className='card-icon'>
+                        <i className="fas fa-rocket"></i>
+                        </div>
+                        <h3>Ready-to-go Product</h3>
+                        <p>The white-label online casino is a pre-fabricated solution that helps to launch your casino platform rapidly in the market and helps businesses to swiftly enter the casino market.</p>
+                    </div>
 
-        <div></div>
+                    <div className='white-benefits-card'>
+                        <div className='card-icon'>
+                        <i className="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Cross-platform Compatibility</h3>
+                        <p>The white-label casino solutions improve player engagement as they are implemented with cross-platform compatibility support on various devices and platforms.</p>
+                    </div>
 
-        <div></div>
+                    <div className='white-benefits-card'>
+                        <div className='card-icon'>
+                        <i className="fas fa-gavel"></i>
+                        </div>
+                        <h3>Regulatory Compliance</h3>
+                        <p>Business owners need not worry about legal issues as the white-label casino solution comes with built-in regulatory features and it aligns with the legal requirements.</p>
+                    </div>
+
+                    <div className='white-benefits-card'>
+                        <div className='card-icon'>
+                        <i className="fas fa-coins"></i>
+                        </div>
+                        <h3>Multi-Currency Support</h3>
+                        <p>The players can gain access to multiple currencies which helps facilitate transactions seamlessly and captivates a wide range of players.</p>
+                    </div>
+
+                    <div className='white-benefits-card'>
+                        <div className='card-icon'>
+                        <i className="fas fa-cart-shopping"></i>
+                        </div>
+                        <h3>Secure Payment System</h3>
+                        <p>Secure payment gateways are integrated with the white-label casino allowing users to make transactions using a wide range of payment methods combined with high-security protocols.</p>
+                    </div>
+
+                    <div className='white-benefits-card'>
+                        <div className='card-icon'>
+                        <i className="fa-solid fa-envelope"></i>
+                        </div>
+                        <h3>Automated Mailing System</h3>
+                        <p>The automated mailing system helps the players and operators make informed decisions, provides updates, promotes new games, and keeps the players connected.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        {/* <div>
+            <FeaturesGridV3 featuresGridV3={casinoGrid} featuresTitleV3={casinoTitle} />
+        </div> */}
+
+        <div className='white-casino-section'>
+            <FeaturesHeader featuresText={casinoTitle} />
+            <div className='white-casino'>
+            {casinoGrid.map((item, index) => (
+                <div className='white-casino-item' key={index}>
+                    <div className='white-casino-img'>
+                        <img src={item.image} alt="" />
+                    </div>
+                        <h3>{item.title}</h3>
+                        <p>{item.description}</p>
+                </div>
+                ))}
+            </div>
+        </div>
+
+        <div className='choose-section2'>
+            <FeaturesHeader featuresText={featuresTitle}/>
+            <div className='choose-container'>
+                <div className='choosev2-grid'>
+                    <div className='choose-card'>
+                        <div className='card-icon'>
+                        <i className="fas fa-user"></i>
+                        </div>
+                        <h3>PAM System</h3>
+                        <p>The Player Account Management (PAM) system in our white-label crypto casino solution makes it convenient to maintain multiple casino player accounts.</p>
+                    </div>
+
+                    <div className='choose-card'>
+                        <div className='card-icon'>
+                        <i className="fas fa-file-shield"></i>
+                        </div>
+                        <h3>Seamless Payment Method</h3>
+                        <p>Our White Label Casino System includes effortless payment methods that accept both fiat money and cryptocurrencies.</p>
+                    </div>
+
+                    <div className='choose-card'>
+                        <div className='card-icon'>
+                        <i className="fas fa-award"></i>
+                        </div>
+                        <h3>Bonus & Reward System</h3>
+                        <p>This system represented in our White-label crypto casino solution assists in improving the retention rate of your users by engaging them with lucrative rewards.</p>
+                    </div>
+
+                    <div className='choose-card'>
+                        <div className='card-icon'>
+                        <i className="fas fa-list-check"></i>
+                        </div>
+                        <h3>Control Management</h3>
+                        <p>Robust Management and the scrutinizing system are represented in our white-label casino game solution for permitting admin to keep a centralized track and control of various activities on the platform.</p>
+                    </div>
+
+                    <div className='choose-card'>
+                        <div className='card-icon'>
+                        <i className="fas fa-shuffle"></i>
+                        </div>
+                        <h3>RNG Based System</h3>
+                        <p>Because our White-label casino solution is an RNG-based system, you can be confident in the fairness and flexibility of the gameplay.</p>
+                    </div>
+
+                    <div className='choose-card'>
+                        <div className='card-icon'>
+                        <i className="fas fa-dice"></i>
+                        </div>
+                        <h3>Games Control Module</h3>
+                        <p>On our White label Casino game software, we provide you the ability to manage multiple casino games conveniently.</p>
+                    </div>
+
+                    <div className='choose-card'>
+                        <div className='card-icon'>
+                        <i className="fas fa-users-line"></i>
+                        </div>
+                        <h3>Player Lobby</h3>
+                        <p>White-label crypto casino solution offered by Maticz that supports a user-friendly player lobby or game lobby.</p>
+                    </div>
+
+                    <div className='choose-card'>
+                        <div className='card-icon'>
+                        <i className="fas fa-brush"></i>
+                        </div>
+                        <h3>On-demand Customizations</h3>
+                        <p>We simplify you to get seamless customization possibilities in our white-label crypto casino as we can customize everything in the software per your business needs.</p>
+                    </div>
+
+                    <div className='choose-card'>
+                        <div className='card-icon'>
+                        <i className="fas fa-people-arrows"></i>
+                        </div>
+                        <h3>UI Engagement</h3>
+                        <p>Our White-label casino game solution has a user interface that is appealing and easy to use and can be customized that meet the client's necessities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
   )
 }
