@@ -152,7 +152,7 @@ function WhiteLabelContent({casinoGrid, casinoTitle}) {
             </div>
         </div> */}
 
-        <div className='white-invest'>
+        {/* <div className='white-invest'>
             <FeaturesHeader featuresText={[{title: "Why Invest in White Label Online Casino?", description: ""}]} />
             <div className='white-invest-container'>
                 <div className='white-invest-text'>
@@ -174,7 +174,7 @@ function WhiteLabelContent({casinoGrid, casinoTitle}) {
                     <img src="https://maticz.com/assets/images/whitelabelcasino/white-label-casino.webp" alt=""/>
                 </div>
             </div>
-        </div>
+        </div> */}
 
         {/* <div className='white-types'>
             <FeaturesHeader featuresText={[{title: "Types of White Label Online Casino", description: "We offer a wide range of White Label Online Casino Solutions including slot machines, pokers, sports betting platforms, and next-gen blockchain-based casino platforms supporting cryptos, tokens, etc."}]} />
@@ -206,7 +206,7 @@ function WhiteLabelContent({casinoGrid, casinoTitle}) {
             </div>
         </div> */}
 
-        <div className='white-benefits'>
+        {/* <div className='white-benefits'>
             <FeaturesHeader featuresText={[{title: "Benefits of White Label Casino", description: "Availing of white-label online casinos provides countless benefits for anyone who wishes to enter the igaming industry. Explore the key benefits of white-label casino software."}]} />
             <div className='white-benefits-container'>
                 <div className='white-benefits-grid poker-white-benefits-grid'>
@@ -259,7 +259,7 @@ function WhiteLabelContent({casinoGrid, casinoTitle}) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
         
         {/* <div>
             <FeaturesGridV3 featuresGridV3={casinoGrid} featuresTitleV3={casinoTitle} />
@@ -280,7 +280,7 @@ function WhiteLabelContent({casinoGrid, casinoTitle}) {
             </div>
         </div>
 
-        <div className='choose-section2'>
+        {/* <div className='choose-section2'>
             <FeaturesHeader featuresText={featuresTitle}/>
             <div className='choose-container'>
                 <div className='choosev2-grid'>
@@ -357,7 +357,7 @@ function WhiteLabelContent({casinoGrid, casinoTitle}) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
     </div>
   )
 }

@@ -206,11 +206,12 @@ const WhiteLabelSkillGames = () => {
       <LandingSection landingItems={landingItems}/>
       </div>
       <AchievementsBanner />
-
-      <FeaturesBanner />  
+ 
       <ContactBanner contactItems={contactItems} />
+      <WhiteLabelContent casinoGrid={casinoGrid} casinoTitle={casinoTitle}/>
+      <FeaturesBanner /> 
       <WhiteLabelContentV2 />
-      {/* <WhiteLabelContent casinoGrid={casinoGrid} casinoTitle={casinoTitle}/> */}
+
 
       {/* <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} /> */}
 
