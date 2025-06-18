@@ -1,7 +1,6 @@
 .landing-crash-section {
     position: relative;
     background-image: url('/crashPage/banner\ \(1\).png');
-    background-color: rgba(0, 0, 0, 0.2);
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
@@ -247,6 +246,9 @@
 
 
 @media screen and (max-width: 768px) {
+    .landing-crash-section{
+        background-color: rgba(0, 0, 0, 0.3);
+    }
     .crash-features-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;

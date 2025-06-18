@@ -273,6 +273,13 @@ function SolutionsAPI() {
                     <p>Integration is just the beginning. We offer 24/7 technical support to ensure your platform runs smoothly at all times. Whether you encounter bugs, require system updates, or need advice on optimising your offerings, our team is always ready to assist.</p>
                 </div>
 
+                <div className='api-support-img'>
+                    <img src="/Technical Support for Long-Term Success.png" alt="" />
+                </div>
+            </div>
+            
+            <div className='api-support-container2'>
+
                 <div className='api-support-item'>
                     <div className='api-support-icon'>
                         <img src="/user.png" alt="" />
@@ -280,8 +287,11 @@ function SolutionsAPI() {
                     </div>
                     <p>A dedicated account manager is assigned to every client, guiding you through every step of the process—from initial setup to post-launch support. This personalised service ensures your platform gets the attention it deserves.</p>
                 </div>
-            </div>
 
+                <div className='api-support-img'>
+                    <img src="/Dedicated Account Management.png" alt="" />
+                </div>
+            </div>
         </div>
     </div>
   )

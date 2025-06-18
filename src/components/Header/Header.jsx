@@ -149,9 +149,7 @@ function Header() {
 
     const handleMobileClick  = (index) =>{
         if(window.innerWidth < 991){
-            // toggleDropdown(index)
             setActiveDropdown(index)
-            setForceCloseDropdown(false)
         }
     }
 

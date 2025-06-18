@@ -1,0 +1,266 @@
+.white-what{
+    padding: 0 20px;
+}
+.white-what-container{
+    max-width: 1200px;
+    margin: 30px auto 0;
+    padding: 20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap: 30px;
+}
+.white-what-img{
+    flex: 2;
+}
+.white-what-img img{
+    width: 100%;
+}
+.white-what-text{
+    flex:3;
+}
+.white-what-text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+.white-what-text-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    gap: 20px;
+}
+/* .white-what-text-grid-item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+} */
+.white-what-text-grid-item div{
+    flex: 1;
+}
+.white-what-text-grid-item p{
+    flex: 2;
+    font-size: 14px;
+}
+
+.white-what-text-grid .white-what-text-grid-item {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap:wrap;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    /* margin: 0 auto; */
+    width: 100%;
+}
+
+.white-what-text-grid .white-what-text-grid-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.white-what-text-grid .white-what-text-grid-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    padding: 1px;
+    background: linear-gradient(135deg, var(--primary-yellow) 0%, transparent 50%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.white-what-text-grid .white-what-text-grid-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    background: rgba(255, 215, 0, 0.03);
+    border-color: transparent;
+    box-shadow:
+        0 10px 30px rgba(255, 215, 0, 0.1),
+        0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.white-what-text-grid .white-what-text-grid-item:hover::before,
+.white-what-text-grid .white-what-text-grid-item:hover::after {
+    opacity: 1;
+}
+
+@media screen and (max-width: 993px){
+    .white-what-container{
+        flex-direction: column-reverse;
+        /* padding:30px 50px; */
+        margin: 0;
+    }
+    .white-what-img{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .white-what-img img{
+        width: 100%;
+    }
+}
+
+.white-invest{
+    margin-top: 50px;
+}
+.white-invest-container{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.white-invest-text{
+    flex: 3;
+}
+.white-invest-img{
+    flex:2;
+}
+.white-invest-img img{
+    width: 100%;
+}
+.white-invest-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 50px;
+}
+.white-invest-text-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    font-size: 14px;
+}
+.white-invest-text-grid-item{
+    position: relative;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    width: 100%;
+}
+.white-invest-text-grid-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.05) 0%, transparent 100%);
+    border-radius: 15px;
+    transition: opacity 0.5s ease;
+}
+
+.white-invest-text-grid-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    padding: 1px;
+    background: linear-gradient(135deg, var(--primary-yellow) 0%, transparent 50%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    transition: opacity 0.5s ease;
+}
+
+.white-invest-text-grid-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    background: rgba(255, 215, 0, 0.03);
+    border-color: transparent;
+    box-shadow:
+        0 10px 30px rgba(255, 215, 0, 0.1),
+        0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.white-invest-text-grid-item p{
+    margin-left: 30px;
+}
+.white-point-bullet {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 5%;
+    width: 8px;
+    height: 8px;
+    background: var(--primary-yellow);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--primary-yellow);
+}
+
+@media screen and (max-width: 993px){
+    .white-invest{
+        padding: 0 40px;
+    }
+    .white-invest-container{
+        flex-direction: column;
+    }
+    .white-invest-img{
+        width: 70%;
+    }
+    .white-invest-img img{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 768px){
+    .white-invest-text-grid{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+.white-types{
+    margin-top: 50px;
+    padding: 0 30px;
+}
+.white-types-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.white-types-grid{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 50px;
+}
+.white-types-grid-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position:relative;
+    border-radius: 10px;
+    border-right: 5px solid var(--primary-yellow);
+    border-bottom: 3px solid var(--primary-yellow);
+    border-top: 1px solid #ffffff0a;
+    border-left: 1px solid #ffffff0a;
+    padding: 20px 40px;
+    backdrop-filter: blur(5px);
+}
+.white-types-grid-item h1{
+    top:-30%;
+    left: -5%;
+    position: absolute;
+    font-size: 100px;
+    color: var(--primary-yellow)
+}

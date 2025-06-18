@@ -15,6 +15,7 @@ import PromoTools from '../../../components/PromoTools/PromoTools'
 import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
+import WhiteLabelContent from '../../../components/WhiteLabelContent/WhiteLabelContent'
 
 const platformItems = [
   {
@@ -155,6 +156,8 @@ const WhiteLabelSkillGames = () => {
       <AchievementsBanner />
 
       <FeaturesBanner />  
+
+      <WhiteLabelContent />
 
       <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
 

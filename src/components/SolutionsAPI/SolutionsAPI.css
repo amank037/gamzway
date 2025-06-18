@@ -21,7 +21,7 @@
 }
 .api-benefit-item{
     background-color: #0000008c;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
     border: 1px solid #51515131;
     padding: 20px;
     gap: 20px;
@@ -377,6 +377,7 @@
     transition: all 0.3s ease;
     border: 1px solid #ffffff18;
     backdrop-filter: blur(5px);
+    
 }
 
 .challenges-solutions-container .challenge-item:hover {
@@ -387,7 +388,7 @@
 .challenges-solutions-container .challenge-item.active {
     background-color: #000000a8;
     backdrop-filter: blur(5px);
-    border-left: 4px solid var(--primary-yellow);
+    border: 2px solid var(--primary-yellow);
     font-weight: bold;
 }
 .challenges-solutions-container .solution-detail {
@@ -429,17 +430,42 @@
     }
 }
 
-
+.api-support{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: center;
+}
 .api-support-container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
-    display: flex;
-    align-items: center;
+    /* display: flex;
     justify-content: space-between;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px;
+}
+.api-support-container2{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    /* display: flex;
+    justify-content: space-between;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px;
+    direction: rtl;
+}
+.api-support-img{
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 .api-support-item{
-    width: 45%;
     border: 1px solid #ffffff18;
     background-color: #0000002a;
     backdrop-filter: blur(5px);
@@ -470,11 +496,23 @@
 }
 @media screen and (max-width: 993px){
     .api-support-container{
-        flex-direction: column;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
         gap: 50px;
+    }
+    .api-support-container2{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 50px;
+        direction: ltr;
+    }
+    .api-support-container div{
+        margin: 0 auto;
+    }
+    .api-support-container2 div{
+        margin: 0 auto;
     }
     .api-support-item{
         width: 80%;
         padding: 40px 20px;
     }
+
 }

@@ -216,3 +216,9 @@
     width: 100%;
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    .solutions-ludo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
