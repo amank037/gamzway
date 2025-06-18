@@ -1,6 +1,5 @@
 import './WhiteLabelContent.css'
 import FeaturesHeader from '../FeaturesSection/FeaturesHeader/FeaturesHeader'
-import { Types } from 'mongoose'
 
 function WhiteLabelContent() {
 
