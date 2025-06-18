@@ -2,7 +2,7 @@ import './WhiteLabelContent.css'
 import FeaturesHeader from '../FeaturesSection/FeaturesHeader/FeaturesHeader'
 import FeaturesGridV3 from '../FeaturesGridV3/FeaturesGridV3'
 
-function WhiteLabelContent() {
+function WhiteLabelContent({casinoGrid, casinoTitle}) {
 
     const investGrid =[
         {
@@ -77,45 +77,45 @@ function WhiteLabelContent() {
         },
     ]
 
-    const casinoTitle = [
-    {
-        title: "White Label Casino Software For Various Games",
-        description:"Our white-label casino software comprises an expansive range of games that cater to player’s preferences offering thrilling game experiences."
-    }
-    ]
+    // const casinoTitle = [
+    // {
+    //     title: "White Label Casino Software For Various Games",
+    //     description:"Our white-label casino software comprises an expansive range of games that cater to player’s preferences offering thrilling game experiences."
+    // }
+    // ]
 
-    const casinoGrid =[
-        {
-            image:"/poker.png",
-            title:"Poker",
-            description:"Poker is a popular casino card game played between two to ten players where they bet to hold the best possible hand of cards. The person with the best cards in hand has a high probability of winning."
-        },
-        {
-            image:"/baccarat.png",
-            title:"Baccarat",
-            description:"Baccarat is one of the staple card games with simple gameplay where up to fourteen players can play. The players don't have control of the cards they win or tie by placing bets based on the outcome."
-        },
-        {
-            image:"/slots.png",
-            title:"Slot",
-            description:"Slot machines are a popular casino game often referred to as a one-armed bandit. The players place bets by spinning the reels to align with the specified combination to win rewards and bonus rounds."
-        },
-        {
-            image:"/roulette.png",
-            title:"Roulette",
-            description:"Roulette is a famous casino game with a spinning wheel and ball the players bet based on the outcomes where the ball lands on the wheel. The game includes several various French, American, European, etc."
-        },
-        {
-            image:"/bingo.png",
-            title:"Bingo",
-            description:"Bingo is a social game where numbers are called out randomly to achieve a pre-determined pattern for winning. The bingo game has several variations such as U-pick’Em bingo, Shotgun bingo, Quick shot bingo, etc."
-        },
-        {
-            image:"/blackjack.png",
-            title:"Blackjack",
-            description:"Blackjack is a popular strategic casino card game that is often referred to as “twenty-one”. The game is played using a deck of cards against the dealer. The player with hands of cards close to twenty-one wins the match."
-        },
-    ]
+    // const casinoGrid =[
+    //     {
+    //         image:"/poker.png",
+    //         title:"Poker",
+    //         description:"Poker is a popular casino card game played between two to ten players where they bet to hold the best possible hand of cards. The person with the best cards in hand has a high probability of winning."
+    //     },
+    //     {
+    //         image:"/baccarat.png",
+    //         title:"Baccarat",
+    //         description:"Baccarat is one of the staple card games with simple gameplay where up to fourteen players can play. The players don't have control of the cards they win or tie by placing bets based on the outcome."
+    //     },
+    //     {
+    //         image:"/slots.png",
+    //         title:"Slot",
+    //         description:"Slot machines are a popular casino game often referred to as a one-armed bandit. The players place bets by spinning the reels to align with the specified combination to win rewards and bonus rounds."
+    //     },
+    //     {
+    //         image:"/roulette.png",
+    //         title:"Roulette",
+    //         description:"Roulette is a famous casino game with a spinning wheel and ball the players bet based on the outcomes where the ball lands on the wheel. The game includes several various French, American, European, etc."
+    //     },
+    //     {
+    //         image:"/bingo.png",
+    //         title:"Bingo",
+    //         description:"Bingo is a social game where numbers are called out randomly to achieve a pre-determined pattern for winning. The bingo game has several variations such as U-pick’Em bingo, Shotgun bingo, Quick shot bingo, etc."
+    //     },
+    //     {
+    //         image:"/blackjack.png",
+    //         title:"Blackjack",
+    //         description:"Blackjack is a popular strategic casino card game that is often referred to as “twenty-one”. The game is played using a deck of cards against the dealer. The player with hands of cards close to twenty-one wins the match."
+    //     },
+    // ]
 
     const featuresTitle = [
         {
@@ -127,7 +127,7 @@ function WhiteLabelContent() {
 
   return (
     <div className='white-label-content'>
-        <div className='white-what'>
+        {/* <div className='white-what'>
             <FeaturesHeader featuresText={[{title: "What is White Label Casino?", description: ""}]} />
             <div className='white-what-container'>
                 <div className='white-what-img'>
@@ -150,7 +150,7 @@ function WhiteLabelContent() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
 
         <div className='white-invest'>
             <FeaturesHeader featuresText={[{title: "Why Invest in White Label Online Casino?", description: ""}]} />
@@ -176,7 +176,7 @@ function WhiteLabelContent() {
             </div>
         </div>
 
-        <div className='white-types'>
+        {/* <div className='white-types'>
             <FeaturesHeader featuresText={[{title: "Types of White Label Online Casino", description: "We offer a wide range of White Label Online Casino Solutions including slot machines, pokers, sports betting platforms, and next-gen blockchain-based casino platforms supporting cryptos, tokens, etc."}]} />
             <div className='white-types-container'>
                 <div className='white-types-grid'>
@@ -189,7 +189,7 @@ function WhiteLabelContent() {
                     ))}
                 </div>
             </div>
-        </div>
+        </div> */}
 
         {/* <div className='white-benefits'>
             <FeaturesHeader featuresText={[{title: "Benefits of White Label Casino", description: "Availing of white-label online casinos provides countless benefits for anyone who wishes to enter the igaming industry. Explore the key benefits of white-label casino software."}]} />

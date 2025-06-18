@@ -1,7 +1,7 @@
 .white-label-content{
     background: url(/svgs/ttten3.svg);
-    /* background-repeat: no-repeat; */
-    background-size:fill;
+    background-repeat: no-repeat;
+    background-size:cover;
     background-position: top center;
 }
 
@@ -419,7 +419,7 @@
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 30px;
     padding: 20px 0;
 }
@@ -432,6 +432,7 @@
 }
 
 .white-casino .white-casino-item {
+    width: 100%;
     background-color: var(--secondary-yellow);
     padding: 30px;
     text-align: center;
@@ -534,7 +535,7 @@
 
 @media screen and (max-width: 992px) {
     .white-casino {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 }
@@ -542,7 +543,7 @@
 @media screen and (max-width: 768px) {
 
     .white-casino {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
 }
@@ -565,4 +566,10 @@
     .white-casino .white-casino-item p {
         font-size: 14px;
     }
+}
+
+.choose-section2{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
 }

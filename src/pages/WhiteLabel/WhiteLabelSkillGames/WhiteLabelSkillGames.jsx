@@ -16,6 +16,20 @@ import ChooseGrid from '../../../components/ChooseGrid/ChooseGrid'
 import FeaturesBanner from '../../../components/FeaturesBanner/FeaturesBanner'
 import CustomGrid from '../../../components/CustomGrid/CustomGrid'
 import WhiteLabelContent from '../../../components/WhiteLabelContent/WhiteLabelContent'
+import WhiteLabelContentV2 from '../../../components/WhiteLabelContentV2/WhiteLabelContentV2'
+
+
+const contactItems = [
+  {
+      featuresText: [
+      {
+          title: "Starting Your Own Online Casino With Gamzway"
+      }
+      ],
+      description: "Always dreamed of starting your own online casino but unsure about how to handle the day-to-day? ",
+      hrefText: "Start Your Casino"
+  }
+]
 
 const platformItems = [
   {
@@ -145,7 +159,45 @@ const chooseTitle = [
   }
 ]
 
+const casinoTitle = [
+  {
+      title: "White Label Casino Software For Various Games",
+      description:"Our white-label casino software comprises an expansive range of games that cater to player’s preferences offering thrilling game experiences."
+  }
+  ]
 
+const casinoGrid =[
+    {
+      image:"/baccarat.png",
+      title:"Rummy",
+      
+    },
+    {
+        image:"/poker.png",
+        title:"Poker",
+        
+    },
+    {
+        image:"/slots.png",
+        title:"Slot",
+        
+    },
+    {
+        image:"/roulette.png",
+        title:"Roulette",
+        
+    },
+    {
+        image:"/bingo.png",
+        title:"Bingo",
+        
+    },
+    {
+        image:"/blackjack.png",
+        title:"Blackjack",
+        
+    },
+]
 
 const WhiteLabelSkillGames = () => {
   return (
@@ -156,8 +208,9 @@ const WhiteLabelSkillGames = () => {
       <AchievementsBanner />
 
       <FeaturesBanner />  
-
-      <WhiteLabelContent />
+      <ContactBanner contactItems={contactItems} />
+      <WhiteLabelContentV2 />
+      {/* <WhiteLabelContent casinoGrid={casinoGrid} casinoTitle={casinoTitle}/> */}
 
       {/* <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} /> */}
 
