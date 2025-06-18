@@ -99,7 +99,7 @@ const demoItems = [
 
 const landingItems = [
   {
-    title: "WHITE LABEL SKILL GAMES SOFTWARE PROVIDER",
+    title: "WHITE LABEL SKILL GAMES",
     description: "Are you looking for a games solution that is ready to use, can be used by your team, and can carry your company's message and get your audience involved right away?",
     description2:"We offer flexible browser-based games for everything from team-building apps to branded entertainment and corporate engagement.",
     button: "REQUEST A QUOTE",
@@ -161,7 +161,7 @@ const chooseTitle = [
 
 const casinoTitle = [
   {
-      title: "White Label Casino Software For Various Games",
+      title: "Our White Label Skill Games",
       description:"Our white-label casino software comprises an expansive range of games that cater to player’s preferences offering thrilling game experiences."
   }
   ]
@@ -207,9 +207,9 @@ const WhiteLabelSkillGames = () => {
       </div>
       <AchievementsBanner />
  
-      <ContactBanner contactItems={contactItems} />
+      {/* <ContactBanner contactItems={contactItems} /> */}
       <WhiteLabelContent casinoGrid={casinoGrid} casinoTitle={casinoTitle}/>
-      <FeaturesBanner /> 
+      {/* <FeaturesBanner />  */}
       <WhiteLabelContentV2 />
 
 
@@ -293,7 +293,7 @@ const WhiteLabelSkillGames = () => {
       </div> */}
 
       <PaymentSection />
-      <ProductSection productGrid={productItems}/>
+      {/* <ProductSection productGrid={productItems}/> */}
       <ContactBanner contactItems={demoItems}/>
     </div>
   )

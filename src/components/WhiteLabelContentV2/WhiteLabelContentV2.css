@@ -13,16 +13,19 @@
     gap: 50px;
     margin-top: 100px;
     padding-top: 100px;
-    border-top: 1px solid #ffffff3a;
+    /* border-top: 1px solid #ffffff3a; */
 }
 .whitev2-content-grid-item:nth-child(even) {
     flex-direction: row-reverse;
 }
 .whitev2-content-img{
     flex:1;
+    display: flex;
+    align-items: right ;
 }
 .whitev2-content-img img {
-    width: 100%;
+    width: 80%;
+    /* background-color: #ffd700; */
 }
 .whitev2-content-text {
     flex:1;
