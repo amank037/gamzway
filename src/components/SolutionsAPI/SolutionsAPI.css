@@ -438,38 +438,32 @@
     justify-content: center;
 }
 .api-support-container{
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
-    /* display: flex;
+    display: flex;
     justify-content: space-between;
-    flex-direction: column; */
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 50px;
 }
-.api-support-container2{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    /* display: flex;
-    justify-content: space-between;
-    flex-direction: column; */
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 50px;
-    direction: rtl;
+.api-support-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .api-support-img{
+    flex: 1;
     display: flex;
     align-items:center;
     justify-content: center;
+}
+.api-support-img img{
+    width: 100%;
 }
 .api-support-item{
     border: 1px solid #ffffff18;
     background-color: #0000002a;
     backdrop-filter: blur(5px);
-    padding: 40px 20px;
+    padding: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -485,34 +479,23 @@
     border: 1px solid var(--primary-yellow);
 }
 .api-support-icon img{
-    height: 100px;
-    width: 100px;
-    margin-bottom: 20px;
+    height: 50px;
+    width: 50px;
+    margin: auto;
 }
 .api-support-icon h3{
     color: var(--primary-yellow);
     text-transform: uppercase;
     padding: 0 10px;
+    font-size: 16px;
+
+}
+.api-support-item p{
+    font-size: 14px;
 }
 @media screen and (max-width: 993px){
     .api-support-container{
-        grid-template-columns: repeat(1, minmax(0, 1fr));
+        flex-direction: column;
         gap: 50px;
     }
-    .api-support-container2{
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        gap: 50px;
-        direction: ltr;
-    }
-    .api-support-container div{
-        margin: 0 auto;
-    }
-    .api-support-container2 div{
-        margin: 0 auto;
-    }
-    .api-support-item{
-        width: 80%;
-        padding: 40px 20px;
-    }
-
 }

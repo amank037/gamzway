@@ -168,8 +168,8 @@ const casinoTitle = [
 
 const casinoGrid =[
     {
-      image:"/baccarat.png",
-      title:"Rummy",
+        image:"/rummy.png",
+        title:"Rummy",
       
     },
     {
@@ -178,23 +178,23 @@ const casinoGrid =[
         
     },
     {
-        image:"/slots.png",
-        title:"Slot",
+        image:"/ludo.png",
+        title:"Ludo",
         
     },
     {
-        image:"/roulette.png",
-        title:"Roulette",
+        image:"/callbreak.png",
+        title:"Call Break",
         
     },
     {
         image:"/bingo.png",
-        title:"Bingo",
+        title:"Tambola",
         
     },
     {
-        image:"/blackjack.png",
-        title:"Blackjack",
+        image:"/snake.png",
+        title:"Snake Ladder",
         
     },
 ]

@@ -14,6 +14,8 @@ import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 import AboutSection from '../../../components/AboutSection/AboutSection'
 import FeaturesGrid from '../../../components/FeaturesSection/FeaturesGrid/FeaturesGrid'
 import PromoTools from '../../../components/PromoTools/PromoTools'
+import WhiteLabelContent from '../../../components/WhiteLabelContent/WhiteLabelContent'
+import WhiteLabelContentV2 from '../../../components/WhiteLabelContentV2/WhiteLabelContentV2'
 
 const platformTitle = [
   {
@@ -269,6 +271,57 @@ const aboutItems = [
 //   ]
 // }
 
+const contactItems = [
+  {
+      featuresText: [
+      {
+          title: "Starting Your Own Online Casino With Gamzway"
+      }
+      ],
+      description: "Always dreamed of starting your own online casino but unsure about how to handle the day-to-day? ",
+      hrefText: "Start Your Casino"
+  }
+]
+
+const casinoTitle = [
+  {
+      title: "White Label Casino Software For Various Games",
+      description:"Our white-label casino software comprises an expansive range of games that cater to player’s preferences offering thrilling game experiences."
+  }
+  ]
+
+const casinoGrid =[
+    {
+        image:"/livecasino.png",
+        title:"Live Casino",
+      
+    },
+    {
+        image:"/slots.png",
+        title:"Slots",
+    },
+    {
+        image:"/rng.png",
+        title:"RNG Games",
+    },
+    {
+        image:"/crash.png",
+        title:"Crash Games",
+        
+    },
+    {
+        image:"/table.png",
+        title:"Table Games",
+        
+    },
+    {
+        image:"/fishing.png",
+        title:"Fishing Games",
+        
+    },
+]
+
+
 const WhiteLabelCasino = () => {
   return (
     <div className="white-label-casino-game">
@@ -278,23 +331,22 @@ const WhiteLabelCasino = () => {
       </div>
 
       <AchievementsBanner />
+      
+      <ContactBanner contactItems={contactItems} />
+      <WhiteLabelContent casinoGrid={casinoGrid} casinoTitle={casinoTitle}/>
+      <FeaturesBanner />
+      <WhiteLabelContentV2 />
 
       {/* <AboutSection aboutItems={aboutItems} /> */}
 
-      <FeaturesBanner />
-
-      <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} />
-      <PromoTools />
+      {/* <FeaturesGrid features={platformFeatures} featuresTitle={platformTitle} /> */}
       <PlatformSection />
       {/* <PlatformImg /> */}
       <CustomGrid/>
       <ChooseGrid/>
-      <CustomGrid/>
 
       <PaymentSection />
-
       <ProductSection productGrid={productItems} />
-
       <ContactBanner contactItems={demoItems} />
     </div>
   )
