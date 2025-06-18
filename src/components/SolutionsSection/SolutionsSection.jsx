@@ -1,7 +1,9 @@
 import './SolutionsSection.css'
 import FeaturesHeader from '../../components/FeaturesSection/FeaturesHeader/FeaturesHeader'
+import { useScrollAnimations } from '../../Hooks/useScrollAnimations'
 
 function SolutionsSection({solutionsTitle, solutionsItems}) {
+    useScrollAnimations()
   return (
         <div className='solutions-section-container'>
             {solutionsItems.map((item, index) => (
@@ -31,7 +33,7 @@ function SolutionsSection({solutionsTitle, solutionsItems}) {
                             </div>
                         </div>
 
-                        <div className='solutions-desc-container'>
+                        <div className='solutions-desc-container animate-on-scroll' data-direction="right">
                             <div className='solutions-desc'>
                                 <div className='solutions-grid'>
                                     <div className='solutions-grid-item'>

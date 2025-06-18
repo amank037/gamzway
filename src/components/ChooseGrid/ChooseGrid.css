@@ -18,7 +18,7 @@
 
 .choosev2-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,minmax(0,1fr));
     gap: 10px;
     margin: 60px 0;
 
@@ -30,7 +30,8 @@
     border: 1px solid rgba(255, 215, 0, 0.1);
     border-radius: 15px;
     padding: 30px;
-    transition: all 0.3s ease;
+    height: 335px;
+    /* transition: all 0.3s ease; */
     position: relative;
     overflow: hidden;
 }

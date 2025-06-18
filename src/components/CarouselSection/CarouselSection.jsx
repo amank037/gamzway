@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Pagination, Autoplay } from "swiper/modules"
+import { useScrollAnimations } from "../../Hooks/useScrollAnimations"
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
@@ -47,7 +48,7 @@ const carouselData = [
 
 function CarouselSection() {
 
-
+  useScrollAnimations()
 
   return (
     <div className="carousel-wrapper">
@@ -75,13 +76,13 @@ function CarouselSection() {
         >
           <SwiperSlide>
           <div className="slide-content"  data-swiper-autoplay="10000">
-            <div className="text-content">
+            <div className="text-content animate-on-scroll" data-direction="left">
               <h2 className="slide-title">
                 WELCOME TO GAMZWAY
               </h2>
               <p className="slide-description">Leading name in real-money and skill-based gaming solutions, we specialise in pre-ready games to enable you to get off right away.  Whether your company is established operator, gaming startup, or entrepreneurial, our plug-and-play gaming solutions guarantee a quick, effective, scalable launch.</p>
             </div>
-            <div className="image-content">
+            <div className="image-content animate-on-scroll" data-direction="right">
               <img src="/heroImg.png" alt="" />
             </div>
           </div>

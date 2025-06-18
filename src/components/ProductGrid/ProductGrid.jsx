@@ -1,16 +1,17 @@
 import './ProductGrid.css'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion';
+import { useScrollAnimations } from '../../Hooks/useScrollAnimations';
 
 function ProductGrid() {
-
+  useScrollAnimations()
   const [showMore, setshowMore] = useState(false)
 
   return (
     <div className='product-grid-container'>
       <div className='product-grid'>
 
-        <div className='product-grid-item'>
+        <div className='product-grid-item animate-on-scroll' data-direction="left">
           <a href="">
             <div className="image-stack">
               <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -32,7 +33,7 @@ function ProductGrid() {
           </a>
         </div>
 
-        <div className='product-grid-item'>
+        <div className='product-grid-item animate-on-scroll' data-direction="left">
           <a href="">
             <div className="image-stack">
               <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -82,7 +83,7 @@ function ProductGrid() {
           </a>
         </div>
 
-        <div className='product-grid-item'>
+        <div className='product-grid-item animate-on-scroll' data-direction="right">
           <a href="">
             <div className="image-stack">
               <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -116,7 +117,7 @@ function ProductGrid() {
           </a>
         </div>
 
-        <div className='product-grid-item'>
+        <div className='product-grid-item animate-on-scroll' data-direction="right">
           <a href="">
             <div className="image-stack">
               <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -135,7 +136,7 @@ function ProductGrid() {
           </a>
         </div>
 
-        <div className='product-grid-item'>
+        <div className='product-grid-item animate-on-scroll' data-direction="left">
           <a href="">
             <div className="image-stack">
               <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -157,7 +158,7 @@ function ProductGrid() {
           </a>
         </div>
 
-        <div className='product-grid-item'>
+        <div className='product-grid-item animate-on-scroll' data-direction="left">
           <a href="">
             <div className="image-stack">
               <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -176,7 +177,7 @@ function ProductGrid() {
           </a>
         </div>
 
-        <div className='product-grid-item'>
+        <div className='product-grid-item animate-on-scroll' data-direction="right">
           <a href="">
             <div className="image-stack">
               <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -199,7 +200,7 @@ function ProductGrid() {
           </a>
         </div>
 
-        <div className='product-grid-item'>
+        <div className='product-grid-item animate-on-scroll' data-direction="right">
                 <a href="">
                   <div className="image-stack">
                     <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -221,7 +222,7 @@ function ProductGrid() {
                 </a>
         </div>
 
-        <div className='product-grid-item'>
+        <div className='product-grid-item animate-on-scroll' data-direction="left">
             <a href="">
               <div className="image-stack">
                 <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -238,7 +239,7 @@ function ProductGrid() {
             </a>
         </div>
 
-        <div className='product-grid-item'>
+        <div className='product-grid-item animate-on-scroll' data-direction="left">
           <a href="">
             <div className="image-stack">
               <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -275,7 +276,7 @@ function ProductGrid() {
           </a>
         </div>
 
-        <div className='product-grid-item'>
+        <div className='product-grid-item animate-on-scroll' data-direction="right">
           <a href="">
             <div className="image-stack">
               <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -306,7 +307,7 @@ function ProductGrid() {
           </a>
         </div>
 
-        <div className='product-grid-item'>
+        <div className='product-grid-item animate-on-scroll' data-direction="right">
           <a href="">
             <div className="image-stack">
               <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -333,7 +334,7 @@ function ProductGrid() {
                 className="productv2-grid"
               >
                 <>
-                <div className='product-grid-item'>
+                <div className='product-grid-item animate-on-scroll' data-direction="left">
                   <a href="">
                     <div className="image-stack">
                       <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -349,7 +350,7 @@ function ProductGrid() {
                   </a>
                 </div>
 
-                <div className='product-grid-item'>
+                <div className='product-grid-item animate-on-scroll' data-direction="left">
                   <a href="">
                     <div className="image-stack">
                       <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -365,7 +366,7 @@ function ProductGrid() {
                   </a>
                 </div>
 
-                <div className='product-grid-item'>
+                <div className='product-grid-item animate-on-scroll' data-direction="right">
                 <a href="">
                   <div className="image-stack">
                     <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -384,7 +385,7 @@ function ProductGrid() {
                 </a>
                 </div>
 
-                <div className='product-grid-item'>
+                <div className='product-grid-item animate-on-scroll' data-direction="right">
                   <a href="">
                     <div className="image-stack">
                       <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -403,7 +404,7 @@ function ProductGrid() {
                   </a>
                 </div>
                 
-                <div className='product-grid-item'>
+                <div className='product-grid-item animate-on-scroll' data-direction="left">
                   <a href="">
                     <div className="image-stack">
                       <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -422,7 +423,7 @@ function ProductGrid() {
                   </a>
                 </div>
 
-                <div className='product-grid-item'>
+                <div className='product-grid-item animate-on-scroll' data-direction="left">
                   <a href="">
                     <div className="image-stack">
                       <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -441,7 +442,7 @@ function ProductGrid() {
                   </a>
                 </div>
 
-                <div className='product-grid-item'>
+                <div className='product-grid-item animate-on-scroll' data-direction="right">
                   <a href="">
                     <div className="image-stack">
                       <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />
@@ -463,7 +464,7 @@ function ProductGrid() {
                   </a>
                 </div>
 
-                <div className='product-grid-item'>
+                <div className='product-grid-item animate-on-scroll' data-direction="right">
                   <a href="">
                     <div className="image-stack">
                       <img src="/ProductImages/poker/poker-bg.webp" alt="Poker bg" className="stack-img poker-stack-bg" />

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useScrollAnimations } from "../../Hooks/useScrollAnimations"
 import './Home.css'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
@@ -72,61 +73,7 @@ const travelItems =[
 ]
 
 const Home = () => {
-
-    const [name, setName] = useState('')
-    const [contactType, setContactType] = useState('phone')
-    const [contactValue, setContactValue] = useState('')
-
-    // const renderContactInput = () => {
-    //     switch(contactType) {
-    //     case 'phone':
-    //     case 'whatsapp':
-    //         return (
-    //         <PhoneInput
-    //             country={'in'}
-    //             value={contactValue}
-    //             onChange={phone => setContactValue(phone)}
-    //             containerClass="phone-input-container"
-    //             inputClass="contact-input"
-    //         />
-    //         )
-    //     case 'email':
-    //         return (
-    //         <input
-    //             type="email"
-    //             placeholder="Your Email"
-    //             value={contactValue}
-    //             onChange={(e) => setContactValue(e.target.value)}
-    //             className="contact-input"
-    //         />
-    //         )
-    //     case 'telegram':
-    //     case 'skype':
-    //         return (
-    //         <input
-    //             type="text"
-    //             placeholder={`Your ${contactType} ID`}
-    //             value={contactValue}
-    //             onChange={(e) => setContactValue(e.target.value)}
-    //             className="contact-input"
-    //         />
-    //         )
-    //     default:
-    //         return null
-    //     }
-    // }
-
-    // const handleFormSubmit = (e) => {
-    //     e.preventDefault()
-    //     console.log({
-    //     name,
-    //     contactType,
-    //     contactValue
-    //     })
-    //     setName('')
-    //     setContactType('phone')
-    //     setContactValue('')
-    // }
+    useScrollAnimations()
 
     const platformGrid = [
         {
@@ -160,46 +107,6 @@ const Home = () => {
   return (
     <div className='home-div'>
         <div className='hero-div'>
-            {/* <div className='hero-nested-div'>
-
-                <h1 className='hero-title'>WELCOME TO GAMZWAY</h1>
-                <p className='hero-title-dec'>Welcome to Gamzway, where entertainment meets inventiveness.  Leading name in real-money and skill-based gaming solutions, we specialise in pre-ready games to enable you to get off right away.  Whether your company is established operator, gaming startup, or entrepreneurial, our plug-and-play gaming solutions guarantee a quick, effective, scalable launch. 
-                    <br/><br/>Driven by a strong backend and easy interface, our games are meant to provide great performance, flawless gameplay, and rich user experiences.</p>
-
-                <div className="carousel-form">
-                    <p className="form-heading"> All set to open your gaming portal?  Complete the form here and contact our knowledgeable team right now.</p>
-                    <form className="form-container" onSubmit={handleFormSubmit}>
-                    <div className="form-group">
-                        <input 
-                        type="text" 
-                        placeholder="Your Name" 
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        className="name-input"
-                        required
-                        />
-                    </div>
-                    <div className="contact-group">
-                        <select 
-                        className="contact-type"
-                        value={contactType}
-                        onChange={(e) => {
-                            setContactType(e.target.value)
-                            setContactValue('')
-                        }}
-                        >
-                        <option value="phone">Phone</option>
-                        <option value="whatsapp">WhatsApp</option>
-                        <option value="email">Email</option>
-                        <option value="telegram">Telegram</option>
-                        <option value="skype">Skype</option>
-                        </select>
-                        {renderContactInput()}
-                    </div>
-                    <button type="submit" className="consultation-btn">Free Consultation</button>
-                    </form>
-                </div>
-            </div> */}
             <CarouselSection/>
         </div>
 
@@ -215,29 +122,27 @@ const Home = () => {
         <div className='engagement-section'>
             <FeaturesHeader featuresText={engagementModelsText}/>
             <div className='models-grid'>
-                <div className='model-card'>
+                <div className='model-card animate-on-scroll' data-direction="left">
                     <div className='model-icon'>
                         <i className="fas fa-handshake"></i>
                     </div>
                     <h3>Game APIs</h3>
                     <p>Integrate leading studios with top games with our practical, scalable API solution.</p>
                 </div>
-                <div className='model-card'>
+                <div className='model-card animate-on-scroll' data-direction="up">
                     <div className='model-icon'>
                         <i className="fas fa-handshake"></i>
                     </div>
                     <h3>Game Aggregators</h3>
                     <p>Access an extensive selection of popular casino games through a single API</p>
                 </div>
-                <div className='model-card'>
+                <div className='model-card animate-on-scroll' data-direction="right">
                     <div className='model-icon'>
                         <i className="fas fa-tag"></i>
                     </div>
                     <h3>White Label Platform</h3>
                     <p>Get a branded version of our pre-built games tailored for your business</p>
                 </div>
-
-
             </div>
         </div>
 
@@ -248,7 +153,8 @@ const Home = () => {
                     {platformGrid.map((item, index) => (
                         <motion.div 
                         key={index} 
-                        className="platform-feature-card"
+                        className="platform-feature-card animate-on-scroll"
+                        data-direction="down"
                         whileHover={{ y: -5 }}
                         transition={{ duration: 0.3 }}
                     >
@@ -304,7 +210,7 @@ const Home = () => {
                 {/* <h2>Aid + Let's Discuss</h2>
                 <p className='support-desc'>Still have doubts. Here to assist are our professionals.</p> */}
                 
-                <div className='support-cards'>
+                <div className='support-cards animate-on-scroll' data-direction="left">
                     <a className='support-card' href="">
                         <div className='support-icon'>
                             <i className="fas fa-headset"></i>

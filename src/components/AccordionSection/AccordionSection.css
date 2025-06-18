@@ -21,13 +21,11 @@
     background: rgba(17, 17, 17, 0.5);
     backdrop-filter: blur(10px);
     overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .accordion-item:hover {
     border-color: var(--primary-yellow);
     box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
-    transform: translateY(-2px);
 }
 
 .accordion-item.active {

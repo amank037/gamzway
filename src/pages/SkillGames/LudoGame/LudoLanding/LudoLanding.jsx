@@ -1,19 +1,21 @@
 import './LudoLanding.css'
+import { useScrollAnimations } from '../../../../Hooks/useScrollAnimations'
 
 function LudoLanding({ landingItems}) {
+    useScrollAnimations()
     return (
         <div className='ludolandingv2-section'>
             <div className='overlay'></div>
             {landingItems.map((item, index) => (
                 <div key={index} className='ludolandingv2-container'>
 
-                    <div className='ludolandingv2-text'>
+                    <div className='ludolandingv2-text animate-on-scroll' data-direction="left" data-delay="0.5">
                         <h1>{item.title}</h1>
                         <p>{item.description}</p>
                         <p>{item.description2}</p>
                     </div>
 
-                    <div className='ludo-solutions-img-1'>
+                    <div className='ludo-solutions-img-1 animate-on-scroll' data-direction="right" data-delay="0.5">
                             <div className='sol-ludo-board-container'>
                             <img src="/ludoPage/solutions/1-01.webp" alt="" className="image-stack" />
                             </div>

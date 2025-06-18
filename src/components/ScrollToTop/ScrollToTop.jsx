@@ -5,10 +5,21 @@ function ScrollToTop() {
     const { pathname } = useLocation()
 
     useEffect(() => {
+
+        if (window.ScrollTrigger) {
+            window.ScrollTrigger.getAll().forEach(trigger => trigger.kill())
+        }
+
         window.scrollTo({
             top: 0,
-            behavior: 'smooth'
+            left: 0,
+            behavior: 'auto'
         })
+
+        if (window.ScrollTrigger) {
+            window.ScrollTrigger.refresh()
+        }
+
     }, [pathname])
 
     return null

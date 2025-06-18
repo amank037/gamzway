@@ -1,9 +1,11 @@
 import { useState, useRef, useEffect } from 'react'
 import './AccordionSection.css'
+import { useScrollAnimations } from '../../Hooks/useScrollAnimations'
 
 const AccordionSection = ({ data, className = '' }) => {
   const [activeAccordion, setActiveAccordion] = useState(null)
   const contentRefs = useRef([])
+  useScrollAnimations()
 
   useEffect(() => {
     contentRefs.current = contentRefs.current.slice(0, data.length)
@@ -16,7 +18,7 @@ const AccordionSection = ({ data, className = '' }) => {
   return (
     <div className={`accordion ${className}`}>
       {data.map((item, index) => (
-        <div className={`accordion-item ${activeAccordion === index ? 'active' : ''}`} key={index}>
+        <div className={`accordion-item animate-on-scroll ${activeAccordion === index ? 'active' : ''}`} key={index} data-direction="right" data-delay={index * 0.05}>
           <div className="accordion-header" onClick={() => toggleAccordion(index)}>
             <div className="header-content">
               <div className="icon-wrapper">

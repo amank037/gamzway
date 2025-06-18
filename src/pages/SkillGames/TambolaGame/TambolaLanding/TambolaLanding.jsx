@@ -1,19 +1,21 @@
 import './TambolaLanding.css'
+import { useScrollAnimations } from '../../../../Hooks/useScrollAnimations'
 
 function TambolaLanding({ landingItems}) {
+    useScrollAnimations()
     return (
         <div className='tambolalanding-section'>
             <div className='overlay'></div>
             {landingItems.map((item, index) => (
                 <div key={index} className='tambolalanding-container'>
 
-                    <div className='tambolalanding-text'>
+                    <div className='tambolalanding-text animate-on-scroll' data-direction="left" data-delay="0.5">
                         <h1>{item.title}</h1>
                         <p>{item.description}</p>
                         <p>{item.description2}</p>
                     </div>
 
-                    <div className='tambolabg-container'>
+                    <div className='tambolabg-container animate-on-scroll' data-direction="right" data-delay="0.5">
                         <div className='tambolabg-title-container'>
                             <img src="/tambolaPage/bg-over/title.png" alt="" className='image-stack'/>
                         </div>

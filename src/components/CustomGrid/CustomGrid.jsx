@@ -1,5 +1,6 @@
 import './CustomGrid.css'
 import FeaturesHeader from '../FeaturesSection/FeaturesHeader/FeaturesHeader'
+import { useScrollAnimations } from '../../Hooks/useScrollAnimations'
 
 const crmTitle = [
   { 
@@ -62,12 +63,13 @@ const crmItems = [
 
 
 function CustomGrid() {
+  useScrollAnimations()
   return (
     <div className='custom-grid-section'>
         <FeaturesHeader featuresText={crmTitle} />
         <div className='custom-grid'>
             {crmItems.map((item,index) => (
-                <div key={index} className='custom-grid-item'>
+                <div key={index} className='custom-grid-item animate-on-scroll' data-direction="right" data-delay={index * 0.1}>
                     <img src={item.image} alt={item.alt} />
                     <h3>{item.title}</h3>
                 </div>
