@@ -7,9 +7,11 @@ function FeaturesGridV8({ featuresGrid, featuresTitle }) {
         <FeaturesHeader featuresText={featuresTitle} />
         <div className='features-gridv8'>
         {featuresGrid.map((item, index) => (
-            <div className='features-gridv8-item' key={index}>
-                    <img src={item.image} alt="" />
-                    <h3>{item.title}</h3>
+          <div className='animate-on-scroll' data-direction="left" key={index}>
+              <div className='features-gridv8-item' key={index}>
+                      <img src={item.image} alt="" />
+                      <h3>{item.title}</h3>
+              </div>
             </div>
             ))}
         </div>

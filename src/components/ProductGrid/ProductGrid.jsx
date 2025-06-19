@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useScrollAnimations } from '../../Hooks/useScrollAnimations';
 
 function ProductGrid() {
-  useScrollAnimations()
+  // useScrollAnimations()
   const [showMore, setshowMore] = useState(false)
 
   return (

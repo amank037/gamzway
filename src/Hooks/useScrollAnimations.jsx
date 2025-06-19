@@ -13,10 +13,10 @@ export function useScrollAnimations() {
         let x = 0,
             y = 0;
 
-        if (direction === "left") x = -100;
-        if (direction === "right") x = 100;
-        if (direction === "up") y = 100;
-        if (direction === "down") y = -100;
+        if (direction === "left") x =  "-50%";
+        if (direction === "right") x = "50%";
+        if (direction === "up") y = "50%";
+        if (direction === "down") y =  "-50%";
 
         gsap.fromTo(
             el,
@@ -31,9 +31,11 @@ export function useScrollAnimations() {
             x: 0,
             y: 0,
             opacity: 1,
-            duration: 1.5,
+            duration: 0.5,
             delay: delay,
-            ease: "elastic.out(1.5,0.3)",
+            ease:"back.out(1.7)",
+            // ease:"power1.out"
+            // ease: "elastic.out(1.5,0.3)",
             }
         );
         });

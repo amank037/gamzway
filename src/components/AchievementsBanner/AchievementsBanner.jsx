@@ -1,7 +1,9 @@
 import './AchievementsBanner.css'
 import { useEffect, useRef } from 'react'
+import { useScrollAnimations } from '../../Hooks/useScrollAnimations'
 
 const AchievementsBanner = () => {
+  useScrollAnimations()
   const countersRef = useRef([])
 
   useEffect(() => {
@@ -53,7 +55,7 @@ const AchievementsBanner = () => {
     <div className='ach-banner'>
       <div className='ach-container'>
         {achievements.map((achievement, index) => (
-          <div className='ach-card' key={index}>
+          <div className='ach-card animate-on-scroll' data-direction="left" data-delay={index * 0.1} key={index}>
             <div className='ach-icon'>
               <img className='ach-img' src={achievement.image} alt={achievement.title} />
             </div>

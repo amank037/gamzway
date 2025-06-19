@@ -1,6 +1,7 @@
 import './ProvidersGrid.css'
 import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useScrollAnimations } from '../../Hooks/useScrollAnimations';
 
 // const providersImages =[
 //     {
@@ -642,6 +643,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 // ]
 
 function ProvidersGrid({providersImages, providersImagesLength}) {
+    useScrollAnimations()
 
     const [showMore, setShowMore] = useState(false)
     const gridContainerRef = useRef(null)
@@ -664,11 +666,11 @@ function ProvidersGrid({providersImages, providersImagesLength}) {
         <div className='providers-grid-div' ref={gridContainerRef}>
             <h1 className="provider-title"> <span>GAME</span> <span>PROVIDERS</span> </h1>
             <div className='providers-grid-container'>
-                <div className='providers-grid grid-visible' style={{gridTemplateColumns: `repeat(${providersImagesLength}, 1fr)`}}>
+                <div className='providers-grid grid-visible animate-on-scroll' data-direction="left" style={{gridTemplateColumns: `repeat(${providersImagesLength}, 1fr)`}}>
                     {providersImages.map((item, index) => (
-                        <div key={index} className='providers-grid-item'>
-                            <img src={item.src} alt={item.alt} />
-                        </div>
+                            <div key={index} className='providers-grid-item'>
+                                <img src={item.src} alt={item.alt} />
+                            </div>
                     ))}
                 </div>
 

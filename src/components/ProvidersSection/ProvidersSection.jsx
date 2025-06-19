@@ -5,7 +5,7 @@ import "swiper/css/free-mode"
 
 const providersImages = [
     {
-    src:"/src/assets/1-03.webp",
+    src:"/logo-black.png",
     alt:"Gamzway",
     title:"Gamzway"
     },
@@ -650,7 +650,7 @@ function ProvidersSection() {
             >
                 {providersImages.map((item, index) => (
                 <SwiperSlide>
-                    <img key={index} src={item.src} alt="" />
+                    <div className='providers-item'><img key={index} src={item.src} alt="" /></div>
                 </SwiperSlide>
                 ))}
             </Swiper>
@@ -688,7 +688,7 @@ function ProvidersSection() {
             >
                 {providersImages2.map((item, index) => (
                 <SwiperSlide>
-                    <img key={index} src={item.src} alt="" />
+                    <div className='providers-item'><img key={index} src={item.src} alt="" /></div>
                 </SwiperSlide>
                 ))}
             </Swiper>
@@ -726,7 +726,7 @@ function ProvidersSection() {
             >
                 {providersImages3.map((item, index) => (
                 <SwiperSlide>
-                    <img key={index} src={item.src} alt="" />
+                    <div className='providers-item'><img key={index} src={item.src} alt="" /></div>
                 </SwiperSlide>
                 ))}
             </Swiper>

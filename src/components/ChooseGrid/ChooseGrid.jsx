@@ -9,14 +9,14 @@ const chooseTitle = [
 ]
 
 function ChooseGrid() {
-    useScrollAnimations()
+    // useScrollAnimations()
   return (
     <div className='choose-section'>
             <FeaturesHeader featuresText={chooseTitle}/>
             <div className='choosev2-container'>
                 <div className='choosev2-grid'>
 
-                    <div className='animate-on-scroll' data-direction="right" data-delay="0">
+                    <div className='asd' data-direction="right" data-delay="0">
                         <div className='choose-card'>
                             <div className='card-icon'>
                                 <i className="fas fa-gauge-high"></i>
@@ -26,7 +26,7 @@ function ChooseGrid() {
                         </div>
                     </div>
 
-                    <div className='animate-on-scroll' data-direction="right" data-delay="0.1">
+                    <div className='asd' data-direction="right" data-delay="0.1">
                         <div className='choose-card'>
                             <div className='card-icon'>
                                 <i className="fas fa-microchip"></i>
@@ -36,7 +36,7 @@ function ChooseGrid() {
                         </div>
                     </div>
 
-                    <div className='animate-on-scroll' data-direction="right" data-delay="0.2">
+                    <div className='asd' data-direction="right" data-delay="0.2">
                         <div className='choose-card'>
                             <div className='card-icon'>
                                 <i className="fa-solid fa-shield"></i>
@@ -47,7 +47,7 @@ function ChooseGrid() {
                         </div>
                     </div>
 
-                    <div className='animate-on-scroll' data-direction="left" data-delay="0">
+                    <div className='asd' data-direction="left" data-delay="0">
                         <div className='choose-card'>
                             <div className='card-icon'>
                                 <i className="fas fa-code"></i>
@@ -57,7 +57,7 @@ function ChooseGrid() {
                         </div>
                     </div>
 
-                    <div className='animate-on-scroll' data-direction="left" data-delay="0.1">
+                    <div className='asd' data-direction="left" data-delay="0.1">
                         <div className='choose-card'>
                             <div className='card-icon'>
                                 <i className="fas fa-shopping-cart"></i>
@@ -67,7 +67,7 @@ function ChooseGrid() {
                         </div>
                     </div>
 
-                    <div className='animate-on-scroll' data-direction="left" data-delay="0.2">
+                    <div className='asd' data-direction="left" data-delay="0.2">
                         <div className='choose-card'>
                             <div className='card-icon'>
                                 <i className="fas fa-headset"></i>

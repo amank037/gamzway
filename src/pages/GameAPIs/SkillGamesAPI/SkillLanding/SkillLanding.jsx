@@ -2,7 +2,7 @@ import './SkillLanding.css'
 
 function SkillLanding() {
     return (
-        <div className='landing-skill-api-overlay'>
+        <div className='landing-skill-api-overlay animate-on-scroll' data-direction="right" data-delay="0.5s">
             <div className='skill-api-chip-container'>
                 <img src="/skillAPI/bg-over/bg-over.png" alt="" className='image-stack'/>
             </div>

@@ -1,4 +1,5 @@
 import './LiveCasino.css'
+import { useScrollAnimations } from '../../../Hooks/useScrollAnimations'
 import LandingSection from "../../../components/LandingSection/LandingSection"
 import AchievementsBanner from "../../../components/AchievementsBanner/AchievementsBanner"
 import PlatformSection from '../../../components/PlatformSection/PlatformSection'
@@ -15,6 +16,7 @@ import PlatformImg from '../../../components/LudoPlatformImg/LudoPlatformImg'
 import ProvidersSection from '../../../components/ProvidersSection/ProvidersSection'
 import ProvidersGrid from '../../../components/ProvidersGrid/ProvidersGrid'
 import FeaturesGridV8 from '../../../components/FeaturesGridV8/FeaturesGridV8'
+import SolutionsSection from '../../../components/SolutionsSection/SolutionsSection'
 
 
 // const typesItems = [
@@ -410,9 +412,27 @@ const providersImages =[
   }
 ]
 
+const solutionsTitle =[
+  {
+    title: " Call Break Game's salient features",
+    description: "Strong emphasis on performance, player retention, and monetisation drives our Call Break games' construction.  Important characteristics include:"
+  }
+]
+
+const solutionsItems =[
+  {
+    image:"/callbreakPage/banner-over.png",
+    gametype: "Skill Game",
+    rtp: "90%",
+    devices: "Android, iOS, Web, Desktop",
+    background:"/liveCasino/bg.png"
+  }
+]
+
 
 
 const LiveCasino = () => {
+  useScrollAnimations()
 
   const featuresGrid = [
     { title: "Live Roulette",
@@ -438,7 +458,7 @@ const LiveCasino = () => {
     <div className="livecasino-game">
       <div className="landing-livecasino-section">
         <LandingSection landingItems={landingItems}/>
-        <div className="casino-overlay-images-div">
+        <div className="casino-overlay-images-div animate-on-scroll" data-direction="right" data-delay="0.5">
           <div className='casino-overlay-live'>
             <img src="/liveCasino/live.png" alt="" className='image-stack'/>
           </div>
@@ -460,7 +480,7 @@ const LiveCasino = () => {
 
       <FeaturesGridV8 featuresGrid={featuresGrid} featuresTitle={featuresItems} />
 
-      <div className='solutions-rummy-section'>
+      {/* <div className='solutions-rummy-section'>
         <div className='solutions-rummy-top'>
           <FeaturesHeader featuresText={hireTitle}/>
         </div>
@@ -508,7 +528,9 @@ const LiveCasino = () => {
             <img src="https://beta.mobzway.com/assets/images/rummy-game-development/hire-rummy-game-developer.webp" alt="" />
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <SolutionsSection solutionsItems={solutionsItems} solutionsTitle={solutionsTitle}/>
 
       {/* <ContactBanner contactItems={contactItems}/> */}
 

@@ -15,7 +15,7 @@ function PokerLanding({ landingItems}) {
                         <p>{item.description2}</p>
                     </div>
 
-                    <div className='pokerbg-container animate-on-scroll' data-direction="right" data-delay="0.5">
+                    <div className='pokerbg-container asd' data-direction="right" data-delay="0.5">
                         <div className='pokerbg-cards-container'>
                             <img src="/pokerPage/bg-cards.png" alt="" className='image-stack'/>
                         </div>

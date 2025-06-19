@@ -210,7 +210,7 @@ const Home = () => {
                 {/* <h2>Aid + Let's Discuss</h2>
                 <p className='support-desc'>Still have doubts. Here to assist are our professionals.</p> */}
                 
-                <div className='support-cards animate-on-scroll' data-direction="left">
+                <div className='support-cards' data-direction="left">
                     <a className='support-card' href="">
                         <div className='support-icon'>
                             <i className="fas fa-headset"></i>

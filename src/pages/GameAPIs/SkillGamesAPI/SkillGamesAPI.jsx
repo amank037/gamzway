@@ -2,7 +2,7 @@ import './SkillGamesAPI.css'
 import LandingSection from "../../../components/LandingSection/LandingSection"
 import AchievementsBanner from "../../../components/AchievementsBanner/AchievementsBanner"
 import FeaturesGrid from '../../../components/FeaturesGridAPI/FeaturesGridAPI'
-import PlatformSection from '../../../components/PlatformSectionAPIs/PlatformSectionAPIs'
+import PlatformSection from '../../../components/PlatformSection/PlatformSection'
 import ContactBanner from '../../../components/ContactBanner/ContactBanner'
 import FeaturesHeader from '../../../components/FeaturesSection/FeaturesHeader/FeaturesHeader'
 import ProductSection from '../../../components/ProductSection/ProductSection'

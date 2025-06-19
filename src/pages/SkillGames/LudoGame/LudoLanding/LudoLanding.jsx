@@ -15,7 +15,7 @@ function LudoLanding({ landingItems}) {
                         <p>{item.description2}</p>
                     </div>
 
-                    <div className='ludo-solutions-img-1 animate-on-scroll' data-direction="right" data-delay="0.5">
+                    <div className='ludo-solutions-img-1 asd' data-direction="right" data-delay="0.5">
                             <div className='sol-ludo-board-container'>
                             <img src="/ludoPage/solutions/1-01.webp" alt="" className="image-stack" />
                             </div>

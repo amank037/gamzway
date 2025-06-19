@@ -9,13 +9,11 @@ function FeaturesGridV3({ featuresGridV3, featuresTitleV3 }) {
         <FeaturesHeader featuresText={featuresTitleV3} />
         <div className='features-gridv3'>
         {featuresGridV3.map((item, index) => (
-            <div className='animate-on-scroll' data-direction="left" data-delay={index * 0.1}>
               <div className='features-gridv3-item' key={index}>
                       <img src={item.image} alt="" />
                       <h3>{item.title}</h3>
                       <p>{item.description}</p>
               </div>
-            </div>
             ))}
         </div>
     </div>

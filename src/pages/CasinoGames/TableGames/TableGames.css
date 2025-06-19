@@ -1,10 +1,13 @@
+.table-game{
+    overflow-x: hidden;
+}
 .landing-table-section {
     position: relative;
     background-image: url(/tableGames/bg.png);
     background-color: rgba(0, 0, 0, 0.2);
     background-blend-mode: overlay;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: top center;
     height: 100vh !important;
     margin-top: -121px;
@@ -66,7 +69,7 @@
 }
 .table-card2{
     top: 50%;
-    left: 80%;
+    left: 60%;
     animation: cardFloat 5s ease-in-out infinite;
 }
 .table-card3{
@@ -96,7 +99,7 @@
 }
 .table-dice1{
     top: 30%;
-    left: 80%;
+    left: 70%;
     animation: diceFloat 4s ease-in-out infinite;
 }
 .table-dice2{
@@ -139,7 +142,7 @@
     }
     .table-card2{
         top: 50%;
-        left: 80%;
+        left: 60%;
         animation: cardFloat 5s ease-in-out infinite;
     }
     .table-card3{

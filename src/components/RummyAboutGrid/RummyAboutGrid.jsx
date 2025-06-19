@@ -14,7 +14,7 @@ function RummyAboutGrid() {
 
   return (
     <div className='rummy-about-grid'>
-      <div className='animate-on-scroll' data-direction="left" data-delay="0.0">
+      <div className='asd' data-direction="left" data-delay="0.0">
         <div className='rummy-about-grid-item'>
           <div className='rummy-about-grid-image-title-wrap'>
             <img src="/rummyPage/variations/point-rummy.webp" alt="" />
@@ -30,7 +30,7 @@ function RummyAboutGrid() {
         </div>
       </div>
 
-      <div className='animate-on-scroll' data-direction="left" data-delay="0.2">
+      <div className='asd' data-direction="left" data-delay="0.2">
         <div className='rummy-about-grid-item'>
           <div className='rummy-about-grid-image-title-wrap'>
             <img src="/rummyPage/variations/pool-rummy.webp" alt="" />
@@ -46,7 +46,7 @@ function RummyAboutGrid() {
         </div>
       </div>
 
-      <div className='animate-on-scroll' data-direction="left" data-delay="0.3">
+      <div className='asd' data-direction="left" data-delay="0.3">
         <div className='rummy-about-grid-item'>
           <div className='rummy-about-grid-image-title-wrap'>
             <img src="/rummyPage/variations/deal-rummy.webp" alt="" />
@@ -62,7 +62,7 @@ function RummyAboutGrid() {
         </div>
       </div>
 
-      <div className='animate-on-scroll' data-direction="left" data-delay="0.4">
+      <div className='asd' data-direction="left" data-delay="0.4">
         <div className='rummy-about-grid-item'>
           <div className='rummy-about-grid-image-title-wrap'>
             <img src="/rummyPage/variations/gin-rummy.webp" alt="" />
@@ -78,7 +78,7 @@ function RummyAboutGrid() {
         </div>
       </div>
 
-      <div className='animate-on-scroll' data-direction="left" data-delay="0.5">
+      <div className='asd' data-direction="left" data-delay="0.5">
         <div className='rummy-about-grid-item'>
           <div className='rummy-about-grid-image-title-wrap'>
             <img src="/rummyPage/variations/rummy.webp" alt="" />
@@ -94,7 +94,7 @@ function RummyAboutGrid() {
         </div>
       </div>
 
-      <div className='animate-on-scroll' data-direction="left" data-delay="0.6">
+      <div className='asd' data-direction="left" data-delay="0.6">
         <div className='rummy-about-grid-item'>
           <div className='rummy-about-grid-image-title-wrap'>
             <img src="https://beta.mobzway.com/assets/images/rummy-software/Rummy-04.webp" alt="" />

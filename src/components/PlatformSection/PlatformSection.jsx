@@ -13,7 +13,7 @@ function PlatformSection() {
                     <div className='platform-section-line'></div>
                     <p>Our games support all modern mobile browsers. </p>
                 </div>
-                <div className='platform-section-item animate-on-scroll' data-direction="left" data-delay="0.2">
+                <div className='platform-section-item animate-on-scroll' data-direction="left" data-delay="0.1">
                     <div className='platform-section-icon'>
                         <i className="fa-solid fa-mobile-screen-button fa-8x" style={{color: "var(--primary-yellow)"}}></i>
                     </div>
@@ -21,7 +21,7 @@ function PlatformSection() {
                     <div className='platform-section-line'></div>
                     <p>Build to work with budget devices in low bandwidth environment</p>
                 </div>
-                <div className='platform-section-item animate-on-scroll' data-direction="left" data-delay="0.4">
+                <div className='platform-section-item animate-on-scroll' data-direction="left" data-delay="0.2">
                     <div className='platform-section-icon'>
                         <i className="fa-solid fa-laptop fa-8x" style={{color: "var(--primary-yellow)"}}></i>
                     </div>

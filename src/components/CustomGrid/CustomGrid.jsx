@@ -67,9 +67,9 @@ function CustomGrid() {
   return (
     <div className='custom-grid-section'>
         <FeaturesHeader featuresText={crmTitle} />
-        <div className='custom-grid'>
+        <div className='custom-grid animate-on-scroll' data-direction="right" data-delay="0.1">
             {crmItems.map((item,index) => (
-                <div key={index} className='custom-grid-item animate-on-scroll' data-direction="right" data-delay={index * 0.1}>
+                <div key={index} className='custom-grid-item'>
                     <img src={item.image} alt={item.alt} />
                     <h3>{item.title}</h3>
                 </div>

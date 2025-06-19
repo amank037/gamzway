@@ -1,6 +1,7 @@
 import './SolutionsAPI.css'
 import { useState } from 'react'
 import FeaturesHeader from '../FeaturesSection/FeaturesHeader/FeaturesHeader'
+import { useScrollAnimations } from '../../Hooks/useScrollAnimations'
 
 const challengeData = [
     {
@@ -37,14 +38,14 @@ const challengeData = [
 
 function SolutionsAPI() {
     const [activeTab, setActiveTab] = useState(0)
-
+    useScrollAnimations()
 
   return (
     <div className='solutions-api-section'>
 
         <div className='api-benefit'>
             <FeaturesHeader featuresText={[{title: "Benefits of Seamless API Integration for Operators", description: "API integration is more than a technical upgrade; it’s a gateway to transforming your platform. Here’s why it’s invaluable:"}]}/>
-            <div className='api-benefit-container'>
+            <div className='api-benefit-container animate-on-scroll' data-direction='up' >
                 <div className='api-benefit-item'>
                     <div className='api-benefit-icon'>
                         <img src="/casino.png" alt="" />
@@ -88,30 +89,38 @@ function SolutionsAPI() {
             <div className="timeline">
                 <div className="timeline-item">
                     <div className="timeline-dot"></div>
-                    <div className="timeline-content">
-                        <h3>Initial Requirements Assessment</h3>
-                        <p>Define your platform’s specific needs for a tailored approach.</p>
+                    <div className='animate-on-scroll' data-direction="left" data-delay="">
+                        <div className="timeline-content">
+                            <h3>Initial Requirements Assessment</h3>
+                            <p>Define your platform’s specific needs for a tailored approach.</p>
+                        </div>
                     </div>
                 </div>
                 <div className="timeline-item">
                     <div className="timeline-dot"></div>
-                    <div className="timeline-content">
-                        <h3>API Deployment</h3>
-                        <p>The live casino API is integrated into your system by your team or our experts.</p>
+                    <div className='animate-on-scroll' data-direction="right" data-delay="">
+                        <div className="timeline-content">
+                            <h3>API Deployment</h3>
+                            <p>The live casino API is integrated into your system by your team or our experts.</p>
+                        </div>
                     </div>
                 </div>
                 <div className="timeline-item">
                     <div className="timeline-dot"></div>
-                    <div className="timeline-content">
-                        <h3>Testing & Optimization</h3>
-                        <p>Rigorous testing ensures the functionality and performance of all games.</p>
+                    <div className='animate-on-scroll' data-direction="left" data-delay="">
+                        <div className="timeline-content">
+                            <h3>Testing & Optimization</h3>
+                            <p>Rigorous testing ensures the functionality and performance of all games.</p>
+                        </div>
                     </div>
                 </div>
                 <div className="timeline-item">
                     <div className="timeline-dot"></div>
-                    <div className="timeline-content">
-                        <h3>Launch & Support</h3>
-                        <p>Your platform goes live, supported by ongoing assistance to ensure smooth operations.</p>
+                    <div className='animate-on-scroll' data-direction="right" data-delay="">
+                        <div className="timeline-content">
+                            <h3>Launch & Support</h3>
+                            <p>Your platform goes live, supported by ongoing assistance to ensure smooth operations.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -120,28 +129,36 @@ function SolutionsAPI() {
         <div className='api-scale'>
             <FeaturesHeader featuresText={[{title: "Customisation and Scalability Features", description: ""}]}/>
             <div className='api-scale-container'>
-                <div className='api-scale-item'>
-                    <img src="/admin-100.png" alt="" />
-                    <h3>Branded tables</h3>
-                    <p>Customise every aspect, from table layouts to dealer uniforms, for brand consistency.</p>
+                <div className='animate-on-scroll' data-direction="left" data-delay="">
+                    <div className='api-scale-item'>
+                        <img src="/admin-100.png" alt="" />
+                        <h3>Branded tables</h3>
+                        <p>Customise every aspect, from table layouts to dealer uniforms, for brand consistency.</p>
+                    </div>
                 </div>
 
-                <div className='api-scale-item'>
-                    <img src="/browser-customization-100.png" alt="" />
-                    <h3>Tailored Designs</h3>
-                    <p>We allow operators to design their offerings, ensuring an experience that resonates with their audience.</p>
+                <div className='animate-on-scroll' data-direction="right" data-delay="">
+                    <div className='api-scale-item'>
+                        <img src="/browser-customization-100.png" alt="" />
+                        <h3>Tailored Designs</h3>
+                        <p>We allow operators to design their offerings, ensuring an experience that resonates with their audience.</p>
+                    </div>
                 </div>
                 
-                <div className='api-scale-item'>
-                    <img src="/globe-100.png" alt="" />
-                    <h3>Global adaptation</h3>
-                    <p>Multilingual support and currency options for different regions.</p>
+                <div className='animate-on-scroll' data-direction="left" data-delay="">
+                    <div className='api-scale-item'>
+                        <img src="/globe-100.png" alt="" />
+                        <h3>Global adaptation</h3>
+                        <p>Multilingual support and currency options for different regions.</p>
+                    </div>
                 </div>
                 
-                <div className='api-scale-item'>
-                    <img src="/scalable-100.png" alt="" />
-                    <h3>Scalable options</h3>
-                    <p>Easily add new games or features as your platform grows.</p>
+                <div className='animate-on-scroll' data-direction="right" data-delay="">
+                    <div className='api-scale-item'>
+                        <img src="/scalable-100.png" alt="" />
+                        <h3>Scalable options</h3>
+                        <p>Easily add new games or features as your platform grows.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -237,7 +254,7 @@ function SolutionsAPI() {
             <FeaturesHeader featuresText={[{title: "Common Issues Operators Face and how we solve them", description: "While live casino API integrations open doors to new opportunities, they can also present some challenges, but we have solutions for that at Gamzway!"}]}/>
             
             <div className="challenges-solutions">
-                <div className="challenges-list">
+                <div className="challenges-list animate-on-scroll" data-direction="left">
                 {challengeData.map((item, index) => (
                     <div
                     key={index}
@@ -249,7 +266,7 @@ function SolutionsAPI() {
                 ))}
                 </div>
 
-                <div className="solution-detail">
+                <div className="solution-detail animate-on-scroll" data-direction="right">
                     <h3>{challengeData[activeTab].solutionTitle}</h3>
                     <div className="solution-content">
                         {challengeData[activeTab].solution}
@@ -265,7 +282,7 @@ function SolutionsAPI() {
         <div className='api-support'>
             <FeaturesHeader featuresText={[{title: "Comprehensive Support and Assistance", description: ""}]}/>
             <div className='api-support-container'>
-                <div className='api-support-text'>
+                <div className='api-support-text animate-on-scroll' data-direction='left'>
                     <div className='api-support-item'>
                         <div className='api-support-icon'>
                             <img src="/technical-support.png" alt="" />
@@ -283,9 +300,10 @@ function SolutionsAPI() {
                     </div>
                 </div>
 
-                <div className='api-support-img'>
+                <div className='api-support-img animate-on-scroll' data-direction='right'>
                     <img src="/Dedicated Account Management.png" alt="" />
                 </div>
+                
             </div>
         </div>
     </div>

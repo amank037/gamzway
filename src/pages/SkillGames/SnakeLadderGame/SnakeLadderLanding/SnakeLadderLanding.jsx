@@ -17,7 +17,7 @@ function SnakeLadderLanding({ landingItems}) {
                     <p>{item.description2}</p>
                 </div>
             ))}
-                    <div className='snakebg-container animate-on-scroll' data-direction="right" data-delay="0.5">
+                    <div className='snakebg-container asd' data-direction="right" data-delay="0.5">
                         <div className='snakelanding-title-container'>
                             <img src="/snakePage/landing/title.png" alt="" className='stack-img'/>
                         </div>
