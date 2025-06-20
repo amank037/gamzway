@@ -481,6 +481,7 @@
     box-shadow:
         0 10px 30px rgba(255, 215, 0, 0.1),
         0 5px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3px);
 }
 
 .white-casino .white-casino-item:hover::before,
