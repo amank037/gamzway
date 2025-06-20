@@ -370,7 +370,9 @@ const TableGames = () => {
   return (
     <div className="table-game">
       <div className="landing-table-section">
-        <LandingSection landingItems={landingItems}/>
+        <div className='landing-table-content'>
+          <LandingSection landingItems={landingItems}/>
+        </div>
         {/* <LandingPageV2 landingItems={landingItems} landingImages={landingImages}/> */}
       </div>
 

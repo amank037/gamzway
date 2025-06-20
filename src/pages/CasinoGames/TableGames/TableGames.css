@@ -1,5 +1,6 @@
 .table-game{
     overflow-x: hidden;
+    margin-top: -121px;;
 }
 .landing-table-section {
     position: relative;
@@ -10,12 +11,13 @@
     background-size: cover;
     background-position: top center;
     height: 100vh !important;
-    margin-top: -121px;
+    /* margin-top: -121px; */
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 /* .landing-table-section::before {
     content: '';
