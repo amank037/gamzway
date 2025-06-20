@@ -372,35 +372,6 @@ const TableGames = () => {
       <div className="landing-table-section">
         <LandingSection landingItems={landingItems}/>
         {/* <LandingPageV2 landingItems={landingItems} landingImages={landingImages}/> */}
-        <div className='table-overlay-images-div'>
-          <div className='table-card-container table-card1'>
-            <img src="/tableGames/bg-over/card1.png" alt="" className='image-stack'/>
-          </div>
-          <div className='table-card-container table-card2'>
-            <img src="/tableGames/bg-over/card2.png" alt="" className='image-stack'/>
-          </div>
-          <div className='table-card-container table-card3'>
-            <img src="/tableGames/bg-over/card3.png" alt="" className='image-stack'/>
-          </div>
-          <div className='table-coin-container table-coin1'>
-            <img src="/tableGames/bg-over/coin1.png" alt="" className='image-stack'/>
-          </div>
-          <div className='table-coin-container table-coin2'>
-            <img src="/tableGames/bg-over/coin2.png" alt="" className='image-stack'/>
-          </div>
-          <div className='table-coin-container table-coin3'>
-            <img src="/tableGames/bg-over/coin3.png" alt="" className='image-stack'/>
-          </div>
-          <div className='table-coin-container table-coin4'>
-            <img src="/tableGames/bg-over/coin4.png" alt="" className='image-stack'/>
-          </div>
-          <div className='table-dice-container table-dice1'>
-            <img src="/tableGames/bg-over/dice1.png" alt="" className='image-stack'/>
-          </div>
-          <div className='table-dice-container table-dice2'>
-            <img src="/tableGames/bg-over/dice2.png" alt="" className='image-stack'/>
-          </div>
-        </div>
       </div>
 
       <AchievementsBanner />
