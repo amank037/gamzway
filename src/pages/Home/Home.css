@@ -484,6 +484,7 @@
     max-width: 1140px;
     margin: 0 auto;
     padding: 50px 0;
+    overflow-x: hidden;
 }
 
 .model-card {

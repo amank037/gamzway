@@ -28,6 +28,11 @@
     justify-content: space-around;
     transition: all 3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 1200px){
+    .product-grid, .productv2-grid{
+        overflow-x:hidden;
+    }
+}
 .product-grid-item {
     width: calc(25% - 30px);
     position: relative;

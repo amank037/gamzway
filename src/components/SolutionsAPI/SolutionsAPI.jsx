@@ -45,7 +45,7 @@ function SolutionsAPI() {
 
         <div className='api-benefit'>
             <FeaturesHeader featuresText={[{title: "Benefits of Seamless API Integration for Operators", description: "API integration is more than a technical upgrade; it’s a gateway to transforming your platform. Here’s why it’s invaluable:"}]}/>
-            <div className='api-benefit-container animate-on-scroll' data-direction='up' >
+            <div className='api-benefit-container animate-on-scroll' data-direction='left' >
                 <div className='api-benefit-item'>
                     <div className='api-benefit-icon'>
                         <img src="/casino.png" alt="" />
@@ -98,7 +98,7 @@ function SolutionsAPI() {
                 </div>
                 <div className="timeline-item">
                     <div className="timeline-dot"></div>
-                    <div className='animate-on-scroll' data-direction="right" data-delay="">
+                    <div className='animate-on-scroll' data-direction="left" data-delay="">
                         <div className="timeline-content">
                             <h3>API Deployment</h3>
                             <p>The live casino API is integrated into your system by your team or our experts.</p>
@@ -116,7 +116,7 @@ function SolutionsAPI() {
                 </div>
                 <div className="timeline-item">
                     <div className="timeline-dot"></div>
-                    <div className='animate-on-scroll' data-direction="right" data-delay="">
+                    <div className='animate-on-scroll' data-direction="left" data-delay="">
                         <div className="timeline-content">
                             <h3>Launch & Support</h3>
                             <p>Your platform goes live, supported by ongoing assistance to ensure smooth operations.</p>
@@ -137,7 +137,7 @@ function SolutionsAPI() {
                     </div>
                 </div>
 
-                <div className='animate-on-scroll' data-direction="right" data-delay="">
+                <div className='animate-on-scroll' data-direction="left" data-delay="">
                     <div className='api-scale-item'>
                         <img src="/browser-customization-100.png" alt="" />
                         <h3>Tailored Designs</h3>
@@ -153,7 +153,7 @@ function SolutionsAPI() {
                     </div>
                 </div>
                 
-                <div className='animate-on-scroll' data-direction="right" data-delay="">
+                <div className='animate-on-scroll' data-direction="left" data-delay="">
                     <div className='api-scale-item'>
                         <img src="/scalable-100.png" alt="" />
                         <h3>Scalable options</h3>
@@ -162,93 +162,6 @@ function SolutionsAPI() {
                 </div>
             </div>
         </div>
-
-        {/* <div className='api-custom'>
-            <FeaturesHeader featuresText={[{title: "Challenges in Live Casino API Integration", description: ""}]}/>
-            <div className='api-custom-container'>
-                <div  className='api-custom-item'>
-                    <h3>Compatibility issues</h3>
-                    <div className='api-custom-line'></div>
-                    <p>Legacy systems may not support the latest APIs.</p>
-                </div>
-                
-                <div  className='api-custom-item'>
-                    <p>Transitioning to new systems can temporarily disrupt operations.</p>
-                    <div className='api-custom-line'></div>
-                    <h3>Integration downtime</h3>
-                </div>
-
-                <div  className='api-custom-item'>
-                    <h3>Data security concerns</h3>
-                    <div className='api-custom-line'></div>
-                    <p>Protecting sensitive player information is a top priority.</p>
-                </div>
-
-                <div  className='api-custom-item'>
-                    <p>Poorly optimised APIs can result in lag or gameplay interruptions.</p>
-                    <div className='api-custom-line'></div>
-                    <h3>Player experience gaps</h3>                
-                </div>
-            </div>
-        </div> */}
-
-        {/* <div className='api-solve'>
-            <FeaturesHeader featuresText={[{title: "Challenges in Live Casino API Integration", description: ""}]}/>
-            <div className='api-solve-container'>
-                <div className='api-solve-item'>
-                    <h2>1</h2>
-                    <h3>Compatibility issues</h3>
-                    <p>Legacy systems may not support the latest APIs</p>
-                </div>
-
-                <div className='api-solve-item'>
-                    <h2>2</h2>
-                    <h3>Integration downtime</h3>
-                    <p>Transitioning to new systems can temporarily disrupt operations.</p>
-                </div>
-
-                <div className='api-solve-item'>
-                    <h2>3</h2>
-                    <h3>Data security concerns</h3>
-                    <p>Protecting sensitive player information is a top priority.</p>
-                </div>
-
-                <div className='api-solve-item'>
-                    <h2>4</h2>
-                    <h3>Player experience gaps</h3>
-                    <p>Poorly optimised APIs can result in lag or gameplay interruptions.</p>
-                </div>
-            </div>
-        </div>
-
-        <div className='api-solve'>
-            <FeaturesHeader featuresText={[{title: "How We Solve These Challenges", description: ""}]}/>
-            <div className='api-solve-container'>
-                <div className='api-solve-item'>
-                    <h1>1</h1>
-                    <h3>Thorough compatibility checks</h3>
-                    <p>We ensure that the API works seamlessly with your existing systems.</p>
-                </div>
-
-                <div className='api-solve-item'>
-                    <h1>2</h1>
-                    <h3>Quick deployment</h3>
-                    <p>Our team reduces downtime by streamlining the integration process.</p>
-                </div>
-
-                <div className='api-solve-item'>
-                    <h1>3</h1>
-                    <h3>High-level security</h3>
-                    <p>Advanced encryption, fraud detection, and compliance with international regulations safeguard player data.</p>
-                </div>
-
-                <div className='api-solve-item'>
-                    <h1>4</h1>
-                    <h3>Optimised performance</h3>
-                    <p>APIs are tested rigorously to deliver smooth, uninterrupted gameplay, ensuring players remain engaged.</p>
-                </div>
-            </div>
-        </div> */}
 
         <div className="challenges-solutions-container">
             <FeaturesHeader featuresText={[{title: "Common Issues Operators Face and how we solve them", description: "While live casino API integrations open doors to new opportunities, they can also present some challenges, but we have solutions for that at Gamzway!"}]}/>

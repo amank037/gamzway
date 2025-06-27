@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
+    overflow-x: hidden;
 }
 .features-banner-item{
     display: flex;

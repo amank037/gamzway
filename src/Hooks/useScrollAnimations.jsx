@@ -6,6 +6,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 export function useScrollAnimations() {
     useEffect(() => {
+
+        // if (window.innerWidth < 600) {
+        //     return;
+        // }
+
+
         gsap.utils.toArray(".animate-on-scroll").forEach((el) => {
         const direction = el.dataset.direction || "up";
         const delay = parseFloat(el.dataset.delay) || 0;

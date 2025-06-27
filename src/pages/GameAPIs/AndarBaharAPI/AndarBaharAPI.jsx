@@ -195,7 +195,7 @@ const AndarBaharAPI = () => {
 
       <ContactBanner contactItems={findItems}/>
 
-      <div className="ludo-faq-section">
+      {/* <div className="ludo-faq-section">
         <FeaturesHeader featuresText={faqTitle}/>
         <div className="ludo-faq-container">
           <div className="ludo-faq-left">
@@ -203,7 +203,7 @@ const AndarBaharAPI = () => {
           </div>
         </div>
         
-      </div>
+      </div> */}
 
 
       <ProductSection productGrid={productItems}/>

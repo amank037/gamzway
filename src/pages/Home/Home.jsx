@@ -117,8 +117,6 @@ const Home = () => {
             <ProductGrid/>
         </div>
 
-
-        
         <div className='engagement-section'>
             <FeaturesHeader featuresText={engagementModelsText}/>
             <div className='models-grid'>
@@ -196,11 +194,7 @@ const Home = () => {
                 </div>
         </div>
 
-
-
-
         <ChooseGrid />
-
 
         <ProvidersSection />
         
@@ -239,21 +233,6 @@ const Home = () => {
                 <p className='support-footer'>From technical enquiries to revenue models, our consultative approach guarantees you never be left wondering. We explain everything.</p>
             </div>
         </div>
-
-
-        {/* <div className='start-journey-section'>
-            <div className='journey-container'>
-                <div className='journey-content'>
-                    <h2>Start Your Business Travel with Us</h2>
-                    <p>Starting a gaming company doesn't need complexity. Gamzway's pre-ready games let you choose speed, quality, and a reliable partner with past performance.</p>
-                    <button className='demo-btn'>Schedule a Demo</button>
-                </div>
-                <div className='journey-image'>
-                    <img src="/path-to-your-image.webp" alt="Gaming Business Journey" />
-                </div>
-            </div>
-        </div> */}
-
 
     </div>
   )
