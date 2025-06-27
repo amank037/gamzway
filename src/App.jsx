@@ -9,6 +9,7 @@ import GameAPIs from './pages/GameAPIs/GameAPIs'
 import WhiteLabel from './pages/WhiteLabel/WhiteLabel'
 import Contacts from './pages/Contacts/Contacts'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
+import ChatOverlay from './components/ChatOverlay/ChatOverlay'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/contacts" element={<Contacts />} />
           </Routes>
         <Footer />
+        <ChatOverlay/>
       </div>
     </Router>
   )
