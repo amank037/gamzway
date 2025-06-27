@@ -343,7 +343,7 @@ const RummyGameAPI = () => {
             <AccordionSection data={faqData}/>
           </div>
         </div>
-        <button className='faq-btn'><span>ASK A QUESTION</span></button>
+        
       </div>
 
 

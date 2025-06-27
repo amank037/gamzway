@@ -740,7 +740,7 @@ const LudoGame = () => {
             <AccordionSection data={faqData1}/>
           </div>
         </div>
-        <button className='faq-btn'><span>ASK A QUESTION</span></button>
+        
       </div> */}
 
 

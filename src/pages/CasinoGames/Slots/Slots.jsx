@@ -408,10 +408,7 @@ const Slots = () => {
         <div className='faq-accordion-container'>
           <AccordionSection data={faqAccordionData} />
         </div>
-        <a className="faq-btn" href="">
-            <span className="btn-text">ASK A QUESTION</span>
-            <span className="btn-border"></span>
-        </a>
+        
       </div>
       <ContactBanner contactItems={demoItems}/>
       {/* <PaymentSection /> */}

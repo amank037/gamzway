@@ -377,10 +377,7 @@ const TambolaGame = () => {
         <div className='faq-accordion-container'>
           <AccordionSection data={faqItems} />
         </div>
-        <a className="faq-btn" href="">
-          <span className="btn-text">ASK A QUESTION</span>
-          <span className="btn-border"></span>
-        </a>
+        
       </div>
 
       {/* <PaymentSection /> */}
