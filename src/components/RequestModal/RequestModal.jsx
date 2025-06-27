@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import './RequestModal.css'
+import { createPortal } from 'react-dom'
 
 const RequestModal = ({ isOpen, onClose }) => {
     const [contactMethod, setContactMethod] = useState('phone')
@@ -27,7 +28,7 @@ const RequestModal = ({ isOpen, onClose }) => {
 
     if (!isOpen) return null
 
-    return (
+    return createPortal(
         <div className="modal-overlay">
             <div className="modal-content">
                 <button className="close-button" onClick={onClose}>×</button>
@@ -120,7 +121,8 @@ const RequestModal = ({ isOpen, onClose }) => {
                     <button type="submit" className="submit-button">FREE CONSULTATION</button>
                 </form>
             </div>
-        </div>
+        </div>,
+        document.body
     )
 }
 

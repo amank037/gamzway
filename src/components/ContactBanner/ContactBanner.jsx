@@ -1,8 +1,12 @@
 import FeaturesHeader from "../FeaturesSection/FeaturesHeader/FeaturesHeader";
 import "./ContactBanner.css";
-import React from "react";
+import React, { useState } from "react";
+import RequestModal from "../RequestModal/RequestModal";
 
 function ContactBanner({ contactItems }) {
+
+  const [showModal, setShowModal] = useState(false)
+
   return (
     <div className="contact-banner">
       <div className="contact-banner-overlay"></div>
@@ -18,7 +22,7 @@ function ContactBanner({ contactItems }) {
                 </React.Fragment>
               ))}
             </p>
-            <a className="contact-banner-btn" href={item.href}>
+            <a className="contact-banner-btn" onClick={() => setShowModal(true)}>
               <span className="btn-text">{item.hrefText}</span>
               <span className="btn-shine"></span>
               <span className="btn-border"></span>
@@ -26,6 +30,7 @@ function ContactBanner({ contactItems }) {
           </div>
         </div>
       ))}
+      <RequestModal isOpen={showModal} onClose={() => setShowModal(false)} />
     </div>
   );
 }
